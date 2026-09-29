@@ -44,16 +44,29 @@ const cleanupFns: Set<(...args: any[]) => void> = new Set()
 window.addCleanup = (fn) => cleanupFns.add(fn)
 
 function startLoading() {
-  const loadingBar = document.createElement("div")
-  loadingBar.className = "navigation-progress"
-  loadingBar.style.width = "0"
-  if (!document.body.contains(loadingBar)) {
+  let loadingBar = document.querySelector(".navigation-progress") as HTMLElement | null
+  if (!loadingBar) {
+    loadingBar = document.createElement("div")
+    loadingBar.className = "navigation-progress"
     document.body.appendChild(loadingBar)
   }
+  loadingBar.style.opacity = "1"
+  loadingBar.style.width = "0%"
+  void loadingBar.offsetWidth
+  loadingBar.style.width = "75%"
+}
 
-  setTimeout(() => {
-    loadingBar.style.width = "80%"
-  }, 100)
+function stopLoading() {
+  const loadingBar = document.querySelector(".navigation-progress") as HTMLElement | null
+  if (loadingBar) {
+    loadingBar.style.width = "100%"
+    setTimeout(() => {
+      loadingBar.style.opacity = "0"
+      setTimeout(() => {
+        loadingBar.remove()
+      }, 250)
+    }, 100)
+  }
 }
 
 let isNavigating = false
@@ -75,7 +88,10 @@ async function _navigate(url: URL, isBack: boolean = false) {
       window.location.assign(url)
     })
 
-  if (!contents) return
+  if (!contents) {
+    stopLoading()
+    return
+  }
 
   // notify about to nav
   const event: CustomEventMap["prenav"] = new CustomEvent("prenav", { detail: {} })
@@ -101,33 +117,53 @@ async function _navigate(url: URL, isBack: boolean = false) {
   announcer.dataset.persist = ""
   html.body.appendChild(announcer)
 
-  // morph body
-  await micromorph(document.body, html.body)
+  const performDOMUpdate = async () => {
+    // morph body
+    await micromorph(document.body, html.body)
 
-  // scroll into place and add history
-  if (!isBack) {
-    if (url.hash) {
-      const el = document.getElementById(decodeURIComponent(url.hash.substring(1)))
-      el?.scrollIntoView()
-    } else {
-      window.scrollTo({ top: 0 })
+    // scroll into place and add history
+    if (!isBack) {
+      if (url.hash) {
+        const el = document.getElementById(decodeURIComponent(url.hash.substring(1)))
+        el?.scrollIntoView()
+      } else {
+        window.scrollTo({ top: 0 })
+      }
+    }
+
+    // now, patch head, re-executing scripts
+    const elementsToRemove = document.head.querySelectorAll(":not([data-persist])")
+    elementsToRemove.forEach((el) => el.remove())
+    const elementsToAdd = html.head.querySelectorAll(":not([data-persist])")
+    elementsToAdd.forEach((el) => document.head.appendChild(el))
+
+    // delay setting the url until now
+    // at this point everything is loaded so changing the url should resolve to the correct addresses
+    if (!isBack) {
+      history.pushState({}, "", url)
+    }
+
+    notifyNav(getFullSlug(window))
+    delete announcer.dataset.persist
+  }
+
+  const doc = document as any
+  if (typeof doc.startViewTransition === "function") {
+    const transition = doc.startViewTransition(async () => {
+      await performDOMUpdate()
+    })
+    await transition.finished.catch(() => {})
+  } else {
+    await performDOMUpdate()
+    const center = document.querySelector(".center")
+    if (center) {
+      center.classList.remove("page-fade-enter")
+      void (center as HTMLElement).offsetWidth
+      center.classList.add("page-fade-enter")
     }
   }
 
-  // now, patch head, re-executing scripts
-  const elementsToRemove = document.head.querySelectorAll(":not([data-persist])")
-  elementsToRemove.forEach((el) => el.remove())
-  const elementsToAdd = html.head.querySelectorAll(":not([data-persist])")
-  elementsToAdd.forEach((el) => document.head.appendChild(el))
-
-  // delay setting the url until now
-  // at this point everything is loaded so changing the url should resolve to the correct addresses
-  if (!isBack) {
-    history.pushState({}, "", url)
-  }
-
-  notifyNav(getFullSlug(window))
-  delete announcer.dataset.persist
+  stopLoading()
 }
 
 async function navigate(url: URL, isBack: boolean = false) {

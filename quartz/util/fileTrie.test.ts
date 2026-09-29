@@ -329,6 +329,138 @@ describe("FileTrie", () => {
         ["a", "b", "c"],
       )
     })
+
+    test("should enforce natural alphanumeric sorting with numeric collation", () => {
+      const naturalSortFn = (a: any, b: any) => {
+        // Prioritize courses/ at the root level of the explorer tree
+        if (a.slugSegment === "courses" && b.slugSegment !== "courses") {
+          return -1
+        }
+        if (b.slugSegment === "courses" && a.slugSegment !== "courses") {
+          return 1
+        }
+
+        if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+          const cmp = a.displayName.localeCompare(b.displayName, undefined, {
+            numeric: true,
+            sensitivity: "base",
+          })
+          if (cmp !== 0) return cmp
+          return a.slugSegment.localeCompare(b.slugSegment, undefined, {
+            numeric: true,
+            sensitivity: "base",
+          })
+        }
+        return !a.isFolder && b.isFolder ? 1 : -1
+      }
+
+      // Add other root folders alongside courses to test root-level prioritization
+      const mockEntries: [any, any][] = [
+        ["about", { title: "About Us", slug: "about", filePath: "about.md" }],
+        [
+          "resources/guides",
+          { title: "Study Guides", slug: "resources/guides", filePath: "resources/guides.md" },
+        ],
+        [
+          "courses/mk10-advanced-strategy/index",
+          {
+            title: "MK 10: Advanced Strategy",
+            slug: "courses/mk10-advanced-strategy/index",
+            filePath: "courses/mk10-advanced-strategy/index.md",
+          },
+        ],
+        [
+          "courses/mk2-financial-management/index",
+          {
+            title: "MK 2: Financial Management",
+            slug: "courses/mk2-financial-management/index",
+            filePath: "courses/mk2-financial-management/index.md",
+          },
+        ],
+        [
+          "courses/mk1-organizational-behavior/index",
+          {
+            title: "MK 1: Organizational Behavior",
+            slug: "courses/mk1-organizational-behavior/index",
+            filePath: "courses/mk1-organizational-behavior/index.md",
+          },
+        ],
+        [
+          "courses/mk1-organizational-behavior/week-10/index",
+          {
+            title: "Week 10: Capstone",
+            slug: "courses/mk1-organizational-behavior/week-10/index",
+            filePath: "courses/mk1-organizational-behavior/week-10/index.md",
+          },
+        ],
+        [
+          "courses/mk1-organizational-behavior/week-02/index",
+          {
+            title: "Week 02: Teams",
+            slug: "courses/mk1-organizational-behavior/week-02/index",
+            filePath: "courses/mk1-organizational-behavior/week-02/index.md",
+          },
+        ],
+        [
+          "courses/mk1-organizational-behavior/week-01/index",
+          {
+            title: "Week 01: Intro",
+            slug: "courses/mk1-organizational-behavior/week-01/index",
+            filePath: "courses/mk1-organizational-behavior/week-01/index.md",
+          },
+        ],
+        [
+          "courses/mk1-organizational-behavior/week-01/quiz-10-review",
+          {
+            title: "Quiz 10 Review",
+            slug: "courses/mk1-organizational-behavior/week-01/quiz-10-review",
+            filePath: "courses/mk1-organizational-behavior/week-01/quiz-10-review.md",
+          },
+        ],
+        [
+          "courses/mk1-organizational-behavior/week-01/quiz-02-review",
+          {
+            title: "Quiz 02 Review",
+            slug: "courses/mk1-organizational-behavior/week-01/quiz-02-review",
+            filePath: "courses/mk1-organizational-behavior/week-01/quiz-02-review.md",
+          },
+        ],
+        [
+          "courses/mk1-organizational-behavior/week-01/quiz-01-review",
+          {
+            title: "Quiz 01 Review",
+            slug: "courses/mk1-organizational-behavior/week-01/quiz-01-review",
+            filePath: "courses/mk1-organizational-behavior/week-01/quiz-01-review.md",
+          },
+        ],
+      ]
+
+      const testTrie = FileTrieNode.fromEntries(mockEntries)
+      testTrie.sort(naturalSortFn)
+
+      // Verify courses/ is prioritized at the root level ahead of other folders
+      assert.strictEqual(testTrie.children[0].slugSegment, "courses")
+
+      const coursesNode = testTrie.children.find((c) => c.slugSegment === "courses")!
+      assert.deepStrictEqual(
+        coursesNode.children.map((c) => c.displayName),
+        ["MK 1: Organizational Behavior", "MK 2: Financial Management", "MK 10: Advanced Strategy"],
+      )
+
+      const mk1Node = coursesNode.children.find(
+        (c) => c.slugSegment === "mk1-organizational-behavior",
+      )!
+      assert.deepStrictEqual(
+        mk1Node.children.map((c) => c.displayName),
+        ["Week 01: Intro", "Week 02: Teams", "Week 10: Capstone"],
+      )
+
+      const week1Node = mk1Node.children.find((c) => c.slugSegment === "week-01")!
+      assert.deepStrictEqual(
+        week1Node.children.map((c) => c.displayName),
+        ["Quiz 01 Review", "Quiz 02 Review", "Quiz 10 Review"],
+      )
+    })
   })
 
   describe("pathToNode", () => {

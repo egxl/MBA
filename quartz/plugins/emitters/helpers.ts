@@ -15,6 +15,20 @@ export const write = async ({ ctx, slug, ext, content }: WriteOptions): Promise<
   const pathToPage = joinSegments(ctx.argv.output, slug + ext) as FilePath
   const dir = path.dirname(pathToPage)
   await fs.promises.mkdir(dir, { recursive: true })
-  await fs.promises.writeFile(pathToPage, content)
+
+  let retries = 5
+  while (retries > 0) {
+    try {
+      await fs.promises.writeFile(pathToPage, content)
+      break
+    } catch (err) {
+      if ((err as any)?.code === "EPERM" && retries > 1) {
+        retries--
+        await new Promise((r) => setTimeout(r, 100))
+      } else {
+        throw err
+      }
+    }
+  }
   return pathToPage
 }

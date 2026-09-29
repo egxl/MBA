@@ -31,6 +31,7 @@ type NodeData = {
   id: SimpleSlug
   text: string
   tags: string[]
+  type?: string
 } & SimulationNodeDatum
 
 type SimpleLinkData = {
@@ -66,6 +67,154 @@ function addToVisited(slug: SimpleSlug) {
 type TweenNode = {
   update: (time: number) => void
   stop: () => void
+}
+
+const COURSE_COLORS: Record<string, string> = {
+  // Course codes & tags (normalized lowercase without '#')
+  mk1: "#D97736", // Warm Terracotta (Organizational Behavior)
+  ob601: "#D97736",
+  "organizational-behavior": "#D97736",
+
+  mk2: "#3B82A6", // Slate Teal / Deep Blue (Financial Management)
+  fin602: "#3B82A6",
+  "financial-management": "#3B82A6",
+  "corporate-finance": "#3B82A6",
+
+  mk3: "#D9534F", // Coral / Brick Red (Marketing Management)
+  mkt603: "#D9534F",
+  "marketing-management": "#D9534F",
+
+  mk4: "#C48827", // Warm Ochre / Amber (Operations & Supply Chain)
+  osc604: "#C48827",
+  "operations-supply-chain": "#C48827",
+
+  mk5: "#4D7C59", // Muted Olive / Forest (Decision Making & Negotiation)
+  dmn605: "#4D7C59",
+  mgt601: "#4D7C59",
+  "decision-making": "#4D7C59",
+  negotiation: "#4D7C59",
+
+  mk6: "#7C5295", // Editorial Violet / Plum (Business Analytics)
+  bna606: "#7C5295",
+  "business-analytics": "#7C5295",
+
+  bonus: "#3D9991", // Sage Teal (PeopleMath)
+  peoplemath: "#3D9991",
+  "workforce-analytics": "#3D9991",
+}
+
+const EDITORIAL_PALETTE = [
+  "#D97736", // Terracotta
+  "#3B82A6", // Slate Teal
+  "#4D7C59", // Olive Forest
+  "#C48827", // Ochre Amber
+  "#7C5295", // Plum Violet
+  "#D9534F", // Coral Brick
+  "#3D9991", // Sage Teal
+  "#8C5E48", // Cedar Wood
+  "#4A6B82", // Slate Gray
+  "#A65B32", // Burnt Amber
+]
+
+function getCourseColor(tag: string | null): string | null {
+  if (!tag) return null
+  const cleanTag = tag.replace(/^#/, "").toLowerCase()
+  if (COURSE_COLORS[cleanTag]) {
+    return COURSE_COLORS[cleanTag]
+  }
+  // Deterministic hash fallback for arbitrary course tags (e.g. #MGT601, #FIN701, etc.)
+  let hash = 0
+  for (let i = 0; i < cleanTag.length; i++) {
+    hash = (hash << 5) - hash + cleanTag.charCodeAt(i)
+    hash |= 0
+  }
+  return EDITORIAL_PALETTE[Math.abs(hash) % EDITORIAL_PALETTE.length]
+}
+
+function getPrimaryCourseTag(d: NodeData): string | null {
+  // If tag node: tags/MK1 -> MK1
+  if (d.id.startsWith("tags/")) {
+    return d.id.substring(5).replace(/^#/, "")
+  }
+
+  // 1. Look for explicit course tags matching course codes: MK1, MGT601, FIN602, etc.
+  const courseCodeRegex = /^(MK\d+|MGT\d+|FIN\d+|OB\d+|MKT\d+|OSC\d+|DMN\d+|BNA\d+|BONUS)/i
+  for (const tag of d.tags) {
+    const clean = tag.replace(/^#/, "")
+    if (courseCodeRegex.test(clean) || COURSE_COLORS[clean.toLowerCase()]) {
+      return clean
+    }
+  }
+
+  // 2. Infer from path or slug (e.g. courses/mk1-..., courses/mk2-...)
+  const slugLower = d.id.toLowerCase()
+  const match = slugLower.match(/courses\/(mk\d+|bonus)[^/]*/)
+  if (match) {
+    return match[1].toUpperCase()
+  }
+
+  // 3. Fallback to first tag if available
+  if (d.tags.length > 0) {
+    return d.tags[0].replace(/^#/, "")
+  }
+
+  return null
+}
+
+function getNodeCategory(
+  d: NodeData,
+): "course-root" | "lecture-hub" | "sub-note" | "tag" | "standard" {
+  if (d.id.startsWith("tags/")) return "tag"
+
+  const idLower = d.id.toLowerCase()
+  const textLower = d.text.toLowerCase()
+  const type = d.type?.toLowerCase()
+
+  // Course Overview / Syllabus root notes
+  if (
+    type === "course-overview" ||
+    (idLower.startsWith("courses/") &&
+      idLower.split("/").length === 2 &&
+      (idLower.endsWith("/index") || !idLower.includes("week-")))
+  ) {
+    return "course-root"
+  }
+
+  // Weekly Lecture Hubs (e.g. Week 01, Week 02, etc.)
+  if (
+    type === "weekly-lecture" ||
+    d.tags.some((t) => t.toLowerCase() === "weekly-lecture") ||
+    (idLower.includes("week-") &&
+      (idLower.endsWith("/index") ||
+        (!idLower.includes("case-") &&
+          !idLower.includes("quiz-") &&
+          !idLower.includes("framework-") &&
+          !idLower.includes("wacc-")))) ||
+    textLower.startsWith("week ")
+  ) {
+    return "lecture-hub"
+  }
+
+  // Sub-notes (case studies, quizzes, reading summaries, frameworks, calculation notes)
+  if (
+    type === "case-study" ||
+    type === "quiz-review" ||
+    type === "reading-summary" ||
+    type === "framework" ||
+    d.tags.some((t) =>
+      ["case-study", "quiz-review", "framework", "reading-summary", "quiz"].includes(
+        t.toLowerCase(),
+      ),
+    ) ||
+    idLower.includes("case-") ||
+    idLower.includes("quiz-") ||
+    idLower.includes("framework-") ||
+    idLower.includes("wacc-")
+  ) {
+    return "sub-note"
+  }
+
+  return "standard"
 }
 
 async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
@@ -144,11 +293,13 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   }
 
   const nodes = [...neighbourhood].map((url) => {
-    const text = url.startsWith("tags/") ? "#" + url.substring(5) : (data.get(url)?.title ?? url)
+    const detail = data.get(url)
+    const text = url.startsWith("tags/") ? "#" + url.substring(5) : (detail?.title ?? url)
     return {
       id: url,
       text,
-      tags: data.get(url)?.tags ?? [],
+      tags: detail?.tags ?? [],
+      type: detail?.type,
     }
   })
   const graphData: { nodes: NodeData[]; links: LinkData[] } = {
@@ -193,10 +344,15 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     {} as Record<(typeof cssVars)[number], string>,
   )
 
-  // calculate color
+  // calculate color mapped to primary course tag
   const color = (d: NodeData) => {
     const isCurrent = d.id === slug
-    if (isCurrent) {
+    const courseTag = getPrimaryCourseTag(d)
+    const courseColor = getCourseColor(courseTag)
+
+    if (courseColor) {
+      return courseColor
+    } else if (isCurrent) {
       return computedStyleMap["--secondary"]
     } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
       return computedStyleMap["--tertiary"]
@@ -205,11 +361,26 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     }
   }
 
+  // Differentiate weekly lecture hub notes from sub-notes using node radius
   function nodeRadius(d: NodeData) {
     const numLinks = graphData.links.filter(
       (l) => l.source.id === d.id || l.target.id === d.id,
     ).length
-    return 2 + Math.sqrt(numLinks)
+
+    const category = getNodeCategory(d)
+    switch (category) {
+      case "course-root":
+        return 7.5 + Math.sqrt(numLinks) * 1.5
+      case "lecture-hub":
+        return 6.0 + Math.sqrt(numLinks) * 1.2
+      case "sub-note":
+        return 3.0 + Math.sqrt(numLinks) * 0.7
+      case "tag":
+        return 3.5 + Math.sqrt(numLinks) * 0.6
+      case "standard":
+      default:
+        return 4.0 + Math.sqrt(numLinks)
+    }
   }
 
   let hoveredNodeId: string | null = null
@@ -391,15 +562,19 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
 
     let oldLabelOpacity = 0
     const isTagNode = nodeId.startsWith("tags/")
+    const isCurrent = nodeId === slug
+    const nodeCol = color(n)
+    const r = nodeRadius(n)
+
     const gfx = new Graphics({
       interactive: true,
       label: nodeId,
       eventMode: "static",
-      hitArea: new Circle(0, 0, nodeRadius(n)),
+      hitArea: new Circle(0, 0, r + 2),
       cursor: "pointer",
     })
-      .circle(0, 0, nodeRadius(n))
-      .fill({ color: isTagNode ? computedStyleMap["--light"] : color(n) })
+      .circle(0, 0, r)
+      .fill({ color: isTagNode ? computedStyleMap["--light"] : nodeCol })
       .on("pointerover", (e) => {
         updateHoverInfo(e.target.label)
         oldLabelOpacity = label.alpha
@@ -416,7 +591,9 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       })
 
     if (isTagNode) {
-      gfx.stroke({ width: 2, color: computedStyleMap["--tertiary"] })
+      gfx.stroke({ width: 2, color: nodeCol || computedStyleMap["--tertiary"] })
+    } else if (isCurrent) {
+      gfx.stroke({ width: 2.5, color: computedStyleMap["--dark"] })
     }
 
     nodesContainer.addChild(gfx)
@@ -426,7 +603,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       simulationData: n,
       gfx,
       label,
-      color: color(n),
+      color: nodeCol,
       alpha: 1,
       active: false,
     }
@@ -590,9 +767,22 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
     void renderLocalGraph()
   }
 
+  let graphResizeTimeout: any = null
+  const handleGraphResize = () => {
+    clearTimeout(graphResizeTimeout)
+    graphResizeTimeout = setTimeout(() => {
+      void renderLocalGraph()
+    }, 50)
+  }
+
   document.addEventListener("themechange", handleThemeChange)
+  document.addEventListener("sidebartoggle", handleGraphResize)
+  window.addEventListener("resize", handleGraphResize)
   window.addCleanup(() => {
     document.removeEventListener("themechange", handleThemeChange)
+    document.removeEventListener("sidebartoggle", handleGraphResize)
+    window.removeEventListener("resize", handleGraphResize)
+    clearTimeout(graphResizeTimeout)
   })
 
   const containers = [...document.getElementsByClassName("global-graph-outer")] as HTMLElement[]

@@ -4,6 +4,15 @@
 @use "./syntax.scss";
 @use "./callouts.scss";
 
+:root {
+  --left-sidebar-width: #{$sidePanelWidth};
+  --right-sidebar-width: 0px;
+}
+
+:root[data-sidebar-state="collapsed"] {
+  --left-sidebar-width: #{$collapsedSidebarWidth};
+}
+
 html {
   scroll-behavior: smooth;
   text-size-adjust: none;
@@ -160,8 +169,9 @@ a {
 }
 
 .page {
-  max-width: calc(#{map.get($breakpoints, desktop)} + 300px);
+  max-width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
   & article {
     & > h1 {
       font-size: 2rem;
@@ -195,6 +205,11 @@ a {
     column-gap: #{map.get($desktopGrid, columnGap)};
     row-gap: #{map.get($desktopGrid, rowGap)};
     grid-template-areas: #{map.get($desktopGrid, templateAreas)};
+    transition: grid-template-columns 0.25s ease;
+
+    &:has(.sidebar.right:not(:empty)) {
+      --right-sidebar-width: #{$sidePanelWidth};
+    }
 
     @media all and ($tablet) {
       grid-template-columns: #{map.get($tabletGrid, templateColumns)};
@@ -222,25 +237,139 @@ a {
       gap: 1.2rem;
       top: 0;
       box-sizing: border-box;
-      padding: $topSpacing 2rem 2rem 2rem;
       display: flex;
       height: 100vh;
       position: sticky;
     }
 
     & .sidebar.left {
-      z-index: 1;
+      z-index: 20;
       grid-area: grid-sidebar-left;
       flex-direction: column;
+      width: var(--left-sidebar-width, #{$sidePanelWidth});
+      min-width: var(--left-sidebar-width, #{$sidePanelWidth});
+      max-width: var(--left-sidebar-width, #{$sidePanelWidth});
+      box-sizing: border-box;
+      padding: 0;
+      gap: 0;
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      overflow: hidden;
+      border-right: 1px solid var(--lightgray);
+      transition:
+        width 0.25s ease,
+        min-width 0.25s ease,
+        max-width 0.25s ease;
+
       @media all and ($mobile) {
         gap: 0;
         align-items: center;
         position: initial;
         display: flex;
         height: unset;
+        width: 100%;
+        min-width: unset;
+        max-width: unset;
+        border-right: none;
         flex-direction: row;
         padding: 0;
         padding-top: 2rem;
+      }
+
+      .sidebar-toggle-btn {
+        position: absolute;
+        top: 1.25rem;
+        right: 0.75rem;
+        left: auto;
+        margin: 0;
+        z-index: 30;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 6px;
+        background: var(--lightgray);
+        border: 1px solid var(--lightgray);
+        color: var(--dark);
+        cursor: pointer;
+        padding: 0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+        transition:
+          background-color 0.15s ease,
+          color 0.15s ease,
+          border-color 0.15s ease,
+          transform 0.15s ease;
+
+        &:hover {
+          background-color: var(--secondary);
+          color: var(--light);
+          border-color: var(--secondary);
+          transform: scale(1.05);
+        }
+
+        &:focus-visible {
+          outline: 2px solid var(--secondary);
+          outline-offset: 2px;
+        }
+
+        .sidebar-toggle-icon {
+          width: 18px;
+          height: 18px;
+          stroke: currentColor;
+        }
+
+        @media all and ($mobile) {
+          display: none !important;
+        }
+      }
+
+      .sidebar-content {
+        flex: 1;
+        min-height: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 1.25rem 1.25rem 2rem 1.25rem;
+        box-sizing: border-box;
+        scrollbar-width: thin;
+        scrollbar-color: var(--lightgray) transparent;
+
+        .page-title {
+          padding-right: 2.25rem;
+        }
+
+        &::-webkit-scrollbar {
+          width: 5px;
+        }
+        &::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: var(--lightgray);
+          border-radius: 4px;
+        }
+
+        @media all and ($mobile) {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          overflow: visible;
+          height: unset;
+          padding: 0;
+          width: 100%;
+          gap: 0;
+        }
+      }
+
+      @media all and ($mobile) {
+        .graph,
+        .breadcrumb-container {
+          display: none !important;
+        }
       }
     }
 
@@ -248,6 +377,18 @@ a {
       grid-area: grid-sidebar-right;
       margin-right: 0;
       flex-direction: column;
+      padding: $topSpacing 2rem 2rem 2rem;
+
+      &:empty {
+        display: none !important;
+        width: 0 !important;
+        min-width: 0 !important;
+        max-width: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+      }
+
       @media all and ($mobile) {
         margin-left: inherit;
         margin-right: inherit;
@@ -267,6 +408,7 @@ a {
         }
       }
     }
+
     & .page-header,
     & .page-footer {
       margin-top: 1rem;
@@ -281,19 +423,29 @@ a {
       }
     }
 
-    & .center > article {
+    & .center {
       grid-area: grid-center;
+      max-width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
+      padding: 0 2rem;
+
+      @media all and ($mobile) {
+        padding: 0 1rem;
+      }
+
+      & > article {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
     }
 
     & footer {
       grid-area: grid-footer;
-    }
-
-    & .center,
-    & footer {
       max-width: 100%;
       min-width: 100%;
-      margin-left: auto;
+      margin-left: 0;
       margin-right: auto;
       @media all and ($tablet) {
         margin-right: 0;
@@ -303,8 +455,48 @@ a {
         margin-left: 0;
       }
     }
-    & footer {
-      margin-left: 0;
+  }
+}
+
+// Collapsed state modifier rules (desktop/tablet only)
+@media all and not ($mobile) {
+  :root[data-sidebar-state="collapsed"] {
+    #quartz-body .sidebar.left,
+    .sidebar.left {
+      .sidebar-toggle-btn {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: none;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      .sidebar-content {
+        display: none !important;
+      }
+    }
+
+    .sidebar-toggle-btn {
+      .icon-collapse {
+        display: none;
+      }
+      .icon-expand {
+        display: block;
+      }
+    }
+  }
+
+  :root:not([data-sidebar-state="collapsed"]) {
+    .sidebar-toggle-btn {
+      .icon-collapse {
+        display: block;
+      }
+      .icon-expand {
+        display: none;
+      }
     }
   }
 }
