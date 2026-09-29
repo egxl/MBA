@@ -73,7 +73,7 @@ PageTitle.css = `
 @media all and (max-width: 799px) {
   .page-title .site-logo {
     max-height: 38px;
-    max-width: 180px;
+    max-width: 145px;
   }
 }
 `

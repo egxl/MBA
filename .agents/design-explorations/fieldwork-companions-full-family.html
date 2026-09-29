@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fieldwork Companions — Full Family Review</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --paper: #f3efe5;
+        --ink: #172536;
+        --muted: #626b70;
+        --line: #c9c1b1;
+        --cream: #f5eddc;
+        --pale: #a9c9e8;
+        --warm: #e0a243;
+        --rust: #bd6847;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Georgia, "Times New Roman", serif;
+      }
+      main {
+        width: min(1380px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 42px 0 56px;
+      }
+      header {
+        display: grid;
+        grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
+        gap: 36px;
+        align-items: end;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--line);
+      }
+      .eyebrow,
+      .meta,
+      .tag,
+      .test-label,
+      button {
+        font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+      .eyebrow {
+        margin: 0 0 12px;
+        color: #315f98;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      h1 {
+        max-width: 850px;
+        margin: 0;
+        font-size: clamp(36px, 5vw, 66px);
+        font-weight: 500;
+        line-height: 0.98;
+        letter-spacing: -0.045em;
+      }
+      .intro,
+      .meaning,
+      .decision p {
+        margin: 0;
+        color: var(--muted);
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+      }
+      .intro {
+        font-size: 15px;
+      }
+      .rule {
+        display: inline-block;
+        margin-top: 14px;
+        padding: 5px 8px;
+        border: 1px solid var(--line);
+        border-radius: 3px;
+        font:
+          700 10px ui-monospace,
+          SFMono-Regular,
+          Consolas,
+          monospace;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+      .family {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 28px;
+      }
+      article {
+        min-width: 0;
+        padding: 12px;
+        border: 1px solid var(--line);
+        background: color-mix(in srgb, var(--paper) 86%, white);
+      }
+      .study-head {
+        min-height: 54px;
+        padding: 3px 2px 12px;
+      }
+      .tag {
+        display: block;
+        margin-bottom: 5px;
+        color: #315f98;
+        font-size: 8px;
+        font-weight: 700;
+      }
+      h2 {
+        margin: 0;
+        font-size: 19px;
+        font-weight: 500;
+      }
+      .course-card {
+        min-height: 250px;
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        border: 1px solid rgba(22, 25, 22, 0.18);
+        border-radius: 10px;
+        color: white;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
+      }
+      .mk1 {
+        background: #3f73ba;
+      }
+      .mk2 {
+        background: #5f7f39;
+      }
+      .mk3 {
+        background: #99620d;
+      }
+      .mk4 {
+        background: #835370;
+      }
+      .mk5 {
+        background: #c94f35;
+      }
+      .mk6 {
+        background: #bd4f70;
+      }
+      .bonus {
+        background: #674387;
+      }
+      .alp {
+        background: #565b50;
+      }
+      .card-title {
+        max-width: 16ch;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: clamp(21px, 1.8vw, 25px);
+        font-weight: 700;
+        line-height: 1.08;
+        letter-spacing: -0.02em;
+      }
+      .meta {
+        margin-top: 8px;
+        font-size: 10px;
+        font-weight: 700;
+      }
+      .art {
+        width: min(82%, 210px);
+        height: 130px;
+        align-self: center;
+      }
+      svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      .meaning {
+        min-height: 76px;
+        padding: 12px 2px 10px;
+        font-size: 12px;
+      }
+      .meaning strong {
+        color: var(--ink);
+      }
+      .tests {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 7px;
+        padding-top: 10px;
+        border-top: 1px solid var(--line);
+      }
+      .test-box {
+        position: relative;
+        min-height: 80px;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        background: #e7e1d6;
+      }
+      .test-box svg {
+        width: 106px;
+        height: 76px;
+      }
+      .test-box.mono svg {
+        filter: grayscale(1) contrast(1.2);
+      }
+      .test-box.color {
+        background: var(--course);
+      }
+      .test-label {
+        position: absolute;
+        top: 5px;
+        left: 6px;
+        z-index: 1;
+        color: #485158;
+        font-size: 7px;
+        font-weight: 700;
+      }
+      .test-box.color .test-label {
+        color: rgba(255, 255, 255, 0.82);
+      }
+      .legend {
+        display: grid;
+        grid-template-columns: 0.8fr 2.2fr;
+        gap: 26px;
+        margin-top: 28px;
+        padding: 23px 0;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+      h3 {
+        margin: 0 0 8px;
+        font-size: 21px;
+        font-weight: 500;
+      }
+      .legend ul {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 9px 22px;
+        list-style: none;
+        color: var(--muted);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 1.45;
+      }
+      .legend li::before {
+        content: "—";
+        margin-right: 7px;
+        color: #315f98;
+      }
+      .decision {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 24px;
+        padding-top: 24px;
+      }
+      .decision p {
+        font-size: 13px;
+      }
+      .actions {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1fr;
+        gap: 10px;
+      }
+      button {
+        min-height: 50px;
+        padding: 10px 12px;
+        border: 1px solid #7c776d;
+        border-radius: 3px;
+        background: transparent;
+        color: var(--ink);
+        cursor: pointer;
+        font-size: 9px;
+        font-weight: 700;
+      }
+      button.primary {
+        background: var(--ink);
+        color: var(--paper);
+      }
+      button:hover,
+      button:focus-visible {
+        background: #315f98;
+        color: white;
+      }
+      button:focus-visible {
+        outline: 3px solid var(--warm);
+        outline-offset: 2px;
+      }
+      @media (max-width: 1120px) {
+        .family {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .meaning {
+          min-height: 0;
+        }
+      }
+      @media (max-width: 720px) {
+        header,
+        .legend,
+        .decision {
+          grid-template-columns: 1fr;
+        }
+        .legend ul {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (max-width: 600px) {
+        main {
+          width: min(100% - 20px, 420px);
+          padding-top: 26px;
+        }
+        .family,
+        .legend ul,
+        .actions {
+          grid-template-columns: 1fr;
+        }
+        .course-card {
+          min-height: 250px;
+        }
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --paper: #1d201f;
+          --ink: #eee8dc;
+          --muted: #b7b1a7;
+          --line: #504d47;
+        }
+        article {
+          background: #242726;
+        }
+        .test-box {
+          background: #d9d4ca;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <svg width="0" height="0" aria-hidden="true" style="position: absolute">
+      <defs>
+        <symbol id="people" viewBox="0 0 200 150">
+          <g stroke="#172536" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 128h66M118 128h66" opacity=".62" />
+            <path d="M82 128l11-17 12 17" fill="none" opacity=".72" />
+            <path d="M32 117l4-35 23-8 18 25-11 25H42z" fill="#f5eddc" />
+            <path d="M39 81l-4-15 13-7 8 17" fill="#a9c9e8" />
+            <path d="M36 94l-15 8 7 8M64 91l16 6" fill="none" />
+            <circle cx="20" cy="102" r="4" fill="#e0a243" />
+            <path d="M77 112l7-47 27-5 18 38-16 29H89z" fill="#a9c9e8" />
+            <path d="M93 63l7-16 13 9-5 7" fill="#f5eddc" />
+            <path d="M91 80L77 97M115 77l16 15M99 111l-4 16M111 110l6 17" fill="none" />
+            <path d="M130 115l10-35 27 4 10 29-14 14h-21z" fill="#f5eddc" />
+            <path d="M146 83l5-15 13 9-2 7" fill="#e0a243" />
+            <path d="M143 96l-12-4M171 98l12-11 5 4" fill="none" />
+            <path d="M48 88l49-16 57 20-7 15-53-16-41 12z" fill="#e0a243" />
+          </g>
+        </symbol>
+        <symbol id="finance" viewBox="0 0 200 150">
+          <g stroke="#172536" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 128h164" opacity=".62" />
+            <path d="M65 119l12-61 45-8 18 57-18 20H79z" fill="#a9c9e8" />
+            <path d="M88 58l7-18 17 8-3 6" fill="#f5eddc" />
+            <path d="M79 79l-28-15M125 73l31-22" fill="none" />
+            <path d="M48 62l-15 9 19 10 12-10zM157 49l17 8-15 14-14-9z" fill="#f5eddc" />
+            <path d="M84 102l-18 10M124 96l18 11M67 112l-6 15M142 107l5 20" fill="none" />
+            <path d="M89 119h30l-7 9H95z" fill="#e0a243" />
+            <circle cx="39" cy="61" r="7" fill="#e0a243" />
+            <circle cx="164" cy="40" r="7" fill="#bd6847" />
+            <circle cx="177" cy="92" r="7" fill="#e0a243" />
+            <path d="M29 97h30v18H29zM150 101h34v16h-34z" fill="#f5eddc" />
+            <path d="M98 84l8 6-8 6" fill="none" />
+          </g>
+        </symbol>
+        <symbol id="marketing" viewBox="0 0 200 150">
+          <g stroke="#172536" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 128h166" opacity=".62" />
+            <path d="M31 115l8-51 43-11 27 28-13 42H49z" fill="#a9c9e8" />
+            <path d="M39 64L24 48l26-15 25 21" fill="#f5eddc" />
+            <path d="M53 42l10-14 18 13-8 10" fill="#e0a243" />
+            <path d="M87 78l25 3 18-10 13 13-14 12-17-7-23 8" fill="#f5eddc" />
+            <path d="M107 81l7-11 8 5-6 13z" fill="#e0a243" />
+            <path d="M55 119l-4 9M84 118l5 10" fill="none" />
+            <path d="M145 48h37v66h-37" fill="none" stroke-dasharray="4 6" opacity=".6" />
+            <path d="M145 57h16l8 8-8 8h-16M145 83h14l10 9-10 9h-14M145 110h18" fill="none" />
+            <path d="M129 84h16" fill="none" />
+            <circle cx="177" cy="110" r="4" fill="#e0a243" />
+          </g>
+        </symbol>
+        <symbol id="operations" viewBox="0 0 200 150">
+          <g stroke="#172536" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 128h171" opacity=".62" />
+            <path d="M133 45h39v83M133 45v83" fill="none" stroke-dasharray="4 6" opacity=".55" />
+            <path d="M33 109l10-35 31-7 20 26-12 27H47z" fill="#f5eddc" />
+            <path d="M47 72l4-16 16 7-2 6" fill="#a9c9e8" />
+            <path d="M39 91l-17 7 7 8M79 86l17 4" fill="none" />
+            <path d="M88 111l7-30 27-5 18 25-12 22H98z" fill="#a9c9e8" />
+            <path d="M104 78l7-15 14 10-3 5" fill="#f5eddc" />
+            <path d="M81 72l30 3 10 20-29 12-16-16z" fill="#e0a243" />
+            <path d="M145 79h21v21h-21z" fill="#bd6847" />
+            <path d="M140 91h5M166 91h17M176 84l8 7-8 7" fill="none" />
+          </g>
+        </symbol>
+        <symbol id="decisions" viewBox="0 0 200 150">
+          <g stroke="#172536" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 128h168" opacity=".62" />
+            <path d="M25 119l8-48 28-9 20 31-11 31H39z" fill="#f5eddc" />
+            <path d="M38 68l5-15 15 8-3 5" fill="#a9c9e8" />
+            <path d="M70 88l20-5" fill="none" />
+            <path d="M175 120l-6-39-27-11-22 28 12 27h31z" fill="#a9c9e8" />
+            <path d="M160 78l-2-16-15 6 1 6" fill="#f5eddc" />
+            <path d="M132 91l-21-6" fill="none" />
+            <path d="M78 80h44v18H78z" fill="#f5eddc" />
+            <path d="M87 76v26M100 76v26M113 76v26" fill="none" opacity=".45" />
+            <path d="M92 74h28v30H92z" fill="#e0a243" />
+            <path d="M97 89h18" fill="none" />
+            <path d="M45 122l-4 6M65 121l4 7M137 122l-3 6M158 121l5 7" fill="none" />
+            <path d="M85 64l8-7M105 58l8 7" fill="none" stroke-dasharray="2 5" />
+          </g>
+        </symbol>
+        <symbol id="analytics" viewBox="0 0 200 150">
+          <g stroke="#172536" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 128h164" opacity=".62" />
+            <path d="M73 119l12-60 39-5 19 52-16 20H86z" fill="#a9c9e8" />
+            <path d="M96 57l5-17 16 7-2 8" fill="#f5eddc" />
+            <path d="M83 75L55 62 36 73l25 16 20 2" fill="#f5eddc" />
+            <path d="M39 73l-16 2 14 11" fill="none" />
+            <path d="M124 73l19-14 19 10-12 18-20 5" fill="#f5eddc" />
+            <circle cx="105" cy="88" r="19" fill="#f5eddc" />
+            <path d="M93 88c6-8 18-8 24 0-6 8-18 8-24 0z" fill="#e0a243" />
+            <path d="M107 107v18M92 111l-8 16M123 109l9 18" fill="none" />
+            <path d="M151 87v28h25V87z" fill="#f5eddc" />
+            <path d="M157 96h13M157 104h8" fill="none" />
+            <path d="M163 84l7-9 8 8-7 8z" fill="#e0a243" />
+            <path d="M143 59l7-12" fill="none" />
+          </g>
+        </symbol>
+        <symbol id="peoplemath" viewBox="0 0 200 150">
+          <g stroke="#172536" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 128h164" opacity=".62" />
+            <path d="M72 120V48h56v72" fill="none" stroke-width="8" />
+            <path d="M78 108h44M78 91h44M78 74h44M78 57h44" fill="none" opacity=".55" />
+            <path d="M65 121l-10-18 17-10M135 121l10-18-17-10" fill="#f5eddc" />
+            <path d="M72 62L49 48 35 59M128 62l23-14 14 11" fill="none" stroke-width="7" />
+            <path d="M72 82L45 78 31 89M128 82l27-4 14 11" fill="none" stroke-width="7" />
+            <path d="M72 103l-24 10M128 103l24 10" fill="none" stroke-width="7" />
+            <path d="M88 80h24v28H88z" fill="#e0a243" />
+            <path d="M82 77l6 3-6 3M118 77l-6 3 6 3" fill="#f5eddc" />
+            <path d="M89 47l11-13 11 13" fill="#a9c9e8" />
+            <path d="M94 121l-3 7M106 121l3 7" fill="none" />
+          </g>
+        </symbol>
+        <symbol id="alp" viewBox="0 0 200 150">
+          <g stroke="#172536" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 128h168" opacity=".62" />
+            <path d="M31 117l8-48 31-10 23 29-14 34H46z" fill="#f5eddc" />
+            <path d="M47 66l7-18 17 8-4 7" fill="#a9c9e8" />
+            <path d="M52 120l-4 8M74 118l8 10" fill="none" />
+            <path d="M76 83l22 10 12-5" fill="none" />
+            <path d="M92 96h19l10-12 13 12h41l-6 23h-48l-11-10-13 10H81z" fill="#a9c9e8" />
+            <path d="M113 91l10-12 15 14-12 17-16-8z" fill="#e0a243" />
+            <path d="M101 90l7-20 12 5-5 15" fill="#f5eddc" />
+            <path d="M143 96v17M158 96v17" fill="none" stroke-dasharray="3 5" />
+            <path d="M169 88v31" fill="none" opacity=".55" />
+            <path d="M22 76h18M28 68v16" fill="none" opacity=".55" />
+            <path d="M133 119l5 9M158 119l4 9" fill="none" />
+          </g>
+        </symbol>
+      </defs>
+    </svg>
+
+    <main>
+      <header>
+        <div>
+          <p class="eyebrow">Approved direction A · Full family review</p>
+          <h1>Eight fieldwork companions. Eight ways of doing the work.</h1>
+        </div>
+        <div>
+          <p class="intro">
+            The complete family uses shared construction rather than one repeated mascot body. Every
+            silhouette is organized around a course-specific action and remains readable without
+            faces, labels, or animation.
+          </p>
+          <span class="rule">200 × 150 · 3-unit ink · one warm focal action</span>
+        </div>
+      </header>
+      <section class="family" aria-label="Eight Fieldwork Companions">
+        <article style="--course: #3f73ba">
+          <div class="study-head">
+            <span class="tag">Coordination</span>
+            <h2>The Convenors</h2>
+          </div>
+          <div class="course-card mk1">
+            <div>
+              <div class="card-title">The People &amp; Teams</div>
+              <div class="meta">MK 001</div>
+            </div>
+            <div class="art">
+              <svg role="img" aria-label="Three companions coordinate a shared beam">
+                <use href="#people" />
+              </svg>
+            </div>
+          </div>
+          <p class="meaning">
+            <strong>Stabilize together.</strong> An anchor, guide, and receiver carry one outcome
+            across a boundary.
+          </p>
+          <div class="tests">
+            <div class="test-box mono">
+              <span class="test-label">Mono</span><svg><use href="#people" /></svg>
+            </div>
+            <div class="test-box color">
+              <span class="test-label">Mobile</span><svg><use href="#people" /></svg>
+            </div>
+          </div>
+        </article>
+        <article style="--course: #5f7f39">
+          <div class="study-head">
+            <span class="tag">Allocation</span>
+            <h2>The Allocator</h2>
+          </div>
+          <div class="course-card mk2">
+            <div>
+              <div class="card-title">Financial Strategy</div>
+              <div class="meta">MK 002</div>
+            </div>
+            <div class="art">
+              <svg role="img" aria-label="A braced companion routes finite tokens">
+                <use href="#finance" />
+              </svg>
+            </div>
+          </div>
+          <p class="meaning">
+            <strong>Commit deliberately.</strong> A braced frame routes finite resources among
+            competing positions and a reserve.
+          </p>
+          <div class="tests">
+            <div class="test-box mono">
+              <span class="test-label">Mono</span><svg><use href="#finance" /></svg>
+            </div>
+            <div class="test-box color">
+              <span class="test-label">Mobile</span><svg><use href="#finance" /></svg>
+            </div>
+          </div>
+        </article>
+        <article style="--course: #99620d">
+          <div class="study-head">
+            <span class="tag">Listening · Fit</span>
+            <h2>The Listener</h2>
+          </div>
+          <div class="course-card mk3">
+            <div>
+              <div class="card-title">Marketing &amp; Value</div>
+              <div class="meta">MK 003</div>
+            </div>
+            <div class="art">
+              <svg
+                role="img"
+                aria-label="A sensing companion fits an offer to a selected customer aperture"
+              >
+                <use href="#marketing" />
+              </svg>
+            </div>
+          </div>
+          <p class="meaning">
+            <strong>Sense before offering.</strong> A four-faceted tool tests fit against distinct
+            customer apertures.
+          </p>
+          <div class="tests">
+            <div class="test-box mono">
+              <span class="test-label">Mono</span><svg><use href="#marketing" /></svg>
+            </div>
+            <div class="test-box color">
+              <span class="test-label">Mobile</span><svg><use href="#marketing" /></svg>
+            </div>
+          </div>
+        </article>
+        <article style="--course: #835370">
+          <div class="study-head">
+            <span class="tag">Flow · Capacity</span>
+            <h2>The Relay</h2>
+          </div>
+          <div class="course-card mk4">
+            <div>
+              <div class="card-title">Operations &amp; SCM</div>
+              <div class="meta">MK 004</div>
+            </div>
+            <div class="art">
+              <svg role="img" aria-label="Two carriers relay a module through a capacity gate">
+                <use href="#operations" />
+              </svg>
+            </div>
+          </div>
+          <p class="meaning">
+            <strong>Make handoffs visible.</strong> Linked carriers transfer a module through a
+            constrained gate.
+          </p>
+          <div class="tests">
+            <div class="test-box mono">
+              <span class="test-label">Mono</span><svg><use href="#operations" /></svg>
+            </div>
+            <div class="test-box color">
+              <span class="test-label">Mobile</span><svg><use href="#operations" /></svg>
+            </div>
+          </div>
+        </article>
+        <article style="--course: #c94f35">
+          <div class="study-head">
+            <span class="tag">Options · Agreement</span>
+            <h2>The Mediators</h2>
+          </div>
+          <div class="course-card mk5">
+            <div>
+              <div class="card-title">Decisions &amp; Negotiation</div>
+              <div class="meta">MK 005</div>
+            </div>
+            <div class="art">
+              <svg role="img" aria-label="Two unequal companions extend a joint bargaining rail">
+                <use href="#decisions" />
+              </svg>
+            </div>
+          </div>
+          <p class="meaning">
+            <strong>Create workable span.</strong> Unequal counterparts reposition a warm sleeve
+            across scenario notches.
+          </p>
+          <div class="tests">
+            <div class="test-box mono">
+              <span class="test-label">Mono</span><svg><use href="#decisions" /></svg>
+            </div>
+            <div class="test-box color">
+              <span class="test-label">Mobile</span><svg><use href="#decisions" /></svg>
+            </div>
+          </div>
+        </article>
+        <article style="--course: #bd4f70">
+          <div class="study-head">
+            <span class="tag">Evidence · Action</span>
+            <h2>The Investigator</h2>
+          </div>
+          <div class="course-card mk6">
+            <div>
+              <div class="card-title">Business Analytics</div>
+              <div class="meta">MK 006</div>
+            </div>
+            <div class="art">
+              <svg
+                role="img"
+                aria-label="A tripod instrument calibrates evidence into an action setting"
+              >
+                <use href="#analytics" />
+              </svg>
+            </div>
+          </div>
+          <p class="meaning">
+            <strong>Observe, model, choose.</strong> A stable instrument turns sealed evidence into
+            a governed action setting.
+          </p>
+          <div class="tests">
+            <div class="test-box mono">
+              <span class="test-label">Mono</span><svg><use href="#analytics" /></svg>
+            </div>
+            <div class="test-box color">
+              <span class="test-label">Mobile</span><svg><use href="#analytics" /></svg>
+            </div>
+          </div>
+        </article>
+        <article style="--course: #674387">
+          <div class="study-head">
+            <span class="tag">Structure · Retention</span>
+            <h2>The Modeler</h2>
+          </div>
+          <div class="course-card bonus">
+            <div>
+              <div class="card-title">Bonus: PeopleMath</div>
+              <div class="meta">Elective 001</div>
+            </div>
+            <div class="art">
+              <svg
+                role="img"
+                aria-label="A tiered companion measures and retunes a structure around a retained core"
+              >
+                <use href="#peoplemath" />
+              </svg>
+            </div>
+          </div>
+          <p class="meaning">
+            <strong>Measure the organization.</strong> Layers, span, density, and a retained core
+            become one structural model.
+          </p>
+          <div class="tests">
+            <div class="test-box mono">
+              <span class="test-label">Mono</span><svg><use href="#peoplemath" /></svg>
+            </div>
+            <div class="test-box color">
+              <span class="test-label">Mobile</span><svg><use href="#peoplemath" /></svg>
+            </div>
+          </div>
+        </article>
+        <article style="--course: #565b50">
+          <div class="study-head">
+            <span class="tag">Diagnosis · Build</span>
+            <h2>The Builder</h2>
+          </div>
+          <div class="course-card alp">
+            <div>
+              <div class="card-title">Action Learning (ALP)</div>
+              <div class="meta">BUMN Capstone</div>
+            </div>
+            <div class="art">
+              <svg
+                role="img"
+                aria-label="A grounded builder fits a measured splice into an irregular field beam"
+              >
+                <use href="#alp" />
+              </svg>
+            </div>
+          </div>
+          <p class="meaning">
+            <strong>Fit the intervention.</strong> A grounded builder measures a field condition and
+            seats a repair through gates.
+          </p>
+          <div class="tests">
+            <div class="test-box mono">
+              <span class="test-label">Mono</span><svg><use href="#alp" /></svg>
+            </div>
+            <div class="test-box color">
+              <span class="test-label">Mobile</span><svg><use href="#alp" /></svg>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="legend">
+        <div>
+          <h3>Family grammar</h3>
+          <p class="intro">Shared visual rules; no repeated mascot template.</p>
+        </div>
+        <ul>
+          <li>Faceless posture carries expression</li>
+          <li>Heavy navy construction lines</li>
+          <li>Cream and pale-blue working bodies</li>
+          <li>Warm color marks the active choice</li>
+          <li>One dominant action per course</li>
+          <li>Distinct silhouettes survive monochrome</li>
+        </ul>
+      </section>
+      <section class="decision">
+        <div>
+          <h3>Full-family gate</h3>
+          <p>
+            Approval authorizes asset extraction and homepage integration. Production files remain
+            unchanged until this gate is approved.
+          </p>
+        </div>
+        <div class="actions">
+          <button
+            class="primary"
+            data-hermes-send="Approve the full Fieldwork Companions family. Extract the eight illustrations into individual named SVG assets, integrate them into the homepage, and run the full required validation and visual checks."
+          >
+            Approve full family</button
+          ><button
+            data-hermes-send="Keep Direction A but revise one or more companions before production. Ask me which companions and what should change."
+          >
+            Request revisions</button
+          ><button
+            data-hermes-send="Show me the full Fieldwork Companions family on a closer simulation of the actual desktop and mobile homepage before production integration."
+          >
+            Preview in homepage context
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

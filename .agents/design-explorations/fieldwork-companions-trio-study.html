@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fieldwork Companions — Three-Course Family Test</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --paper: #f3efe5;
+        --panel: #f8f4ea;
+        --ink: #172536;
+        --muted: #626b70;
+        --line: #c9c1b1;
+        --cream: #f5eddc;
+        --blue: #a9c9e8;
+        --warm: #e0a243;
+        --rust: #bd6847;
+        --mk1: #3f73ba;
+        --mk2: #5f7f39;
+        --mk4: #835370;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Georgia, "Times New Roman", serif;
+      }
+
+      main {
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 42px 0 56px;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: minmax(0, 1.25fr) minmax(270px, 0.75fr);
+        gap: 36px;
+        align-items: end;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .eyebrow,
+      .meta,
+      .tag,
+      .test-label,
+      button {
+        font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        color: #315f98;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 0;
+        max-width: 780px;
+        font-size: clamp(34px, 5.2vw, 64px);
+        font-weight: 500;
+        line-height: 0.98;
+        letter-spacing: -0.045em;
+      }
+
+      .intro,
+      .rationale,
+      .decision p {
+        margin: 0;
+        color: var(--muted);
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.55;
+      }
+
+      .intro {
+        font-size: 15px;
+      }
+
+      .rule {
+        display: inline-block;
+        margin-top: 14px;
+        padding: 5px 8px;
+        border: 1px solid var(--line);
+        border-radius: 3px;
+        font:
+          700 10px ui-monospace,
+          SFMono-Regular,
+          Consolas,
+          monospace;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .family {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+
+      article {
+        min-width: 0;
+        padding: 14px;
+        border: 1px solid var(--line);
+        background: color-mix(in srgb, var(--paper) 86%, white);
+      }
+
+      .study-head {
+        min-height: 53px;
+        padding: 3px 2px 13px;
+      }
+
+      .tag {
+        display: block;
+        margin-bottom: 5px;
+        color: #315f98;
+        font-size: 9px;
+        font-weight: 700;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .course-card {
+        min-height: 250px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        border: 1px solid rgba(22, 25, 22, 0.18);
+        border-radius: 10px;
+        color: white;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
+      }
+
+      .mk1 {
+        background: var(--mk1);
+      }
+      .mk2 {
+        background: var(--mk2);
+      }
+      .mk4 {
+        background: var(--mk4);
+      }
+
+      .card-title {
+        max-width: 16ch;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+      }
+
+      .meta {
+        margin-top: 8px;
+        font-size: 11px;
+        font-weight: 700;
+      }
+
+      .art {
+        width: min(75%, 210px);
+        height: 130px;
+        align-self: center;
+      }
+
+      svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      .rationale {
+        min-height: 116px;
+        padding: 14px 2px 12px;
+        font-size: 13px;
+      }
+
+      .rationale strong {
+        color: var(--ink);
+      }
+
+      .tests {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        padding-top: 12px;
+        border-top: 1px solid var(--line);
+      }
+
+      .test-box {
+        position: relative;
+        min-height: 100px;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        background: #e7e1d6;
+      }
+
+      .test-box.color-mk1 {
+        background: var(--mk1);
+      }
+      .test-box.color-mk2 {
+        background: var(--mk2);
+      }
+      .test-box.color-mk4 {
+        background: var(--mk4);
+      }
+      .test-box svg {
+        width: 118px;
+        height: 88px;
+      }
+      .test-box.mono svg {
+        filter: grayscale(1) contrast(1.2);
+      }
+
+      .test-label {
+        position: absolute;
+        top: 6px;
+        left: 7px;
+        color: #485158;
+        font-size: 8px;
+        font-weight: 700;
+      }
+
+      .test-box[class*="color-"] .test-label {
+        color: rgba(255, 255, 255, 0.82);
+      }
+
+      .grammar {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 24px;
+        margin-top: 28px;
+        padding: 24px 0;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+
+      h3 {
+        margin: 0 0 8px;
+        font-size: 21px;
+        font-weight: 500;
+      }
+
+      .grammar ul {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 9px 22px;
+        list-style: none;
+        color: var(--muted);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        line-height: 1.45;
+      }
+
+      .grammar li::before {
+        content: "—";
+        margin-right: 7px;
+        color: #315f98;
+      }
+
+      .decision {
+        display: grid;
+        grid-template-columns: 1.1fr 1.9fr;
+        gap: 24px;
+        padding-top: 24px;
+      }
+
+      .decision p {
+        font-size: 13px;
+      }
+
+      .actions {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1fr;
+        gap: 10px;
+      }
+
+      button {
+        min-height: 50px;
+        padding: 10px 12px;
+        border: 1px solid #7c776d;
+        border-radius: 3px;
+        background: transparent;
+        color: var(--ink);
+        cursor: pointer;
+        font-size: 9px;
+        font-weight: 700;
+      }
+
+      button.primary {
+        background: var(--ink);
+        color: var(--paper);
+      }
+      button:hover,
+      button:focus-visible {
+        background: #315f98;
+        color: white;
+      }
+      button:focus-visible {
+        outline: 3px solid var(--warm);
+        outline-offset: 2px;
+      }
+
+      @media (max-width: 900px) {
+        header,
+        .grammar,
+        .decision {
+          grid-template-columns: 1fr;
+        }
+        .family {
+          grid-template-columns: 1fr;
+        }
+        article {
+          display: grid;
+          grid-template-columns: minmax(280px, 0.9fr) 1fr;
+          gap: 18px;
+        }
+        .study-head {
+          grid-column: 1 / -1;
+        }
+        .rationale {
+          padding-top: 0;
+        }
+      }
+
+      @media (max-width: 620px) {
+        main {
+          width: min(100% - 20px, 420px);
+          padding-top: 26px;
+        }
+        article,
+        .grammar ul,
+        .actions {
+          grid-template-columns: 1fr;
+        }
+        .course-card {
+          min-height: 250px;
+        }
+        .rationale {
+          min-height: 0;
+          padding-top: 0;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --paper: #1d201f;
+          --panel: #242726;
+          --ink: #eee8dc;
+          --muted: #b7b1a7;
+          --line: #504d47;
+        }
+        article {
+          background: #242726;
+        }
+        .test-box {
+          background: #d9d4ca;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <svg width="0" height="0" aria-hidden="true" style="position: absolute">
+      <defs>
+        <symbol id="companion-people" viewBox="0 0 200 150">
+          <g stroke="#172536" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 128h66M118 128h66" opacity=".62" />
+            <path d="M82 128l11-17 12 17" fill="none" opacity=".72" />
+            <path d="M32 117l4-35 23-8 18 25-11 25H42z" fill="#f5eddc" />
+            <path d="M39 81l-4-15 13-7 8 17" fill="#a9c9e8" />
+            <path d="M36 94l-15 8 7 8M64 91l16 6" fill="none" />
+            <circle cx="20" cy="102" r="4" fill="#e0a243" />
+            <path d="M77 112l7-47 27-5 18 38-16 29H89z" fill="#a9c9e8" />
+            <path d="M93 63l7-16 13 9-5 7" fill="#f5eddc" />
+            <path d="M91 80L77 97M115 77l16 15M99 111l-4 16M111 110l6 17" fill="none" />
+            <path d="M130 115l10-35 27 4 10 29-14 14h-21z" fill="#f5eddc" />
+            <path d="M146 83l5-15 13 9-2 7" fill="#e0a243" />
+            <path d="M143 96l-12-4M171 98l12-11 5 4" fill="none" />
+            <path d="M48 88l49-16 57 20-7 15-53-16-41 12z" fill="#e0a243" />
+            <path d="M68 94l4 13M126 89l-5 13" fill="none" />
+          </g>
+        </symbol>
+
+        <symbol id="companion-finance" viewBox="0 0 200 150">
+          <g stroke="#172536" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 128h164" opacity=".62" />
+            <path d="M65 119l12-61 45-8 18 57-18 20H79z" fill="#a9c9e8" />
+            <path d="M88 58l7-18 17 8-3 6" fill="#f5eddc" />
+            <path d="M79 79l-28-15M125 73l31-22" fill="none" />
+            <path d="M48 62l-15 9 19 10 12-10z" fill="#f5eddc" />
+            <path d="M157 49l17 8-15 14-14-9z" fill="#f5eddc" />
+            <path d="M84 102l-18 10M124 96l18 11" fill="none" />
+            <path d="M67 112l-6 15M142 107l5 20" fill="none" />
+            <path d="M89 119h30l-7 9H95z" fill="#e0a243" />
+            <circle cx="39" cy="61" r="7" fill="#e0a243" />
+            <circle cx="164" cy="40" r="7" fill="#bd6847" />
+            <circle cx="177" cy="92" r="7" fill="#e0a243" />
+            <path
+              d="M164 70l13 22M159 71l-18 36"
+              fill="none"
+              stroke-dasharray="3 6"
+              opacity=".65"
+            />
+            <path d="M29 97h30v18H29z" fill="#f5eddc" />
+            <path d="M150 101h34v16h-34z" fill="#f5eddc" />
+            <path d="M39 79v18M177 99v-7" fill="none" />
+            <path d="M98 84l8 6-8 6" fill="none" />
+          </g>
+        </symbol>
+
+        <symbol id="companion-operations" viewBox="0 0 200 150">
+          <g stroke="#172536" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 128h171" opacity=".62" />
+            <path d="M133 45h39v83M133 45v83" fill="none" stroke-dasharray="4 6" opacity=".55" />
+            <path d="M141 91h25" fill="none" />
+            <path d="M33 109l10-35 31-7 20 26-12 27H47z" fill="#f5eddc" />
+            <path d="M47 72l4-16 16 7-2 6" fill="#a9c9e8" />
+            <path d="M39 91l-17 7 7 8M79 86l17 4" fill="none" />
+            <path d="M88 111l7-30 27-5 18 25-12 22H98z" fill="#a9c9e8" />
+            <path d="M104 78l7-15 14 10-3 5" fill="#f5eddc" />
+            <path d="M98 93l-15-2M132 94l12-3" fill="none" />
+            <path d="M47 120l-3 8M76 118l5 10M101 122l-2 6M125 122l4 6" fill="none" />
+            <path d="M81 72l30 3 10 20-29 12-16-16z" fill="#e0a243" />
+            <path d="M101 73l4 27M82 91l23 9 16-5" fill="none" />
+            <path d="M145 79h21v21h-21z" fill="#bd6847" />
+            <path d="M140 91h5M166 91h17" fill="none" />
+            <path d="M176 84l8 7-8 7" fill="none" />
+            <circle cx="29" cy="114" r="4" fill="#e0a243" />
+            <circle cx="177" cy="115" r="4" fill="#e0a243" />
+          </g>
+        </symbol>
+      </defs>
+    </svg>
+
+    <main>
+      <header>
+        <div>
+          <p class="eyebrow">Chosen direction A · Family test</p>
+          <h1>Fieldwork companions earn their roles through action.</h1>
+        </div>
+        <div>
+          <p class="intro">
+            Three non-facial, tool-bearing forms test whether one construction language can express
+            collaboration, allocation, and flow without becoming a set of recolored mascots.
+          </p>
+          <span class="rule">Shared grammar · Different anatomy · One dominant action</span>
+        </div>
+      </header>
+
+      <section class="family" aria-label="Three-course companion family">
+        <article>
+          <div class="study-head">
+            <span class="tag">Coordination · Interdependence</span>
+            <h2>The Convenors</h2>
+          </div>
+          <div class="course-card mk1">
+            <div>
+              <div class="card-title">The People &amp; Teams</div>
+              <div class="meta">MK 001</div>
+            </div>
+            <div class="art">
+              <svg
+                role="img"
+                aria-label="Three differently built companions coordinate a shared beam across a gap"
+              >
+                <use href="#companion-people" />
+              </svg>
+            </div>
+          </div>
+          <p class="rationale">
+            <strong>Three bodies, one outcome.</strong> An anchor, guide, and receiver stabilize a
+            shared beam across a boundary. No figure occupies a command position.
+          </p>
+          <div class="tests">
+            <div class="test-box mono">
+              <span class="test-label">Monochrome</span
+              ><svg aria-hidden="true"><use href="#companion-people" /></svg>
+            </div>
+            <div class="test-box color-mk1">
+              <span class="test-label">Mobile size</span
+              ><svg aria-hidden="true"><use href="#companion-people" /></svg>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="study-head">
+            <span class="tag">Allocation · Trade-offs</span>
+            <h2>The Allocator</h2>
+          </div>
+          <div class="course-card mk2">
+            <div>
+              <div class="card-title">Financial Strategy</div>
+              <div class="meta">MK 002</div>
+            </div>
+            <div class="art">
+              <svg
+                role="img"
+                aria-label="A braced companion directs finite resource tokens among investment, liquidity, and reserve positions"
+              >
+                <use href="#companion-finance" />
+              </svg>
+            </div>
+          </div>
+          <p class="rationale">
+            <strong>Finite resources, visible commitments.</strong> A braced frame routes three
+            tokens between competing positions while retaining a reserve—allocation rather than
+            generic growth.
+          </p>
+          <div class="tests">
+            <div class="test-box mono">
+              <span class="test-label">Monochrome</span
+              ><svg aria-hidden="true"><use href="#companion-finance" /></svg>
+            </div>
+            <div class="test-box color-mk2">
+              <span class="test-label">Mobile size</span
+              ><svg aria-hidden="true"><use href="#companion-finance" /></svg>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="study-head">
+            <span class="tag">Flow · Capacity</span>
+            <h2>The Relay</h2>
+          </div>
+          <div class="course-card mk4">
+            <div>
+              <div class="card-title">Operations &amp; SCM</div>
+              <div class="meta">MK 004</div>
+            </div>
+            <div class="art">
+              <svg
+                role="img"
+                aria-label="Two linked carrier companions relay a module through a constrained gate"
+              >
+                <use href="#companion-operations" />
+              </svg>
+            </div>
+          </div>
+          <p class="rationale">
+            <strong>Handoffs shape throughput.</strong> Two low carriers transfer a module through a
+            capacity gate. The constrained passage—not a delivery icon—makes process visible.
+          </p>
+          <div class="tests">
+            <div class="test-box mono">
+              <span class="test-label">Monochrome</span
+              ><svg aria-hidden="true"><use href="#companion-operations" /></svg>
+            </div>
+            <div class="test-box color-mk4">
+              <span class="test-label">Mobile size</span
+              ><svg aria-hidden="true"><use href="#companion-operations" /></svg>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="grammar">
+        <div>
+          <h3>Family grammar</h3>
+          <p class="intro">Consistency comes from construction, not identical bodies.</p>
+        </div>
+        <ul>
+          <li>Faceless posture and action carry expression</li>
+          <li>Heavy 3-unit navy construction lines</li>
+          <li>Cream and pale-blue working bodies</li>
+          <li>Warm color marks the active decision or object</li>
+          <li>Course action changes the silhouette</li>
+          <li>Small props remain structural, never decorative</li>
+        </ul>
+      </section>
+
+      <section class="decision">
+        <div>
+          <h3>Does the trio hold together?</h3>
+          <p>
+            Approval means developing the remaining five companions in this language before
+            production integration. Revision keeps this trio in exploration.
+          </p>
+        </div>
+        <div class="actions">
+          <button
+            class="primary"
+            data-hermes-send="Approve the Fieldwork Companions trio. Develop the remaining five course characters in this language, still without replacing production SVGs until the full family is reviewed."
+          >
+            Approve direction A
+          </button>
+          <button
+            data-hermes-send="Keep direction A, but revise the People & Teams companion before continuing. Ask me what should change."
+          >
+            Revise People &amp; Teams
+          </button>
+          <button
+            data-hermes-send="Keep direction A, but revise the Financial Strategy or Operations & SCM companion before continuing. Ask me which one and what should change."
+          >
+            Revise Finance / Operations
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

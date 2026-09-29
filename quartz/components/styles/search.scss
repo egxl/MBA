@@ -4,7 +4,9 @@
   min-width: fit-content;
   max-width: 14rem;
   @media all and ($mobile) {
-    flex-grow: 0.3;
+    min-width: 2.5rem;
+    max-width: 2.5rem;
+    flex: 0 0 2.5rem;
   }
 
   & > .search-button {
@@ -237,6 +239,22 @@
           }
         }
       }
+    }
+  }
+}
+
+@media all and ($mobile) {
+  .search > .search-button {
+    width: 2.5rem;
+    padding: 0;
+    justify-content: center;
+
+    > p {
+      display: none;
+    }
+
+    svg {
+      margin: 0;
     }
   }
 }

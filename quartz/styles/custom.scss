@@ -647,14 +647,21 @@ article {
 }
 
 /* ==========================================================================
-   Socratica-Style Editorial Landing Page
+   P3MD Editorial Course Library
    ========================================================================== */
 
 body[data-slug="index"] {
-  background-color: #faf7ee !important;
+  --portal-paper: #f6f1e7;
+  --portal-grid: rgba(84, 77, 65, 0.12);
+  --portal-ink: #242720;
+  --portal-muted: #696b61;
+  --portal-rule: rgba(52, 58, 48, 0.2);
+  --portal-focus: #f5cf52;
+
+  background-color: var(--portal-paper) !important;
   background-image:
-    linear-gradient(to right, rgba(195, 185, 165, 0.32) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(195, 185, 165, 0.32) 1px, transparent 1px) !important;
+    linear-gradient(to right, var(--portal-grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--portal-grid) 1px, transparent 1px) !important;
   background-size: 28px 28px !important;
 
   .sidebar.right {
@@ -670,9 +677,11 @@ body[data-slug="index"] {
   }
 
   .center {
-    max-width: 1200px !important;
+    max-width: 1180px !important;
     width: 100% !important;
-    padding: 1.5rem 1.5rem 5rem 1.5rem !important;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: clamp(1.5rem, 3vw, 3rem) clamp(1rem, 2.5vw, 2rem) 5rem !important;
     background: transparent !important;
   }
 
@@ -680,245 +689,343 @@ body[data-slug="index"] {
     max-width: 100% !important;
     background: transparent !important;
   }
+
+  article > hr {
+    border: 0;
+    border-top: 1px solid var(--portal-rule);
+    margin: 4rem 0 2.25rem;
+  }
 }
 
 :root[saved-theme="dark"] body[data-slug="index"] {
-  background-color: #171b18 !important;
-  background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px) !important;
-  background-size: 28px 28px !important;
+  --portal-paper: #171c19;
+  --portal-grid: rgba(255, 255, 255, 0.055);
+  --portal-ink: #f0ede5;
+  --portal-muted: #aaa99f;
+  --portal-rule: rgba(232, 233, 224, 0.17);
+  --portal-focus: #f7d45d;
 }
 
-/* Top Running Marquee Tape (Content-level banner) */
-.socratica-marquee-wrap {
-  position: relative;
-  width: 100%;
-  height: 32px;
-  background: #000000;
-  color: #ffffff;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  white-space: nowrap;
-  user-select: none;
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
-}
-
-.socratica-marquee {
-  display: inline-flex;
-  align-items: center;
-  animation: socratica-scroll 45s linear infinite;
-  font-family: var(--codeFont);
-  font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  text-transform: lowercase;
-  white-space: nowrap;
-
-  span {
-    padding-right: 3rem;
-  }
-}
-
-@keyframes socratica-scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-/* Header & Subnav Area */
 .socratica-hero {
-  margin-top: 1.75rem;
-  margin-bottom: 2.25rem;
+  max-width: 850px;
+  margin: clamp(1rem, 3vw, 2.5rem) 0 clamp(2.75rem, 6vw, 5.25rem);
+}
+
+.socratica-eyebrow,
+.socratica-kicker {
+  margin: 0 0 0.7rem !important;
+  font-family: var(--codeFont);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--portal-muted) !important;
 }
 
 .socratica-title {
+  max-width: 760px;
+  margin: 0 !important;
   font-family: var(--headerFont);
-  font-size: 3.25rem;
+  font-size: clamp(2.65rem, 6vw, 5.4rem);
   font-weight: 700;
-  letter-spacing: -0.02em;
-  color: #2c2a27;
-  margin: 0 0 0.5rem 0;
-  line-height: 1.15;
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  color: var(--portal-ink) !important;
+  text-wrap: balance;
 }
 
-:root[saved-theme="dark"] .socratica-title {
-  color: #f3f1ec;
+.socratica-intro {
+  max-width: 640px;
+  margin: 1.35rem 0 1.75rem !important;
+  font-size: clamp(1.02rem, 1.6vw, 1.22rem);
+  line-height: 1.6 !important;
+  color: var(--portal-muted) !important;
+  text-wrap: pretty;
 }
 
 .socratica-subnav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.65rem;
-  font-family: var(--codeFont);
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: #8b8377;
-  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.55rem;
+  margin: 0;
 
   a {
-    color: #106f47;
+    display: inline-flex;
+    min-height: 42px;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.58rem 0.78rem;
+    border: 1px solid var(--portal-rule);
+    border-radius: 6px;
+    background: color-mix(in srgb, var(--portal-paper) 88%, var(--portal-ink));
+    color: var(--portal-ink);
+    font-size: 0.88rem;
+    font-weight: 650;
+    line-height: 1.2;
     text-decoration: none !important;
     transition:
-      color 0.15s ease,
-      text-decoration 0.15s ease;
+      border-color 150ms ease,
+      background-color 150ms ease;
+
+    span {
+      color: var(--secondary);
+    }
 
     &:hover {
-      color: #0b4f32;
-      text-decoration: underline !important;
+      border-color: var(--secondary);
+      background: color-mix(in srgb, var(--secondary) 9%, var(--portal-paper));
     }
-  }
 
-  .sep {
-    color: #b0a89a;
-    user-select: none;
+    &:focus-visible {
+      outline: 3px solid var(--portal-focus);
+      outline-offset: 3px;
+    }
   }
 }
 
-:root[saved-theme="dark"] .socratica-subnav {
-  color: #a8a095;
+.socratica-section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: 0 0 1.2rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--portal-rule);
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: clamp(1.65rem, 3vw, 2.35rem);
+    line-height: 1.1;
+    color: var(--portal-ink);
+  }
 
   a {
-    color: #7ea885;
+    color: var(--secondary);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+
     &:hover {
-      color: #a3c9a8;
+      text-decoration: underline;
+      text-underline-offset: 0.25em;
+    }
+
+    &:focus-visible {
+      outline: 3px solid var(--portal-focus);
+      outline-offset: 4px;
     }
   }
-
-  .sep {
-    color: #555c57;
-  }
 }
 
-/* 4x2 Cards Grid */
+.socratica-section-heading-secondary {
+  margin-top: clamp(3rem, 6vw, 5rem);
+}
+
 .socratica-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.25rem;
-  margin-bottom: 3rem;
+  gap: clamp(0.85rem, 1.8vw, 1.25rem);
+  margin-bottom: 2.5rem;
 }
 
-@media (max-width: 1080px) {
-  .socratica-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
-  }
+.socratica-grid-core {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-@media (max-width: 580px) {
-  .socratica-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .socratica-title {
-    font-size: 2.25rem;
-  }
+.socratica-grid-support {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 760px;
 }
 
 .socratica-card {
-  aspect-ratio: 3 / 4;
-  min-height: 290px;
-  border-radius: 16px;
-  padding: 1.4rem 1.25rem 1.2rem;
+  min-height: 250px;
+  padding: clamp(1rem, 2.2vw, 1.35rem);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-decoration: none !important;
-  color: #ffffff !important;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+  border: 1px solid rgba(22, 25, 22, 0.18);
+  border-radius: 10px;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.18) inset;
   transition:
-    transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 0.25s ease;
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease;
 
   &:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.16);
-
-    .card-character {
-      transform: scale(1.06);
-    }
+    transform: translateY(-3px);
+    border-color: rgba(22, 25, 22, 0.38);
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.2) inset,
+      0 10px 22px rgba(25, 28, 24, 0.13);
   }
 
-  // 8 Distinct Socratica Palette Themes
+  &:focus-visible {
+    outline: 4px solid var(--portal-focus);
+    outline-offset: 3px;
+  }
+
   &.card-mk1 {
-    background-color: #5b93e8;
-  } // The Basics - Cornflower Blue
+    background-color: #3f73ba;
+  }
   &.card-mk2 {
-    background-color: #8da864;
-  } // Getting Started - Olive Moss Green
+    background-color: #5f7f39;
+  }
   &.card-mk3 {
-    background-color: #c48b28;
-  } // Growing People - Mustard Gold
+    background-color: #99620d;
+  }
   &.card-mk4 {
-    background-color: #9b6888;
-  } // Super-boosting Ideas - Dusty Rose Plum
+    background-color: #835370;
+  }
   &.card-mk5 {
-    background-color: #e06e53;
-  } // Maintenance - Coral Terracotta
+    background-color: #c94f35;
+  }
   &.card-mk6 {
-    background-color: #db6b86;
-  } // Demo Days - Bubblegum Pink
+    background-color: #bd4f70;
+  }
   &.card-bonus {
-    background-color: #7c599c;
-  } // PeopleMath - Royal Amethyst
+    background-color: #674387;
+  }
   &.card-alp {
-    background-color: #c2bcb0;
-    color: #ffffff !important;
-  } // Coming Soon / ALP - Warm Stone Gray
+    background-color: #565b50;
+  }
 }
 
 .card-top {
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
+  gap: 0.45rem;
+  position: relative;
+  z-index: 1;
 }
 
 .card-title {
   display: block;
-  font-family: var(--headerFont);
-  font-size: 1.55rem;
-  font-weight: 700;
-  line-height: 1.15;
-  color: #ffffff;
+  max-width: 16ch;
   margin: 0;
-  letter-spacing: -0.015em;
+  color: #ffffff;
+  font-family: var(--headerFont);
+  font-size: clamp(1.3rem, 2.2vw, 1.65rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
 }
 
 .card-issue {
+  margin: 0 !important;
+  color: #ffffff !important;
   font-family: var(--codeFont);
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 1.8px;
+  line-height: 1.4 !important;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.85);
-  margin: 0;
 }
 
 .card-character {
-  width: 100%;
-  height: 160px;
+  width: min(75%, 210px);
+  height: 130px;
   display: flex;
+  align-self: center;
   align-items: flex-end;
   justify-content: center;
-  margin-top: auto;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-top: 0.5rem;
+  transition: transform 160ms ease;
 
-  svg {
+  svg,
+  img {
     width: 100%;
     height: 100%;
-    max-height: 155px;
+    max-height: 130px;
+    object-fit: contain;
+  }
+}
+
+.socratica-card:hover .card-character {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1000px) {
+  .socratica-grid-core {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  body[data-slug="index"] .center {
+    padding: 1.35rem 1rem 4rem !important;
+  }
+
+  .socratica-hero {
+    margin-bottom: 3.25rem;
+  }
+
+  .socratica-subnav {
+    grid-template-columns: 1fr 1fr;
+
+    a {
+      min-height: 48px;
+      padding: 0.7rem;
+    }
+  }
+
+  .socratica-section-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .socratica-grid-core,
+  .socratica-grid-support {
+    grid-template-columns: 1fr;
+    max-width: none;
+  }
+
+  .socratica-card {
+    min-height: 166px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 120px;
+    align-items: center;
+  }
+
+  .card-character {
+    width: 120px;
+    height: 110px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 390px) {
+  .socratica-subnav {
+    grid-template-columns: 1fr;
+  }
+
+  .socratica-card {
+    grid-template-columns: minmax(0, 1fr) 105px;
+  }
+
+  .card-character {
+    width: 105px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .socratica-card,
+  .card-character,
+  .socratica-subnav a {
+    transition: none;
+  }
+
+  .socratica-card:hover,
+  .socratica-card:hover .card-character {
+    transform: none;
   }
 }

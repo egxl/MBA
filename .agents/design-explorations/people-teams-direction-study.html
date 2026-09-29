@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>People &amp; Teams — Character Direction Study</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --paper: #f3efe5;
+        --ink: #172536;
+        --muted: #65707a;
+        --line: #c9c1b1;
+        --card-blue: #3f73ba;
+        --cream: #f5eddc;
+        --pale-blue: #a9c9e8;
+        --warm: #e0a243;
+        --rust: #bd6847;
+        --green: #7ea07b;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Georgia, "Times New Roman", serif;
+      }
+
+      main {
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 42px 0 56px;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(240px, 390px);
+        gap: 34px;
+        align-items: end;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .eyebrow,
+      .meta,
+      .label,
+      .badge,
+      button {
+        font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        color: #315f98;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin: 0;
+        font-size: clamp(32px, 5vw, 62px);
+        font-weight: 500;
+        line-height: 0.98;
+        letter-spacing: -0.04em;
+      }
+
+      .intro {
+        margin: 0;
+        color: var(--muted);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        line-height: 1.55;
+      }
+
+      .constraint {
+        display: inline-block;
+        margin-top: 14px;
+        padding: 5px 8px;
+        border: 1px solid var(--line);
+        border-radius: 3px;
+        color: var(--ink);
+        font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+        font-size: 11px;
+      }
+
+      .options {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+
+      article {
+        min-width: 0;
+        padding: 14px;
+        border: 1px solid var(--line);
+        background: color-mix(in srgb, var(--paper) 86%, white);
+      }
+
+      .option-head {
+        display: flex;
+        gap: 14px;
+        align-items: baseline;
+        padding: 4px 2px 14px;
+      }
+
+      .letter {
+        color: #315f98;
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .course-card {
+        min-height: 250px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        border: 1px solid rgba(22, 25, 22, 0.18);
+        border-radius: 10px;
+        background: var(--card-blue);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
+        color: white;
+      }
+
+      .card-title {
+        max-width: 16ch;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+      }
+
+      .meta {
+        margin-top: 8px;
+        font-size: 11px;
+        font-weight: 700;
+      }
+
+      .art {
+        width: min(75%, 210px);
+        height: 130px;
+        align-self: center;
+      }
+
+      svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      .caption {
+        min-height: 82px;
+        margin: 14px 2px 12px;
+        color: #4f5960;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        line-height: 1.48;
+      }
+
+      .tests {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        padding-top: 12px;
+        border-top: 1px solid var(--line);
+      }
+
+      .test-box {
+        position: relative;
+        min-height: 100px;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        background: #e9e5db;
+      }
+
+      .test-box.blue {
+        background: var(--card-blue);
+      }
+
+      .test-box svg {
+        width: 118px;
+        height: 88px;
+      }
+
+      .test-box.mono svg {
+        filter: grayscale(1) contrast(1.15);
+      }
+
+      .label {
+        position: absolute;
+        top: 6px;
+        left: 7px;
+        color: #46505a;
+        font-size: 8px;
+        font-weight: 700;
+      }
+
+      .test-box.blue .label {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .decision {
+        display: grid;
+        grid-template-columns: 1.05fr 1.95fr;
+        gap: 24px;
+        margin-top: 28px;
+        padding-top: 24px;
+        border-top: 1px solid var(--line);
+      }
+
+      .decision h3 {
+        margin: 0 0 8px;
+        font-size: 21px;
+        font-weight: 500;
+      }
+
+      .decision p {
+        margin: 0;
+        color: var(--muted);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        line-height: 1.55;
+      }
+
+      .choice-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+
+      button {
+        min-height: 48px;
+        padding: 10px 12px;
+        border: 1px solid #7c776d;
+        border-radius: 3px;
+        background: transparent;
+        color: var(--ink);
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: 700;
+      }
+
+      button:hover,
+      button:focus-visible {
+        background: var(--ink);
+        color: var(--paper);
+      }
+
+      button:focus-visible {
+        outline: 3px solid var(--warm);
+        outline-offset: 2px;
+      }
+
+      .badge {
+        display: inline-block;
+        margin-top: 12px;
+        color: #315f98;
+        font-size: 9px;
+        font-weight: 700;
+      }
+
+      @media (max-width: 900px) {
+        header,
+        .decision {
+          grid-template-columns: 1fr;
+        }
+
+        .options {
+          grid-template-columns: 1fr;
+        }
+
+        article {
+          display: grid;
+          grid-template-columns: minmax(280px, 0.9fr) 1fr;
+          gap: 18px;
+        }
+
+        .option-head {
+          grid-column: 1 / -1;
+        }
+
+        .caption {
+          margin-top: 0;
+        }
+      }
+
+      @media (max-width: 620px) {
+        main {
+          width: min(100% - 20px, 420px);
+          padding-top: 26px;
+        }
+
+        article,
+        .choice-row {
+          grid-template-columns: 1fr;
+        }
+
+        .course-card {
+          min-height: 250px;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --paper: #1d201f;
+          --ink: #eee8dc;
+          --muted: #b7b1a7;
+          --line: #504d47;
+        }
+
+        article {
+          background: #242726;
+        }
+
+        .caption {
+          color: #c4beb4;
+        }
+
+        .test-box {
+          background: #d9d4ca;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <p class="eyebrow">Direction study · People &amp; Teams</p>
+          <h1>One course action, three character languages.</h1>
+        </div>
+        <div>
+          <p class="intro">
+            Each study shows distributed initiative: three contributors with different capabilities
+            move one shared outcome across a boundary. No central leader, facial expression, or
+            generic teamwork symbol.
+          </p>
+          <span class="constraint">Production constraint · 200 × 150 SVG / 130px high</span>
+        </div>
+      </header>
+
+      <section class="options" aria-label="Three illustration directions">
+        <article>
+          <div class="option-head">
+            <span class="letter">A</span>
+            <h2>Fieldwork companions</h2>
+          </div>
+          <div class="course-card">
+            <div>
+              <div class="card-title">The People &amp; Teams</div>
+              <div class="meta">MK 001</div>
+            </div>
+            <div class="art">
+              <svg
+                viewBox="0 0 200 150"
+                role="img"
+                aria-label="Three invented companions carrying and guiding a shared beam across a gap"
+              >
+                <g stroke="#172536" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 127h63M119 127h63" opacity=".62" />
+                  <path d="M81 128l12-18 12 18" fill="none" opacity=".72" />
+                  <path
+                    d="M42 108l33-25 57 7 25 22"
+                    fill="none"
+                    stroke-dasharray="3 7"
+                    opacity=".45"
+                  />
+
+                  <path d="M29 113l6-35 25-5 14 31-13 19H39z" fill="#f5eddc" />
+                  <path d="M39 75l-4-13 13-6 7 17" fill="#a9c9e8" />
+                  <path d="M47 91l31 3" fill="none" />
+                  <path d="M32 88l-13 9 8 7" fill="none" />
+                  <circle cx="19" cy="97" r="4" fill="#e0a243" />
+
+                  <path d="M76 107l7-43 28-5 17 39-17 27H89z" fill="#a9c9e8" />
+                  <path d="M93 61l6-15 13 8-4 7" fill="#f5eddc" />
+                  <path d="M91 79l-17 15" fill="none" />
+                  <path d="M115 76l17 14" fill="none" />
+                  <path d="M99 109l-4 16M110 108l6 17" fill="none" />
+
+                  <path d="M132 111l10-31 27 4 8 27-15 15h-19z" fill="#f5eddc" />
+                  <path d="M147 83l5-14 13 9-2 6" fill="#e0a243" />
+                  <path d="M145 94l-13-4" fill="none" />
+                  <path d="M171 98l12-12" fill="none" />
+                  <path d="M183 86l-2-8 7 2" fill="none" />
+
+                  <path d="M49 86l48-14 55 21-6 12-53-15-41 10z" fill="#e0a243" />
+                  <path d="M68 91l5 14M126 88l-5 12" fill="none" />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div>
+            <p class="caption">
+              Different tool-like anatomies cooperate around one beam. Strong personality and family
+              potential, but closest to the current anthropomorphic territory.
+            </p>
+            <div class="tests">
+              <div class="test-box mono">
+                <span class="label">Monochrome</span>
+                <svg viewBox="0 0 200 150" aria-hidden="true">
+                  <g
+                    stroke="#172536"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M18 127h63M119 127h63" />
+                    <path d="M81 128l12-18 12 18" fill="none" />
+                    <path d="M29 113l6-35 25-5 14 31-13 19H39z" fill="#f5eddc" />
+                    <path d="M76 107l7-43 28-5 17 39-17 27H89z" fill="#a9c9e8" />
+                    <path d="M132 111l10-31 27 4 8 27-15 15h-19z" fill="#f5eddc" />
+                    <path d="M49 86l48-14 55 21-6 12-53-15-41 10z" fill="#e0a243" />
+                  </g>
+                </svg>
+              </div>
+              <div class="test-box blue">
+                <span class="label">Small size</span>
+                <svg viewBox="0 0 200 150" aria-hidden="true">
+                  <g
+                    stroke="#172536"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M18 127h63M119 127h63" />
+                    <path d="M29 113l6-35 25-5 14 31-13 19H39z" fill="#f5eddc" />
+                    <path d="M76 107l7-43 28-5 17 39-17 27H89z" fill="#a9c9e8" />
+                    <path d="M132 111l10-31 27 4 8 27-15 15h-19z" fill="#f5eddc" />
+                    <path d="M49 86l48-14 55 21-6 12-53-15-41 10z" fill="#e0a243" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="option-head">
+            <span class="letter">B</span>
+            <h2>Cohort crew</h2>
+          </div>
+          <div class="course-card">
+            <div>
+              <div class="card-title">The People &amp; Teams</div>
+              <div class="meta">MK 001</div>
+            </div>
+            <div class="art">
+              <svg
+                viewBox="0 0 200 150"
+                role="img"
+                aria-label="Three faceless people jointly aligning a shared structural module"
+              >
+                <g stroke="#172536" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 127h68M119 127h68" opacity=".62" />
+                  <path d="M81 128l12-18 12 18" fill="none" opacity=".72" />
+                  <path d="M21 120V76h45v44" fill="none" stroke-dasharray="4 6" opacity=".32" />
+                  <path d="M134 120V69h45v51" fill="none" stroke-dasharray="4 6" opacity=".32" />
+
+                  <circle cx="47" cy="69" r="12" fill="#e0a243" />
+                  <path d="M34 84l16-5 14 12-6 32H37z" fill="#f5eddc" />
+                  <path d="M49 90l24 7 20-11" fill="none" />
+                  <path d="M39 122l-2 6M57 122l4 6" fill="none" />
+
+                  <circle cx="101" cy="52" r="12" fill="#f5eddc" />
+                  <path d="M88 67l14-4 15 8 3 38-31 3z" fill="#a9c9e8" />
+                  <path d="M92 76L74 97M113 77l22 13" fill="none" />
+                  <path d="M96 111l-5 17M111 110l6 18" fill="none" />
+
+                  <circle cx="154" cy="73" r="12" fill="#a9c9e8" />
+                  <path d="M141 88l15-6 13 11-3 31h-29z" fill="#f5eddc" />
+                  <path d="M144 94l-9-4M164 96l19-13" fill="none" />
+                  <path d="M143 124l-4 4M162 124l4 4" fill="none" />
+
+                  <path d="M67 91l35-22 39 15-5 17-36-12-27 20z" fill="#bd6847" />
+                  <path d="M99 69l3 20M136 84l-1 16" fill="none" />
+                  <path d="M177 77l8 6-9 5" fill="none" />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div>
+            <p class="caption">
+              A faceless lateral crew makes people, feedback, and shared agency immediately legible.
+              Most direct fit, with the highest risk of generic corporate illustration.
+            </p>
+            <div class="tests">
+              <div class="test-box mono">
+                <span class="label">Monochrome</span>
+                <svg viewBox="0 0 200 150" aria-hidden="true">
+                  <g
+                    stroke="#172536"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M13 127h68M119 127h68" />
+                    <circle cx="47" cy="69" r="12" fill="#e0a243" />
+                    <path d="M34 84l16-5 14 12-6 32H37z" fill="#f5eddc" />
+                    <circle cx="101" cy="52" r="12" fill="#f5eddc" />
+                    <path d="M88 67l14-4 15 8 3 38-31 3z" fill="#a9c9e8" />
+                    <circle cx="154" cy="73" r="12" fill="#a9c9e8" />
+                    <path d="M141 88l15-6 13 11-3 31h-29z" fill="#f5eddc" />
+                    <path d="M67 91l35-22 39 15-5 17-36-12-27 20z" fill="#bd6847" />
+                  </g>
+                </svg>
+              </div>
+              <div class="test-box blue">
+                <span class="label">Small size</span>
+                <svg viewBox="0 0 200 150" aria-hidden="true">
+                  <g
+                    stroke="#172536"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="47" cy="69" r="12" fill="#e0a243" />
+                    <path d="M34 84l16-5 14 12-6 32H37z" fill="#f5eddc" />
+                    <circle cx="101" cy="52" r="12" fill="#f5eddc" />
+                    <path d="M88 67l14-4 15 8 3 38-31 3z" fill="#a9c9e8" />
+                    <circle cx="154" cy="73" r="12" fill="#a9c9e8" />
+                    <path d="M141 88l15-6 13 11-3 31h-29z" fill="#f5eddc" />
+                    <path d="M67 91l35-22 39 15-5 17-36-12-27 20z" fill="#bd6847" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="option-head">
+            <span class="letter">C</span>
+            <h2>Living system</h2>
+          </div>
+          <div class="course-card">
+            <div>
+              <div class="card-title">The People &amp; Teams</div>
+              <div class="meta">MK 001</div>
+            </div>
+            <div class="art">
+              <svg
+                viewBox="0 0 200 150"
+                role="img"
+                aria-label="An interdependent branching system crossing a boundary and supporting several new growth tips"
+              >
+                <g stroke="#172536" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 127h69M115 127h69" opacity=".62" />
+                  <path d="M85 128l15-19 15 19" fill="none" opacity=".72" />
+                  <path
+                    d="M38 126c7-22 16-30 35-36 13-5 16-14 21-30"
+                    fill="none"
+                    stroke="#f5eddc"
+                    stroke-width="14"
+                  />
+                  <path
+                    d="M162 126c-7-22-16-30-35-36-13-5-16-14-21-30"
+                    fill="none"
+                    stroke="#a9c9e8"
+                    stroke-width="14"
+                  />
+                  <path
+                    d="M94 60c2-13-5-24-17-34M106 60c-2-13 5-24 17-34"
+                    fill="none"
+                    stroke="#e0a243"
+                    stroke-width="12"
+                  />
+                  <path
+                    d="M75 91c5 13 14 20 25 20s20-7 25-20"
+                    fill="none"
+                    stroke="#bd6847"
+                    stroke-width="11"
+                  />
+
+                  <path
+                    d="M38 126L21 105M45 112l-4-29M54 102l16 20"
+                    fill="none"
+                    stroke="#f5eddc"
+                    stroke-width="7"
+                  />
+                  <path
+                    d="M162 126l17-21M155 112l4-29M146 102l-16 20"
+                    fill="none"
+                    stroke="#a9c9e8"
+                    stroke-width="7"
+                  />
+
+                  <path d="M77 26l-12-7 3 15zM123 26l12-7-3 15z" fill="#e0a243" />
+                  <path d="M100 111v17" fill="none" />
+                  <path d="M92 48h16" fill="none" stroke-dasharray="2 6" opacity=".65" />
+                  <path
+                    d="M31 116c26 13 46 15 69 12 23 3 43 1 69-12"
+                    fill="none"
+                    stroke-dasharray="4 7"
+                    opacity=".45"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div>
+            <p class="caption">
+              An interdependent system turns tension into a reinforcing loop and distributes growth.
+              Most original and systemic, but least immediately “people” at first glance.
+            </p>
+            <div class="tests">
+              <div class="test-box mono">
+                <span class="label">Monochrome</span>
+                <svg viewBox="0 0 200 150" aria-hidden="true">
+                  <g
+                    stroke="#172536"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M16 127h69M115 127h69" />
+                    <path
+                      d="M38 126c7-22 16-30 35-36 13-5 16-14 21-30"
+                      fill="none"
+                      stroke="#f5eddc"
+                      stroke-width="14"
+                    />
+                    <path
+                      d="M162 126c-7-22-16-30-35-36-13-5-16-14-21-30"
+                      fill="none"
+                      stroke="#a9c9e8"
+                      stroke-width="14"
+                    />
+                    <path
+                      d="M94 60c2-13-5-24-17-34M106 60c-2-13 5-24 17-34"
+                      fill="none"
+                      stroke="#e0a243"
+                      stroke-width="12"
+                    />
+                    <path
+                      d="M75 91c5 13 14 20 25 20s20-7 25-20"
+                      fill="none"
+                      stroke="#bd6847"
+                      stroke-width="11"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="test-box blue">
+                <span class="label">Small size</span>
+                <svg viewBox="0 0 200 150" aria-hidden="true">
+                  <g
+                    stroke="#172536"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M38 126c7-22 16-30 35-36 13-5 16-14 21-30"
+                      fill="none"
+                      stroke="#f5eddc"
+                      stroke-width="14"
+                    />
+                    <path
+                      d="M162 126c-7-22-16-30-35-36-13-5-16-14-21-30"
+                      fill="none"
+                      stroke="#a9c9e8"
+                      stroke-width="14"
+                    />
+                    <path
+                      d="M94 60c2-13-5-24-17-34M106 60c-2-13 5-24 17-34"
+                      fill="none"
+                      stroke="#e0a243"
+                      stroke-width="12"
+                    />
+                    <path
+                      d="M75 91c5 13 14 20 25 20s20-7 25-20"
+                      fill="none"
+                      stroke="#bd6847"
+                      stroke-width="11"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="decision">
+        <div>
+          <h3>What should become the family?</h3>
+          <p>
+            Choose the visual language, not the exact drawing. The selected direction will next be
+            tested on Financial Strategy and Operations &amp; SCM before any production replacement.
+          </p>
+          <span class="badge">Current recommendation · B, with C as challenger</span>
+        </div>
+        <div class="choice-row">
+          <button
+            data-hermes-send="Choose direction A — Fieldwork companions. Develop Financial Strategy and Operations & SCM in this language, without changing production SVGs yet."
+          >
+            Choose A · Companions
+          </button>
+          <button
+            data-hermes-send="Choose direction B — Cohort crew. Develop Financial Strategy and Operations & SCM in this language, without changing production SVGs yet."
+          >
+            Choose B · Cohort crew
+          </button>
+          <button
+            data-hermes-send="Choose direction C — Living system. Develop Financial Strategy and Operations & SCM in this language, without changing production SVGs yet."
+          >
+            Choose C · Living system
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
