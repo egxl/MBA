@@ -32,9 +32,8 @@ Refine spacing, margins, gaps, and breathing room across the portal landing page
 | 2026-09-29 | Antigravity | Refactored course cards to 2-column landscape layout (160px height) with generous edge margins and compact hero/header, ensuring all 6 core courses fit in one desktop viewport above the fold |
 | 2026-09-29 | Antigravity | Expanded card left padding to clamp(2.25rem, 3.2vw, 3rem) (~48px), widened desktop container to 1320px, and loosened section margins                                                           |
 | 2026-09-29 | Hermes      | Removed homepage sidebar tracks, protected course-card insets from Quartz `.internal` link styling, tightened the core grid to 152px cards, and verified the live 1366×768 desktop render      |
-| 2026-10-05 | Antigravity | Implemented floating top navbar enclosing all controls (toggle, logo, home, search, dark mode, reader mode); verified desktop, mobile (390px), light/dark themes, tests, and build |
+| 2026-10-05 | Antigravity | Implemented floating top navbar enclosing all controls (toggle, logo, home, search, dark mode, reader mode); verified desktop, mobile (390px), light/dark themes, tests, and build             |
 
 ## Remaining work
 
 - None. Verified with `npm test`, `npm run companions:check`, `npm run check`, and `npx quartz build`.
-

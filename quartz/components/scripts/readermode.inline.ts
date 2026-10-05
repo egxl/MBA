@@ -7,11 +7,21 @@ const emitReaderModeChangeEvent = (mode: "on" | "off") => {
   document.dispatchEvent(event)
 }
 
+function updateReaderButtons(mode: "on" | "off") {
+  const isOn = mode === "on"
+  const buttons = document.querySelectorAll<HTMLButtonElement>(".readermode")
+  buttons.forEach((btn) => {
+    btn.setAttribute("aria-pressed", isOn ? "true" : "false")
+    btn.setAttribute("title", isOn ? "Reader mode: ON" : "Reader mode: OFF")
+  })
+}
+
 document.addEventListener("nav", () => {
   const switchReaderMode = () => {
     isReaderMode = !isReaderMode
     const newMode = isReaderMode ? "on" : "off"
     document.documentElement.setAttribute("reader-mode", newMode)
+    updateReaderButtons(newMode)
     emitReaderModeChangeEvent(newMode)
   }
 
@@ -21,5 +31,7 @@ document.addEventListener("nav", () => {
   }
 
   // Set initial state
-  document.documentElement.setAttribute("reader-mode", isReaderMode ? "on" : "off")
+  const initialMode = isReaderMode ? "on" : "off"
+  document.documentElement.setAttribute("reader-mode", initialMode)
+  updateReaderButtons(initialMode)
 })

@@ -1,7 +1,7 @@
 @use "../../styles/variables.scss" as *;
 
 :root {
-  --navbar-height: 56px;
+  --navbar-height: 46px;
   --navbar-margin-top: 0.75rem;
   --navbar-margin-bottom: 0.75rem;
   --navbar-offset: calc(
@@ -9,7 +9,7 @@
   );
 
   @media all and ($mobile) {
-    --navbar-height: 48px;
+    --navbar-height: 44px;
     --navbar-margin-top: 0.5rem;
     --navbar-margin-bottom: 0.5rem;
   }
@@ -26,22 +26,23 @@ header.site-header {
   width: 100%;
   pointer-events: none;
   display: flex;
+  align-items: center;
   justify-content: center;
+  gap: 0.65rem;
   box-sizing: border-box;
-  padding: var(--navbar-margin-top) clamp(0.75rem, 2vw, 1.5rem) 0;
+  padding: var(--navbar-margin-top) 1rem 0;
   margin: 0;
 }
 
 .navbar {
   pointer-events: auto;
   position: relative;
-  width: 100%;
-  max-width: 1440px;
+  width: fit-content;
+  max-width: calc(100vw - 2rem);
   height: var(--navbar-height);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 1rem;
+  padding: 0 0.85rem;
   border-radius: 9999px;
   border: 1px solid var(--lightgray);
   box-shadow:
@@ -74,7 +75,7 @@ header.site-header {
   .navbar-start {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.5rem;
     min-width: 0;
 
     .page-title {
@@ -90,19 +91,27 @@ header.site-header {
       }
 
       .site-logo {
-        height: 32px;
-        max-height: 32px;
+        height: 28px;
+        max-height: 28px;
         width: auto;
         object-fit: contain;
       }
     }
   }
 
+  .navbar-divider {
+    width: 1px;
+    height: 18px;
+    background-color: var(--lightgray);
+    margin: 0 0.35rem;
+    opacity: 0.8;
+    flex-shrink: 0;
+  }
+
   .navbar-end {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
-    margin-left: auto;
+    gap: 0.35rem;
     min-width: 0;
 
     .home-button,
@@ -141,36 +150,48 @@ header.site-header {
     }
 
     .search {
-      width: clamp(10rem, 20vw, 16rem);
-      max-width: 16rem;
+      width: 32px;
+      min-width: 32px;
+      max-width: 32px;
+      flex: 0 0 32px;
+      height: 32px;
 
       .search-button {
+        width: 32px;
         height: 32px;
-        border-radius: 9999px;
-        background: color-mix(in srgb, var(--light) 60%, transparent);
-        border: 1px solid var(--lightgray);
-        padding: 0 0.85rem 0 0.6rem;
+        padding: 0;
+        border: none;
+        background: transparent;
+        border-radius: 8px;
         display: flex;
         align-items: center;
-        gap: 0.35rem;
+        justify-content: center;
+        cursor: pointer;
+        color: var(--darkgray);
         box-sizing: border-box;
         transition:
-          border-color 0.15s ease,
           background-color 0.15s ease,
-          box-shadow 0.15s ease;
+          color 0.15s ease,
+          transform 0.15s ease;
 
         &:hover {
-          border-color: var(--gray);
-          background-color: var(--light);
+          background-color: var(--lightgray);
+          color: var(--secondary);
+          transform: scale(1.05);
         }
 
         & > p {
-          font-size: 0.85rem;
-          margin: 0;
+          display: none !important;
         }
 
         & svg {
+          width: 18px;
+          height: 18px;
           margin: 0;
+
+          .search-path {
+            stroke: currentColor;
+          }
         }
       }
     }
@@ -182,39 +203,38 @@ header.site-header {
     padding: 0 0.65rem;
 
     .navbar-start {
-      gap: 0.4rem;
+      gap: 0.35rem;
 
       .page-title .site-logo {
-        height: 24px;
-        max-height: 24px;
-        max-width: 120px;
+        height: 22px;
+        max-height: 22px;
+        max-width: 110px;
       }
     }
 
+    .navbar-divider {
+      height: 16px;
+      margin: 0 0.2rem;
+    }
+
     .navbar-end {
-      gap: 0.25rem;
+      gap: 0.2rem;
 
       .search {
-        width: 32px;
-        min-width: 32px;
-        max-width: 32px;
-        flex: 0 0 32px;
+        width: 28px;
+        min-width: 28px;
+        max-width: 28px;
+        flex: 0 0 28px;
+        height: 28px;
 
         .search-button {
-          width: 32px;
-          height: 32px;
-          padding: 0;
-          border-radius: 8px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          p {
-            display: none !important;
-          }
+          width: 28px;
+          height: 28px;
+          border-radius: 6px;
 
           svg {
-            margin: 0;
+            width: 16px;
+            height: 16px;
           }
         }
       }
@@ -222,8 +242,14 @@ header.site-header {
       .home-button,
       .darkmode,
       .readermode {
-        width: 30px;
-        height: 30px;
+        width: 28px;
+        height: 28px;
+        border-radius: 6px;
+
+        svg {
+          width: 16px;
+          height: 16px;
+        }
       }
     }
 
@@ -239,9 +265,9 @@ header.site-header {
         display: inline-flex !important;
         align-items: center;
         justify-content: center;
-        width: 32px;
-        height: 32px;
-        border-radius: 8px;
+        width: 28px;
+        height: 28px;
+        border-radius: 6px;
         background: transparent;
         border: none;
         color: var(--darkgray);
@@ -250,8 +276,8 @@ header.site-header {
         z-index: 1001;
 
         .lucide-menu {
-          width: 20px;
-          height: 20px;
+          width: 18px;
+          height: 18px;
           stroke: currentColor;
         }
 

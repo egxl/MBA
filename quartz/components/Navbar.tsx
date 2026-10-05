@@ -22,6 +22,9 @@ export default ((config?: NavbarConfig) => {
             <Component {...props} />
           ))}
         </div>
+        {startComponents.length > 0 && endComponents.length > 0 && (
+          <div class="navbar-divider" aria-hidden="true" />
+        )}
         <div class="navbar-end">
           {endComponents.map((Component) => (
             <Component {...props} />

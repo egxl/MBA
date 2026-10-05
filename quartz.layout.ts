@@ -34,9 +34,9 @@ const explorerFilterFn = (node: any) => {
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [
+    Component.DesktopOnly(Component.SidebarToggle()),
     Component.Navbar({
       start: [
-        Component.DesktopOnly(Component.SidebarToggle()),
         Component.MobileOnly(
           Component.Explorer({
             sortFn: explorerSortFn,

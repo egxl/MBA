@@ -31,4 +31,20 @@
       opacity: 1;
     }
   }
+
+  .readermode {
+    background-color: var(--secondary) !important;
+    color: var(--light) !important;
+    border-radius: 8px;
+
+    & svg {
+      fill: var(--light) !important;
+      stroke: var(--light) !important;
+    }
+
+    &:hover {
+      background-color: var(--tertiary) !important;
+      color: var(--light) !important;
+    }
+  }
 }
