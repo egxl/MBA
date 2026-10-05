@@ -24,6 +24,8 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import HomeButton from "./HomeButton"
+import Navbar from "./Navbar"
+import SidebarToggle from "./SidebarToggle"
 
 export {
   ArticleTitle,
@@ -52,4 +54,6 @@ export {
   Flex,
   ConditionalRender,
   HomeButton,
+  Navbar,
+  SidebarToggle,
 }

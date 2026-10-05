@@ -289,6 +289,10 @@ article {
 }
 
 // Assign distinct View Transition names to isolate key layout regions
+.navbar {
+  view-transition-name: site-navbar;
+}
+
 .sidebar.left {
   view-transition-name: sidebar-left;
 }
@@ -313,7 +317,14 @@ article {
   animation: none;
 }
 
-// Keep left sidebar navigation tree completely stationary and stable
+// Keep navbar and left sidebar navigation tree completely stationary and stable
+::view-transition-old(site-navbar) {
+  display: none;
+}
+::view-transition-new(site-navbar) {
+  animation: none;
+}
+
 ::view-transition-old(sidebar-left) {
   display: none;
 }
@@ -734,7 +745,7 @@ body[data-slug="index"] {
     width: 100% !important;
     min-width: 0;
     box-sizing: border-box;
-    padding: clamp(0.65rem, 1.2vw, 1rem) clamp(1rem, 2vw, 1.5rem) 4rem !important;
+    padding: clamp(0.65rem, 1.2vw, 1rem) clamp(1rem, 2vw, 1.5rem) 2.25rem !important;
     background: transparent !important;
   }
 
@@ -751,17 +762,16 @@ body[data-slug="index"] {
 }
 
 .socratica-stage {
-  min-height: calc(100dvh - 3.25rem);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 1.25rem;
   box-sizing: border-box;
-  padding-bottom: clamp(1rem, 2.5vh, 2rem);
+  padding-bottom: 1.5rem;
 }
 
 .socratica-hero {
   max-width: 1040px;
-  margin: 0.1rem 0 clamp(1rem, 2.2vh, 1.85rem);
+  margin: 0.25rem 0 0.5rem;
 }
 
 .socratica-eyebrow,
@@ -875,28 +885,25 @@ body[data-slug="index"] {
 }
 
 .socratica-section-heading-secondary {
-  margin-top: clamp(2.5rem, 5vh, 4rem);
+  margin-top: clamp(1.75rem, 3.5vh, 2.5rem);
 }
 
 .socratica-grid {
   display: grid;
-  gap: clamp(0.75rem, 1.1vw, 0.95rem);
-  margin-bottom: 2rem;
+  gap: clamp(0.75rem, 1.1vw, 1rem);
+  margin-bottom: 1.5rem;
 }
 
 .socratica-grid-core {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-auto-rows: 1fr;
-  flex: 1;
-  min-height: 280px;
-  max-height: 380px;
+  grid-auto-rows: minmax(130px, 150px);
   margin-bottom: 0;
 }
 
 .socratica-grid-support {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  max-width: 880px;
-  grid-auto-rows: minmax(130px, 155px);
+  max-width: 1000px;
+  grid-auto-rows: minmax(130px, 150px);
 }
 
 .socratica-card {
@@ -1031,13 +1038,8 @@ body[data-slug="index"] a.socratica-card.internal {
 }
 
 @media (max-width: 1240px) {
-  .socratica-stage {
-    min-height: auto;
-  }
-
   .socratica-grid-core {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    max-height: none;
     grid-auto-rows: minmax(130px, auto);
   }
 }
@@ -1048,13 +1050,12 @@ body[data-slug="index"] a.socratica-card.internal {
   }
 
   .socratica-stage {
-    min-height: auto;
     display: block;
     padding-bottom: 0;
   }
 
   .socratica-hero {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
   }
 
   .socratica-title {
@@ -1079,14 +1080,13 @@ body[data-slug="index"] a.socratica-card.internal {
   }
 
   .socratica-section-heading-secondary {
-    margin-top: 3.5rem;
+    margin-top: 2.25rem;
   }
 
   .socratica-grid-core,
   .socratica-grid-support {
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
-    max-height: none;
     max-width: none;
     gap: 0.75rem;
   }

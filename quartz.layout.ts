@@ -1,14 +1,6 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
-// components shared across all pages
-export const sharedPageComponents: SharedLayout = {
-  head: Component.Head(),
-  header: [],
-  afterBody: [],
-  footer: Component.Footer(),
-}
-
 const explorerSortFn = (a: any, b: any) => {
   // Prioritize program/ and courses/ at the root level of the explorer tree
   const order = ["program", "courses"]
@@ -38,6 +30,33 @@ const explorerFilterFn = (node: any) => {
   return node.slugSegment !== "tags" && node.slugSegment !== "easter-egg"
 }
 
+// components shared across all pages
+export const sharedPageComponents: SharedLayout = {
+  head: Component.Head(),
+  header: [
+    Component.Navbar({
+      start: [
+        Component.DesktopOnly(Component.SidebarToggle()),
+        Component.MobileOnly(
+          Component.Explorer({
+            sortFn: explorerSortFn,
+            filterFn: explorerFilterFn,
+          }),
+        ),
+        Component.PageTitle(),
+      ],
+      end: [
+        Component.HomeButton(),
+        Component.Search(),
+        Component.Darkmode(),
+        Component.ReaderMode(),
+      ],
+    }),
+  ],
+  afterBody: [],
+  footer: Component.Footer(),
+}
+
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
@@ -50,23 +69,12 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
   ],
   left: [
-    Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
-      components: [
-        { Component: Component.HomeButton() },
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
-        { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
-      ],
-    }),
-    Component.Explorer({
-      sortFn: explorerSortFn,
-      filterFn: explorerFilterFn,
-    }),
+    Component.DesktopOnly(
+      Component.Explorer({
+        sortFn: explorerSortFn,
+        filterFn: explorerFilterFn,
+      }),
+    ),
   ],
   right: [
     Component.Graph(),
@@ -83,23 +91,12 @@ export const defaultListPageLayout: PageLayout = {
     Component.ContentMeta(),
   ],
   left: [
-    Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
-      components: [
-        { Component: Component.HomeButton() },
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
-        { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
-      ],
-    }),
-    Component.Explorer({
-      sortFn: explorerSortFn,
-      filterFn: explorerFilterFn,
-    }),
+    Component.DesktopOnly(
+      Component.Explorer({
+        sortFn: explorerSortFn,
+        filterFn: explorerFilterFn,
+      }),
+    ),
   ],
   right: [
     Component.Graph(),

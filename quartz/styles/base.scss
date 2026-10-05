@@ -235,10 +235,10 @@ a {
 
     & .sidebar {
       gap: 1.2rem;
-      top: 0;
+      top: var(--navbar-offset);
       box-sizing: border-box;
       display: flex;
-      height: 100vh;
+      height: calc(100vh - var(--navbar-offset));
       position: sticky;
     }
 
@@ -252,9 +252,9 @@ a {
       box-sizing: border-box;
       padding: 0;
       gap: 0;
-      height: 100vh;
+      height: calc(100vh - var(--navbar-offset));
       position: sticky;
-      top: 0;
+      top: var(--navbar-offset);
       overflow: hidden;
       border-right: 1px solid var(--lightgray);
       transition:
@@ -263,66 +263,7 @@ a {
         max-width 0.25s ease;
 
       @media all and ($mobile) {
-        gap: 0;
-        align-items: center;
-        position: initial;
-        display: flex;
-        height: unset;
-        width: 100%;
-        min-width: unset;
-        max-width: unset;
-        border-right: none;
-        flex-direction: row;
-        padding: 0;
-        padding-top: 2rem;
-      }
-
-      .sidebar-toggle-btn {
-        position: absolute;
-        top: 1.25rem;
-        right: 0.75rem;
-        left: auto;
-        margin: 0;
-        z-index: 30;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 32px;
-        height: 32px;
-        border-radius: 6px;
-        background: var(--lightgray);
-        border: 1px solid var(--lightgray);
-        color: var(--dark);
-        cursor: pointer;
-        padding: 0;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
-        transition:
-          background-color 0.15s ease,
-          color 0.15s ease,
-          border-color 0.15s ease,
-          transform 0.15s ease;
-
-        &:hover {
-          background-color: var(--secondary);
-          color: var(--light);
-          border-color: var(--secondary);
-          transform: scale(1.05);
-        }
-
-        &:focus-visible {
-          outline: 2px solid var(--secondary);
-          outline-offset: 2px;
-        }
-
-        .sidebar-toggle-icon {
-          width: 18px;
-          height: 18px;
-          stroke: currentColor;
-        }
-
-        @media all and ($mobile) {
-          display: none !important;
-        }
+        display: none !important;
       }
 
       .sidebar-content {
@@ -333,14 +274,10 @@ a {
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
-        padding: 1.25rem 1.25rem 2rem 1.25rem;
+        padding: 1rem 1.25rem 2rem 1.25rem;
         box-sizing: border-box;
         scrollbar-width: thin;
         scrollbar-color: var(--lightgray) transparent;
-
-        .page-title {
-          padding-right: 2.25rem;
-        }
 
         &::-webkit-scrollbar {
           width: 5px;
@@ -351,30 +288,6 @@ a {
         &::-webkit-scrollbar-thumb {
           background-color: var(--lightgray);
           border-radius: 4px;
-        }
-
-        @media all and ($mobile) {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-between;
-          overflow: visible;
-          height: unset;
-          padding: 0;
-          width: 100%;
-          gap: 0;
-
-          > .flex-component {
-            gap: 0.45rem !important;
-            margin-left: auto;
-          }
-        }
-      }
-
-      @media all and ($mobile) {
-        .graph,
-        .breadcrumb-container {
-          display: none !important;
         }
       }
     }
@@ -469,16 +382,12 @@ a {
   :root[data-sidebar-state="collapsed"] {
     #quartz-body .sidebar.left,
     .sidebar.left {
-      .sidebar-toggle-btn {
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        transform: none;
-
-        &:hover {
-          transform: scale(1.05);
-        }
-      }
+      border-right: none;
+      padding: 0;
+      margin: 0;
+      width: 0;
+      min-width: 0;
+      max-width: 0;
 
       .sidebar-content {
         display: none !important;

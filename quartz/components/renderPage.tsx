@@ -243,45 +243,6 @@ export function renderPage(
 
   const LeftComponent = (
     <div class="left sidebar" data-state="expanded">
-      <button
-        type="button"
-        id="sidebar-left-toggle"
-        class="sidebar-toggle-btn"
-        aria-label="Collapse sidebar (Ctrl+\)"
-        aria-expanded="true"
-        title="Collapse sidebar (Ctrl+\)"
-      >
-        <svg
-          class="sidebar-toggle-icon icon-collapse"
-          xmlns="http://www.w3.org/2000/svg"
-          width="18"
-          height="18"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <polyline points="11 17 6 12 11 7" />
-          <polyline points="18 17 13 12 18 7" />
-        </svg>
-        <svg
-          class="sidebar-toggle-icon icon-expand"
-          xmlns="http://www.w3.org/2000/svg"
-          width="18"
-          height="18"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <polyline points="13 17 18 12 13 7" />
-          <polyline points="6 17 11 12 6 7" />
-        </svg>
-      </button>
       <div class="sidebar-content">
         {left.map((BodyComponent) => (
           <BodyComponent {...componentData} />
@@ -309,15 +270,15 @@ export function renderPage(
       <Head {...componentData} />
       <body data-slug={slug}>
         <div id="quartz-root" class="page">
+          <Header {...componentData}>
+            {header.map((HeaderComponent) => (
+              <HeaderComponent {...componentData} />
+            ))}
+          </Header>
           <Body {...componentData}>
             {LeftComponent}
             <div class="center">
               <div class="page-header">
-                <Header {...componentData}>
-                  {header.map((HeaderComponent) => (
-                    <HeaderComponent {...componentData} />
-                  ))}
-                </Header>
                 <div class="popover-hint">
                   {beforeBody.map((BodyComponent) => (
                     <BodyComponent {...componentData} />
