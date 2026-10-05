@@ -36,6 +36,13 @@ Use `npm run docs` only when you need the local documentation server. Node.js 20
 7. Run the narrowest relevant checks, then run `npm run check` for TypeScript, formatting, and repository-wide validation.
 8. Report: files changed, checks run and results, unresolved assumptions, and the next useful action.
 
+### Companion illustration workflow
+
+- Treat `content/assets/characters/manifest.json` and its sibling SVG files as the production source of truth.
+- Run `npm run companions:check` after every companion edit.
+- Run `npm run companions:review` to regenerate the family review board from production assets; never copy path data into a hand-maintained preview.
+- Follow `.agents/companion-svg-workflow.md` for the palette, SVG safety contract, mobile/monochrome review, and full verification sequence.
+
 ## Task protocol
 
 ### Before work

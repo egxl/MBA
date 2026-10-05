@@ -62,6 +62,21 @@ export async function getSatoriFonts(headerFont: FontSpecification, bodyFont: Fo
     ...bodyFonts.filter((font): font is NonNullable<typeof font> => font !== null),
   ]
 
+  if (fonts.length === 0) {
+    const [fallbackHeader, fallbackBody] = await Promise.all([
+      fetchTtf("Open Sans", 700),
+      fetchTtf("Lora", 400),
+    ])
+    if (fallbackHeader) {
+      fonts.push({ name: headerFontName, data: fallbackHeader, weight: 700, style: "normal" })
+      fonts.push({ name: "Open Sans", data: fallbackHeader, weight: 700, style: "normal" })
+    }
+    if (fallbackBody) {
+      fonts.push({ name: bodyFontName, data: fallbackBody, weight: 400, style: "normal" })
+      fonts.push({ name: "Lora", data: fallbackBody, weight: 400, style: "normal" })
+    }
+  }
+
   return fonts
 }
 
@@ -99,12 +114,14 @@ export async function fetchTtf(
   const match = urlRegex.exec(css)
 
   if (!match) {
-    console.log(
-      styleText(
-        "yellow",
-        `\nWarning: Failed to fetch font ${rawFontName} with weight ${weight}, got ${cssResponse.statusText}`,
-      ),
-    )
+    if (cssResponse.status !== 400) {
+      console.log(
+        styleText(
+          "yellow",
+          `\nWarning: Failed to fetch font ${rawFontName} with weight ${weight}, got ${cssResponse.statusText}`,
+        ),
+      )
+    }
     return
   }
 

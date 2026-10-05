@@ -50,6 +50,24 @@ export default (() => {
             )}
           </>
         )}
+        {cfg.theme.fontOrigin === "local" && (
+          <>
+            <link
+              rel="preload"
+              href={joinSegments(baseDir, "static/fonts/AnthropicSans-Roman-Web.woff2")}
+              as="font"
+              type="font/woff2"
+              crossOrigin="anonymous"
+            />
+            <link
+              rel="preload"
+              href={joinSegments(baseDir, "static/fonts/AnthropicSerif-Roman-Web.woff2")}
+              as="font"
+              type="font/woff2"
+              crossOrigin="anonymous"
+            />
+          </>
+        )}
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 

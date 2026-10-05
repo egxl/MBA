@@ -14,11 +14,13 @@
   "scripts": {
     "quartz": "./quartz/bootstrap-cli.mjs",
     "docs": "npx quartz build --serve -d docs",
-    "check": "tsc --noEmit && npx prettier . --check",
+    "check": "tsc --noEmit && npx prettier . --check && npm run companions:check",
     "format": "npx prettier . --write",
     "test": "tsx --test",
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
-    "agent:context": "node ./scripts/agent-context.mjs"
+    "agent:context": "node ./scripts/agent-context.mjs",
+    "companions:check": "node ./scripts/companion-assets.mjs check",
+    "companions:review": "node ./scripts/companion-assets.mjs review"
   },
   "engines": {
     "npm": ">=10",

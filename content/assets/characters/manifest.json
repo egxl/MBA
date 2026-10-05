@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "viewBox": "0 0 200 150",
+  "palette": ["#172536", "#f5eddc", "#a9c9e8", "#e0a243", "#bd6847"],
+  "assets": [
+    {
+      "id": "mk1",
+      "title": "The People & Teams",
+      "code": "MK 001",
+      "companion": "The Convenors",
+      "action": "Coordination",
+      "meaning": "Stabilize together.",
+      "file": "people-teams-convenors.svg",
+      "background": "#3f73ba"
+    },
+    {
+      "id": "mk2",
+      "title": "Financial Strategy",
+      "code": "MK 002",
+      "companion": "The Allocator",
+      "action": "Allocation",
+      "meaning": "Commit deliberately.",
+      "file": "financial-strategy-allocator.svg",
+      "background": "#5f7f39"
+    },
+    {
+      "id": "mk3",
+      "title": "Marketing & Value",
+      "code": "MK 003",
+      "companion": "The Listener",
+      "action": "Listening and fit",
+      "meaning": "Sense before offering.",
+      "file": "marketing-value-listener.svg",
+      "background": "#99620d"
+    },
+    {
+      "id": "mk4",
+      "title": "Operations & SCM",
+      "code": "MK 004",
+      "companion": "The Relay",
+      "action": "Flow and capacity",
+      "meaning": "Make handoffs visible.",
+      "file": "operations-scm-relay.svg",
+      "background": "#835370"
+    },
+    {
+      "id": "mk5",
+      "title": "Decisions & Negotiation",
+      "code": "MK 005",
+      "companion": "The Mediators",
+      "action": "Options and agreement",
+      "meaning": "Create workable span.",
+      "file": "decisions-negotiation-mediators.svg",
+      "background": "#c94f35"
+    },
+    {
+      "id": "mk6",
+      "title": "Business Analytics",
+      "code": "MK 006",
+      "companion": "The Investigator",
+      "action": "Evidence to action",
+      "meaning": "Observe, model, choose.",
+      "file": "business-analytics-investigator.svg",
+      "background": "#bd4f70"
+    },
+    {
+      "id": "peoplemath",
+      "title": "Bonus: PeopleMath",
+      "code": "ELECTIVE 001",
+      "companion": "The Modeler",
+      "action": "Structure and retention",
+      "meaning": "Measure the organization.",
+      "file": "peoplemath-modeler.svg",
+      "background": "#674387"
+    },
+    {
+      "id": "alp",
+      "title": "Action Learning (ALP)",
+      "code": "BUMN CAPSTONE",
+      "companion": "The Builder",
+      "action": "Diagnosis and build",
+      "meaning": "Fit the intervention.",
+      "file": "alp-builder.svg",
+      "background": "#565b50"
+    }
+  ]
+}
