@@ -1,23 +1,125 @@
 @use "../../styles/variables.scss" as *;
 
 .backlinks {
+  display: flex;
   flex-direction: column;
 
-  & > h3 {
-    font-size: 1rem;
-    margin: 0;
+  @media all and ($desktop) {
+    margin-top: auto;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--lightgray);
+    flex-shrink: 0;
+    max-height: 40%;
   }
 
-  & > ul.overflow {
+  @media all and not ($desktop) {
+    padding: 0.5rem 0;
+  }
+
+  & > button.backlinks-header {
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    padding: 0.25rem 0;
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    user-select: none;
+
+    .backlinks-title-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      & > h3 {
+        font-size: 0.95rem;
+        font-weight: $boldWeight;
+        margin: 0;
+        color: var(--dark);
+        letter-spacing: -0.01em;
+      }
+
+      .backlinks-count {
+        font-size: 0.75rem;
+        font-weight: $semiBoldWeight;
+        color: var(--gray);
+        background-color: var(--lightgray);
+        padding: 0.1rem 0.45rem;
+        border-radius: 9999px;
+        line-height: 1.2;
+      }
+    }
+
+    & .fold {
+      width: 18px;
+      height: 18px;
+      transition: transform 0.2s ease;
+      opacity: 0.7;
+      color: var(--dark);
+      flex-shrink: 0;
+    }
+
+    &.collapsed .fold {
+      transform: rotateZ(-90deg);
+    }
+
+    &:hover {
+      .backlinks-title-wrapper > h3 {
+        color: var(--secondary);
+      }
+      .fold {
+        opacity: 1;
+        color: var(--secondary);
+      }
+    }
+  }
+
+  & > ul.backlinks-content.overflow {
     list-style: none;
     padding: 0;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0 0 0;
     max-height: calc(100% - 2rem);
     overscroll-behavior: contain;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--lightgray) transparent;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--lightgray);
+      border-radius: 4px;
+    }
+
+    &.collapsed {
+      display: none;
+    }
 
     & > li {
+      margin-bottom: 0.35rem;
+      font-size: 0.85rem;
+      line-height: 1.35;
+
       & > a {
         background-color: transparent;
+        color: var(--dark);
+        opacity: 0.7;
+        transition:
+          0.2s ease opacity,
+          0.2s ease color;
+
+        &:hover {
+          opacity: 1;
+          color: var(--secondary);
+          text-decoration: underline;
+        }
       }
     }
   }
