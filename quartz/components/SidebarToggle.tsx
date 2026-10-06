@@ -53,6 +53,7 @@ SidebarToggle.css = `
   width: 46px;
   height: 46px;
   min-width: 46px;
+  max-width: 46px;
   border-radius: 50%;
   position: relative;
   isolation: isolate;
@@ -68,11 +69,21 @@ SidebarToggle.css = `
     0 8px 30px -4px rgba(0, 0, 0, 0.08),
     0 2px 6px -1px rgba(0, 0, 0, 0.04);
   flex-shrink: 0;
+  overflow: hidden;
+  opacity: 1;
+  transform: scale(1) translateX(0);
+  margin-right: 0;
+
   transition:
+    width 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+    min-width 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+    max-width 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+    margin-right 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1),
     background-color 0.15s ease,
     color 0.15s ease,
     border-color 0.15s ease,
-    transform 0.15s ease,
     box-shadow 0.15s ease;
 
   :root[saved-theme="dark"] & {
@@ -85,7 +96,11 @@ SidebarToggle.css = `
     background-color: var(--lightgray);
     color: var(--secondary);
     border-color: var(--gray);
-    transform: scale(1.05);
+    transform: scale(1.06);
+  }
+
+  &:active {
+    transform: scale(0.92);
   }
 
   &:focus-visible {
@@ -94,10 +109,27 @@ SidebarToggle.css = `
   }
 
   .sidebar-toggle-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 20px;
     height: 20px;
     stroke: currentColor;
-    transition: transform 0.2s ease;
+    transition:
+      transform 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+      opacity 0.2s ease;
+  }
+
+  .icon-collapse {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    pointer-events: auto;
+  }
+
+  .icon-expand {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(90deg) scale(0.5);
+    pointer-events: none;
   }
 
   @media all and (max-width: 800px) {
@@ -105,8 +137,36 @@ SidebarToggle.css = `
   }
 }
 
+/* Landing page: smoothly closed / collapsed */
 body[data-slug="index"] .sidebar-toggle-btn.circle-button {
-  display: none !important;
+  width: 0;
+  min-width: 0;
+  max-width: 0;
+  padding: 0;
+  border-width: 0;
+  opacity: 0;
+  transform: scale(0.4) translateX(-12px);
+  pointer-events: none;
+  margin-right: calc(-0.65rem);
+  box-shadow: none;
+  transition:
+    width 0.22s cubic-bezier(0.4, 0, 0.2, 1),
+    min-width 0.22s cubic-bezier(0.4, 0, 0.2, 1),
+    max-width 0.22s cubic-bezier(0.4, 0, 0.2, 1),
+    margin-right 0.22s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.16s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sidebar-toggle-btn.circle-button {
+    transition: opacity 0.15s ease !important;
+    transform: none !important;
+  }
+  .sidebar-toggle-btn.circle-button .sidebar-toggle-icon {
+    transition: opacity 0.15s ease !important;
+    transform: translate(-50%, -50%) !important;
+  }
 }
 `
 

@@ -81,6 +81,8 @@ header.site-header {
     .page-title {
       margin: 0;
       padding: 0;
+      border: none;
+      border-bottom: none;
       display: flex;
       align-items: center;
       line-height: 1;
@@ -88,6 +90,11 @@ header.site-header {
       .site-logo-link {
         display: flex;
         align-items: center;
+        border: none;
+        border-bottom: none;
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
       }
 
       .site-logo {
@@ -95,6 +102,8 @@ header.site-header {
         max-height: 28px;
         width: auto;
         object-fit: contain;
+        border: none;
+        border-bottom: none;
       }
     }
   }

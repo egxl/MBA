@@ -33,6 +33,8 @@ Refine spacing, margins, gaps, and breathing room across the portal landing page
 | 2026-09-29 | Antigravity | Expanded card left padding to clamp(2.25rem, 3.2vw, 3rem) (~48px), widened desktop container to 1320px, and loosened section margins                                                           |
 | 2026-09-29 | Hermes      | Removed homepage sidebar tracks, protected course-card insets from Quartz `.internal` link styling, tightened the core grid to 152px cards, and verified the live 1366×768 desktop render      |
 | 2026-10-05 | Antigravity | Implemented floating top navbar enclosing all controls (toggle, logo, home, search, dark mode, reader mode); verified desktop, mobile (390px), light/dark themes, tests, and build             |
+| 2026-10-05 | Antigravity | Eliminated inherited h2 bottom border under P3MD navbar logo; added smooth enter/exit and chevron rotation animations for explorer circle pill button; verified tests, build, and screenshots  |
+| 2026-10-06 | Antigravity | Aligned landing page layout with reader-mode 300px left and right empty spaces; configured responsive 2/3-column core course grid; verified tests, check, and build                             |
 
 ## Remaining work
 

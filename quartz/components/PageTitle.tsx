@@ -32,12 +32,19 @@ PageTitle.css = `
 .page-title {
   font-size: 1.75rem;
   margin: 0;
+  border: none;
+  border-bottom: none;
+  padding-bottom: 0;
   font-family: var(--titleFont);
 }
 
 .page-title a.site-logo-link {
   display: block;
   text-decoration: none;
+  border: none;
+  border-bottom: none;
+  outline: none;
+  box-shadow: none;
   line-height: 0;
   transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease;
 }
@@ -56,6 +63,10 @@ PageTitle.css = `
   max-width: 100%;
   height: auto;
   max-height: 52px;
+  border: none;
+  border-bottom: none;
+  outline: none;
+  box-shadow: none;
   object-fit: contain;
   transition: opacity 0.2s ease, filter 0.2s ease;
 }

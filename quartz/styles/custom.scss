@@ -1,5 +1,6 @@
 @use "./base.scss";
 @use "./fonts.scss";
+@use "./variables.scss" as *;
 
 /**
  * ============================================================================
@@ -716,15 +717,37 @@ article {
    ========================================================================== */
 
 body[data-slug="index"] {
-  // The portal is a dashboard, not a reading page: reserve the full desktop
-  // canvas for course selection instead of keeping empty sidebar tracks.
+  // Align the landing page with Quartz's reader-mode layout: enforce symmetrical
+  // 300px empty spaces on left and right on desktop, with sidebars completely hidden.
+  --left-sidebar-width: #{$sidePanelWidth} !important;
+  --right-sidebar-width: #{$sidePanelWidth} !important;
+
   #quartz-body {
-    grid-template-columns: minmax(0, 1fr) !important;
-    grid-template-rows: auto auto auto !important;
+    grid-template-columns: var(--left-sidebar-width, #{$sidePanelWidth}) minmax(0, 1fr) var(
+        --right-sidebar-width,
+        #{$sidePanelWidth}
+      ) !important;
+    grid-template-rows: auto auto !important;
     grid-template-areas:
-      "grid-header"
-      "grid-center"
-      "grid-footer" !important;
+      "grid-sidebar-left grid-center grid-sidebar-right"
+      "grid-sidebar-left grid-footer grid-sidebar-right" !important;
+    column-gap: 5px;
+
+    @media all and ($tablet) {
+      grid-template-columns: minmax(0, 1fr) !important;
+      grid-template-areas:
+        "grid-center"
+        "grid-footer" !important;
+      padding: 0 clamp(1.5rem, 4vw, 3rem);
+    }
+
+    @media all and ($mobile) {
+      grid-template-columns: minmax(0, 1fr) !important;
+      grid-template-areas:
+        "grid-center"
+        "grid-footer" !important;
+      padding: 0 1rem;
+    }
   }
 
   .sidebar.left,
@@ -741,12 +764,13 @@ body[data-slug="index"] {
   }
 
   .center {
-    max-width: 1440px !important;
     width: 100% !important;
+    max-width: none !important;
     min-width: 0;
     box-sizing: border-box;
-    padding: clamp(0.65rem, 1.2vw, 1rem) clamp(1rem, 2vw, 1.5rem) 2.25rem !important;
+    padding: clamp(0.65rem, 1.2vw, 1rem) 2rem 2.25rem !important;
     background: transparent !important;
+    container-type: inline-size;
   }
 
   article {
@@ -812,6 +836,10 @@ body[data-slug="index"] {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.85rem;
   margin: 0 0 2.25rem;
+
+  @container (max-width: 720px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
   a {
     display: inline-flex;
@@ -895,9 +923,13 @@ body[data-slug="index"] {
 }
 
 .socratica-grid-core {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-auto-rows: minmax(130px, 150px);
   margin-bottom: 0;
+
+  @container (min-width: 920px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 .socratica-grid-support {
@@ -1037,10 +1069,15 @@ body[data-slug="index"] a.socratica-card.internal {
   transform: translateY(-2px);
 }
 
-@media (max-width: 1240px) {
+@media (min-width: 1600px) {
+  .socratica-grid-core {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1599px) and (min-width: 601px) {
   .socratica-grid-core {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-auto-rows: minmax(130px, auto);
   }
 }
 
