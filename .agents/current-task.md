@@ -4,7 +4,7 @@ Status: Complete.
 
 ## Active objective
 
-Make Backlinks collapsible and anchored statically at the bottom of the right sidebar, giving primary room to Table of Contents.
+Update the landing page course cards to display the original MK names with responsive typography and grid adaptations.
 
 ## Constraints and assumptions
 
@@ -36,6 +36,7 @@ Make Backlinks collapsible and anchored statically at the bottom of the right si
 | 2026-09-29 | Antigravity | Eliminated inherited h2 bottom border under P3MD navbar logo; added smooth enter/exit and chevron rotation animations for explorer circle pill button; verified tests, build, and screenshots               |
 | 2026-10-06 | Antigravity | Aligned landing page layout with reader-mode 300px left and right empty spaces; configured responsive 2/3-column core course grid; verified tests, check, and build                                         |
 | 2026-10-06 | Antigravity | Made Backlinks collapsible by default and docked at the bottom of the right sidebar with count badge and chevron; expanded TOC flex allocation with internal scroll; verified unit tests, checks, and build |
+| 2026-10-06 | Antigravity | Updated landing page cards to original MK names, tuned card typography and grid-auto-rows to prevent clipping, synchronized companion manifest titles, and regenerated review board; verified tests, checks, and build |
 
 ## Remaining work
 

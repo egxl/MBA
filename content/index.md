@@ -24,66 +24,66 @@ tags:
 
 <div class="socratica-grid socratica-grid-core">
 
-  <!-- CARD 1: MK 1 - The People & Teams -->
+  <!-- CARD 1: MK 1 - Organizational Behaviour & Managing People -->
   <a href="courses/mk1-organizational-behavior-managing-people" class="socratica-card card-mk1">
     <div class="card-top">
       <span class="card-issue">MK 001</span>
-      <div class="card-title">The People &amp; Teams</div>
+      <div class="card-title">Organizational Behaviour &amp; Managing People</div>
     </div>
     <div class="card-character">
       <img src="assets/characters/people-teams-convenors.svg" alt="" aria-hidden="true" width="200" height="150" decoding="async" />
     </div>
   </a>
 
-  <!-- CARD 2: MK 2 - Financial Strategy -->
+  <!-- CARD 2: MK 2 - Financial Management and Strategy -->
   <a href="courses/mk2-financial-management-strategy" class="socratica-card card-mk2">
     <div class="card-top">
       <span class="card-issue">MK 002</span>
-      <div class="card-title">Financial Strategy</div>
+      <div class="card-title">Financial Management and Strategy</div>
     </div>
     <div class="card-character">
       <img src="assets/characters/financial-strategy-allocator.svg" alt="" aria-hidden="true" width="200" height="150" decoding="async" />
     </div>
   </a>
 
-  <!-- CARD 3: MK 3 - Marketing & Value -->
+  <!-- CARD 3: MK 3 - Marketing Management -->
   <a href="courses/mk3-marketing-management" class="socratica-card card-mk3">
     <div class="card-top">
       <span class="card-issue">MK 003</span>
-      <div class="card-title">Marketing &amp; Value</div>
+      <div class="card-title">Marketing Management</div>
     </div>
     <div class="card-character">
       <img src="assets/characters/marketing-value-listener.svg" alt="" aria-hidden="true" width="200" height="150" decoding="async" />
     </div>
   </a>
 
-  <!-- CARD 4: MK 4 - Operations & SCM -->
+  <!-- CARD 4: MK 4 - Operations and Supply Chain Management -->
   <a href="courses/mk4-operations-supply-chain-management" class="socratica-card card-mk4">
     <div class="card-top">
       <span class="card-issue">MK 004</span>
-      <div class="card-title">Operations &amp; SCM</div>
+      <div class="card-title">Operations and Supply Chain Management</div>
     </div>
     <div class="card-character">
       <img src="assets/characters/operations-scm-relay.svg" alt="" aria-hidden="true" width="200" height="150" decoding="async" />
     </div>
   </a>
 
-  <!-- CARD 5: MK 5 - Decisions & Negotiation -->
+  <!-- CARD 5: MK 5 - Problem Solving, Decision Making and Negotiation -->
   <a href="courses/mk5-decision-making-negotiation" class="socratica-card card-mk5">
     <div class="card-top">
       <span class="card-issue">MK 005</span>
-      <div class="card-title">Decisions &amp; Negotiation</div>
+      <div class="card-title">Problem Solving, Decision Making and Negotiation</div>
     </div>
     <div class="card-character">
       <img src="assets/characters/decisions-negotiation-mediators.svg" alt="" aria-hidden="true" width="200" height="150" decoding="async" />
     </div>
   </a>
 
-  <!-- CARD 6: MK 6 - Business Analytics -->
+  <!-- CARD 6: MK 6 - Applied Business Analytics -->
   <a href="courses/mk6-business-analytics" class="socratica-card card-mk6">
     <div class="card-top">
       <span class="card-issue">MK 006</span>
-      <div class="card-title">Business Analytics</div>
+      <div class="card-title">Applied Business Analytics</div>
     </div>
     <div class="card-character">
       <img src="assets/characters/business-analytics-investigator.svg" alt="" aria-hidden="true" width="200" height="150" decoding="async" />

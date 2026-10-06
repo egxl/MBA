@@ -56,7 +56,7 @@ test("renderReviewHtml builds a review board from manifest data rather than dupl
   const html = renderReviewHtml([
     {
       id: "mk1",
-      title: "The People & Teams",
+      title: "Organizational Behaviour & Managing People",
       code: "MK 001",
       companion: "The Convenors",
       action: "Coordination",

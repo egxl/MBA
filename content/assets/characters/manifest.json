@@ -5,7 +5,7 @@
   "assets": [
     {
       "id": "mk1",
-      "title": "The People & Teams",
+      "title": "Organizational Behaviour & Managing People",
       "code": "MK 001",
       "companion": "The Convenors",
       "action": "Coordination",
@@ -15,7 +15,7 @@
     },
     {
       "id": "mk2",
-      "title": "Financial Strategy",
+      "title": "Financial Management and Strategy",
       "code": "MK 002",
       "companion": "The Allocator",
       "action": "Allocation",
@@ -25,7 +25,7 @@
     },
     {
       "id": "mk3",
-      "title": "Marketing & Value",
+      "title": "Marketing Management",
       "code": "MK 003",
       "companion": "The Listener",
       "action": "Listening and fit",
@@ -35,7 +35,7 @@
     },
     {
       "id": "mk4",
-      "title": "Operations & SCM",
+      "title": "Operations and Supply Chain Management",
       "code": "MK 004",
       "companion": "The Relay",
       "action": "Flow and capacity",
@@ -45,7 +45,7 @@
     },
     {
       "id": "mk5",
-      "title": "Decisions & Negotiation",
+      "title": "Problem Solving, Decision Making and Negotiation",
       "code": "MK 005",
       "companion": "The Mediators",
       "action": "Options and agreement",
@@ -55,7 +55,7 @@
     },
     {
       "id": "mk6",
-      "title": "Business Analytics",
+      "title": "Applied Business Analytics",
       "code": "MK 006",
       "companion": "The Investigator",
       "action": "Evidence to action",
