@@ -13,8 +13,6 @@ tags:
   - machine-learning
 ---
 
-# Week 03: Predictive Analytics for Business
-
 ## 🎯 Executive Summary
 
 Predictive analytics uses statistical learning algorithms to uncover latent patterns in historical data and generate forward-looking probabilistic forecasts. Executives must understand the mechanics of continuous regression, binary classification, and model validation to evaluate predictive accuracy.

@@ -13,8 +13,6 @@ tags:
   - principled-negotiation
 ---
 
-# Week 12: Transitioning from Distributive to Integrative Negotiation
-
 ## 🎯 Executive Summary
 
 Single-issue negotiations inevitably trap parties in positional bargaining. **Integrative Negotiation** (Principled Negotiation / Harvard Negotiation Project) transforms zero-sum disputes into cooperative problem-solving by shifting from rigid _positions_ to underlying _interests_.

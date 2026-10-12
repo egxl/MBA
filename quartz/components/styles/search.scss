@@ -49,12 +49,18 @@
     contain: layout;
     z-index: 999;
     left: 0;
-    top: 0;
+    top: var(--navbar-offset);
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - var(--navbar-offset));
     overflow-y: auto;
     display: none;
-    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-backdrop-filter: blur(4px) brightness(0.75);
+    backdrop-filter: blur(4px) brightness(0.75);
+
+    @supports ((-webkit-backdrop-filter: blur(4px)) or (backdrop-filter: blur(4px))) {
+      background-color: transparent;
+    }
 
     &.active {
       display: inline-block;
@@ -62,7 +68,7 @@
 
     & > .search-space {
       width: 65%;
-      margin-top: 12vh;
+      margin-top: 1.5rem;
       margin-left: auto;
       margin-right: auto;
 
@@ -187,6 +193,7 @@
             width: 100%;
             display: block;
             box-sizing: border-box;
+            color: var(--dark);
 
             // normalize card props
             font-family: inherit;
@@ -204,8 +211,15 @@
               background: var(--lightgray);
             }
 
-            & > h3 {
+            & > h3,
+            & > .card-title {
               margin: 0;
+              color: var(--dark);
+              font-family: var(--headerFont);
+            }
+
+            & > p.card-description {
+              color: var(--darkgray);
             }
 
             @media all and not ($mobile) {
@@ -235,6 +249,7 @@
 
             & > p {
               margin-bottom: 0;
+              color: var(--darkgray);
             }
           }
         }

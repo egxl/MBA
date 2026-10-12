@@ -13,8 +13,6 @@ tags:
   - macro-environment
 ---
 
-# Week 02: Analyzing the Marketing Environment
-
 ## 🎯 Executive Summary
 
 Enterprises operate within dynamic external ecosystems. Strategic marketers must continuously scan the micro-environment (suppliers, intermediaries, customers, competitors) and macro-environment (technological, regulatory, demographic forces) to preempt competitive disruption.

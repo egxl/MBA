@@ -13,8 +13,6 @@ tags:
   - strategic-resilience
 ---
 
-# Week 08: Scenario Planning & Systems Thinking (Part 2: 2x2 Matrix Scenarios)
-
 ## 🎯 Executive Summary
 
 The future is non-linear and unknowable; point forecasts inevitably mislead executives. Pioneered by Royal Dutch Shell, **Scenario Planning** constructs multiple plausible, divergent futures to stress-test corporate strategy against extreme macro shifts before they occur.

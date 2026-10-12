@@ -191,6 +191,10 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
   const container = searchElement.querySelector(".search-container") as HTMLElement
   if (!container) return
 
+  window.addCleanup(() => {
+    document.documentElement.classList.remove("search-open")
+  })
+
   const sidebar = container.closest(".sidebar") as HTMLElement | null
 
   const searchButton = searchElement.querySelector(".search-button") as HTMLButtonElement
@@ -222,6 +226,7 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
 
   function hideSearch() {
     container.classList.remove("active")
+    document.documentElement.classList.remove("search-open")
     searchBar.value = "" // clear the input when we dismiss the search
     if (sidebar) sidebar.style.zIndex = ""
     removeAllChildren(results)
@@ -237,6 +242,7 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
     searchType = searchTypeNew
     if (sidebar) sidebar.style.zIndex = "1"
     container.classList.add("active")
+    document.documentElement.classList.add("search-open")
     searchBar.focus()
   }
 
@@ -495,10 +501,29 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
 
   document.addEventListener("keydown", shortcutHandler)
   window.addCleanup(() => document.removeEventListener("keydown", shortcutHandler))
-  searchButton.addEventListener("click", () => showSearch("basic"))
-  window.addCleanup(() => searchButton.removeEventListener("click", () => showSearch("basic")))
+  const toggleSearch = () => {
+    container.classList.contains("active") ? hideSearch() : showSearch("basic")
+  }
+  searchButton.addEventListener("click", toggleSearch)
+  window.addCleanup(() => searchButton.removeEventListener("click", toggleSearch))
   searchBar.addEventListener("input", onType)
   window.addCleanup(() => searchBar.removeEventListener("input", onType))
+
+  const outsideClick = (e: MouseEvent) => {
+    if (!container.classList.contains("active")) return
+    const target = e.target as HTMLElement | null
+    if (!target) return
+    if (
+      target.closest(".search-space") ||
+      target.closest(".navbar") ||
+      target.closest(".sidebar-toggle")
+    ) {
+      return
+    }
+    hideSearch()
+  }
+  document.addEventListener("click", outsideClick)
+  window.addCleanup(() => document.removeEventListener("click", outsideClick))
 
   registerEscapeHandler(container, hideSearch)
   await fillDocument(data)

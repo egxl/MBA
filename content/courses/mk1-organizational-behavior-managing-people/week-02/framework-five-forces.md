@@ -11,8 +11,6 @@ tags:
   - strategic-hr
 ---
 
-# Framework: Five Forces of Talent & Organizational Alignment
-
 > [!framework] Conceptual Framework: Porterian Dynamics in Talent Systems
 > Adapting Michael Porter's seminal Five Forces framework into human capital strategy enables leaders to evaluate the competitive pressures governing talent retention, team cohesion, and organizational rent extraction.
 

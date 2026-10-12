@@ -13,8 +13,6 @@ tags:
   - b2b-segmentation
 ---
 
-# Week 06: Market Segmentation & Target Market Selection
-
 ## 🎯 Executive Summary
 
 Trying to be everything to everyone guarantees mediocrity. **Segmentation** partitions a heterogeneous market into distinct groups with common needs, while **Targeting** rigorously prioritizes which segments the firm can serve with sustainable competitive superiority.

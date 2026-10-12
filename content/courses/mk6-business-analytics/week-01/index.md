@@ -13,8 +13,6 @@ tags:
   - prescriptive-analytics
 ---
 
-# Week 01: Introduction to Business Analytics
-
 ## 🎯 Executive Summary
 
 Business Analytics is the scientific process of transforming raw organizational data into insights for making better, faster decisions. Analytics bridges the gap between technical data engineering and strategic executive leadership.

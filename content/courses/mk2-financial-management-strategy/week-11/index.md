@@ -13,8 +13,6 @@ tags:
   - equity-issuance
 ---
 
-# Week 11: Financing Decisions & Financial Environment
-
 ## 🎯 Executive Summary
 
 Capital structure strategy requires navigating external financial markets and banking institutions. Executives must choose between bank credit facilities, corporate bond issuances, syndicated loans, convertible instruments, and public equity offerings based on cost, maturity matching, and covenant constraints.

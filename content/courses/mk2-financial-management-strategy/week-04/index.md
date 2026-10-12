@@ -13,8 +13,6 @@ tags:
   - breakeven
 ---
 
-# Week 04: Management Accounting Fundamentals
-
 ## 🎯 Executive Summary
 
 While financial accounting serves external stakeholders through standardized GAAP/IFRS disclosures, management accounting provides internal decision-makers with the operational cost intelligence needed to price contracts, evaluate unit margins, and set production quotas.

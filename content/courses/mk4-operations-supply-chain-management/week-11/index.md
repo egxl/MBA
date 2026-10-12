@@ -13,8 +13,6 @@ tags:
   - mad-mape
 ---
 
-# Week 11: Demand Forecasting & Time-Series Analytics
-
 ## 🎯 Executive Summary
 
 Every operational decision—from procurement to workforce scheduling—relies on an explicit or implicit demand forecast. While all forecasts are inherently wrong, disciplined statistical forecasting minimizes error, measures variance, and provides the baseline for aggregate planning.

@@ -13,8 +13,6 @@ tags:
   - house-of-quality
 ---
 
-# Week 03: Product and Service Design
-
 ## 🎯 Executive Summary
 
 Over 70% of a product's ultimate manufacturing cost, quality conformance, and carbon footprint is irrevocably locked in during the initial design phase. Modern operations integrate engineering, manufacturing, and marketing through concurrent development and Design for Manufacturability.

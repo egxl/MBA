@@ -13,8 +13,6 @@ tags:
   - monetization
 ---
 
-# Week 10: Marketing Mix: Strategic Pricing & Value Capture
-
 ## 🎯 Executive Summary
 
 Price is the only element of the marketing mix that produces revenue; all other elements produce costs. Pricing is also the most flexible and immediately dangerous lever: a 1% improvement in price realization generates an 8–11% expansion in operating profit for average Fortune 500 firms.

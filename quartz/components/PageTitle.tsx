@@ -75,12 +75,6 @@ PageTitle.css = `
   filter: brightness(0) invert(1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([saved-theme="light"]) .page-title .site-logo {
-    filter: brightness(0) invert(1);
-  }
-}
-
 @media all and (max-width: 799px) {
   .page-title .site-logo {
     max-height: 38px;

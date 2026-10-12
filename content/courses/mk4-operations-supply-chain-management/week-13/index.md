@@ -13,8 +13,6 @@ tags:
   - reorder-point
 ---
 
-# Week 13: Inventory Management & Stochastic Safety Stock
-
 ## 🎯 Executive Summary
 
 Inventory is simultaneously an operating asset that buffers against uncertainty and a major cash liability that ties up working capital. Disciplined inventory models balance ordering/setup costs against holding costs and calibrate safety stocks to achieve target service levels.

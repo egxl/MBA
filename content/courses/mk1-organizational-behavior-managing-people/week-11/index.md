@@ -13,8 +13,6 @@ tags:
   - leadership-pipeline
 ---
 
-# Week 11: Talent Management, Development & Succession
-
 ## 🎯 Executive Summary
 
 Institutional continuity depends on the deliberate grooming of high-potential talent and robust succession planning. Organizations that fail to build deep leadership bench strength face acute enterprise fragility when key executives depart or business models rapidly evolve.

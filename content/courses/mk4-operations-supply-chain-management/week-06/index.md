@@ -13,8 +13,6 @@ tags:
   - theory-of-constraints
 ---
 
-# Week 06: Process Design, Analysis & Little's Law
-
 ## 🎯 Executive Summary
 
 Every enterprise is a collection of interconnected processes. Process analysis provides the quantitative toolkit to map operational workflows, measure cycle times, identify system bottlenecks, and dramatically compress lead times using fundamental operational laws.

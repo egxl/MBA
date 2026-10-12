@@ -9,8 +9,6 @@ tags:
   - danantara
 ---
 
-# P3MD MBA Program Architecture & Governance
-
 The **P3MD MBA** (_Program Pendidikan Profesional Magister Terapan_) is an executive leadership ecosystem engineered by **SBM ITB** (_Direktorat Pendidikan Profesional Berkelanjutan_) in strategic collaboration with the **Kementerian Pertahanan Republik Indonesia (Kemhan RI)**, **DIKTISAINTEK BERDAMPAK**, and **Danantara Indonesia** (_Daya Anagata Nusantara_).
 
 Hosted at the residential **Kampus DCU Nawasena**, the program is built on an integrated development architecture designed to transform high-potential leaders into strategic business executives under the ethos:

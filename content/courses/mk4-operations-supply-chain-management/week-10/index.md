@@ -13,8 +13,6 @@ tags:
   - statistical-process-control
 ---
 
-# Week 10: Statistical Quality Control (SPC & Control Charts)
-
 ## 🎯 Executive Summary
 
 Statistical Quality Control (SQC) uses statistical sampling and monitoring to distinguish between natural background variation (common causes) and systemic disruptions (assignable causes). **Control charts** prevent managers from both under-reacting to true defects and over-reacting to random system noise (tampering).

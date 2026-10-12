@@ -13,8 +13,6 @@ tags:
   - engagement
 ---
 
-# Week 03: Motivation & Human Behavior at Work
-
 ## 🎯 Executive Summary
 
 Sustained organizational performance depends on designing operating environments that ignite and sustain human energy. Leaders must understand both extrinsic incentive architecture and intrinsic motivational psychology to overcome disengagement, cynicism, and execution stagnation.

@@ -12,8 +12,6 @@ tags:
   - clv
 ---
 
-# Week 01: Creating Customer Value & Engagement
-
 ## 🎯 Executive Summary
 
 Marketing is not merely advertising or selling; it is the organizational philosophy and process of creating, communicating, and delivering superior customer value in exchange for captured enterprise value (Customer Lifetime Value).

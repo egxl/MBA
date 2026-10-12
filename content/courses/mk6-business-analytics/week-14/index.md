@@ -14,8 +14,6 @@ tags:
   - capstone
 ---
 
-# Week 14: Future Trends in Business Analytics: Generative AI & Autonomous Decision Systems
-
 ## 🎯 Executive Summary
 
 The frontier of analytics is transitioning from descriptive dashboards and isolated predictive models to **Generative AI, Large Language Models (LLMs), and Autonomous Agentic Decision Systems**. Modern business leaders must architect organizations where human strategic judgment orchestrates autonomous AI workflows.

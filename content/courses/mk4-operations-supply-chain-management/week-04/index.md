@@ -13,8 +13,6 @@ tags:
   - critical-chain
 ---
 
-# Week 04: Project Management (CPM / PERT & Critical Chain)
-
 ## 🎯 Executive Summary
 
 Complex, non-routine enterprise initiatives (capital expansions, digital ERP implementations, Action Learning Projects) require specialized project management architectures. Leaders use network path analysis to identify bottlenecks, control project duration, and optimize resource allocation.

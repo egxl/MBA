@@ -13,8 +13,6 @@ tags:
   - data-architecture
 ---
 
-# Week 03: Managing Marketing Information & Customer Insights (Part 1)
-
 ## 🎯 Executive Summary
 
 In the era of big data, competitive advantage belongs not to the organization with the most data, but to the one capable of turning raw operational records into actionable customer insights. A Marketing Information System (MIS) provides structured market intelligence for executive decision-making.

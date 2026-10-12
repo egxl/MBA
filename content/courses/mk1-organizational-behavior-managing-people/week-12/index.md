@@ -13,8 +13,6 @@ tags:
   - incentives
 ---
 
-# Week 12: Performance Management, Compensation, and Benefit
-
 ## 🎯 Executive Summary
 
 Performance management translates enterprise strategy into individual operational priorities. When coupled with transparent, equitable compensation architecture (Total Rewards), it aligns executive incentives with long-term shareholder and stakeholder value creation.

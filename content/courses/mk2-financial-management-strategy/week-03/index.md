@@ -13,8 +13,6 @@ tags:
   - forecasting
 ---
 
-# Week 03: Financial Statement Projections
-
 ## 🎯 Executive Summary
 
 Pro-forma financial modeling projects the future financial consequences of alternative strategic plans. Financial managers use integrated 3-statement forecast models to identify future cash deficits, evaluate capital expenditure plans, and compute **External Financing Needed (EFN)**.

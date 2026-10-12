@@ -12,8 +12,6 @@ tags:
   - leadership
 ---
 
-# Week 01: Strategizing Your Life: Self-Awareness, Values & Purpose
-
 ## 🎯 Executive Summary
 
 Leadership effectiveness begins from within. In high-stakes organizational environments, executives who possess profound self-awareness, crystal-clear ethical anchors, and an explicit personal purpose demonstrate superior resilience, cognitive clarity, and decision-making consistency under pressure.

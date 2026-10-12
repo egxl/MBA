@@ -13,8 +13,6 @@ tags:
   - sbm-itb
 ---
 
-# MK 3: Marketing Management
-
 ## 📖 Course Information
 
 - **Course Code**: MK3

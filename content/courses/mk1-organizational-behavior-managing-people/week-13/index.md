@@ -13,8 +13,6 @@ tags:
   - future-of-work
 ---
 
-# Week 13: Leading Change, Transformation & the Future of Workplace
-
 ## 🎯 Executive Summary
 
 Over 70% of large-scale corporate transformations fail to achieve their stated objectives. The barrier is rarely flawed technical strategy; it is almost always organizational inertia, leader exhaustion, and resistance to change. Leaders must master change management methodologies to guide enterprises through disruptive transitions.

@@ -13,8 +13,6 @@ tags:
   - persuasion
 ---
 
-# Week 04: Leadership & Influence
-
 ## 🎯 Executive Summary
 
 Leadership is the process of social influence that maximizes the efforts of others toward achieving a shared strategic goal. Formal authority may command compliance, but true leadership engenders voluntary commitment, cognitive alignment, and discretionary effort.

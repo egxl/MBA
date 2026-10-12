@@ -13,8 +13,6 @@ tags:
   - agency-problem
 ---
 
-# Week 01: Financial Management Function & Objectives
-
 ## 🎯 Executive Summary
 
 The primary financial objective of the enterprise is sustainable, long-term economic value creation. The Chief Financial Officer (CFO) and finance function operate at the intersection of capital allocation, financial risk management, and investor relations, ensuring that corporate assets generate returns exceeding the required cost of capital.

@@ -13,8 +13,6 @@ tags:
   - reservation-price
 ---
 
-# Week 01: Introduction to Negotiation Architecture (BATNA & ZOPA)
-
 ## 🎯 Executive Summary
 
 Negotiation is an interpersonal decision-making process necessary whenever we cannot achieve our objectives single-handedly. Systematic negotiators do not rely on intuition or aggressive rhetoric; they construct disciplined mathematical and behavioral deal architectures.

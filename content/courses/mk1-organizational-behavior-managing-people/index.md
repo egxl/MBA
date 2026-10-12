@@ -11,8 +11,6 @@ tags:
   - sbm-itb
 ---
 
-# MK 1: Organizational Behaviour & Managing People
-
 ## 📖 Course Information
 
 - **Course Code**: MK1

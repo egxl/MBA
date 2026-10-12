@@ -13,8 +13,6 @@ tags:
   - free-cash-flow
 ---
 
-# Week 08: Capital Budgeting (Part 1: Decision Criteria & Cash Flows)
-
 ## 🎯 Executive Summary
 
 Capital budgeting determines how the firm allocates long-term capital across competing real investment opportunities. The **Net Present Value (NPV)** rule is the gold standard for financial decision-making because it directly quantifies the net dollar addition to shareholder wealth.

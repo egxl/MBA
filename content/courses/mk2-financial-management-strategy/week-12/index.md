@@ -13,8 +13,6 @@ tags:
   - liquidity
 ---
 
-# Week 12: Working Capital Management & Liquidity Strategy
-
 ## 🎯 Executive Summary
 
 Profitable firms can easily go bankrupt if they run out of cash. **Working Capital Management** balances the trade-off between operational liquidity (minimizing bankruptcy and stockout risks) and asset profitability (minimizing idle, non-earning current assets).

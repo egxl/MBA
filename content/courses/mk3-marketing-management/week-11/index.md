@@ -13,8 +13,6 @@ tags:
   - retail
 ---
 
-# Week 11: Marketing Mix: Distribution Channels & Digital Omnichannel
-
 ## 🎯 Executive Summary
 
 A brilliant product priced perfectly will fail if it is unavailable when and where the customer demands it. **Distribution Strategy (Place)** designs and manages the route-to-market architecture—integrating traditional wholesale, modern retail, Direct-to-Consumer (D2C), and digital marketplaces.

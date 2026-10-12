@@ -13,8 +13,6 @@ tags:
   - gdpr
 ---
 
-# Week 12: Practical: Data Privacy, Cybersecurity & Compliance (UU PDP)
-
 ## 🎯 Executive Summary
 
 Data is both an enterprise asset and a catastrophic legal and reputational liability. Executives must govern data collection under stringent privacy frameworks like Indonesia's **Undang-Undang Pelindungan Data Pribadi (UU PDP No. 27/2022)** and establish proactive cybersecurity resilience.

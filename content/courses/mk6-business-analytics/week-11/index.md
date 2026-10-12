@@ -13,8 +13,6 @@ tags:
   - spark
 ---
 
-# Week 11: Practical: Big Data Technologies & Cloud Pipelines
-
 ## 🎯 Executive Summary
 
 Executive decision-makers do not need to write low-level distributed computing code, but they must master the architectural components of modern cloud data stacks to evaluate technology vendor proposals, estimate infrastructure budgets, and structure data engineering teams.

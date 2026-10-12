@@ -12,8 +12,6 @@ tags:
   - sbm-itb
 ---
 
-# MK 2: Financial Management and Strategy
-
 ## 📖 Course Information
 
 - **Course Code**: MK2

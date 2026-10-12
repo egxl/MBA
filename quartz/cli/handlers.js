@@ -378,7 +378,10 @@ export async function handleBuild(argv) {
           headers: [
             {
               source: "**/*.*",
-              headers: [{ key: "Content-Disposition", value: "inline" }],
+              headers: [
+                { key: "Content-Disposition", value: "inline" },
+                { key: "Cache-Control", value: "no-cache, no-store, must-revalidate" },
+              ],
             },
             {
               source: "**/*.webp",

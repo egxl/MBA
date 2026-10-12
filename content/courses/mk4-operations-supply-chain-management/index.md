@@ -12,8 +12,6 @@ tags:
   - sbm-itb
 ---
 
-# MK 4: Operations and Supply Chain Management
-
 ## 📖 Course Information
 
 - **Course Code**: MK4

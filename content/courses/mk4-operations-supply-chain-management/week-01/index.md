@@ -12,8 +12,6 @@ tags:
   - transformation-model
 ---
 
-# Week 01: Introduction to Operations and Supply Chain Management
-
 ## 🎯 Executive Summary
 
 Operations management is the engine of the enterprise, responsible for transforming raw inputs into valuable goods and services. A supply chain coordinates this transformation across multi-tier networks of suppliers, manufacturers, logistics providers, and end consumers.

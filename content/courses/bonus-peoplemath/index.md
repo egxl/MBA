@@ -10,8 +10,6 @@ tags:
   - talent-roi
 ---
 
-# Bonus Module: PeopleMath & Human Capital Quantitative Modeling
-
 ## 📖 Module Overview
 
 PeopleMath is an advanced executive masterclass bridging finance, organizational behavior, and data analytics. It equips leaders to evaluate human capital decisions with the mathematical rigor traditionally reserved for capital expenditures and financial investments.

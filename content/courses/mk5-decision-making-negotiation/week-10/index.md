@@ -13,8 +13,6 @@ tags:
   - behavioral-archetypes
 ---
 
-# Week 10: Negotiation Styles, Behavioral Archetypes & Power Dynamics
-
 ## 🎯 Executive Summary
 
 Negotiations are conducted by human beings with distinct psychological wiring, emotional triggers, and ingrained behavioral archetypes. Elite negotiators diagnose the personal style of counterparties, manage their own emotional reactivity, and calibrate power dynamics.

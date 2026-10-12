@@ -13,8 +13,6 @@ tags:
   - performance-marketing
 ---
 
-# Week 12: Marketing Mix: Integrated Marketing Communications (Promotion)
-
 ## 🎯 Executive Summary
 
 Promotion represents the voice of the brand. **Integrated Marketing Communications (IMC)** coordinates all touchpoints—paid advertising, public relations, personal selling, sales promotion, and social channels—to deliver a clear, consistent, and compelling message across the customer lifecycle.

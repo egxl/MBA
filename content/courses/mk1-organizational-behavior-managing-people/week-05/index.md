@@ -13,8 +13,6 @@ tags:
   - communication
 ---
 
-# Week 05: Team Dynamics, Communication, Negotiation & Conflict
-
 ## 🎯 Executive Summary
 
 High-performing teams do not emerge by assembling high-performing individuals; they are forged through psychological safety, clear role interdependence, and productive conflict management. Leaders must cultivate environments where candid dissent is celebrated and task conflict is decoupled from relationship conflict.

@@ -13,8 +13,6 @@ tags:
   - utility-theory
 ---
 
-# Week 05: Decision Analysis: SMART (Simple Multi-Attribute Rating Technique)
-
 ## 🎯 Executive Summary
 
 Executive decisions typically involve multiple conflicting criteria (e.g., maximizing speed, minimizing cost, maximizing safety). The **Simple Multi-Attribute Rating Technique (SMART)** provides an intuitive, mathematically grounded multi-criteria decision analysis (MCDA) framework based on linear additive utility theory.

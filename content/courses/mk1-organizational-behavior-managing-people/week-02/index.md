@@ -13,8 +13,6 @@ tags:
   - diversity
 ---
 
-# Week 02: Who Am I at Work? Identity, Personality & Individual Differences
-
 ## 🎯 Executive Summary
 
 Workplace performance is fundamentally shaped by individual differences in personality, cognitive styles, and professional identities. Strategic leaders must move beyond simplistic personality stereotyping to diagnose how traits interact with situational strength, organizational roles, and cross-functional team dynamics.

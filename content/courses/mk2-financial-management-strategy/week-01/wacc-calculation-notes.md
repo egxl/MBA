@@ -12,8 +12,6 @@ tags:
   - financial-modeling
 ---
 
-# WACC Calculation & Financial Modeling Notes
-
 ## 📐 Core Formulation
 
 The Weighted Average Cost of Capital (WACC) represents the blended after-tax rate of return demanded by all capital providers (equity holders and debt holders):

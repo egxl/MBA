@@ -13,8 +13,6 @@ tags:
   - risk-mitigation
 ---
 
-# Week 04: Kepner-Tregoe Methodology (Part 2: Decision & Potential Problem Analysis)
-
 ## 🎯 Executive Summary
 
 Once a problem is diagnosed or an opportunity identified, executives must choose the optimal forward course. Part 2 of Kepner-Tregoe presents **Decision Analysis (DA)** to evaluate options against objective criteria and **Potential Problem Analysis (PPA)** to safeguard execution.

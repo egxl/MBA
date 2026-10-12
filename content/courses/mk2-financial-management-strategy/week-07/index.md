@@ -13,8 +13,6 @@ tags:
   - ytm
 ---
 
-# Week 07: Time Value of Money (Part 2: Bond & Stock Valuation)
-
 ## 🎯 Executive Summary
 
 The intrinsic value of any financial asset is the present value of its expected future cash flows, discounted at a risk-adjusted rate. Applying TVM concepts to corporate bonds and common equities illuminates how interest rate movements and earnings expectations drive market valuations.

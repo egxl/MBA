@@ -13,8 +13,6 @@ tags:
   - transformation
 ---
 
-# Week 06: Organizational Culture
-
 ## 🎯 Executive Summary
 
 Culture is the operating system of an enterprise. As Peter Drucker famously observed, _"Culture eats strategy for breakfast."_ Strategic transformation initiatives inevitably stall when leaders fail to diagnose, respect, and systematically reshape underlying organizational assumptions and behavioral norms.

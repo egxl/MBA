@@ -13,8 +13,6 @@ tags:
   - gamification
 ---
 
-# Week 07: Waiting Line Analysis, Simulation & OSCM Game
-
 ## 🎯 Executive Summary
 
 Waiting lines (queues) occur not necessarily because a system lacks capacity on average, but because arrivals and service times are inherently stochastic. Week 7 combines mathematical **Queuing Theory**, discrete-event simulation, and the **OSCM Gamification Simulation** (2 sessions).

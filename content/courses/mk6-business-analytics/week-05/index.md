@@ -13,8 +13,6 @@ tags:
   - roas
 ---
 
-# Week 05: Marketing Analytics (Attribution & Marketing Mix Modeling)
-
 ## 🎯 Executive Summary
 
 John Wanamaker famously quipped: _"Half the money I spend on advertising is wasted; the trouble is I don't know which half."_ Modern Marketing Analytics answers this dilemma using econometric **Marketing Mix Modeling (MMM)** and digital **Multi-Touch Attribution (MTA)** to optimize marketing budget allocation.

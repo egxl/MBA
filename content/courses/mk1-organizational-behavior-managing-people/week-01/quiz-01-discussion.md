@@ -10,8 +10,6 @@ tags:
   - quiz-review
 ---
 
-# Quiz 01: Review & Behavioral Rationale
-
 ## 📝 Quiz Overview
 
 - **Coverage**: Motivation Theories, Cognitive Biases, Incentive Alignment, Walmart Case Analysis

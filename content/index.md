@@ -1,5 +1,5 @@
 ---
-title: "What do you want to learn today?"
+title: "P3MD: MiniMBA+ Hub"
 type: "portal"
 tags:
   - p3md
@@ -12,7 +12,7 @@ tags:
 <section class="socratica-stage">
 
 <div class="socratica-hero">
-  <p class="socratica-eyebrow">P3MD Nawasena Cohort · SBM ITB</p>
+  <p class="socratica-eyebrow">P3MD Batch I Soedirman</p>
   <h1 class="socratica-title">What do you want to learn today?</h1>
   <p class="socratica-intro">Select a core course to explore lecture notes, analytical frameworks, and case discussions, or browse program architecture below.</p>
 </div>

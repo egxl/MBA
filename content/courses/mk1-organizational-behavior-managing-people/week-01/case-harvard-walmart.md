@@ -1,5 +1,5 @@
 ---
-title: "Case Study: Walmart's Culture & Operational Discipline"
+title: "Case Study: Walmart's Culture, Frontline Alignment & Operational Moats"
 course: "Organizational Behavior & Managing People"
 course_code: "MK1"
 week: 1
@@ -10,8 +10,6 @@ tags:
   - case-study
   - walmart
 ---
-
-# Case Study: Walmart's Culture, Frontline Alignment & Operational Moats
 
 > [!case] HBS Case Synopsis & Core Dilemma
 >

@@ -13,8 +13,6 @@ tags:
   - clustering
 ---
 
-# Week 04: Customer Analytics (Segmentation, LTV, Churn Prediction)
-
 ## 🎯 Executive Summary
 
 Customer Analytics applies mathematical algorithms to customer transactional and behavioral data to optimize acquisition, maximize lifetime customer equity, and preempt customer attrition (churn).

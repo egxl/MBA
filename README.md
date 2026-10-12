@@ -1,6 +1,10 @@
 <div align="center">
 
-<img src="quartz/static/logo.png" alt="P3MD MBA Logo" width="320" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="quartz/static/logo-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="quartz/static/logo.png">
+  <img alt="P3MD MBA Logo" src="quartz/static/logo.png" width="320">
+</picture>
 
 # P3MD MBA ACADEMIC PORTAL
 
@@ -8,7 +12,7 @@
 _School of Business and Management, Institut Teknologi Bandung (SBM ITB)_
 
 [![Institution](https://img.shields.io/badge/Institution-SBM%20ITB-003366?style=flat-square)](https://www.sbm.itb.ac.id/)
-[![Cohort](https://img.shields.io/badge/Cohort-P3MD%20Nawasena-7c3aed?style=flat-square)](#overview)
+[![Cohort](https://img.shields.io/badge/Cohort-P3MD%20Batch%20I%20Soedirman-7c3aed?style=flat-square)](#overview)
 [![Framework](https://img.shields.io/badge/Framework-Quartz%204.5.2-1e293b?style=flat-square)](https://quartz.jzhao.xyz/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0%2B-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-20%2B-339933?style=flat-square&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
@@ -29,7 +33,7 @@ _School of Business and Management, Institut Teknologi Bandung (SBM ITB)_
 
 ## Overview
 
-The **P3MD MBA Knowledge Base** is the official academic repository, curriculum directory, and strategic knowledge graph for the P3MD MBA Nawasena cohort at SBM ITB. Built on Quartz 4, the portal synthesizes academic lecture notes, quantitative modeling guides, Harvard business cases, capstone consulting blueprints, and faculty directory assets into an interlinked digital garden.
+The **P3MD MBA Knowledge Base** is the official academic repository, curriculum directory, and strategic knowledge graph for the P3MD MBA Batch I Soedirman cohort at SBM ITB. Built on Quartz 4, the portal synthesizes academic lecture notes, quantitative modeling guides, Harvard business cases, capstone consulting blueprints, and faculty directory assets into an interlinked digital garden.
 
 The portal provides an operational bridge between academic theory and institutional practice across state-owned enterprises (BUMN), Danantara Indonesia, and the Ministry of Defense (Kemhan RI).
 

@@ -13,8 +13,6 @@ tags:
   - data-governance
 ---
 
-# Week 02: Data-Driven Decision Making & Analytical Culture
-
 ## 🎯 Executive Summary
 
 Investing millions in modern cloud data infrastructure yields zero ROI if the corporate culture remains tethered to HiPPO decision-making (_Highest Paid Person's Opinion_). Building a data-driven culture requires embedding statistical evidence into routine executive rituals.

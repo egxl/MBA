@@ -9,8 +9,6 @@ tags:
   - sbm-itb
 ---
 
-# Faculty & Course Assistant Directory
-
 Institutional directory for the teaching faculties and course assistants (Asisten Mata Kuliah) supporting the P3MD MBA program at **Kampus DCU Nawasena**.
 
 ---

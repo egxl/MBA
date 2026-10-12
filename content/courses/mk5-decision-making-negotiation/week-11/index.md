@@ -13,8 +13,6 @@ tags:
   - distributive-bargaining
 ---
 
-# Week 11: Claiming Value ("Slicing the Pie") & Anchoring Tactics
-
 ## 🎯 Executive Summary
 
 In pure single-issue distributive bargaining (e.g., buying a commodity or settling an insurance claim), value creation is impossible; every dollar gained by one party is a dollar surrendered by the other. Week 11 analyzes the mechanics of **Anchoring**, **First Offers**, and **Concession Management**.

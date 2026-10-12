@@ -13,8 +13,6 @@ tags:
   - kaizen
 ---
 
-# Week 08: Lean Operations & Waste Elimination (Muda)
-
 ## 🎯 Executive Summary
 
 Lean operations, pioneered by the Toyota Production System (TPS), focuses on the relentless elimination of waste (_Muda_) across every operational step. Lean is not merely a cost-reduction program; it is an organizational mindset dedicated to maximizing customer value with zero waste.

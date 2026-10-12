@@ -13,8 +13,6 @@ tags:
   - demand-sensing
 ---
 
-# Week 07: Supply Chain Analytics (Network Optimization & Demand Sensing)
-
 ## 🎯 Executive Summary
 
 Supply Chain Analytics leverages mathematical programming, network algorithms, and real-time telemetry to optimize multi-tier logistics networks, slash transportation costs, and sense demand shifts ahead of traditional forecasting cycles.

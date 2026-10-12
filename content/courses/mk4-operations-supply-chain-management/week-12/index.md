@@ -13,8 +13,6 @@ tags:
   - level-strategy
 ---
 
-# Week 12: Sales & Operations Planning (S&OP)
-
 ## 🎯 Executive Summary
 
 Sales & Operations Planning (S&OP) is an executive consensus process that reconciles unconstrained commercial market demand with operational capacity constraints, financial budgets, and supply chain realities. It creates a single, unified operating plan for the entire enterprise.

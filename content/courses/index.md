@@ -9,8 +9,6 @@ tags:
   - mba
 ---
 
-# P3MD MBA Course Selection & Curriculum Hub
-
 The academic architecture of the **P3MD MBA** (_Program Pendidikan Profesional Magister Terapan_) comprises **6 foundational core courses (MK 1 – MK 6)** and **specialized executive electives**, engineered by **SBM ITB** in strategic collaboration with **Kemhan RI** and **Danantara Indonesia**.
 
 Each core course spans a 14-week synchronized journey combining plenary lectures, rigorous Harvard Business School case studies, simulation games, and direct alignment with the **Action Learning Project (ALP)** across 10 partner BUMNs.

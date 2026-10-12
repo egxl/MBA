@@ -13,8 +13,6 @@ tags:
   - innovation
 ---
 
-# Week 09: Marketing Mix: Product, Services & Experience Strategy
-
 ## 🎯 Executive Summary
 
 The first "P" of the marketing mix encompasses the entire bundle of tangible and intangible value delivered to the buyer. Strategic product management balances existing product line depth, new product development (NPD), and the transition toward service-dominant logic.

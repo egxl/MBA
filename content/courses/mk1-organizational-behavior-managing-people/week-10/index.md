@@ -13,8 +13,6 @@ tags:
   - evp
 ---
 
-# Week 10: Strategic Talent Acquisition & Employer Branding
-
 ## 🎯 Executive Summary
 
 Securing top-tier talent in competitive labor markets requires transforming recruitment from a passive HR requisition process into an aggressive, brand-led marketing funnel. Organizations must define and execute an authentic Employee Value Proposition (EVP) to attract, select, and onboard future leadership.

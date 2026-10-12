@@ -125,7 +125,8 @@ header.site-header {
 
     .home-button,
     .darkmode,
-    .readermode {
+    .readermode,
+    .grid-toggle {
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -207,6 +208,7 @@ header.site-header {
   }
 
   @media all and ($mobile) {
+    view-transition-name: none;
     height: var(--navbar-height);
     border-radius: 9999px;
     padding: 0 0.65rem;
@@ -250,7 +252,7 @@ header.site-header {
 
       .home-button,
       .darkmode,
-      .readermode {
+      .grid-toggle {
         width: 28px;
         height: 28px;
         border-radius: 6px;
@@ -259,6 +261,10 @@ header.site-header {
           width: 16px;
           height: 16px;
         }
+      }
+
+      .readermode {
+        display: none !important;
       }
     }
 
@@ -283,15 +289,55 @@ header.site-header {
         cursor: pointer;
         padding: 0;
         z-index: 1001;
-
-        .lucide-menu {
-          width: 18px;
-          height: 18px;
-          stroke: currentColor;
-        }
+        transition:
+          background-color 0.15s ease,
+          color 0.15s ease,
+          transform 0.15s ease;
 
         &:hover {
           background-color: var(--lightgray);
+          color: var(--secondary);
+          transform: scale(1.05);
+        }
+
+        .lucide-menu {
+          width: 16px;
+          height: 16px;
+          stroke: currentColor;
+          stroke-width: 2;
+          overflow: visible;
+
+          .menu-line {
+            transform-origin: 12px 12px;
+            transition:
+              transform 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.18s ease;
+          }
+        }
+      }
+
+      &.collapsed .mobile-explorer {
+        .menu-line-top,
+        .menu-line-mid,
+        .menu-line-bot {
+          transform: none;
+          opacity: 1;
+        }
+      }
+
+      &:not(.collapsed) .mobile-explorer,
+      :root.menu-open .mobile-explorer {
+        color: var(--secondary);
+
+        .menu-line-top {
+          transform: translateY(6px) rotate(45deg);
+        }
+        .menu-line-mid {
+          opacity: 0;
+          transform: scaleX(0);
+        }
+        .menu-line-bot {
+          transform: translateY(-6px) rotate(-45deg);
         }
       }
 
@@ -299,7 +345,12 @@ header.site-header {
         display: none !important;
       }
 
+      &.collapsed > .explorer-content {
+        display: none !important;
+      }
+
       .explorer-content {
+        display: none;
         position: fixed !important;
         top: 0 !important;
         left: 0 !important;
@@ -309,10 +360,82 @@ header.site-header {
         max-height: 100dvh !important;
         z-index: 998 !important;
         background-color: var(--light) !important;
-        padding: 4.5rem 1.5rem 2rem 1.5rem !important;
+        padding: calc(var(--navbar-offset) + 1.25rem) 1.5rem 2.5rem 1.5rem !important;
         box-sizing: border-box;
         overflow-y: auto !important;
+        overscroll-behavior: contain !important;
+        -webkit-overflow-scrolling: touch !important;
+        touch-action: pan-y !important;
+      }
+
+      &:not(.collapsed) > .explorer-content,
+      :root.menu-open & > .explorer-content {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+        transform: translateY(0) !important;
       }
     }
+  }
+}
+
+:root.menu-open {
+  header.site-header {
+    z-index: 1000;
+  }
+
+  .navbar {
+    z-index: 1000;
+
+    &::before {
+      z-index: 999;
+      background-color: var(--light);
+    }
+
+    .page-title,
+    .navbar-divider,
+    .navbar-end,
+    .mobile-explorer {
+      position: relative;
+      z-index: 1001;
+    }
+  }
+}
+
+:root.search-open {
+  header.site-header {
+    z-index: 1000;
+
+    &::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: var(--navbar-offset);
+      z-index: -1;
+      background-color: rgba(0, 0, 0, 0.2);
+      -webkit-backdrop-filter: blur(4px) brightness(0.75);
+      backdrop-filter: blur(4px) brightness(0.75);
+      pointer-events: none;
+
+      @supports ((-webkit-backdrop-filter: blur(4px)) or (backdrop-filter: blur(4px))) {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .navbar {
+    view-transition-name: none !important;
+    z-index: 1000;
+
+    &::before {
+      background-color: var(--light);
+    }
+  }
+
+  .sidebar-toggle {
+    z-index: 1000;
   }
 }

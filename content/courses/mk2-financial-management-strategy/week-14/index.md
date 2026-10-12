@@ -13,8 +13,6 @@ tags:
   - valuation-synthesis
 ---
 
-# Week 14: Group Project Presentations & Financial Ethics
-
 ## 🎯 Executive Summary
 
 The capstone of MK 2 synthesizes technical modeling, strategic valuation, and corporate governance into high-stakes executive group presentations. Participants defend capital allocation recommendations while confronting the critical ethical responsibilities inherent in corporate finance leadership.

@@ -21,6 +21,10 @@
   }
 }
 
+body[data-slug="index"] .readermode {
+  display: none !important;
+}
+
 :root[reader-mode="on"] {
   & .sidebar.left,
   & .sidebar.right {

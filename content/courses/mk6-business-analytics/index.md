@@ -13,8 +13,6 @@ tags:
   - sbm-itb
 ---
 
-# MK 6: Applied Business Analytics
-
 ## 📖 Course Information
 
 - **Course Code**: MK6

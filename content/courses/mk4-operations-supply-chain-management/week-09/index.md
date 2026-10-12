@@ -13,8 +13,6 @@ tags:
   - process-improvement
 ---
 
-# Week 09: Lean Six Sigma & DMAIC Methodology
-
 ## 🎯 Executive Summary
 
 While Lean focuses on process velocity and waste elimination, **Six Sigma** focuses on process stability and variation reduction. Merged together as **Lean Six Sigma (LSS)**, they provide the quantitative problem-solving architecture to achieve near-perfection in manufacturing and service operations.

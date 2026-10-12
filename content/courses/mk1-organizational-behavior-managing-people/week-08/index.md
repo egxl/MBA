@@ -13,8 +13,6 @@ tags:
   - competitive-advantage
 ---
 
-# Week 08: People & Strategy: Human Capital as Competitive Advantage
-
 ## 🎯 Executive Summary
 
 In knowledge-driven economies and complex state enterprises, sustainable competitive advantage stems not merely from physical assets or access to capital, but from the idiosyncratic capability of the organization's human capital architecture. Strategic HR must be elevated from transactional administration to enterprise value creation.

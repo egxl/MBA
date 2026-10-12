@@ -13,8 +13,6 @@ tags:
   - negotiation
 ---
 
-# Week 08: Competitive Business Game: Selling Simulation
-
 ## 🎯 Executive Summary
 
 Week 8 features the **Competitive Business Game: Selling Simulation**, an interactive 2-session gamification experience where cohort groups compete in real-time markets to apply STP frameworks, price discovery, and personal selling under competitive pressure.

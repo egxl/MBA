@@ -13,8 +13,6 @@ tags:
   - value-claiming
 ---
 
-# Week 09: The Negotiation Dilemma: Value Claiming vs. Value Creating
-
 ## 🎯 Executive Summary
 
 The central paradox of all negotiation (Lax & Sebenius): Negotiators must simultaneously cooperate to **create value** (enlarge the total pie) and compete to **claim value** (secure their share). Strategies that maximize value creation conflict directly with strategies designed to claim value.

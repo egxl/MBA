@@ -13,8 +13,6 @@ tags:
   - altman-z
 ---
 
-# Week 06: Financial Analytics (Credit Scoring & Fraud Detection)
-
 ## 🎯 Executive Summary
 
 Financial Analytics applies statistical learning and pattern recognition to financial records to predict institutional bankruptcy, score retail credit risk, and detect fraudulent transactional anomalies in real time.

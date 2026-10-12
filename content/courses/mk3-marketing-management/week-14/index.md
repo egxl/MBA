@@ -13,8 +13,6 @@ tags:
   - bumn-marketing
 ---
 
-# Week 14: Special Topic: Guest Lecture & Marketing Capstone
-
 ## 🎯 Executive Summary
 
 The closing week of MK 3 brings industry reality into the classroom through an **Executive Seminar & Guest Lecture from a prominent BUMN CEO / CMO**, followed by the synthesis of the 14-week Marketing Plan design framework.

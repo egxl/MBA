@@ -13,8 +13,6 @@ tags:
   - facility-location
 ---
 
-# Week 05: Strategic Capacity Planning & Economies of Scale
-
 ## 🎯 Executive Summary
 
 Strategic capacity planning determines the overall productive capability of capital-intensive enterprise facilities. Capacity decisions require massive irreversible capital expenditures; building too much capacity creates crushing fixed depreciation burdens, while building too little surrenders market share to rivals.

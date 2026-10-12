@@ -13,8 +13,6 @@ tags:
   - operating-model
 ---
 
-# Week 09: Organization Design & Strategic Workforce Planning
-
 ## 🎯 Executive Summary
 
 Structure follows strategy. Misalignment between organizational architecture and strategic intent creates friction, slow decision velocity, and fragmented accountability. Effective leaders master organizational design frameworks to balance differentiation, integration, and agility.

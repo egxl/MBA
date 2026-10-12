@@ -13,8 +13,6 @@ tags:
   - overhead
 ---
 
-# Week 05: Cost Analysis & Activity-Based Costing (ABC)
-
 ## 🎯 Executive Summary
 
 Traditional volume-based overhead allocation systems (e.g., allocating factory overhead strictly by direct labor hours) systematically distort product and customer profitability in modern, automated enterprises. **Activity-Based Costing (ABC)** traces overhead consumption directly to the activities that drive costs.

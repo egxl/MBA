@@ -13,8 +13,6 @@ tags:
   - trade-offs
 ---
 
-# Week 02: Operations Strategy & Competitive Dimensions
-
 ## 🎯 Executive Summary
 
 Operations strategy sets the broad policies and plans for using an enterprise's resources to support its corporate competitive strategy. Strategic operations executives understand that excellence requires making deliberate trade-offs rather than attempting to maximize every operating dimension simultaneously.

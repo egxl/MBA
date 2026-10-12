@@ -13,8 +13,6 @@ tags:
   - analytics
 ---
 
-# Week 04: Managing Marketing Information & Customer Insights (Part 2)
-
 ## 🎯 Executive Summary
 
 Modern consumers do not engage with brands along a linear path. Part 2 of customer insights examines behavioral data synthesis, omnichannel journey mapping, and qualitative empathy elicitation to unearth the latent emotional and functional needs of target buyers.

@@ -13,8 +13,6 @@ tags:
   - capstone
 ---
 
-# Week 14: Employee Experience, Engagement & Inclusion
-
 ## 🎯 Executive Summary
 
 The modern enterprise is human-centric. High performance cannot be sustained through coercive control or purely transactional exchanges; it requires an intentional **Employee Experience (EX)** strategy that drives deep organizational engagement and psychological inclusion.

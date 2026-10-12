@@ -13,8 +13,6 @@ tags:
   - storytelling
 ---
 
-# Week 13: Business Intelligence (BI) & Executive Visualization
-
 ## 🎯 Executive Summary
 
 Executive decision-makers operate under severe cognitive load. Visual analytics and Business Intelligence (BI) dashboards transform complex multidimensional data into intuitive visual hierarchies that highlight anomalies, guide attention, and accelerate strategic decision velocity.

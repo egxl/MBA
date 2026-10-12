@@ -9,8 +9,6 @@ tags:
   - smart-gate
 ---
 
-# Action Learning Project (ALP) Blueprint
-
 > _"Learning through real business challenges with measurable impact."_
 
 The **Action Learning Project (ALP)** is the central experiential pillar of the P3MD MBA. Deployed across **10 partner state-owned enterprises (BUMN)**, participants work in cross-functional small groups ($\pm$10 executives) to dissect, model, and resolve actual high-stakes strategic dilemmas under real commercial constraints.

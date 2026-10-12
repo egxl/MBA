@@ -12,8 +12,6 @@ tags:
   - dupont-analysis
 ---
 
-# Week 02: Financial Statement Analysis
-
 ## 🎯 Executive Summary
 
 Financial statements are the diagnostic report cards of the enterprise. Strategic executives must look beyond net income to evaluate the underlying drivers of operating profitability, asset efficiency, capital turnover, and solvency risk.

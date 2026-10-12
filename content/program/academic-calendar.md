@@ -9,8 +9,6 @@ tags:
   - sbm-itb
 ---
 
-# Master Academic & Synchronization Calendar
-
 This calendar synchronizes the **14-week core academic curriculum** with the **16-week Action Learning Project (ALP)**, executive guest lectures, examinations, business immersion, and social projects.
 
 ---

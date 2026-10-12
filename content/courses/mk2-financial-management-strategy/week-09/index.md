@@ -13,8 +13,6 @@ tags:
   - monte-carlo
 ---
 
-# Week 09: Capital Budgeting (Part 2: Risk & Real Options)
-
 ## 🎯 Executive Summary
 
 Static discounted cash flow (DCF) models inherently underestimate the strategic flexibility inherent in management. **Real Options Analysis** accounts for managerial adaptability—the ability to expand, defer, contract, or abandon capital investments as market conditions unfold.

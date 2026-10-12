@@ -13,8 +13,6 @@ tags:
   - archetypes
 ---
 
-# Week 07: Scenario Planning & Systems Thinking (Part 1: Causal Loops)
-
 ## 🎯 Executive Summary
 
 Linear thinking ("$A$ causes $B$") fails in complex organizational systems characterized by delays, non-linearities, and circular feedback. **Systems Thinking** (Peter Senge) provides visual causal loop diagrams to map systemic behavior and identify high-leverage intervention points.

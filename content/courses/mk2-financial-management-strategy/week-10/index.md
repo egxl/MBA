@@ -13,8 +13,6 @@ tags:
   - signaling
 ---
 
-# Week 10: Pay-Out Policy & Capital Return Architecture
-
 ## 🎯 Executive Summary
 
 When an enterprise generates surplus operating cash flow exceeding its profitable internal reinvestment opportunities ($\text{ROIC} < \text{WACC}$ on incremental projects), management must return capital to shareholders. Payout decisions balance dividend predictability, tax efficiency, and market signaling.

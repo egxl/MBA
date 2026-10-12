@@ -13,8 +13,6 @@ tags:
   - data-architecture
 ---
 
-# Week 09: Big Data in Business (Data Architecture & Lakes)
-
 ## 🎯 Executive Summary
 
 Managing big data at enterprise scale requires modernizing beyond legacy relational database management systems (RDBMS). Week 9 explores enterprise data architectures—from normalized relational warehouses to unstructured data lakes and hybrid lakehouses.

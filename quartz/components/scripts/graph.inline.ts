@@ -335,6 +335,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     "--dark",
     "--darkgray",
     "--bodyFont",
+    "--headerFont",
   ] as const
   const computedStyleMap = cssVars.reduce(
     (acc, key) => {
@@ -553,8 +554,14 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       anchor: { x: 0.5, y: 1.2 },
       style: {
         fontSize: fontSize * 15,
-        fill: computedStyleMap["--dark"],
-        fontFamily: computedStyleMap["--bodyFont"],
+        fill: "#ffffff",
+        fontFamily: computedStyleMap["--headerFont"],
+        fontWeight: "600",
+        stroke: {
+          color: "#000000",
+          width: 3.5,
+          join: "round",
+        },
       },
       resolution: window.devicePixelRatio * 4,
     })

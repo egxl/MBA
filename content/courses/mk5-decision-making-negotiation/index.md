@@ -14,8 +14,6 @@ tags:
   - sbm-itb
 ---
 
-# MK 5: Problem Solving, Decision Making and Negotiation
-
 ## 📖 Course Information
 
 - **Course Code**: MK5

@@ -13,8 +13,6 @@ tags:
   - saaty
 ---
 
-# Week 06: Decision Analysis: AHP & Decision Trees
-
 ## 🎯 Executive Summary
 
 When decision criteria are complex, subjective, and difficult to quantify directly, Thomas Saaty's **Analytic Hierarchy Process (AHP)** provides pairwise comparison rigor with consistency checks. When decisions involve sequential uncertainty, **Decision Trees** calculate Expected Monetary Value (EMV).

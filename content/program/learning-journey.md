@@ -9,8 +9,6 @@ tags:
   - sbm-itb
 ---
 
-# Learning Journey & 70–20–10 Architecture
-
 The P3MD MBA learning architecture is designed by **SBM ITB** to integrate curriculum, case-based methods, real-world business intervention, layered mentorship, and residential campus immersion into an organic transformational engine.
 
 ---

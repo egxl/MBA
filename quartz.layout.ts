@@ -49,7 +49,8 @@ export const sharedPageComponents: SharedLayout = {
         Component.HomeButton(),
         Component.Search(),
         Component.Darkmode(),
-        Component.ReaderMode(),
+        Component.GridToggle(),
+        Component.DesktopOnly(Component.ReaderMode()),
       ],
     }),
   ],
@@ -71,13 +72,14 @@ export const defaultContentPageLayout: PageLayout = {
   left: [
     Component.DesktopOnly(
       Component.Explorer({
+        folderDefaultState: "collapsed",
         sortFn: explorerSortFn,
         filterFn: explorerFilterFn,
       }),
     ),
   ],
   right: [
-    Component.Graph(),
+    Component.DesktopOnly(Component.Graph()),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
@@ -93,13 +95,14 @@ export const defaultListPageLayout: PageLayout = {
   left: [
     Component.DesktopOnly(
       Component.Explorer({
+        folderDefaultState: "collapsed",
         sortFn: explorerSortFn,
         filterFn: explorerFilterFn,
       }),
     ),
   ],
   right: [
-    Component.Graph(),
+    Component.DesktopOnly(Component.Graph()),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],

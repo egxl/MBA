@@ -26,6 +26,7 @@ import ConditionalRender from "./ConditionalRender"
 import HomeButton from "./HomeButton"
 import Navbar from "./Navbar"
 import SidebarToggle from "./SidebarToggle"
+import GridToggle from "./GridToggle"
 
 export {
   ArticleTitle,
@@ -56,4 +57,5 @@ export {
   HomeButton,
   Navbar,
   SidebarToggle,
+  GridToggle,
 }

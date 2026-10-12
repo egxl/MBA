@@ -13,8 +13,6 @@ tags:
   - capstone
 ---
 
-# Week 14: Multiparty Negotiation & Coalition Building
-
 ## 🎯 Executive Summary
 
 Executive leadership rarely negotiates one-on-one. Real-world corporate transactions, ministry alignments, and BUMN consortiums involve **multiparty negotiations** where shifting coalitions, voting rules, and procedural management determine the ultimate outcome.

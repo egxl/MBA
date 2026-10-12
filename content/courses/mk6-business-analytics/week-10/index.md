@@ -13,8 +13,6 @@ tags:
   - fairness
 ---
 
-# Week 10: Ethical Considerations in Business Analytics & Algorithmic Bias
-
 ## 🎯 Executive Summary
 
 Data is not objective truth; it reflects the historical, social, and cultural biases embedded in its collection. As predictive and automated machine learning algorithms increasingly govern credit decisions, hiring filters, and justice systems, executives must establish rigorous ethical AI governance.

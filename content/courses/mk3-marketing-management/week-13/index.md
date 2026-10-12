@@ -13,8 +13,6 @@ tags:
   - brand-architecture
 ---
 
-# Week 13: Strategic Brand Management & Brand Equity
-
 ## 🎯 Executive Summary
 
 Brands are intangible economic assets that de-risk future cash flows and command enduring pricing power. **Customer-Based Brand Equity (CBBE)** measures the differential effect that brand knowledge has on consumer response to the marketing of that brand.

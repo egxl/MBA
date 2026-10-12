@@ -13,8 +13,6 @@ tags:
   - perpetuities
 ---
 
-# Week 06: Time Value of Money (Part 1: Compounding & Annuities)
-
 ## 🎯 Executive Summary
 
 A dollar today is worth more than a dollar tomorrow due to its earning potential (opportunity cost of capital), inflation, and risk. The **Time Value of Money (TVM)** is the foundational mathematical bedrock for corporate valuation, debt pricing, lease evaluation, and capital budgeting decisions.

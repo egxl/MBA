@@ -13,8 +13,6 @@ tags:
   - stakeholder-management
 ---
 
-# Week 07: Power & Politics in Organizations
-
 ## 🎯 Executive Summary
 
 Organizations are political coalitions where resource scarcity, diverse interests, and ambiguity create competing power dynamics. Executive effectiveness requires mastering the legitimate uses of power, network positioning, and strategic coalition-building while maintaining institutional ethics.

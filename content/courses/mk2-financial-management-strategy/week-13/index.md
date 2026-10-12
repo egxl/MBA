@@ -13,8 +13,6 @@ tags:
   - risk-governance
 ---
 
-# Week 13: Financial Risk Management & Risk Governance
-
 ## 🎯 Executive Summary
 
 Unmanaged financial market volatility (currency fluctuations, interest rate spikes, commodity price shocks) can destabilize enterprise operations and jeopardize capital expenditure plans. Corporate risk management uses derivative instruments and enterprise risk frameworks to protect corporate cash flows.

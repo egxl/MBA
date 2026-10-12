@@ -13,8 +13,6 @@ tags:
   - pareto-optimal
 ---
 
-# Week 13: Integrative Strategies, Trade-Off Logrolling & Contingency Deals
-
 ## 🎯 Executive Summary
 
 True value creation requires exploiting **differences** between negotiating parties. Differences in risk tolerance, time preferences, cost structures, and future expectations are not obstacles to agreement; they are the fundamental raw materials for creating win-win trade-offs.

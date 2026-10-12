@@ -13,8 +13,6 @@ tags:
   - heuristics
 ---
 
-# Week 02: Rational Framework of Decision Making & Cognitive Biases
-
 ## 🎯 Executive Summary
 
 Classical economics assumes executives are hyper-rational optimizers (_Homo economicus_). Behavioral decision research (Kahneman & Tversky) proves that real-world human decision-making relies on mental shortcuts (heuristics) that generate predictable, systematic cognitive biases under uncertainty.

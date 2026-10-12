@@ -13,8 +13,6 @@ tags:
   - enterprise-systems
 ---
 
-# Week 14: Material Requirements Planning (MRP) & Enterprise ERP
-
 ## 🎯 Executive Summary
 
 Managing dependent demand for complex manufactured assemblies requires computerized coordination. **Material Requirements Planning (MRP)** explodes master production schedules into component purchase orders, while **Enterprise Resource Planning (ERP)** unifies these workflows across procurement, finance, HR, and customer fulfillment.

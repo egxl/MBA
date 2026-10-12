@@ -13,8 +13,6 @@ tags:
   - root-cause
 ---
 
-# Week 03: Kepner-Tregoe Methodology (Part 1: Situation & Problem Analysis)
-
 ## 🎯 Executive Summary
 
 The Kepner-Tregoe (KT) methodology is a disciplined, rational problem-solving architecture used worldwide in engineering, aviation, and executive governance. Part 1 focuses on clarifying chaotic business contexts through **Situation Appraisal** and isolating root causes using **Problem Analysis**.

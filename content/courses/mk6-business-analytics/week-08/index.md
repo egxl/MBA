@@ -13,8 +13,6 @@ tags:
   - stress-testing
 ---
 
-# Week 08: Risk Analytics (VaR Modeling & Stress Testing)
-
 ## 🎯 Executive Summary
 
 Risk Analytics provides mathematical methodologies to quantify the probability, magnitude, and financial impact of adverse enterprise events. Executives use **Value-at-Risk (VaR)** and macroeconomic **Stress Testing** to calibrate capital reserves and prevent catastrophic insolvencies.

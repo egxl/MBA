@@ -13,8 +13,6 @@ tags:
   - pop-pod
 ---
 
-# Week 07: Strategic Positioning & Perceptual Mapping
-
 ## 🎯 Executive Summary
 
 Positioning is the act of designing a company's offering and image to occupy a distinctive, valued place in the mind of the target customer. As Ries & Trout established: _"Positioning is not what you do to a product; it is what you do to the mind of the prospect."_

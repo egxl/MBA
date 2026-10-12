@@ -13,8 +13,6 @@ tags:
   - conjoint-analysis
 ---
 
-# Week 05: Marketing Research & Diagnostic Methodologies
-
 ## 🎯 Executive Summary
 
 Marketing research is the systematic design, collection, analysis, and reporting of data relevant to a specific commercial challenge. Executives must distinguish between exploratory, descriptive, and causal research designs to commission cost-effective diagnostic studies.
