@@ -27,6 +27,7 @@ export interface Translation {
     backlinks: {
       title: string
       noBacklinksFound: string
+      explanation?: string
     }
     themeToggle: {
       lightMode: string
@@ -43,6 +44,7 @@ export interface Translation {
     }
     graph: {
       title: string
+      explanation?: string
     }
     recentNotes: {
       title: string

@@ -1,15 +1,98 @@
+@use "../../styles/variables.scss" as *;
+
+.center > hr {
+  display: none;
+}
+
 footer {
   text-align: left;
-  margin-bottom: 4rem;
-  opacity: 0.7;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1.5rem 2rem 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  border-top: 1px solid var(--lightgray);
 
-  & ul {
-    list-style: none;
+  @media all and ($mobile) {
+    padding: 1.25rem 1rem 1.25rem;
+    margin-top: 1.25rem;
+  }
+
+  .footer-inner {
+    max-width: 100%;
+    width: 100%;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0.5rem;
+  }
+
+  .footer-credit {
+    margin: 0;
+    font-family: var(--headerFont);
+    color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .footer-credit-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.35;
+    letter-spacing: 0.01em;
+    color: inherit;
+  }
+
+  .footer-credit-author {
+    font-size: 0.82rem;
+    font-weight: 500;
+    line-height: 1.35;
+    letter-spacing: 0.01em;
+    color: inherit;
+  }
+
+  .footer-author-link {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2.5px;
+    text-decoration-thickness: 1px;
+    transition: opacity 0.15s ease;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  .footer-disclaimer {
+    margin: 0;
+    font-family: var(--bodyFont);
+    font-size: 0.74rem;
+    line-height: 1.55;
+    color: var(--gray);
+    max-width: 720px;
+    text-align: left;
+  }
+
+  & ul.footer-links {
+    list-style: none;
+    margin: 0.25rem 0 0;
     padding: 0;
     display: flex;
     flex-direction: row;
-    gap: 1rem;
-    margin-top: -1rem;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+
+    li a {
+      font-size: 0.75rem;
+      color: var(--secondary);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }

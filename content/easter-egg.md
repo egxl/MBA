@@ -10,7 +10,7 @@ tags:
 ---
 
 <div align="center">
-  <img src="/static/logo.png" alt="P3MD Insignia" style="max-width: 580px; width: 100%; margin: 1.5rem auto; display: block;" />
+  <img class="insignia-showcase" src="/static/logo.png" alt="P3MD Insignia" style="max-width: 580px; width: 100%; margin: 1.5rem auto; display: block;" />
   <p><em>A handcrafted emblem exploring precision, resilience, and executive leadership for P3MD Batch I Soedirman.</em></p>
 </div>
 

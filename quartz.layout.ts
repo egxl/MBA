@@ -48,6 +48,7 @@ export const sharedPageComponents: SharedLayout = {
       end: [
         Component.HomeButton(),
         Component.Search(),
+        Component.LanguageSwitcher(),
         Component.Darkmode(),
         Component.GridToggle(),
         Component.DesktopOnly(Component.ReaderMode()),

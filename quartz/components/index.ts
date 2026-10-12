@@ -27,6 +27,7 @@ import HomeButton from "./HomeButton"
 import Navbar from "./Navbar"
 import SidebarToggle from "./SidebarToggle"
 import GridToggle from "./GridToggle"
+import LanguageSwitcher from "./LanguageSwitcher"
 
 export {
   ArticleTitle,
@@ -58,4 +59,5 @@ export {
   Navbar,
   SidebarToggle,
   GridToggle,
+  LanguageSwitcher,
 }

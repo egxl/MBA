@@ -10,6 +10,7 @@ import { concatenateResources } from "../util/resources"
 
 interface BacklinksOptions {
   hideWhenEmpty: boolean
+  explanation?: string
 }
 
 const defaultOptions: BacklinksOptions = {
@@ -33,6 +34,11 @@ export default ((opts?: Partial<BacklinksOptions>) => {
       return null
     }
 
+    const explanation =
+      options.explanation ??
+      i18n(cfg.locale).components.backlinks.explanation ??
+      "Pages that link to this note"
+
     const id = `backlinks-${numBacklinks++}`
     return (
       <div class={classNames(displayClass, "backlinks")}>
@@ -41,6 +47,7 @@ export default ((opts?: Partial<BacklinksOptions>) => {
           class="collapsed backlinks-header"
           aria-controls={id}
           aria-expanded={false}
+          title={explanation}
         >
           <div class="backlinks-title-wrapper">
             <h3>{i18n(cfg.locale).components.backlinks.title}</h3>

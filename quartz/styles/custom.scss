@@ -1224,3 +1224,15 @@ body[data-slug="index"] a.socratica-card.internal {
     transform: none;
   }
 }
+
+/* ==========================================================================
+   P3MD Insignia Showcase (/easter-egg)
+   ========================================================================== */
+
+.insignia-showcase {
+  transition: filter 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+:root[saved-theme="dark"] .insignia-showcase {
+  filter: brightness(0) invert(1);
+}

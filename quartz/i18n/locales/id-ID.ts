@@ -24,6 +24,7 @@ export default {
     backlinks: {
       title: "Tautan Balik",
       noBacklinksFound: "Tidak ada tautan balik ditemukan",
+      explanation: "Halaman yang menautkan ke catatan ini",
     },
     themeToggle: {
       lightMode: "Mode Terang",
@@ -40,6 +41,7 @@ export default {
     },
     graph: {
       title: "Tampilan Grafik",
+      explanation: "Peta interaktif hubungan antar catatan",
     },
     recentNotes: {
       title: "Catatan Terbaru",

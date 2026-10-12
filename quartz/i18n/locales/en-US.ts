@@ -24,6 +24,7 @@ export default {
     backlinks: {
       title: "Backlinks",
       noBacklinksFound: "No backlinks found",
+      explanation: "Pages that link to this note",
     },
     themeToggle: {
       lightMode: "Light mode",
@@ -40,6 +41,7 @@ export default {
     },
     graph: {
       title: "Graph View",
+      explanation: "Interactive map of connections between notes",
     },
     recentNotes: {
       title: "Recent Notes",

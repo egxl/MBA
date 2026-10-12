@@ -126,7 +126,8 @@ header.site-header {
     .home-button,
     .darkmode,
     .readermode,
-    .grid-toggle {
+    .grid-toggle,
+    .language-switcher {
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -252,7 +253,8 @@ header.site-header {
 
       .home-button,
       .darkmode,
-      .grid-toggle {
+      .grid-toggle,
+      .language-switcher {
         width: 28px;
         height: 28px;
         border-radius: 6px;
