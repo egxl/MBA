@@ -46,27 +46,27 @@ The curriculum begins with analytics foundations, data-driven decision framework
 
 ## 🗺️ 14-Week Map of Content (MOC)
 
-|    Week     | Module / Thematic Pillar | Topic & Core Focus                                                                   | Note Hub                                                        |
-| :---------: | :----------------------- | :----------------------------------------------------------------------------------- | :-------------------------------------------------------------- |
-| **Week 01** | Foundations              | **Introduction to Business Analytics (Descriptive, Predictive, Prescriptive)**       | [[courses/mk6-business-analytics/week-01/index\|Week 01 Notes]] |
-| **Week 02** | Foundations              | **Data-Driven Decision Making & Analytical Culture**                                 | [[courses/mk6-business-analytics/week-02/index\|Week 02 Notes]] |
-| **Week 03** | Foundations              | **Predictive Analytics for Business (Regression, Classification & Validation)**      | [[courses/mk6-business-analytics/week-03/index\|Week 03 Notes]] |
-| **Week 04** | Applied Analytics        | **Customer Analytics (Segmentation, LTV, Churn Prediction)**                         | [[courses/mk6-business-analytics/week-04/index\|Week 04 Notes]] |
-| **Week 05** | Applied Analytics        | **Marketing Analytics (Attribution Modeling, Marketing Mix Modeling - MMM)**         | [[courses/mk6-business-analytics/week-05/index\|Week 05 Notes]] |
-| **Week 06** | Applied Analytics        | **Financial Analytics (Credit Scoring, Default Risk & Fraud Detection)**             | [[courses/mk6-business-analytics/week-06/index\|Week 06 Notes]] |
-| **Week 07** | Applied Analytics        | **Supply Chain Analytics (Network Optimization & Demand Sensing)**                   | [[courses/mk6-business-analytics/week-07/index\|Week 07 Notes]] |
-| **Week 08** | Applied Analytics        | **Risk Analytics (VaR Modeling, Stress Testing & Operational Risk)**                 | [[courses/mk6-business-analytics/week-08/index\|Week 08 Notes]] |
-| **Week 09** | Data & Responsibility    | **Big Data in Business (Volume, Velocity, Variety & Data Lakes)**                    | [[courses/mk6-business-analytics/week-09/index\|Week 09 Notes]] |
-| **Week 10** | Data & Responsibility    | **Ethical Considerations in Business Analytics & Algorithmic Bias**                  | [[courses/mk6-business-analytics/week-10/index\|Week 10 Notes]] |
-| **Week 11** | Data & Responsibility    | **Practical: Big Data Technologies (Cloud Data Warehousing & Pipelines)**            | [[courses/mk6-business-analytics/week-11/index\|Week 11 Notes]] |
-| **Week 12** | Data & Responsibility    | **Practical: Data Privacy, Cybersecurity & Compliance (UU PDP)**                     | [[courses/mk6-business-analytics/week-12/index\|Week 12 Notes]] |
-| **Week 13** | Advanced Analytics       | **Business Intelligence (BI), KPI Dashboards & Executive Visualization**             | [[courses/mk6-business-analytics/week-13/index\|Week 13 Notes]] |
-| **Week 14** | Advanced Analytics       | **Future Trends in Business Analytics: Generative AI & Autonomous Decision Systems** | [[courses/mk6-business-analytics/week-14/index\|Week 14 Notes]] |
+|    Week     | Module / Thematic Pillar | Topic & Core Focus                                                                   | Note Hub                        |
+| :---------: | :----------------------- | :----------------------------------------------------------------------------------- | :------------------------------ |
+| **Week 01** | Foundations              | **Introduction to Business Analytics (Descriptive, Predictive, Prescriptive)**       | _Scheduled (Pending Ingestion)_ |
+| **Week 02** | Foundations              | **Data-Driven Decision Making & Analytical Culture**                                 | _Scheduled (Pending Ingestion)_ |
+| **Week 03** | Foundations              | **Predictive Analytics for Business (Regression, Classification & Validation)**      | _Scheduled (Pending Ingestion)_ |
+| **Week 04** | Applied Analytics        | **Customer Analytics (Segmentation, LTV, Churn Prediction)**                         | _Scheduled (Pending Ingestion)_ |
+| **Week 05** | Applied Analytics        | **Marketing Analytics (Attribution Modeling, Marketing Mix Modeling - MMM)**         | _Scheduled (Pending Ingestion)_ |
+| **Week 06** | Applied Analytics        | **Financial Analytics (Credit Scoring, Default Risk & Fraud Detection)**             | _Scheduled (Pending Ingestion)_ |
+| **Week 07** | Applied Analytics        | **Supply Chain Analytics (Network Optimization & Demand Sensing)**                   | _Scheduled (Pending Ingestion)_ |
+| **Week 08** | Applied Analytics        | **Risk Analytics (VaR Modeling, Stress Testing & Operational Risk)**                 | _Scheduled (Pending Ingestion)_ |
+| **Week 09** | Data & Responsibility    | **Big Data in Business (Volume, Velocity, Variety & Data Lakes)**                    | _Scheduled (Pending Ingestion)_ |
+| **Week 10** | Data & Responsibility    | **Ethical Considerations in Business Analytics & Algorithmic Bias**                  | _Scheduled (Pending Ingestion)_ |
+| **Week 11** | Data & Responsibility    | **Practical: Big Data Technologies (Cloud Data Warehousing & Pipelines)**            | _Scheduled (Pending Ingestion)_ |
+| **Week 12** | Data & Responsibility    | **Practical: Data Privacy, Cybersecurity & Compliance (UU PDP)**                     | _Scheduled (Pending Ingestion)_ |
+| **Week 13** | Advanced Analytics       | **Business Intelligence (BI), KPI Dashboards & Executive Visualization**             | _Scheduled (Pending Ingestion)_ |
+| **Week 14** | Advanced Analytics       | **Future Trends in Business Analytics: Generative AI & Autonomous Decision Systems** | _Scheduled (Pending Ingestion)_ |
 
 ---
 
 ## 🔗 Related Portals
 
-- Companion Elective: [[courses/bonus-peoplemath/index|Bonus: PeopleMath (Workforce Analytics)]]
+- Executive Plenary: [[rabuan/2026-09-02-adh-peoplemath|Rabuan: PeopleMath Executive Masterclass]]
 - Master Schedule: [[program/academic-calendar|16-Week Synchronization Calendar]]
 - Return to [[index|MBA Cohort Portal Home]]

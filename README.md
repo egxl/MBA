@@ -1,14 +1,19 @@
 <div align="center">
 
+<img src="quartz/static/crest-soedirman.png" alt="Insignia Resmi P3MD Batch I Soedirman" width="130" />
+
+<br /><br />
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="quartz/static/logo-dark.png">
   <source media="(prefers-color-scheme: light)" srcset="quartz/static/logo.png">
-  <img alt="P3MD MBA Logo" src="quartz/static/logo.png" width="320">
+  <img alt="P3MD MBA Digital Insignia" src="quartz/static/logo.png" width="300">
 </picture>
 
 # P3MD MBA ACADEMIC PORTAL
 
 **Executive Knowledge Base and Strategic Curriculum Hub**<br />
+_Program Presiden Untuk Pemimpin Masa Depan &bull; P3MD Batch I Soedirman_<br />
 _School of Business and Management, Institut Teknologi Bandung (SBM ITB)_
 
 [![Institution](https://img.shields.io/badge/Institution-SBM%20ITB-003366?style=flat-square)](https://www.sbm.itb.ac.id/)

@@ -35,66 +35,143 @@ pre {
   }
 }
 
+// Viewport-Level Teleported Fullscreen Modal
+#mermaid-modal,
 #mermaid-container {
   position: fixed;
-  contain: layout;
-  z-index: 999;
-  left: 0;
-  top: 0;
+  inset: 0;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  z-index: 10000; // Above floating .navbar (1001) and .global-graph-outer (9999)
   display: none;
-  backdrop-filter: blur(4px);
-  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 
   &.active {
-    display: inline-block;
+    display: flex;
   }
 
-  & > #mermaid-space {
+  .mermaid-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: 1;
+  }
+
+  & > #mermaid-space,
+  .mermaid-modal-space {
+    position: relative;
+    z-index: 2;
+    width: 92vw;
+    height: 88vh;
+    max-width: 1600px;
+    max-height: 1100px;
+    background: var(--light);
     border: 1px solid var(--lightgray);
-    background-color: var(--light);
-    border-radius: 5px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 80vh;
-    width: 80vw;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
 
-    & > .mermaid-content {
-      position: relative;
-      transform-origin: 0 0;
-      transition: transform 0.1s ease;
-      overflow: visible;
-      min-height: 200px;
-      min-width: 200px;
+    .mermaid-modal-close {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      padding: 0;
+      border: 1px solid var(--lightgray);
+      background: var(--light);
+      color: var(--darkgray);
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 24px;
+      line-height: 1;
+      font-family: var(--bodyFont);
+      transition: all 0.15s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 
-      pre {
-        margin: 0;
-        border: none;
+      &:hover {
+        background: var(--lightgray);
+        color: var(--dark);
+        border-color: var(--gray);
+        transform: scale(1.05);
       }
 
-      svg {
-        max-width: none;
-        height: auto;
+      &:active {
+        transform: scale(0.95);
+      }
+
+      &:focus {
+        outline: 2px solid var(--secondary);
+        outline-offset: 2px;
       }
     }
 
-    & > .mermaid-controls {
+    .mermaid-modal-viewport {
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      cursor: grab;
+      touch-action: none;
+      user-select: none;
+
+      &.grabbing {
+        cursor: grabbing;
+      }
+
+      & > .mermaid-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform-origin: 0 0;
+        will-change: transform;
+        overflow: visible;
+        min-height: 200px;
+        min-width: 200px;
+
+        pre {
+          margin: 0;
+          border: none;
+        }
+
+        svg {
+          display: block;
+          max-width: none !important;
+          max-height: none !important;
+        }
+      }
+    }
+
+    & > .mermaid-controls,
+    .mermaid-controls {
       position: absolute;
-      bottom: 20px;
-      right: 20px;
+      bottom: 18px;
+      right: 18px;
+      z-index: 10;
       display: flex;
-      gap: 8px;
-      padding: 8px;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 8px;
       background: var(--light);
       border: 1px solid var(--lightgray);
-      border-radius: 6px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      z-index: 2;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 
       .mermaid-control-button {
         display: flex;
@@ -106,26 +183,382 @@ pre {
         border: 1px solid var(--lightgray);
         background: var(--light);
         color: var(--dark);
-        border-radius: 4px;
+        border-radius: 6px;
         cursor: pointer;
+        font-family: var(--codeFont);
         font-size: 16px;
-        font-family: var(--bodyFont);
-        transition: all 0.2s ease;
+        font-weight: 600;
+        transition: all 0.15s ease;
+
+        &.reset-btn {
+          width: auto;
+          padding: 0 12px;
+          font-family: var(--bodyFont);
+          font-size: 13px;
+        }
 
         &:hover {
           background: var(--lightgray);
+          border-color: var(--gray);
         }
 
         &:active {
           transform: translateY(1px);
         }
 
-        // Style the reset button differently
-        &:nth-child(2) {
-          width: auto;
-          padding: 0 12px;
-          font-size: 14px;
+        &:focus {
+          outline: 2px solid var(--secondary);
+          outline-offset: 1px;
         }
+      }
+    }
+  }
+}
+
+// Editorial Academic Multi-Tone Mermaid Diagram Styling
+code.mermaid,
+.mermaid-content {
+  // High-contrast editorial typography for all diagram labels
+  .node .label,
+  .node .nodeLabel,
+  .node text,
+  .node tspan,
+  .node span {
+    color: var(--mermaid-ink) !important;
+    fill: var(--mermaid-ink) !important;
+    font-family: var(--headerFont) !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.01em;
+  }
+
+  // Base node shape formatting with smooth corners and crisp strokes
+  .node .label-container,
+  .node rect,
+  .node polygon,
+  .node circle,
+  .node ellipse,
+  .node path.label-container {
+    rx: 6px !important;
+    ry: 6px !important;
+    stroke-width: 1.5px !important;
+    transition:
+      fill 0.2s ease,
+      stroke 0.2s ease;
+  }
+
+  // Connectors, links, and arrow markers
+  .flowchart-link,
+  .edgePath path,
+  .edge-path path {
+    stroke: var(--mermaid-line) !important;
+    stroke-width: 1.5px !important;
+  }
+
+  .marker,
+  marker path {
+    fill: var(--mermaid-line) !important;
+    stroke: var(--mermaid-line) !important;
+  }
+
+  // Subgraphs & Clusters
+  .cluster rect {
+    fill: var(--mermaid-subgraph-fill) !important;
+    stroke: var(--mermaid-subgraph-stroke) !important;
+    stroke-width: 1.5px !important;
+    stroke-dasharray: 4 3 !important;
+    rx: 8px !important;
+    ry: 8px !important;
+  }
+
+  .cluster .nodeLabel,
+  .cluster text,
+  .cluster span {
+    font-family: var(--headerFont) !important;
+    font-weight: 700 !important;
+    color: var(--mermaid-ink) !important;
+    fill: var(--mermaid-ink) !important;
+  }
+
+  // Universal 5-Tone Harmonic Cycle across sibling nodes (.nodes)
+  .nodes {
+    // 1. Forest Emerald
+    .node:nth-child(5n + 1) {
+      .label-container,
+      rect,
+      polygon,
+      circle,
+      ellipse,
+      path.label-container {
+        fill: var(--mermaid-emerald-fill) !important;
+        stroke: var(--mermaid-emerald-stroke) !important;
+      }
+      .label,
+      .nodeLabel,
+      text,
+      tspan,
+      span {
+        color: var(--mermaid-emerald-text) !important;
+        fill: var(--mermaid-emerald-text) !important;
+      }
+    }
+
+    // 2. Warm Amber
+    .node:nth-child(5n + 2) {
+      .label-container,
+      rect,
+      polygon,
+      circle,
+      ellipse,
+      path.label-container {
+        fill: var(--mermaid-amber-fill) !important;
+        stroke: var(--mermaid-amber-stroke) !important;
+      }
+      .label,
+      .nodeLabel,
+      text,
+      tspan,
+      span {
+        color: var(--mermaid-amber-text) !important;
+        fill: var(--mermaid-amber-text) !important;
+      }
+    }
+
+    // 3. Slate Blue
+    .node:nth-child(5n + 3) {
+      .label-container,
+      rect,
+      polygon,
+      circle,
+      ellipse,
+      path.label-container {
+        fill: var(--mermaid-slate-fill) !important;
+        stroke: var(--mermaid-slate-stroke) !important;
+      }
+      .label,
+      .nodeLabel,
+      text,
+      tspan,
+      span {
+        color: var(--mermaid-slate-text) !important;
+        fill: var(--mermaid-slate-text) !important;
+      }
+    }
+
+    // 4. Sage
+    .node:nth-child(5n + 4) {
+      .label-container,
+      rect,
+      polygon,
+      circle,
+      ellipse,
+      path.label-container {
+        fill: var(--mermaid-sage-fill) !important;
+        stroke: var(--mermaid-sage-stroke) !important;
+      }
+      .label,
+      .nodeLabel,
+      text,
+      tspan,
+      span {
+        color: var(--mermaid-sage-text) !important;
+        fill: var(--mermaid-sage-text) !important;
+      }
+    }
+
+    // 5. Coral
+    .node:nth-child(5n + 5) {
+      .label-container,
+      rect,
+      polygon,
+      circle,
+      ellipse,
+      path.label-container {
+        fill: var(--mermaid-coral-fill) !important;
+        stroke: var(--mermaid-coral-stroke) !important;
+      }
+      .label,
+      .nodeLabel,
+      text,
+      tspan,
+      span {
+        color: var(--mermaid-coral-text) !important;
+        fill: var(--mermaid-coral-text) !important;
+      }
+    }
+  }
+
+  // Explicit semantic classes (optional author override)
+  .node.emerald,
+  .node.forest,
+  .node.tone-emerald {
+    .label-container,
+    rect,
+    polygon,
+    circle,
+    ellipse,
+    path.label-container {
+      fill: var(--mermaid-emerald-fill) !important;
+      stroke: var(--mermaid-emerald-stroke) !important;
+    }
+    .label,
+    .nodeLabel,
+    text,
+    tspan,
+    span {
+      color: var(--mermaid-emerald-text) !important;
+      fill: var(--mermaid-emerald-text) !important;
+    }
+  }
+
+  .node.amber,
+  .node.ochre,
+  .node.tone-amber {
+    .label-container,
+    rect,
+    polygon,
+    circle,
+    ellipse,
+    path.label-container {
+      fill: var(--mermaid-amber-fill) !important;
+      stroke: var(--mermaid-amber-stroke) !important;
+    }
+    .label,
+    .nodeLabel,
+    text,
+    tspan,
+    span {
+      color: var(--mermaid-amber-text) !important;
+      fill: var(--mermaid-amber-text) !important;
+    }
+  }
+
+  .node.slate,
+  .node.blue,
+  .node.tone-slate {
+    .label-container,
+    rect,
+    polygon,
+    circle,
+    ellipse,
+    path.label-container {
+      fill: var(--mermaid-slate-fill) !important;
+      stroke: var(--mermaid-slate-stroke) !important;
+    }
+    .label,
+    .nodeLabel,
+    text,
+    tspan,
+    span {
+      color: var(--mermaid-slate-text) !important;
+      fill: var(--mermaid-slate-text) !important;
+    }
+  }
+
+  .node.sage,
+  .node.tone-sage {
+    .label-container,
+    rect,
+    polygon,
+    circle,
+    ellipse,
+    path.label-container {
+      fill: var(--mermaid-sage-fill) !important;
+      stroke: var(--mermaid-sage-stroke) !important;
+    }
+    .label,
+    .nodeLabel,
+    text,
+    tspan,
+    span {
+      color: var(--mermaid-sage-text) !important;
+      fill: var(--mermaid-sage-text) !important;
+    }
+  }
+
+  .node.coral,
+  .node.terracotta,
+  .node.tone-coral {
+    .label-container,
+    rect,
+    polygon,
+    circle,
+    ellipse,
+    path.label-container {
+      fill: var(--mermaid-coral-fill) !important;
+      stroke: var(--mermaid-coral-stroke) !important;
+    }
+    .label,
+    .nodeLabel,
+    text,
+    tspan,
+    span {
+      color: var(--mermaid-coral-text) !important;
+      fill: var(--mermaid-coral-text) !important;
+    }
+  }
+
+  // Author exception class for missing/problem nodes
+  .node.missing {
+    .label-container,
+    rect,
+    polygon,
+    circle,
+    ellipse,
+    path.label-container {
+      fill: #ffdddd !important;
+      stroke: #c0392b !important;
+      stroke-width: 2.5px !important;
+    }
+  }
+
+  // Interactive links inside Mermaid SVG diagrams
+  a {
+    color: var(--secondary) !important;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: var(--tertiary) !important;
+    }
+  }
+
+  // Edge labels with clean high contrast background
+  .edgeLabel {
+    background-color: var(--light) !important;
+    color: var(--darkgray) !important;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: var(--headerFont) !important;
+    font-size: 0.85em !important;
+
+    rect {
+      fill: var(--light) !important;
+      opacity: 0.95 !important;
+      rx: 4px !important;
+      ry: 4px !important;
+    }
+
+    span {
+      background-color: var(--light) !important;
+      color: var(--darkgray) !important;
+    }
+  }
+}
+
+:root[saved-theme="dark"] {
+  code.mermaid,
+  .mermaid-content {
+    .node.missing {
+      .label-container,
+      rect,
+      polygon,
+      circle,
+      ellipse,
+      path.label-container {
+        fill: #3b1c1a !important;
+        stroke: #e06c5f !important;
       }
     }
   }

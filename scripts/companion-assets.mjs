@@ -1,7 +1,7 @@
 import { readFile, readdir, writeFile } from "node:fs/promises"
 import { fileURLToPath, pathToFileURL } from "node:url"
 
-const REQUIRED_IDS = ["mk1", "mk2", "mk3", "mk4", "mk5", "mk6", "peoplemath", "alp"]
+const REQUIRED_IDS = ["mk1", "mk2", "mk3", "mk4", "mk5", "mk6", "rabuan", "alp"]
 const REQUIRED_FIELDS = [
   "id",
   "title",

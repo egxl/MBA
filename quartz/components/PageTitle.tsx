@@ -7,19 +7,13 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
   const title = cfg?.pageTitle ?? i18n(cfg.locale).propertyDefaults.title
   const baseDir = pathToRoot(fileData.slug!)
   const logoPath = joinSegments(baseDir, "static/logo.png")
-  const isEasterEgg = fileData.slug === "easter-egg"
-  const easterEggHref = isEasterEgg ? baseDir : joinSegments(baseDir, "easter-egg")
 
   return (
     <h2 class={classNames(displayClass, "page-title")}>
       <a
-        href={easterEggHref}
-        aria-label={
-          isEasterEgg
-            ? "Return to Academic Portal Home"
-            : "P3MD Official Insignia (Classified Memo)"
-        }
-        title={isEasterEgg ? "Return to Home" : "Classified Cohort Memo"}
+        href={baseDir}
+        aria-label="Return to Academic Portal Home"
+        title="P3MD: MiniMBA+ Hub"
         class="site-logo-link"
       >
         <img class="site-logo" src={logoPath} alt={title} width="1024" height="240" />

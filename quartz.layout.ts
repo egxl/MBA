@@ -2,8 +2,8 @@ import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
 const explorerSortFn = (a: any, b: any) => {
-  // Prioritize program/ and courses/ at the root level of the explorer tree
-  const order = ["program", "courses"]
+  // Prioritize program/, courses/, and rabuan/ at the root level of the explorer tree
+  const order = ["program", "courses", "rabuan"]
   const aIdx = order.indexOf(a.slugSegment)
   const bIdx = order.indexOf(b.slugSegment)
   if (aIdx !== -1 && bIdx !== -1) return aIdx - bIdx
@@ -27,7 +27,8 @@ const explorerSortFn = (a: any, b: any) => {
 }
 
 const explorerFilterFn = (node: any) => {
-  return node.slugSegment !== "tags" && node.slugSegment !== "easter-egg"
+  const hiddenSegments = ["tags", "easter-egg", "concepts", "entities", "syntheses"]
+  return !hiddenSegments.includes(node.slugSegment)
 }
 
 // components shared across all pages
@@ -46,6 +47,7 @@ export const sharedPageComponents: SharedLayout = {
         Component.PageTitle(),
       ],
       end: [
+        Component.DesktopOnly(Component.NavDropdown()),
         Component.HomeButton(),
         Component.Search(),
         Component.LanguageSwitcher(),
@@ -62,6 +64,7 @@ export const sharedPageComponents: SharedLayout = {
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
+    Component.CourseSwitcher(),
     Component.ConditionalRender({
       component: Component.Breadcrumbs({ showCurrentPage: false }),
       condition: (page) => page.fileData.slug !== "index",
@@ -89,6 +92,7 @@ export const defaultContentPageLayout: PageLayout = {
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [
+    Component.CourseSwitcher(),
     Component.Breadcrumbs({ showCurrentPage: false }),
     Component.ArticleTitle(),
     Component.ContentMeta(),

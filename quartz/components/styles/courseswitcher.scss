@@ -1,0 +1,206 @@
+@use "../../styles/variables.scss" as *;
+
+.course-switcher {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+  margin-bottom: 0.25rem;
+  font-family: var(--headerFont);
+
+  & + .breadcrumb-container {
+    margin-top: 0.35rem;
+  }
+
+  .course-switcher-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .course-switcher-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--gray);
+    user-select: none;
+  }
+
+  .course-switcher-select-wrap {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .course-switcher-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: var(--headerFont);
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--darkgray);
+    background-color: var(--light);
+    border: 1px solid var(--lightgray);
+    border-radius: 6px;
+    padding: 0.3rem 1.6rem 0.3rem 0.55rem;
+    cursor: pointer;
+    outline: none;
+    max-width: 280px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    transition:
+      border-color 0.15s ease,
+      box-shadow 0.15s ease,
+      background-color 0.15s ease;
+
+    &:hover:not(:disabled) {
+      border-color: var(--secondary);
+    }
+
+    &:focus-visible {
+      border-color: var(--secondary);
+      box-shadow: 0 0 0 2px var(--highlight);
+    }
+
+    &:disabled,
+    &.is-disabled {
+      cursor: not-allowed;
+      opacity: 0.65;
+      background-color: var(--lightgray);
+      color: var(--gray);
+    }
+  }
+
+  .course-switcher-arrow {
+    position: absolute;
+    right: 0.45rem;
+    pointer-events: none;
+    width: 11px;
+    height: 11px;
+    stroke: var(--gray);
+    stroke-width: 2.2;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .course-switcher-divider {
+    color: var(--gray);
+    font-size: 0.75rem;
+    opacity: 0.6;
+    user-select: none;
+  }
+
+  .course-switcher-go {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    font-family: var(--headerFont);
+    font-size: 0.78rem;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 0.32rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid var(--secondary);
+    background-color: var(--secondary);
+    color: #ffffff;
+    cursor: pointer;
+    user-select: none;
+    transition:
+      background-color 0.15s ease,
+      border-color 0.15s ease,
+      box-shadow 0.15s ease,
+      transform 0.08s ease;
+
+    .go-arrow {
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2.4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    &:hover {
+      background-color: var(--tertiary);
+      border-color: var(--tertiary);
+    }
+
+    &:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 2px var(--highlight);
+    }
+
+    &:active {
+      transform: scale(0.96);
+    }
+  }
+
+  .course-switcher-data {
+    display: none;
+  }
+}
+
+:root[saved-theme="dark"] .course-switcher {
+  .course-switcher-select {
+    background-color: var(--light);
+    border-color: var(--lightgray);
+    color: var(--darkgray);
+
+    &:hover:not(:disabled) {
+      border-color: var(--secondary);
+    }
+
+    &:disabled,
+    &.is-disabled {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-color: var(--lightgray);
+    }
+  }
+
+  .course-switcher-go {
+    background-color: var(--secondary);
+    color: var(--light);
+    border-color: var(--secondary);
+
+    &:hover {
+      background-color: var(--tertiary);
+      border-color: var(--tertiary);
+    }
+  }
+}
+
+@media all and ($mobile) {
+  .course-switcher {
+    gap: 0.4rem;
+
+    .course-switcher-item {
+      flex: 1 1 auto;
+      min-width: 0;
+
+      .course-switcher-select-wrap {
+        width: 100%;
+      }
+
+      .course-switcher-select {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .course-switcher-divider {
+      display: none;
+    }
+
+    .course-switcher-go {
+      flex: 0 0 auto;
+      padding: 0.35rem 0.9rem;
+    }
+  }
+}

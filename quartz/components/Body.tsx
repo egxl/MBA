@@ -3,6 +3,10 @@ import clipboardScript from "./scripts/clipboard.inline"
 import clipboardStyle from "./styles/clipboard.scss"
 // @ts-ignore
 import sidebarScript from "./scripts/sidebar.inline"
+// @ts-ignore
+import splitViewScript from "./scripts/splitview.inline"
+import splitViewStyle from "./styles/splitview.scss"
+import { concatenateResources } from "../util/resources"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 const Body: QuartzComponent = ({ children }: QuartzComponentProps) => {
@@ -10,7 +14,7 @@ const Body: QuartzComponent = ({ children }: QuartzComponentProps) => {
 }
 
 Body.beforeDOMLoaded = sidebarScript
-Body.afterDOMLoaded = clipboardScript
-Body.css = clipboardStyle
+Body.afterDOMLoaded = concatenateResources(clipboardScript, splitViewScript)
+Body.css = concatenateResources(clipboardStyle, splitViewStyle)
 
 export default (() => Body) satisfies QuartzComponentConstructor

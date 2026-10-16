@@ -9,6 +9,17 @@ tags:
   - danantara
 ---
 
+<div class="program-crest-banner">
+  <div class="program-crest-seal-wrapper">
+    <img src="/static/crest-soedirman.png" alt="Insignia Resmi P3MD Batch I Soedirman" class="program-crest-seal" width="95" height="95" />
+  </div>
+  <div class="program-crest-content">
+    <span class="program-crest-eyebrow">Program Presiden Untuk Pemimpin Masa Depan</span>
+    <h2 class="program-crest-title">P3MD Batch I Soedirman</h2>
+    <p class="program-crest-desc">Lambang Korps Resmi &bull; Nilai Kejuangan: <em>Berani &bull; Cepat &bull; Terhormat</em></p>
+  </div>
+</div>
+
 The **P3MD MBA** (_Program Pendidikan Profesional Magister Terapan_) is an executive leadership ecosystem engineered by **SBM ITB** (_Direktorat Pendidikan Profesional Berkelanjutan_) in strategic collaboration with the **Kementerian Pertahanan Republik Indonesia (Kemhan RI)**, **DIKTISAINTEK BERDAMPAK**, and **Danantara Indonesia** (_Daya Anagata Nusantara_).
 
 Hosted at the residential **Kampus DCU Nawasena**, the program is built on an integrated development architecture designed to transform high-potential leaders into strategic business executives under the ethos:
@@ -25,6 +36,7 @@ $$\mathbf{LEARN \quad \boldsymbol{\cdot} \quad LEAD \quad \boldsymbol{\cdot} \qu
 | **[[program/action-learning-project\|Action Learning Project (ALP) Blueprint]]** | The Carpenter Analogy, 6 SMART-gated stages across 10 partner BUMNs, Milestone gates (M1–M3), BUMN Immersion, and Social Projects.                        |
 | **[[program/academic-calendar\|Academic & Synchronization Calendar]]**           | Master 16-week timeline aligning core courses, exams (Midterm M8, Final M14), CEO Guest Lectures, gamification, and ALP gates.                            |
 | **[[program/faculty-directory\|Faculty & Staff Directory]]**                     | Complete directory of SBM ITB Lead Faculty, co-lecturers, and Course Assistants (with direct contact channels) across all 6 core courses.                 |
+| **[[easter-egg\|Cohort Heraldry & Design System]]**                              | The official Soedirman Crest (_Lambang Korps_), heraldic symbolism (_Garuda, Star, Chevron, Laurels, Motto_), and digital UI system architecture.         |
 
 ---
 

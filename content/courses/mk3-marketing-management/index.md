@@ -47,22 +47,22 @@ The curriculum starts with customer value creation and the macro/micro marketing
 
 ## 🗺️ 14-Week Map of Content (MOC)
 
-|    Week     | Module / Thematic Pillar  | Topic & Core Focus                                                 | Note Hub                                                          |
-| :---------: | :------------------------ | :----------------------------------------------------------------- | :---------------------------------------------------------------- |
-| **Week 01** | Foundations               | **Creating Customer Value & Engagement**                           | [[courses/mk3-marketing-management/week-01/index\|Week 01 Notes]] |
-| **Week 02** | Foundations               | **Analyzing the Marketing Environment**                            | [[courses/mk3-marketing-management/week-02/index\|Week 02 Notes]] |
-| **Week 03** | Customer & Market Insight | **Managing Marketing Information & Customer Insights (Part 1)**    | [[courses/mk3-marketing-management/week-03/index\|Week 03 Notes]] |
-| **Week 04** | Customer & Market Insight | **Managing Marketing Information & Customer Insights (Part 2)**    | [[courses/mk3-marketing-management/week-04/index\|Week 04 Notes]] |
-| **Week 05** | Customer & Market Insight | **Marketing Research & Diagnostic Methodologies**                  | [[courses/mk3-marketing-management/week-05/index\|Week 05 Notes]] |
-| **Week 06** | STP Strategy              | **Market Segmentation & Target Market Selection**                  | [[courses/mk3-marketing-management/week-06/index\|Week 06 Notes]] |
-| **Week 07** | STP Strategy              | **Strategic Positioning & Perceptual Mapping**                     | [[courses/mk3-marketing-management/week-07/index\|Week 07 Notes]] |
-| **Week 08** | STP Strategy              | **Competitive Business Game: Selling Simulation**                  | [[courses/mk3-marketing-management/week-08/index\|Week 08 Notes]] |
-| **Week 09** | Marketing Mix (4Ps)       | **Marketing Mix: Product, Services & Experience Strategy**         | [[courses/mk3-marketing-management/week-09/index\|Week 09 Notes]] |
-| **Week 10** | Marketing Mix (4Ps)       | **Marketing Mix: Strategic Pricing & Value Capture**               | [[courses/mk3-marketing-management/week-10/index\|Week 10 Notes]] |
-| **Week 11** | Marketing Mix (4Ps)       | **Marketing Mix: Distribution Channels & Digital Omnichannel**     | [[courses/mk3-marketing-management/week-11/index\|Week 11 Notes]] |
-| **Week 12** | Marketing Mix (4Ps)       | **Marketing Mix: Integrated Marketing Communications (Promotion)** | [[courses/mk3-marketing-management/week-12/index\|Week 12 Notes]] |
-| **Week 13** | Branding & Synthesis      | **Strategic Brand Management & Brand Equity**                      | [[courses/mk3-marketing-management/week-13/index\|Week 13 Notes]] |
-| **Week 14** | Branding & Synthesis      | **Special Topic: Guest Lecture & Marketing Capstone**              | [[courses/mk3-marketing-management/week-14/index\|Week 14 Notes]] |
+|    Week     | Module / Thematic Pillar  | Topic & Core Focus                                                 | Note Hub                        |
+| :---------: | :------------------------ | :----------------------------------------------------------------- | :------------------------------ |
+| **Week 01** | Foundations               | **Creating Customer Value & Engagement**                           | _Scheduled (Pending Ingestion)_ |
+| **Week 02** | Foundations               | **Analyzing the Marketing Environment**                            | _Scheduled (Pending Ingestion)_ |
+| **Week 03** | Customer & Market Insight | **Managing Marketing Information & Customer Insights (Part 1)**    | _Scheduled (Pending Ingestion)_ |
+| **Week 04** | Customer & Market Insight | **Managing Marketing Information & Customer Insights (Part 2)**    | _Scheduled (Pending Ingestion)_ |
+| **Week 05** | Customer & Market Insight | **Marketing Research & Diagnostic Methodologies**                  | _Scheduled (Pending Ingestion)_ |
+| **Week 06** | STP Strategy              | **Market Segmentation & Target Market Selection**                  | _Scheduled (Pending Ingestion)_ |
+| **Week 07** | STP Strategy              | **Strategic Positioning & Perceptual Mapping**                     | _Scheduled (Pending Ingestion)_ |
+| **Week 08** | STP Strategy              | **Competitive Business Game: Selling Simulation**                  | _Scheduled (Pending Ingestion)_ |
+| **Week 09** | Marketing Mix (4Ps)       | **Marketing Mix: Product, Services & Experience Strategy**         | _Scheduled (Pending Ingestion)_ |
+| **Week 10** | Marketing Mix (4Ps)       | **Marketing Mix: Strategic Pricing & Value Capture**               | _Scheduled (Pending Ingestion)_ |
+| **Week 11** | Marketing Mix (4Ps)       | **Marketing Mix: Distribution Channels & Digital Omnichannel**     | _Scheduled (Pending Ingestion)_ |
+| **Week 12** | Marketing Mix (4Ps)       | **Marketing Mix: Integrated Marketing Communications (Promotion)** | _Scheduled (Pending Ingestion)_ |
+| **Week 13** | Branding & Synthesis      | **Strategic Brand Management & Brand Equity**                      | _Scheduled (Pending Ingestion)_ |
+| **Week 14** | Branding & Synthesis      | **Special Topic: Guest Lecture & Marketing Capstone**              | _Scheduled (Pending Ingestion)_ |
 
 ---
 

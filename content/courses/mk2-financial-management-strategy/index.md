@@ -46,22 +46,22 @@ The 14-week sequence begins with financial foundations and financial statement a
 
 ## 🗺️ 14-Week Map of Content (MOC)
 
-|    Week     | Module / Thematic Pillar      | Topic & Core Focus                                                 | Note Hub                                                                   |
-| :---------: | :---------------------------- | :----------------------------------------------------------------- | :------------------------------------------------------------------------- |
-| **Week 01** | Financial Foundations         | **Financial Management Function & Objectives**                     | [[courses/mk2-financial-management-strategy/week-01/index\|Week 01 Notes]] |
-| **Week 02** | Financial Foundations         | **Financial Statement Analysis**                                   | [[courses/mk2-financial-management-strategy/week-02/index\|Week 02 Notes]] |
-| **Week 03** | Financial Foundations         | **Financial Statement Projections**                                | [[courses/mk2-financial-management-strategy/week-03/index\|Week 03 Notes]] |
-| **Week 04** | Cost & Managerial Accounting  | **Management Accounting Fundamentals**                             | [[courses/mk2-financial-management-strategy/week-04/index\|Week 04 Notes]] |
-| **Week 05** | Cost & Managerial Accounting  | **Cost Analysis & Activity-Based Costing (ABC)**                   | [[courses/mk2-financial-management-strategy/week-05/index\|Week 05 Notes]] |
-| **Week 06** | Time Value of Money           | **Time Value of Money (Part 1: Compounding & Annuities)**          | [[courses/mk2-financial-management-strategy/week-06/index\|Week 06 Notes]] |
-| **Week 07** | Time Value of Money           | **Time Value of Money (Part 2: Bond & Stock Valuation)**           | [[courses/mk2-financial-management-strategy/week-07/index\|Week 07 Notes]] |
-| **Week 08** | Corporate Financial Decisions | **Capital Budgeting (Part 1: Decision Criteria & Cash Flows)**     | [[courses/mk2-financial-management-strategy/week-08/index\|Week 08 Notes]] |
-| **Week 09** | Corporate Financial Decisions | **Capital Budgeting (Part 2: Risk & Real Options)**                | [[courses/mk2-financial-management-strategy/week-09/index\|Week 09 Notes]] |
-| **Week 10** | Corporate Financial Decisions | **Pay-Out Policy & Capital Return Architecture**                   | [[courses/mk2-financial-management-strategy/week-10/index\|Week 10 Notes]] |
-| **Week 11** | Corporate Financial Decisions | **Financing Decisions & Financial Environment**                    | [[courses/mk2-financial-management-strategy/week-11/index\|Week 11 Notes]] |
-| **Week 12** | Corporate Financial Decisions | **Working Capital Management & Liquidity Strategy**                | [[courses/mk2-financial-management-strategy/week-12/index\|Week 12 Notes]] |
-| **Week 13** | Financial Risk Management     | **Definition of Risk, Risk-Return Relationship & Risk Governance** | [[courses/mk2-financial-management-strategy/week-13/index\|Week 13 Notes]] |
-| **Week 14** | Ethics & Synthesis            | **Group Project Presentations & Strategic Financial Ethics**       | [[courses/mk2-financial-management-strategy/week-14/index\|Week 14 Notes]] |
+|    Week     | Module / Thematic Pillar      | Topic & Core Focus                                                 | Note Hub                        |
+| :---------: | :---------------------------- | :----------------------------------------------------------------- | :------------------------------ |
+| **Week 01** | Financial Foundations         | **Financial Management Function & Objectives**                     | _Scheduled (Pending Ingestion)_ |
+| **Week 02** | Financial Foundations         | **Financial Statement Analysis**                                   | _Scheduled (Pending Ingestion)_ |
+| **Week 03** | Financial Foundations         | **Financial Statement Projections**                                | _Scheduled (Pending Ingestion)_ |
+| **Week 04** | Cost & Managerial Accounting  | **Management Accounting Fundamentals**                             | _Scheduled (Pending Ingestion)_ |
+| **Week 05** | Cost & Managerial Accounting  | **Cost Analysis & Activity-Based Costing (ABC)**                   | _Scheduled (Pending Ingestion)_ |
+| **Week 06** | Time Value of Money           | **Time Value of Money (Part 1: Compounding & Annuities)**          | _Scheduled (Pending Ingestion)_ |
+| **Week 07** | Time Value of Money           | **Time Value of Money (Part 2: Bond & Stock Valuation)**           | _Scheduled (Pending Ingestion)_ |
+| **Week 08** | Corporate Financial Decisions | **Capital Budgeting (Part 1: Decision Criteria & Cash Flows)**     | _Scheduled (Pending Ingestion)_ |
+| **Week 09** | Corporate Financial Decisions | **Capital Budgeting (Part 2: Risk & Real Options)**                | _Scheduled (Pending Ingestion)_ |
+| **Week 10** | Corporate Financial Decisions | **Pay-Out Policy & Capital Return Architecture**                   | _Scheduled (Pending Ingestion)_ |
+| **Week 11** | Corporate Financial Decisions | **Financing Decisions & Financial Environment**                    | _Scheduled (Pending Ingestion)_ |
+| **Week 12** | Corporate Financial Decisions | **Working Capital Management & Liquidity Strategy**                | _Scheduled (Pending Ingestion)_ |
+| **Week 13** | Financial Risk Management     | **Definition of Risk, Risk-Return Relationship & Risk Governance** | _Scheduled (Pending Ingestion)_ |
+| **Week 14** | Ethics & Synthesis            | **Group Project Presentations & Strategic Financial Ethics**       | _Scheduled (Pending Ingestion)_ |
 
 ---
 

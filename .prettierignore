@@ -1,4 +1,4 @@
 public
 node_modules
 .quartz-cache
-.agents/design-explorations/*.generated.html
+.agents/**

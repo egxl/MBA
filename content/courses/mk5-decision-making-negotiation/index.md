@@ -51,22 +51,22 @@ The course first establishes negotiation foundations and the rational decision-m
 
 ## 🗺️ 14-Week Map of Content (MOC)
 
-|    Week     | Module / Thematic Pillar             | Topic & Core Focus                                                            | Note Hub                                                                 |
-| :---------: | :----------------------------------- | :---------------------------------------------------------------------------- | :----------------------------------------------------------------------- |
-| **Week 01** | Foundations                          | **Introduction to Negotiation Architecture (BATNA & ZOPA)**                   | [[courses/mk5-decision-making-negotiation/week-01/index\|Week 01 Notes]] |
-| **Week 02** | Foundations                          | **Rational Framework of Decision Making & Cognitive Biases**                  | [[courses/mk5-decision-making-negotiation/week-02/index\|Week 02 Notes]] |
-| **Week 03** | Kepner-Tregoe                        | **Kepner-Tregoe Methodology (Part 1: Situation & Problem Analysis)**          | [[courses/mk5-decision-making-negotiation/week-03/index\|Week 03 Notes]] |
-| **Week 04** | Kepner-Tregoe                        | **Kepner-Tregoe Methodology (Part 2: Decision & Potential Problem Analysis)** | [[courses/mk5-decision-making-negotiation/week-04/index\|Week 04 Notes]] |
-| **Week 05** | Kepner-Tregoe                        | **Decision Analysis: SMART (Simple Multi-Attribute Rating Technique)**        | [[courses/mk5-decision-making-negotiation/week-05/index\|Week 05 Notes]] |
-| **Week 06** | Kepner-Tregoe                        | **Decision Analysis: AHP (Analytic Hierarchy Process) & Decision Trees**      | [[courses/mk5-decision-making-negotiation/week-06/index\|Week 06 Notes]] |
-| **Week 07** | Scenario Planning & Systems Thinking | **Scenario Planning and Systems Thinking (Part 1: Causal Loops)**             | [[courses/mk5-decision-making-negotiation/week-07/index\|Week 07 Notes]] |
-| **Week 08** | Scenario Planning & Systems Thinking | **Scenario Planning and Systems Thinking (Part 2: 2x2 Matrix Scenarios)**     | [[courses/mk5-decision-making-negotiation/week-08/index\|Week 08 Notes]] |
-| **Week 09** | Distributive Negotiation             | **The Negotiation Dilemma: Value Claiming vs. Value Creating**                | [[courses/mk5-decision-making-negotiation/week-09/index\|Week 09 Notes]] |
-| **Week 10** | Distributive Negotiation             | **Negotiation Styles, Behavioral Archetypes & Power Dynamics**                | [[courses/mk5-decision-making-negotiation/week-10/index\|Week 10 Notes]] |
-| **Week 11** | Distributive Negotiation             | **Claiming Value ("Slicing the Pie") & Anchoring Tactics**                    | [[courses/mk5-decision-making-negotiation/week-11/index\|Week 11 Notes]] |
-| **Week 12** | Integrative Negotiation              | **Transitioning from Distributive to Integrative Negotiation**                | [[courses/mk5-decision-making-negotiation/week-12/index\|Week 12 Notes]] |
-| **Week 13** | Integrative Negotiation              | **Integrative Strategies, Trade-Off Logrolling & Contingency Deals**          | [[courses/mk5-decision-making-negotiation/week-13/index\|Week 13 Notes]] |
-| **Week 14** | Integrative Negotiation              | **Multiparty Negotiation, Coalition Building & Capstone Wrap-Up**             | [[courses/mk5-decision-making-negotiation/week-14/index\|Week 14 Notes]] |
+|    Week     | Module / Thematic Pillar             | Topic & Core Focus                                                            | Note Hub                        |
+| :---------: | :----------------------------------- | :---------------------------------------------------------------------------- | :------------------------------ |
+| **Week 01** | Foundations                          | **Introduction to Negotiation Architecture (BATNA & ZOPA)**                   | _Scheduled (Pending Ingestion)_ |
+| **Week 02** | Foundations                          | **Rational Framework of Decision Making & Cognitive Biases**                  | _Scheduled (Pending Ingestion)_ |
+| **Week 03** | Kepner-Tregoe                        | **Kepner-Tregoe Methodology (Part 1: Situation & Problem Analysis)**          | _Scheduled (Pending Ingestion)_ |
+| **Week 04** | Kepner-Tregoe                        | **Kepner-Tregoe Methodology (Part 2: Decision & Potential Problem Analysis)** | _Scheduled (Pending Ingestion)_ |
+| **Week 05** | Kepner-Tregoe                        | **Decision Analysis: SMART (Simple Multi-Attribute Rating Technique)**        | _Scheduled (Pending Ingestion)_ |
+| **Week 06** | Kepner-Tregoe                        | **Decision Analysis: AHP (Analytic Hierarchy Process) & Decision Trees**      | _Scheduled (Pending Ingestion)_ |
+| **Week 07** | Scenario Planning & Systems Thinking | **Scenario Planning and Systems Thinking (Part 1: Causal Loops)**             | _Scheduled (Pending Ingestion)_ |
+| **Week 08** | Scenario Planning & Systems Thinking | **Scenario Planning and Systems Thinking (Part 2: 2x2 Matrix Scenarios)**     | _Scheduled (Pending Ingestion)_ |
+| **Week 09** | Distributive Negotiation             | **The Negotiation Dilemma: Value Claiming vs. Value Creating**                | _Scheduled (Pending Ingestion)_ |
+| **Week 10** | Distributive Negotiation             | **Negotiation Styles, Behavioral Archetypes & Power Dynamics**                | _Scheduled (Pending Ingestion)_ |
+| **Week 11** | Distributive Negotiation             | **Claiming Value ("Slicing the Pie") & Anchoring Tactics**                    | _Scheduled (Pending Ingestion)_ |
+| **Week 12** | Integrative Negotiation              | **Transitioning from Distributive to Integrative Negotiation**                | _Scheduled (Pending Ingestion)_ |
+| **Week 13** | Integrative Negotiation              | **Integrative Strategies, Trade-Off Logrolling & Contingency Deals**          | _Scheduled (Pending Ingestion)_ |
+| **Week 14** | Integrative Negotiation              | **Multiparty Negotiation, Coalition Building & Capstone Wrap-Up**             | _Scheduled (Pending Ingestion)_ |
 
 ---
 

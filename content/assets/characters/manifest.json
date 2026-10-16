@@ -64,13 +64,13 @@
       "background": "#bd4f70"
     },
     {
-      "id": "peoplemath",
-      "title": "Bonus: PeopleMath",
-      "code": "ELECTIVE 001",
-      "companion": "The Modeler",
-      "action": "Structure and retention",
-      "meaning": "Measure the organization.",
-      "file": "peoplemath-modeler.svg",
+      "id": "rabuan",
+      "title": "Rabuan: Executive & Guest Lectures",
+      "code": "WEEKLY PLENARY",
+      "companion": "The Keynote",
+      "action": "Leadership and national strategy",
+      "meaning": "Bridge theory to executive reality.",
+      "file": "rabuan-keynote.svg",
       "background": "#674387"
     },
     {

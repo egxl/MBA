@@ -523,9 +523,44 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
       if (opts.mermaid) {
         plugins.push(() => {
           return (tree: Root, file) => {
+            const base = pathToRoot(file.data.slug!)
             visit(tree, "code", (node: Code) => {
               if (node.lang === "mermaid") {
                 file.data.hasMermaidDiagram = true
+                let val = node.value
+
+                // 1. Transform wikilinks inside mermaid into interactive HTML anchors
+                if (opts.wikilinks) {
+                  val = val.replace(wikilinkRegex, (_raw, rawFp, rawHeader, rawAlias) => {
+                    const fp = rawFp?.trim() ?? ""
+                    const anchor = rawHeader?.trim() ?? ""
+                    const alias = rawAlias ? rawAlias.slice(1).trim() : (fp.split("/").pop() ?? fp)
+                    const url = `${base}/${slugifyFilePath(fp as FilePath)}${anchor}`
+                    return `<a href='${url}' class='internal'>${alias}</a>`
+                  })
+                }
+
+                // 2. Transform \n to <br/> inside quoted strings
+                val = val.replace(/"([^"]*)"/g, (_match, group) => {
+                  return `"${group.replace(/\\n/g, "<br/>")}"`
+                })
+
+                // 3. Defensively quote unquoted decision nodes with special characters
+                val = val.replace(/\{([^{}"\n]+?[?:&/><=][^{}"\n]*?)\}/g, (_match, inner) => {
+                  const cleaned = inner.replace(/\\n/g, "<br/>").trim()
+                  return `{"${cleaned}"}`
+                })
+
+                // 4. Sanitize markdown lists inside diagram labels to prevent "Unsupported markdown: list" errors in Mermaid
+                // Convert bullet points (- or *) to bullet character •
+                val = val.replace(/((?:<br\s*\/?>|\n|\[\s*"?|\{\s*"?|\(\s*"?)\s*)[-*]\s+/g, "$1• ")
+                // Escape numbered list syntax (e.g. 1. -> 1\.)
+                val = val.replace(
+                  /((?:<br\s*\/?>|\n|\[\s*"?|\{\s*"?|\(\s*"?|subgraph\s+[a-zA-Z0-9_]+\s*\[\s*"?)(\s*))(\d+)\.\s+/g,
+                  "$1$3\\. ",
+                )
+
+                node.value = val
                 node.data = {
                   hProperties: {
                     className: ["mermaid"],
@@ -716,26 +751,6 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
                     ],
                   },
                   node,
-                  {
-                    type: "element",
-                    tagName: "div",
-                    properties: { id: "mermaid-container", role: "dialog" },
-                    children: [
-                      {
-                        type: "element",
-                        tagName: "div",
-                        properties: { id: "mermaid-space" },
-                        children: [
-                          {
-                            type: "element",
-                            tagName: "div",
-                            properties: { className: ["mermaid-content"] },
-                            children: [],
-                          },
-                        ],
-                      },
-                    ],
-                  },
                 ]
               }
             })

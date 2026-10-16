@@ -51,20 +51,20 @@ The course is grouped into four sequential operational layers:
 
 |    Week     | Module / Thematic Pillar    | Topic & Core Focus                                         | Note Hub                                                                        |
 | :---------: | :-------------------------- | :--------------------------------------------------------- | :------------------------------------------------------------------------------ |
-| **Week 01** | Strategy and Product Design | **Introduction to Operations and Supply Chain Management** | [[courses/mk4-operations-supply-chain-management/week-01/index\|Week 01 Notes]] |
-| **Week 02** | Strategy and Product Design | **Operations Strategy & Competitive Dimensions**           | [[courses/mk4-operations-supply-chain-management/week-02/index\|Week 02 Notes]] |
-| **Week 03** | Strategy and Product Design | **Product and Service Design**                             | [[courses/mk4-operations-supply-chain-management/week-03/index\|Week 03 Notes]] |
-| **Week 04** | Strategy and Product Design | **Project Management (CPM / PERT & Critical Chain)**       | [[courses/mk4-operations-supply-chain-management/week-04/index\|Week 04 Notes]] |
-| **Week 05** | Capacity and Process        | **Strategic Capacity Planning & Economies of Scale**       | [[courses/mk4-operations-supply-chain-management/week-05/index\|Week 05 Notes]] |
+| **Week 01** | Strategy and Product Design | **Introduction to Operations and Supply Chain Management** | _Scheduled (Pending Ingestion)_                                                 |
+| **Week 02** | Strategy and Product Design | **Operations Strategy & Competitive Dimensions**           | _Scheduled (Pending Ingestion)_                                                 |
+| **Week 03** | Strategy and Product Design | **Product and Service Design**                             | _Scheduled (Pending Ingestion)_                                                 |
+| **Week 04** | Strategy and Product Design | **Project Management (CPM / PERT & Critical Chain)**       | _Scheduled (Pending Ingestion)_                                                 |
+| **Week 05** | Capacity and Process        | **Strategic Capacity Planning & Economies of Scale**       | _Scheduled (Pending Ingestion)_                                                 |
 | **Week 06** | Capacity and Process        | **Process Design, Analysis & Little's Law**                | [[courses/mk4-operations-supply-chain-management/week-06/index\|Week 06 Notes]] |
-| **Week 07** | Capacity and Process        | **Waiting Line Analysis, Simulation & OSCM Game**          | [[courses/mk4-operations-supply-chain-management/week-07/index\|Week 07 Notes]] |
-| **Week 08** | Quality Assurance           | **Lean Operations & Waste Elimination (Muda)**             | [[courses/mk4-operations-supply-chain-management/week-08/index\|Week 08 Notes]] |
-| **Week 09** | Quality Assurance           | **Lean Six Sigma & DMAIC Methodology**                     | [[courses/mk4-operations-supply-chain-management/week-09/index\|Week 09 Notes]] |
-| **Week 10** | Quality Assurance           | **Statistical Quality Control (SPC & Control Charts)**     | [[courses/mk4-operations-supply-chain-management/week-10/index\|Week 10 Notes]] |
-| **Week 11** | Demand Fulfillment          | **Demand Forecasting & Time-Series Analytics**             | [[courses/mk4-operations-supply-chain-management/week-11/index\|Week 11 Notes]] |
-| **Week 12** | Demand Fulfillment          | **Sales & Operations Planning (S&OP)**                     | [[courses/mk4-operations-supply-chain-management/week-12/index\|Week 12 Notes]] |
-| **Week 13** | Demand Fulfillment          | **Inventory Management & Stochastic Safety Stock**         | [[courses/mk4-operations-supply-chain-management/week-13/index\|Week 13 Notes]] |
-| **Week 14** | Demand Fulfillment          | **Material Requirements Planning (MRP) & Enterprise ERP**  | [[courses/mk4-operations-supply-chain-management/week-14/index\|Week 14 Notes]] |
+| **Week 07** | Capacity and Process        | **Waiting Line Analysis, Simulation & OSCM Game**          | _Scheduled (Pending Ingestion)_                                                 |
+| **Week 08** | Quality Assurance           | **Lean Operations & Waste Elimination (Muda)**             | _Scheduled (Pending Ingestion)_                                                 |
+| **Week 09** | Quality Assurance           | **Lean Six Sigma & DMAIC Methodology**                     | _Scheduled (Pending Ingestion)_                                                 |
+| **Week 10** | Quality Assurance           | **Statistical Quality Control (SPC & Control Charts)**     | _Scheduled (Pending Ingestion)_                                                 |
+| **Week 11** | Demand Fulfillment          | **Demand Forecasting & Time-Series Analytics**             | _Scheduled (Pending Ingestion)_                                                 |
+| **Week 12** | Demand Fulfillment          | **Sales & Operations Planning (S&OP)**                     | _Scheduled (Pending Ingestion)_                                                 |
+| **Week 13** | Demand Fulfillment          | **Inventory Management & Stochastic Safety Stock**         | _Scheduled (Pending Ingestion)_                                                 |
+| **Week 14** | Demand Fulfillment          | **Material Requirements Planning (MRP) & Enterprise ERP**  | _Scheduled (Pending Ingestion)_                                                 |
 
 ---
 

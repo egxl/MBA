@@ -48,7 +48,7 @@ test("validateCompanionAssets verifies the checked-in family and homepage refere
   assert.deepEqual(report.errors, [])
   assert.deepEqual(
     report.assets.map((asset) => asset.id),
-    ["mk1", "mk2", "mk3", "mk4", "mk5", "mk6", "peoplemath", "alp"],
+    ["mk1", "mk2", "mk3", "mk4", "mk5", "mk6", "rabuan", "alp"],
   )
 })
 

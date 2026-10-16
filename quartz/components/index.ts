@@ -28,8 +28,13 @@ import Navbar from "./Navbar"
 import SidebarToggle from "./SidebarToggle"
 import GridToggle from "./GridToggle"
 import LanguageSwitcher from "./LanguageSwitcher"
+import NavDropdown from "./NavDropdown"
+import SplitView from "./SplitView"
+import CourseSwitcher from "./CourseSwitcher"
 
 export {
+  CourseSwitcher,
+  SplitView,
   ArticleTitle,
   Content,
   TagContent,
@@ -60,4 +65,6 @@ export {
   SidebarToggle,
   GridToggle,
   LanguageSwitcher,
+  NavDropdown,
+  NavDropdown as NavLinks,
 }

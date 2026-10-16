@@ -2,6 +2,7 @@ import { render } from "preact-render-to-string"
 import { QuartzComponent, QuartzComponentProps } from "./types"
 import HeaderConstructor from "./Header"
 import BodyConstructor from "./Body"
+import SplitViewConstructor from "./SplitView"
 import { JSResourceToScriptElement, StaticResources } from "../util/resources"
 import { FullSlug, RelativeURL, joinSegments, normalizeHastElement } from "../util/path"
 import { clone } from "../util/clone"
@@ -240,6 +241,7 @@ export function renderPage(
   } = components
   const Header = HeaderConstructor()
   const Body = BodyConstructor()
+  const SplitView = SplitViewConstructor()
 
   const LeftComponent = (
     <div class="left sidebar" data-state="expanded">
@@ -293,6 +295,7 @@ export function renderPage(
                 ))}
               </div>
             </div>
+            <SplitView {...componentData} />
             {RightComponent}
             <Footer {...componentData} />
           </Body>

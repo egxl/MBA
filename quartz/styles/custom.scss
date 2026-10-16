@@ -43,6 +43,42 @@
   --callout-icon-case: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>');
   --callout-icon-quiz: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>');
   --callout-icon-framework: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>');
+
+  // Editorial Academic Mermaid Palette (Light Mode)
+  --mermaid-tint-emerald: #ebf3ed;
+  --mermaid-stroke-emerald: #3a5f43;
+  --mermaid-emerald-fill: #ebf3ed;
+  --mermaid-emerald-stroke: #3a5f43;
+  --mermaid-emerald-text: #1f1e1c;
+
+  --mermaid-tint-amber: #fdf5e6;
+  --mermaid-stroke-amber: #b47a1e;
+  --mermaid-amber-fill: #fdf5e6;
+  --mermaid-amber-stroke: #b47a1e;
+  --mermaid-amber-text: #1f1e1c;
+
+  --mermaid-tint-slate: #edf3f7;
+  --mermaid-stroke-slate: #3b6978;
+  --mermaid-slate-fill: #edf3f7;
+  --mermaid-slate-stroke: #3b6978;
+  --mermaid-slate-text: #1f1e1c;
+
+  --mermaid-tint-sage: #f0f5f1;
+  --mermaid-stroke-sage: #52795b;
+  --mermaid-sage-fill: #f0f5f1;
+  --mermaid-sage-stroke: #52795b;
+  --mermaid-sage-text: #1f1e1c;
+
+  --mermaid-tint-coral: #fdf0ec;
+  --mermaid-stroke-coral: #c05c46;
+  --mermaid-coral-fill: #fdf0ec;
+  --mermaid-coral-stroke: #c05c46;
+  --mermaid-coral-text: #1f1e1c;
+
+  --mermaid-ink: var(--dark);
+  --mermaid-line: #5a5751;
+  --mermaid-subgraph-fill: rgba(84, 77, 65, 0.04);
+  --mermaid-subgraph-stroke: rgba(84, 77, 65, 0.22);
 }
 
 :root[saved-theme="dark"] {
@@ -61,6 +97,42 @@
   --portal-muted: #aaa99f;
   --portal-rule: rgba(232, 233, 224, 0.17);
   --portal-focus: #f7d45d;
+
+  // Editorial Academic Mermaid Palette (Dark Mode)
+  --mermaid-tint-emerald: #1f2d24;
+  --mermaid-stroke-emerald: #7ea885;
+  --mermaid-emerald-fill: #1f2d24;
+  --mermaid-emerald-stroke: #7ea885;
+  --mermaid-emerald-text: #f4f1ea;
+
+  --mermaid-tint-amber: #2f281e;
+  --mermaid-stroke-amber: #e8b86d;
+  --mermaid-amber-fill: #2f281e;
+  --mermaid-amber-stroke: #e8b86d;
+  --mermaid-amber-text: #f4f1ea;
+
+  --mermaid-tint-slate: #1d2830;
+  --mermaid-stroke-slate: #7ba7c9;
+  --mermaid-slate-fill: #1d2830;
+  --mermaid-slate-stroke: #7ba7c9;
+  --mermaid-slate-text: #f4f1ea;
+
+  --mermaid-tint-sage: #222d26;
+  --mermaid-stroke-sage: #a3c9a8;
+  --mermaid-sage-fill: #222d26;
+  --mermaid-sage-stroke: #a3c9a8;
+  --mermaid-sage-text: #f4f1ea;
+
+  --mermaid-tint-coral: #302220;
+  --mermaid-stroke-coral: #e8806a;
+  --mermaid-coral-fill: #302220;
+  --mermaid-coral-stroke: #e8806a;
+  --mermaid-coral-text: #f4f1ea;
+
+  --mermaid-ink: var(--dark);
+  --mermaid-line: #8f9489;
+  --mermaid-subgraph-fill: rgba(255, 255, 255, 0.035);
+  --mermaid-subgraph-stroke: rgba(255, 255, 255, 0.16);
 }
 
 /* ==========================================================================
@@ -807,8 +879,20 @@ body[data-slug="index"] {
 }
 
 .socratica-hero {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 2rem;
   max-width: 1040px;
-  margin: 0.25rem 0 0.5rem;
+  margin: 0.25rem 0 1rem;
+}
+
+.socratica-hero-left {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .socratica-eyebrow,
@@ -1110,6 +1194,17 @@ body[data-slug="index"] a.socratica-card.internal {
   }
 }
 
+@media (max-width: 800px) {
+  .socratica-hero {
+    display: block;
+    margin-bottom: 1.25rem;
+  }
+
+  .cohort-crest-card-vertical {
+    display: none !important;
+  }
+}
+
 @media (max-width: 600px) {
   body[data-slug="index"] .center {
     padding: 1.25rem 1rem 3.5rem !important;
@@ -1226,7 +1321,7 @@ body[data-slug="index"] a.socratica-card.internal {
 }
 
 /* ==========================================================================
-   P3MD Insignia Showcase (/easter-egg)
+   P3MD Heraldry & Dual-Tier Identity System
    ========================================================================== */
 
 .insignia-showcase {
@@ -1235,4 +1330,251 @@ body[data-slug="index"] a.socratica-card.internal {
 
 :root[saved-theme="dark"] .insignia-showcase {
   filter: brightness(0) invert(1);
+}
+
+/* Homepage Hero Vertical Crest Card */
+.cohort-crest-card-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  flex-shrink: 0;
+  padding: 0.65rem 0.85rem;
+  background: var(--portal-surface);
+  border: 1px solid var(--portal-border);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  text-decoration: none !important;
+  text-align: center;
+  box-sizing: border-box;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: var(--secondary);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  }
+
+  .cohort-crest-seal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 66px;
+    height: 66px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    margin-bottom: 0.35rem;
+
+    :root[saved-theme="dark"] & {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.12);
+    }
+  }
+
+  .cohort-crest-seal {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  }
+
+  .cohort-crest-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    align-items: center;
+  }
+
+  .cohort-crest-mandate {
+    font-family: var(--codeFont);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--portal-muted);
+    line-height: 1.15;
+  }
+
+  .cohort-crest-batch {
+    font-family: var(--headerFont);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--portal-ink) !important;
+    line-height: 1.2;
+  }
+
+  .cohort-crest-motto {
+    font-family: var(--bodyFont);
+    font-size: 0.72rem;
+    font-style: italic;
+    letter-spacing: 0.02em;
+    color: var(--secondary) !important;
+    line-height: 1.15;
+  }
+}
+
+/* Program Governance Hub Crest Banner */
+.program-crest-banner {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0 2rem;
+  background: var(--portal-surface);
+  border: 1px solid var(--portal-border);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+.program-crest-seal-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95px;
+  height: 95px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+
+  :root[saved-theme="dark"] & {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+}
+
+.program-crest-seal {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.12));
+}
+
+.program-crest-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.program-crest-eyebrow {
+  font-family: var(--codeFont);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--portal-muted);
+}
+
+.program-crest-title {
+  font-family: var(--headerFont);
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin: 0 !important;
+  color: var(--portal-ink) !important;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+}
+
+.program-crest-desc {
+  margin: 0 !important;
+  font-size: 0.92rem;
+  color: var(--portal-muted);
+
+  em {
+    color: var(--secondary);
+    font-weight: 600;
+  }
+}
+
+/* Dual-Tier Brand Comparison Grid (/easter-egg) */
+.dual-identity-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dual-identity-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--portal-surface);
+  border: 1px solid var(--portal-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+
+  .card-badge-pill {
+    align-self: flex-start;
+    font-family: var(--codeFont);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.25rem 0.65rem;
+    border-radius: 999px;
+    background: var(--highlight);
+    color: var(--secondary);
+    margin-bottom: 1rem;
+  }
+
+  .card-media-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    margin-bottom: 1.25rem;
+    padding: 1rem;
+    border: 1px solid var(--portal-border);
+
+    :root[saved-theme="dark"] & {
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    img {
+      max-height: 140px;
+      max-width: 90%;
+      object-fit: contain;
+    }
+  }
+
+  h3 {
+    margin: 0 0 0.5rem !important;
+    font-size: 1.25rem;
+    color: var(--portal-ink) !important;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--portal-muted);
+    margin: 0 0 0.75rem !important;
+  }
+
+  ul {
+    font-size: 0.85rem;
+    margin: 0;
+    padding-left: 1.25rem;
+    color: var(--portal-ink);
+  }
 }

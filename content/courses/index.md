@@ -245,21 +245,21 @@ Click any course card below to access its complete 14-week syllabus, weekly lect
     </div>
   </a>
 
-  <!-- Bonus: PeopleMath -->
-  <a href="courses/bonus-peoplemath" class="course-card">
+  <!-- Rabuan: PeopleMath -->
+  <a href="rabuan/2026-09-02-adh-peoplemath" class="course-card">
     <div class="course-card-poster">
-      <img src="static/posters/bonus-peoplemath.svg" alt="Bonus Poster: PeopleMath" width="190" height="254" loading="lazy" />
+      <img src="static/posters/bonus-peoplemath.svg" alt="Poster: PeopleMath Executive Masterclass" width="190" height="254" loading="lazy" />
     </div>
     <div class="course-card-content">
       <div>
         <div class="course-card-header">
-          <span class="course-code-badge bonus">BONUS</span>
+          <span class="course-code-badge bonus">RABUAN</span>
           <span class="course-meta-pill">Executive Masterclass</span>
           <span class="course-meta-pill">Quantitative Modeling</span>
         </div>
-        <div class="course-card-title">PeopleMath (Executive Elective)</div>
+        <div class="course-card-title">PeopleMath (Rabuan Executive Series)</div>
         <div class="course-card-faculty">
-          <strong>Module Type:</strong> Special Elective Masterclass
+          <strong>Lead Speaker:</strong> Agus Dwi Handaya (Director of Human Capital, Bank Mandiri)
         </div>
         <p class="course-card-desc">
           Evaluate human capital decisions with mathematical precision. Model the financial ROI of turnover ($1.5\times-2.5\times$), talent density power-law dynamics, compa-ratio distributions, and organizational network friction.
@@ -274,7 +274,7 @@ Click any course card below to access its complete 14-week syllabus, weekly lect
       </div>
       <div class="course-card-footer">
         <span class="course-card-action">
-          Buka Modul PeopleMath
+          Buka Sesi Rabuan PeopleMath
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
         </span>
       </div>

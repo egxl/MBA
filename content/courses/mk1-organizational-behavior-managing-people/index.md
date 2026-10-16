@@ -55,24 +55,24 @@ The curriculum moves in four progressive arcs: from the **individual** to the **
 |    Week     | Module / Thematic Pillar             | Topic & Core Focus                                                   | Note Hub                                                                             |
 | :---------: | :----------------------------------- | :------------------------------------------------------------------- | :----------------------------------------------------------------------------------- |
 | **Week 01** | Understanding Self & Leading Others  | **Strategizing Your Life: Self-Awareness, Values & Purpose**         | [[courses/mk1-organizational-behavior-managing-people/week-01/index\|Week 01 Notes]] |
-| **Week 02** | Understanding Self & Leading Others  | **Who Am I at Work? Identity, Personality & Individual Differences** | [[courses/mk1-organizational-behavior-managing-people/week-02/index\|Week 02 Notes]] |
-| **Week 03** | Understanding Self & Leading Others  | **Motivation & Human Behavior at Work**                              | [[courses/mk1-organizational-behavior-managing-people/week-03/index\|Week 03 Notes]] |
-| **Week 04** | Understanding Self & Leading Others  | **Leadership & Influence**                                           | [[courses/mk1-organizational-behavior-managing-people/week-04/index\|Week 04 Notes]] |
-| **Week 05** | Navigating Teams & Organizations     | **Team Dynamics, Communication, Negotiation & Conflict**             | [[courses/mk1-organizational-behavior-managing-people/week-05/index\|Week 05 Notes]] |
-| **Week 06** | Navigating Teams & Organizations     | **Organizational Culture**                                           | [[courses/mk1-organizational-behavior-managing-people/week-06/index\|Week 06 Notes]] |
-| **Week 07** | Navigating Teams & Organizations     | **Power & Politics in Organizations**                                | [[courses/mk1-organizational-behavior-managing-people/week-07/index\|Week 07 Notes]] |
-| **Week 08** | Building the Organization & Talent   | **People & Strategy: Human Capital as Competitive Advantage**        | [[courses/mk1-organizational-behavior-managing-people/week-08/index\|Week 08 Notes]] |
-| **Week 09** | Building the Organization & Talent   | **Organization Design & Strategic Workforce Planning**               | [[courses/mk1-organizational-behavior-managing-people/week-09/index\|Week 09 Notes]] |
-| **Week 10** | Building the Organization & Talent   | **Strategic Talent Acquisition & Employer Branding**                 | [[courses/mk1-organizational-behavior-managing-people/week-10/index\|Week 10 Notes]] |
-| **Week 11** | Building the Organization & Talent   | **Talent Management, Development & Succession**                      | [[courses/mk1-organizational-behavior-managing-people/week-11/index\|Week 11 Notes]] |
-| **Week 12** | Driving Performance & Transformation | **Performance Management, Compensation, and Benefit**                | [[courses/mk1-organizational-behavior-managing-people/week-12/index\|Week 12 Notes]] |
-| **Week 13** | Driving Performance & Transformation | **Leading Change, Transformation & the Future of Workplace**         | [[courses/mk1-organizational-behavior-managing-people/week-13/index\|Week 13 Notes]] |
-| **Week 14** | Driving Performance & Transformation | **Employee Experience, Engagement & Inclusion**                      | [[courses/mk1-organizational-behavior-managing-people/week-14/index\|Week 14 Notes]] |
+| **Week 02** | Understanding Self & Leading Others  | **Who Am I at Work? Identity, Personality & Individual Differences** | _Scheduled (Pending Ingestion)_                                                      |
+| **Week 03** | Understanding Self & Leading Others  | **Motivation & Human Behavior at Work**                              | _Scheduled (Pending Ingestion)_                                                      |
+| **Week 04** | Understanding Self & Leading Others  | **Leadership & Influence**                                           | _Scheduled (Pending Ingestion)_                                                      |
+| **Week 05** | Navigating Teams & Organizations     | **Team Dynamics, Communication, Negotiation & Conflict**             | _Scheduled (Pending Ingestion)_                                                      |
+| **Week 06** | Navigating Teams & Organizations     | **Organizational Culture**                                           | _Scheduled (Pending Ingestion)_                                                      |
+| **Week 07** | Navigating Teams & Organizations     | **Power & Politics in Organizations**                                | _Scheduled (Pending Ingestion)_                                                      |
+| **Week 08** | Building the Organization & Talent   | **People & Strategy: Human Capital as Competitive Advantage**        | _Scheduled (Pending Ingestion)_                                                      |
+| **Week 09** | Building the Organization & Talent   | **Organization Design & Strategic Workforce Planning**               | _Scheduled (Pending Ingestion)_                                                      |
+| **Week 10** | Building the Organization & Talent   | **Strategic Talent Acquisition & Employer Branding**                 | _Scheduled (Pending Ingestion)_                                                      |
+| **Week 11** | Building the Organization & Talent   | **Talent Management, Development & Succession**                      | _Scheduled (Pending Ingestion)_                                                      |
+| **Week 12** | Driving Performance & Transformation | **Performance Management, Compensation, and Benefit**                | _Scheduled (Pending Ingestion)_                                                      |
+| **Week 13** | Driving Performance & Transformation | **Leading Change, Transformation & the Future of Workplace**         | _Scheduled (Pending Ingestion)_                                                      |
+| **Week 14** | Driving Performance & Transformation | **Employee Experience, Engagement & Inclusion**                      | _Scheduled (Pending Ingestion)_                                                      |
 
 ---
 
 ## 🔗 Related Portals
 
-- Companion Elective: [[courses/bonus-peoplemath/index|Bonus: PeopleMath (Workforce Analytics)]]
+- Executive Plenary: [[rabuan/2026-09-02-adh-peoplemath|Rabuan: PeopleMath Executive Masterclass]]
 - Master Schedule: [[program/academic-calendar|16-Week Synchronization Calendar]]
 - Return to [[index|MBA Cohort Portal Home]]

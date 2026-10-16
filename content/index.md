@@ -12,9 +12,23 @@ tags:
 <section class="socratica-stage">
 
 <div class="socratica-hero">
-  <p class="socratica-eyebrow">P3MD Batch I Soedirman</p>
-  <h1 class="socratica-title">What do you want to learn today?</h1>
-  <p class="socratica-intro">Select a core course to explore lecture notes, analytical frameworks, and case discussions, or browse program architecture below.</p>
+  <div class="socratica-hero-left">
+    <p class="socratica-eyebrow">P3MD Batch I Soedirman</p>
+    <h1 class="socratica-title">What do you want to learn today?</h1>
+    <p class="socratica-intro">Select a core course to explore lecture notes, analytical frameworks, and case discussions, or browse program architecture below.</p>
+  </div>
+  <!-- COHORT CREST CARD (Archived for future use - uncomment to display on hero right)
+  <a href="easter-egg" class="cohort-crest-card-vertical" aria-label="Explore P3MD Batch I Soedirman Heraldry & Design Architecture">
+    <div class="cohort-crest-seal-wrapper">
+      <img src="static/crest-soedirman.png" alt="Insignia Resmi P3MD Batch I Soedirman" class="cohort-crest-seal" width="68" height="68" loading="eager" />
+    </div>
+    <div class="cohort-crest-meta">
+      <span class="cohort-crest-mandate">Program Presiden</span>
+      <div class="cohort-crest-batch">Batch I Soedirman</div>
+      <span class="cohort-crest-motto">&ldquo;Berani &bull; Cepat &bull; Terhormat&rdquo;</span>
+    </div>
+  </a>
+  -->
 </div>
 
 <div class="socratica-section-heading">
@@ -103,14 +117,14 @@ tags:
 
 <div class="socratica-grid socratica-grid-support">
 
-  <!-- CARD 7: Bonus - PeopleMath -->
-  <a href="courses/bonus-peoplemath" class="socratica-card card-bonus">
+  <!-- CARD 7: Rabuan - Executive & Guest Lectures -->
+  <a href="rabuan/" class="socratica-card card-bonus">
     <div class="card-top">
-      <span class="card-issue">ELECTIVE 001</span>
-      <div class="card-title">Bonus: PeopleMath</div>
+      <span class="card-issue">WEEKLY PLENARY</span>
+      <div class="card-title">Rabuan: Executive &amp; Guest Lectures</div>
     </div>
     <div class="card-character">
-      <img src="assets/characters/peoplemath-modeler.svg" alt="" aria-hidden="true" width="200" height="150" decoding="async" />
+      <img src="assets/characters/rabuan-keynote.svg" alt="" aria-hidden="true" width="200" height="150" decoding="async" />
     </div>
   </a>
 
@@ -141,6 +155,7 @@ tags:
   <a href="program/academic-calendar">Academic calendar <span aria-hidden="true">→</span></a>
   <a href="program/action-learning-project">ALP blueprint <span aria-hidden="true">→</span></a>
   <a href="program/faculty-directory">Faculty directory <span aria-hidden="true">→</span></a>
+  <a href="easter-egg">Cohort heraldry &amp; identity <span aria-hidden="true">→</span></a>
 </div>
 
 The P3MD MBA transformation operates on an integrated **70–20–10 adult learning model** designed for high-impact decision-making and cross-functional execution:
@@ -150,3 +165,4 @@ The P3MD MBA transformation operates on an integrated **70–20–10 adult learn
 - **[[program/action-learning-project|Action Learning Project (ALP) Blueprint]]**: 6 SMART-gated stages across 10 partner BUMNs, Milestone gates (M1–M3), and the Social Project.
 - **[[program/academic-calendar|Academic & Synchronization Calendar]]**: Master 16-week timeline synchronizing lectures, case sessions, CEO guest lectures, exams, and ALP gates.
 - **[[program/faculty-directory|Faculty & Course Assistant Directory]]**: Comprehensive roster of SBM ITB Lead Faculty, co-lecturers, and Course Assistants with phone contacts.
+- **[[easter-egg|Cohort Heraldry & Design System]]**: The official Soedirman Crest (_Lambang Korps_) and the digital interface logotype architecture.

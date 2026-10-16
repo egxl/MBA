@@ -12,16 +12,18 @@
     "url": "https://github.com/jackyzha0/quartz.git"
   },
   "scripts": {
-    "quartz": "./quartz/bootstrap-cli.mjs",
+    "quartz": "node ./quartz/bootstrap-cli.mjs",
     "docs": "npx quartz build --serve -d docs",
-    "check": "tsc --noEmit && npx prettier . --check && npm run companions:check && npm run titles:check",
+    "check": "tsc --noEmit && npx prettier . --check && npm run companions:check && npm run titles:check && npm run wiki:check && npm run mermaid:check",
     "format": "npx prettier . --write",
     "test": "tsx --test",
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
     "agent:context": "node ./scripts/agent-context.mjs",
     "companions:check": "node ./scripts/companion-assets.mjs check",
     "companions:review": "node ./scripts/companion-assets.mjs review",
-    "titles:check": "node ./scripts/validate-titles.mjs"
+    "titles:check": "node ./scripts/validate-titles.mjs",
+    "wiki:check": "node ./scripts/check-wiki-integrity.mjs",
+    "mermaid:check": "node ./scripts/validate-mermaid.mjs"
   },
   "engines": {
     "npm": ">=10",
