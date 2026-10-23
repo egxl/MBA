@@ -45,21 +45,33 @@ function setupNavDropdown() {
         clearTimeout(closeTimeout)
         closeTimeout = null
       }
-      wrapper.classList.add("is-open")
-      trigger.setAttribute("aria-expanded", "true")
-      popover.setAttribute("aria-hidden", "false")
+      if (!wrapper.classList.contains("is-open")) {
+        wrapper.classList.add("is-open")
+        trigger.setAttribute("aria-expanded", "true")
+        popover.setAttribute("aria-hidden", "false")
+        const event: CustomEventMap["navdropdownopen"] = new CustomEvent("navdropdownopen", {
+          detail: {},
+        })
+        document.dispatchEvent(event)
+      }
     }
 
-    const close = () => {
+    const close = (navigating: boolean = false) => {
       if (closeTimeout) {
         clearTimeout(closeTimeout)
         closeTimeout = null
       }
-      wrapper.classList.remove("is-open")
-      trigger.setAttribute("aria-expanded", "false")
-      popover.setAttribute("aria-hidden", "true")
-      if (wrapper.contains(document.activeElement)) {
-        ;(document.activeElement as HTMLElement)?.blur()
+      if (wrapper.classList.contains("is-open")) {
+        wrapper.classList.remove("is-open")
+        trigger.setAttribute("aria-expanded", "false")
+        popover.setAttribute("aria-hidden", "true")
+        if (wrapper.contains(document.activeElement)) {
+          ;(document.activeElement as HTMLElement)?.blur()
+        }
+        const event: CustomEventMap["navdropdownclose"] = new CustomEvent("navdropdownclose", {
+          detail: { navigating },
+        })
+        document.dispatchEvent(event)
       }
     }
 
@@ -111,7 +123,7 @@ function setupNavDropdown() {
     }
 
     const onLinkClick = () => {
-      close()
+      close(true)
     }
 
     const onScroll = () => {
@@ -145,4 +157,9 @@ function setupNavDropdown() {
   })
 }
 
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", setupNavDropdown)
+} else {
+  setupNavDropdown()
+}
 document.addEventListener("nav", setupNavDropdown)

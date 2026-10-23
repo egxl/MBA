@@ -27,22 +27,24 @@ $$\mathbf{CONCEPTS \quad \boldsymbol{\cdot} \quad FRAMEWORKS \quad \boldsymbol{\
 
 The table below provides direct access to all active business frameworks and analytical tools currently published in the knowledge base:
 
-| Concept Framework                              | Primary Discipline / Origin                  | Core Mechanism / Anchor        | Status                                                                                        |
-| :--------------------------------------------- | :------------------------------------------- | :----------------------------- | :-------------------------------------------------------------------------------------------- | --------- |
-| \*\*[[concepts/ikigai                          | Ikigai Framework]]\*\*                       | MK 1: Organizational Behaviour | Convergence of passion, vocation, mission, and profession in executive career strategy        | `✅ Live` |
-| \*\*[[concepts/leadership-ambidexterity        | Leadership Ambidexterity]]\*\*               | MK 1 & MK 5                    | Simultaneous exploitation of core efficiency and exploration of new growth frontiers          | `✅ Live` |
-| \*\*[[concepts/self-awareness                  | The Self-Awareness Triad]]\*\*               | MK 1: Organizational Behaviour | Internal self-awareness, external feedback mirrors, and blind-spot mitigation                 | `✅ Live` |
-| \*\*[[concepts/values-congruence               | Values Congruence & Executive Friction]]\*\* | MK 1: Organizational Behaviour | Harmonization of personal core values with enterprise decisions and resource allocation       | `✅ Live` |
-| \*\*[[concepts/identity-based-living           | Identity-Based Living & Strategy]]\*\*       | MK 1: Organizational Behaviour | Action-anchored life strategy grounded in identity transformation rather than task lists      | `✅ Live` |
-| \*\*[[concepts/wheel-of-life                   | The Wheel of Life Diagnostic]]\*\*           | MK 1: Organizational Behaviour | 8-dimension diagnostic spider diagram for executive energy balance and fulfillment            | `✅ Live` |
-| \*\*[[concepts/purpose-to-impact               | Purpose-to-Impact Planning]]\*\*             | MK 1: Organizational Behaviour | Backward-chaining leadership purpose into 3–5 year impact milestones and 30-day sprints       | `✅ Live` |
-| \*\*[[concepts/service-blueprinting            | Service Blueprinting]]\*\*                   | MK 4: Operations & SCM         | 5 horizontal service layers, 3 visibility boundaries, and fail-point root-cause diagnosis     | `✅ Live` |
-| \*\*[[concepts/customer-order-decoupling-point | Customer Order Decoupling Point (CODP)]]\*\* | MK 4: Operations & SCM         | Inventory and information decoupling separating forecast-driven push from customer-pull       | `✅ Live` |
-| \*\*[[concepts/service-system-design-matrix    | Service-System Design Matrix]]\*\*           | MK 4: Operations & SCM         | Balancing customer contact degree, process efficiency, customization, and worker skill        | `✅ Live` |
-| \*\*[[concepts/customer-introduced-variability | Customer-Introduced Variability]]\*\*        | MK 4: Operations & SCM         | 5 types of customer variability (arrival, request, capability, effort, preference)            | `✅ Live` |
-| \*\*[[concepts/littles-law                     | Little's Law]]\*\*                           | MK 4: Operations & SCM         | Fundamental queueing theorem coupling $WIP$, throughput rate ($\lambda$), and flow time ($W$) | `✅ Live` |
-| \*\*[[concepts/talent-density                  | Talent Density Power Law]]\*\*               | MK 6 & Rabuan Series           | Power-law vs normal distribution in cognitive talent performance and organizational density   | `✅ Live` |
-| \*\*[[concepts/compa-ratio                     | Compa-Ratio Banding]]\*\*                    | MK 6 & Rabuan Series           | Pay equity metric comparing employee compensation against market median salary bands          | `✅ Live` |
+| Concept Framework                                                                        | Primary Discipline / Origin    | Core Mechanism / Anchor                                                                        | Status    |
+| :--------------------------------------------------------------------------------------- | :----------------------------- | :--------------------------------------------------------------------------------------------- | :-------- |
+| **[[concepts/ikigai\|Ikigai Framework]]**                                                | MK 1: Organizational Behaviour | Convergence of passion, vocation, mission, and profession in executive career strategy         | `✅ Live` |
+| **[[concepts/leadership-ambidexterity\|Leadership Ambidexterity]]**                      | MK 1 & MK 5                    | Simultaneous exploitation of core efficiency and exploration of new growth frontiers           | `✅ Live` |
+| **[[concepts/self-awareness\|The Self-Awareness Triad]]**                                | MK 1: Organizational Behaviour | Internal self-awareness, external feedback mirrors, and blind-spot mitigation                  | `✅ Live` |
+| **[[concepts/values-congruence\|Values Congruence & Executive Friction]]**               | MK 1: Organizational Behaviour | Harmonization of personal core values with enterprise decisions and resource allocation        | `✅ Live` |
+| **[[concepts/identity-based-living\|Identity-Based Living & Strategy]]**                 | MK 1: Organizational Behaviour | Action-anchored life strategy grounded in identity transformation rather than task lists       | `✅ Live` |
+| **[[concepts/wheel-of-life\|The Wheel of Life Diagnostic]]**                             | MK 1: Organizational Behaviour | 8-dimension diagnostic spider diagram for executive energy balance and fulfillment             | `✅ Live` |
+| **[[concepts/purpose-to-impact\|Purpose-to-Impact Planning]]**                           | MK 1: Organizational Behaviour | Backward-chaining leadership purpose into 3–5 year impact milestones and 30-day sprints        | `✅ Live` |
+| **[[concepts/service-blueprinting\|Service Blueprinting]]**                              | MK 4: Operations & SCM         | 5 horizontal service layers, 3 visibility boundaries, and fail-point root-cause diagnosis      | `✅ Live` |
+| **[[concepts/customer-order-decoupling-point\|Customer Order Decoupling Point (CODP)]]** | MK 4: Operations & SCM         | Inventory and information decoupling separating forecast-driven push from customer-pull        | `✅ Live` |
+| **[[concepts/service-system-design-matrix\|Service-System Design Matrix]]**              | MK 4: Operations & SCM         | Balancing customer contact degree, process efficiency, customization, and worker skill         | `✅ Live` |
+| **[[concepts/customer-introduced-variability\|Customer-Introduced Variability]]**        | MK 4: Operations & SCM         | 5 types of customer variability (arrival, request, capability, effort, preference)             | `✅ Live` |
+| **[[concepts/littles-law\|Little's Law]]**                                               | MK 4: Operations & SCM         | Fundamental queueing theorem coupling $WIP$, throughput rate ($\lambda$), and flow time ($W$)  | `✅ Live` |
+| **[[concepts/customer-perceived-value\|Customer Perceived Value (CPV)]]**                | MK 3: Marketing Management     | Mathematical balance of total customer benefits against total monetary and non-monetary costs  | `✅ Live` |
+| **[[concepts/elements-of-value\|Bain's Elements of Value]]**                             | MK 3: Marketing Management     | 30-attribute consumer pyramid spanning functional, emotional, life-changing, and social impact | `✅ Live` |
+| **[[concepts/talent-density\|Talent Density Power Law]]**                                | MK 6 & Rabuan Series           | Power-law vs normal distribution in cognitive talent performance and organizational density    | `✅ Live` |
+| **[[concepts/compa-ratio\|Compa-Ratio Banding]]**                                        | MK 6 & Rabuan Series           | Pay equity metric comparing employee compensation against market median salary bands           | `✅ Live` |
 
 ---
 
@@ -74,6 +76,8 @@ Analytical mechanisms governing valuation, capital budgeting, and shareholder va
 
 Market sensing, customer lifetime value, and competitive positioning:
 
+- **[[concepts/customer-perceived-value|Customer Perceived Value (CPV)]]**: Mathematical balance of total customer benefits against monetary and non-monetary costs.
+- **[[concepts/elements-of-value|Bain's Elements of Value]]**: 30-element pyramid of functional, emotional, life-changing, and social impact motivations.
 - **Jobs to Be Done (JTBD)**: Understanding customer circumstance and functional/emotional hiring drivers. _(Ingestion Scheduled)_
 - **Customer Lifetime Value (CLV)**: The net present value of long-term customer relationships. _(Ingestion Scheduled)_
 - **Segmentation, Targeting & Positioning (STP)**: Strategic market partition and value proposition architecture. _(Ingestion Scheduled)_

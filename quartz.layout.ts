@@ -54,6 +54,7 @@ export const sharedPageComponents: SharedLayout = {
         Component.Darkmode(),
         Component.GridToggle(),
         Component.DesktopOnly(Component.ReaderMode()),
+        Component.TTSPlayer(),
       ],
     }),
   ],
@@ -71,6 +72,7 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.ArticleTitle(),
     Component.ContentMeta(),
+    Component.TTSListenPill(),
     Component.TagList(),
   ],
   left: [

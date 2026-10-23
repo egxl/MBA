@@ -31,10 +31,14 @@ import LanguageSwitcher from "./LanguageSwitcher"
 import NavDropdown from "./NavDropdown"
 import SplitView from "./SplitView"
 import CourseSwitcher from "./CourseSwitcher"
+import TTSPlayer from "./TTSPlayer"
+import TTSListenPill from "./TTSListenPill"
 
 export {
   CourseSwitcher,
   SplitView,
+  TTSPlayer,
+  TTSListenPill,
   ArticleTitle,
   Content,
   TagContent,

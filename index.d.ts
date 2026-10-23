@@ -13,6 +13,8 @@ interface CustomEventMap {
   splitviewopen: CustomEvent<{ url: string }>
   splitviewclose: CustomEvent<{}>
   sidebartoggle: CustomEvent<{ state: string }>
+  navdropdownopen: CustomEvent<{}>
+  navdropdownclose: CustomEvent<{ navigating: boolean }>
 }
 
 type ContentIndex = Record<FullSlug, ContentDetails>

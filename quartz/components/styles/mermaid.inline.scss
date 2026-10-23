@@ -42,7 +42,7 @@ pre {
   inset: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 10000; // Above floating .navbar (1001) and .global-graph-outer (9999)
+  z-index: 20000; // Above floating .navbar (10000) and .global-graph-outer (9999)
   display: none;
   align-items: center;
   justify-content: center;

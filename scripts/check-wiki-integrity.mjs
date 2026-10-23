@@ -1,7 +1,108 @@
 #!/usr/bin/env node
 
-import { readdir, readFile } from "node:fs/promises"
+import { readdir, readFile, writeFile } from "node:fs/promises"
 import { fileURLToPath } from "node:url"
+import matter from "gray-matter"
+
+export async function syncWikiHubs(contentDirUrl) {
+  const synced = { concepts: [], entities: [] }
+
+  // 1. Auto-register missing Concepts in content/concepts/index.md
+  try {
+    const conceptsDir = new URL("concepts/", contentDirUrl)
+    const conceptIndexFile = new URL("index.md", conceptsDir)
+    let conceptIndexContent = await readFile(conceptIndexFile, "utf-8")
+    const conceptEntries = await readdir(conceptsDir, { withFileTypes: true })
+
+    for (const entry of conceptEntries) {
+      if (entry.isFile() && entry.name.endsWith(".md") && entry.name !== "index.md") {
+        const slug = entry.name.replace(/\.md$/, "")
+        const expectedPattern = new RegExp(
+          `\\[\\[(?:concepts\\/)?${slug}(?:\\\\?\\|[^\\]]+)?\\]\\]`,
+          "i",
+        )
+        if (!expectedPattern.test(conceptIndexContent)) {
+          const rawFile = await readFile(new URL(entry.name, conceptsDir), "utf-8")
+          const parsed = matter(rawFile)
+          const title = parsed.data?.title || slug
+          const courses = Array.isArray(parsed.data?.courses_covered)
+            ? parsed.data.courses_covered.join(" & ")
+            : "Cross-Curricular"
+          const newRow = `| **[[concepts/${slug}\\|${title}]]** | ${courses} | Core analytical framework and strategic mechanism | \`✅ Live\` |`
+
+          // Insert at the end of the Master Concept Navigation Roster table
+          const tableMarker = "## 🏛️ Six Core Business Pillars"
+          const idx = conceptIndexContent.indexOf(tableMarker)
+          if (idx !== -1) {
+            const before = conceptIndexContent.slice(0, idx).trimEnd()
+            const after = conceptIndexContent.slice(idx)
+            // Find the "---" separator right before the marker
+            const lastSep = before.lastIndexOf("\n---")
+            if (lastSep !== -1) {
+              conceptIndexContent =
+                before.slice(0, lastSep).trimEnd() + "\n" + newRow + "\n\n---\n\n" + after
+              synced.concepts.push(slug)
+            }
+          }
+        }
+      }
+    }
+
+    if (synced.concepts.length > 0) {
+      await writeFile(conceptIndexFile, conceptIndexContent, "utf-8")
+    }
+  } catch {
+    // Ignore sync write errors during read-only checks
+  }
+
+  // 2. Auto-register missing Entities in content/entities/index.md
+  try {
+    const entitiesDir = new URL("entities/", contentDirUrl)
+    const entityIndexFile = new URL("index.md", entitiesDir)
+    let entityIndexContent = await readFile(entityIndexFile, "utf-8")
+    const entityEntries = await readdir(entitiesDir, { withFileTypes: true })
+
+    for (const entry of entityEntries) {
+      if (entry.isFile() && entry.name.endsWith(".md") && entry.name !== "index.md") {
+        const slug = entry.name.replace(/\.md$/, "")
+        const expectedPattern = new RegExp(
+          `\\[\\[(?:entities\\/)?${slug}(?:\\\\?\\|[^\\]]+)?\\]\\]`,
+          "i",
+        )
+        if (!expectedPattern.test(entityIndexContent)) {
+          const rawFile = await readFile(new URL(entry.name, entitiesDir), "utf-8")
+          const parsed = matter(rawFile)
+          const title = parsed.data?.title || slug
+          const role = Array.isArray(parsed.data?.roles)
+            ? parsed.data.roles[0]
+            : "Curriculum Profile"
+          const bullet = `- **[[entities/${slug}|${title}]]**: ${role}.`
+
+          const navMarker = "## 🧭 Navigation & Cross-References"
+          const idx = entityIndexContent.indexOf(navMarker)
+          if (idx !== -1) {
+            const before = entityIndexContent.slice(0, idx).trimEnd()
+            const after = entityIndexContent.slice(idx)
+            const lastSep = before.lastIndexOf("\n---")
+            if (lastSep !== -1) {
+              entityIndexContent =
+                before.slice(0, lastSep).trimEnd() + "\n" + bullet + "\n\n---\n\n" + after
+              synced.entities.push(slug)
+            }
+          }
+        }
+      }
+    }
+
+    if (synced.entities.length > 0) {
+      await writeFile(entityIndexFile, entityIndexContent, "utf-8")
+    }
+  } catch {
+    // Ignore sync write errors
+  }
+
+  return synced
+}
 
 export async function checkWikiIntegrity(contentDirUrl) {
   const errors = []
@@ -102,6 +203,8 @@ export async function checkWikiIntegrity(contentDirUrl) {
             file.name !== "index.md" &&
             (file.name.startsWith("reading-") ||
               file.name.startsWith("case-") ||
+              file.name.startsWith("assignment-") ||
+              file.name.startsWith("diagnostic-") ||
               file.name.startsWith("quiz-"))
           ) {
             const slug = file.name.replace(/\.md$/, "")
@@ -125,6 +228,14 @@ export async function checkWikiIntegrity(contentDirUrl) {
 // CLI runner
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const contentDir = new URL("../content/", import.meta.url)
+  if (process.argv.includes("--sync") || process.argv.includes("--fix")) {
+    const synced = await syncWikiHubs(contentDir)
+    if (synced.concepts.length > 0 || synced.entities.length > 0) {
+      console.log(
+        `[WIKI SYNC] Auto-registered ${synced.concepts.length} concept(s) and ${synced.entities.length} entity(s).`,
+      )
+    }
+  }
   const errors = await checkWikiIntegrity(contentDir)
 
   if (errors.length > 0) {

@@ -23,6 +23,8 @@
     "companions:review": "node ./scripts/companion-assets.mjs review",
     "titles:check": "node ./scripts/validate-titles.mjs",
     "wiki:check": "node ./scripts/check-wiki-integrity.mjs",
+    "wiki:sync": "node ./scripts/check-wiki-integrity.mjs --sync",
+    "raw:prep": "node ./scripts/prep-raw.mjs",
     "mermaid:check": "node ./scripts/validate-mermaid.mjs"
   },
   "engines": {

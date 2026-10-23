@@ -1,0 +1,410 @@
+@use "../../styles/variables.scss" as *;
+
+// 1. In-page track selector pill (placed under article title)
+.tts-track-selector {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--parchment-warm, #f7f4ee);
+  border: 1px solid var(--lightgray);
+  border-radius: 9999px;
+  padding: 0.35rem 0.85rem;
+  margin: 0.5rem 0 1rem 0;
+  font-family: var(--headerFont);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--darkgray);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+
+  &:hover {
+    background-color: var(--highlight);
+    border-color: var(--secondary);
+    color: var(--secondary);
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  .tts-pill-icon {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    stroke-width: 2;
+    fill: none;
+    flex-shrink: 0;
+  }
+
+  .tts-pill-duration {
+    opacity: 0.75;
+    font-size: 0.8rem;
+  }
+
+  :root[saved-theme="dark"] & {
+    background-color: var(--lightgray);
+    border-color: var(--gray);
+    color: var(--dark);
+
+    &:hover {
+      background-color: var(--highlight);
+      border-color: var(--secondary);
+      color: var(--secondary);
+    }
+  }
+}
+
+// 2. Navbar Action Button
+.tts-navbar-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: var(--darkgray);
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.15s ease;
+
+  &:hover {
+    background-color: var(--lightgray);
+    color: var(--secondary);
+    transform: scale(1.05);
+  }
+
+  &.is-active {
+    color: var(--secondary);
+    background-color: var(--highlight);
+
+    .tts-icon-wave {
+      animation: ttsWavePulse 1.2s infinite ease-in-out;
+    }
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+  }
+
+  @media all and ($mobile) {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+@keyframes ttsWavePulse {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+// 3. Downward-Extending MP3 Player Shelf in Header
+.tts-shelf-wrapper {
+  position: fixed;
+  top: calc(var(--navbar-height) + var(--navbar-margin-top) + 0.45rem);
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 9995;
+  padding: 0 1rem;
+  box-sizing: border-box;
+
+  @media all and ($mobile) {
+    top: calc(var(--navbar-height) + var(--navbar-margin-top) + 0.35rem);
+    padding: 0 0.5rem;
+  }
+}
+
+.tts-player-shelf {
+  pointer-events: none;
+  width: 100%;
+  max-width: 640px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-8px);
+  background-color: color-mix(in srgb, var(--light) 92%, transparent);
+  backdrop-filter: blur(16px) saturate(1.4);
+  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  border: 1px solid var(--lightgray);
+  border-radius: 16px;
+  padding: 0 1rem;
+  box-shadow:
+    0 12px 32px -4px rgba(0, 0, 0, 0.12),
+    0 4px 8px -2px rgba(0, 0, 0, 0.04);
+  transition:
+    max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.25s ease,
+    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    padding 0.3s ease;
+  box-sizing: border-box;
+
+  :root[saved-theme="dark"] & {
+    background-color: color-mix(in srgb, var(--light) 94%, transparent);
+    box-shadow:
+      0 12px 32px -4px rgba(0, 0, 0, 0.5),
+      0 4px 8px -2px rgba(0, 0, 0, 0.3);
+  }
+
+  &.open {
+    pointer-events: auto;
+    max-height: 140px;
+    opacity: 1;
+    transform: translateY(0);
+    padding: 0.75rem 1rem;
+  }
+
+  .tts-shelf-row-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    min-width: 0;
+  }
+
+  .tts-transport {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    flex-shrink: 0;
+
+    button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      color: var(--darkgray);
+      padding: 0;
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+
+      &:hover {
+        background-color: var(--lightgray);
+        color: var(--secondary);
+      }
+
+      svg {
+        width: 15px;
+        height: 15px;
+        stroke: currentColor;
+        stroke-width: 2;
+        fill: none;
+      }
+    }
+
+    #tts-play-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: var(--secondary);
+      color: var(--light);
+      border: none;
+
+      &:hover {
+        background-color: var(--tertiary);
+        transform: scale(1.05);
+      }
+
+      svg {
+        width: 14px;
+        height: 14px;
+        fill: currentColor;
+        stroke: none;
+      }
+    }
+  }
+
+  .tts-track-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .tts-now-playing-label {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--secondary);
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 2px;
+    }
+
+    #tts-track-title {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--dark);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.2;
+    }
+  }
+
+  .tts-shelf-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-shrink: 0;
+
+    .tts-badge-btn {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.18rem 0.45rem;
+      border-radius: 6px;
+      border: 1px solid var(--lightgray);
+      background: transparent;
+      color: var(--darkgray);
+      cursor: pointer;
+      transition: all 0.15s ease;
+
+      &:hover {
+        background-color: var(--lightgray);
+        color: var(--secondary);
+        border-color: var(--secondary);
+      }
+    }
+
+    .tts-action-icon-btn {
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--gray);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      transition: all 0.15s ease;
+
+      &:hover {
+        background-color: var(--lightgray);
+        color: var(--darkgray);
+      }
+
+      svg {
+        width: 14px;
+        height: 14px;
+        stroke: currentColor;
+        stroke-width: 2;
+        fill: none;
+      }
+
+      &.tts-close-stop-btn:hover {
+        background-color: var(--highlight);
+        color: var(--secondary);
+      }
+    }
+  }
+
+  // Row 2: Scrubber & Timers
+  .tts-shelf-row-bottom {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 0.45rem;
+    font-size: 0.72rem;
+    color: var(--gray);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .tts-scrubber-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    #tts-scrubber {
+      width: 100%;
+      height: 4px;
+      -webkit-appearance: none;
+      appearance: none;
+      background: var(--lightgray);
+      border-radius: 4px;
+      outline: none;
+      cursor: pointer;
+      transition: background 0.15s ease;
+
+      &:hover {
+        background: var(--gray);
+      }
+
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--secondary);
+        cursor: pointer;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        transition: transform 0.15s ease;
+
+        &:hover {
+          transform: scale(1.25);
+        }
+      }
+
+      &::-moz-range-thumb {
+        width: 12px;
+        height: 12px;
+        border: none;
+        border-radius: 50%;
+        background: var(--secondary);
+        cursor: pointer;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  #tts-para-indicator {
+    font-weight: 600;
+    color: var(--secondary);
+  }
+}
+
+// 4. Live Paragraph Highlight in Article
+.tts-highlight-active {
+  background-color: var(--highlight) !important;
+  border-left: 3.5px solid var(--secondary) !important;
+  padding-left: 0.65rem !important;
+  border-radius: 0 6px 6px 0 !important;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    padding 0.2s ease !important;
+}

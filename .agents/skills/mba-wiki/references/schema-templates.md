@@ -21,34 +21,43 @@ tags:
   - sbm-itb
 ---
 
-## 🎯 Act 1: The Executive Dilemma — [Catchy Dilemma Title]
+> [!NOTE] Curricular & Faculty Metadata
+> - **Course:** [Course Code] [Course Name] — Week [YY]
+> - **Teaching Team:** [Faculty Names & Credentials]
+> - **Primary Curricular Spine:** [Slide Deck Name & Slide Count]
+> - **Direct Satellites & Problem Sets:**
+>   - [[courses/mkX-slug/week-YY/assignment-slug|Assignment Guide Title]]
+>   - [[courses/mkX-slug/week-YY/case-slug|Case Study Dossier]]
+>   - [[courses/mkX-slug/week-YY/reading-slug|Academic Reading Note]]
 
-[Narrative hook: why this matters to enterprise leaders, what fails when unaddressed, empirical stakes / statistics.]
+## 1. Executive Overview & Foundations of [Topic]
+
+[Core dilemma, why this matters to enterprise leaders, what fails when unaddressed, empirical stakes / statistics.]
 
 ---
 
-## 🧭 Act 2: Theoretical Mechanism — [Framework Name]
+## 2. Theoretical Architecture & Core Frameworks
 
-[Core frameworks, formulas, LaTeX math, Mermaid diagrams, and detailed breakdowns of slide deck models.]
+[Detailed breakdown of slide deck models, formulas, LaTeX math, and Mermaid process diagrams.]
 
 $$\mathbf{FORMULA = VARIABLES}$$
 
 ```mermaid
 flowchart TD
     A["Input"] --> B["Processing Mechanism"] --> C["Executive Output"]
-````
+```
 
 ---
 
-## 🏢 Act 3: Managerial Crucible — Indonesian BUMN & Enterprise Context
+## 3. Managerial Crucible: Indonesian Enterprise & BUMN Context
 
-[Real-world friction: Indonesian corporate governance, BUMN dynamics, high power-distance hierarchies, AKHLAK values.]
+[Real-world friction: Indonesian corporate governance, traditional trade vs modern trade dynamics, AKHLAK values.]
 
 ---
 
-## 📝 Act 4: Group Discussion Debrief & Pre-Assignment Synthesis
+## 4. Cross-Functional Implementation & Strategic Trade-offs
 
-[Analysis of discussion questions, cross-reading synthesis, and closing leadership provocation.]
+[Analysis of inter-departmental tensions (Marketing vs Finance vs Operations), risk mitigation, and executive debrief.]
 
 ---
 
@@ -314,4 +323,83 @@ tags:
 
 - Return to **[[entities/index|Entity Directory]]**
 - Return to **[[index|MBA Cohort Portal Home]]**
+```
+
+---
+
+## 6. Cohort Assignment Guide (`content/courses/mkX/week-YY/assignment-[slug].md`)
+
+Use **Mode A (Pre-Class Brief)** before an assignment deadline so cohort peers get a fast navigation map without spoilers, or **Mode B (Post-Class Debrief)** after the deadline with full worked calculations attributed to **`F9 (Class F / Syndicate 9)`** (for group work) or **`the Portal Maintainer`** (for individual work—never name the maintainer personally).
+
+```yaml
+---
+title: "MK[X] W[YY] Assignment: [Topic / Case Name]"
+type: "assignment-analysis"
+course_code: "MK[X]"
+week: [1 - 14]
+assignment_type: "[Pre-Assignment | Post-Assignment | Syndicate Challenge]"
+mode: "[pre-class-brief | post-class-debrief]"
+tags:
+  - course/mk[x]
+  - assignment
+  - [discipline-tag]
+  - [framework-tag]
+date: YYYY-MM-DD
+---
+
+> [!NOTE] Assignment Context & Attribution
+> - **Course:** MK[X] [Full Course Name] — Week [YY]
+> - **Source Prompt:** `raw/courses/mkX/week-YY/[Prompt_File.pdf]`
+> - **Reference Attribution:** Analytical synthesis contributed by **F9 (Class F / Syndicate 9)** & **the Portal Maintainer** *(or solely **the Portal Maintainer** for individual assignments; omit if in Pre-Class Brief mode)*
+> - **Parent Lecture:** [[courses/mkX-slug/week-YY/index|Week YY Master Lecture Hub]]
+> - **Target Case:** [[courses/mkX-slug/week-YY/case-[slug]|Case Study]]
+
+---
+
+## 📋 Part 1: Official Assignment Prompt & Skim Map
+
+- **Executive Objective:** [What the professor tests in this problem set]
+- **Target Deliverable:** [Format: Memo, Slide Deck, STP Grid, Financial Sizing]
+- **Core Diagnostic Questions & Case Exhibit Map:**
+  1. *[Question 1 verbatim]* — **Where to look:** [Case pages / Exhibits / Slide numbers]
+  2. *[Question 2 verbatim]* — **Where to look:** [Case pages / Exhibits / Slide numbers]
+
+---
+
+## 💡 Part 2: Reference Solution & Strategic Analysis *(Post-Class Mode Only)*
+
+*(In Pre-Class Mode, replace Part 2 with a **Key Case Tensions & Data Points to Pull** table and remind cohort readers: "Baca case lengkap sebelum syndicate meeting — panduan ini adalah peta navigasi, bukan jawaban akhir.")*
+
+### Question 1: [Problem Title]
+- **Analytical Stance:** [Core thesis]
+- **Quantitative Model & Calculation:**
+  $$\text{Formula} = \text{Variables}$$
+- **Reconstructed Data Matrix:**
+  | Dimension | Metric | Strategic Implication |
+  | :--- | :--- | :--- |
+  | ... | ... | ... |
+
+---
+
+## 🔬 Part 3: Methodological Rigor & Key Analytical Nuances
+
+| Analytical Dimension | Baseline Case Intuition | Rigorous Methodological Nuance (F9 / Maintainer Synthesis) |
+| :--- | :--- | :--- |
+| ... | ... | ... |
+
+---
+
+## 🎙️ Part 4: Classroom Cold-Call & Faculty Debrief Strategy
+
+- **Faculty Angle:** [Where lecturer challenges standard answers]
+- **High-Signal Response:** [Concise 30-second cold-call recitation script]
+- **Indonesian / BUMN Reality:** [Local market friction, regulatory constraints, channel dynamics]
+
+---
+
+## 🔗 Knowledge Graph & Curriculum Bridges
+
+- Return to **[[courses/mkX-slug/week-YY/index|Week YY Masterclass Hub]]**
+- Linked Case: **[[courses/mkX-slug/week-YY/case-[slug]|Case Study]]**
+- Applied Concept: **[[concepts/slug|Concept Name]]**
 ```

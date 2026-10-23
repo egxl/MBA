@@ -1,6 +1,6 @@
 # Raw Materials Staging Directory (`raw/`)
 
-This directory is the immutable source intake zone for the **P3MD MBA Knowledge Base**. It sits outside `content/` and is never published directly by Quartz.
+This directory is the immutable source intake zone for the **P3MD MBA Cohort Knowledge Base**. It sits outside `content/` and is never published directly by Quartz.
 
 ## Directory Structure
 
@@ -8,19 +8,27 @@ This directory is the immutable source intake zone for the **P3MD MBA Knowledge 
 raw/
 ├── courses/
 │   ├── mk1/
-│   │   ├── week-01/          <-- Drop slides, case PDFs, quiz briefs for MK1 Week 1
+│   │   ├── week-01/          <-- Drop slides, case PDFs, .docx notes, assignments
+│   │   │   └── .extracted/   <-- Auto-generated text sidecars & safety scan manifest
 │   │   └── ...
 │   └── mk[2-6]/
 └── rabuan/                   <-- Drop Wednesday executive guest speaker decks & transcripts
 ```
 
+## Automated Intake (`npm run raw:prep`)
+
+You do not need to manually rename folders or convert Office files before ingestion. Running `npm run raw:prep` automatically:
+
+1. Normalizes week folder names (`Week 1` $\rightarrow$ `week-01`).
+2. Extracts plain text from `.docx` and `.xlsx` files into `.extracted/<filename>.txt` for instant AI reading.
+3. Runs a Step 0 safety scan on `.pdf`, `.txt`, and `.md` files and records `.extracted/intake-manifest.json`.
+
 ## Supported Source Formats
 
-- **Pre-Expanded Handbook Drafts (Recommended)**:
-  - `handbook-draft.md`, `handbook-draft.tex`, or `handbook-draft.txt` (Generated from **Gemini Advanced Web**, **ChatGPT Prism**, or **Claude** using the Unified Master Prompt)
 - **Primary Lecture Slides**: `.pdf`, `.pptx`
-- **Case Studies & HBR Readings**: `.pdf`, `.docx`, `.md`
-- **Audio & Video Transcripts**: `.txt`, `.vtt`, `.srt`
+- **Case Studies, HBR Readings & Assignments**: `.pdf`, `.docx`, `.xlsx`, `.md`
+- **Optional Pre-Expanded Handbook Drafts**: `handbook-draft.md`, `handbook-draft.tex`, or `handbook-draft.txt`
+- **Audio & Video Transcripts**: `.txt`, `.vtt`, `.srt`, `.m4a`
 - **Cloud Links Index**: `drive_links_to_be_inserted.txt`
 
-When files are placed here, invoke the ingestion workflow to parse them into the 4-act storytelling structure, extract qualifying concepts into `content/concepts/`, generate reading satellites, and resolve Quartz backlinks. See `.agents/skills/mba-wiki/references/hybrid-expansion-protocol.md` for the master prompts.
+See `.agents/skills/mba-wiki/SKILL.md` and `.agents/skills/mba-wiki/references/course-ingestion-protocol.md` for the cohort-wide ingestion and attribution rules.

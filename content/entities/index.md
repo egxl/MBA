@@ -23,6 +23,7 @@ $$\mathbf{THEORISTS \quad \boldsymbol{\cdot} \quad ENTERPRISES \quad \boldsymbol
 
 ### 1. Academic Theorists & Framework Architects
 
+- **[[entities/philip-kotler|Philip Kotler]]**: "Father of Modern Marketing", STP framework, societal marketing concept, and customer value foundations (Kellogg).
 - **[[entities/richard-b-chase|Richard B. Chase]]**: Customer contact approach, service-system design matrix, and service poka-yokes (USC Marshall).
 - **[[entities/ric-roi|Dr. Ric Roi]]**: Leadership ambidexterity, the C-suite AMBIDEX model, and 5 Levels of Impact (IMD Business School).
 - **[[entities/annie-mckee|Annie McKee]]**: Resonant leadership, emotional contagion, and workplace well-being (PennCLO / Teleos).
@@ -33,14 +34,17 @@ $$\mathbf{THEORISTS \quad \boldsymbol{\cdot} \quad ENTERPRISES \quad \boldsymbol
 - **Eliyahu Goldratt**: Theory of Constraints (TOC) and operational bottleneck management.
 - **Henry Mintzberg**: Organizational structures, managerial roles, and emergent strategy formation.
 
-### 2. Indonesian Enterprise Leaders & Rabuan Speakers
+### 2. Indonesian Enterprise Leaders, Faculty & Rabuan Speakers
 
+- **[[entities/ilma-aulia-zaim|Ilma Aulia Zaim, Ph.D.]]**: Assistant Professor of Marketing, SBM ITB — Lead lecturer for MM5001 Marketing Management and consumer value creation.
 - **[[entities/agus-dwi-handaya|Agus Dwi Handaya]]**: Director of Human Capital, Bank Mandiri — Architect of PeopleMath and talent density analytics.
 - **[[entities/ric-roi|Dr. Ric Roi]]**: Academic Director, IMD Strategic Talent Lab — Making an Impact, Making a Career, and executive progression.
 - **BUMN Chief Executives**: Keynote practitioners delivering Wednesday Rabuan plenary sessions.
 
 ### 3. Global & Regional Case Enterprises
 
+- **[[entities/unilever|Unilever (Global & Indonesia)]]**: Fast-moving consumer goods giant; bottom-of-the-pyramid strategy in Brazil (_Ala_) and mass-market defense in Indonesia (_UNVR_).
+- **[[entities/wings-group|Wings Group (PT Sayap Mas Utama)]]**: Indonesian FMCG conglomerate; traditional trade (_warung_) dominance and _Daia_/_SoKlin_ market leadership.
 - **[[entities/pt-kereta-api-indonesia|PT Kereta Api Indonesia (Persero)]]**: National rail transport operator; operational turnaround to 503.5M passengers, and the Gambir Gate biometric boarding dilemma.
 - **Target Enterprise Cases**: Harvard Business School, INSEAD, and SBM ITB case study subjects (populated dynamically as live cases are analyzed).
 

@@ -1,18 +1,19 @@
 ---
 name: mba-wiki
 description: >-
-  Compounding knowledge management system for the P3MD MBA portal. Ingests raw slides, case studies,
-  and plenary transcripts into an enriched, 4-act storytelling lecture wiki with dedicated reading
-  satellites, multi-disciplinary concepts, and living entities in Quartz.
+  Compounding cohort-wide knowledge management system for the P3MD MBA portal. Ingests raw slides,
+  case studies, syndicate/personal assignments, and plenary transcripts into an enriched modular
+  lecture handbook with cohort-ready case dossiers, pre/post-deadline assignment guides, and
+  selective cross-curricular concepts in Quartz 4.
 ---
 
 # MBA Wiki Skill (`mba-wiki`)
 
-The **MBA Wiki** skill transforms raw MBA slide decks, Harvard business cases, academic papers, and executive guest lectures into an interconnected, compounding knowledge base powered by Quartz 4.
+The **MBA Wiki** skill transforms raw MBA slide decks, business cases, academic papers, student work, and executive guest lectures into an interconnected, cohort-wide academic portal powered by Quartz 4.
 
 ```
        +-------------------------------------------------------------+
-       |               P3MD MBA COHORT KNOWLEDGE BASE                |
+       |          P3MD MBA COHORT-WIDE KNOWLEDGE PORTAL              |
        |                (Quartz 4 Static Web Portal)                 |
        +-------------------------------------------------------------+
                                       |
@@ -20,9 +21,10 @@ The **MBA Wiki** skill transforms raw MBA slide decks, Harvard business cases, a
                                       v
        +-------------------------------------------------------------+
        |                         MBA-WIKI                            |
-       |  - Master Hub + Satellites   - Depth & Rigor Standard       |
-       |  - 4-Act Storytelling Engine - Multi-MK Concept Compounding |
-       |  - Rabuan Plenary Isolation  - Zero-Broken-Link Precision   |
+       |  - Automated Raw Intake (`npm run raw:prep`)                |
+       |  - Pre-Class (Spoiler-Free) vs Post-Class (Debrief) Modes   |
+       |  - F9 Syndicate & Maintainer Attribution Standard           |
+       |  - Selective Concept Gate (1-2/wk) + Auto Sync (`wiki:sync`)|
        +-------------------------------------------------------------+
                     |                                  |
    Reads (Staging)  |                                  | Writes & Maintains
@@ -30,11 +32,10 @@ The **MBA Wiki** skill transforms raw MBA slide decks, Harvard business cases, a
 +-----------------------+              +-------------------------------------+
 |      RAW STAGING      |              |              THE PORTAL             |
 | raw/courses/mkX/wYY/  |              | - courses/mk[1-6]/week-YY/index.md  |
-| raw/rabuan/           |              | - courses/.../reading-[slug].md     |
-| (Transcripts, Slides, |              | - courses/.../case-[slug].md        |
-|  Case PDFs, Outlines) |              | - rabuan/YYYY-MM-DD-speaker.md      |
-|                       |              | - concepts/ (Living topics/metrics) |
-|                       |              | - entities/ (Theorists, BUMNs, Cos) |
+| raw/rabuan/           |              | - courses/.../case-[slug].md        |
+| (.pdf, .pptx, .docx,  |              | - courses/.../reading-[slug].md     |
+|  .xlsx, .m4a, .md)    |              | - courses/.../assignment-[slug].md  |
+| + .extracted/ cache   |              | - concepts/ & entities/ (Selective) |
 +-----------------------+              +-------------------------------------+
 ```
 
@@ -42,103 +43,88 @@ The **MBA Wiki** skill transforms raw MBA slide decks, Harvard business cases, a
 
 ## Operating Principles & Golden Rules
 
-1. **The Depth & Rigor Mandate (The "No Lost Signal" Contract)**:
-   Never over-simplify raw academic papers, Harvard business cases, or lecture slides into superficial bullet summaries.
+1. **Cohort-Wide Audience & Attribution Standard**:
+   This portal is published for the **entire P3MD Batch I Soedirman cohort**, not as a private personal diary.
+   - Write all pages in an authoritative, cohort-helpful institutional study guide voice.
+   - **Group Assignment Attribution**: When synthesizing group submissions from `raw/`, credit **`F9 (Class F / Syndicate 9)`** (or **`F9 (Class F / Syndicate 9) & the Portal Maintainer`** when combining group and personal files).
+   - **Personal Assignment Attribution**: When synthesizing an individual student submission, credit **`the Portal Maintainer`**—**never expose the maintainer's personal name or compare raw personal file drafts** on the public site.
+
+2. **Two-Phase Assignment Lifecycle (Pre-Class vs. Post-Class Modes)**:
+   Because the whole cohort reads this portal, assignment handling adapts to whether the deadline has passed:
+   - **Pre-Class Mode (Spoiler-Free Brief)**: Used before an assignment is due. Publishes the full Master Lecture Hub (`index.md`) and a **Cohort Pre-Class Assignment & Case Brief** (`assignment-brief.md` or `case-[slug].md`) that maps case facts, timelines, quantitative exhibits, and slide-to-question connections **without spoiling the group recommendation or final answers** (*"Ini peta, bukan jawaban"*).
+   - **Post-Class / Archive Mode (Full Debrief)**: Used after the deadline or for past weeks. Synthesizes the full worked calculations, strategic options matrix, and classroom cold-call defense into a polished **Model Analysis & Case Debrief**.
+
+3. **Zero-Banner Direct Ingestion (Optional Handbook Boost)**:
+   - Never place yellow `[!WARNING] Handbook Expansion Pending` banners on published lecture pages.
+   - Whether `raw/courses/mkX/week-YY/` contains a pre-expanded `handbook-draft.md` or only raw slides/PDFs/DOCXs, Antigravity compiles a complete, first-class modular **Master Lecture Hub (`index.md`)** in one pass. If `handbook-draft.*` is present, use it as an automatic boost; if absent, expand directly from the slides and textbook context.
+
+4. **Automated Raw Intake & Safety Scanning (`npm run raw:prep`)**:
+   - Before reading a raw folder, run `npm run raw:prep`.
+   - This automatically normalizes messy folder names (`Week 1` $\rightarrow$ `week-01`), extracts clean plain text from `.docx` and `.xlsx` files into `.extracted/*.txt` for instant AI reading, and runs a **Step 0 Safety Scan** on PDFs/TXTs for steganographic or prompt-injection anomalies.
+
+5. **The Selective Concept & Entity Gate (Anti-Sprawl — Max 1–2 Per Week)**:
+   To prevent drowning the knowledge graph in hundreds of thin pages:
+   - Extract at most **1 to 2 foundational concepts** per week into `content/concepts/<slug>.md` (only major cross-curricular frameworks or quantitative formulas).
+   - Create an entity page in `content/entities/<slug>.md` **only** for primary case enterprises, lead faculty, or foundational theorists that recur across multiple weeks.
+   - Run `npm run wiki:sync` (`node ./scripts/check-wiki-integrity.mjs --sync`) to automatically register any new concepts or entities in `concepts/index.md` and `entities/index.md`.
+
+6. **The Depth & Rigor Mandate (The "No Lost Signal" Contract)**:
+   Never over-simplify raw academic papers, business cases, or lecture slides into superficial bullet summaries.
    - Retain all named corporate case vignettes (CEOs, companies, dilemmas).
-   - Reconstruct all diagnostic exercises, worksheets, scoring rubrics, and step-by-step prompts.
-   - Reconstruct comparative tables and exhibits in Markdown.
+   - Reconstruct all diagnostic exercises, worksheets, scoring rubrics, and comparative exhibits in Markdown.
    - Cite all empirical statistics, survey percentages, and formulas in KaTeX ($\LaTeX$).
-   - See **[Depth & Academic Rigor Standard](./references/depth-and-rigor-standard.md)**.
+   - Avoid artificial theatrical dramatization (no arbitrary "Act 1–4" labels); use clean, topic-led modular sections.
 
-2. **Master Hub + Dedicated Satellite Architecture**:
-   To prevent compressing heavy 10-page HBR articles or 20-page Harvard cases:
-   - `index.md`: The cohesive **Master Lecture Hub** synthesizing slides, in-class discussions, and BUMN context across the 4-Act narrative.
-   - `reading-[author]-[slug].md`: Standalone deep-dive study notes for each foundational reading.
-   - `case-[company]-[slug].md`: Standalone business case studies with quantitative exhibits and strategic options.
-   - `quiz-[num]-discussion.md`: Standalone exam/quiz preparation notes.
-
-3. **The 4-Act Storytelling Contract (Anti-Slop)**:
-   Structure lecture hubs as an executive narrative:
-   - **Act 1: The Executive Dilemma & Boardroom Context** (The hook; what breaks when leaders fail here).
-   - **Act 2: The Core Mechanism & Analytical Frameworks** (Deep theoretical breakdown, models, formulas).
-   - **Act 3: Real-World Crucible (Indonesian BUMN & Global Enterprise Context)** (Practical friction, state-owned enterprise dynamics, ASEAN business realities).
-   - **Act 4: Boardroom Reflection & Key Takeaways** (Discussion prompts, ALP application, exam synthesis).
-
-4. **The Concept Qualification Gate (Anti-Sprawl)**:
-   Do NOT turn ordinary nouns (_"Meeting"_, _"Email"_, _"Discussion"_) into concept pages.
-   A concept page is generated in `content/concepts/<slug>.md` ONLY if it meets at least one criterion:
-   - A recognized academic framework (_Maslow's Hierarchy_, _Porter's 5 Forces_, _DuPont Analysis_).
-   - A measurable business formula or metric (_WACC_, _Compa-Ratio_, _ROIC_, _Turnover Drag_).
-   - A core strategic mechanism spanning multiple business functions (_Psychological Safety_, _Agency Theory_, _Resource Allocation_).
-
-5. **The Strict Anti-Stub Rule & MOC Synchronization**:
+7. **The Strict Anti-Stub Rule & MOC Synchronization**:
    - Never create empty, stub, or mock weekly lecture files.
-   - In each course's `content/courses/mkX-.../index.md`, un-ingested weeks must remain unlinked in the syllabus table with status `Scheduled (Pending Ingestion)`.
-   - Only when authentic materials are ingested do you flip the row to **Ingested** and add the active Quartz wikilink.
+   - In each course's `content/courses/mkX-.../index.md`, un-ingested weeks must remain unlinked in the syllabus table with status `_Scheduled (Pending Ingestion)_`.
+   - When ingested, flip the row to **`**Ingested**`** and add the active Quartz wikilink.
 
-6. **The Hub Directory Registration Contract**:
-   Every newly created or modified concept or entity must be registered in its master index:
-   - Concepts $\rightarrow$ `content/concepts/index.md` (Six Core Business Pillars grid).
-   - Entities $\rightarrow$ `content/entities/index.md` (Principal Taxonomy directory).
-   - Rabuan Sessions $\rightarrow$ `content/rabuan/index.md` (Executive Masterclass Archive table).
-
-7. **The Digital Media Archives Standard**:
-   Every weekly lecture note and Rabuan session must feature a dedicated `## 📂 Primary Source Media & Digital Archives` table linking to official Google Drive video streams, slide downloads, and raw staging paths.
-
-8. **Bilingual Canonical Naming**:
-   - Slugs are always canonical academic English: `content/concepts/resource-allocation.md`.
-   - Frontmatter includes Indonesian aliases: `aliases: ["Alokasi Sumber Daya", "Alokasi Kapital"]`.
-
-9. **The Rabuan Anti-Contamination Boundary**:
-   - Rabuan notes (`content/rabuan/`) may freely cite academic concepts.
-   - Core academic course notes do not depend on Rabuan for syllabus completion, linking to Rabuan only via optional callout boxes (`> [!TIP] Practical BUMN Perspective`).
-
-10. **Quartz Title & Link Integrity**:
-    - Omit body `<h1>` tags (Quartz already renders frontmatter `title` as `<h1>`).
-    - Use relative or absolute Quartz wikilinks: `[[concepts/resource-allocation|Resource Allocation]]`.
-    - Always verify with `npm run titles:check`, `npm test`, `npm run check`, and `npx quartz build`.
+8. **Bilingual Canonical Naming & Quartz Integrity**:
+   - Slugs are canonical academic English (`content/concepts/resource-allocation.md`) with Indonesian frontmatter `aliases`.
+   - Omit body `<h1>` tags (Quartz renders frontmatter `title` as `<h1>`).
+   - Always verify with `npm run wiki:sync`, `npm run check`, `npm test`, and `npx quartz build`.
 
 ---
 
 ## Detailed Reference Guides
 
-- **[Hybrid Expansion Protocol (Slide-to-Handbook)](./references/hybrid-expansion-protocol.md)**: Unified format-agnostic master expansion prompt with mandatory web search grounding, visual asset preservation, and dual-staging (.md/.tex) support.
+- **[Course Ingestion Protocol](./references/course-ingestion-protocol.md)**: Step-by-step execution checklist from `npm run raw:prep` to cohort publication.
+- **[Hybrid Expansion Protocol (Optional Boost)](./references/hybrid-expansion-protocol.md)**: Optional external LLM prompt for pre-expanding heavy slide decks.
 - **[Depth & Academic Rigor Standard](./references/depth-and-rigor-standard.md)**: Guidelines for unabridged ingestion, worksheets, and case exhibits.
-- **[Canonical Schema & Document Templates](./references/schema-templates.md)**: Frontmatter and markdown skeletons for all 5 document archetypes.
-- **[Course Ingestion Protocol](./references/course-ingestion-protocol.md)**: Step-by-step 8-phase execution checklist from `raw/` intake to build verification.
+- **[Canonical Schema & Document Templates](./references/schema-templates.md)**: Frontmatter and markdown skeletons for all document archetypes (including Pre-Class Briefs and Post-Class Debriefs).
 
 ---
 
 ## Core Workflows
 
-### Workflow 1: Ingest Course Lecture & Satellites (`ingest-course`)
+### Workflow 1: Ingest Course Week (`ingest-course`)
 
-Follow the 8 phases in **[Course Ingestion Protocol](./references/course-ingestion-protocol.md)** and **[Hybrid Expansion Protocol](./references/hybrid-expansion-protocol.md)**:
+1. **Automated Prep & Safety Scan**:
+   - Run `npm run raw:prep` to normalize `raw/courses/mkX/week-YY/` folder names, extract `.docx`/`.xlsx` text into `.extracted/`, and inspect `intake-manifest.json` for PDF safety.
+2. **Determine Assignment Mode**:
+   - **Post-Class Mode (Default for past weeks / when group submissions exist in `raw/`)**: Author full case analysis and worked assignment debriefs, attributing group insights to **`F9 (Class F / Syndicate 9)`** and individual files to **`the Portal Maintainer`** (never naming the maintainer).
+   - **Pre-Class Mode (When requested for upcoming deadlines)**: Author a spoiler-free **Assignment & Case Skim Brief** mapping exhibits, timeline, and guiding frameworks without giving away final group recommendations.
+3. **Author Satellites First**:
+   - Create `case-[slug].md`, `reading-[slug].md`, or `assignment-[slug].md` with full exhibits, tables, and formulas.
+4. **Author Master Lecture Hub (`index.md`)**:
+   - Synthesize slides, `handbook-draft.md` (if present), lecturer notes (`Catatan`), cases, and BUMN context into a comprehensive modular chapter.
+5. **Selective Concept/Entity Extraction & Auto-Sync**:
+   - Extract at most 1–2 major concepts/entities and run `npm run wiki:sync` to auto-register them in the hub directories.
+6. **Flip Course MOC & Verify**:
+   - Update `content/courses/mkX-.../index.md` row to `**Ingested**`.
+   - Run `npm run check`, `npm test`, and `npx quartz build`.
 
-1. **Intake & Triage**:
-   - Check `raw/courses/mkX/week-YY/` for pre-expanded drafts:
-     - If `handbook-draft.md`, `handbook-draft.tex`, or `handbook-draft.txt` is present $\rightarrow$ read directly as the expanded lecture baseline.
-     - If only raw slides exist $\rightarrow$ prompt the user to run the Slide-to-Handbook master prompt in Gemini Web or Prism.
-   - Parse `drive_links_to_be_inserted.txt` for official cloud stream/download links.
-2. Author dedicated reading satellites (`reading-*.md`) and case notes (`case-*.md`) with full exhibits and worksheets.
-3. Author the Master Lecture Hub (`index.md`) with 4-Act narrative and media archive table.
-4. Extract qualifying concepts into `content/concepts/` and entities into `content/entities/`.
-5. Synchronize master hubs (`concepts/index.md` and `entities/index.md`).
-6. Flip course roadmap row in `courses/mkX/index.md` from `Scheduled` to `Ingested`.
-7. Verify with `npm run check`, `npm test`, `npx quartz build`.
+### Workflow 2: Upgrade Pre-Class Brief to Post-Class Debrief (`upgrade-week`)
 
-### Workflow 2: Ingest Rabuan Plenary (`ingest-rabuan`)
+When a week was initially published in **Pre-Class (Spoiler-Free) Mode** and the deadline has now passed (or when a deeper `handbook-draft.md` is added):
+1. Run `npm run raw:prep` to extract newly added `Group 9` / maintainer submission files.
+2. Enrich `assignment-*.md` or `case-*.md` with the worked analytical walkthrough, attributing **`F9 (Class F / Syndicate 9)`** or **`the Portal Maintainer`**.
+3. Verify with `npm run check`, `npm test`, and `npx quartz build`.
+
+### Workflow 3: Ingest Rabuan Plenary (`ingest-rabuan`)
 
 1. Read keynote slides, transcripts, or summaries from `raw/rabuan/`.
 2. Author `content/rabuan/YYYY-MM-DD-speaker-topic.md` using the guest-lecture schema.
-3. Author speaker & enterprise profile in `content/entities/<slug>.md`.
-4. Register the session in `content/rabuan/index.md`.
-5. Link qualifying concepts without polluting core course notes.
-
-### Workflow 3: Concept Synthesis & Compounding (`compound-concept`)
-
-1. Open `content/concepts/<slug>.md`.
-2. Harmonize multi-disciplinary lenses across MK1–MK6.
-3. Document cross-functional boardroom friction (e.g. Finance vs Ops vs HR).
-4. Detail Action Learning Project (ALP) BUMN application.
-5. Register and cross-link in `content/concepts/index.md`.
+3. Author speaker profile in `content/entities/<slug>.md` and register in `content/rabuan/index.md`.
+4. Run `npm run wiki:sync` and `npm run check`.
