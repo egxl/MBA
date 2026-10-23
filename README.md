@@ -1,14 +1,14 @@
 <div align="center">
 
-<img src="quartz/static/crest-soedirman.png" alt="Insignia Resmi P3MD Batch I Soedirman" width="130" />
-
-<br /><br />
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="quartz/static/logo-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="quartz/static/logo.png">
-  <img alt="P3MD MBA Digital Insignia" src="quartz/static/logo.png" width="300">
-</picture>
+<p align="center">
+  <img src="quartz/static/crest-soedirman.png" alt="Insignia Resmi P3MD Batch I Soedirman" width="115" align="middle" style="vertical-align: middle;" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="quartz/static/logo-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="quartz/static/logo.png">
+    <img alt="P3MD MBA Digital Insignia" src="quartz/static/logo.png" width="310" align="middle" style="vertical-align: middle;">
+  </picture>
+</p>
 
 # P3MD MBA ACADEMIC PORTAL
 
