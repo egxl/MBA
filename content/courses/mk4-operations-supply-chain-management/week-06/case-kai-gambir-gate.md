@@ -68,15 +68,11 @@ PT Kereta Api Indonesia (Persero) is a state-owned enterprise (BUMN) operating n
 At KAI’s operational scale, with approximately **2.8 million daily customer interactions** and an executive mandate targeting **1.4 billion annual passengers by 2045**, small unit-level process changes compound massively:
 $$\mathbf{\text{A 5-second saving per passenger}} \times 2.8\text{ million daily interactions} \approx \mathbf{3,888 \text{ person-hours saved per day.}}$$
 
-```
-                       503.5 MILLION TOTAL PASSENGERS (2025)
-                                        │
-           ┌────────────────────────────┴────────────────────────────┐
-           ▼                                                         ▼
-     URBAN TRANSIT (KRL / LRT)                             LONG-DISTANCE INTERCITY
-  - Bulk of volume (Cards / QR)                             - Highest passenger revenue (Rp12.9T)
-  - No passenger identity check                             - Mandatory legal identity matching
-  - Commuter turnstile flow                                 - Visible holiday queues & biometric focus
+```mermaid
+flowchart TD
+    Total["<b>503.5 Million Total Passengers (2025)</b>"]
+    Total --> Urban["<b>Urban Transit (KRL / LRT)</b><br/>• Bulk of passenger volume (Cards / QR)<br/>• No identity matching required<br/>• High-frequency commuter turnstiles"]
+    Total --> Intercity["<b>Long-Distance Intercity</b><br/>• Highest revenue: Rp 12.9 Trillion<br/>• Mandatory legal identity check<br/>• Peak holiday queues & Face Recognition"]
 ```
 
 However, the aggregate volume of 503.5 million conceals a crucial operational division. The vast majority of passengers ride urban commuter transit (**KAI Commuter**, **LRT Jabodebek**, **LRT South Sumatra**) where passengers tap cards or scan generic QR codes without identity matching. The Face Recognition Boarding Gate applies **exclusively to long-distance intercity rail**, where Indonesian transport regulations mandate that the name and national identification number on the passenger's ticket must strictly match the physical traveler holding it.
@@ -356,23 +352,24 @@ Where _"Ready"_ means registered, possessing an eligible identity card, and will
 
 Plotting the boarding encounters on Richard B. Chase’s Service-System Design Matrix demonstrates why the two paths cannot be managed under identical workforce assumptions:
 
-```
-               [Reactive]      │                                      CS Registration Desk
-             (High Contact)    │                                     ┌─────────────────────┐
-                               │                                     │ High verbal empathy │
-                               │                                     │ Diagnostic guidance │
-               [Permeable]     │                      Manual Lane    └─────────────────────┘
-             (Medium Contact)  │                     ┌──────────────┐
-                               │                     │ Procedural   │
-                               │                     │ Verification │
-               [Buffered]      │  FR Boarding Gate   └──────────────┘
-              (Low Contact)    │ ┌──────────────────┐
-                               │ │ 1-sec automation │
-                               │ │ Exception super. │
-                               │ └──────────────────┘
-                               └─────────────────────────────────────────────────────────────►
-                                LOW                                                       HIGH
-                                                   DEGREE OF CUSTOMER CONTACT
+```mermaid
+flowchart LR
+    subgraph Buffered ["Buffered Core (Low Contact)"]
+        direction TB
+        FR["<b>FR Boarding Gate</b><br/>1-sec optical automation<br/>Exception supervision"]
+    end
+
+    subgraph Permeable ["Permeable System (Medium Contact)"]
+        direction TB
+        ML["<b>Manual Boarding Lane</b><br/>20-sec manual inspection<br/>Procedural verification"]
+    end
+
+    subgraph Reactive ["Reactive System (High Contact)"]
+        direction TB
+        CS["<b>CS Registration Desk</b><br/>90-sec technical setup<br/>Diagnostic & verbal empathy"]
+    end
+
+    Buffered -->|"Increasing Contact & Behavioral Friction"| Permeable --> Reactive
 ```
 
 | Operational Dimension      | Face Recognition Boarding Gate                                                                                           | Conventional Manual Lane                                                                                         | Customer Service Registration Desk                                                                                                                  |

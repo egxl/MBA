@@ -6,6 +6,11 @@ import {
   SplitHistoryManager,
   determineLinkInterception,
   InterceptParams,
+  getSplitBadgeLabel,
+  sanitizeInternalUrl,
+  formatAsWikilink,
+  shouldShowContextMenu,
+  ContextMenuGuardParams,
 } from "./splitview.helpers"
 
 describe("Split View Helpers", () => {
@@ -263,6 +268,174 @@ describe("Split View Helpers", () => {
           targetHref: "/concepts/littles-law",
         }),
         "split-open",
+      )
+    })
+  })
+
+  describe("getSplitBadgeLabel", () => {
+    test("categorizes concepts and concept indexes", () => {
+      assert.strictEqual(
+        getSplitBadgeLabel(new URL("https://example.com/concepts/talent-density")),
+        "Concept",
+      )
+      assert.strictEqual(getSplitBadgeLabel(new URL("https://example.com/concepts/")), "Index")
+      assert.strictEqual(getSplitBadgeLabel(new URL("https://example.com/concepts")), "Index")
+      assert.strictEqual(getSplitBadgeLabel(new URL("https://example.com/concepts/index")), "Index")
+    })
+
+    test("categorizes entities and entity indexes", () => {
+      assert.strictEqual(
+        getSplitBadgeLabel(new URL("https://example.com/entities/agus-dwi-handaya")),
+        "Entity",
+      )
+      assert.strictEqual(getSplitBadgeLabel(new URL("https://example.com/entities/")), "Index")
+    })
+
+    test("categorizes courses, cases, and assignments", () => {
+      assert.strictEqual(
+        getSplitBadgeLabel(
+          new URL("https://example.com/courses/mk3-marketing-management/week-01/case-unilever"),
+        ),
+        "Case",
+      )
+      assert.strictEqual(
+        getSplitBadgeLabel(
+          new URL(
+            "https://example.com/courses/mk4-operations-supply-chain-management/week-06/assignment-brief",
+          ),
+        ),
+        "Assignment",
+      )
+      assert.strictEqual(
+        getSplitBadgeLabel(
+          new URL("https://example.com/courses/mk1-organizational-behavior-managing-people/"),
+        ),
+        "Course",
+      )
+    })
+
+    test("categorizes rabuan and program pages", () => {
+      assert.strictEqual(
+        getSplitBadgeLabel(new URL("https://example.com/rabuan/2026-09-02-adh-peoplemath")),
+        "Rabuan",
+      )
+      assert.strictEqual(
+        getSplitBadgeLabel(new URL("https://example.com/program/alp/overview")),
+        "ALP",
+      )
+      assert.strictEqual(
+        getSplitBadgeLabel(new URL("https://example.com/program/governance")),
+        "Program",
+      )
+    })
+
+    test("falls back to Note for root or unknown pages", () => {
+      assert.strictEqual(getSplitBadgeLabel(new URL("https://example.com/")), "Note")
+      assert.strictEqual(getSplitBadgeLabel(new URL("https://example.com/about")), "Note")
+    })
+  })
+
+  describe("sanitizeInternalUrl", () => {
+    test("strips #split- prefix from hash", () => {
+      const sanitized = sanitizeInternalUrl(
+        "https://example.com/concepts/littles-law#split-key-formula",
+        "https://example.com",
+      )
+      assert.strictEqual(sanitized.hash, "#key-formula")
+      assert.strictEqual(
+        sanitized.toString(),
+        "https://example.com/concepts/littles-law#key-formula",
+      )
+    })
+
+    test("strips #popover-internal- prefix from hash", () => {
+      const sanitized = sanitizeInternalUrl(
+        "https://example.com/courses/mk1/index#popover-internal-overview",
+        "https://example.com",
+      )
+      assert.strictEqual(sanitized.hash, "#overview")
+    })
+
+    test("leaves standard anchor hash unchanged", () => {
+      const sanitized = sanitizeInternalUrl(
+        "https://example.com/rabuan/note#takeaways",
+        "https://example.com",
+      )
+      assert.strictEqual(sanitized.hash, "#takeaways")
+    })
+
+    test("leaves hashless URL unchanged", () => {
+      const sanitized = sanitizeInternalUrl(
+        "https://example.com/concepts/talent-density",
+        "https://example.com",
+      )
+      assert.strictEqual(sanitized.hash, "")
+    })
+  })
+
+  describe("formatAsWikilink", () => {
+    test("formats standard path and title into wikilink", () => {
+      const url = new URL("https://example.com/concepts/talent-density")
+      assert.strictEqual(
+        formatAsWikilink(url, "Talent Density"),
+        "[[concepts/talent-density|Talent Density]]",
+      )
+    })
+
+    test("formats URL with anchor hash into wikilink", () => {
+      const url = new URL("https://example.com/concepts/littles-law#formula")
+      assert.strictEqual(
+        formatAsWikilink(url, "Little's Law Formula"),
+        "[[concepts/littles-law#formula|Little's Law Formula]]",
+      )
+    })
+
+    test("falls back to slug when title is empty", () => {
+      const url = new URL("https://example.com/entities/unilever")
+      assert.strictEqual(formatAsWikilink(url), "[[entities/unilever|unilever]]")
+    })
+  })
+
+  describe("shouldShowContextMenu", () => {
+    const baseGuard: ContextMenuGuardParams = {
+      isShiftKey: false,
+      windowWidth: 1024,
+      isCoarsePointer: false,
+      targetOrigin: "https://example.com",
+      currentOrigin: "https://example.com",
+      isAnchor: true,
+      isRepeatOnSameAnchor: false,
+    }
+
+    test("allows context menu on standard desktop internal link right click", () => {
+      assert.strictEqual(shouldShowContextMenu(baseGuard), true)
+    })
+
+    test("passes through to native menu when Shift key is pressed", () => {
+      assert.strictEqual(shouldShowContextMenu({ ...baseGuard, isShiftKey: true }), false)
+    })
+
+    test("passes through on mobile width (<=800px)", () => {
+      assert.strictEqual(shouldShowContextMenu({ ...baseGuard, windowWidth: 800 }), false)
+      assert.strictEqual(shouldShowContextMenu({ ...baseGuard, windowWidth: 390 }), false)
+    })
+
+    test("passes through on touch device (coarse pointer)", () => {
+      assert.strictEqual(shouldShowContextMenu({ ...baseGuard, isCoarsePointer: true }), false)
+    })
+
+    test("passes through if target is not an anchor", () => {
+      assert.strictEqual(shouldShowContextMenu({ ...baseGuard, isAnchor: false }), false)
+    })
+
+    test("passes through on second right-click on active anchor", () => {
+      assert.strictEqual(shouldShowContextMenu({ ...baseGuard, isRepeatOnSameAnchor: true }), false)
+    })
+
+    test("passes through on external links", () => {
+      assert.strictEqual(
+        shouldShowContextMenu({ ...baseGuard, targetOrigin: "https://google.com" }),
+        false,
       )
     })
   })

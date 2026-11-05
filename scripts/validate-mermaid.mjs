@@ -80,6 +80,104 @@ export function validateMermaidBlock(code, filePath = "", startLine = 1) {
     }
   }
 
+  // Check 5: Detect unquoted parentheses in edge labels |...|
+  // In Mermaid, unquoted parentheses inside edge labels cause syntax errors because '(' is treated as a node shape token.
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]
+    const lineNumber = startLine + i
+
+    const edgeRegex = /(?:-->|---|-.->|==>)\s*\|([^|\r\n]+)\|/g
+    let edgeMatch
+    while ((edgeMatch = edgeRegex.exec(line)) !== null) {
+      const rawLabel = edgeMatch[1].trim()
+      if (/[()]/.test(rawLabel) && !(rawLabel.startsWith('"') && rawLabel.endsWith('"'))) {
+        errors.push({
+          file: filePath,
+          line: lineNumber,
+          snippet: line.trim(),
+          message: `Edge label contains unquoted parentheses: |${rawLabel}|. Wrap label text in double quotes, e.g. |"${rawLabel}"|.`,
+        })
+      }
+    }
+  }
+
+  // Check 6: Detect single-column vertical chains in TD/TB/BT diagrams
+  const isVertical = /^\s*(flowchart|graph)\s+(TD|TB|BT)\b/m.test(code)
+  if (isVertical) {
+    // Check for inline multi-step chain with 4+ arrows (5+ nodes)
+    const longInlineChain =
+      /([A-Za-z0-9_-]+)\s*(?:-->|---)\s*([A-Za-z0-9_-]+)\s*(?:-->|---)\s*([A-Za-z0-9_-]+)\s*(?:-->|---)\s*([A-Za-z0-9_-]+)\s*(?:-->|---)\s*([A-Za-z0-9_-]+)/
+    const inlineMatch = code.match(longInlineChain)
+    if (inlineMatch) {
+      errors.push({
+        file: filePath,
+        line: startLine,
+        snippet: inlineMatch[0],
+        message: `Diagram has an excessively long single-column vertical chain in TD/BT direction. Convert to 'flowchart LR' or multi-column subgraphs to utilize page width and eliminate vertical waste.`,
+      })
+    }
+
+    // Check for 3+ stacked subgraphs chained sequentially in vertical mode
+    const subgraphBlocks = [
+      ...code.matchAll(/subgraph\s+([A-Za-z0-9_-]+)(?:\[.*?\])?([\s\S]*?)end/g),
+    ]
+    if (subgraphBlocks.length >= 3) {
+      const names = subgraphBlocks.map((b) => b[1])
+      const directLink = new RegExp(
+        `(${names.join("|")})\\s*(?:-->|---|-.->)\\s*(${names.join("|")})`,
+      )
+      let hasCrossLink = directLink.test(code)
+
+      if (!hasCrossLink) {
+        for (let i = 0; i < subgraphBlocks.length - 1; i++) {
+          const currentNodes = [
+            ...subgraphBlocks[i][2].matchAll(/([A-Za-z0-9_-]+)\s*(\[|\{|\()/g),
+          ].map((m) => m[1])
+          const nextNodes = [
+            ...subgraphBlocks[i + 1][2].matchAll(/([A-Za-z0-9_-]+)\s*(\[|\{|\()/g),
+          ].map((m) => m[1])
+          if (currentNodes.length > 0 && nextNodes.length > 0) {
+            const crossLinkRegex = new RegExp(
+              `(?:${currentNodes.join("|")})\\s*(?:-->|---|-.->)\\s*(?:${nextNodes.join("|")})`,
+            )
+            if (crossLinkRegex.test(code)) {
+              hasCrossLink = true
+              break
+            }
+          }
+        }
+      }
+
+      if (hasCrossLink) {
+        errors.push({
+          file: filePath,
+          line: startLine,
+          snippet: `Subgraphs: ${names.join(" -> ")}`,
+          message: `Sequential subgraphs stacked vertically in TD direction. Convert outer flow to 'flowchart LR' (e.g. S1 --> S2 --> S3) with internal 'direction TB' for balanced columns.`,
+        })
+      }
+    }
+  }
+
+  return errors
+}
+
+/**
+ * Checks non-mermaid code blocks for prohibited ASCII box art diagrams.
+ */
+export function detectAsciiBoxArt(code, filePath = "", startLine = 1) {
+  const errors = []
+  const unicodeBox = /┌[─-]+[┐┬]|──►|◄──/
+  const asciiBox = /\+[-=]{4,}\+[\s\S]*?(?:\||\+[-=]{4,}\+)/
+
+  if (unicodeBox.test(code) || (asciiBox.test(code) && /(?:-->|──►|\|)/.test(code))) {
+    errors.push({
+      file: filePath,
+      line: startLine,
+      snippet: code.trim().slice(0, 100).replace(/\n/g, " ") + "...",
+      message: `Found ASCII/Unicode box diagram in code block. Per MBA Wiki standards, all visual mechanisms and process flows must use vector Mermaid.js diagrams (e.g. 'flowchart LR'), not ASCII art.`,
+    })
+  }
   return errors
 }
 
@@ -112,24 +210,31 @@ export function validateAllMermaid(contentDir = "content") {
     const content = fs.readFileSync(file, "utf8")
     const lines = content.split("\n")
 
-    let inMermaid = false
-    let mermaidLines = []
+    let inCodeBlock = false
+    let isMermaid = false
+    let codeBlockLines = []
     let startLine = 0
 
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i]
-      if (line.trim().startsWith("```mermaid")) {
-        inMermaid = true
-        mermaidLines = []
+      if (!inCodeBlock && line.trim().startsWith("```")) {
+        inCodeBlock = true
+        isMermaid = line.trim().startsWith("```mermaid")
+        codeBlockLines = []
         startLine = i + 1
-      } else if (inMermaid && line.trim().startsWith("```")) {
-        inMermaid = false
-        totalBlocks++
-        const blockCode = mermaidLines.join("\n")
-        const blockErrors = validateMermaidBlock(blockCode, file, startLine)
-        allErrors.push(...blockErrors)
-      } else if (inMermaid) {
-        mermaidLines.push(line)
+      } else if (inCodeBlock && line.trim().startsWith("```")) {
+        inCodeBlock = false
+        const blockCode = codeBlockLines.join("\n")
+        if (isMermaid) {
+          totalBlocks++
+          const blockErrors = validateMermaidBlock(blockCode, file, startLine)
+          allErrors.push(...blockErrors)
+        } else {
+          const asciiErrors = detectAsciiBoxArt(blockCode, file, startLine)
+          allErrors.push(...asciiErrors)
+        }
+      } else if (inCodeBlock) {
+        codeBlockLines.push(line)
       }
     }
   }

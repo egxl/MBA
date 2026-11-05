@@ -52,24 +52,9 @@ Direct deployment of participant teams to solve high-priority strategic bottlene
 
 The curriculum departs from traditional lecture-heavy formats, deploying a rigorous **70–20–10 adult learning model** calibrated to build instinctive strategic decision-making:
 
-```
-                  ┌─────────────────────────────────────────┐
-                  │        10% FORMAL LEARNING              │
-                  │             (Structuring)               │
-                  │   Theoretical foundation & models       │
-                  └────────────────────┬────────────────────┘
-                                       │
-                  ┌────────────────────▼────────────────────┐
-                  │        20% SOCIAL LEARNING              │
-                  │            (Interacting)                │
-                  │  Peer dialogue, feedback & mentorship   │
-                  └────────────────────┬────────────────────┘
-                                       │
-                  ┌────────────────────▼────────────────────┐
-                  │      70% EXPERIENTIAL LEARNING          │
-                  │               (Doing)                   │
-                  │ Real BUMN decisions & tangible impact   │
-                  └─────────────────────────────────────────┘
+```mermaid
+flowchart LR
+    L10["<b>10% Formal Learning</b><br/>(Structuring)<br/>Theoretical foundations & models"] --> L20["<b>20% Social Learning</b><br/>(Interacting)<br/>Peer dialogue, feedback & mentorship"] --> L70["<b>70% Experiential Learning</b><br/>(Doing)<br/>Real BUMN decisions & tangible impact"]
 ```
 
 ### Complete Session Allocation Matrix
@@ -95,26 +80,9 @@ The curriculum departs from traditional lecture-heavy formats, deploying a rigor
 
 Learning experiences narrow deliberately from large-cohort masterclasses to individual mastery:
 
-```
-  ┌─────────────────────────────────────────────────────────────┐
-  │                   COHORT (399 Participants)                 │
-  │     Executive Seminars • CEO BUMN Guest Lectures • Panels   │
-  └──────────────────────────────┬──────────────────────────────┘
-                                 │
-  ┌──────────────────────────────▼──────────────────────────────┐
-  │            KELAS PARALEL (8 Classes @ 40–70 Participants)   │
-  │    Disciplinary Lectures • Case Debriefs • Business Games   │
-  └──────────────────────────────┬──────────────────────────────┘
-                                 │
-  ┌──────────────────────────────▼──────────────────────────────┐
-  │             SMALL GROUP (40 Groups @ ~10 Participants)      │
-  │     Action Learning Projects • 3x Coaching • 3x Mentoring   │
-  └──────────────────────────────┬──────────────────────────────┘
-                                 │
-  ┌──────────────────────────────▼──────────────────────────────┐
-  │                 INDIVIDUAL (399 Participants)               │
-  │     Self-Study • Modular Assessments • Individual Reports   │
-  └─────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart LR
+    C1["<b>Cohort</b><br/>399 Participants<br/>Plenary, CEO Talks & Panels"] --> C2["<b>Kelas Paralel</b><br/>8 Classes @ 40–70 Pax<br/>Core Lectures & Case Debriefs"] --> C3["<b>Small Group</b><br/>40 Groups @ ~10 Pax<br/>ALPs, Coaching & Mentoring"] --> C4["<b>Individual</b><br/>399 Participants<br/>Self-Study & Assessments"]
 ```
 
 - **Cohort Level (399 participants)**: Macro-strategic exposure through plenary sessions, BUMN CEO guest lectures, executive panel discussions, and cohort-wide reflection.

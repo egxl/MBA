@@ -22,24 +22,23 @@ Delivered by **[[entities/ric-roi|Dr. Ric Roi]]** (Professor of Leadership and O
 Bridging behavioral psychology, corporate governance, and executive succession, Dr. Roi unpacks how high-potential professionals transition from individual task execution to enterprise stewardship. The session establishes that impactful careers are not built through aggressive title acquisition, but through the deliberate compounding of operational credibility, relational trust, emotional self-regulation, and **[[concepts/leadership-ambidexterity|leadership ambidexterity]]**.
 
 ```mermaid
-flowchart TD
-    subgraph S1["FOUNDATION: MANAGING SELF (Level 1)"]
-        A["Frontline Execution & Work Integrity"] --> B["7 Core Role Competencies"]
+flowchart LR
+    subgraph S1["Phase 1: Foundation (Level 1)"]
+        direction TB
+        A["Frontline Execution &<br/>Work Integrity"] --> B["7 Core Role<br/>Competencies"]
     end
 
-    subgraph S2["EXPANSION: DELIVERING THROUGH OTHERS (Levels 2-3)"]
-        B --> C["People Coaching & Workflow Coordination"]
-        C --> D["Departmental Alignment & Bench Building"]
+    subgraph S2["Phase 2: Expansion (Levels 2–3)"]
+        direction TB
+        C["People Coaching &<br/>Workflow Coordination"] --> D["Departmental Alignment &<br/>Bench Building"]
     end
 
-    subgraph S3["STEWARDSHIP: SHAPING THE ENTERPRISE (Levels 4-5)"]
-        D --> E["Functional Capability & Policy Excellence"]
-        E --> F["Enterprise Ambidexterity & Societal Impact"]
+    subgraph S3["Phase 3: Stewardship (Levels 4–5)"]
+        direction TB
+        E["Functional Capability &<br/>Policy Excellence"] --> F["Enterprise Ambidexterity &<br/>Societal Impact"]
     end
 
-    style S1 fill:#f8fafc,stroke:#94a3b8,stroke-width:1px
-    style S2 fill:#f1f5f9,stroke:#64748b,stroke-width:1px
-    style S3 fill:#e2e8f0,stroke:#334155,stroke-width:2px
+    S1 --> S2 --> S3
 ```
 
 ---
@@ -49,14 +48,8 @@ flowchart TD
 Dr. Roi introduces IMD's progressive leadership continuum: **One Leadership System, Many Levels of Impact**. Leaders across the enterprise are united by institutional purpose, yet strictly differentiated by cognitive scope, operational focus, and the nature of their accountability.
 
 ```mermaid
-flowchart BT
-    L1["<b>Level 1: Front Line Individuals</b><br>Focus: Personal performance, learning, accountability<br>Scope: Individual Contribution | Leads: Self (N=1)"]
-    L2["<b>Level 2: Front Line Managers</b><br>Focus: Daily execution, team engagement, quality<br>Scope: Teams / Work Groups | Leads: Operators / Team Members"]
-    L3["<b>Level 3: Mid-Level Managers</b><br>Focus: Team performance, execution, continuous improvement<br>Scope: Departments / BUs | Leads: Managers & Project Leads"]
-    L4["<b>Level 4: Functional Leaders</b><br>Focus: Enterprise capabilities, functional strategy, performance<br>Scope: Enterprise Functions | Leads: Functional Specialists & COEs"]
-    L5["<b>Level 5: Enterprise Leaders</b><br>Focus: Vision, long-term value creation, societal impact<br>Scope: Enterprise-wide & Ecosystem | Leads: ExCo & Business Units"]
-
-    L1 --> L2 --> L3 --> L4 --> L5
+flowchart LR
+    L1["<b>Level 1: Front Line Individuals</b><br/>Scope: Self (N=1)<br/>Focus: Execution & Integrity"] --> L2["<b>Level 2: Front Line Managers</b><br/>Scope: Work Groups<br/>Focus: Team Output & Quality"] --> L3["<b>Level 3: Mid-Level Managers</b><br/>Scope: Departments<br/>Focus: Translation & Bench"] --> L4["<b>Level 4: Functional Leaders</b><br/>Scope: Enterprise Functions<br/>Focus: Strategy & Governance"] --> L5["<b>Level 5: Enterprise Leaders</b><br/>Scope: Enterprise & Ecosystem<br/>Focus: Vision & Impact"]
 ```
 
 ### The 5 Levels Specification Matrix
@@ -79,17 +72,27 @@ flowchart BT
 Dr. Roi establishes seven observable, behavioral competencies that govern early-to-mid career velocity. Each competency is learnable and compounds through deliberate practice.
 
 ```mermaid
-graph TD
-    C1["Skill 1: Communication Skills<br/>(Clear, concise, two-way)"]
-    C2["Skill 2: Work Quality & Completeness<br/>(Finished, accurate, hand-off ready)"]
-    C3["Skill 3: Collaboration Skills<br/>(Shared effort, generous credit)"]
-    C4["Skill 4: Interpersonal Skills<br/>(Empathy, relationship trust)"]
-    C5["Skill 5: Time & Workload Mgmt<br/>(Impact prioritization, early flagging)"]
-    C6["Skill 6: Emotional Self-Control<br/>(Equanimity under pressure)"]
-    C7["Skill 7: Problem Solving & Decision<br/>(Sound judgment without a rubric)"]
+flowchart LR
+    subgraph P1["Pillar 1: Execution Mastery"]
+        direction TB
+        C2["Skill 2: Work Quality<br/>(Finished, accurate)"]
+        C5["Skill 5: Time & Workload<br/>(Impact prioritization)"]
+        C7["Skill 7: Problem Solving<br/>(Sound judgment)"]
+    end
 
-    C1 --- C2 --- C3 --- C4
-    C4 --- C5 --- C6 --- C7
+    subgraph P2["Pillar 2: Relational Trust"]
+        direction TB
+        C1["Skill 1: Communication<br/>(Clear, BLUF, two-way)"]
+        C3["Skill 3: Collaboration<br/>(Shared effort & credit)"]
+        C4["Skill 4: Interpersonal Empathy<br/>(Relationship trust)"]
+    end
+
+    subgraph P3["Pillar 3: Personal Poise"]
+        direction TB
+        C6["Skill 6: Emotional Self-Control<br/>(Equanimity under pressure)"]
+    end
+
+    P1 --- P2 --- P3
 ```
 
 ### Competency Breakdown & Monthly Behavioral Architecture

@@ -46,22 +46,23 @@ The 14-week sequence begins with financial foundations and financial statement a
 
 ## 🗺️ 14-Week Map of Content (MOC)
 
-|    Week     | Module / Thematic Pillar      | Topic & Core Focus                                                 | Note Hub                        |
-| :---------: | :---------------------------- | :----------------------------------------------------------------- | :------------------------------ |
-| **Week 01** | Financial Foundations         | **Financial Management Function & Objectives**                     | _Scheduled (Pending Ingestion)_ |
-| **Week 02** | Financial Foundations         | **Financial Statement Analysis**                                   | _Scheduled (Pending Ingestion)_ |
-| **Week 03** | Financial Foundations         | **Financial Statement Projections**                                | _Scheduled (Pending Ingestion)_ |
-| **Week 04** | Cost & Managerial Accounting  | **Management Accounting Fundamentals**                             | _Scheduled (Pending Ingestion)_ |
-| **Week 05** | Cost & Managerial Accounting  | **Cost Analysis & Activity-Based Costing (ABC)**                   | _Scheduled (Pending Ingestion)_ |
-| **Week 06** | Time Value of Money           | **Time Value of Money (Part 1: Compounding & Annuities)**          | _Scheduled (Pending Ingestion)_ |
-| **Week 07** | Time Value of Money           | **Time Value of Money (Part 2: Bond & Stock Valuation)**           | _Scheduled (Pending Ingestion)_ |
-| **Week 08** | Corporate Financial Decisions | **Capital Budgeting (Part 1: Decision Criteria & Cash Flows)**     | _Scheduled (Pending Ingestion)_ |
-| **Week 09** | Corporate Financial Decisions | **Capital Budgeting (Part 2: Risk & Real Options)**                | _Scheduled (Pending Ingestion)_ |
-| **Week 10** | Corporate Financial Decisions | **Pay-Out Policy & Capital Return Architecture**                   | _Scheduled (Pending Ingestion)_ |
-| **Week 11** | Corporate Financial Decisions | **Financing Decisions & Financial Environment**                    | _Scheduled (Pending Ingestion)_ |
-| **Week 12** | Corporate Financial Decisions | **Working Capital Management & Liquidity Strategy**                | _Scheduled (Pending Ingestion)_ |
-| **Week 13** | Financial Risk Management     | **Definition of Risk, Risk-Return Relationship & Risk Governance** | _Scheduled (Pending Ingestion)_ |
-| **Week 14** | Ethics & Synthesis            | **Group Project Presentations & Strategic Financial Ethics**       | _Scheduled (Pending Ingestion)_ |
+|     Week     | Module / Thematic Pillar      | Topic & Core Focus                                                    | Note Hub                                                                                      |
+| :----------: | :---------------------------- | :-------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------- |
+| **Week 01**  | Financial Foundations         | **Financial Management Function & Objectives**                        | **Ingested** ([[courses/mk2-financial-management-strategy/week-01/index\|Week 01 Hub]])       |
+| **Week 02**  | Financial Foundations         | **Financial Statement Analysis**                                      | **Ingested** ([[courses/mk2-financial-management-strategy/week-02/index\|Week 02 Hub]])       |
+| **Week 03**  | Financial Foundations         | **Financial Statement Projections**                                   | **Ingested** ([[courses/mk2-financial-management-strategy/week-03/index\|Week 03 Hub]])       |
+| **Week 04**  | Cost & Managerial Accounting  | **Management Accounting Fundamentals**                                | **Ingested** ([[courses/mk2-financial-management-strategy/week-04/index\|Week 04 Hub]])       |
+| **Week 05**  | Cost & Managerial Accounting  | **Cost Analysis & Activity-Based Costing (ABC)**                      | **Ingested** ([[courses/mk2-financial-management-strategy/week-05/index\|Week 05 Hub]])       |
+| **Week 06**  | Time Value of Money           | **Time Value of Money (Part 1: Compounding & Annuities)**             | **Ingested** ([[courses/mk2-financial-management-strategy/week-06/index\|Week 06 Hub]])       |
+| **Week 07**  | Time Value of Money           | **Time Value of Money (Part 2: Bond & Stock Valuation)**              | **Ingested** ([[courses/mk2-financial-management-strategy/week-07/index\|Week 07 Hub]])       |
+| **Week 08**  | Corporate Financial Decisions | **Risk, Return & The Cost of Capital Architecture (RR & CoC)**        | **Ingested** ([[courses/mk2-financial-management-strategy/week-08/index\|Week 08 Hub]])       |
+| **Mid-Term** | Curricular Synthesis          | **MK02 Comprehensive Take-Home Examination Dossier**                  | **Ingested** ([[courses/mk2-financial-management-strategy/mid/index\|Mid-Term Exam Dossier]]) |
+| **Week 09**  | Corporate Financial Decisions | **Capital Budgeting Techniques & Incremental Cash Flow Architecture** | **Ingested** ([[courses/mk2-financial-management-strategy/week-09/index\|Week 09 Hub]])       |
+| **Week 10**  | Corporate Financial Decisions | **Pay-Out Policy & Capital Return Architecture**                      | _Scheduled (Pending Ingestion)_                                                               |
+| **Week 11**  | Corporate Financial Decisions | **Financing Decisions & Financial Environment**                       | _Scheduled (Pending Ingestion)_                                                               |
+| **Week 12**  | Corporate Financial Decisions | **Working Capital Management & Liquidity Strategy**                   | _Scheduled (Pending Ingestion)_                                                               |
+| **Week 13**  | Financial Risk Management     | **Definition of Risk, Risk-Return Relationship & Risk Governance**    | _Scheduled (Pending Ingestion)_                                                               |
+| **Week 14**  | Ethics & Synthesis            | **Group Project Presentations & Strategic Financial Ethics**          | _Scheduled (Pending Ingestion)_                                                               |
 
 ---
 

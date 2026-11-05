@@ -1,5 +1,6 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import { isCoursePage } from "./quartz/components/CourseSwitcher"
 
 const explorerSortFn = (a: any, b: any) => {
   // Prioritize program/, courses/, and rabuan/ at the root level of the explorer tree
@@ -68,7 +69,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.CourseSwitcher(),
     Component.ConditionalRender({
       component: Component.Breadcrumbs({ showCurrentPage: false }),
-      condition: (page) => page.fileData.slug !== "index",
+      condition: (page) => page.fileData.slug !== "index" && !isCoursePage(page.fileData.slug),
     }),
     Component.ArticleTitle(),
     Component.ContentMeta(),
@@ -95,7 +96,10 @@ export const defaultContentPageLayout: PageLayout = {
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [
     Component.CourseSwitcher(),
-    Component.Breadcrumbs({ showCurrentPage: false }),
+    Component.ConditionalRender({
+      component: Component.Breadcrumbs({ showCurrentPage: false }),
+      condition: (page) => page.fileData.slug !== "index" && !isCoursePage(page.fileData.slug),
+    }),
     Component.ArticleTitle(),
     Component.ContentMeta(),
   ],

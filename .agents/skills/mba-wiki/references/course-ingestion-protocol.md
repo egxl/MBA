@@ -4,26 +4,56 @@ This protocol outlines the streamlined workflow for ingesting raw course materia
 
 ---
 
+## 3-Tier Architecture Principles & Epistemic Truth Hierarchy
+
+1. **`inbox/` (Drop Zone)**: Staging zone for un-ingested files. The user dumps raw files freely here.
+2. **`content/` (Published Knowledge Base)**: Clean, published Markdown (`.md`) rendered by Quartz and tracked in git.
+3. **`archive/` (Processed Raw Storage)**: Cold storage for original binaries (`archive/courses/mkX/week-YY/` or `archive/rabuan/`). Ignored by git.
+
+### The Epistemic Truth Hierarchy (Conflict Resolution Mandate)
+
+When newly ingested materials conflict with existing portal content, resolve collisions using the 4-tier authority hierarchy:
+
+- **Tier 1: Ground Truth (Primary Authority)**: Authentic SBM ITB lecturer slides, official case studies, syllabus documents, official rubrics, and plenary recordings.
+- **Tier 2: Syndicate & Cohort Working Evidence**: Group submissions (`F9`), maintainer debriefs, and professor verbal classroom debriefs.
+- **Tier 3: Published Knowledge Portal**: Ingested `content/` pages rendered by Quartz.
+- **Tier 0: Provisional Scaffolding (Zero Authority)**: Tentative syllabus guesses, unverified AI assertions, or historical placeholder files.
+
+> [!IMPORTANT]
+> **The Golden Law of Epistemic Ingestion**:
+> Primary Evidence (Tier 1) always supersedes and invalidates Tier 0 and Tier 3. When authentic materials arrive in `inbox/`, existing placeholder text, incorrect topic titles, fabricated numbers, or ungrounded frameworks must be overwritten or purged.
+
+> [!IMPORTANT]
+> **Strict Inbox Scope Isolation**:
+> When an ingestion is triggered from `inbox/`, the agent inspects **only** the files currently sitting in `inbox/`. It never scans, traverses, or re-reads `archive/courses/` unless the user explicitly requests a historical re-audit.
+
+---
+
 ## Execution Workflow
 
-### Phase 1: Automated Intake, Extraction & Safety Scan (`npm run raw:prep`)
+### Phase 1: Automated Inbox Intake & Extraction (`scripts/prep-raw.mjs`)
 
-1. Run `npm run raw:prep` from the repository root.
-2. What this does automatically:
-   - **Normalizes folder names**: Converts `raw/courses/mk3/Week 1` $\rightarrow$ `raw/courses/mk3/week-01`.
-   - **Extracts Office binaries**: Unpacks `.docx` (lecture notes, group submissions) and `.xlsx` spreadsheets into `raw/courses/mkX/week-YY/.extracted/<filename>.txt` so you can read them directly with `read_file`.
-   - **Step 0 Safety Scan**: Scans all `.pdf`, `.txt`, and `.md` files for hidden prompt-injection / steganographic anomalies and writes `.extracted/intake-manifest.json`.
-3. Inspect the contents of `raw/courses/mkX/week-YY/` and its `.extracted/` folder:
-   - Primary lecture slides (`.pdf`, `.pptx`) and optional `handbook-draft.md` (if present).
-   - Academic readings (`.pdf`) and enterprise case studies (`.pdf`).
-   - Assignment prompts and student solutions (`.pdf`, `.docx` $\rightarrow$ `.extracted/*.txt`).
-   - Lecturer notes (`Catatan*.docx` $\rightarrow$ `.extracted/*.txt`), audio (`.m4a`), video transcripts (`.txt`), and cloud links (`drive_links_to_be_inserted.txt`).
+1. User prompts: `/mba-wiki ingest this to mkX week YY` (e.g. `mk3 week 1` or `rabuan`).
+2. Run `node ./scripts/prep-raw.mjs --target "mkX week YY"`.
+3. What this does automatically:
+   - Moves files from `inbox/` into `archive/courses/mkX/week-YY/` (or `archive/rabuan/`).
+   - Extracts plain text from `.docx` and `.xlsx` into `archive/courses/mkX/week-YY/.extracted/<filename>.txt`.
+   - Runs Step 0 safety scan on `.pdf`, `.txt`, and `.md` files.
+   - Audits target `content/courses/mkX/week-YY/` for existing files and collision status.
+4. The agent reads **only the files that were moved from `inbox/`**.
+
+### Phase 1b: Pre-Ingestion Target Reconnaissance & Placeholder Purge
+
+Before authoring new files, inspect `content/courses/mkX/week-YY/` and `content/courses/mkX-.../index.md`:
+1. **Catalog Existing Satellites**: Check if satellite files already exist from an earlier scaffold or placeholder era.
+2. **Purge Obsolete / Hallucinated Satellites**: If an existing file represents a fabricated case or obsolete stub not supported by the authentic slides (e.g., `case-harvard-walmart.md`), delete the file immediately.
+3. **Reconcile MOC Syllabus Topic**: Check the tentative topic title in `content/courses/mkX-.../index.md`. If the authentic slide deck specifies a different topic name or thematic pillar, update the syllabus row to match authentic reality.
 
 ---
 
 ### Phase 2: Author Cohort-Ready Satellites (Pre-Class vs. Post-Class Mode)
 
-Because this portal serves the **entire P3MD MBA cohort**, author dedicated satellites before drafting the master lecture hub, observing the **Cohort Attribution & Spoiler Rules**:
+Author dedicated satellites before drafting the master lecture hub, observing the **Cohort Attribution & Spoiler Rules**:
 
 #### 1. Academic Readings (`reading-[slug].md`)
 - Extract all named corporate crucibles, empirical statistics, diagnostic worksheets, and comparative tables following the [Depth & Academic Rigor Standard](./depth-and-rigor-standard.md).
@@ -35,12 +65,12 @@ Because this portal serves the **entire P3MD MBA cohort**, author dedicated sate
 Choose the appropriate mode based on deadline status:
 - **Mode A: Pre-Class Mode (Before Deadline — Spoiler-Free Cohort Brief)**
   - Map the official assignment instructions, case timeline, exhibit skim map, and slide-to-question connections.
-  - Explicitly remind readers that the brief is a navigation map (*"bukan jawaban"*) and **do not** state a final recommended option or publish completed group answers.
+  - Remind readers that the brief is a navigation map (*"bukan jawaban"*) and **do not** state a final recommended option or publish completed group answers.
 - **Mode B: Post-Class / Archive Mode (After Deadline — Model Analysis & Debrief)**
   - Present the official diagnostic questions followed by a rigorous, cohort-neutral **Reference Solution & Strategic Analysis**, mathematical walkthroughs, and classroom cold-call defense.
   - **Strict Attribution Rule**:
     - Credit group submissions to **`F9 (Class F / Syndicate 9)`** (or **`F9 (Class F / Syndicate 9) & the Portal Maintainer`** if combined with personal notes).
-    - Credit individual submissions solely to **`the Portal Maintainer`**—**never publish the maintainer's personal name** and never compare raw internal file drafts (e.g. "Draft v1 vs Humanized v2") on the public page.
+    - Credit individual submissions solely to **`the Portal Maintainer`**—**never publish the maintainer's personal name** and never compare raw internal file drafts on the public page.
 
 ---
 
@@ -48,39 +78,48 @@ Choose the appropriate mode based on deadline status:
 
 Create `content/courses/mkX/week-YY/index.md` synthesizing the entire week into an exhaustive, readable modular chapter:
 
-- **One-Pass Completeness (No Warning Banners)**: Whether `handbook-draft.md` exists in `raw/` or you are expanding directly from raw slides + textbook + `Catatan`, always produce a finished, authoritative chapter. Never insert yellow "Handbook Expansion Pending" banners.
-- **Modular Topic Sections**: Systematically expand every slide topic, weaving in textbook foundations (Kotler, Chase, etc.), lecturer insights, and empirical case findings.
-- **Formulas & Visual Architecture**: Embed $\LaTeX$ formulations, comparative tables, and Mermaid process flowcharts (following the Mermaid safety rules: quoted node labels, no numbered lists inside nodes).
-- **Cross-Functional & BUMN Crucible**: Real-world friction points, Indonesian enterprise dynamics, channel economics, and regulatory realities.
-- **📚 Required Readings, Cases & Satellites Table**: Overview table linking to every reading, case, and assignment satellite authored in Phase 2.
-- **📂 Primary Source Media**: Table linking to official Google Drive streams/downloads and raw staging paths.
-- **🔗 Knowledge Graph & Curriculum Bridges**: Wikilinks to concepts, entities, next module, and course overview.
+- **One-Pass Completeness (No Warning Banners)**: Compile a complete, polished chapter in one pass.
+- **Full Rewrite Over Placeholders**: Completely re-author `index.md` from primary evidence. Never blend unverified claims from provisional stubs.
+- **Preserve Specificity**: Include concrete numbers, names, framework steps, formulas, and diagrams.
+- **Cross-Curricular Alignment**: Highlight intersections with other MBA modules (e.g. MK1 Leadership, MK3 Marketing, MK4 Operations).
 
 ---
 
-### Phase 4: Selective Concept & Entity Extraction (Max 1–2 Per Week)
+### Phase 4: Concept Governance & Semantic Lattice Linking (The 3 Pillars)
 
-To prevent knowledge-graph sprawl:
-
-1. **Concept Qualification Gate**: Create or update at most **1 to 2 foundational concepts** per week in `content/concepts/[slug].md`. Only extract major, reusable cross-curricular frameworks or quantitative business metrics.
-2. **Entity Gate**: Create or update `content/entities/[slug].md` **only** for primary case companies, lead course faculty, or foundational theorists that recur across the curriculum.
-3. **Automated Hub Synchronization**:
-   Run:
-   ```powershell
+1. **Apply the Qualitative 3-Criteria Granularity Gate**:
+   Create a standalone page in `content/concepts/<slug>.md` only if the framework satisfies:
+   - *Cross-Context Reusability*: Applicable across multiple industries, cases, or courses.
+   - *Mechanism Depth*: Contains an explicit mathematical formula, multi-axis matrix, structural diagram, or trade-off analysis capable of sustaining a rich $\ge 45$-line analytical note. Never create thin dictionary stubs.
+   - *Multi-Disciplinary Compounding*: Bridges $\ge 2$ sessions, cases, or courses.
+2. **Master Concept Umbrellas & Section Anchors**:
+   Do not split sub-components of a framework into separate files. House sub-terms (e.g., *Adult Ego State*, *5-Stage Extended DuPont*) inside the master concept file and link to them using `#heading-anchors` (`[[concepts/slug#section|Display Text]]`).
+3. **Compound Existing Concepts & Weave Inline Links**:
+   - Before creating new concepts, check `content/concepts/index.md` to see if an existing concept applies. If so, update the existing concept note to add the new course lens/case link.
+   - Weave inline wikilinks (`[[concepts/<slug>|...]]` or `[[concepts/<slug>#anchor|...]]`) throughout weekly lecture notes, cases, readings, and problem sets at first mention in prose and diagrams (minimum 3 concept links per weekly hub).
+4. **Entity Gate & Epistemic Separation on Companies**:
+   - Extract an entity into `content/entities/<slug>.md` if it represents a recurring company, institution, or theorist.
+   - Keep `## 👤 Enterprise Profile` strictly for timeless, verified real-world facts.
+   - Move case-specific financial exhibits, unit economics, and student pro-forma projections into `## 📋 Curriculum Case Snapshots (Case-Basis Data)` under a `[!NOTE] Case-Basis Epistemic Notice` citing the source case.
+   - If ingesting an entity for a purely fictional/composite case company, set `category: "fictional-enterprise"` and include the `[!IMPORTANT] Fictional / Composite Pedagogical Enterprise` callout.
+5. **Purge / Reconcile Placeholder Concepts & Entities**:
+   - If prior notes introduced concepts or entities that were fabricated or based on placeholder data, reconcile them with authentic data or delete them.
+   - If deleting an entity or concept, grep across `content/` to remove or repoint any incoming wikilinks.
+6. **Run Auto-Sync**:
+   ```bash
    npm run wiki:sync
    ```
-   This automatically registers any new concepts or entities in `content/concepts/index.md` and `content/entities/index.md` and verifies satellite links. Also place new concepts under the appropriate thematic pillar in `content/concepts/index.md` if needed.
+   This automatically registers new concepts/entities in `content/concepts/index.md` and `content/entities/index.md`.
 
 ---
 
-### Phase 5: Course MOC Status Flip & Build Verification
+### Phase 5: Verification & Quality Gate
 
-1. Open the course overview page `content/courses/mkX-[course-name]/index.md` and flip the current week's row from `_Scheduled (Pending Ingestion)_` to:
-   `| **Week YY** | Module Name | [[courses/mkX-slug/week-YY/index\|Topic & Core Focus]] | **Ingested** |`
-2. Execute the validation suite:
-   ```powershell
+1. Flip the syllabus row in `content/courses/mkX-.../index.md` to `**Ingested**` with active Quartz wikilink.
+2. Run automated validation:
+   ```bash
+   node ./scripts/audit-pedagogy.mjs --target "mkX week YY"
    npm run check
    npm test
    npx quartz build
    ```
-   Ensure 0 duplicate `<h1>` titles, 0 Mermaid errors, 0 unregistered wiki files, and 0 broken links.

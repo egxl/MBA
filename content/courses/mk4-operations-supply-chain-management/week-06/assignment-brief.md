@@ -256,3 +256,112 @@ The case leaves these open on purpose. Each has two sides; neither is marked rig
 - One representative submits on Google Classroom; everyone else clicks "Mark as done"
 
 ---
+
+## 🏛️ Post-Class Model Analysis & Debrief
+
+> [!NOTE] Cohort Attribution & Academic Model
+> The analytical walkthrough, capacity mathematics, and strategic recommendations below represent the post-deadline model solution developed for the cohort by **`F9 (Class F / Syndicate 9)`**.
+
+### 1. Resource Capacities & Bottleneck Deconstruction
+
+Under Exhibit 4, unit cycle times and resource counts evaluate to the following baseline throughput rates:
+
+```mermaid
+flowchart LR
+    Desks["<b>2 Registration Desks</b><br/>Cycle: 90 sec/person<br/><b>80 reg/hour</b><br/><i>(The Upstream Bottleneck)</i>"] --> Gates["<b>4 Biometric Gates</b><br/>Cycle: 1 sec/person<br/><b>14,400 pass/hour</b><br/><i>(Massive Overcapacity)</i>"]
+    Manual["<b>3 Manual Lanes</b><br/>Cycle: 20 sec/person<br/><b>540 pass/hour</b>"] --> Platform["Train Platforms"]
+    Gates --> Platform
+```
+
+$$
+\begin{aligned}
+\mathbf{\text{Biometric Gate Capacity:}} &\quad 4\text{ gates} \times \left(\frac{3,600\text{ sec}}{1\text{ sec}}\right) = \mathbf{14,400\text{ passengers/hour}} \\
+\mathbf{\text{Manual Lane Capacity:}} &\quad 3\text{ lanes} \times \left(\frac{3,600\text{ sec}}{20\text{ sec}}\right) = \mathbf{540\text{ passengers/hour}} \\
+\mathbf{\text{Registration Desk Capacity:}} &\quad 2\text{ desks} \times \left(\frac{3,600\text{ sec}}{90\text{ sec}}\right) = \mathbf{80\text{ registrations/hour}}
+\end{aligned}
+$$
+
+### 2. Peak-Hour Effective Capacity Under Routing Scenarios
+
+#### Scenario 1: 15% Unregistered at Peak Hour
+
+If $15\%$ of arriving passengers are unregistered and are forced to register before entering the biometric gate:
+
+$$\mathbf{\text{System Capacity Ceiling} = \frac{\text{Registration Desk Capacity}}{\text{Unregistered Share}} = \frac{80\text{ reg/hour}}{0.15} = \mathbf{533.3\text{ passengers/hour}}}$$
+
+- **The Paradox**: Despite installing gates capable of processing $14,400\text{ pass/hour}$, the entire station throughput is capped at **$533\text{ passengers/hour}$** by two registration desks.
+
+#### Scenario 2: 5% Unregistered at Peak Hour
+
+If prior digital enrollment reduces the on-site unregistered share to $5\%$:
+
+$$\mathbf{\text{System Capacity Ceiling} = \frac{80\text{ reg/hour}}{0.05} = \mathbf{1,600\text{ passengers/hour}}}$$
+
+- **The Strategic Finding**: Reducing on-site registration friction from $15\%$ to $5\%$ **triples system capacity ($533 \to 1,600\text{ pass/hr}$)** without purchasing or installing a single additional biometric turnstile.
+
+---
+
+### 3. Service Blueprint Diagnosis: Where Failure Originates vs. Where It Is Felt
+
+In the 5-layer Service Blueprint:
+
+1. **Customer Actions**: Walking, queuing, scanning face, tapping out.
+2. **Onstage Contact**: Gate officer assistance, registration officer greeting.
+3. **Backstage Contact**: None (automated system).
+4. **Support Processes**: e-KTP card reader, fingerprint matching, biometric template database queries.
+5. **Physical Evidence**: Biometric camera, ticket QR code, station concourse signage.
+
+> [!CAUTION] The Layer Mismatch
+> **The service breakdown originates in the Support Layer** (the e-KTP reader failing to read damaged chips or unreadable fingerprints), but **the pain is felt at the Line of Interaction** (the physical passenger queue backing up at the station concourse). Adding more gate turnstiles attempts to repair the layer where the pain appears rather than the layer where the fault originates.
+
+---
+
+### 4. Service-System Design Matrix Placement
+
+```mermaid
+flowchart LR
+    Bio["<b>Biometric Path</b><br/>• On-site technology<br/>• Low customer contact<br/>• High production efficiency<br/>• Standardized, procedural skill"]
+    Manual["<b>Manual Path</b><br/>• Face-to-face service<br/>• High customer contact<br/>• Lower efficiency<br/>• Diagnostic customer service skill"]
+    Bio <-->|Cannot Occupy Same Cell| Manual
+```
+
+Because the two paths occupy completely different positions on the Service-System Design Matrix, they require different frontline capabilities:
+
+- **Biometric Gate Staff**: System monitor; procedural exception handling; speed-focused.
+- **Manual Lane Staff**: High empathy; diagnostic ability; verifying damaged passports, student discounts, and elderly passengers.
+
+---
+
+### 5. F9 Recommended Strategy: The B + C + D Dominant Package
+
+**`F9 (Class F / Syndicate 9)`** concludes that Options B, C, and D are not mutually exclusive—they reinforce each other:
+
+1. **Option C (Fix Registration First)**: Move registration off the station platform through a **Poka-Yoke at booking**. A passenger cannot complete a ticket purchase without either (a) registering biometrics via smartphone facial scan, or (b) being automatically assigned an express manual barcode pass.
+2. **Option D (Permanent Dual Path with Dedicated SLA)**: For a state-owned enterprise (BUMN), the manual lane is not an embarrassing afterthought; it is a permanent equity safeguard. Establish a strict SLA: manual lane queue wait time must never exceed 3 minutes.
+3. **Option B (Phased Expansion Governed by Three Empirical Measures)**:
+   - _Measure 1_: Unregistered share at peak hour by station ($< 5\%$ target before gate installation).
+   - _Measure 2_: Waiting time at registration desk ($< 2\text{ minutes}$).
+   - _Measure 3_: Fallback failure rate from biometric face scan to manual verification ($< 1.0\%$).
+
+---
+
+### 6. Cold-Call Defense Script for the Executive Boardroom
+
+> **Professor Cold-Call**: _"Candidate, the Board is ready to approve spending billions to expand biometric gates to 60 stations next month. What is your opening argument?"_
+>
+> **Boardroom Defense Script**:
+> \*"Bapak Direktur Utama, the one-second gate speed is an engineering achievement, but as an operations metric, it is an illusion. Our system capacity is dictated by our slowest resource, not our fastest.
+>
+> Under peak-hour conditions with 15% unregistered passengers, our 14,400-passenger gates are throttled to a pathetic 533 passengers per hour by our two registration desks. If we expand gates to 60 stations without fixing registration, we will simply spend billions to build empty turnstiles while elderly and first-time travelers suffer in massive registration queues.
+>
+> We must adopt the B + C + D strategy: implement a ticketing poka-yoke to move registration off the station floor, guarantee our manual lanes as permanent equity channels with strict SLAs, and expand gates only to stations that empirically demonstrate an unregistered peak share below 5%."\*
+
+---
+
+## 🔗 Cross-References & Study Navigation
+
+- Lecture Notes: [[courses/mk4-operations-supply-chain-management/week-06/index|MK4 Week 06: Process Design & Little's Law]]
+- Case Analysis: [[courses/mk4-operations-supply-chain-management/week-06/case-kai-gambir-gate|KAI Gambir Gate Case Analysis]]
+- Diagnostic Exercises: [[courses/mk4-operations-supply-chain-management/week-06/diagnostic-questions|Diagnostic Problem Sets]]
+- Theoretical Frameworks: [[concepts/service-blueprinting|Service Blueprinting]] · [[concepts/littles-law|Little's Law]]
+- Enterprise Profile: [[entities/pt-kereta-api-indonesia|PT Kereta Api Indonesia (Persero)]]

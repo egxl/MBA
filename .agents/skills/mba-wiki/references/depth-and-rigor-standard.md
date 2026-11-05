@@ -68,6 +68,72 @@ When ingesting Harvard Business School, INSEAD, or SBM ITB case studies:
 
 ---
 
+---
+
+## 📐 Mermaid Architectural Layout Standard & Zero-ASCII Policy
+
+The P3MD MBA portal requires professional vector diagrams that utilize desktop reading space effectively and adapt gracefully to split views and mobile devices:
+
+1. **Zero-ASCII Policy**:
+   - **Never generate ASCII or Unicode box art** (`+---+`, `┌───┐`, `│   │`, `──►`) inside plain code blocks.
+   - All workflows, frameworks, timelines, and organizational hierarchies must be rendered as vector **Mermaid.js** diagrams (`flowchart LR`, `graph LR`).
+   - Pure data matrices must be authored as standard Markdown tables (`| Col 1 | Col 2 |`).
+
+2. **Horizontal-First Architecture (`flowchart LR`)**:
+   - Multi-phase processes, sequential lifespans, and progression pipelines must flow horizontally from left to right (`flowchart LR`).
+   - Do not stack linear sequences vertically (`flowchart TD` or `flowchart BT`).
+
+3. **Balanced Multi-Column Subgraphs**:
+   - When a framework has distinct phases (e.g. Foundation $\rightarrow$ Expansion $\rightarrow$ Stewardship), connect the subgraphs horizontally:
+     ```mermaid
+     flowchart LR
+         subgraph S1["Phase 1: Foundation"]
+             direction TB
+             A["Item 1"] --> B["Item 2"]
+         end
+         subgraph S2["Phase 2: Expansion"]
+             direction TB
+             C["Item 3"] --> D["Item 4"]
+         end
+         S1 --> S2
+     ```
+   - This creates compact, side-by-side columns (~260px tall) instead of 1,000px vertical towers.
+
+4. **Linear Depth Cap in Vertical Trees**:
+   - `flowchart TD` is permitted *only* for branching trees where each level expands horizontally ($\ge 2$ child nodes).
+   - Single-column linear chains exceeding 3 nodes in `TD` or `BT` direction are forbidden and blocked by CI.
+
+5. **2D Matrix Grids for Parallel Item Sets**:
+   - Parallel competency sets, pillars, or virtues must be laid out in 2-column or 3-column networks or matrices, never as 1D linear poles (`C1 --- C2 --- C3 ...`).
+
+---
+
+## 🧑‍🏫 The First-Principles Accessibility Standard (Zero-Prerequisite Pedagogy)
+
+> [!IMPORTANT] The Zero-Prerequisite Guarantee
+> The purpose of the P3MD MBA Knowledge Base is to make every subject understandable to any cohort peer—including someone who has never taken accounting, calculus, statistics, corporate finance, or psychology.
+> Rigor does **not** mean dumping naked formulas or academic jargon. Rigor means explaining the underlying economic, operational, or behavioral intuition so clearly that the formula feels like common sense.
+
+### 1. The Anti-Formula-Dump Rule
+- **Never stack display math blocks**: Stacking consecutive `$$...$$` blocks without explanatory prose in between is strictly forbidden and flagged by CI (`npm run wiki:pedagogy`).
+- **Maximum 1 standalone formula block** (or tightly coupled pair) before providing explanatory text.
+
+### 2. The 4-Layer Pedagogical Anatomy for Quantitative Models & Formulas
+Whenever a mathematical formula appears (e.g. TVM, DuPont, CAPM, WACC, CVP, Kingman VUT, Little's Law, CPM/PERT):
+1. **Plain-English Intuition ("The Kitchen-Table Analogy")**: Explain what real-world problem or common-sense truth this formula captures *before* writing the equation.
+2. **Prerequisite & Jargon Decoder**: Define every variable and acronym on the spot (e.g., explain what *EBIT* actually means in cash terms, what *variance* measures, what *discount rate* reflects) without assuming prior courses.
+3. **Structural Anatomy of the Mechanism**: Explain why the formula is built the way it is:
+   - *Why is this term in the numerator?* (Because higher values directly increase the outcome).
+   - *Why is this term in the denominator?* (Because it acts as a drag, friction, penalty, or scaling base).
+4. **10-Second Mental-Math Micro-Walkthrough**: Provide a toy numerical calculation with simple round numbers (e.g., "$100 fixed costs, $20 margin = 5 units to break even") so the reader builds instant quantitative intuition.
+
+### 3. The Prerequisite Bridge Rule for Non-Mathematical Frameworks
+When presenting qualitative frameworks (e.g., Big Five psychometrics, Transactional Analysis ego states, SCOR, 5C Environmental Analysis, French & Raven power bases):
+- Never drop unexplained technical terms (e.g., *p-value < 0.001*, *test-retest reliability*, *cross-subsidization*, *bimodal distribution*, *credit default swap*).
+- Provide a brief 1-sentence lay explanation right next to the wikilink or terminology.
+
+---
+
 ## 📋 The "No Lost Signal" Ingestion Rubric
 
 Before declaring an ingestion complete, verify against this checklist:
@@ -76,6 +142,10 @@ Before declaring an ingestion complete, verify against this checklist:
 - [ ] **Are all diagnostic exercises fully executable?** (Can a classmate complete the worksheet using only this markdown note?)
 - [ ] **Are all comparative exhibits reconstructed?** (Are tables from the cases/readings present in Markdown format?)
 - [ ] **Are empirical statistics cited with exact figures?** (Percentages, currency amounts, sample sizes, capacities).
-- [ ] **Are mathematical formulas written in KaTeX?** ($\LaTeX$ math formatting for all formulas).
-- [ ] **Are structural relationships visualized with Mermaid?** (Clean diagrams passing `npm run mermaid:check`).
+- [ ] **Are mathematical formulas written in KaTeX and contextualized?** ($\LaTeX$ math formatting with zero unannotated formula dumps, passing `npm run wiki:pedagogy`).
+- [ ] **Are all prerequisite concepts decoded for beginners?** (Intuition first, jargon decoded on the spot, structural mechanics explained, and micro-examples provided).
+- [ ] **Are structural relationships visualized with Mermaid?** (Horizontal-first, 0 ASCII art, passing `npm run mermaid:check`).
+- [ ] **Are core concepts woven inline?** (First prominent mention in prose and diagrams linked via `[[concepts/<slug>|...]]` or `[[concepts/<slug>#anchor|...]]`; minimum 3 concept links per weekly hub).
+- [ ] **Do newly created concepts meet the depth threshold?** ($\ge 45$ lines, $\ge 3$ analytical sections, zero shallow dictionary stubs).
+- [ ] **Is epistemic data provenance preserved on enterprise entities?** (Timeless real-world identity separated from `Curriculum Case Snapshots`, with `[!NOTE] Case-Basis Epistemic Notice` citing the case, or `category: fictional-enterprise` badging applied).
 - [ ] **Is cohort attribution clean and anonymous for personal files?** (`F9 (Class F / Syndicate 9)` for group work; `the Portal Maintainer` for personal work).

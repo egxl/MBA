@@ -23,34 +23,27 @@ The **Service-System Design Matrix**, formulated by **Richard B. Chase** (Harvar
 
 The fundamental premise of the matrix is that **the customer's physical or virtual presence inside the production system creates operational friction**: as customer contact increases, customer-introduced variability rises, process control becomes harder, and process efficiency inevitably declines.
 
-```
-       HIGH SALES OPPORTUNITY  ▲
-                               │
-               [Reactive]      │                                      Face-to-Face
-             (High Contact)    │                                      Customized
-                               │                                     ┌─────────────┐
-                               │                     Face-to-Face    │ Health Care │
-                               │                      Loose Specs    │ Consulting  │
-                               │                     ┌─────────────┐ └─────────────┘
-                               │                     │ Full-Service│
-               [Permeable]     │      Phone Contact  │ Restaurant  │
-             (Medium Contact)  │     ┌─────────────┐ └─────────────┘
-                               │     │ Call Center │
-                               │     └─────────────┘
-                               │  Internet &
-                               │  On-Site Tech
-                               │ ┌─────────────┐
-               [Buffered]      │ │ ATM / Kiosk │
-              (Low Contact)    │ └─────────────┘
-                               │ Mail Contact
-                               │┌─────────────┐
-                               ││ Billing/Post│
-                               │└─────────────┘
-                               └─────────────────────────────────────────────────────►
-                                LOW                                               HIGH
-                                           DEGREE OF CUSTOMER CONTACT
-                                HIGH ◄──────────────────────────────────────────── LOW
-                                           PROCESS OPERATING EFFICIENCY
+```mermaid
+flowchart LR
+    subgraph Buffered ["Tier 1: Buffered Core (Low Contact)"]
+        direction TB
+        B1["<b>Mail Contact</b><br/>Billing, Postal Services"]
+        B2["<b>Internet & On-Site Tech</b><br/>ATM, Automated Kiosk, FRBG"]
+    end
+
+    subgraph Permeable ["Tier 2: Permeable System (Medium Contact)"]
+        direction TB
+        P1["<b>Phone Contact</b><br/>Call Center, Helpdesk"]
+        P2["<b>Face-to-Face Tight Specs</b><br/>Fast Food, Standard Bank Teller"]
+    end
+
+    subgraph Reactive ["Tier 3: Reactive System (High Contact)"]
+        direction TB
+        R1["<b>Face-to-Face Loose Specs</b><br/>Full-Service Dining, CS Desk"]
+        R2["<b>Face-to-Face Customized</b><br/>Executive Consulting, Healthcare"]
+    end
+
+    Buffered -->|"Increasing Contact & Sales Opportunity<br/>Decreasing Operating Efficiency"| Permeable --> Reactive
 ```
 
 ### The Six Service Encounter Configurations

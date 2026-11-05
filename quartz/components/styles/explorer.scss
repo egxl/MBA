@@ -37,13 +37,26 @@
   }
 
   @media all and ($mobile) {
-    order: -1;
-    height: initial;
-    overflow: hidden;
-    flex-shrink: 0;
-    align-self: flex-start;
-    margin-top: auto;
-    margin-bottom: auto;
+    .navbar & {
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      align-self: center;
+      overflow: visible;
+      min-height: unset;
+      height: auto;
+      margin: 0;
+    }
+
+    &:not(.navbar .explorer):not(.mobile-only) {
+      order: -1;
+      height: initial;
+      overflow: hidden;
+      flex-shrink: 0;
+      align-self: flex-start;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
   }
 
   button.mobile-explorer {
@@ -67,6 +80,12 @@
   &.desktop-only {
     @media all and not ($mobile) {
       display: flex;
+    }
+  }
+
+  &.mobile-only {
+    @media all and not ($mobile) {
+      display: none !important;
     }
   }
 

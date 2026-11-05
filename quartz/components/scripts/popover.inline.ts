@@ -96,6 +96,10 @@ async function mouseEnterHandler(
         const targetID = `popover-internal-${el.id}`
         el.id = targetID
       })
+      // Remove interactive or navigation components not suitable for hover previews
+      html
+        .querySelectorAll(".course-switcher, .tts-track-selector-wrapper, .breadcrumb-container")
+        .forEach((el) => el.remove())
       const elts = [...html.getElementsByClassName("popover-hint")]
       if (elts.length === 0) return
 

@@ -72,14 +72,11 @@ When Northeastern consumers ranked detergent attributes in Exhibit 5, price was 
 
 Prior to 1997, Unilever operated three laundry detergent brands in Brazil:
 
-```
-+--------------------------------------------------------------------------+
-|                     UNILEVER BRAZIL BRAND PORTFOLIO                      |
-+--------------------------------------------------------------------------+
-  [OMO]       --> Premium Tier (Price Index: 100) | "Superior Stain Removal"
-  [MINERVA]   --> Mid-Tier Softness (Price Index: ~85) | "Softness & Fabric Care"
-  [CAMPEIRO]  --> Economy Budget (Price Index: ~70) | "Abrasive / Low Quality"
-```
+| Brand        | Tier              | Price Index | Core Positioning & Market Outcome                                                                         |
+| :----------- | :---------------- | :---------- | :-------------------------------------------------------------------------------------------------------- |
+| **OMO**      | Premium Tier      | 100         | _"Superior Stain Removal"_ – Market benchmark; aspirational but unaffordable for daily manual wash.       |
+| **MINERVA**  | Mid-Tier Softness | ~85         | _"Softness & Fabric Care"_ – Conditioning focus; failed because manual washers prioritized stain removal. |
+| **CAMPEIRO** | Economy Budget    | ~70         | _"Abrasive / Low Quality"_ – Cheap fillers; harsh on hands and produced inadequate lather in hard water.  |
 
 1. **Omo (Premium / "Aspirational"):** The undisputed market benchmark. Positioned on high performance, advanced biological enzymes, and immaculate whiteness. Priced at a premium that low-income consumers could only afford for special occasions.
 2. **Minerva (Mid-Tier / "Softness"):** Positioned around conditioning and softness. Failed to gain traction in the Northeast because manual washers viewed fabric softness as secondary to heavy-duty stain removal.

@@ -12,6 +12,7 @@ interface CustomEventMap {
   gridchange: CustomEvent<{ grid: "on" | "off" }>
   splitviewopen: CustomEvent<{ url: string }>
   splitviewclose: CustomEvent<{}>
+  splitviewloaded: CustomEvent<{ url: string; container?: HTMLElement }>
   sidebartoggle: CustomEvent<{ state: string }>
   navdropdownopen: CustomEvent<{}>
   navdropdownclose: CustomEvent<{ navigating: boolean }>

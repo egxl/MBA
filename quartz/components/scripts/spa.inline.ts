@@ -40,7 +40,8 @@ function notifyNav(url: FullSlug) {
   document.dispatchEvent(event)
 }
 
-const cleanupFns: Set<(...args: any[]) => void> = new Set()
+const cleanupFns: Set<(...args: any[]) => void> = (window as any)._cleanupFns || new Set()
+;(window as any)._cleanupFns = cleanupFns
 window.addCleanup = (fn) => cleanupFns.add(fn)
 
 function startLoading() {

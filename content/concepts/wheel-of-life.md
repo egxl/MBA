@@ -21,16 +21,29 @@ tags:
 Originally developed by **Paul J. Meyer** (founder of the Success Motivation Institute, Inc.) and adapted in executive leadership research by **Dr. Jennifer Nash (HBR 2020)**, the **Wheel of Life** is an analytical visual diagnostic designed to evaluate an individual's personal resource allocation and domain satisfaction.
 
 ```mermaid
-graph TD
-    Wheel["The Wheel of Life Diagnostic<br/>(Radial Spider Diagram: Coordinates 1 to 10)"]
-    Wheel --> D1["Wedge 1: Career / Professional Impact"]
-    Wheel --> D2["Wedge 2: Finances & Economic Security"]
-    Wheel --> D3["Wedge 3: Health & Physical Vitality"]
-    Wheel --> D4["Wedge 4: Family Dynamics"]
-    Wheel --> D5["Wedge 5: Relationships & Peer Network"]
-    Wheel --> D6["Wedge 6: Romance & Partnership"]
-    Wheel --> D7["Wedge 7: Spirituality & Inner Peace"]
-    Wheel --> D8["Wedge 8: Fun, Recreation & Growth"]
+flowchart LR
+    subgraph Inner ["Inner Mastery"]
+        direction TB
+        D1["Wedge 1: Career & Impact"]
+        D2["Wedge 2: Economic Security"]
+        D3["Wedge 3: Health & Vitality"]
+        D7["Wedge 7: Spirituality & Peace"]
+    end
+
+    subgraph Core ["Diagnostic Core"]
+        direction TB
+        Wheel["<b>The Wheel of Life</b><br/>Radial Spider Diagnostic<br/>(Scale 1 to 10)"]
+    end
+
+    subgraph Outer ["Relational & Growth"]
+        direction TB
+        D4["Wedge 4: Family Dynamics"]
+        D5["Wedge 5: Peer Network"]
+        D6["Wedge 6: Partnership"]
+        D8["Wedge 8: Recreation & Growth"]
+    end
+
+    Inner --> Core --> Outer
 ```
 
 ### The Eight Operational Wedges:

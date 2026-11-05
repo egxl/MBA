@@ -23,15 +23,9 @@ In corporate boardrooms and digital transformation task forces, leaders routinel
 
 We invest billions in sub-second optical scanners, mobile self-service apps, and robotic workstations. We celebrate triumphant dashboards showing that a single activity now executes in **one second flat**. Yet on the frontlines, customer queues swell, complaints on social media multiply, and throughput grinds to an inexplicable halt.
 
-```
-       [ THE LOCAL OPTIMIZATION FALLACY ]
-  Upstream Bottleneck           "Accelerated" Gate           Downstream Exit
- ┌───────────────────┐        ┌───────────────────┐        ┌─────────────────┐
- │ CS Desk / Enroll  │───────►│  Turnstile Camera │───────►│ Train Platform  │
- │   80 pass/hour    │        │  14,400 pass/hour │        │                 │
- └───────────────────┘        └───────────────────┘        └─────────────────┘
-           ▲                            ▲
-   THE SYSTEM CONSTRAINT       IRRELEVANT OVERCAPACITY
+```mermaid
+flowchart LR
+    A["<b>Upstream Bottleneck</b><br/>CS Desk / Enrollment<br/><b>80 pass/hour</b><br/><i>(The System Constraint)</i>"] --> B["<b>Accelerated Gate</b><br/>Turnstile Biometric Camera<br/><b>14,400 pass/hour</b><br/><i>(Irrelevant Overcapacity)</i>"] --> C["<b>Downstream Exit</b><br/>Train Platform"]
 ```
 
 | The Technology Dashboard Assumption                                                                                                                        | The Systemic Operational Reality                                                                                                                                                                                                        |
@@ -118,9 +112,9 @@ The **[[concepts/customer-order-decoupling-point|Customer Order Decoupling Point
 3. **Make-to-Order (MTO)**: Production begins from raw material inventory upon order receipt (e.g., Boeing commercial aircraft).
 4. **Engineer-to-Order (ETO)**: Engineering design and fabrication executed jointly with the client (e.g., Lockheed Martin satellites, civil infrastructure).
 
-```
-Supplier ────► Raw Materials ────► Work in Process ────► Finished Goods ────► Customer
-  [ETO]           [MTO]                 [ATO]                  [MTS]
+```mermaid
+flowchart LR
+    S["Supplier"] -->|"ETO"| RM["Raw Materials"] -->|"MTO"| WIP["Work in Process"] -->|"ATO"| FG["Finished Goods"] -->|"MTS"| C["Customer"]
 ```
 
 > [!NOTE] The Informational Decoupling Point in Service Operations
@@ -188,11 +182,9 @@ graph LR
 
 Developed by **[[entities/richard-b-chase|Richard B. Chase]]**, the **[[concepts/service-system-design-matrix|Service-System Design Matrix]]** demonstrates that the degree of customer contact dictates operating efficiency:
 
-```
-Efficiency High ◄───────────────────────────────────────────────► Efficiency Low
-[Buffered Core]                 [Permeable System]               [Reactive System]
-- Mail / Kiosk / Automated Gate - Phone / Face-to-Face Tight    - Face-to-Face Loose / Custom
-- Low contact, clerical/system  - Moderate contact, procedural   - High contact, diagnostic
+```mermaid
+flowchart LR
+    B["<b>Buffered Core</b><br/>High Efficiency • Low Contact<br/>Mail, Kiosk, Automated Gate"] --> P["<b>Permeable System</b><br/>Moderate Efficiency & Contact<br/>Phone, Face-to-Face Tight"] --> R["<b>Reactive System</b><br/>Low Efficiency • High Contact<br/>Face-to-Face Loose & Custom"]
 ```
 
 As customer contact increases:

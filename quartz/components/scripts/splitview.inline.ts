@@ -3,6 +3,7 @@ import { fetchCanonical } from "./util"
 import {
   clampSplitRatio,
   determineLinkInterception,
+  getSplitBadgeLabel,
   SplitHistoryManager,
 } from "./splitview.helpers"
 
@@ -113,9 +114,7 @@ async function loadConcept(url: URL, pushHistory = true) {
   const bodyEl = document.getElementById("split-pane-body")
   if (!bodyEl) return
 
-  const pathSegments = url.pathname.split("/").filter(Boolean)
-  const isEntity = pathSegments.includes("entities")
-  const typeLabel = isEntity ? "Entity" : "Concept"
+  const typeLabel = getSplitBadgeLabel(url)
 
   if (badgeEl) {
     badgeEl.textContent = typeLabel
@@ -173,6 +172,11 @@ async function loadConcept(url: URL, pushHistory = true) {
       }
     })
 
+    // Remove navigation / audio elements not suitable inside secondary split pane
+    doc
+      .querySelectorAll(".course-switcher, .tts-track-selector-wrapper, .breadcrumb-container")
+      .forEach((el) => el.remove())
+
     // Extract article content and header
     const extractedNodes: Node[] = []
     const pageHeader = doc.querySelector(".page-header")
@@ -203,6 +207,12 @@ async function loadConcept(url: URL, pushHistory = true) {
     }
 
     wireInteractiveElements(bodyEl)
+
+    document.dispatchEvent(
+      new CustomEvent("splitviewloaded", {
+        detail: { url: url.toString(), container: bodyEl },
+      }),
+    )
 
     if (pushHistory) {
       historyManager.push({
@@ -405,6 +415,31 @@ function handleGlobalClick(e: MouseEvent) {
   const splitPane = document.getElementById("split-pane")
   const isInsideSplit = Boolean(splitPane && splitPane.contains(link))
 
+  // Alt + primary click on any internal link opens in split view
+  if (
+    e.altKey &&
+    !e.ctrlKey &&
+    !e.metaKey &&
+    !e.shiftKey &&
+    e.button === 0 &&
+    window.innerWidth > 800
+  ) {
+    try {
+      const targetUrl = new URL(link.href, window.location.toString())
+      if (targetUrl.origin === window.location.origin) {
+        e.preventDefault()
+        e.stopPropagation()
+        e.stopImmediatePropagation()
+        if (isInsideSplit) {
+          loadConcept(targetUrl, true)
+        } else {
+          openConceptInSplitView(targetUrl)
+        }
+        return
+      }
+    } catch {}
+  }
+
   const decision = determineLinkInterception({
     targetHref: link.href,
     targetOrigin: new URL(link.href, window.location.toString()).origin,
@@ -506,6 +541,9 @@ window.addEventListener("resize", () => {
     closeSplitView()
   }
 })
+
+// Expose API for external components (e.g. context menu)
+;(window as any).openInSplitView = (url: URL) => openConceptInSplitView(url)
 
 // Initialize on initial script load
 if (document.readyState === "loading") {

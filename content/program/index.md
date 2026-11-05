@@ -30,48 +30,23 @@ $$\mathbf{LEARN \quad \boldsymbol{\cdot} \quad LEAD \quad \boldsymbol{\cdot} \qu
 
 ## 🏛️ Program Blueprints & Documentation
 
-| Document                                                                         | Focus & Key Insights                                                                                                                                      |
-| :------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[[program/learning-journey\|Learning Journey & 70-20-10 Model]]**              | The 5 transformation pillars, session allocation (868 experiential, 196 social, 112 formal), and cohort-to-individual scaling ($399 \to 8 \to 40 \to 1$). |
-| **[[program/action-learning-project\|Action Learning Project (ALP) Blueprint]]** | The Carpenter Analogy, 6 SMART-gated stages across 10 partner BUMNs, Milestone gates (M1–M3), BUMN Immersion, and Social Projects.                        |
-| **[[program/academic-calendar\|Academic & Synchronization Calendar]]**           | Master 16-week timeline aligning core courses, exams (Midterm M8, Final M14), CEO Guest Lectures, gamification, and ALP gates.                            |
-| **[[program/faculty-directory\|Faculty & Staff Directory]]**                     | Complete directory of SBM ITB Lead Faculty, co-lecturers, and Course Assistants (with direct contact channels) across all 6 core courses.                 |
-| **[[easter-egg\|Cohort Heraldry & Design System]]**                              | The official Soedirman Crest (_Lambang Korps_), heraldic symbolism (_Garuda, Star, Chevron, Laurels, Motto_), and digital UI system architecture.         |
+| Document                                                                                | Focus & Key Insights                                                                                                                                      |
+| :-------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[[program/learning-journey\|Learning Journey & 70-20-10 Model]]**                     | The 5 transformation pillars, session allocation (868 experiential, 196 social, 112 formal), and cohort-to-individual scaling ($399 \to 8 \to 40 \to 1$). |
+| **[[program/action-learning-project\|Action Learning Project (ALP) Blueprint]]**        | The Carpenter Analogy, 6 SMART-gated stages across 10 partner BUMNs, Milestone gates (M1–M3), BUMN Immersion, and Social Projects.                        |
+| **[[program/alp/business-immersion-1/index\|Business Immersion 1 (Field Site Visit)]]** | Cohort diagnostic dossiers across 10 partner BUMNs ($N = 385$), cross-BUMN benchmarking, and S&OP field problem statements.                               |
+| **[[program/academic-calendar\|Academic & Synchronization Calendar]]**                  | Master 16-week timeline aligning core courses, exams (Midterm M8, Final M14), CEO Guest Lectures, gamification, and ALP gates.                            |
+| **[[program/faculty-directory\|Faculty & Staff Directory]]**                            | Complete directory of SBM ITB Lead Faculty, co-lecturers, and Course Assistants (with direct contact channels) across all 6 core courses.                 |
+| **[[easter-egg\|Cohort Heraldry & Design System]]**                                     | The official Soedirman Crest (_Lambang Korps_), heraldic symbolism (_Garuda, Star, Chevron, Laurels, Motto_), and digital UI system architecture.         |
 
 ---
 
 ## 🧭 The 5 Components for Transformation
 
-```
-  ┌─────────────────────────────────────────────────────────────┐
-  │                   1. Desain Kurikulum                       │
-  │     Foundation Learning  •  6 Core Courses  •  Leadership   │
-  └──────────────────────────────┬──────────────────────────────┘
-                                 │
-  ┌──────────────────────────────▼──────────────────────────────┐
-  │                  2. Metode Pembelajaran                     │
-  │    Case-Based (Harvard)  •  Simulasi & Gamifikasi  •  LMS   │
-  └──────────────────────────────┬──────────────────────────────┘
-                                 │
-  ┌──────────────────────────────▼──────────────────────────────┐
-  │               3. Action Learning Project (ALP)              │
-  │     Real BUMN Business Challenges  •  SMART Gate Impact     │
-  └──────────────────────────────┬──────────────────────────────┘
-                                 │
-  ┌──────────────────────────────▼──────────────────────────────┐
-  │                    4. Sistem Mentoring                      │
-  │    SBM ITB  •  BUMN Mentors  •  Coaches  •  Pengasuh  •  PO │
-  └──────────────────────────────┬──────────────────────────────┘
-                                 │
-  ┌──────────────────────────────▼──────────────────────────────┐
-  │                5. Operasional & Fasilitas                   │
-  │    Nawasena Living-Learning Environment (24h Clinic, Accom) │
-  └──────────────────────────────┬──────────────────────────────┘
-                                 │
-  ┌──────────────────────────────▼──────────────────────────────┐
-  │                        TARGET OUTCOME                       │
-  │  Responsible Decision-Makers  •  Cross-Functional Execution  │
-  └─────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart LR
+    C1["<b>1. Desain Kurikulum</b><br/>Foundation, Core & Leadership"] --> C2["<b>2. Metode Pembelajaran</b><br/>Case-Based & Gamifikasi"] --> C3["<b>3. Action Learning Project</b><br/>Live BUMN Business Challenges"] --> C4["<b>4. Sistem Mentoring</b><br/>Faculty, Mentors & Coaches"] --> C5["<b>5. Operasional & Fasilitas</b><br/>Nawasena Living Environment"]
+    C5 --> Out["<b>Target Outcome</b><br/>Responsible Decision-Makers &<br/>Cross-Functional Execution"]
 ```
 
 1. **Desain Kurikulum**: 3 building blocks — Foundation Learning (agility, strategic thinking, accounting), 6 Core Courses across 6 BUMN sectors, and Managerial/Leadership/Entrepreneurship capabilities.

@@ -10,6 +10,20 @@ private/
 .replit
 replit.nix
 
-# Raw staging assets (videos, PDFs, slides)
+# Raw staging and archives (videos, PDFs, slides)
+inbox/*
+!inbox/README.md
+archive/*
+!archive/README.md
 raw/*
 !raw/README.md
+
+# Google Classroom Scraper session, tokens, and outputs
+gclass_scraping/.session/
+gclass_scraping/state.json
+gclass_scraping/.scrapling_cache/
+gclass_scraping/output/
+gclass_scraping/**/__pycache__/
+
+# Ephemeral agent teamwork artifacts
+.agents/teamwork/

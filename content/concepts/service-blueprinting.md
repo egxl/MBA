@@ -24,36 +24,26 @@ tags:
 Originally conceptualized by **G. Lynn Shostack** (Harvard Business Review, 1982, 1984) and expanded by **Mary Jo Bitner, Amy L. Ostrom, and Felicia N. Morgan** (2008), service blueprinting extends traditional process mapping by explicitly incorporating the **customer's perspective and emotional journey** into the operational architecture.
 
 ```mermaid
-flowchart TD
-    subgraph Layer1["Layer 1: Physical Evidence"]
-        E1["Signage, App UI, Physical Counters, Tickets, Ambient Atmosphere"]
-    end
-    subgraph Layer2["Layer 2: Customer Journey / Actions"]
-        CJ1["Steps, Choices, Activities, and Waits Experienced by Customer"]
-    end
-    subgraph Line1["──────── LINE OF INTERACTION (Moments of Truth) ────────"]
-    end
-    subgraph Layer3["Layer 3: Frontstage / On-Stage Contact Employee Actions"]
-        FS1["Face-to-Face & Real-Time Interactions Directly Visible to Customer"]
-    end
-    subgraph Line2["──────── LINE OF VISIBILITY (The Stage Curtain) ────────"]
-    end
-    subgraph Layer4["Layer 4: Backstage Contact Employee Actions"]
-        BS1["Employee Work Operating Behind the Scenes (Invisible to Customer)"]
-    end
-    subgraph Line3["──── LINE OF INTERNAL INTERACTION (Support Boundary) ────"]
-    end
-    subgraph Layer5["Layer 5: Support Processes & Enterprise Systems"]
-        SP1["Databases, IT Infrastructure, Maintenance, Scheduling, Internal SLAs"]
+flowchart LR
+    subgraph Front ["Customer-Facing (Above Line of Visibility)"]
+        direction TB
+        E1["<b>Layer 1: Physical Evidence</b><br/>Signage, UI, Counters & Atmosphere"]
+        CJ1["<b>Layer 2: Customer Actions</b><br/>Chronological Steps, Decisions & Waits"]
+        FS1["<b>Layer 3: Frontstage Contact</b><br/>Visible Interactions (Moments of Truth)"]
+        E1 --- CJ1 --- FS1
     end
 
-    Layer1 --- Layer2
-    Layer2 --- Line1
-    Line1 --- Layer3
-    Layer3 --- Line2
-    Line2 --- Layer4
-    Layer4 --- Line3
-    Line3 --- Layer5
+    subgraph Back ["Behind-the-Scenes (Below Line of Visibility)"]
+        direction TB
+        BS1["<b>Layer 4: Backstage Contact</b><br/>Invisible Employee Tasks & Exception Handling"]
+    end
+
+    subgraph Support ["Enterprise Support (Below Line of Internal Interaction)"]
+        direction TB
+        SP1["<b>Layer 5: Support Processes</b><br/>Databases, System SLAs & Infrastructure"]
+    end
+
+    Front -->|"Line of Visibility"| Back -->|"Line of Internal Interaction"| Support
 ```
 
 ### The Five Horizontal Layers

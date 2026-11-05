@@ -35,11 +35,11 @@ Following peak performance in the early 2020s, UNVR's domestic business suffered
 - **The Competitive Pincer:** Domestic FMCG powerhouse **Wings Group** capitalized on consumer down-trading. Through its flagship budget detergent **Daia** (retailing 20–25% below Rinso) and mid-tier **SoKlin** (7% below Rinso), Wings captured unprecedented market share across traditional trade (_warung_) channels in Java and Outer Islands.
 
 ```mermaid
-flowchart TD
-    A["Macroeconomic Squeeze & Middle-Class Downgrade"] --> B["Traditional Warung Channel Migration"]
-    B --> C["Wings Group (Daia & SoKlin) Price & Distribution Dominance"]
-    C --> D["UNVR Crisis: Revenue Falling to IDR 35.1T (FY24)"]
-    D --> E["Strategic Decision: Defend Premium Rinso vs. Launch Value Brand"]
+flowchart LR
+    A["Macroeconomic Squeeze &<br>Middle-Class Downgrade"] --> B["Traditional Warung<br>Channel Migration"]
+    B --> C["Wings Group Dominance<br>(Daia & SoKlin)"]
+    C --> D["UNVR Revenue Crisis<br>(IDR 35.1T FY24)"]
+    D --> E["Strategic Pivot:<br>Defend vs. Value Brand"]
 ```
 
 ---
@@ -48,15 +48,12 @@ flowchart TD
 
 The centerpiece of Indonesia's consumer landscape is not the affluent urban elite, but the massive **Aspiring Middle Class** (_Menuju Kelas Menengah_):
 
-```
-+--------------------------------------------------------------------------+
-|                  INDONESIAN SOCIOECONOMIC STRATIFICATION                 |
-+--------------------------------------------------------------------------+
-  [Upper Class]           -->  ~1.2M people (0.4%) | > Rp 9.9M / capita / mo
-  [Middle Class]          --> ~47.9M people (17.1%) | Rp 2.04M - Rp 9.9M / mo
-  [ASPIRING MIDDLE CLASS] --> 137.5M people (49.2%) | Rp 874k - Rp 2.04M / mo
-  [Vulnerable / Poor]     --> ~93.4M people (33.3%) | < Rp 874k / capita / mo
-```
+| Socioeconomic Class       | Population Share | Population Count | Monthly Per Capita Expenditure Band |
+| :------------------------ | :--------------- | :--------------- | :---------------------------------- |
+| **Upper Class**           | 0.4%             | ~1.2M            | > Rp 9.9M / capita / mo             |
+| **Middle Class**          | 17.1%            | ~47.9M           | Rp 2.04M – Rp 9.9M / mo             |
+| **Aspiring Middle Class** | 49.2%            | 137.5M           | Rp 874k – Rp 2.04M / mo             |
+| **Vulnerable / Poor**     | 33.3%            | ~93.4M           | < Rp 874k / capita / mo             |
 
 - **Segment Size:** Approximately **137.5 million people** (49.2% of Indonesia's ~280 million population).
 - **Economic Definition:** Monthly per-capita expenditure band of **Rp 874,398 to Rp 2,040,262** (BPS / World Bank classification).
@@ -104,7 +101,7 @@ _Source: SBM ITB Case Exhibit 4 (Illustrative estimates for pedagogical analysis
 
 ---
 
-## 🧠 Bain's Elements of Value: Indonesian Mass-Market Mapping
+## 🧠 [[concepts/elements-of-value|Bain's Elements of Value]]: Indonesian Mass-Market Mapping
 
 Applying the 30-element pyramid from Almquist, Senior, & Bloch (HBR 2016) to Indonesian mass-market laundry consumers reveals critical operational insights:
 

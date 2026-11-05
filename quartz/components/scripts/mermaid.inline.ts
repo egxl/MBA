@@ -466,31 +466,85 @@ const cssVars = [
 ] as const
 
 let mermaidImport: any = undefined
+const textMapping: WeakMap<HTMLElement, string> = new WeakMap()
 
-document.addEventListener("nav", async () => {
-  const center = document.querySelector(".center") as HTMLElement | null
-  if (!center) return
-  const nodes = center.querySelectorAll("code.mermaid") as NodeListOf<HTMLElement>
-  if (nodes.length === 0) return
-
+async function getMermaidInstance() {
   mermaidImport ||= await import(
     // @ts-ignore
     "https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs"
   )
-  const mermaid = mermaidImport.default
+  return mermaidImport.default
+}
 
-  const textMapping: WeakMap<HTMLElement, string> = new WeakMap()
-  for (const node of nodes) {
-    textMapping.set(node, node.innerText)
+function wireExpandButtons(nodes: HTMLElement[]) {
+  for (let i = 0; i < nodes.length; i++) {
+    const codeBlock = nodes[i] as HTMLElement
+    const pre = codeBlock.parentElement as HTMLPreElement | null
+    if (!pre) continue
+
+    const clipboardBtn = pre.querySelector(".clipboard-button") as HTMLButtonElement | null
+    const expandBtn = pre.querySelector(".expand-button") as HTMLButtonElement | null
+    if (!expandBtn) continue
+
+    if (clipboardBtn) {
+      const clipboardStyle = window.getComputedStyle(clipboardBtn)
+      const clipboardWidth =
+        clipboardBtn.offsetWidth +
+        parseFloat(clipboardStyle.marginLeft || "0") +
+        parseFloat(clipboardStyle.marginRight || "0")
+      expandBtn.style.right = `calc(${clipboardWidth}px + 0.3rem)`
+    } else {
+      expandBtn.style.right = "0.3rem"
+    }
+    pre.prepend(expandBtn)
+
+    if (!(expandBtn as any)._hasExpandClick) {
+      ;(expandBtn as any)._hasExpandClick = true
+      expandBtn.addEventListener("click", () => showModalForCodeBlock(codeBlock))
+    }
+  }
+}
+
+let isRenderingMermaid = false
+let hasPendingMermaidRender = false
+
+async function renderAllMermaid() {
+  const nodes = Array.from(
+    document.querySelectorAll<HTMLElement>(".center code.mermaid, #split-pane-body code.mermaid"),
+  )
+  if (nodes.length === 0) return
+
+  if (isRenderingMermaid) {
+    hasPendingMermaidRender = true
+    return
   }
 
-  async function renderMermaid() {
-    // de-init any other diagrams
+  isRenderingMermaid = true
+  try {
+    const mermaid = await getMermaidInstance()
+
+    for (const node of nodes) {
+      if (!textMapping.has(node)) {
+        let rawText = ""
+        if (node.dataset.clipboard) {
+          try {
+            rawText = JSON.parse(node.dataset.clipboard)
+          } catch {
+            rawText = node.textContent || node.innerText
+          }
+        } else {
+          rawText = node.textContent || node.innerText
+        }
+        textMapping.set(node, rawText)
+      }
+    }
+
+    // De-init any previously processed diagrams
     for (const node of nodes) {
       node.removeAttribute("data-processed")
       const oldText = textMapping.get(node)
       if (oldText) {
-        node.innerHTML = oldText
+        node.textContent = oldText
       }
     }
 
@@ -545,43 +599,30 @@ document.addEventListener("nav", async () => {
         )
       }
     }
-  }
 
-  await renderMermaid()
-  document.addEventListener("themechange", renderMermaid)
-  window.addCleanup(() => document.removeEventListener("themechange", renderMermaid))
-
-  // Clean up open modal on SPA navigation
-  window.addCleanup(() => {
-    hideModal()
-  })
-
-  for (let i = 0; i < nodes.length; i++) {
-    const codeBlock = nodes[i] as HTMLElement
-    const pre = codeBlock.parentElement as HTMLPreElement
-    if (!pre) continue
-
-    const clipboardBtn = pre.querySelector(".clipboard-button") as HTMLButtonElement | null
-    const expandBtn = pre.querySelector(".expand-button") as HTMLButtonElement | null
-    if (!expandBtn) continue
-
-    if (clipboardBtn) {
-      const clipboardStyle = window.getComputedStyle(clipboardBtn)
-      const clipboardWidth =
-        clipboardBtn.offsetWidth +
-        parseFloat(clipboardStyle.marginLeft || "0") +
-        parseFloat(clipboardStyle.marginRight || "0")
-      expandBtn.style.right = `calc(${clipboardWidth}px + 0.3rem)`
-    } else {
-      expandBtn.style.right = "0.3rem"
+    wireExpandButtons(nodes)
+  } finally {
+    isRenderingMermaid = false
+    if (hasPendingMermaidRender) {
+      hasPendingMermaidRender = false
+      await renderAllMermaid()
     }
-    pre.prepend(expandBtn)
-
-    const onExpandClick = () => showModalForCodeBlock(codeBlock)
-    expandBtn.addEventListener("click", onExpandClick)
-
-    window.addCleanup(() => {
-      expandBtn.removeEventListener("click", onExpandClick)
-    })
   }
+}
+
+document.addEventListener("nav", async () => {
+  hideModal()
+  await renderAllMermaid()
 })
+
+document.addEventListener("splitviewloaded", async () => {
+  await renderAllMermaid()
+})
+
+document.addEventListener("themechange", async () => {
+  await renderAllMermaid()
+})
+
+if (document.readyState !== "loading") {
+  renderAllMermaid()
+}

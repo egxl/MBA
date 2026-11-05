@@ -79,6 +79,12 @@ async function joinScripts(scripts: string[]): Promise<string> {
 function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentResources) {
   const cfg = ctx.cfg.configuration
 
+  // Early cleanup safety stub: ensures window.addCleanup exists before any component script executes
+  componentResources.beforeDOMLoaded.unshift(`
+    window._cleanupFns = window._cleanupFns || new Set();
+    window.addCleanup = window.addCleanup || function(fn) { window._cleanupFns.add(fn); };
+  `)
+
   // popovers
   if (cfg.enablePopovers) {
     componentResources.afterDOMLoaded.push(popoverScript)

@@ -24,7 +24,9 @@
     "titles:check": "node ./scripts/validate-titles.mjs",
     "wiki:check": "node ./scripts/check-wiki-integrity.mjs",
     "wiki:sync": "node ./scripts/check-wiki-integrity.mjs --sync",
+    "wiki:pedagogy": "node ./scripts/audit-pedagogy.mjs",
     "raw:prep": "node ./scripts/prep-raw.mjs",
+    "cohort:aggregate": "node ./scripts/aggregate-cohort-submissions.mjs",
     "mermaid:check": "node ./scripts/validate-mermaid.mjs"
   },
   "engines": {

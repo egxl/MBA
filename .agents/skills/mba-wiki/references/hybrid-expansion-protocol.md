@@ -32,7 +32,9 @@ Synthesize all attached supplementary files into the narrative:
 - **Cases & Assignments**: Embed case dilemmas, operational data, tables, and decision options as real-world crucibles testing lecture models.
 - **Transcripts & Notes**: Integrate lecturer insights, local Indonesian BUMN context, and debate nuances.
 
-Visual & Data Preservation Requirements:
+Visual, Pedagogical & Data Preservation Requirements:
 - Render pure data tables in Markdown and quantitative formulas in LaTeX math ($...$).
+- Zero-Prerequisite Pedagogy: Never output bare formula dumps or stacks of unannotated equations ($$...$$). Every formula must have plain-English intuition, a prerequisite jargon decoder, structural mechanics (why numerator vs denominator), and a 10-second mental-math micro-example.
+- Never output ASCII or Unicode box art (+---, ┌───). Always visualize workflows, hierarchies, and mechanisms using vector Mermaid.js diagrams with landscape aspect ratios (horizontal-first `flowchart LR` or balanced multi-column subgraphs with `direction TB`).
 - Use clean modular topic headings. Write continuous, rigorous analytical prose with zero slide-speak ("On slide 5...").
 ```

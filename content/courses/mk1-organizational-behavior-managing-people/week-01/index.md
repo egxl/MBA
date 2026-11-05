@@ -15,7 +15,20 @@ tags:
   - sbm-itb
 ---
 
-## 🎯 Act 1: The Executive Dilemma — The Autopilot Trap
+> [!NOTE] Curricular & Faculty Metadata
+>
+> - **Course:** MK1 Organizational Behaviour & Managing People — Week 01
+> - **Teaching Team:** Muhammad Yorga Permana, Ph.D., Widhyawan Prawiraatmadja, Ph.D., Dr. Ir. Madju Yuni Ros Bangun, Yudo Anggoro, Ph.D.
+> - **Primary Curricular Spine:** Week 1 Strategizing Your Life (35 Slides)
+> - **Direct Satellites & Problem Sets:**
+>   - [[courses/mk1-organizational-behavior-managing-people/week-01/assignment-pre-strategizing-life|Pre-Assignment: Core Readings Discussion]]
+>   - [[courses/mk1-organizational-behavior-managing-people/week-01/assignment-post-life-journey|Post-Assignment: Reflective Revision & Life Journey Diagnostic]]
+>   - [[courses/mk1-organizational-behavior-managing-people/week-01/reading-from-purpose-to-impact|Reading: From Purpose to Impact]]
+>   - [[courses/mk1-organizational-behavior-managing-people/week-01/reading-what-are-your-personal-values|Reading: What Are Your Personal Values?]]
+>   - [[courses/mk1-organizational-behavior-managing-people/week-01/reading-being-happy-at-work-matters|Reading: Being Happy at Work Matters]]
+>   - [[courses/mk1-organizational-behavior-managing-people/week-01/reading-ikigai-leadership-transformation|Reading: Ikigai Leadership Transformation]]
+
+## 1. Executive Overview & Foundations of Intentional Living
 
 We meticulously architect multi-billion rupiah capital expenditure budgets. We map complex corporate supply chains down to the hour. We spend weeks planning overseas vacations and project milestones with obsessive precision.
 
@@ -33,7 +46,7 @@ Intentional living starts with one courageous decision: **to stop living by defa
 
 ---
 
-## 🧭 Act 2: Theoretical Mechanism — The Living Compass
+## 2. Theoretical Architecture & Core Frameworks (The Living Compass)
 
 Life strategy isn’t a rigid map, but a **living compass** you continuously calibrate. It is a direction, not a fixed destination.
 
@@ -179,7 +192,7 @@ For decades, traditional management dogma claimed that _"work is not personal"_ 
 
 ---
 
-## 🏢 Act 3: Managerial Crucible — Indonesian BUMN & Enterprise Context
+## 3. Managerial Crucible: Indonesian Enterprise & BUMN Context
 
 Translating these frameworks into the Indonesian corporate landscape requires navigating distinct structural challenges:
 
@@ -192,37 +205,38 @@ Translating these frameworks into the Indonesian corporate landscape requires na
 
 ---
 
-## 📝 Act 4: Group Discussion Debrief & Pre-Assignment Synthesis
+## 4. Cross-Functional Implementation & Strategic Trade-offs
 
-During this module's seminar, study groups examine four foundational readings:
+Operationalizing executive self-awareness and intentional life strategy within complex corporate organizations generates distinct structural tensions across functional departments:
 
-### Reading 1: "Being Happy at Work Matters" ([[entities/annie-mckee|Annie McKee]], HBR 2014)
+1. **Strategic Planning vs. Human Agility**:
+   Corporate strategy functions obsess over multi-year linear projections, whereas individual career progression and resonant leadership unfold non-linearly through unexpected crucibles and emergent self-discovery. Leaders must balance institutional compliance with individual autonomy.
+2. **Short-Term Profit Pressure vs. Renewable Human Energy**:
+   Finance and operational units naturally prioritize immediate quarterly output, often incentivizing excessive overtime that exhausts employee emotional capital. Resonant leadership treats human capacity not as a consumable resource to burn out, but as renewable energy cultivated through purpose and recovery.
+3. **Values Congruence vs. Organizational Realpolitik**:
+   When personal values (such as transparency and fairness) clash with entrenched bureaucratic politics or opaque decision-making, managers face acute executive friction. Navigating this requires distinguishing non-negotiable moral lines from flexible operational compromises.
 
-> 📖 **Deep-Dive Study Note**: [[courses/mk1-organizational-behavior-managing-people/week-01/reading-being-happy-at-work-matters|Annie McKee on Affective Neuroscience & Resonant Leadership]]
+### 📝 Seminar Reading Synthesis & Assignment Debriefs
 
-- **Discussion Prompt**: McKee argues engagement requires vision, purpose, and resonant relationships. Which is hardest for a modern enterprise to deliver without feeling manufactured?
-- **Debrief Rationale**: Relationships are hardest to manufacture. Corporate HR can publish visionary slide decks and mission statements, but authentic, psychological safety in direct reporting relationships cannot be mandated through top-down policy.
+During this introductory module, study groups examine four foundational academic readings and execute two strategic problem sets:
 
-### Reading 2: "From Purpose to Impact" ([[entities/nick-craig-scott-snook|Nick Craig & Scott Snook]], HBR 2014)
+- **Pre-Assignment Debrief**: [[courses/mk1-organizational-behavior-managing-people/week-01/assignment-pre-strategizing-life|MK1 W01 Pre-Assignment: Strategizing Your Life — Group Discussion on Core Readings]]
+- **Post-Assignment & Diagnostic Debrief**: [[courses/mk1-organizational-behavior-managing-people/week-01/assignment-post-life-journey|MK1 W01 Post-Assignment: Reflective Revision, Wheel of Life & Life Journey Map]]
 
-> 📖 **Deep-Dive Study Note**: [[courses/mk1-organizational-behavior-managing-people/week-01/reading-from-purpose-to-impact|Craig & Snook on Purpose-to-Impact Architecture & Executive Crucibles]]
+#### Core Reading Seminar Recitations
 
-- **Discussion Prompt**: Why is it nearly impossible to uncover your purpose alone?
-- **Debrief Rationale**: Human beings are blind to their own signature strengths and recurring patterns. Trusted peers serve as external mirrors, highlighting the underlying themes in our life stories that we dismiss as ordinary.
-
-### Reading 3: "Ikigai Can Transform Leadership" (Alex Liu, WEF / Kearney)
-
-> 📖 **Deep-Dive Study Note**: [[courses/mk1-organizational-behavior-managing-people/week-01/reading-ikigai-leadership-transformation|Alex Liu on Kearney's 4.75x CEO Non-Financial Ouster Study & Enterprise Ikigai]]
-
-- **Discussion Prompt**: What is the leadership risk of running the financial numbers brilliantly while non-financial factors quietly deteriorate?
-- **Debrief Rationale**: The 4.75x surge in non-financial CEO ousters demonstrates that stakeholders, boards, and younger workforces now evaluate culture, governance ethics, and social responsibility as existential enterprise risks.
-
-### Reading 4: "What Are Your Personal Values?" ([[entities/jennifer-nash|Jennifer Nash]], HBR 2020)
-
-> 📖 **Deep-Dive Study Note**: [[courses/mk1-organizational-behavior-managing-people/week-01/reading-what-are-your-personal-values|Dr. Jennifer Nash on the 8-Wedge Wheel of Life & Life Journey Map Protocol]]
-
-- **Discussion Prompt**: Why does the Life Journey Map reveal more about values than circling words on an HR checklist?
-- **Debrief Rationale**: Checklists reflect aspirational ideals (who we wish we were). A chronological journey map audits actual crucible choices made under stress, exposing real priorities and limiting beliefs.
+1. **"Being Happy at Work Matters" ([[entities/annie-mckee|Annie McKee]], HBR 2014)**:
+   - _Core Insight_: Resonant relationships and authentic purpose cannot be mandated via top-down decrees; they require psychological safety and empathetic direct management.
+   - _Deep-Dive Satellite_: [[courses/mk1-organizational-behavior-managing-people/week-01/reading-being-happy-at-work-matters|Open Annie McKee Study Note]]
+2. **"From Purpose to Impact" ([[entities/nick-craig-scott-snook|Nick Craig & Scott Snook]], HBR 2014)**:
+   - _Core Insight_: Purpose discovery requires external peer mirrors to pierce self-serving blind spots and formulate a concrete `I exist to [action] so that [impact]` statement.
+   - _Deep-Dive Satellite_: [[courses/mk1-organizational-behavior-managing-people/week-01/reading-from-purpose-to-impact|Open Craig & Snook Study Note]]
+3. **"Ikigai Can Transform Leadership" (Alex Liu, WEF / Kearney)**:
+   - _Core Insight_: A 4.75x rise in non-financial CEO ousters proves that running financial numbers while letting culture and trust decay is fiduciary negligence.
+   - _Deep-Dive Satellite_: [[courses/mk1-organizational-behavior-managing-people/week-01/reading-ikigai-leadership-transformation|Open Alex Liu Study Note]]
+4. **"What Are Your Personal Values?" ([[entities/jennifer-nash|Jennifer Nash]], HBR 2020)**:
+   - _Core Insight_: Chronological life journey audits reveal lived non-negotiables under stress, whereas values checklists only capture aspirational branding.
+   - _Deep-Dive Satellite_: [[courses/mk1-organizational-behavior-managing-people/week-01/reading-what-are-your-personal-values|Open Jennifer Nash Study Note]]
 
 ---
 
@@ -235,16 +249,18 @@ Strategizing your life is not a finite destination; it is a daily discipline of 
 
 ---
 
-## 📚 Required Academic Readings & In-Depth Satellites
+## 📚 Required Readings & In-Depth Satellites
 
-To preserve complete academic depth, each foundational reading has been ingested as an exhaustive standalone study note with complete worksheets, case studies, and exhibits:
+To preserve complete academic depth, each foundational reading and syndicate assignment is published as an exhaustive standalone study note:
 
-| Document Title                                          | Author / Institution                                                   | Core Methodological Contribution                                                                                                                             | In-Depth Study Note                                                                                                                 |
+| Document Title                                          | Author / Institution                                                   | Core Methodological Contribution                                                                                                                             | Study Note / Guide                                                                                                                  |
 | :------------------------------------------------------ | :--------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
-| **From Purpose to Impact**                              | **Nick Craig & Scott Snook**<br>_Authentic Leadership Institute & HBS_ | 7-stage Purpose-to-Impact architecture; Richard's sailing procurement case; Heineken USA & Unilever executive crucibles; Bad-to-Good purpose table.          | [[courses/mk1-organizational-behavior-managing-people/week-01/reading-from-purpose-to-impact\|Open Craig & Snook Deep-Dive]]        |
+| **From Purpose to Impact**                              | **Nick Craig & Scott Snook**<br>_Authentic Leadership Institute & HBS_ | 7-stage Purpose-to-Impact architecture; Richard's sailing procurement case; Unilever executive crucibles; Bad-to-Good purpose table.                         | [[courses/mk1-organizational-behavior-managing-people/week-01/reading-from-purpose-to-impact\|Open Craig & Snook Deep-Dive]]        |
 | **What Are Your Personal Values?**                      | **Dr. Jennifer Nash**<br>_Deloitte & Fortune 50 Coach_                 | Complete 8-wedge Wheel of Life scoring diagnostic; 4-phase Life Journey Map with 7 mandatory audit points; cognitive limiting beliefs reprogramming.         | [[courses/mk1-organizational-behavior-managing-people/week-01/reading-what-are-your-personal-values\|Open Jennifer Nash Deep-Dive]] |
 | **Being Happy at Work Matters**                         | **Dr. Annie McKee**<br>_PennCLO & Teleos Institute_                    | Neuroscience of emotional contagion (Davidson, Ramachandran); Gallup 30% engagement bell curve; 3 universal pillars of resonant leadership.                  | [[courses/mk1-organizational-behavior-managing-people/week-01/reading-being-happy-at-work-matters\|Open Annie McKee Deep-Dive]]     |
 | **What is Ikigai and How Can It Transform Leadership?** | **Alex Liu**<br>_Chairman Emeritus, Kearney (WEF)_                     | Kearney study showing 4.75x surge in non-financial CEO ousters; enterprise Purpose Gap; reconfiguring supply chains and treating people as renewable energy. | [[courses/mk1-organizational-behavior-managing-people/week-01/reading-ikigai-leadership-transformation\|Open Alex Liu Deep-Dive]]   |
+| **W01 Pre-Assignment Guide**                            | **F9 Syndicate & Maintainer**<br>_SBM ITB MBA_                         | Post-class debrief analyzing McKee, Craig & Snook, Alex Liu, and Nash readings with Indonesian BUMN application.                                             | [[courses/mk1-organizational-behavior-managing-people/week-01/assignment-pre-strategizing-life\|Open W01 Pre-Assignment]]           |
+| **W01 Post-Assignment Guide**                           | **F9 Syndicate & Maintainer**<br>_SBM ITB MBA_                         | Framework revisions, completed Wheel of Life scoring matrix, and 4-phase Life Journey Map audit.                                                             | [[courses/mk1-organizational-behavior-managing-people/week-01/assignment-post-life-journey\|Open W01 Post-Assignment]]              |
 
 ---
 
@@ -269,6 +285,9 @@ Access the official course assets and high-resolution masterclass materials:
 
 ## 🔗 Knowledge Graph & Curriculum Bridges
 
+- **Cohort Assignment Problem Sets**:
+  - [[courses/mk1-organizational-behavior-managing-people/week-01/assignment-pre-strategizing-life|Pre-Assignment: Core Readings Discussion]]
+  - [[courses/mk1-organizational-behavior-managing-people/week-01/assignment-post-life-journey|Post-Assignment: Reflective Revision & Life Journey Diagnostic]]
 - **Dedicated In-Depth Reading Satellites**:
   - [[courses/mk1-organizational-behavior-managing-people/week-01/reading-from-purpose-to-impact|Craig & Snook: From Purpose to Impact]]
   - [[courses/mk1-organizational-behavior-managing-people/week-01/reading-what-are-your-personal-values|Dr. Jennifer Nash: What Are Your Personal Values?]]

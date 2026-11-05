@@ -32,32 +32,44 @@ tags:
 
 ## 1. Executive Overview & Foundations of [Topic]
 
-[Core dilemma, why this matters to enterprise leaders, what fails when unaddressed, empirical stakes / statistics.]
+[Core dilemma, why this matters to enterprise leaders, what fails when unaddressed, empirical stakes / statistics. Weave inline links to foundational mental models like [[concepts/slug|Master Concept]] or sub-frameworks like [[concepts/slug#section-anchor|Sub-Framework]] at first mention.]
 
 ---
 
 ## 2. Theoretical Architecture & Core Frameworks
 
-[Detailed breakdown of slide deck models, formulas, LaTeX math, and Mermaid process diagrams.]
+[Detailed breakdown of slide deck models, formulas, LaTeX math, and Mermaid process diagrams. Link models inline directly: e.g. [[concepts/slug|Core Framework Name]].]
 
-$$\mathbf{FORMULA = VARIABLES}$$
+### 💡 First-Principles Intuition & Everyday Analogy
+[Explain the kitchen-table intuition: what problem does this solve in plain English before presenting any math or technical jargon.]
+
+### 🔑 Prerequisite Concepts & Jargon Decoder
+- **[Variable / Acronym 1]**: [Plain-English explanation without assuming prior finance, accounting, or stats coursework].
+- **[Variable / Acronym 2]**: [Plain-English explanation].
+
+$$\mathbf{OUTPUT = \frac{\text{DRIVING FACTORS}}{\text{DRAG / CAPACITY FACTOR}}}$$
+
+### ⚙️ Mechanics & Structural Anatomy:
+- **Numerator**: Why increasing this term directly scales the desired output.
+- **Denominator**: Why this term acts as a buffer, cost, dilution, or capacity ceiling.
+- **10-Second Micro-Example**: With simple round numbers (e.g. 100 / 20 = 5), show how the calculation works in practice.
 
 ```mermaid
-flowchart TD
-    A["Input"] --> B["Processing Mechanism"] --> C["Executive Output"]
+flowchart LR
+    A["Input"] --> B["Processing Mechanism<br/>([[concepts/slug|Anchor Concept]])"] --> C["Executive Output"]
 ```
 
 ---
 
 ## 3. Managerial Crucible: Indonesian Enterprise & BUMN Context
 
-[Real-world friction: Indonesian corporate governance, traditional trade vs modern trade dynamics, AKHLAK values.]
+[Real-world friction: Indonesian corporate governance, traditional trade vs modern trade dynamics, AKHLAK values, cross-linking to relevant organizational frameworks like [[concepts/slug|Framework]].]
 
 ---
 
 ## 4. Cross-Functional Implementation & Strategic Trade-offs
 
-[Analysis of inter-departmental tensions (Marketing vs Finance vs Operations), risk mitigation, and executive debrief.]
+[Analysis of inter-departmental tensions (Marketing vs Finance vs Operations), risk mitigation, and executive debrief, cross-linking relevant mechanisms like [[concepts/slug|Mechanism]].]
 
 ---
 
@@ -237,11 +249,24 @@ tags:
   - [mechanism]
 ---
 
-## 📐 Universal Definition & Conceptual Core
+## 💡 First-Principles Intuition & Conceptual Core
 
-[Universal explanation independent of any specific course, with mathematical formula or Mermaid diagram.]
+[Universal explanation independent of any specific course. Start with a plain-English analogy or common-sense enterprise scenario that any beginner understands before showing any math or diagram.]
 
-$$\mathbf{METRIC = \frac{NUMERATOR}{DENOMINATOR}}$$
+### 🔑 Prerequisite Concepts & Jargon Decoder
+- **[Key Sub-Term 1]**: [Plain-English explanation without assuming prior business knowledge].
+- **[Key Sub-Term 2]**: [Plain-English explanation].
+
+---
+
+## 📐 Universal Mechanism & Mathematical Architecture
+
+$$\mathbf{\text{METRIC} = \frac{\text{ECONOMIC DRIVER}}{\text{SCALING BASE OR HURDLE}}}$$
+
+### ⚙️ Mechanics & Structural Anatomy:
+- **Driving Component (Numerator)**: Why higher values expand this metric.
+- **Scaling Component (Denominator)**: Why this factor acts as friction, dilution, or scale control.
+- **Mental-Math Micro-Example**: Concrete calculation using simple round numbers to anchor the reader's intuition.
 
 ---
 
@@ -282,11 +307,14 @@ $$\mathbf{METRIC = \frac{NUMERATOR}{DENOMINATOR}}$$
 
 ## 5. Living Entity Profile (`content/entities/[slug].md`)
 
+### Archetype 5A: Real-World Enterprise (`category: company`)
+
 ```yaml
 ---
-title: "[Person or Organization Name]"
+title: "[Organization Name]"
 type: "entity"
-category: "[person | company | institution]"
+category: "company"
+data_basis: "real-world-and-case"
 aliases:
   - "[Short Name / Acronym]"
 roles:
@@ -294,11 +322,100 @@ roles:
   - "[Role 2]"
 tags:
   - entity
-  - [category-tag]
+  - company
   - [domain]
 ---
 
-## 👤 Executive / Enterprise Profile
+## 👤 Enterprise Profile
+
+[Authoritative summary of background, ownership structure, history, and institutional significance in the national/global economy. Keep strictly to timeless, verified real-world facts. Do not mix classroom case exhibits or syndicate estimates here.]
+
+---
+
+## 📋 Curriculum Case Snapshots (Case-Basis Data)
+
+> [!NOTE] Case-Basis Epistemic Notice
+> The operational metrics, financial figures, unit economics, and strategic scenarios below are extracted from **[Course / Case Publisher]** classroom materials (**[[courses/mkX-slug/week-YY/case-[slug]|Case Title]]**) and/or **F9 (Class F / Syndicate 9)** analytical models. These figures may incorporate pedagogical simplifications, illustrative estimates, composite personas, or time-bounded assumptions and should not be cited as live audited investor disclosures.
+
+### [Course Code Week YY]: [Case / Assignment Context Title]
+
+- **Source Material**: [[courses/mkX-slug/week-YY/case-[slug]|Case Title]]
+- **Case-Basis Metrics & Dilemma**: ...
+
+---
+
+## 🎤 Contributions to P3MD MBA
+
+- **Course Appearances**: [[courses/mkX-slug/week-YY/index|Week YY Lecture]]
+- **Related Concepts**:
+  - [[concepts/slug|Concept 1]]
+
+---
+
+## 🔗 Traceability & Directory
+
+- Return to **[[entities/index|Entity Directory]]**
+- Return to **[[index|MBA Cohort Portal Home]]**
+```
+
+### Archetype 5B: Fictional / Composite Case Enterprise (`category: fictional-enterprise`)
+
+```yaml
+---
+title: "[Fictional Organization Name]"
+type: "entity"
+category: "fictional-enterprise"
+data_basis: "fictional-pedagogical"
+aliases:
+  - "[Acronym]"
+roles:
+  - "Pedagogical Case Subject"
+tags:
+  - entity
+  - fictional-enterprise
+  - case-study
+---
+
+> [!IMPORTANT] Fictional / Composite Pedagogical Enterprise
+> **[Organization Name]** is an illustrative teaching-case enterprise synthesized specifically for **[Course Code] [Course Name]** problem sets. Operating metrics, organizational charts, and financial data are stylized pedagogical constructs designed for analytical practice rather than real-world corporate records.
+
+## 👤 Pedagogical Enterprise Profile
+
+[Context, business scenario, product catalog, or production setup as described in the case materials.]
+
+---
+
+## 📋 Curriculum Case Snapshots (Case-Basis Data)
+
+### [Course Code Week YY]: [Problem Set / Case Title]
+- **Source Case**: [[courses/mkX-slug/week-YY/case-[slug]|Case Title]]
+- **Problem Dilemma**: ...
+
+---
+
+## 🔗 Traceability & Directory
+
+- Return to **[[entities/index|Entity Directory]]**
+- Return to **[[index|MBA Cohort Portal Home]]**
+```
+
+### Archetype 5C: Academic Theorist or Executive Leader (`category: person`)
+
+```yaml
+---
+title: "[Person Name]"
+type: "entity"
+category: "person"
+aliases:
+  - "[Short Name]"
+roles:
+  - "[Academic / Corporate Role]"
+tags:
+  - entity
+  - [domain]
+---
+
+## 👤 Executive / Theorist Profile
 
 [Authoritative summary of background, credentials, and institutional significance.]
 

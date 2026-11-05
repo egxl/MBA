@@ -142,18 +142,20 @@ function setupNavDropdown() {
     window.addEventListener("scroll", onScroll, { passive: true })
     links.forEach((link) => link.addEventListener("click", onLinkClick))
 
-    window.addCleanup(() => {
-      trigger.removeEventListener("click", toggle)
-      wrapper.removeEventListener("mouseenter", onMouseEnter)
-      wrapper.removeEventListener("mouseleave", onMouseLeave)
-      wrapper.removeEventListener("focusin", onFocusIn)
-      wrapper.removeEventListener("focusout", onFocusOut)
-      document.removeEventListener("click", onOutsideClick)
-      document.removeEventListener("keydown", onKeyDown)
-      window.removeEventListener("scroll", onScroll)
-      links.forEach((link) => link.removeEventListener("click", onLinkClick))
-      if (closeTimeout) clearTimeout(closeTimeout)
-    })
+    if (typeof window.addCleanup === "function") {
+      window.addCleanup(() => {
+        trigger.removeEventListener("click", toggle)
+        wrapper.removeEventListener("mouseenter", onMouseEnter)
+        wrapper.removeEventListener("mouseleave", onMouseLeave)
+        wrapper.removeEventListener("focusin", onFocusIn)
+        wrapper.removeEventListener("focusout", onFocusOut)
+        document.removeEventListener("click", onOutsideClick)
+        document.removeEventListener("keydown", onKeyDown)
+        window.removeEventListener("scroll", onScroll)
+        links.forEach((link) => link.removeEventListener("click", onLinkClick))
+        if (closeTimeout) clearTimeout(closeTimeout)
+      })
+    }
   })
 }
 

@@ -19,8 +19,8 @@ date: 2026-10-16
 > [!NOTE] Curricular & Faculty Metadata
 >
 > - **Course:** MM5001 Marketing Management — Week 01
-> - **Teaching Team:** Ilma Aulia Zaim, Ph.D. & Ira Fachira, Ph.D. (School of Business and Management, Institut Teknologi Bandung)
-> - **Primary Curricular Spine:** SBM ITB Master Slide Deck `[P3MD] Week 1-MK3.pdf` (35 slides)
+> - **Teaching Team:** [[entities/ilma-aulia-zaim|Ilma Aulia Zaim, Ph.D.]] & [[entities/ira-fachira|Ira Fachira, Ph.D.]] (School of Business and Management, Institut Teknologi Bandung)
+> - **Primary Curricular Spine:** SBM ITB Master Slide Deck `[P3MD] Week 1-MK3.pdf` (35 slides) & Authentic Lecture Notes (`Catatan Week 1`)
 > - **Textbook Foundation:** Kotler & Armstrong, _Principles of Marketing_ (Ch. 1: "Creating Customer Value and Engagement" & Ch. 2: "Company and Marketing Strategy")
 > - **Direct Satellites & Problem Sets:**
 >   - Dedicated Assignment Analysis: [[courses/mk3-marketing-management/week-01/assignment-pre-assignment-unilever|Week 01 Assignment Q&A: Unilever Cases]]
@@ -33,21 +33,22 @@ date: 2026-10-16
 
 Marketing is frequently misunderstood in corporate practice as commercial promotion, aggressive advertising, or high-pressure selling. When enterprise leadership adopts this narrow transactional orientation, the firm falls victim to **Marketing Myopia** (Levitt, 1960)—an inward-looking preoccupation with existing products and internal operational efficiency rather than an outward obsession with customer problems and evolving marketplace needs.
 
-```
-+--------------------------------------------------------------------------+
-|                     CORE DEFINITIONS OF MARKETING                        |
-+--------------------------------------------------------------------------+
-| 1. The Value Exchange Process:                                           |
-|    Marketing is the process by which companies create value for          |
-|    customers and build strong customer relationships in order to         |
-|    capture value from customers in return.                               |
-|                                                                          |
-| 2. The Managerial Art & Science:                                         |
-|    Marketing management is the art and science of choosing target        |
-|    markets and getting, keeping, and growing customers through           |
-|    creating, delivering, and communicating superior customer value.      |
-+--------------------------------------------------------------------------+
-```
+> [!NOTE] Core Definitions of Marketing
+>
+> 1. **The Value Exchange Process**: Marketing is the process by which companies create value for customers and build strong customer relationships in order to capture value from customers in return.
+> 2. **The Managerial Art & Science**: Marketing management is the art and science of choosing target markets and getting, keeping, and growing customers through creating, delivering, and communicating superior customer value.
+
+### The Leadership Crucible: Selling vs. Marketing
+
+As emphasized by Ilma Aulia Zaim, Ph.D. in plenary lectures, marketing leaders operate across a four-stage executive governance loop: **Planning $\rightarrow$ Strategize $\rightarrow$ Execute $\rightarrow$ Monitoring**. Under conditions of **VUCA** (Volatility, Uncertainty, Complexity, and Ambiguity), intuitive guesswork fails; empirical [[concepts/marketing-research-methodologies|market research]] is the non-negotiable anchor.
+
+| Strategic Dimension            | Selling Orientation                                   | Marketing Orientation                                                             |
+| :----------------------------- | :---------------------------------------------------- | :-------------------------------------------------------------------------------- | -------------------------------- |
+| **Operational Starting Point** | Factory production lines and existing inventory       | Market demand, unmet consumer pain points, and jobs-to-be-done                    |
+| **Managerial Focus**           | Pushing products through sales channels via promotion | Architecting superior [[concepts/customer-perceived-value                         | Customer Perceived Value (CPV)]] |
+| **Core Discipline**            | Transactional selling tactics                         | Dual discipline: **Art** (creative empathy) + **Science** (data-driven research)  |
+| **Organizational Alignment**   | Sales department silo                                 | Cross-functional value delivery network (Marketing, Operations, HR, Finance)      |
+| **Target Outcome**             | Short-term sales volume                               | Sustainable customer satisfaction and high Customer Lifetime Value ($\text{CLV}$) |
 
 ### The Two Foundational Executive Questions
 
@@ -72,9 +73,9 @@ flowchart LR
 Strategic marketing failure begins when organizations misunderstand the psychological hierarchy of human motivation:
 
 ```mermaid
-flowchart TD
-    A["NEEDS<br>States of Felt Deprivation<br>(Physical, Social, Individual)"] --> B["WANTS<br>Form Taken by Needs Shaped by<br>Culture & Individual Personality"]
-    B --> C["DEMANDS<br>Human Wants Backed by<br>Individual Buying Power"]
+flowchart LR
+    A["<b>Needs</b><br/>States of Felt Deprivation<br/>(Physical, Social, Individual)"] --> B["<b>Wants</b><br/>Needs Shaped by Culture<br/>& Individual Personality"]
+    B --> C["<b>Demands</b><br/>Human Wants Backed by<br/>Individual Buying Power"]
 ```
 
 ### 1. The Needs-Wants-Demands Triad
@@ -117,15 +118,9 @@ Each party in the system adds value for the next tier. A failure at any node—s
 
 Over the past century, enterprise commercial philosophy has evolved across five distinct orientations:
 
-```
-+--------------------------------------------------------------------------+
-|                  FIVE MARKETING MANAGEMENT ORIENTATIONS                  |
-+--------------------------------------------------------------------------+
-  [Production]   --> Focus: Efficiency, Scale, Low Cost, Wide Availability
-  [Product]      --> Focus: Engineering, Features, Technological Quality
-  [Selling]      --> Focus: Hard Selling, Advertising Push, Inventory Clearance
-  [Marketing]    --> Focus: Target Customer Needs, Integrated Effort, Profits via Value
-  [Societal]     --> Focus: Long-Term Consumer & Environmental Well-Being (ESG)
+```mermaid
+flowchart LR
+    P1["<b>Production Concept</b><br/>Scale, Low Cost & Availability"] --> P2["<b>Product Concept</b><br/>Engineering & Feature Quality"] --> P3["<b>Selling Concept</b><br/>Promotions & Inventory Push"] --> P4["<b>Marketing Concept</b><br/>Customer Needs & Total Value"] --> P5["<b>Societal Concept</b><br/>Long-Term Well-Being & ESG"]
 ```
 
 | Orientation                    | Core Premise                                                                                                                             | Starting Point            | Primary Means                                                                     | Strategic End Goal                                                 | Boardroom Blindspot / Failure Mode                                                                                            |
@@ -139,13 +134,15 @@ Over the past century, enterprise commercial philosophy has evolved across five 
 ### Selling vs. Marketing Concept Comparison
 
 ```mermaid
-flowchart TD
+flowchart LR
     subgraph Selling ["The Selling Concept (Inside-Out)"]
-        S1["Starting Point:<br>Factory"] --> S2["Focus:<br>Existing Products"] --> S3["Means:<br>Selling & Promoting"] --> S4["Ends:<br>Profits through Sales Volume"]
+        direction LR
+        S1["Starting Point:<br/>Factory"] --> S2["Focus:<br/>Existing Products"] --> S3["Means:<br/>Selling & Promoting"] --> S4["Ends:<br/>Profits via Volume"]
     end
 
     subgraph Marketing ["The Marketing Concept (Outside-In)"]
-        M1["Starting Point:<br>Market"] --> M2["Focus:<br>Customer Needs"] --> M3["Means:<br>Integrated Marketing"] --> M4["Ends:<br>Profits through Customer Satisfaction"]
+        direction LR
+        M1["Starting Point:<br/>Market"] --> M2["Focus:<br/>Customer Needs"] --> M3["Means:<br/>Integrated Marketing"] --> M4["Ends:<br/>Profits via Satisfaction"]
     end
 ```
 
@@ -158,9 +155,9 @@ flowchart TD
 
 Customer relationship management (CRM) is the overall process of building and maintaining profitable customer relationships by delivering superior customer value and satisfaction.
 
-### 1. Customer-Perceived Value (CPV)
+### 1. [[concepts/customer-perceived-value|Customer-Perceived Value]] [[concepts/customer-perceived-value|(CPV)]]
 
-Customers rarely evaluate market offerings objectively. They evaluate **Customer-Perceived Value (CPV)**:
+Customers rarely evaluate market offerings objectively. They evaluate **[[concepts/customer-perceived-value|Customer-Perceived Value]] [[concepts/customer-perceived-value|(CPV)]]**:
 
 $$\mathbf{CPV = Total\ Customer\ Perceived\ Benefits - Total\ Customer\ Costs}$$
 
@@ -178,21 +175,11 @@ $$\mathbf{Satisfaction = Perceived\ Performance - Prior\ Expectations}$$
 - **If Performance = Expectations:** The customer is satisfied, but remains vulnerable to competitor promotional discounts.
 - **If Performance > Expectations:** The customer is delighted, creating emotional attachment, high switching barriers, and active brand advocacy.
 
-```
-+--------------------------------------------------------------------------+
-|                  THE EXECUTIVE EXPECTATION BALANCE                         |
-+--------------------------------------------------------------------------+
-| Setting Expectations Too High:                                           |
-| -> Marketing hype over-promises performance; buyers are disappointed.    |
-|                                                                          |
-| Setting Expectations Too Low:                                            |
-| -> Fails to attract prospective buyers or justify premium pricing.       |
-|                                                                          |
-| The Optimum Stance:                                                      |
-| -> Set expectations that accurately reflect reality, then consistently    |
-|    over-deliver on execution.                                            |
-+--------------------------------------------------------------------------+
-```
+> [!NOTE] The Executive Expectation Balance
+>
+> - **Setting Expectations Too High**: Marketing hype over-promises performance; buyers are inevitably disappointed.
+> - **Setting Expectations Too Low**: Fails to attract prospective buyers or justify premium price architecture.
+> - **The Optimum Stance**: Set market expectations that accurately reflect reality, then consistently over-deliver on operational execution.
 
 ### 3. Customer Engagement & Digital Media Dynamics
 
@@ -205,23 +192,10 @@ Modern marketing has shifted from broadcast monologue to **Customer-Engagement M
 
 Firms must classify customers by potential profitability and projected loyalty:
 
-```
-+--------------------------------------------------------------------------+
-|                   CUSTOMER RELATIONSHIP GROUPS (KOTLER)                  |
-+--------------------------------------------------------------------------+
-| HIGH PROFITABILITY  |   BUTTERFLIES           |      TRUE FRIENDS        |
-|                     |   Good fit of offerings |  Good fit of offerings   |
-|                     |   High profit potential |  Highest profit potential|
-|                     |   Short-term loyalty    |  Long-term loyalty       |
-| --------------------+-------------------------+--------------------------|
-| LOW PROFITABILITY   |   STRANGERS             |      BARNACLES           |
-|                     |   Little fit of offering|  Limited fit of offerings|
-|                     |   Lowest profit potential| Low profit potential    |
-|                     |   Short-term loyalty    |  Long-term loyalty       |
-| --------------------+-------------------------+--------------------------|
-|                     |   SHORT-TERM LOYALTY    |  LONG-TERM LOYALTY       |
-+--------------------------------------------------------------------------+
-```
+| Profitability \ Loyalty | Short-Term Projected Loyalty                                                                             | Long-Term Projected Loyalty                                                                                 |
+| :---------------------- | :------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- |
+| **High Profitability**  | **Butterflies**<br>• Good fit between offerings & needs<br>• High profit potential; short-term loyalty   | **True Friends**<br>• Strong fit between offerings & needs<br>• Highest profit potential; long-term loyalty |
+| **Low Profitability**   | **Strangers**<br>• Little fit between offerings & needs<br>• Lowest profit potential; short-term loyalty | **Barnacles**<br>• Limited fit between offerings & needs<br>• Low profit potential; long-term drag          |
 
 - **Butterflies:** Highly profitable but uncommitted. Action: Milk their transactions when active, avoid investing in long-term relationship infrastructure.
 - **True Friends:** Highly profitable and loyal. Action: Continuous relationship investment, delight them, make them brand champions.
@@ -262,7 +236,7 @@ flowchart TD
     B --> F["Phase 4: Planning Functional Strategies"]
 ```
 
-### 1. Defining the Market-Oriented Company Mission
+### 1. Defining the [[concepts/ikigai|Market-Oriented Company Mission]]
 
 A company mission statement is an enduring statement of purpose—what the organization wants to accomplish in the larger environment. It must be **market-oriented** (defined in terms of satisfying basic customer needs) rather than **product-oriented** (defined in terms of goods or technologies):
 
@@ -277,21 +251,16 @@ A company mission statement is an enduring statement of purpose—what the organ
 
 The corporate mission must be translated into specific supporting objectives at every management tier:
 
-```
-+--------------------------------------------------------------------------+
-|                  HIERARCHY OF STRATEGIC OBJECTIVES                       |
-+--------------------------------------------------------------------------+
-| BUSINESS OBJECTIVES (Corporate Level):                                   |
-| - Build profitable customer relationships across all divisions           |
-| - Invest in sustainable R&D (biodegradable surfactants, recycled plastic)|
-| - Achieve 15% Return on Capital Employed (ROCE)                          |
-|                                                                          |
-| MARKETING OBJECTIVES (Functional Level):                                 |
-| - Increase market volume share in Tier 2/3 cities by 450 bps             |
-| - Expand traditional trade warung distribution to 2.5 million kiosks     |
-| - Launch regional budget powder format at 80% price index of flagship   |
-+--------------------------------------------------------------------------+
-```
+> [!NOTE] Hierarchy of Strategic Objectives
+>
+> - **Business Objectives (Corporate Level)**:
+>   - Build profitable customer relationships across all enterprise operating divisions.
+>   - Invest in sustainable R&D (biodegradable surfactants, recycled plastic resin).
+>   - Achieve 15% Return on Capital Employed (ROCE).
+> - **Marketing Objectives (Functional Level)**:
+>   - Increase market volume share in Tier 2/3 Indonesian cities by 450 bps.
+>   - Expand traditional trade warung distribution to 2.5 million kiosks.
+>   - Launch regional budget powder format at an 80% price index of the flagship brand.
 
 ---
 
@@ -303,25 +272,10 @@ Management must evaluate the firm's collection of businesses and products (Strat
 
 The BCG matrix evaluates SBUs along two quantitative axes: **Market Growth Rate** (vertical axis, proxy for market attractiveness) and **Relative Market Share** (horizontal axis, proxy for company competitive strength):
 
-```
-+--------------------------------------------------------------------------+
-|                      THE BCG GROWTH-SHARE MATRIX                         |
-+--------------------------------------------------------------------------+
-| HIGH MARKET GROWTH  |   STARS                 |   QUESTION MARKS         |
-|                     |   High Share, High Growth|  Low Share, High Growth  |
-|                     |   Requires heavy capital |  Requires heavy cash to  |
-|                     |   to fund rapid growth;  |  turn into star; risk    |
-|                     |   becomes cash cow.      |  becoming a cash trap.   |
-| --------------------+-------------------------+--------------------------|
-| LOW MARKET GROWTH   |   CASH COWS             |   DOGS                   |
-|                     |   High Share, Low Growth |  Low Share, Low Growth   |
-|                     |   Generates surplus cash;|  Generates enough cash   |
-|                     |   funds stars & ? marks; |  to maintain itself; no  |
-|                     |   low reinvestment need. |  growth promise; divest. |
-| --------------------+-------------------------+--------------------------|
-|                     |   HIGH RELATIVE SHARE   |   LOW RELATIVE SHARE     |
-+--------------------------------------------------------------------------+
-```
+| Market Growth \ Relative Share | High Relative Market Share                                                                                                          | Low Relative Market Share                                                                                                         |
+| :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
+| **High Market Growth Rate**    | **Stars**<br>• High share, high growth<br>• Requires heavy investment to finance rapid growth; matures into Cash Cow                | **Question Marks**<br>• Low share, high growth<br>• Heavy cash requirements to hold or gain share; risk of becoming cash trap     |
+| **Low Market Growth Rate**     | **Cash Cows**<br>• High share, low growth<br>• Established, successful SBUs requiring less investment; generates cash to fund stars | **Dogs**<br>• Low share, low growth<br>• Generates enough cash to maintain itself; no strategic growth promise; harvest or divest |
 
 - **Four Portfolio Strategies:**
   1. _Build:_ Invest cash to increase market share (ideal for promising Question Marks).
@@ -333,23 +287,10 @@ The BCG matrix evaluates SBUs along two quantitative axes: **Market Growth Rate*
 
 Firms identify future growth opportunities through four corporate pathways:
 
-```
-+--------------------------------------------------------------------------+
-|                     ANSOFF PRODUCT/MARKET EXPANSION GRID                 |
-+--------------------------------------------------------------------------+
-|                     | EXISTING PRODUCTS       | NEW PRODUCTS             |
-| --------------------+-------------------------+--------------------------|
-| EXISTING MARKETS    | 1. MARKET PENETRATION   | 3. PRODUCT DEVELOPMENT   |
-|                     | Increase sales to       | Offer modified or new    |
-|                     | existing customer base  | products to existing     |
-|                     | without changing product| customer segments.       |
-| --------------------+-------------------------+--------------------------|
-| NEW MARKETS         | 2. MARKET DEVELOPMENT   | 4. DIVERSIFICATION       |
-|                     | Identify & develop new  | Start or acquire         |
-|                     | market segments for     | businesses outside       |
-|                     | current company products| current products/markets.|
-+--------------------------------------------------------------------------+
-```
+| Market \ Product     | Existing Products                                                                                              | New Products                                                                                           |
+| :------------------- | :------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| **Existing Markets** | **1. Market Penetration**<br>Increase sales to existing customer base without altering original product.       | **3. Product Development**<br>Offer modified or entirely new products to existing customer segments.   |
+| **New Markets**      | **2. Market Development**<br>Identify and develop new geographic or demographic segments for current products. | **4. Diversification**<br>Acquire or start businesses outside the firm's current products and markets. |
 
 - **Market Penetration in Action:** Unilever marketing Rinso through promotional multipacks and increased wash-frequency campaigns to existing Indonesian urban middle-class consumers.
 - **Market Development in Action:** Unilever taking existing detergent formulations into previously unserved Northeast Brazilian favelas or rural Outer Indonesia islands.
@@ -402,10 +343,8 @@ The network comprised of the company, suppliers, independent logistics providers
 At the operational core of marketing management sits the customer value strategy (STP), executed through the marketing mix:
 
 ```mermaid
-flowchart TD
-    A["Customer Value & Profitable Relationships (Core)"] --> B["Segmentation, Targeting, Differentiation & Positioning (STP)"]
-    B --> C["The Tactical Marketing Mix (4Ps / 7Ps / 4Cs)"]
-    C --> D["Marketing Analysis, Planning, Implementation & Control"]
+flowchart LR
+    A["<b>Customer Value</b><br/>Profitable Relationships"] --> B["<b>Strategic STP</b><br/>Segmentation, Targeting,<br/>Differentiation & Positioning"] --> C["<b>Tactical Mix</b><br/>4Ps / 7Ps / 4Cs"] --> D["<b>Marketing Control</b><br/>Analysis, Planning,<br/>Implementation & Audit"]
 ```
 
 ### 1. Strategic STP
@@ -419,21 +358,15 @@ flowchart TD
 
 The tactical toolkit used to produce the desired response in the target market:
 
-```
-+--------------------------------------------------------------------------+
-|                     THE 4Ps & EXTENDED 7Ps MARKETING MIX                 |
-+--------------------------------------------------------------------------+
-| PRODUCT: Variety, quality, design, features, brand name, packaging.      |
-| PRICE: List price, discounts, allowances, payment period, credit terms.  |
-| PLACE: Channels, coverage, assortments, locations, inventory, logistics. |
-| PROMOTION: Advertising, personal selling, sales promotion, PR, digital.  |
-| ------------------------------------------------------------------------ |
-| EXTENDED FOR SERVICES (7Ps):                                             |
-| PEOPLE: Frontline service staff, training, culture, customer interaction.|
-| PROCESS: Service blueprint, flow of activities, wait times, automation.  |
-| PHYSICAL EVIDENCE: Store atmosphere, packaging tangibles, receipts, UI. |
-+--------------------------------------------------------------------------+
-```
+| Dimension             | Scope & Key Tactical Elements                                           | Strategic Execution                                                      |
+| :-------------------- | :---------------------------------------------------------------------- | :----------------------------------------------------------------------- | --------------------------------------------------------- |
+| **Product**           | Variety, quality, design, features, brand name, packaging.              | Align formula and packaging aesthetics to target customer solution.      |
+| **Price**             | List price, discounts, allowances, payment periods, credit terms.       | Determine unit margin architecture and affordable purchasing increments. |
+| **Place**             | Channels, coverage, assortments, locations, inventory, logistics.       | Ensure high availability across traditional warungs and modern trade.    |
+| **Promotion**         | Advertising, personal selling, sales promotion, PR, digital.            | Drive brand awareness, trial, social proof, and two-way engagement.      |
+| **People**            | Frontline service staff, training, culture, customer interaction (7Ps). | Professional empathy and diagnostic expertise at service touchpoints.    |
+| **Process**           | [[concepts/service-blueprinting                                         | Service blueprint]], flow of activities, wait times, automation (7Ps).   | Eliminate service bottlenecks and reduce customer effort. |
+| **Physical Evidence** | Store atmosphere, packaging tangibles, receipts, digital UI (7Ps).      | Tangible cues confirming brand competence and credibility.               |
 
 ### 3. Re-Framing 4Ps to 4Cs: The Customer-Centric Mirror
 
@@ -508,23 +441,17 @@ Beyond short-term sales spikes, marketing builds **Customer Equity**—the total
 
 The foundational marketing models analyzed in this lecture were tested through two extensive real-world case crucibles across emerging markets:
 
-```
-+--------------------------------------------------------------------------+
-|                  COMPARATIVE MASS-MARKET CASE MATRIX                     |
-+--------------------------------------------------------------------------+
-| STRATEGIC CRITERIA    | UNILEVER BRAZIL (1997–2007) | UNILEVER INDONESIA (2026)  |
-| ----------------------+-----------------------------+----------------------------|
-| Core Case Subject     | Guimaraes & Chandon (INSEAD)| SBM ITB Case Series        |
-| Demographic Focus     | 48M Northeast Brazil Pop.   | 137.5M Aspiring Middle Cl. |
-| Economic Baseline     | Minimum Wage (R$ 112/mo)    | Rp 874k - Rp 2.04M exp/mo  |
-| Washing Ritual        | Manual washing in rivers/tubs| Manual + twin-tub machine |
-| Legacy Flagship       | Omo (Premium 100 Index)     | Rinso (Premium 100 Index)  |
-| Competitor Threat     | Unbranded local bar soaps   | Wings Group (Daia & SoKlin)|
-| Core Challenge        | Cannibalization of Omo      | Revenue contraction (-8.7%)|
-| Channel Architecture  | 75,000 *Invisíveis* Grocers | 3–4M Traditional Warungs   |
-| Winning Formulation   | Gentle on hands, high scent | Strong *wangi*, quick-foam |
-+--------------------------------------------------------------------------+
-```
+| Strategic Criteria       | Unilever Brazil (1997–2007)   | Unilever Indonesia (2026)    |
+| :----------------------- | :---------------------------- | :--------------------------- |
+| **Core Case Subject**    | Guimaraes & Chandon (INSEAD)  | SBM ITB Case Series          |
+| **Demographic Focus**    | 48M Northeast Brazil Pop.     | 137.5M Aspiring Middle Class |
+| **Economic Baseline**    | Minimum Wage (R$ 112/mo)      | Rp 874k - Rp 2.04M exp/mo    |
+| **Washing Ritual**       | Manual washing in rivers/tubs | Manual + twin-tub machine    |
+| **Legacy Flagship**      | Omo (Premium 100 Index)       | Rinso (Premium 100 Index)    |
+| **Competitor Threat**    | Unbranded local bar soaps     | Wings Group (Daia & SoKlin)  |
+| **Core Challenge**       | Cannibalization of Omo        | Revenue contraction (-8.7%)  |
+| **Channel Architecture** | 75,000 _Invisíveis_ Grocers   | 3–4M Traditional Warungs     |
+| **Winning Formulation**  | Gentle on hands, high scent   | Strong _wangi_, quick-foam   |
 
 ### Strategic Lessons from the Case Dossiers
 
@@ -537,9 +464,9 @@ The foundational marketing models analyzed in this lecture were tested through t
 ## 13. Required Readings, Cases & Problem Sets
 
 | Document / Asset                      |    Type    | Source Institution | Curricular Focus & Core Contribution                                                                                             | Study Satellite                                                                                        |
-| :------------------------------------ | :--------: | :----------------: | :------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| :------------------------------------ | :--------: | :----------------: | :------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | **Unilever in Brazil (1997–2007)**    | Case Study |       INSEAD       | Marketing to low-income consumers, Maria Conceição, Omo cannibalization risks, and specialized distributor economics.            | [[courses/mk3-marketing-management/week-01/case-unilever-brazil-low-income\|Open INSEAD Case Dossier]] |
-| **Unilever Indonesia (2026)**         | Case Study |      SBM ITB       | Archipelago mass-market defense, UNVR financial reset, Wings Group (_Daia_), and Bain Elements of Value application.             | [[courses/mk3-marketing-management/week-01/case-unilever-indonesia-2026\|Open SBM ITB Case Dossier]]   |
+| **Unilever Indonesia (2026)**         | Case Study |      SBM ITB       | Archipelago mass-market defense, UNVR financial reset, Wings Group (_Daia_), and Bain [[concepts/elements-of-value               | Elements of Value]] application.                                                                       | [[courses/mk3-marketing-management/week-01/case-unilever-indonesia-2026\|Open SBM ITB Case Dossier]] |
 | **Week 01 Assignment Q&A Analysis**   | Assignment |   SBM ITB MM5001   | Complete 10-question pre-assignment diagnostic, F9 (Class F / Syndicate 9) & Maintainer reference models, and cold-call debrief. | [[courses/mk3-marketing-management/week-01/assignment-pre-assignment-unilever\|Open Assignment Brief]] |
 | **Principles of Marketing (Ch. 1–2)** |  Textbook  | Kotler & Armstrong | Foundational theory on customer value, marketing management orientations, BCG growth-share matrix, and the marketing mix.        | _Raw Textbook Reference_                                                                               |
 
@@ -560,8 +487,8 @@ The foundational marketing models analyzed in this lecture were tested through t
 ## 15. Knowledge Graph & Curriculum Bridges
 
 - **Core Frameworks & Metrics in Knowledge Base:**
-  - [[concepts/customer-perceived-value|Customer Perceived Value (CPV)]]
-  - [[concepts/elements-of-value|Bain's Elements of Value]]
+  - [[concepts/customer-perceived-value|Customer Perceived Value [[concepts/customer-perceived-value|(CPV)]]]]
+  - [[concepts/elements-of-value|Bain's [[concepts/elements-of-value|Elements of Value]]]]
 - **Enterprise & Theorist Profiles:**
   - [[entities/ilma-aulia-zaim|Ilma Aulia Zaim, Ph.D. (Lead Lecturer)]]
   - [[entities/unilever|Unilever (Global & Indonesia)]]

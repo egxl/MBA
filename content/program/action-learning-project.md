@@ -17,11 +17,9 @@ The **Action Learning Project (ALP)** is the central experiential pillar of the 
 
 ## 1. Core Philosophy & The Carpenter Analogy
 
-```
-┌───────────────────────────┐     ┌───────────────────────────┐     ┌───────────────────────────┐
-│   Equip & Transform       │     │     Real Business ROI     │     │       True Test of        │
-│ Participant Capabilities  │ ──► │     that Creates Value    │ ──► │    Agility & Resilience   │
-└───────────────────────────┘     └───────────────────────────┘     └───────────────────────────┘
+```mermaid
+flowchart LR
+    A["Equip & Transform<br/>Participant Capabilities"] --> B["Real Business ROI<br/>that Creates Value"] --> C["True Test of<br/>Agility & Resilience"]
 ```
 
 > **The Carpenter Analogy:**  
@@ -52,16 +50,19 @@ To qualify as an executive ALP, each project deliverable must fulfill five core 
 
 The project unfolds across 6 progressive phases gated by **SMART criteria** (_Specific, Measurable, Achievable, Relevant, Time-Bound_):
 
-```
-┌──────────────────┐    ┌──────────────────┐    ┌──────────────────┐
-│ 1. Scoping       │───►│ 2. Data          │───►│ 3. Analysis      │
-│    (Weeks 2–3)   │    │    (Weeks 4–6)   │    │    (Weeks 7–9)   │
-└──────────────────┘    └──────────────────┘    └──────────────────┘
-                                                          │
-┌──────────────────┐    ┌──────────────────┐    ┌─────────▼────────┐
-│ 6. Final Defense │◄───│ 5. Coach Review  │◄───│ 4. Solution      │
-│    (Weeks 15–16) │    │    (Weeks 13–14) │    │    (Weeks 10–12) │
-└──────────────────┘    └──────────────────┘    └──────────────────┘
+```mermaid
+flowchart LR
+    subgraph Diagnostic ["Diagnostic Formulation"]
+        direction LR
+        S1["<b>Stage 1: Problem Scoping</b><br/>(Weeks 2–3)"] --> S2["<b>Stage 2: Data Gathering</b><br/>(Weeks 4–6)"] --> S3["<b>Stage 3: Analysis</b><br/>(Weeks 7–9)"]
+    end
+
+    subgraph Solution ["Intervention & Defense"]
+        direction LR
+        S4["<b>Stage 4: Solution Design</b><br/>(Weeks 10–12)"] --> S5["<b>Stage 5: Coach Review</b><br/>(Weeks 13–14)"] --> S6["<b>Stage 6: Final Defense</b><br/>(Weeks 15–16)"]
+    end
+
+    Diagnostic --> Solution
 ```
 
 ### Stage Breakdown
@@ -80,11 +81,11 @@ The project unfolds across 6 progressive phases gated by **SMART criteria** (_Sp
 ## 4. Milestone Gates & Mentorship Alignment
 
 | Milestone            |   Timing    | Evaluation Gate                                                                                 | Mentorship & Immersion Touchpoints              |
-| :------------------- | :---------: | :---------------------------------------------------------------------------------------------- | :---------------------------------------------- |
+| :------------------- | :---------: | :---------------------------------------------------------------------------------------------- | :---------------------------------------------- | --------------------------------------------------------------------------- |
 | **Kick-Off**         |   Week 2    | Cohort launch and project assignment across 10 partner BUMNs.                                   | Initial Project Owner alignment.                |
 | —                    |   Week 3    | Project Framing Check                                                                           | **BUMN Practitioner Mentoring 1**               |
 | —                    |   Week 4    | Methodological Scrutiny                                                                         | **SBM ITB Academic Coaching 1**                 |
-| —                    |   Week 5    | Field Work Preparation                                                                          | **Business Immersion 1 (Field Site Visit)**     |
+| —                    |   Week 5    | Field Work Preparation                                                                          | \*\*[[program/alp/business-immersion-1/index    | Business Immersion 1 (Field Site Visit)]]\*\* (10 BUMN Diagnostic Dossiers) |
 | **Milestone 1 (M1)** | **Week 6**  | **Problem Definition & Diagnostic Gate**: Defense of scoping and baseline fact pack.            | Formal Progress Approval Gate.                  |
 | —                    |   Week 7    | Analytical Mid-Point Review                                                                     | **BUMN Practitioner Mentoring 2**               |
 | —                    |   Week 8    | Mid-Term Academic Integration                                                                   | **SBM ITB Academic Coaching 2**                 |

@@ -46,22 +46,22 @@ The curriculum begins with analytics foundations, data-driven decision framework
 
 ## 🗺️ 14-Week Map of Content (MOC)
 
-|    Week     | Module / Thematic Pillar | Topic & Core Focus                                                                   | Note Hub                        |
-| :---------: | :----------------------- | :----------------------------------------------------------------------------------- | :------------------------------ |
-| **Week 01** | Foundations              | **Introduction to Business Analytics (Descriptive, Predictive, Prescriptive)**       | _Scheduled (Pending Ingestion)_ |
-| **Week 02** | Foundations              | **Data-Driven Decision Making & Analytical Culture**                                 | _Scheduled (Pending Ingestion)_ |
-| **Week 03** | Foundations              | **Predictive Analytics for Business (Regression, Classification & Validation)**      | _Scheduled (Pending Ingestion)_ |
-| **Week 04** | Applied Analytics        | **Customer Analytics (Segmentation, LTV, Churn Prediction)**                         | _Scheduled (Pending Ingestion)_ |
-| **Week 05** | Applied Analytics        | **Marketing Analytics (Attribution Modeling, Marketing Mix Modeling - MMM)**         | _Scheduled (Pending Ingestion)_ |
-| **Week 06** | Applied Analytics        | **Financial Analytics (Credit Scoring, Default Risk & Fraud Detection)**             | _Scheduled (Pending Ingestion)_ |
-| **Week 07** | Applied Analytics        | **Supply Chain Analytics (Network Optimization & Demand Sensing)**                   | _Scheduled (Pending Ingestion)_ |
-| **Week 08** | Applied Analytics        | **Risk Analytics (VaR Modeling, Stress Testing & Operational Risk)**                 | _Scheduled (Pending Ingestion)_ |
-| **Week 09** | Data & Responsibility    | **Big Data in Business (Volume, Velocity, Variety & Data Lakes)**                    | _Scheduled (Pending Ingestion)_ |
-| **Week 10** | Data & Responsibility    | **Ethical Considerations in Business Analytics & Algorithmic Bias**                  | _Scheduled (Pending Ingestion)_ |
-| **Week 11** | Data & Responsibility    | **Practical: Big Data Technologies (Cloud Data Warehousing & Pipelines)**            | _Scheduled (Pending Ingestion)_ |
-| **Week 12** | Data & Responsibility    | **Practical: Data Privacy, Cybersecurity & Compliance (UU PDP)**                     | _Scheduled (Pending Ingestion)_ |
-| **Week 13** | Advanced Analytics       | **Business Intelligence (BI), KPI Dashboards & Executive Visualization**             | _Scheduled (Pending Ingestion)_ |
-| **Week 14** | Advanced Analytics       | **Future Trends in Business Analytics: Generative AI & Autonomous Decision Systems** | _Scheduled (Pending Ingestion)_ |
+|    Week     | Module / Thematic Pillar | Topic & Core Focus                                                                                         | Note Hub                        |
+| :---------: | :----------------------- | :--------------------------------------------------------------------------------------------------------- | :------------------------------ |
+| **Week 01** | Foundations              | **Introduction to Business Analytics (Descriptive, Predictive, Prescriptive)**                             | _Scheduled (Pending Ingestion)_ |
+| **Week 02** | Foundations              | **Data-Driven Decision Making & Analytical Culture**                                                       | _Scheduled (Pending Ingestion)_ |
+| **Week 03** | Foundations              | **Predictive Analytics for Business (Regression, Classification & Validation)**                            | _Scheduled (Pending Ingestion)_ |
+| **Week 04** | Applied Analytics        | **Customer Analytics (Segmentation, LTV, Churn Prediction)**                                               | _Scheduled (Pending Ingestion)_ |
+| **Week 05** | Applied Analytics        | **Marketing Analytics (Attribution Modeling, Marketing Mix Modeling - MMM)**                               | _Scheduled (Pending Ingestion)_ |
+| **Week 06** | Applied Analytics        | **Financial Analytics (Credit Scoring, Default Risk & Fraud Detection)**                                   | _Scheduled (Pending Ingestion)_ |
+| **Week 07** | Applied Analytics        | **Supply Chain Analytics (Network Optimization & Demand Sensing)**                                         | _Scheduled (Pending Ingestion)_ |
+| **Week 08** | Applied Analytics        | [[courses/mk6-business-analytics/week-08/index\|People & Organizational Network Analytics (ONA)]]          | **Ingested**                    |
+| **Week 09** | Applied Analytics        | [[courses/mk6-business-analytics/week-09/index\|Operations Analytics & Supply Chain Lead-Time Simulation]] | **Ingested**                    |
+| **Week 10** | Data & Responsibility    | **Ethical Considerations in Business Analytics & Algorithmic Bias**                                        | _Scheduled (Pending Ingestion)_ |
+| **Week 11** | Data & Responsibility    | **Practical: Big Data Technologies (Cloud Data Warehousing & Pipelines)**                                  | _Scheduled (Pending Ingestion)_ |
+| **Week 12** | Data & Responsibility    | **Practical: Data Privacy, Cybersecurity & Compliance (UU PDP)**                                           | _Scheduled (Pending Ingestion)_ |
+| **Week 13** | Advanced Analytics       | **Business Intelligence (BI), KPI Dashboards & Executive Visualization**                                   | _Scheduled (Pending Ingestion)_ |
+| **Week 14** | Advanced Analytics       | **Future Trends in Business Analytics: Generative AI & Autonomous Decision Systems**                       | _Scheduled (Pending Ingestion)_ |
 
 ---
 

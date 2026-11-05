@@ -159,9 +159,17 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
   return {
     name: "ObsidianFlavoredMarkdown",
     textTransform(_ctx, src) {
-      // do comments at text level
+      // do comments at text level (protect codeblocks so Mermaid %% comments aren't mangled)
       if (opts.comments) {
+        const codeBlocks: string[] = []
+        src = src.replace(/(```[\s\S]*?```)/g, (_match, block) => {
+          codeBlocks.push(block)
+          return `__QUARTZ_CODE_BLOCK_${codeBlocks.length - 1}__`
+        })
         src = src.replace(commentRegex, "")
+        src = src.replace(/__QUARTZ_CODE_BLOCK_(\d+)__/g, (_match, index) => {
+          return codeBlocks[Number(index)]
+        })
       }
 
       // pre-transform blockquotes

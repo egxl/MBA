@@ -97,51 +97,6 @@
     user-select: none;
   }
 
-  .course-switcher-go {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.25rem;
-    font-family: var(--headerFont);
-    font-size: 0.78rem;
-    font-weight: 600;
-    line-height: 1.2;
-    padding: 0.32rem 0.75rem;
-    border-radius: 6px;
-    border: 1px solid var(--secondary);
-    background-color: var(--secondary);
-    color: #ffffff;
-    cursor: pointer;
-    user-select: none;
-    transition:
-      background-color 0.15s ease,
-      border-color 0.15s ease,
-      box-shadow 0.15s ease,
-      transform 0.08s ease;
-
-    .go-arrow {
-      stroke: currentColor;
-      fill: none;
-      stroke-width: 2.4;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    &:hover {
-      background-color: var(--tertiary);
-      border-color: var(--tertiary);
-    }
-
-    &:focus-visible {
-      outline: none;
-      box-shadow: 0 0 0 2px var(--highlight);
-    }
-
-    &:active {
-      transform: scale(0.96);
-    }
-  }
-
   .course-switcher-data {
     display: none;
   }
@@ -163,28 +118,26 @@
       border-color: var(--lightgray);
     }
   }
-
-  .course-switcher-go {
-    background-color: var(--secondary);
-    color: var(--light);
-    border-color: var(--secondary);
-
-    &:hover {
-      background-color: var(--tertiary);
-      border-color: var(--tertiary);
-    }
-  }
 }
 
 @media all and ($mobile) {
   .course-switcher {
-    gap: 0.4rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.45rem;
 
     .course-switcher-item {
-      flex: 1 1 auto;
+      width: 100%;
       min-width: 0;
 
+      .course-switcher-label {
+        min-width: 3.5rem;
+        flex-shrink: 0;
+      }
+
       .course-switcher-select-wrap {
+        flex: 1 1 auto;
+        min-width: 0;
         width: 100%;
       }
 
@@ -196,11 +149,6 @@
 
     .course-switcher-divider {
       display: none;
-    }
-
-    .course-switcher-go {
-      flex: 0 0 auto;
-      padding: 0.35rem 0.9rem;
     }
   }
 }

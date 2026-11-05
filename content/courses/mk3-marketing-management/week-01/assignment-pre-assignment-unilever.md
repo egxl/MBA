@@ -38,7 +38,7 @@ The pre-assignment challenges students to synthesize two major market entry and 
 4. **Legacy Portfolio Architecture:** Name Unilever's three existing Brazilian detergent brands before the launch of _Ala_, and one word that summarizes each brand's positioning.
 5. **Pricing & Cannibalization Economics:** What price, as a percentage of Omo's price, was _Ala_ eventually launched at? What was Unilever's original mathematically-derived break-even cannibalization rate at that price point, and what was the actual cannibalization rate one year later?
 6. **Price Shopper vs. Value Seeker:** In one sentence, explain what a "price shopper" is and why the case argues low-income Brazilian consumers are not price shoppers.
-7. **Bain Elements of Value Mapping:** Read the Indonesia case's Exhibit 6 (Bain Elements of Value mapping). Identify one element where you think the Indonesian case's mapping is well-supported by the text, and one where you think it is a stretch or under-justified. Be ready to defend both in class.
+7. **Bain [[concepts/elements-of-value|Elements of Value]] Mapping:** Read the Indonesia case's Exhibit 6 (Bain [[concepts/elements-of-value|Elements of Value]] mapping). Identify one element where you think the Indonesian case's mapping is well-supported by the text, and one where you think it is a stretch or under-justified. Be ready to defend both in class.
 8. **The Aspiring Middle Class & Competitor:** What is Indonesia's "aspiring middle class" segment, in size and in the case's own definition (income/expenditure band)? Name Unilever Indonesia's principal domestic competitor and its mass-market detergent brand.
 9. **Strategic Position (Brazil):** Take a preliminary position: in Brazil, should Unilever go after low-income Northeast consumers? List your two strongest reasons for and against.
 10. **Group Disagreement / Dialectic:** Record any question above on which your group did not reach agreement, and briefly state the competing views.
@@ -114,7 +114,7 @@ Reconstructed attribute preference from INSEAD Case Exhibit 5:
 
 ---
 
-### Q7: Bain Elements of Value Mapping (Indonesia Case Exhibit 6)
+### Q7: Bain [[concepts/elements-of-value|Elements of Value]] Mapping (Indonesia Case Exhibit 6)
 
 ```
                   /\
@@ -206,4 +206,4 @@ Anticipated debate hooks from **Dr. Ilma Aulia Zaim** during case discussion:
 - Linked Brazil Case: **[[courses/mk3-marketing-management/week-01/case-unilever-brazil-low-income|Unilever Brazil Case Analysis]]**
 - Linked Indonesia Case: **[[courses/mk3-marketing-management/week-01/case-unilever-indonesia-2026|Unilever Indonesia Case Analysis]]**
 - Applied Concept: **[[concepts/customer-perceived-value|Customer Perceived Value]]**
-- Applied Concept: **[[concepts/elements-of-value|Bain's Elements of Value]]**
+- Applied Concept: **[[concepts/elements-of-value|Bain's [[concepts/elements-of-value|Elements of Value]]]]**

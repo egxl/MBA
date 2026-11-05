@@ -170,3 +170,106 @@ export function clampSplitRatio(ratio: number, min = 25, max = 75): number {
   if (Number.isNaN(ratio)) return 50
   return Math.max(min, Math.min(max, ratio))
 }
+
+/**
+ * Returns a human-friendly category badge for a target split or link URL.
+ */
+export function getSplitBadgeLabel(url: URL): string {
+  const segments = url.pathname.split("/").filter(Boolean)
+  if (segments.length === 0) return "Note"
+
+  if (segments.includes("concepts")) {
+    const last = segments[segments.length - 1]
+    if (last === "concepts" || last === "index" || last === "index.html") {
+      return "Index"
+    }
+    return "Concept"
+  }
+
+  if (segments.includes("entities")) {
+    const last = segments[segments.length - 1]
+    if (last === "entities" || last === "index" || last === "index.html") {
+      return "Index"
+    }
+    return "Entity"
+  }
+
+  if (segments.includes("courses")) {
+    const last = segments[segments.length - 1] || ""
+    if (last.startsWith("case-") || segments.some((s) => s.startsWith("case-"))) {
+      return "Case"
+    }
+    if (last.startsWith("assignment-") || segments.some((s) => s.startsWith("assignment-"))) {
+      return "Assignment"
+    }
+    return "Course"
+  }
+
+  if (segments.includes("rabuan")) {
+    return "Rabuan"
+  }
+
+  if (segments.includes("program")) {
+    if (segments.includes("alp")) {
+      return "ALP"
+    }
+    return "Program"
+  }
+
+  return "Note"
+}
+
+/**
+ * Strips internal hash prefixes like #split- and #popover-internal-
+ * to ensure copied or navigated links always point to canonical anchors.
+ */
+export function sanitizeInternalUrl(rawHref: string, baseOrigin: string): URL {
+  const url = new URL(rawHref, baseOrigin)
+  if (url.hash) {
+    let cleanHash = url.hash.slice(1)
+    if (cleanHash.startsWith("split-")) {
+      cleanHash = cleanHash.slice("split-".length)
+    } else if (cleanHash.startsWith("popover-internal-")) {
+      cleanHash = cleanHash.slice("popover-internal-".length)
+    }
+    url.hash = cleanHash ? `#${cleanHash}` : ""
+  }
+  return url
+}
+
+/**
+ * Formats a clean internal URL and page title into an Obsidian/Quartz wikilink.
+ */
+export function formatAsWikilink(url: URL, title?: string): string {
+  const slug = url.pathname.replace(/^\/+|\/+$/g, "")
+  const cleanTitle = (title || "").trim() || slug.split("/").pop() || "Link"
+
+  if (url.hash) {
+    const hash = url.hash.slice(1)
+    return `[[${slug}#${hash}|${cleanTitle}]]`
+  }
+  return `[[${slug}|${cleanTitle}]]`
+}
+
+export interface ContextMenuGuardParams {
+  isShiftKey: boolean
+  windowWidth: number
+  isCoarsePointer: boolean
+  targetOrigin: string
+  currentOrigin: string
+  isAnchor: boolean
+  isRepeatOnSameAnchor: boolean
+}
+
+/**
+ * Validates whether the custom hyperlink context menu should open or allow native browser menu.
+ */
+export function shouldShowContextMenu(params: ContextMenuGuardParams): boolean {
+  if (params.isShiftKey) return false
+  if (params.windowWidth <= 800) return false
+  if (params.isCoarsePointer) return false
+  if (!params.isAnchor) return false
+  if (params.isRepeatOnSameAnchor) return false
+  if (params.targetOrigin !== params.currentOrigin) return false
+  return true
+}

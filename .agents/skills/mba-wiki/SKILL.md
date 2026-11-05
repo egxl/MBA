@@ -85,6 +85,23 @@ The **MBA Wiki** skill transforms raw MBA slide decks, business cases, academic 
    - Omit body `<h1>` tags (Quartz renders frontmatter `title` as `<h1>`).
    - Always verify with `npm run wiki:sync`, `npm run check`, `npm test`, and `npx quartz build`.
 
+9. **Epistemic Primacy & Conflict Resolution (Handling Collisions & Placeholders)**:
+   - **Hierarchy of Authority**: Authentic primary materials (Tier 1: SBM ITB slide decks, official cases, rubrics) strictly supersede and invalidate all provisional scaffolding, tentative syllabus guesses, or early hallucinated placeholders (Tier 0).
+   - **Reconnaissance Before Ingestion**: When ingesting `mkX week-YY`, inspect `content/courses/mkX/week-YY/` to catalog existing files.
+   - **Full Master Rewrite**: Never append blindly to existing notes; completely re-author `index.md` from primary evidence.
+   - **Zombie Satellite Purge**: Delete obsolete or fabricated satellites; overwrite matching satellites with verified academic depth.
+   - **Syllabus & Lattice Realignment**: Reconcile topic titles in `content/courses/mkX-.../index.md` to reflect the authentic lecture slides, update concepts/entities, and verify with `npm run check` and `npx quartz build`.
+
+10. **The First-Principles Accessibility Mandate (Zero-Prerequisite & Anti-Formula-Dump Standard)**:
+    This portal exists so anyone—even without prior business, mathematical, or psychological training—can master the material from first principles.
+    - **Never Dump Formulas**: Do not output consecutive display equations (`$$...$$`) without explanatory prose.
+    - **The 4-Layer Pedagogical Architecture**: Every quantitative formula or multi-part framework must provide:
+      1. *Plain-English Intuition & Everyday Analogy* (why the concept exists in the real world before diving into technicalities).
+      2. *Prerequisite & Jargon Decoder* (explaining underlying variables like EBIT, Poisson variance, discount rate, or psychological ego states on the spot).
+      3. *Structural Anatomy of the Mechanism* (explaining why the numerator scales the metric and why the denominator acts as a penalty or drag).
+      4. *Micro-Numerical Toy Example* (a 10-second mental-math walkthrough with simple, round numbers).
+    - Always verify accessibility with `npm run wiki:pedagogy -- --target "<course/week>"`.
+
 ---
 
 ## Detailed Reference Guides

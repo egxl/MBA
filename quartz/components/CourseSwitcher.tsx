@@ -117,17 +117,6 @@ export default (() => {
           </div>
         </div>
 
-        <button
-          type="button"
-          class="course-switcher-go"
-          aria-label="Navigate to selected course or week"
-        >
-          <span>Go</span>
-          <svg class="go-arrow" viewBox="0 0 24 24" aria-hidden="true">
-            <polyline points="9 18 15 12 9 6" />
-          </svg>
-        </button>
-
         <script
           type="application/json"
           class="course-switcher-data"
