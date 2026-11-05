@@ -93,13 +93,13 @@ _Empirical Findings from Nohria, Groysberg, & Lee (2008)_ across Fortune 500 ent
   - _Defend_: Severely threatened by unpredictable emotional volatility and opaque performance evaluation.
 - **Cohort Assignment Synthesis**: [[courses/mk1-organizational-behavior-managing-people/week-03/assignment-post-four-drives|F9 Post-Class Debrief: Four-Drive Framework Diagnostic]].
 
-### 2. PeopleMath & Quantitative Human Capital Strategy (MK 6 & Rabuan)
+### 2. PeopleMath & Human Capital Architecture (MK 1 & Rabuan)
 
-- **Masterclass Context**: [[rabuan/2026-09-02-adh-peoplemath|Rabuan 01: PeopleMath Executive Masterclass (Agus Dwi Handaya, SEVP Bank Mandiri)]].
-- **Connecting Drives to Human Capital Analytics**:
-  - _Drive to Acquire $\Longleftrightarrow$ Compa-Ratio Optimization_: Managing salary banding through [[concepts/compa-ratio|Compa-Ratio Banding]] ensures market competitiveness while preventing internally perceived inequity.
-  - _Drive to Bond & Comprehend $\Longleftrightarrow$ Talent Density_: Creating high-performing teams requires dense talent clusters ([[concepts/talent-density|Talent Density Power Law]]), where top performers inspire and elevate peer motivation without bureaucratic friction.
-  - _Drive to Defend $\Longleftrightarrow$ Procedural Justice_: Transparency in promotion pipelines and meritocratic appraisal systems reduces voluntary turnover drag ($1.5\times-2.5\times$ annualized compensation cost per departing executive).
+- **Masterclass Context**: [[rabuan/2026-09-02-adh-peoplemath|Rabuan 01: PeopleMath — Produktivitas Berkualitas & Strategi Tough & Agile Learner]] ([[entities/agus-dwi-handaya|Agus Dwi Handaya]], MD Human Capital PT Danantara Asset Management).
+- **Mapping the Four Drives to [[concepts/peoplemath-framework|PeopleMath Architecture]]**:
+  - _Drive to Acquire $\Longleftrightarrow$ Receiving Factors ($Rr$ / RF)_: Managing extrinsic compensation, equitable salary banding, and fair incentives provides the baseline security required before higher motivation can activate.
+  - _Drive to Bond & Comprehend $\Longleftrightarrow$ Giving Factors ($Gr$ / GF) & 3N Learning Engine_: Sustained motivation requires psychological purpose ($M$) and active cognitive expansion via the 3N Individu loop ($IDS$: _Nyerap, Ngulang, Ngerefleksi_) supported by [[concepts/tough-and-agile-learner|Tough & Agile Learner]] capability.
+  - _Drive to Defend $\Longleftrightarrow$ Psychological Safety & Leader Treatment ($Tr$)_: Fostering an environment where employees report errors and ask for help depends on the 3N Leader ($EL$: _Nagih, Nata, Nuntun_) maintaining high human treatment ($Tr$) and systemic integrity ($In$).
 
 ---
 
@@ -131,6 +131,6 @@ _Empirical Findings from Nohria, Groysberg, & Lee (2008)_ across Fortune 500 ent
 - **Executive Plenary**: [[rabuan/2026-09-02-adh-peoplemath|Rabuan 01: PeopleMath Executive Masterclass (Agus Dwi Handaya)]]
 - **Featured Executive Profile**: [[entities/agus-dwi-handaya|Agus Dwi Handaya]]
 - **Related Mechanisms**:
-  - [[concepts/talent-density|Talent Density Power Law]]
-  - [[concepts/compa-ratio|Compa-Ratio Banding]]
+  - [[concepts/peoplemath-framework|PeopleMath Framework & PPH Architecture]]
+  - [[concepts/tough-and-agile-learner|Tough & Agile Learner (TAL)]]
 - **Knowledge Matrix Hub**: [[concepts/index|Knowledge Matrix]]

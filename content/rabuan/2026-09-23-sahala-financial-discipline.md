@@ -17,7 +17,7 @@ tags:
   - bumn
 ---
 
-## 🎤 Executive Plenary Overview
+## Executive Plenary Overview
 
 On September 23, 2026, **Sahala Tua Paulus Situmorang, S.E.Ak., M.B.A.**—Managing Director of Finance / Chief Financial Officer of **PT Danantara Asset Management (DAM)**—delivered a high-impact executive masterclass to the **P3MD Batch I Soedirman** cohort at Kampus DCU Nawasena.
 
@@ -33,7 +33,7 @@ flowchart LR
 
 ---
 
-## 📊 Full-Corpus Empirical Census & Analytical Resonance
+## Full-Corpus Empirical Census & Analytical Resonance
 
 An exhaustive textual census across all **381 submitted cohort reflection essays** ($N=381$, 100% extraction) revealed the precise distribution of analytical resonance among P3MD participants:
 
@@ -54,7 +54,7 @@ An exhaustive textual census across all **381 submitted cohort reflection essays
 
 ---
 
-## 💡 Core Pedagogical Foundations & Operating Principles
+## Core Pedagogical Foundations & Operating Principles
 
 ### 1. "Think Big, Think Global" with Authentic Sense of Ownership
 
@@ -76,7 +76,7 @@ A leader who cannot read their enterprise's financial mechanics is operating bli
 
 ---
 
-## 📐 Theoretical Architecture & Executive Frameworks
+## Theoretical Architecture & Executive Frameworks
 
 ### 1. The Capital-Capability Synergy Calculus
 
@@ -152,7 +152,7 @@ Risk management in high-performing enterprises must evolve beyond static qualita
 
 ---
 
-## 🏢 Danantara Sovereign Portfolio & Enterprise Governance
+## Danantara Sovereign Portfolio & Enterprise Governance
 
 As an executive leader within **[[entities/danantara|Danantara Asset Management]]**, Sahala outlined the strategic shifts transforming the Indonesian state asset landscape:
 
@@ -161,7 +161,7 @@ As an executive leader within **[[entities/danantara|Danantara Asset Management]
 
 ---
 
-## 👥 Cohort-Wide Reflection Synthesis Dossier (P3MD Batch I Soedirman)
+## Cohort-Wide Reflection Synthesis Dossier (P3MD Batch I Soedirman)
 
 Across the **381 submitted reflection essays**, participants from across the 12 Elements analyzed the session with profound personal and organizational candor:
 
@@ -195,7 +195,7 @@ Synthesized anonymously across the cohort, participants formulated concrete 30-d
 
 ---
 
-## 📂 Archival Staging & Primary Sources
+## Archival Staging & Primary Sources
 
 All primary student reflection artifacts from the session have been verified, safety-scanned, and archived in the repository for institutional lineage:
 
@@ -209,7 +209,7 @@ All primary student reflection artifacts from the session have been verified, sa
 
 ---
 
-## 🔗 Knowledge Graph & Curriculum Bridges
+## Knowledge Graph & Curriculum Bridges
 
 - **Featured Keynote Speaker**:
   - [[entities/sahala-situmorang|Sahala Tua Paulus Situmorang, S.E.Ak., M.B.A.]] (Managing Director Finance / CFO, Danantara Asset Management)
@@ -222,7 +222,7 @@ All primary student reflection artifacts from the session have been verified, sa
 - **Parallel Rabuan Plenary Session**:
   - [[rabuan/2026-09-23-syamsul-infrastruktur|Rabuan 03A: Nation in Motion — Infrastruktur sebagai Penggerak Pertumbuhan]] (Dipl.-Ing. Syamsul Bachri Yusuf)
 - **Executive Masterclass Series (Rabuan)**:
-  - [[rabuan/2026-09-02-adh-peoplemath|Rabuan 01: PeopleMath — Strategic Calculus of Human Capital]] (Agus Dwi Handaya)
+  - [[rabuan/2026-09-02-adh-peoplemath|Rabuan 01: PeopleMath — Produktivitas Berkualitas & Strategi Tough & Agile Learner]] (Agus Dwi Handaya)
   - [[rabuan/2026-09-04-indayati-professional-image|Special Masterclass: Building Professional Image & Communication Skills]] (Indayati Oetomo)
   - [[rabuan/2026-10-14-ric-roi-impact-career|Rabuan 02: Making an Impact, Making a Career]] (Dr. Ric Roi)
 - **Direct Curricular Synergies**:

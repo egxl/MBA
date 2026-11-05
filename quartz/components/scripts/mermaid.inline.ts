@@ -451,19 +451,8 @@ function hideModal() {
   removeAllChildren(content)
 }
 
-const cssVars = [
-  "--secondary",
-  "--tertiary",
-  "--gray",
-  "--light",
-  "--lightgray",
-  "--highlight",
-  "--dark",
-  "--darkgray",
-  "--codeFont",
-  "--headerFont",
-  "--mermaid-ink",
-] as const
+const SYSTEM_FONT =
+  '-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif'
 
 let mermaidImport: any = undefined
 const textMapping: WeakMap<HTMLElement, string> = new WeakMap()
@@ -474,6 +463,44 @@ async function getMermaidInstance() {
     "https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs"
   )
   return mermaidImport.default
+}
+
+function normalizeRenderedSvg(svg: SVGSVGElement) {
+  // 1. Prevent foreignObject bounding boxes from clipping descenders or subpixel glyph overflow
+  const foreignObjects = svg.querySelectorAll<SVGForeignObjectElement>("foreignObject")
+  for (const fo of Array.from(foreignObjects)) {
+    fo.style.overflow = "visible"
+  }
+
+  // 2. Expand SVG viewBox if any rendered element (pie legend, axis label, outer stroke) extends outside it
+  try {
+    const bbox = svg.getBBox()
+    if (bbox && bbox.width > 0 && bbox.height > 0) {
+      const pad = 12
+      const vbAttr = svg.getAttribute("viewBox")
+      if (vbAttr) {
+        const parts = vbAttr
+          .trim()
+          .split(/[\s,]+/)
+          .map(Number)
+        if (parts.length === 4 && parts[2] > 0 && parts[3] > 0) {
+          const [vbX, vbY, vbW, vbH] = parts
+          const minX = Math.min(vbX, bbox.x - pad)
+          const minY = Math.min(vbY, bbox.y - pad)
+          const maxX = Math.max(vbX + vbW, bbox.x + bbox.width + pad)
+          const maxY = Math.max(vbY + vbH, bbox.y + bbox.height + pad)
+          const newW = maxX - minX
+          const newH = maxY - minY
+          svg.setAttribute("viewBox", `${minX} ${minY} ${newW} ${newH}`)
+          if (svg.style.maxWidth) {
+            svg.style.maxWidth = `${newW}px`
+          }
+        }
+      }
+    }
+  } catch {
+    // getBBox can throw if SVG is hidden or detached
+  }
 }
 
 function wireExpandButtons(nodes: HTMLElement[]) {
@@ -522,6 +549,7 @@ async function renderAllMermaid() {
   isRenderingMermaid = true
   try {
     const mermaid = await getMermaidInstance()
+    await document.fonts?.ready
 
     for (const node of nodes) {
       if (!textMapping.has(node)) {
@@ -548,36 +576,37 @@ async function renderAllMermaid() {
       }
     }
 
-    const computedStyleMap = cssVars.reduce(
-      (acc, key) => {
-        acc[key] = window.getComputedStyle(document.documentElement).getPropertyValue(key)
-        return acc
-      },
-      {} as Record<(typeof cssVars)[number], string>,
-    )
-
-    const font = computedStyleMap["--headerFont"]?.trim() || "Anthropic Sans, system-ui, sans-serif"
-    const textColor =
-      computedStyleMap["--dark"]?.trim() || computedStyleMap["--darkgray"]?.trim() || "#1F1E1C"
     const darkMode = document.documentElement.getAttribute("saved-theme") === "dark"
     mermaid.initialize({
       startOnLoad: false,
       securityLevel: "loose",
-      theme: darkMode ? "dark" : "base",
+      look: "classic",
+      theme: darkMode ? "dark" : "neutral",
+      fontFamily: SYSTEM_FONT,
       themeVariables: {
-        fontFamily: font,
-        primaryColor: computedStyleMap["--light"],
-        primaryTextColor: textColor,
-        primaryBorderColor: computedStyleMap["--tertiary"],
-        lineColor: computedStyleMap["--darkgray"],
-        secondaryColor: computedStyleMap["--secondary"],
-        tertiaryColor: computedStyleMap["--tertiary"],
-        clusterBkg: computedStyleMap["--light"],
-        edgeLabelBackground: computedStyleMap["--light"],
+        fontFamily: SYSTEM_FONT,
+        fontSize: "14px",
+      },
+      flowchart: {
+        htmlLabels: true,
+        curve: "basis",
+        padding: 15,
+        wrappingWidth: 220,
+        subGraphTitleMargin: {
+          top: 10,
+          bottom: 18,
+        },
       },
     })
 
     await mermaid.run({ nodes })
+
+    for (const node of nodes) {
+      const svg = node.querySelector<SVGSVGElement>("svg")
+      if (svg) {
+        normalizeRenderedSvg(svg)
+      }
+    }
 
     // If modal is open during theme change, refresh the cloned SVG
     if (modalElements?.modal.classList.contains("active") && currentOpenCodeBlock) {

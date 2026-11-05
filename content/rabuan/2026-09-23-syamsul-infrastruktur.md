@@ -19,7 +19,7 @@ tags:
   - danantara
 ---
 
-## 🎤 Executive Plenary Overview
+## Executive Plenary Overview
 
 On September 23, 2026, **Dipl.-Ing. Syamsul Bachri Yusuf, M.Si. (Han)**—Staf Khusus Menteri Pekerjaan Umum (KemenPU) Bidang Teknologi dan Kepatuhan Internal and member of the Board of Commissioners of **[[entities/pt-jasa-marga|PT Jasa Marga (Persero) Tbk]]**—delivered an authoritative macro-strategic plenary lecture to the **P3MD Batch I Soedirman** cohort at Kampus DCU Nawasena.
 
@@ -35,7 +35,7 @@ flowchart LR
 
 ---
 
-## 📊 Full-Corpus Empirical Census & Analytical Resonance
+## Full-Corpus Empirical Census & Analytical Resonance
 
 An exhaustive textual census across all **381 submitted cohort reflection essays** ($N=381$, 100% extraction) revealed the precise distribution of analytical resonance among P3MD participants:
 
@@ -57,7 +57,7 @@ An exhaustive textual census across all **381 submitted cohort reflection essays
 
 ---
 
-## 💡 Core Pedagogical Foundations & Operating Principles
+## Core Pedagogical Foundations & Operating Principles
 
 ### 1. Strategic Foresight: "Melihat Ancaman Sebelum Terlihat"
 
@@ -113,7 +113,7 @@ A recurring provocation delivered to the cohort was the elimination of **sectora
 
 ---
 
-## 📐 Macroeconomic Architecture & The Infrastructure Mandate
+## Macroeconomic Architecture & The Infrastructure Mandate
 
 ### The Uncomfortable Reality of ICOR
 
@@ -144,7 +144,7 @@ flowchart TD
 
 ---
 
-## 🛣️ Rethinking State Assets: Dual-Use Infrastructure & Concession Governance
+## Rethinking State Assets: Dual-Use Infrastructure & Concession Governance
 
 Using **[[entities/pt-jasa-marga|PT Jasa Marga (Persero) Tbk]]** as a primary institutional case, Syamsul illustrated how state enterprise assets must be reimagined as multi-dimensional public wealth platforms:
 
@@ -157,7 +157,7 @@ Using **[[entities/pt-jasa-marga|PT Jasa Marga (Persero) Tbk]]** as a primary in
 
 ---
 
-## 🏗️ Alternative Financing: Public-Private Partnerships (KPBU)
+## Alternative Financing: Public-Private Partnerships (KPBU)
 
 Addressing the constraints on the state budget (_APBN_), Syamsul underscored **Kerjasama Pemerintah dan Badan Usaha (KPBU)** as a vital strategic vehicle:
 
@@ -166,7 +166,7 @@ Addressing the constraints on the state budget (_APBN_), Syamsul underscored **K
 
 ---
 
-## 👥 Cohort-Wide Reflection Synthesis Dossier (P3MD Batch I Soedirman)
+## Cohort-Wide Reflection Synthesis Dossier (P3MD Batch I Soedirman)
 
 Following the plenary lecture, **381 participants** across all 4 Groups and 12 Elements submitted detailed executive reflection essays. The cohort represents the senior leadership pipeline across Indonesia's major state enterprise clusters, including energy, agriculture, banking, manufacturing, infrastructure, and natural resources.
 
@@ -202,7 +202,7 @@ Reflecting on the principle of _memahami yang tersirat_, cohort members from reg
 
 ---
 
-## 📂 Archival Staging & Primary Sources
+## Archival Staging & Primary Sources
 
 All primary student reflection artifacts from the session have been verified, safety-scanned, and archived in the repository for institutional lineage:
 
@@ -216,7 +216,7 @@ All primary student reflection artifacts from the session have been verified, sa
 
 ---
 
-## 🔗 Knowledge Graph & Curriculum Bridges
+## Knowledge Graph & Curriculum Bridges
 
 - **Featured Keynote Speaker**:
   - [[entities/syamsul-bachri-yusuf|Dipl.-Ing. Syamsul Bachri Yusuf, M.Si. (Han)]] (Stafsus KemenPU & Dewan Komisaris PT Jasa Marga)
@@ -228,7 +228,7 @@ All primary student reflection artifacts from the session have been verified, sa
 - **Parallel Rabuan Plenary Session**:
   - [[rabuan/2026-09-23-sahala-financial-discipline|Rabuan 03B: Memimpin dengan Financial Discipline]] (Sahala Tua Paulus Situmorang, MD Finance DAM)
 - **Executive Masterclass Series (Rabuan)**:
-  - [[rabuan/2026-09-02-adh-peoplemath|Rabuan 01: PeopleMath — Strategic Calculus of Human Capital]] (Agus Dwi Handaya)
+  - [[rabuan/2026-09-02-adh-peoplemath|Rabuan 01: PeopleMath — Produktivitas Berkualitas & Strategi Tough & Agile Learner]] (Agus Dwi Handaya)
   - [[rabuan/2026-09-04-indayati-professional-image|Special Masterclass: Building Professional Image & Communication Skills]] (Indayati Oetomo)
   - [[rabuan/2026-10-14-ric-roi-impact-career|Rabuan 02: Making an Impact, Making a Career]] (Dr. Ric Roi)
 - **Direct Curricular Synergies**:

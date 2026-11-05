@@ -1,5 +1,5 @@
 ---
-title: "Rabuan 02: Making an Impact, Making a Career — Navigating Corporate Career Trajectories & Leadership Ambidexterity"
+title: "Rabuan 07: Making an Impact, Making a Career — Navigating Corporate Career Trajectories & Leadership Ambidexterity"
 series: "rabuan"
 speaker: "Dr. Ric Roi"
 speaker_role: "Academic Director, IMD Strategic Talent Lab & Professor of Leadership and Organization"
@@ -15,7 +15,7 @@ tags:
   - talent-strategy
 ---
 
-## 🎤 Executive Session Overview
+## Executive Session Overview
 
 Delivered by **[[entities/ric-roi|Dr. Ric Roi]]** (Professor of Leadership and Organization at **IMD Business School** and Academic Director of the **IMD Strategic Talent Lab**), this plenary masterclass examines the psychological and organizational architecture of long-term executive career development.
 
@@ -43,7 +43,7 @@ flowchart LR
 
 ---
 
-## 🏛️ Framework 1: The IMD Leadership Hierarchy — 5 Levels of Impact
+## Framework 1: The IMD Leadership Hierarchy — 5 Levels of Impact
 
 Dr. Roi introduces IMD's progressive leadership continuum: **One Leadership System, Many Levels of Impact**. Leaders across the enterprise are united by institutional purpose, yet strictly differentiated by cognitive scope, operational focus, and the nature of their accountability.
 
@@ -67,7 +67,7 @@ flowchart LR
 
 ---
 
-## 🧭 Framework 2: Seven Essential Competencies for Early Career Impact
+## Framework 2: Seven Essential Competencies for Early Career Impact
 
 Dr. Roi establishes seven observable, behavioral competencies that govern early-to-mid career velocity. Each competency is learnable and compounds through deliberate practice.
 
@@ -183,7 +183,7 @@ flowchart LR
 
 ---
 
-## 🛠️ Framework 3: Self-Assessment Matrix & Peer Coaching Crucible
+## Framework 3: Self-Assessment Matrix & Peer Coaching Crucible
 
 Dr. Roi challenged the cohort to benchmark their current professional behaviors across the 7 competencies using a standardized 5-point scale:
 
@@ -206,7 +206,7 @@ $$\text{Maturity Level} \in \{1: \text{Emerging/Low}, \ 2: \text{Developing}, \ 
 
 ---
 
-## 🧠 Framework 4: Growth Mindset & The Tough Feedback Crucible
+## Framework 4: Growth Mindset & The Tough Feedback Crucible
 
 Grounding the session in research on **Fixed vs. Growth Mindset** (Carol Dweck / Harvard Business School Online), Dr. Roi emphasized that career plateaus occur when professionals prioritize looking smart (Fixed Mindset) over expanding competence (Growth Mindset).
 
@@ -234,7 +234,7 @@ flowchart LR
 
 ---
 
-## 🌟 Framework 5: The Lifespan Maturation Arc & Executive Virtues
+## Framework 5: The Lifespan Maturation Arc & Executive Virtues
 
 Integrating philosophical wisdom into corporate trajectory design, Dr. Roi grounded long-term leadership in Ralph Waldo Emerson's foundational aphorism:
 
@@ -277,7 +277,7 @@ To sustain this lifelong arc, Dr. Roi spotlighted two non-negotiable virtues:
 
 ---
 
-## 🏢 Enterprise & Indonesian BUMN Leadership Context
+## Enterprise & Indonesian BUMN Leadership Context
 
 For high-potential leaders across Indonesia's state-owned enterprises (**BUMN**) and regional conglomerates, Dr. Roi synthesizes four practical axioms:
 
@@ -309,7 +309,7 @@ Impostor syndrome is ubiquitous across every leadership tier. Recognizing that s
 
 ---
 
-## 📂 Primary Source Media & Digital Archives
+## Primary Source Media & Digital Archives
 
 | Resource Title                                     |             Content Type             | Repository Location / Access                         |
 | :------------------------------------------------- | :----------------------------------: | :--------------------------------------------------- |
@@ -319,7 +319,7 @@ Impostor syndrome is ubiquitous across every leadership tier. Recognizing that s
 
 ---
 
-## 🔗 Knowledge Graph & Curriculum Bridges
+## Knowledge Graph & Curriculum Bridges
 
 - **Featured Speaker Profile**: [[entities/ric-roi|Dr. Ric Roi]]
 - **Compounding Core Concepts**:

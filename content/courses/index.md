@@ -259,17 +259,17 @@ Click any course card below to access its complete 14-week syllabus, weekly lect
         </div>
         <div class="course-card-title">PeopleMath (Rabuan Executive Series)</div>
         <div class="course-card-faculty">
-          <strong>Lead Speaker:</strong> Agus Dwi Handaya (Director of Human Capital, Bank Mandiri)
+          <strong>Lead Speaker:</strong> Agus Dwi Handaya (Managing Director Human Capital, PT Danantara Asset Management)
         </div>
         <p class="course-card-desc">
-          Evaluate human capital decisions with mathematical precision. Model the financial ROI of turnover ($1.5\times-2.5\times$), talent density power-law dynamics, compa-ratio distributions, and organizational network friction.
+          Kalkulus matematis modal manusia: model produktivitas berkualitas dan kebahagiaan tanpa batas ($PPH$), 20 rumus PeopleMath, arsitektur Tough &amp; Agile Learner ($TAL$), serta akselerasi belajar $Vb/Vp$.
         </p>
         <div class="course-card-themes">
-          <span class="course-theme-tag">Cost of Turnover</span>
-          <span class="course-theme-tag">Talent Density Power Law</span>
-          <span class="course-theme-tag">Compa-Ratio Bands</span>
-          <span class="course-theme-tag">Layer Friction Index</span>
-          <span class="course-theme-tag">Workforce Analytics</span>
+          <span class="course-theme-tag">PPH &amp; 20 Rumus</span>
+          <span class="course-theme-tag">Tough &amp; Agile Learner</span>
+          <span class="course-theme-tag">3N Leader &amp; Individu</span>
+          <span class="course-theme-tag">Learning Velocity Vb/Vp</span>
+          <span class="course-theme-tag">Human Capital Architecture</span>
         </div>
       </div>
       <div class="course-card-footer">

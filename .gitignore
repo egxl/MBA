@@ -27,3 +27,15 @@ gclass_scraping/**/__pycache__/
 
 # Ephemeral agent teamwork artifacts
 .agents/teamwork/
+
+# Temporary Office and lock files
+~$*
+*.tmp
+
+# Build artifacts, binaries, and Python caches
+target/
+**/target/
+*.exe
+__pycache__/
+**/__pycache__/
+*.pyc

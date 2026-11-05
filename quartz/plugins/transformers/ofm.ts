@@ -559,9 +559,13 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
                   return `{"${cleaned}"}`
                 })
 
-                // 4. Sanitize markdown lists inside diagram labels to prevent "Unsupported markdown: list" errors in Mermaid
-                // Convert bullet points (- or *) to bullet character •
+                // 4. Sanitize markdown block triggers inside diagram labels to prevent "Unsupported markdown" errors in Mermaid
+                // Convert bullet points (- or *) to bullet character •, and leading + to fullwidth ＋
                 val = val.replace(/((?:<br\s*\/?>|\n|\[\s*"?|\{\s*"?|\(\s*"?)\s*)[-*]\s+/g, "$1• ")
+                val = val.replace(/((?:<br\s*\/?>|\n|\[\s*"?|\{\s*"?|\(\s*"?)\s*)\+\s+/g, "$1＋ ")
+                // Escape leading # (heading trigger) and > (blockquote trigger) after linebreaks or label start
+                val = val.replace(/((?:<br\s*\/?>|\n|\[\s*"?|\{\s*"?|\(\s*"?)\s*)#+\s+/g, "$1No. ")
+                val = val.replace(/((?:<br\s*\/?>|\n|\[\s*"?|\{\s*"?|\(\s*"?)\s*)>/g, "$1≥ ")
                 // Escape numbered list syntax (e.g. 1. -> 1\.)
                 val = val.replace(
                   /((?:<br\s*\/?>|\n|\[\s*"?|\{\s*"?|\(\s*"?|subgraph\s+[a-zA-Z0-9_]+\s*\[\s*"?)(\s*))(\d+)\.\s+/g,

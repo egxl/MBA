@@ -15,7 +15,7 @@ tags:
   - john-robert-powers
 ---
 
-## 🎤 Executive Session Overview
+## Executive Session Overview
 
 On September 4, 2026, **Indayati Oetomo** (Executive Director of **John Robert Powers Indonesia**) delivered an intensive cohort-wide executive masterclass to the **P3MD Batch I Soedirman** cohort at Kampus DCU Nawasena. Titled **"Building Professional Image & Executive Communication Skills"**, the session addressed one of the most critical inflection points in senior executive development: the bridge between internal technical competence and external leadership presence.
 
@@ -33,7 +33,7 @@ flowchart LR
 
 ---
 
-## 💡 Core Pedagogical Foundations & Operating Principles
+## Core Pedagogical Foundations & Operating Principles
 
 ### 1. "Look As Good As You Can Deliver"
 
@@ -54,7 +54,7 @@ A leader's image must never project superiority, arrogance, or detached hierarch
 
 ---
 
-## 📐 Theoretical Architecture & Core Frameworks
+## Theoretical Architecture & Core Frameworks
 
 ### 1. The Triangle of Success
 
@@ -187,7 +187,7 @@ pie title Digital Personal Branding Distribution
 
 ---
 
-## 🏢 Managerial Crucible: Indonesian BUMN & Danantara Governance
+## Managerial Crucible: Indonesian BUMN & Danantara Governance
 
 The transition of Indonesian state-owned enterprises under the **Danantara** investment management and holding governance framework requires a fundamental evolution in executive behavior:
 
@@ -217,7 +217,7 @@ flowchart TD
 
 ---
 
-## 👥 Cohort-Wide Reflection Synthesis Dossier (P3MD Batch I Soedirman)
+## Cohort-Wide Reflection Synthesis Dossier (P3MD Batch I Soedirman)
 
 Following the masterclass, **394 participants** across all 4 Groups and 12 Elements submitted individual reflective essays analyzing their personal branding, executive presence, and behavioral habits across Indonesia's major state-owned enterprises (including **PT Perkebunan Nusantara**, **PT Kereta Api Indonesia**, **PT Pertamina**, **PT Semen Indonesia**, **PT Krakatau Steel**, **PT Bank Mandiri**, **PT Bank Rakyat Indonesia**, **PT Bank Negara Indonesia**, **PT Pelabuhan Indonesia**, **PT Pupuk Indonesia**, **MIND ID Holding**, **PT Bukit Asam**, **PT Aneka Tambang**, and **PT Timah**).
 
@@ -290,7 +290,7 @@ Across the 390+ reflections, participants committed to concrete behavioral adjus
 
 ---
 
-## 📂 Archival Staging & Primary Sources
+## Archival Staging & Primary Sources
 
 All primary submission artifacts from the cohort have been archived for institutional traceability:
 
@@ -304,7 +304,7 @@ All primary submission artifacts from the cohort have been archived for institut
 
 ---
 
-## 🔗 Knowledge Graph & Curriculum Bridges
+## Knowledge Graph & Curriculum Bridges
 
 - **Featured Keynote Speaker**:
   - [[entities/indayati-oetomo|Indayati Oetomo]] (Executive Director, John Robert Powers Indonesia)
@@ -314,7 +314,7 @@ All primary submission artifacts from the cohort have been archived for institut
   - [[concepts/emotional-intelligence|Emotional Intelligence in Executive Leadership]]
   - [[concepts/french-and-raven-power-bases|French & Raven Power Bases (Referent & Expert Power)]]
 - **Related Executive Masterclasses (Rabuan Series)**:
-  - [[rabuan/2026-09-02-adh-peoplemath|Rabuan 01: PeopleMath — The Financial & Strategic Calculus of Human Capital]] (Agus Dwi Handaya)
+  - [[rabuan/2026-09-02-adh-peoplemath|Rabuan 01: PeopleMath — Produktivitas Berkualitas & Strategi Tough & Agile Learner]] (Agus Dwi Handaya)
   - [[rabuan/2026-10-14-ric-roi-impact-career|Rabuan 02: Making an Impact, Making a Career — The 5 Levels of Career Trajectory]] (Dr. Ric Roi)
 - **Direct Curricular Synergies**:
   - [[courses/mk1-organizational-behavior-managing-people/index|MK 1: Organizational Behavior & Managing People]] (Foundations of Leadership & Self-Management)

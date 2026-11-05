@@ -82,7 +82,7 @@ Diagnostic observations compiled across the 33 participant reports highlight thr
 ## 💡 Key Strategic & S&OP Insights
 
 1. **Systemic Tail-Risk and the "Turkey Illusion" in Energy Terminals**:
-   Connecting directly to the [[rabuan/2026-09-30-buckingham-minto-method|plenary teachings of Prof. Irwan Meilano and Edward Buckingham]], participants recognized that years of accident-free operations do not guarantee safety. Safety in a high-hazard fuel depot requires continuous stress-testing against low-probability, high-consequence catastrophic events (Black Swans).
+   Connecting directly to the plenary teachings of [[entities/irwan-meilano|Prof. Irwan Meilano]] ([[rabuan/2026-09-30-meilano-systemic-risk|Rabuan 06]]) and [[entities/edward-buckingham|Prof. Edward Buckingham]] ([[rabuan/2026-09-30-buckingham-minto-method|Rabuan 05]]), participants recognized that years of accident-free operations do not guarantee safety. Safety in a high-hazard fuel depot requires continuous stress-testing against low-probability, high-consequence catastrophic events (Black Swans).
 2. **The [[concepts/pso-commercial-duality|PSO vs Commercial Duality]] in Downstream Distribution**:
    Pertamina Patra Niaga is legally obligated to guarantee 24/7 fuel availability at every retail SPBU regardless of road blockages, extreme weather, or logistics cost spikes. To prevent this public mandate from draining working capital, the company relies on automated terminal automation systems (TAS) and advanced predictive sales and operations planning (S&OP) to minimize safety buffer inventory holding costs.
 3. **Automated Bottom-Loading & Vapor Recovery Systems (VRS)**:
@@ -115,4 +115,4 @@ In their personal commitments, participants formulated key research inquiries ca
 - Return to **[[program/alp/business-immersion-1/index|Business Immersion 1 Master Hub]]**
 - Enterprise Profile: **[[entities/pt-pertamina|PT Pertamina (Persero)]]**
 - Foundational Concept: **[[concepts/pso-commercial-duality|Public Service Obligation (PSO) vs Commercial Viability Duality]]**
-- Plenary Reference: **[[rabuan/2026-09-30-buckingham-minto-method|Rabuan: Risk Governance, Minto Method & Systemic Resilience]]**
+- Plenary Reference: **[[rabuan/2026-09-30-meilano-systemic-risk|Rabuan 06: The Shifting Ground: Systemic Risk Governance & Institutional Resilience]]**

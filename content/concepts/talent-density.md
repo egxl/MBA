@@ -29,15 +29,16 @@ In conventional operational workflows, performance variance is bounded. In strat
 
 ## 🏛️ Multi-Disciplinary Lenses
 
-### 1. Human Capital & Leadership Lens (MK 1 & Rabuan)
+### 1. Human Capital & Leadership Lens (MK 1 & Workforce Economics)
 
-- **Primary Source**: [[rabuan/2026-09-02-adh-peoplemath|Agus Dwi Handaya's Rabuan Masterclass on PeopleMath]].
+- **Theoretical Foundation**: Workforce economics and talent concentration dynamics (Frank & Cook _Winner-Take-All Markets_; Hastings & Meyer high talent-density models).
 - **Core Mechanism**: Small percentage improvements in talent density compound exponentially across teams. Conversely, hiring substandard talent creates administrative drag and forces top talent into firefighting rather than value generation.
 - **Cultural Dynamic**: High talent density enables greater autonomy and flatter management hierarchies.
+- **Synergy with PeopleMath**: Complements the [[concepts/peoplemath-framework|PeopleMath Framework]] ($PPH$ and $SEC/SEA$), where character ($C$) and motivation ($M$) act as multipliers on top of concentrated technical competence.
 
 ### 2. Business Analytics & Modeling Lens (MK 6)
 
-- **Primary Source**: Workforce distribution modeling.
+- **Primary Source**: Workforce distribution modeling & people analytics.
 - **Analytical Test**: Comparing standard deviation and skewness of individual value-add vs. compensation bands. Identifying whether compensation follows a linear curve while actual economic output follows a power law.
 
 ---
@@ -51,7 +52,11 @@ In conventional operational workflows, performance variance is bounded. In strat
 
 ## 🔗 Contributing Sessions & References
 
-- **Rabuan Keynote**: [[rabuan/2026-09-02-adh-peoplemath|Rabuan 01: PeopleMath (Agus Dwi Handaya)]]
-- **Key Entity**: [[entities/agus-dwi-handaya|Agus Dwi Handaya]]
-- **Related Mechanism**: [[concepts/compa-ratio|Compa-Ratio Banding]]
+- **Academic Courses**:
+  - [[courses/mk1-organizational-behavior-managing-people/week-06/index|MK 1 Week 06: Capitalizing on Capabilities]]
+  - [[courses/mk6-business-analytics/week-08/index|MK 6 Week 08: People Analytics]]
+- **Related Executive Masterclass**: [[rabuan/2026-09-02-adh-peoplemath|Rabuan 01: PeopleMath (Agus Dwi Handaya)]]
+- **Related Concepts**:
+  - [[concepts/peoplemath-framework|PeopleMath Framework & PPH Architecture]]
+  - [[concepts/compa-ratio|Compa-Ratio Banding]]
 - **Hub**: [[concepts/index|Knowledge Matrix]]

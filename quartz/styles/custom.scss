@@ -43,42 +43,6 @@
   --callout-icon-case: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>');
   --callout-icon-quiz: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>');
   --callout-icon-framework: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>');
-
-  // Editorial Academic Mermaid Palette (Light Mode)
-  --mermaid-tint-emerald: #ebf3ed;
-  --mermaid-stroke-emerald: #3a5f43;
-  --mermaid-emerald-fill: #ebf3ed;
-  --mermaid-emerald-stroke: #3a5f43;
-  --mermaid-emerald-text: #1f1e1c;
-
-  --mermaid-tint-amber: #fdf5e6;
-  --mermaid-stroke-amber: #b47a1e;
-  --mermaid-amber-fill: #fdf5e6;
-  --mermaid-amber-stroke: #b47a1e;
-  --mermaid-amber-text: #1f1e1c;
-
-  --mermaid-tint-slate: #edf3f7;
-  --mermaid-stroke-slate: #3b6978;
-  --mermaid-slate-fill: #edf3f7;
-  --mermaid-slate-stroke: #3b6978;
-  --mermaid-slate-text: #1f1e1c;
-
-  --mermaid-tint-sage: #f0f5f1;
-  --mermaid-stroke-sage: #52795b;
-  --mermaid-sage-fill: #f0f5f1;
-  --mermaid-sage-stroke: #52795b;
-  --mermaid-sage-text: #1f1e1c;
-
-  --mermaid-tint-coral: #fdf0ec;
-  --mermaid-stroke-coral: #c05c46;
-  --mermaid-coral-fill: #fdf0ec;
-  --mermaid-coral-stroke: #c05c46;
-  --mermaid-coral-text: #1f1e1c;
-
-  --mermaid-ink: var(--dark);
-  --mermaid-line: #5a5751;
-  --mermaid-subgraph-fill: rgba(84, 77, 65, 0.04);
-  --mermaid-subgraph-stroke: rgba(84, 77, 65, 0.22);
 }
 
 :root[saved-theme="dark"] {
@@ -97,42 +61,6 @@
   --portal-muted: #aaa99f;
   --portal-rule: rgba(232, 233, 224, 0.17);
   --portal-focus: #f7d45d;
-
-  // Editorial Academic Mermaid Palette (Dark Mode)
-  --mermaid-tint-emerald: #1f2d24;
-  --mermaid-stroke-emerald: #7ea885;
-  --mermaid-emerald-fill: #1f2d24;
-  --mermaid-emerald-stroke: #7ea885;
-  --mermaid-emerald-text: #f4f1ea;
-
-  --mermaid-tint-amber: #2f281e;
-  --mermaid-stroke-amber: #e8b86d;
-  --mermaid-amber-fill: #2f281e;
-  --mermaid-amber-stroke: #e8b86d;
-  --mermaid-amber-text: #f4f1ea;
-
-  --mermaid-tint-slate: #1d2830;
-  --mermaid-stroke-slate: #7ba7c9;
-  --mermaid-slate-fill: #1d2830;
-  --mermaid-slate-stroke: #7ba7c9;
-  --mermaid-slate-text: #f4f1ea;
-
-  --mermaid-tint-sage: #222d26;
-  --mermaid-stroke-sage: #a3c9a8;
-  --mermaid-sage-fill: #222d26;
-  --mermaid-sage-stroke: #a3c9a8;
-  --mermaid-sage-text: #f4f1ea;
-
-  --mermaid-tint-coral: #302220;
-  --mermaid-stroke-coral: #e8806a;
-  --mermaid-coral-fill: #302220;
-  --mermaid-coral-stroke: #e8806a;
-  --mermaid-coral-text: #f4f1ea;
-
-  --mermaid-ink: var(--dark);
-  --mermaid-line: #8f9489;
-  --mermaid-subgraph-fill: rgba(255, 255, 255, 0.035);
-  --mermaid-subgraph-stroke: rgba(255, 255, 255, 0.16);
 }
 
 /* ==========================================================================
@@ -818,21 +746,13 @@ article {
   margin-bottom: 2rem;
   position: relative;
   overflow: hidden;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 6px;
-    height: 100%;
-    background: linear-gradient(180deg, #d97706 0%, #b45309 100%);
-  }
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 :root[saved-theme="dark"] .rabuan-hero {
   background-color: #171c19;
   border-color: #2d3530;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .rabuan-hero-content {
@@ -856,15 +776,15 @@ article {
   padding: 0.25rem 0.65rem;
   border-radius: 4px;
   text-transform: uppercase;
-  background: rgba(217, 119, 6, 0.14);
-  color: #b45309;
-  border: 1px solid rgba(217, 119, 6, 0.35);
+  background: color-mix(in srgb, var(--amber-ochre) 12%, transparent);
+  color: var(--amber-ochre);
+  border: 1px solid color-mix(in srgb, var(--amber-ochre) 30%, transparent);
 }
 
 :root[saved-theme="dark"] .rabuan-badge-gold {
-  background: rgba(217, 119, 6, 0.24);
+  background: color-mix(in srgb, var(--amber-ochre) 20%, transparent);
   color: #fde047;
-  border-color: rgba(253, 224, 71, 0.4);
+  border-color: rgba(253, 224, 71, 0.35);
 }
 
 .rabuan-badge-sub {
@@ -881,14 +801,17 @@ article {
   font-family: var(--headerFont);
   font-size: clamp(1.6rem, 2.8vw, 2.2rem);
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1.18;
+  letter-spacing: -0.028em;
   margin: 0 0 0.85rem 0;
   color: var(--dark);
+  text-wrap: balance;
+  font-optical-sizing: auto;
 }
 
 .rabuan-lead {
   font-size: 0.98rem;
-  line-height: 1.65;
+  line-height: 1.68;
   color: var(--darkgray);
   margin: 0 0 1.25rem 0;
 
@@ -906,10 +829,10 @@ article {
 
 .rabuan-pillar {
   font-family: var(--codeFont);
-  font-size: 0.76rem;
+  font-size: 0.74rem;
   font-weight: 600;
   padding: 0.24rem 0.65rem;
-  border-radius: 6px;
+  border-radius: 4px;
   background-color: color-mix(in srgb, var(--lightgray) 40%, transparent);
   color: var(--darkgray);
   border: 1px solid color-mix(in srgb, var(--lightgray) 70%, transparent);
@@ -997,6 +920,7 @@ article {
   line-height: 1;
   color: var(--secondary);
   margin-bottom: 0.35rem;
+  font-variant-numeric: tabular-nums;
 }
 
 .rabuan-stat-label {
@@ -1032,6 +956,7 @@ article {
   font-size: 1.45rem;
   font-weight: 700;
   line-height: 1.25;
+  letter-spacing: -0.02em;
   color: var(--dark);
   margin: 0 0 0.4rem 0;
 }
@@ -1042,154 +967,10 @@ article {
   margin: 0;
 }
 
-/* 3. Featured Masterclass Card */
-.rabuan-featured-card {
-  border: 1.5px solid var(--secondary);
-  border-radius: 12px;
-  background-color: var(--parchment-warm);
-  padding: 1.5rem;
-  margin: 1.5rem 0 2rem 0;
-  box-shadow: 0 6px 16px -2px rgba(0, 0, 0, 0.05);
-}
-
-:root[saved-theme="dark"] .rabuan-featured-card {
-  background-color: #171c19;
-  border-color: var(--secondary);
-  box-shadow: 0 6px 16px -2px rgba(0, 0, 0, 0.35);
-}
-
-.rabuan-featured-badge-bar {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.6rem;
-  margin-bottom: 1rem;
-}
-
-.rabuan-chip-featured {
-  font-family: var(--codeFont);
-  font-size: 0.74rem;
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  padding: 0.22rem 0.65rem;
-  border-radius: 4px;
-  background: rgba(217, 119, 6, 0.16);
-  color: #b45309;
-  border: 1px solid rgba(217, 119, 6, 0.4);
-}
-
-:root[saved-theme="dark"] .rabuan-chip-featured {
-  background: rgba(217, 119, 6, 0.26);
-  color: #fde047;
-  border-color: rgba(253, 224, 71, 0.4);
-}
-
-.rabuan-chip-date,
-.rabuan-chip-inst {
-  font-family: var(--codeFont);
-  font-size: 0.74rem;
-  padding: 0.2rem 0.55rem;
-  border-radius: 4px;
-  background-color: color-mix(in srgb, var(--lightgray) 45%, transparent);
-  color: var(--darkgray);
-}
-
-.rabuan-featured-body {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.rabuan-speaker-name {
-  font-family: var(--headerFont);
-  font-size: 1.35rem;
-  font-weight: 800;
-  color: var(--dark);
-  margin-bottom: 0.2rem;
-}
-
-.rabuan-speaker-role {
-  font-size: 0.9rem;
-  color: var(--darkgray);
-  font-style: italic;
-  margin-bottom: 0.65rem;
-}
-
-.rabuan-session-title {
-  font-family: var(--headerFont);
-  font-size: 1.15rem;
-  font-weight: 700;
-  line-height: 1.35;
-  color: var(--secondary);
-  margin: 0 0 0.6rem 0;
-}
-
-.rabuan-featured-synopsis {
-  font-size: 0.93rem;
-  line-height: 1.62;
-  color: var(--darkgray);
-  margin: 0 0 0.85rem 0;
-}
-
-.rabuan-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-  margin-bottom: 1rem;
-}
-
-.rabuan-tag {
-  font-family: var(--codeFont);
-  font-size: 0.72rem;
-  padding: 0.18rem 0.55rem;
-  border-radius: 4px;
-  background-color: color-mix(in srgb, var(--lightgray) 40%, transparent);
-  color: var(--darkgray);
-  border: 1px solid color-mix(in srgb, var(--lightgray) 70%, transparent);
-}
-
-.rabuan-featured-action {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 0.75rem;
-  border-top: 1px solid color-mix(in srgb, var(--lightgray) 60%, transparent);
-
-  a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: var(--light) !important;
-    background-color: var(--secondary);
-    padding: 0.55rem 1.15rem;
-    border-radius: 6px;
-    text-decoration: none !important;
-    transition:
-      background-color 0.2s ease,
-      transform 0.2s ease;
-
-    &:hover {
-      background-color: var(--tertiary);
-      transform: translateX(2px);
-    }
-  }
-}
-
-:root[saved-theme="dark"] .rabuan-featured-action a {
-  background-color: var(--secondary);
-  color: #171c19 !important;
-
-  &:hover {
-    background-color: var(--tertiary);
-  }
-}
-
-/* 4. Session Archive Grid */
+/* 3. Session Archive Grid */
 .rabuan-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   gap: 1.35rem;
   margin: 1.75rem 0 2.5rem 0;
 }
@@ -1200,23 +981,29 @@ article {
   background-color: var(--parchment-warm);
   border: 1px solid var(--lightgray);
   border-radius: 12px;
-  padding: 1.35rem;
+  padding: 1.25rem;
   position: relative;
   transition:
-    transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 0.25s ease,
-    border-color 0.25s ease;
+    transform 160ms cubic-bezier(0.23, 1, 0.32, 1),
+    box-shadow 160ms ease,
+    border-color 160ms ease;
 
-  @media (prefers-reduced-motion: no-preference) {
+  &:active {
+    transform: scale(0.985);
+    transition-duration: 90ms;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
     &:hover {
-      transform: translateY(-3px);
+      transform: translateY(-2px);
       box-shadow:
-        0 10px 24px -4px rgba(0, 0, 0, 0.08),
-        0 4px 8px -2px rgba(0, 0, 0, 0.04);
+        0 10px 24px -4px rgba(0, 0, 0, 0.07),
+        0 4px 8px -2px rgba(0, 0, 0, 0.03);
       border-color: var(--secondary);
 
       .rabuan-card-footer a {
-        color: var(--tertiary);
+        color: var(--tertiary) !important;
+        gap: 0.55rem;
       }
     }
   }
@@ -1226,7 +1013,7 @@ article {
   background-color: #171c19;
   border-color: #2d3530;
 
-  @media (prefers-reduced-motion: no-preference) {
+  @media (hover: hover) and (pointer: fine) {
     &:hover {
       border-color: var(--secondary);
       box-shadow: 0 10px 24px -4px rgba(0, 0, 0, 0.4);
@@ -1239,7 +1026,7 @@ article {
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.95rem;
 }
 
 .rabuan-inst-pill {
@@ -1250,60 +1037,221 @@ article {
   padding: 0.2rem 0.55rem;
   border-radius: 4px;
   text-transform: uppercase;
-  background: rgba(59, 130, 246, 0.12);
-  color: #1d4ed8;
-  border: 1px solid rgba(59, 130, 246, 0.25);
+  background: color-mix(in srgb, var(--secondary) 10%, transparent);
+  color: var(--secondary);
+  border: 1px solid color-mix(in srgb, var(--secondary) 25%, transparent);
 }
 
 :root[saved-theme="dark"] .rabuan-inst-pill {
-  background: rgba(59, 130, 246, 0.22);
-  color: #93c5fd;
-  border-color: rgba(147, 197, 253, 0.35);
+  background: color-mix(in srgb, var(--secondary) 20%, transparent);
+  color: var(--secondary);
+  border-color: color-mix(in srgb, var(--secondary) 40%, transparent);
 }
 
 .rabuan-card-date {
   font-family: var(--codeFont);
-  font-size: 0.74rem;
+  font-size: 0.72rem;
+  font-weight: 600;
   color: var(--gray);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.03em;
+}
+
+.rabuan-date-special {
+  color: var(--amber-ochre);
+  font-weight: 700;
+
+  :root[saved-theme="dark"] & {
+    color: #fde047;
+  }
+}
+
+/* Card Main (Portrait + Info) */
+.rabuan-card-main {
+  display: flex;
+  flex-direction: row;
+  gap: 1.1rem;
+  align-items: flex-start;
+  margin-bottom: 0.85rem;
+  flex: 1;
+}
+
+/* 3:4 Vertical Speaker Portrait Frame */
+.rabuan-portrait-frame {
+  flex: 0 0 auto;
+}
+
+.rabuan-portrait {
+  width: 96px;
+  height: 128px;
+  aspect-ratio: 3 / 4;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--lightgray) 80%, var(--dark));
+  background: color-mix(in srgb, var(--parchment-warm) 85%, var(--gray));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img,
+  .rabuan-portrait-img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 !important;
+    padding: 0;
+    border-radius: inherit;
+  }
+}
+
+/* Dual-Image Hover Swap for Dynamic Keynotes */
+.rabuan-portrait-hoverable {
+  position: relative;
+
+  .rabuan-portrait-primary {
+    margin: 0 !important;
+    transform: scale(1);
+    transform-origin: center center;
+    transition:
+      opacity 280ms cubic-bezier(0.16, 1, 0.3, 1),
+      transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .rabuan-portrait-hover {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(1.03);
+    transform-origin: center center;
+    transition:
+      opacity 280ms cubic-bezier(0.16, 1, 0.3, 1),
+      transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  &:hover,
+  .rabuan-card:hover & {
+    .rabuan-portrait-primary {
+      opacity: 0;
+      transform: scale(1.03);
+    }
+    .rabuan-portrait-hover {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+:root[saved-theme="dark"] .rabuan-portrait {
+  background: #202723;
+  border-color: #3b4540;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.rabuan-portrait-ph {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.rabuan-portrait-svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--gray);
+}
+
+.rabuan-portrait-initials {
+  position: absolute;
+  bottom: 6px;
+  font-family: var(--codeFont);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 0.14rem 0.4rem;
+  border-radius: 4px;
+  background: rgba(31, 30, 28, 0.72);
+  color: #faf8f5;
+  backdrop-filter: blur(4px);
+  line-height: 1;
 }
 
 .rabuan-card-body {
   flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
 }
 
-.rabuan-speaker {
+.rabuan-topic {
   font-family: var(--headerFont);
-  font-size: 1.15rem;
-  font-weight: 800;
+  font-size: 1.1rem;
+  font-weight: 750;
   line-height: 1.3;
+  letter-spacing: -0.015em;
   color: var(--dark);
-  margin-bottom: 0.25rem;
+  margin: 0 0 0.35rem 0 !important;
+  padding: 0;
+  border: none;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 150ms ease;
+
+    &:hover {
+      color: var(--secondary);
+    }
+  }
+}
+
+.rabuan-speaker {
+  font-size: 0.88rem;
+  font-weight: 650;
+  line-height: 1.4;
+  color: var(--secondary);
+  margin: 0 0 0.15rem 0;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 150ms ease;
+
+    &:hover {
+      color: var(--tertiary);
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
+    }
+  }
 }
 
 .rabuan-role {
-  font-size: 0.83rem;
-  line-height: 1.45;
-  color: var(--darkgray);
-  margin-bottom: 0.75rem;
-  min-height: 2.6em;
-}
-
-.rabuan-topic {
-  font-family: var(--headerFont);
-  font-size: 0.98rem;
-  font-weight: 700;
+  font-size: 0.8rem;
   line-height: 1.4;
-  color: var(--secondary);
-  margin-bottom: 0.75rem;
+  color: var(--darkgray);
+  margin-bottom: 0.65rem;
 }
 
 .rabuan-themes {
   display: flex;
   flex-wrap: wrap;
   gap: 0.35rem;
-  margin-bottom: 1rem;
+  margin-top: auto;
+  margin-bottom: 0.25rem;
 }
 
 .rabuan-theme-tag {
@@ -1314,6 +1262,18 @@ article {
   background-color: color-mix(in srgb, var(--lightgray) 40%, transparent);
   color: var(--darkgray);
   border: 1px solid color-mix(in srgb, var(--lightgray) 70%, transparent);
+  text-decoration: none !important;
+  display: inline-block;
+  transition:
+    background-color 150ms ease,
+    border-color 150ms ease,
+    color 150ms ease;
+
+  &.internal:hover {
+    background-color: color-mix(in srgb, var(--secondary) 14%, transparent);
+    color: var(--secondary);
+    border-color: color-mix(in srgb, var(--secondary) 35%, transparent);
+  }
 }
 
 .rabuan-card-footer {
@@ -1333,32 +1293,38 @@ article {
     align-items: center;
     gap: 0.35rem;
     transition:
-      color 0.2s ease,
-      gap 0.2s ease;
+      color 160ms ease,
+      gap 160ms ease;
+
+    svg {
+      transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
 
     &:hover {
       color: var(--tertiary) !important;
       gap: 0.55rem;
+
+      svg {
+        transform: translateX(2px);
+      }
     }
   }
 }
 
-/* 5. TBC / Forthcoming Cards */
+/* 4. TBC / Forthcoming Cards */
 .rabuan-card-tbc {
-  border: 1.5px dashed var(--gray);
-  background-color: color-mix(in srgb, var(--light) 60%, transparent);
+  border: 1px solid var(--lightgray);
+  background-color: color-mix(in srgb, var(--light) 50%, transparent);
   opacity: 0.88;
 
-  &:hover {
-    border-color: var(--darkgray);
-    box-shadow: none !important;
-    transform: none !important;
+  .rabuan-portrait {
+    opacity: 0.75;
   }
 }
 
 :root[saved-theme="dark"] .rabuan-card-tbc {
   background-color: #111614;
-  border-color: #3b4540;
+  border-color: #2d3530;
 }
 
 .rabuan-tbc-badge {
@@ -1373,14 +1339,26 @@ article {
   text-transform: uppercase;
 }
 
+.rabuan-badge-pending {
+  background: color-mix(in srgb, #d97706 18%, transparent);
+  color: #b45309;
+  border: 1px solid color-mix(in srgb, #d97706 35%, transparent);
+}
+
+:root[saved-theme="dark"] .rabuan-badge-pending {
+  background: color-mix(in srgb, #f59e0b 20%, transparent);
+  color: #fbbf24;
+  border-color: color-mix(in srgb, #f59e0b 40%, transparent);
+}
+
 .rabuan-tbc-desc {
   font-size: 0.85rem;
   line-height: 1.5;
   color: var(--gray);
-  margin-top: 0.5rem;
+  margin-top: 0.45rem;
 }
 
-/* 6. Comparison Matrix: Core Academic vs Rabuan */
+/* 5. Comparison Matrix: Core Academic vs Rabuan */
 .rabuan-contrast-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1401,15 +1379,7 @@ article {
 }
 
 .rabuan-contrast-header {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
   margin-bottom: 0.85rem;
-}
-
-.rabuan-contrast-icon {
-  font-size: 1.25rem;
-  line-height: 1;
 }
 
 .rabuan-contrast-title {
@@ -1493,6 +1463,32 @@ article {
         border-bottom: none;
       }
     }
+  }
+}
+
+@media (max-width: 480px) {
+  .rabuan-card-main {
+    flex-direction: column;
+  }
+
+  .rabuan-portrait {
+    width: 72px;
+    height: 96px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rabuan-card,
+  .rabuan-card:hover,
+  .rabuan-card:active {
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .rabuan-portrait-primary,
+  .rabuan-portrait-hover {
+    transition: none !important;
+    transform: none !important;
   }
 }
 

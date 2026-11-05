@@ -53,17 +53,19 @@ A distinctive feature of Professor Buckingham's pedagogy is the bridge between W
 
 ---
 
-## 🎤 Contributions to P3MD MBA
+## Contributions to P3MD MBA
 
 - **Rabuan Keynote (2026-09-30)**: [[rabuan/2026-09-30-buckingham-minto-method|Rabuan 05: The Minto Pyramid Principle & Structured Executive Communication]]
 - **Cohort Mentorship**: Facilitated structured reflection across 380+ BUMN future leaders from **P3MD Batch I Soedirman**, addressing the cultural transition from bureaucratic deference (_sungkan_) to proactive executive clarity.
 
 ---
 
-## 🔗 Knowledge Graph & Curriculum Bridges
+## Knowledge Graph & Curriculum Bridges
 
 - **Core Concept Formulated**:
   - [[concepts/minto-pyramid-principle|The Minto Pyramid Principle & Structured Communication]]
+- **Accompanying Plenary Speaker**:
+  - [[entities/irwan-meilano|Prof. Irwan Meilano]] (Guru Besar Geodesi Gempa Bumi & Dekan FITB ITB)
 - **Interlocking Institutional Entities**:
   - [[entities/danantara|Danantara Asset Management]] (Institutional holding governance)
   - [[entities/indayati-oetomo|Indayati Oetomo]] (Executive presence and leadership image)

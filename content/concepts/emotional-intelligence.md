@@ -90,10 +90,12 @@ flowchart TD
 ## 🔗 Contributing Sessions & References
 
 - Master Lecture: [[courses/mk1-organizational-behavior-managing-people/week-04/index|MK 1 Week 04: Leadership & Culture Transformation]]
+- Executive Plenary & Doctrine: [[rabuan/2026-10-20-anton-upi-dies-natalis-orasi|Commander Anton's Oration: Doktrin Kepemimpinan P3MD]]
 - Foundational Reading: [[courses/mk1-organizational-behavior-managing-people/week-04/reading-what-makes-a-leader|Reading: What Makes a Leader? (Daniel Goleman)]]
 - Clinical Case Study: [[courses/mk1-organizational-behavior-managing-people/week-04/case-satya-nadella-microsoft|Case: Satya Nadella at Microsoft]]
 - Related Concepts:
   - [[concepts/self-awareness|The Self-Awareness Triad]]
+  - [[concepts/behavior-change-engine|Behavior Change Engine (Mesin Pengubah Perilaku)]]
   - [[concepts/growth-mindset|Growth Mindset & Adaptive Enterprise Culture]]
   - [[concepts/psychological-safety|Psychological Safety in Teams]]
 - Directory: [[concepts/index|Knowledge Matrix]]

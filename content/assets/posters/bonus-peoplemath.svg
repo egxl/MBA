@@ -75,9 +75,9 @@
     <circle cx="130" cy="-90" r="3" fill="#34d399"/>
 
     <!-- Mathematical Formulation & Annotations -->
-    <text x="-120" y="-85" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#34d399" font-weight="600">Output ∝ (Talent Density)ᵅ</text>
-    <text x="-120" y="-65" font-family="'IBM Plex Mono', monospace" font-size="8.5" fill="#c084fc" fill-opacity="0.9">Compa-Ratio = Actual / Midpoint</text>
-    <text x="-120" y="115" font-family="'IBM Plex Mono', monospace" font-size="8.5" fill="#fbbf24" fill-opacity="0.8">Fidelity = (p_transmission)ᴴ</text>
+    <text x="-120" y="-85" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#34d399" font-weight="600">PPH = [((K+S)^(1+T))·C]^(1+M)·HH</text>
+    <text x="-120" y="-65" font-family="'IBM Plex Mono', monospace" font-size="8.5" fill="#c084fc" fill-opacity="0.9">TAL = (IDS + EL) · (Vb / Vp)</text>
+    <text x="-120" y="115" font-family="'IBM Plex Mono', monospace" font-size="8.5" fill="#fbbf24" fill-opacity="0.8">PDR = (SM)^(1+L+I) [Koalisi]</text>
   </g>
 
   <!-- Large Course Code Badge -->
@@ -90,9 +90,9 @@
   <g transform="translate(44, 460)">
     <text font-family="'Lora', Georgia, serif" font-size="30" font-weight="700" fill="#ffffff" letter-spacing="-0.5">PeopleMath</text>
     
-    <text y="38" font-family="'Lora', Georgia, serif" font-size="16" font-style="italic" fill="url(#mintGradBonus)" letter-spacing="0.2">Quantitative Talent Modeling</text>
+    <text y="38" font-family="'Lora', Georgia, serif" font-size="16" font-style="italic" fill="url(#mintGradBonus)" letter-spacing="0.2">Produktivitas Berkualitas &amp; TAL Architecture</text>
     
-    <text y="70" font-family="'Source Sans Pro', -apple-system, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1.5" fill="#94a3b8">TALENT ROI • COMPA-RATIO • ONA &amp; DENSITY</text>
+    <text y="70" font-family="'Source Sans Pro', -apple-system, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1.5" fill="#94a3b8">PPH FORMULA • TOUGH &amp; AGILE LEARNER • 3N LEADER</text>
     
     <line x1="0" y1="90" x2="392" y2="90" stroke="#c084fc" stroke-opacity="0.3" stroke-width="1"/>
     

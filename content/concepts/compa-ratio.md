@@ -35,11 +35,12 @@ $$\text{Compa-Ratio} = \frac{\text{Actual Employee Base Salary}}{\text{Midpoint 
 
 ## 🏛️ Multi-Disciplinary Lenses
 
-### 1. Human Capital & Retention Lens (MK 1 & Rabuan)
+### 1. Human Capital & Retention Lens (MK 1 & Workforce Analytics)
 
-- **Primary Source**: [[rabuan/2026-09-02-adh-peoplemath|Agus Dwi Handaya's Rabuan Masterclass on PeopleMath]].
+- **Theoretical Foundation**: Compensation benchmarking and internal equity theory (Milkovich & Newman).
 - **Retention Calculus**: When key performers fall below $0.85$ compa-ratio, voluntary turnover escalates exponentially. Replacing them costs $1.5\times-2.5\times$ annual salary in direct search, ramp-up drag, and team disruption.
 - **Equity Governance**: Prevents wage compression where new outside hires enter at higher salaries than high-performing incumbents.
+- **Synergy with PeopleMath**: Serves as a quantitative diagnostic metric for _Receiving Factors_ ($Rr$) within the [[concepts/peoplemath-framework|PeopleMath Framework]] ($MEC = (Rr)^{(1+Gr)}$).
 
 ### 2. Financial Strategy Lens (MK 2)
 
@@ -56,7 +57,12 @@ $$\text{Compa-Ratio} = \frac{\text{Actual Employee Base Salary}}{\text{Midpoint 
 
 ## 🔗 Contributing Sessions & References
 
-- **Rabuan Keynote**: [[rabuan/2026-09-02-adh-peoplemath|Rabuan 01: PeopleMath (Agus Dwi Handaya)]]
-- **Key Entity**: [[entities/agus-dwi-handaya|Agus Dwi Handaya]]
-- **Related Mechanism**: [[concepts/talent-density|Talent Density Power Law]]
+- **Academic Courses**:
+  - [[courses/mk1-organizational-behavior-managing-people/week-06/index|MK 1 Week 06: Reward & Performance Architecture]]
+  - [[courses/mk2-financial-management-strategy/index|MK 2: Financial Management & Strategy]]
+  - [[courses/mk6-business-analytics/week-08/index|MK 6 Week 08: People Analytics]]
+- **Related Executive Masterclass**: [[rabuan/2026-09-02-adh-peoplemath|Rabuan 01: PeopleMath (Agus Dwi Handaya)]]
+- **Related Concepts**:
+  - [[concepts/peoplemath-framework|PeopleMath Framework & PPH Architecture]]
+  - [[concepts/talent-density|Talent Density Power Law]]
 - **Hub**: [[concepts/index|Knowledge Matrix]]

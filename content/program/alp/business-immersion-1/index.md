@@ -103,7 +103,7 @@ Participants witnessed firsthand the acute balance sheet strain born from state 
 
 Visits to high-hazard facilities (ITJ Plumpang fuel tanks, Muara Karang high-pressure steam boilers, Narogong $1400^\circ\text{C}$ cement kilns, Tanjung Priok heavy quay cranes) made systemic risk visceral:
 
-- Operational history without an accident is not proof of safety (reflecting [[rabuan/2026-09-30-buckingham-minto-method|Nassim Taleb's Turkey Illusion]]).
+- Operational history without an accident is not proof of safety (reflecting [[rabuan/2026-09-30-meilano-systemic-risk|Nassim Taleb's Turkey Illusion]]).
 - Industrial decarbonization cannot rely on slogans; it requires capital-intensive engineering adjustments such as municipal waste Refuse-Derived Fuel (RDF) substitution and thermal co-processing.
 
 ### 4. The "External Eye" Cross-BUMN Cross-Pollination

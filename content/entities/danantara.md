@@ -33,8 +33,8 @@ In the P3MD MBA curriculum, Danantara represents the institutional vanguard of m
 2. **Cross-Holding Capital Allocation & Synergy**:
    - In [[courses/mk2-financial-management-strategy/index|MK 2 Financial Management & Strategy]], Danantara illustrates enterprise portfolio optimization, capital budgeting across competing positive-NPV national infrastructure projects, and balance-sheet deleveraging.
 
-3. **Active Asset Management & Financial Discipline**:
-   - Through operating subsidiaries such as **PT Danantara Asset Management (DAM)**, spearheaded by executives like [[entities/sahala-situmorang|Sahala Tua Paulus Situmorang]], Danantara enforces rigorous balance-sheet discipline across the BUMN portfolio. By mandating [[concepts/capital-capability-synergy|Capital-Capability Synergy]], 4-stage risk quantification, and disciplined capital recycling, Danantara ensures that capital infusions do not end up as idle expenditures, but drive measurable reductions in national [[concepts/incremental-capital-output-ratio|ICOR]].
+3. **Active Asset Management, Financial Discipline & Human Capital Architecture**:
+   - Through operating subsidiaries such as **PT Danantara Asset Management (DAM)**, spearheaded by executives like [[entities/sahala-situmorang|Sahala Tua Paulus Situmorang]] (MD Finance) and [[entities/agus-dwi-handaya|Agus Dwi Handaya]] (MD Human Capital), Danantara enforces rigorous balance-sheet discipline and talent architecture across the BUMN portfolio. By mandating [[concepts/capital-capability-synergy|Capital-Capability Synergy]], 4-stage risk quantification, [[concepts/peoplemath-framework|PeopleMath PPH Architecture]], and the formation of [[concepts/tough-and-agile-learner|Tough & Agile Learners]], Danantara ensures that state capital injections compound sustainably rather than dissipate.
 
 ---
 
@@ -45,10 +45,14 @@ In the P3MD MBA curriculum, Danantara represents the institutional vanguard of m
   - [[courses/mk1-organizational-behavior-managing-people/week-07/index|MK 1 Week 07: Power, Politics & Governance in State-Owned Enterprises]]
   - [[courses/mk2-financial-management-strategy/week-01/index|MK 2 Week 01: Financial Management Function & BUMN Governance]]
 - **Rabuan Executive Masterclasses**:
+  - [[rabuan/2026-09-02-adh-peoplemath|Rabuan 2026-09-02: PeopleMath — Produktivitas Berkualitas & Strategi Tough & Agile Learner]] (Agus Dwi Handaya, MD Human Capital DAM)
   - [[rabuan/2026-09-23-sahala-financial-discipline|Rabuan 2026-09-23: Memimpin dengan Financial Discipline]] (Sahala Tua Paulus Situmorang, MD Finance DAM)
 - **Key Executive Profiles**:
+  - [[entities/agus-dwi-handaya|Agus Dwi Handaya]] (Managing Director Human Capital, DAM)
   - [[entities/sahala-situmorang|Sahala Tua Paulus Situmorang, S.E.Ak., M.B.A.]] (Managing Director Finance, DAM)
 - **Related Concepts**:
+  - [[concepts/peoplemath-framework|PeopleMath Framework & PPH Architecture]]
+  - [[concepts/tough-and-agile-learner|Tough & Agile Learner (TAL)]]
   - [[concepts/capital-capability-synergy|Capital-Capability Synergy & Financial Discipline Engine]]
   - [[concepts/incremental-capital-output-ratio|Incremental Capital Output Ratio (ICOR) & Infrastructure Capital Productivity]]
   - [[concepts/french-and-raven-power-bases|French & Raven's Bases of Social Power]]

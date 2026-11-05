@@ -21,9 +21,12 @@ export const write = async ({ ctx, slug, ext, content }: WriteOptions): Promise<
     try {
       await fs.promises.writeFile(pathToPage, content)
       break
-    } catch (err) {
-      if ((err as any)?.code === "EPERM" && retries > 1) {
+    } catch (err: any) {
+      if ((err?.code === "EPERM" || err?.code === "ENOENT") && retries > 1) {
         retries--
+        if (err?.code === "ENOENT") {
+          await fs.promises.mkdir(dir, { recursive: true })
+        }
         await new Promise((r) => setTimeout(r, 100))
       } else {
         throw err

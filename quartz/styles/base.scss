@@ -42,10 +42,10 @@ body {
   color: var(--darkgray);
 }
 
-p,
+p:not([id^="mermaid-"] *),
 ul,
-text,
-a,
+text:not([id^="mermaid-"] *),
+a:not([id^="mermaid-"] *),
 tr,
 td,
 li,

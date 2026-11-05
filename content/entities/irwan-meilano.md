@@ -94,18 +94,18 @@ Professor Meilano cautions against reducing innovation to technological gadgetry
 
 ---
 
-## 🎤 Contributions to P3MD MBA
+## Contributions to P3MD MBA
 
-- **Rabuan Keynote (2026-09-30)**: [[rabuan/2026-09-30-buckingham-minto-method|Rabuan 05: The Minto Pyramid Principle & Structured Executive Communication (Dual-Keynote with Prof. Edward Buckingham)]]
+- **Rabuan Keynote (2026-09-30)**: [[rabuan/2026-09-30-meilano-systemic-risk|Rabuan 06: The Shifting Ground: Systemic Risk Governance & Institutional Resilience]]
 - **Curricular Impact**: Anchored systemic risk governance and national disaster resilience as mandatory competencies for future Indonesian BUMN directors and Danantara asset stewards.
 
 ---
 
-## 🔗 Knowledge Graph & Curriculum Bridges
+## Knowledge Graph & Curriculum Bridges
 
 - **Featured Masterclass**:
-  - [[rabuan/2026-09-30-buckingham-minto-method|Rabuan 05: Dual-Keynote on Strategic Execution & Systemic Risk Governance]]
-- **Co-Keynote Colleague**:
+  - [[rabuan/2026-09-30-meilano-systemic-risk|Rabuan 06: The Shifting Ground: Systemic Risk Governance & Institutional Resilience]]
+- **Accompanying Plenary Speaker**:
   - [[entities/edward-buckingham|Prof. Edward Buckingham]] (Monash University)
 - **Direct Curricular Synergies**:
   - [[courses/mk4-operations-supply-chain-management/index|MK 4: Operations & Supply Chain Management]] (Resilience, capacity planning & Little's Law)

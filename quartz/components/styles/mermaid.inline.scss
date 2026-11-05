@@ -35,19 +35,21 @@ pre {
   }
 
   &:has(> code.mermaid) {
-    border: none;
-    background: transparent;
+    border: 1px solid var(--lightgray);
+    border-radius: 8px;
+    background-color: var(--light);
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1.5rem 0;
-    padding: 0;
+    padding: 1.25rem 1rem;
     overflow-x: auto;
 
     & > code.mermaid {
       display: flex;
       justify-content: center;
       width: 100%;
+      padding: 0;
       overflow-x: auto;
 
       & > svg {
@@ -240,351 +242,50 @@ pre {
   }
 }
 
-// Editorial Academic Multi-Tone Mermaid Diagram Styling
-code.mermaid,
-.mermaid-content {
-  // High-contrast editorial typography for all diagram labels
-  .node .label,
-  .node .nodeLabel,
-  .node text,
-  .node tspan,
-  .node span {
-    color: var(--mermaid-ink) !important;
-    fill: var(--mermaid-ink) !important;
-    font-family: var(--headerFont) !important;
-    font-weight: 600 !important;
-    letter-spacing: -0.01em;
-  }
+// Strict CSS isolation for Mermaid SVGs across measurement (document.body), inline article, and modal
+svg[id^="mermaid-"],
+article svg[id^="mermaid-"],
+code.mermaid svg,
+.mermaid-content svg {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
 
-  // Base node shape formatting with smooth corners and crisp strokes
-  .node .label-container,
-  .node rect,
-  .node polygon,
-  .node circle,
-  .node ellipse,
-  .node path.label-container {
-    rx: 6px !important;
-    ry: 6px !important;
-    stroke-width: 1.5px !important;
-    transition:
-      fill 0.2s ease,
-      stroke 0.2s ease;
-  }
+  foreignObject {
+    overflow: visible;
 
-  // Connectors, links, and arrow markers
-  .flowchart-link,
-  .edgePath path,
-  .edge-path path {
-    stroke: var(--mermaid-line) !important;
-    stroke-width: 1.5px !important;
-  }
-
-  .marker,
-  marker path {
-    fill: var(--mermaid-line) !important;
-    stroke: var(--mermaid-line) !important;
-  }
-
-  // Subgraphs & Clusters
-  .cluster rect {
-    fill: var(--mermaid-subgraph-fill) !important;
-    stroke: var(--mermaid-subgraph-stroke) !important;
-    stroke-width: 1.5px !important;
-    stroke-dasharray: 4 3 !important;
-    rx: 8px !important;
-    ry: 8px !important;
-  }
-
-  .cluster .nodeLabel,
-  .cluster text,
-  .cluster span {
-    font-family: var(--headerFont) !important;
-    font-weight: 700 !important;
-    color: var(--mermaid-ink) !important;
-    fill: var(--mermaid-ink) !important;
-  }
-
-  // Universal 5-Tone Harmonic Cycle across sibling nodes (.nodes)
-  .nodes {
-    // 1. Forest Emerald
-    .node:nth-child(5n + 1) {
-      .label-container,
-      rect,
-      polygon,
-      circle,
-      ellipse,
-      path.label-container {
-        fill: var(--mermaid-emerald-fill) !important;
-        stroke: var(--mermaid-emerald-stroke) !important;
-      }
-      .label,
-      .nodeLabel,
-      text,
-      tspan,
-      span {
-        color: var(--mermaid-emerald-text) !important;
-        fill: var(--mermaid-emerald-text) !important;
-      }
+    div,
+    span,
+    p {
+      font-family: inherit;
+      font-size: inherit;
+      line-height: 1.4;
+      margin: 0;
+      padding: 0;
+      letter-spacing: normal;
+      text-wrap: wrap;
+      overflow-wrap: normal;
     }
 
-    // 2. Warm Amber
-    .node:nth-child(5n + 2) {
-      .label-container,
-      rect,
-      polygon,
-      circle,
-      ellipse,
-      path.label-container {
-        fill: var(--mermaid-amber-fill) !important;
-        stroke: var(--mermaid-amber-stroke) !important;
-      }
-      .label,
-      .nodeLabel,
-      text,
-      tspan,
-      span {
-        color: var(--mermaid-amber-text) !important;
-        fill: var(--mermaid-amber-text) !important;
-      }
-    }
-
-    // 3. Slate Blue
-    .node:nth-child(5n + 3) {
-      .label-container,
-      rect,
-      polygon,
-      circle,
-      ellipse,
-      path.label-container {
-        fill: var(--mermaid-slate-fill) !important;
-        stroke: var(--mermaid-slate-stroke) !important;
-      }
-      .label,
-      .nodeLabel,
-      text,
-      tspan,
-      span {
-        color: var(--mermaid-slate-text) !important;
-        fill: var(--mermaid-slate-text) !important;
-      }
-    }
-
-    // 4. Sage
-    .node:nth-child(5n + 4) {
-      .label-container,
-      rect,
-      polygon,
-      circle,
-      ellipse,
-      path.label-container {
-        fill: var(--mermaid-sage-fill) !important;
-        stroke: var(--mermaid-sage-stroke) !important;
-      }
-      .label,
-      .nodeLabel,
-      text,
-      tspan,
-      span {
-        color: var(--mermaid-sage-text) !important;
-        fill: var(--mermaid-sage-text) !important;
-      }
-    }
-
-    // 5. Coral
-    .node:nth-child(5n + 5) {
-      .label-container,
-      rect,
-      polygon,
-      circle,
-      ellipse,
-      path.label-container {
-        fill: var(--mermaid-coral-fill) !important;
-        stroke: var(--mermaid-coral-stroke) !important;
-      }
-      .label,
-      .nodeLabel,
-      text,
-      tspan,
-      span {
-        color: var(--mermaid-coral-text) !important;
-        fill: var(--mermaid-coral-text) !important;
-      }
+    p {
+      color: inherit;
     }
   }
 
-  // Explicit semantic classes (optional author override)
-  .node.emerald,
-  .node.forest,
-  .node.tone-emerald {
-    .label-container,
-    rect,
-    polygon,
-    circle,
-    ellipse,
-    path.label-container {
-      fill: var(--mermaid-emerald-fill) !important;
-      stroke: var(--mermaid-emerald-stroke) !important;
-    }
-    .label,
-    .nodeLabel,
-    text,
-    tspan,
-    span {
-      color: var(--mermaid-emerald-text) !important;
-      fill: var(--mermaid-emerald-text) !important;
-    }
-  }
-
-  .node.amber,
-  .node.ochre,
-  .node.tone-amber {
-    .label-container,
-    rect,
-    polygon,
-    circle,
-    ellipse,
-    path.label-container {
-      fill: var(--mermaid-amber-fill) !important;
-      stroke: var(--mermaid-amber-stroke) !important;
-    }
-    .label,
-    .nodeLabel,
-    text,
-    tspan,
-    span {
-      color: var(--mermaid-amber-text) !important;
-      fill: var(--mermaid-amber-text) !important;
-    }
-  }
-
-  .node.slate,
-  .node.blue,
-  .node.tone-slate {
-    .label-container,
-    rect,
-    polygon,
-    circle,
-    ellipse,
-    path.label-container {
-      fill: var(--mermaid-slate-fill) !important;
-      stroke: var(--mermaid-slate-stroke) !important;
-    }
-    .label,
-    .nodeLabel,
-    text,
-    tspan,
-    span {
-      color: var(--mermaid-slate-text) !important;
-      fill: var(--mermaid-slate-text) !important;
-    }
-  }
-
-  .node.sage,
-  .node.tone-sage {
-    .label-container,
-    rect,
-    polygon,
-    circle,
-    ellipse,
-    path.label-container {
-      fill: var(--mermaid-sage-fill) !important;
-      stroke: var(--mermaid-sage-stroke) !important;
-    }
-    .label,
-    .nodeLabel,
-    text,
-    tspan,
-    span {
-      color: var(--mermaid-sage-text) !important;
-      fill: var(--mermaid-sage-text) !important;
-    }
-  }
-
-  .node.coral,
-  .node.terracotta,
-  .node.tone-coral {
-    .label-container,
-    rect,
-    polygon,
-    circle,
-    ellipse,
-    path.label-container {
-      fill: var(--mermaid-coral-fill) !important;
-      stroke: var(--mermaid-coral-stroke) !important;
-    }
-    .label,
-    .nodeLabel,
-    text,
-    tspan,
-    span {
-      color: var(--mermaid-coral-text) !important;
-      fill: var(--mermaid-coral-text) !important;
-    }
-  }
-
-  // Author exception class for missing/problem nodes
-  .node.missing {
-    .label-container,
-    rect,
-    polygon,
-    circle,
-    ellipse,
-    path.label-container {
-      fill: #ffdddd !important;
-      stroke: #c0392b !important;
-      stroke-width: 2.5px !important;
-    }
-  }
-
-  // Interactive links inside Mermaid SVG diagrams
-  a {
-    color: var(--secondary) !important;
+  a,
+  a.internal {
+    color: var(--secondary);
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    line-height: inherit;
     text-decoration: underline;
     text-underline-offset: 2px;
     cursor: pointer;
-    transition: color 0.15s ease;
 
     &:hover {
-      color: var(--tertiary) !important;
-    }
-  }
-
-  // Edge labels with clean high contrast background
-  .edgeLabel {
-    background-color: var(--light) !important;
-    color: var(--darkgray) !important;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-family: var(--headerFont) !important;
-    font-size: 0.85em !important;
-
-    rect {
-      fill: var(--light) !important;
-      opacity: 0.95 !important;
-      rx: 4px !important;
-      ry: 4px !important;
-    }
-
-    span {
-      background-color: var(--light) !important;
-      color: var(--darkgray) !important;
-    }
-  }
-}
-
-:root[saved-theme="dark"] {
-  code.mermaid,
-  .mermaid-content {
-    .node.missing {
-      .label-container,
-      rect,
-      polygon,
-      circle,
-      ellipse,
-      path.label-container {
-        fill: #3b1c1a !important;
-        stroke: #e06c5f !important;
-      }
+      color: var(--tertiary);
     }
   }
 }

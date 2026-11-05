@@ -89,6 +89,7 @@ graph LR
 ## 🔗 Contributing Sessions & References
 
 - **MK 1 Lecture**: [[courses/mk1-organizational-behavior-managing-people/week-01/index|MK 1 Week 01: Strategizing Your Life]]
-- **Related Mechanism**: [[concepts/values-congruence|Values Congruence]]
-- **Theorist Profile**: [[entities/annie-mckee|Annie McKee]]
+- **Plenary & Leadership Doctrine**: [[rabuan/2026-10-20-anton-upi-dies-natalis-orasi|Commander Anton's Oration: Doktrin Kepemimpinan P3MD]]
+- **Related Mechanism**: [[concepts/values-congruence|Values Congruence]], [[concepts/behavior-change-engine|Behavior Change Engine]]
+- **Theorist Profile**: [[entities/annie-mckee|Annie McKee]], [[entities/anton-palaguna|Marsma TNI Dr. Anton Palaguna]]
 - **Hub**: [[concepts/index|Knowledge Matrix]]

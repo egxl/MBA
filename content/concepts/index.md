@@ -89,6 +89,10 @@ The table below provides direct access to all active business frameworks and ana
 | **[[concepts/organizational-network-analysis\|Organizational Network Analysis (ONA) & Social Network Centrality Metrics]]**                     | MK6 & MK1                      | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
 | **[[concepts/ulrich-hr-model\|Dave Ulrich HR Business Partner Model (Ulrich 4-Role Architecture)]]**                                            | MK1                            | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
 | **[[concepts/value-creation-and-claiming\|Value Creation vs. Value Claiming (The Negotiator's Dilemma & Integrative Bargaining)]]**             | MK5                            | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
+| **[[concepts/behavior-change-engine\|Behavior Change Engine]]**                                                                                 | MK1 & Rabuan                   | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
+| **[[concepts/peoplemath-framework\|PeopleMath Framework]]**                                                                                     | MK1 & MK2 & MK6 & Rabuan       | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
+| **[[concepts/tough-and-agile-learner\|Tough & Agile Learner (TAL)]]**                                                                           | MK1 & MK4 & MK5 & Rabuan       | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
+| **[[concepts/best-mind-best-heart\|Best Mind and Best Heart: The P3MD Leadership Doctrine]]**                                                   | Cross-Curricular               | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
 
 ---
 

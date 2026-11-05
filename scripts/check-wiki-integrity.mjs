@@ -165,7 +165,7 @@ export async function checkWikiIntegrity(contentDirUrl) {
       if (entry.isFile() && entry.name.endsWith(".md") && entry.name !== "index.md") {
         const slug = entry.name.replace(/\.md$/, "")
         const expectedPattern = new RegExp(
-          `\\[\\[(?:rabuan\\/)?${slug}(?:\\\\?\\|[^\\]]+)?\\]\\]`,
+          `(?:\\[\\[(?:rabuan\\/)?${slug}(?:\\\\?\\|[^\\]]+)?\\]\\]|href="[^"]*${slug}[^"]*")`,
           "i",
         )
         if (!expectedPattern.test(rabuanIndexContent)) {
