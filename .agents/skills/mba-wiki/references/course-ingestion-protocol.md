@@ -55,6 +55,9 @@ Before authoring new files, inspect `content/courses/mkX/week-YY/` and `content/
 
 Author dedicated satellites before drafting the master lecture hub, observing the **Cohort Attribution & Spoiler Rules**:
 
+#### Visual Diagram Selection Rule
+When extracting frameworks, process flows, or data exhibits from raw materials into satellites, consult the **[Mermaid Diagram Taxonomy](./mermaid-diagram-taxonomy.md)**. Never default reflexively to `flowchart LR`. Pick the diagram matching the visual archetype (e.g. `quadrantChart` for 2x2 matrices, `sankey-beta` for cash/material flows, `timeline` for corporate chronology, `gantt` for schedules, `radar-beta` for competency spider plots, `sequenceDiagram` for negotiation/message protocols).
+
 #### 1. Academic Readings (`reading-[slug].md`)
 - Extract all named corporate crucibles, empirical statistics, diagnostic worksheets, and comparative tables following the [Depth & Academic Rigor Standard](./depth-and-rigor-standard.md).
 
@@ -81,6 +84,7 @@ Create `content/courses/mkX/week-YY/index.md` synthesizing the entire week into 
 - **One-Pass Completeness (No Warning Banners)**: Compile a complete, polished chapter in one pass.
 - **Full Rewrite Over Placeholders**: Completely re-author `index.md` from primary evidence. Never blend unverified claims from provisional stubs.
 - **Preserve Specificity**: Include concrete numbers, names, framework steps, formulas, and diagrams.
+- **Multi-Type Visual Fidelity**: Map each slide exhibit or framework to its exact Mermaid diagram archetype per **[Mermaid Diagram Taxonomy](./mermaid-diagram-taxonomy.md)** (`quadrantChart`, `sankey-beta`, `xychart-beta`, `radar-beta`, `timeline`, `gantt`, `journey`, `kanban`, `mindmap`, `swimlane-beta`, `stateDiagram-v2`, `sequenceDiagram`, `block-beta`, `flowchart LR/TD`). Never force non-process visuals into flowcharts.
 - **Cross-Curricular Alignment**: Highlight intersections with other MBA modules (e.g. MK1 Leadership, MK3 Marketing, MK4 Operations).
 
 ---

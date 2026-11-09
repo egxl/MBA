@@ -35,6 +35,21 @@ Synthesize all attached supplementary files into the narrative:
 Visual, Pedagogical & Data Preservation Requirements:
 - Render pure data tables in Markdown and quantitative formulas in LaTeX math ($...$).
 - Zero-Prerequisite Pedagogy: Never output bare formula dumps or stacks of unannotated equations ($$...$$). Every formula must have plain-English intuition, a prerequisite jargon decoder, structural mechanics (why numerator vs denominator), and a 10-second mental-math micro-example.
-- Never output ASCII or Unicode box art (+---, ┌───). Always visualize workflows, hierarchies, and mechanisms using vector Mermaid.js diagrams with landscape aspect ratios (horizontal-first `flowchart LR` or balanced multi-column subgraphs with `direction TB`).
+- Never output ASCII or Unicode box art (+---, ┌───). Always visualize exhibits and mechanisms using the exact Mermaid.js diagram type matching the underlying archetype across all 20+ types (never default everything to flowcharts):
+  * 2x2 Matrices & Positioning Grids -> `quadrantChart`
+  * Quantitative Volume / Cash Flow Waterfalls -> `sankey-beta` (CSV syntax)
+  * Trends / Numerical Curves -> `xychart-beta`
+  * Multi-Metric Competency / 5-Forces Profiling -> `radar-beta`
+  * Market Share / Proportions -> `pie`
+  * Overlapping Sets / Strategic Intersections -> `venn-beta`
+  * Chronological History -> `timeline`
+  * 30-60-90 Day Roadmaps & Schedules -> `gantt`
+  * Customer / Employee UX Journeys -> `journey`
+  * Stage-Gate / Kanban Pipelines -> `kanban`
+  * Idea / Concept Hierarchies -> `mindmap`
+  * Value Chains & Architectural Layers -> `block-beta`
+  * Multi-Party Protocols & Negotiations -> `sequenceDiagram`
+  * State Transitions & Lifecycle Regimes -> `stateDiagram-v2`
+  * Directional Process Flows -> `flowchart LR` (horizontal-first) or `flowchart TD` (branching trees only).
 - Use clean modular topic headings. Write continuous, rigorous analytical prose with zero slide-speak ("On slide 5...").
 ```

@@ -102,11 +102,37 @@ The **MBA Wiki** skill transforms raw MBA slide decks, business cases, academic 
       4. *Micro-Numerical Toy Example* (a 10-second mental-math walkthrough with simple, round numbers).
     - Always verify accessibility with `npm run wiki:pedagogy -- --target "<course/week>"`.
 
+11. **Visual Fidelity & Multi-Type Mermaid Selection Mandate**:
+    When recreating visual exhibits, charts, matrices, or frameworks from raw slides, cases, or readings:
+    - **Never default reflexively to `flowchart LR`**.
+    - Consult **[Mermaid Diagram Taxonomy & Selection Guide](./references/mermaid-diagram-taxonomy.md)** to match the visual archetype across all 25+ supported Mermaid.js diagram types:
+      - 2x2 Matrices & Positioning Grids $\rightarrow$ `quadrantChart`
+      - Value & Cash Flow Waterfalls $\rightarrow$ `sankey-beta`
+      - Cartesian Trends & Comparative Bars $\rightarrow$ `xychart-beta`
+      - Multi-Attribute Competency / 5-Forces Benchmarks $\rightarrow$ `radar-beta`
+      - Market Share & Budget Breakdown $\rightarrow$ `pie`
+      - Overlapping Capabilities / Sweet Spots $\rightarrow$ `venn-beta`
+      - Sense-Making / Decision Frameworks $\rightarrow$ `cynefin-beta`
+      - Chronology & Milestone Histories $\rightarrow$ `timeline`
+      - 30-60-90 Day Implementation Schedules $\rightarrow$ `gantt`
+      - Customer / Employee Journeys $\rightarrow$ `journey`
+      - Stage-Gate & Backlog Pipelines $\rightarrow$ `kanban`
+      - Concept & Issue Trees $\rightarrow$ `mindmap`
+      - Department Handoffs $\rightarrow$ `swimlane-beta`
+      - Buyer-Seller Negotiations & Protocol Sequences $\rightarrow$ `sequenceDiagram`
+      - State Regimes & Lifecycle Transitions $\rightarrow$ `stateDiagram-v2`
+      - Relational Schemas & ERP Tables $\rightarrow$ `erDiagram`
+      - Value Chains & Architectural Layers $\rightarrow$ `block-beta`
+      - IT Topologies & Cloud Services $\rightarrow$ `architecture-beta` / `C4Context`
+      - Process Mechanisms & Decision Trees $\rightarrow$ `flowchart LR` / `flowchart TD`
+    - Always verify diagram syntax and vector formatting with `npm run mermaid:check`.
+
 ---
 
 ## Detailed Reference Guides
 
 - **[Course Ingestion Protocol](./references/course-ingestion-protocol.md)**: Step-by-step execution checklist from `npm run raw:prep` to cohort publication.
+- **[Mermaid Diagram Taxonomy & Selection Guide](./references/mermaid-diagram-taxonomy.md)**: Authoritative classification matrix and syntax templates for 25+ Mermaid diagram types.
 - **[Hybrid Expansion Protocol (Optional Boost)](./references/hybrid-expansion-protocol.md)**: Optional external LLM prompt for pre-expanding heavy slide decks.
 - **[Depth & Academic Rigor Standard](./references/depth-and-rigor-standard.md)**: Guidelines for unabridged ingestion, worksheets, and case exhibits.
 - **[Canonical Schema & Document Templates](./references/schema-templates.md)**: Frontmatter and markdown skeletons for all document archetypes (including Pre-Class Briefs and Post-Class Debriefs).

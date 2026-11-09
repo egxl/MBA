@@ -34,7 +34,8 @@ Use `npm run docs` only when you need the local documentation server. Node.js 20
 5. Do not invent academic facts, faculty details, dates, or citations. Mark unknowns for human review.
 6. Do not commit secrets, private source material, credentials, or generated build output.
 7. Run the narrowest relevant checks, then run `npm run check` for TypeScript, formatting, and repository-wide validation.
-8. Report: files changed, checks run and results, unresolved assumptions, and the next useful action.
+8. In Markdown tables, always escape wikilink pipes: `[[target\|alias]]` instead of `[[target | alias]]`. Bare pipes split table cells and corrupt column alignment.
+9. Report: files changed, checks run and results, unresolved assumptions, and the next useful action.
 
 ### Companion illustration workflow
 

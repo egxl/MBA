@@ -70,20 +70,42 @@ When ingesting Harvard Business School, INSEAD, or SBM ITB case studies:
 
 ---
 
-## 📐 Mermaid Architectural Layout Standard & Zero-ASCII Policy
+## 📐 Mermaid Architectural Layout Standard & Multi-Type Visual Fidelity
 
-The P3MD MBA portal requires professional vector diagrams that utilize desktop reading space effectively and adapt gracefully to split views and mobile devices:
+The P3MD MBA portal requires professional vector diagrams that utilize desktop reading space effectively, convey authentic visual meaning, and adapt gracefully to split views and mobile devices:
 
 1. **Zero-ASCII Policy**:
    - **Never generate ASCII or Unicode box art** (`+---+`, `┌───┐`, `│   │`, `──►`) inside plain code blocks.
-   - All workflows, frameworks, timelines, and organizational hierarchies must be rendered as vector **Mermaid.js** diagrams (`flowchart LR`, `graph LR`).
+   - All workflows, frameworks, timelines, and organizational hierarchies must be rendered as vector **Mermaid.js** diagrams.
    - Pure data matrices must be authored as standard Markdown tables (`| Col 1 | Col 2 |`).
 
-2. **Horizontal-First Architecture (`flowchart LR`)**:
-   - Multi-phase processes, sequential lifespans, and progression pipelines must flow horizontally from left to right (`flowchart LR`).
-   - Do not stack linear sequences vertically (`flowchart TD` or `flowchart BT`).
+2. **Visual Archetype Matching (Pick Across 25+ Types)**:
+   - **Never default reflexively to `flowchart LR`**.
+   - Review **[Mermaid Diagram Taxonomy & Selection Guide](./mermaid-diagram-taxonomy.md)** to match the visual archetype:
+     - 2x2 Strategic Matrices $\rightarrow$ `quadrantChart`
+     - Quantitative & Cash Flow Waterfalls $\rightarrow$ `sankey-beta`
+     - Numerical Trends & Bar/Line Overlays $\rightarrow$ `xychart-beta`
+     - Multi-Dimensional Competency / 5-Forces Benchmarks $\rightarrow$ `radar-beta`
+     - Market Share / Portfolio Composition $\rightarrow$ `pie`
+     - Overlapping Capabilities / Strategic Intersections $\rightarrow$ `venn-beta`
+     - Complexity & Sense-Making Domains $\rightarrow$ `cynefin-beta`
+     - Chronological History & Corporate Evolution $\rightarrow$ `timeline`
+     - 30-60-90 Day Roadmaps & Implementation Schedules $\rightarrow$ `gantt`
+     - Customer Experience / User Journey Maps $\rightarrow$ `journey`
+     - Stage-Gate Pipelines & Task Backlogs $\rightarrow$ `kanban`
+     - WBS, Categorization Trees & Brainstorms $\rightarrow$ `mindmap`
+     - Cross-Functional Department Lanes $\rightarrow$ `swimlane-beta`
+     - Multi-Party Negotiations & Protocols $\rightarrow$ `sequenceDiagram`
+     - Regime Transitions & Lifecycle States $\rightarrow$ `stateDiagram-v2`
+     - Relational Database Schemas $\rightarrow$ `erDiagram`
+     - Value Chain Layers & Architectural Stacks $\rightarrow$ `block-beta`
+     - Cloud / IT Topologies $\rightarrow$ `architecture-beta` / `C4Context`
 
-3. **Balanced Multi-Column Subgraphs**:
+3. **Horizontal-First Architecture for Processes (`flowchart LR`)**:
+   - When a diagram is a true directional process, pipeline, or progression, it must flow horizontally from left to right (`flowchart LR`).
+   - Do not stack linear process steps vertically (`flowchart TD` or `flowchart BT`).
+
+4. **Balanced Multi-Column Subgraphs**:
    - When a framework has distinct phases (e.g. Foundation $\rightarrow$ Expansion $\rightarrow$ Stewardship), connect the subgraphs horizontally:
      ```mermaid
      flowchart LR
@@ -99,11 +121,11 @@ The P3MD MBA portal requires professional vector diagrams that utilize desktop r
      ```
    - This creates compact, side-by-side columns (~260px tall) instead of 1,000px vertical towers.
 
-4. **Linear Depth Cap in Vertical Trees**:
+5. **Linear Depth Cap in Vertical Trees**:
    - `flowchart TD` is permitted *only* for branching trees where each level expands horizontally ($\ge 2$ child nodes).
    - Single-column linear chains exceeding 3 nodes in `TD` or `BT` direction are forbidden and blocked by CI.
 
-5. **2D Matrix Grids for Parallel Item Sets**:
+6. **2D Matrix Grids for Parallel Item Sets**:
    - Parallel competency sets, pillars, or virtues must be laid out in 2-column or 3-column networks or matrices, never as 1D linear poles (`C1 --- C2 --- C3 ...`).
 
 ---
@@ -144,7 +166,7 @@ Before declaring an ingestion complete, verify against this checklist:
 - [ ] **Are empirical statistics cited with exact figures?** (Percentages, currency amounts, sample sizes, capacities).
 - [ ] **Are mathematical formulas written in KaTeX and contextualized?** ($\LaTeX$ math formatting with zero unannotated formula dumps, passing `npm run wiki:pedagogy`).
 - [ ] **Are all prerequisite concepts decoded for beginners?** (Intuition first, jargon decoded on the spot, structural mechanics explained, and micro-examples provided).
-- [ ] **Are structural relationships visualized with Mermaid?** (Horizontal-first, 0 ASCII art, passing `npm run mermaid:check`).
+- [ ] **Are structural relationships visualized with the accurate Mermaid diagram type?** (Classified across 25+ types via [Mermaid Diagram Taxonomy](./mermaid-diagram-taxonomy.md), 0 ASCII art, horizontal-first for flows, passing `npm run mermaid:check`).
 - [ ] **Are core concepts woven inline?** (First prominent mention in prose and diagrams linked via `[[concepts/<slug>|...]]` or `[[concepts/<slug>#anchor|...]]`; minimum 3 concept links per weekly hub).
 - [ ] **Do newly created concepts meet the depth threshold?** ($\ge 45$ lines, $\ge 3$ analytical sections, zero shallow dictionary stubs).
 - [ ] **Is epistemic data provenance preserved on enterprise entities?** (Timeless real-world identity separated from `Curriculum Case Snapshots`, with `[!NOTE] Case-Basis Epistemic Notice` citing the case, or `category: fictional-enterprise` badging applied).
