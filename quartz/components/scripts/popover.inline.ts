@@ -10,7 +10,12 @@ async function mouseEnterHandler(
   { clientX, clientY }: { clientX: number; clientY: number },
 ) {
   const link = (activeAnchor = this)
-  if (link.dataset.noPopover === "true") {
+  if (
+    link.dataset.noPopover === "true" ||
+    link.closest(
+      ".socratica-card, .socratica-subnav-item, .socratica-subnav, .socratica-grid, .course-card, .course-cards-list, .rabuan-card, .mk-portals-strip, [data-no-popover='true']",
+    )
+  ) {
     return
   }
 
@@ -98,8 +103,22 @@ async function mouseEnterHandler(
       })
       // Remove interactive or navigation components not suitable for hover previews
       html
-        .querySelectorAll(".course-switcher, .tts-track-selector-wrapper, .breadcrumb-container")
+        .querySelectorAll(
+          ".course-switcher, .tts-track-selector-wrapper, .breadcrumb-container, .mk-curriculum, .mk-governance-grid, .mk-portals-strip, .toc, .table-of-contents",
+        )
         .forEach((el) => el.remove())
+
+      // Clean up standalone curriculum / governance headings in popover
+      html.querySelectorAll("h2, h3, hr").forEach((el) => {
+        const text = el.textContent ?? ""
+        if (
+          text.includes("Curriculum") ||
+          text.includes("Syllabus Reference") ||
+          text.includes("Academic Governance")
+        ) {
+          el.remove()
+        }
+      })
       const elts = [...html.getElementsByClassName("popover-hint")]
       if (elts.length === 0) return
 

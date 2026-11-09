@@ -460,7 +460,7 @@ const textMapping: WeakMap<HTMLElement, string> = new WeakMap()
 async function getMermaidInstance() {
   mermaidImport ||= await import(
     // @ts-ignore
-    "https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs"
+    "https://cdnjs.cloudflare.com/ajax/libs/mermaid/12.3.0/mermaid.esm.min.mjs"
   )
   return mermaidImport.default
 }
@@ -596,6 +596,16 @@ async function renderAllMermaid() {
           top: 10,
           bottom: 18,
         },
+      },
+      quadrantChart: {
+        chartWidth: 640,
+        chartHeight: 520,
+        titleFontSize: 18,
+        quadrantLabelFontSize: 14,
+        xAxisLabelFontSize: 13,
+        yAxisLabelFontSize: 13,
+        pointLabelFontSize: 12,
+        quadrantTextTopPadding: 10,
       },
     })
 

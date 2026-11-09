@@ -151,10 +151,10 @@
   opacity: 0;
   overflow: hidden;
   transform: translateY(-8px);
-  background-color: color-mix(in srgb, var(--light) 92%, transparent);
+  background: transparent;
   backdrop-filter: blur(16px) saturate(1.4);
   -webkit-backdrop-filter: blur(16px) saturate(1.4);
-  border: 1px solid var(--lightgray);
+  border: 1px solid transparent;
   border-radius: 16px;
   padding: 0 1rem;
   box-shadow:
@@ -167,19 +167,21 @@
     padding 0.3s ease;
   box-sizing: border-box;
 
-  :root[saved-theme="dark"] & {
-    background-color: color-mix(in srgb, var(--light) 94%, transparent);
-    box-shadow:
-      0 12px 32px -4px rgba(0, 0, 0, 0.5),
-      0 4px 8px -2px rgba(0, 0, 0, 0.3);
-  }
-
   &.open {
     pointer-events: auto;
     max-height: 140px;
     opacity: 1;
     transform: translateY(0);
     padding: 0.75rem 1rem;
+    border-color: var(--lightgray);
+    background-color: color-mix(in srgb, var(--light) 92%, transparent);
+
+    :root[saved-theme="dark"] & {
+      background-color: color-mix(in srgb, var(--light) 94%, transparent);
+      box-shadow:
+        0 12px 32px -4px rgba(0, 0, 0, 0.5),
+        0 4px 8px -2px rgba(0, 0, 0, 0.3);
+    }
   }
 
   .tts-shelf-row-top {

@@ -35,13 +35,18 @@
     font-family: var(--bodyFont);
     border: 1px solid var(--lightgray);
     background-color: var(--light);
-    border-radius: 5px;
-    box-shadow: 6px 6px 36px 0 rgba(0, 0, 0, 0.25);
-    overflow: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    overflow-x: hidden;
+    overflow-y: auto;
     overscroll-behavior: contain;
     white-space: normal;
     user-select: none;
     cursor: default;
+
+    :root[saved-theme="dark"] & {
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+    }
   }
 
   & > .popover-inner[data-content-type] {
@@ -72,8 +77,25 @@
 
   .course-switcher,
   .tts-track-selector-wrapper,
-  .breadcrumb-container {
+  .breadcrumb-container,
+  .mk-curriculum,
+  .mk-governance-grid,
+  .mk-portals-strip {
     display: none !important;
+  }
+
+  .mk-exec-bar {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+    padding: 0.65rem 0.85rem !important;
+    margin: 0.5rem 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+
+    .mk-exec-meta-right {
+      display: none !important;
+    }
   }
 
   .article-title {

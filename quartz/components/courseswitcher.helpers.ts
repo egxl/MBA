@@ -43,6 +43,7 @@ export function extractCourseSegment(slug: string): string | null {
 }
 
 export function extractWeekNum(slug: string): number | null {
+  if (/\/mid(?:\/|$)/i.test(slug)) return 8.5
   const match = slug.match(/\/week-(\d+)/i)
   return match ? parseInt(match[1], 10) : null
 }
@@ -77,12 +78,35 @@ export function getCourseOptions(allFiles: QuartzPluginData[]): CourseOption[] {
 export function getWeekOptions(allFiles: QuartzPluginData[], courseSegment: string): WeekOption[] {
   const map = new Map<number, WeekOption>()
   const escapedSegment = courseSegment.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
-  const regex = new RegExp(`^courses\\/${escapedSegment}\\/week-(\\d+)(?:\\/index)?$`, "i")
+  const regex = new RegExp(
+    `^courses\\/${escapedSegment}\\/(?:week-(\\d+)|(mid))(?:\\/index)?$`,
+    "i",
+  )
 
   for (const file of allFiles) {
     const slug = file.slug ?? ""
     const match = slug.match(regex)
     if (!match) continue
+
+    if (match[2] && match[2].toLowerCase() === "mid") {
+      const rawTitle = file.frontmatter?.title as string | undefined
+      let label = "Mid-Term Exam Dossier"
+      if (rawTitle) {
+        const cleaned = rawTitle
+          .replace(/^(?:MK\s*\d+\s*)?Mid-Term(?:\s+Examination)?\s*[:–-]\s*/i, "")
+          .trim()
+        if (cleaned.length > 0) {
+          label = `Mid-Term: ${cleaned}`
+        }
+      }
+
+      map.set(8.5, {
+        weekNum: 8.5,
+        label,
+        slug: file.slug as FullSlug,
+      })
+      continue
+    }
 
     const parsedNum = parseInt(match[1], 10)
     const weekNum = typeof file.frontmatter?.week === "number" ? file.frontmatter.week : parsedNum

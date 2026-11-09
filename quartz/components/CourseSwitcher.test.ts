@@ -65,6 +65,7 @@ describe("CourseSwitcher helpers", () => {
         ),
         6,
       )
+      assert.equal(extractWeekNum("courses/mk2-financial-management-strategy/mid/index"), 8.5)
     })
 
     test("returns null when no week segment is present", () => {
@@ -126,6 +127,13 @@ describe("CourseSwitcher helpers", () => {
           },
         },
         {
+          slug: "courses/mk4-operations-supply-chain-management/mid/index" as FullSlug,
+          frontmatter: {
+            title:
+              "MK04 Mid-Term Examination: Comprehensive Operational Dossier & Curricular Synthesis",
+          },
+        },
+        {
           slug: "courses/mk4-operations-supply-chain-management/week-02/index" as FullSlug,
           frontmatter: {
             title: "Week 02: Capacity Management",
@@ -143,11 +151,16 @@ describe("CourseSwitcher helpers", () => {
       ]
 
       const weeks = getWeekOptions(mockFiles, "mk4-operations-supply-chain-management")
-      assert.equal(weeks.length, 2)
+      assert.equal(weeks.length, 3)
       assert.equal(weeks[0].weekNum, 2)
       assert.equal(weeks[0].label, "Week 02: Capacity Management")
       assert.equal(weeks[1].weekNum, 6)
       assert.equal(weeks[1].label, "Week 06: Process Design, Analysis & Little's Law")
+      assert.equal(weeks[2].weekNum, 8.5)
+      assert.equal(
+        weeks[2].label,
+        "Mid-Term: Comprehensive Operational Dossier & Curricular Synthesis",
+      )
     })
 
     test("returns empty array when course has no weeks", () => {
