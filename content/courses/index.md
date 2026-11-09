@@ -32,8 +32,8 @@ Click any course card below to access its complete 14-week syllabus, weekly lect
       <div>
         <div class="course-card-header">
           <span class="course-code-badge mk1">MK 1</span>
-          <span class="course-meta-pill">14 Weeks</span>
-          <span class="course-meta-pill">14 Cases</span>
+          <span class="course-meta-pill">10 / 14 Weeks Live</span>
+          <span class="course-meta-pill">33 Subpages</span>
           <span class="course-meta-pill">Core Course</span>
         </div>
         <div class="course-card-title">Organizational Behaviour &amp; Managing People</div>
@@ -69,8 +69,8 @@ Click any course card below to access its complete 14-week syllabus, weekly lect
       <div>
         <div class="course-card-header">
           <span class="course-code-badge mk2">MK 2</span>
-          <span class="course-meta-pill">14 Weeks</span>
-          <span class="course-meta-pill">14 Cases</span>
+          <span class="course-meta-pill">10 / 14 Weeks + Mid Live</span>
+          <span class="course-meta-pill">13 Subpages</span>
           <span class="course-meta-pill">Core Course</span>
         </div>
         <div class="course-card-title">Financial Management and Strategy</div>
@@ -106,8 +106,8 @@ Click any course card below to access its complete 14-week syllabus, weekly lect
       <div>
         <div class="course-card-header">
           <span class="course-code-badge mk3">MK 3</span>
-          <span class="course-meta-pill">14 Weeks</span>
-          <span class="course-meta-pill">13 Cases • 1 Game</span>
+          <span class="course-meta-pill">10 / 14 Weeks Live</span>
+          <span class="course-meta-pill">18 Subpages</span>
           <span class="course-meta-pill">Core Course</span>
         </div>
         <div class="course-card-title">Marketing Management</div>
@@ -143,8 +143,8 @@ Click any course card below to access its complete 14-week syllabus, weekly lect
       <div>
         <div class="course-card-header">
           <span class="course-code-badge mk4">MK 4</span>
-          <span class="course-meta-pill">14 Weeks</span>
-          <span class="course-meta-pill">14 Cases • 1 Game</span>
+          <span class="course-meta-pill">10 / 14 Weeks + Mid Live</span>
+          <span class="course-meta-pill">20 Subpages</span>
           <span class="course-meta-pill">Core Course</span>
         </div>
         <div class="course-card-title">Operations and Supply Chain Management</div>
@@ -180,8 +180,8 @@ Click any course card below to access its complete 14-week syllabus, weekly lect
       <div>
         <div class="course-card-header">
           <span class="course-code-badge mk5">MK 5</span>
-          <span class="course-meta-pill">14 Weeks</span>
-          <span class="course-meta-pill">7 Cases • 7 Roleplays</span>
+          <span class="course-meta-pill">10 / 14 Weeks + Mid Live</span>
+          <span class="course-meta-pill">19 Subpages</span>
           <span class="course-meta-pill">Core Course</span>
         </div>
         <div class="course-card-title">Problem Solving, Decision Making and Negotiation</div>
@@ -217,8 +217,8 @@ Click any course card below to access its complete 14-week syllabus, weekly lect
       <div>
         <div class="course-card-header">
           <span class="course-code-badge mk6">MK 6</span>
-          <span class="course-meta-pill">14 Weeks</span>
-          <span class="course-meta-pill">14 Cases</span>
+          <span class="course-meta-pill">Weeks 08–10 Live (3/14)</span>
+          <span class="course-meta-pill">3 Subpages</span>
           <span class="course-meta-pill">Core Course</span>
         </div>
         <div class="course-card-title">Applied Business Analytics</div>
@@ -245,8 +245,18 @@ Click any course card below to access its complete 14-week syllabus, weekly lect
     </div>
   </a>
 
-  <!-- Rabuan: PeopleMath -->
-  <a href="rabuan/2026-09-02-adh-peoplemath" class="course-card">
+</div>
+
+---
+
+## 🎙️ Executive Plenaries & Additional Learning Streams
+
+Executive masterclasses, CEO guest lectures, and institutional experiential learning synchronizing with the core curriculum:
+
+<div class="course-cards-list">
+
+  <!-- Rabuan Hub -->
+  <a href="rabuan/" class="course-card">
     <div class="course-card-poster">
       <img src="static/posters/bonus-peoplemath.svg" alt="Poster: PeopleMath Executive Masterclass" width="190" height="254" loading="lazy" />
     </div>
@@ -254,27 +264,26 @@ Click any course card below to access its complete 14-week syllabus, weekly lect
       <div>
         <div class="course-card-header">
           <span class="course-code-badge bonus">RABUAN</span>
-          <span class="course-meta-pill">Executive Masterclass</span>
-          <span class="course-meta-pill">Quantitative Modeling</span>
+          <span class="course-meta-pill">Weekly Plenary Series</span>
+          <span class="course-meta-pill">Guest Lectures</span>
         </div>
-        <div class="course-card-title">PeopleMath (Rabuan Executive Series)</div>
+        <div class="course-card-title">Rabuan: Executive &amp; Guest Lecture Series</div>
         <div class="course-card-faculty">
-          <strong>Lead Speaker:</strong> Agus Dwi Handaya (Managing Director Human Capital, PT Danantara Asset Management)
+          <strong>Featured Session:</strong> Agus Dwi Handaya (Managing Director Human Capital, PT Danantara Asset Management)
         </div>
         <p class="course-card-desc">
-          Kalkulus matematis modal manusia: model produktivitas berkualitas dan kebahagiaan tanpa batas ($PPH$), 20 rumus PeopleMath, arsitektur Tough &amp; Agile Learner ($TAL$), serta akselerasi belajar $Vb/Vp$.
+          Plenary sessions with senior leaders across Danantara, Kemhan, and BUMNs. Featured keynote: <em>PeopleMath</em> — kalkulus matematis modal manusia, 20 rumus produktivitas berkualitas dan kebahagiaan ($PPH$), serta arsitektur Tough &amp; Agile Learner ($TAL$).
         </p>
         <div class="course-card-themes">
-          <span class="course-theme-tag">PPH &amp; 20 Rumus</span>
+          <span class="course-theme-tag">Executive Keynotes</span>
+          <span class="course-theme-tag">PeopleMath ($PPH$)</span>
           <span class="course-theme-tag">Tough &amp; Agile Learner</span>
-          <span class="course-theme-tag">3N Leader &amp; Individu</span>
-          <span class="course-theme-tag">Learning Velocity Vb/Vp</span>
-          <span class="course-theme-tag">Human Capital Architecture</span>
+          <span class="course-theme-tag">Danantara Leadership</span>
         </div>
       </div>
       <div class="course-card-footer">
         <span class="course-card-action">
-          Buka Sesi Rabuan PeopleMath
+          Buka Hub Sesi Rabuan
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
         </span>
       </div>

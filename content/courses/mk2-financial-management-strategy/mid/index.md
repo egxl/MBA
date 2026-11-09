@@ -89,12 +89,12 @@ Under the **[[concepts/activity-based-costing|Activity-Based Costing (ABC) Hiera
 
 $$\mathbf{\text{Activity Pool Rate}} = \frac{\text{Total Estimated Activity Overhead}}{\text{Total Activity Driver Capacity}}$$
 
-| Strategic Factor      | Traditional Costing (Nusantara / Nirmala)                   | [[concepts/activity-based-costing                                                             | Activity-Based Costing (ABC)]] Solution |
-| :-------------------- | :---------------------------------------------------------- | :-------------------------------------------------------------------------------------------- | --------------------------------------- |
-| **Allocation Base**   | Single volume metric (Direct Labor Hours or Machine Hours). | Multiple causal drivers (Setups, Inspections, Engineering Hours).                             |
-| **High-Volume Lines** | **Over-costed**: Subsidize complex specialty runs.          | **True Low Cost**: Revealed to have high margins (SB margin rises from $27.3\%$ to $32.1\%$). |
-| **Low-Volume Lines**  | **Under-costed**: Mask severe operational losses.           | **True High Cost**: Overhead explodes (CBP margin drops from $17.9\%$ to $5.4\%$).            |
-| **Executive Action**  | Indiscriminately pursuing custom bids.                      | Reprice custom jobs, impose setup surcharges, enforce minimum order quantities.               |
+| Strategic Factor      | Traditional Costing (Nusantara / Nirmala)                   | [[concepts/activity-based-costing                                                             \| Activity-Based Costing (ABC)]] Solution |
+| :-------------------- | :---------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------- |
+| **Allocation Base**   | Single volume metric (Direct Labor Hours or Machine Hours). | Multiple causal drivers (Setups, Inspections, Engineering Hours).                                                                        |
+| **High-Volume Lines** | **Over-costed**: Subsidize complex specialty runs.          | **True Low Cost**: Revealed to have high margins (SB margin rises from $27.3\%$ to $32.1\%$).                                            |
+| **Low-Volume Lines**  | **Under-costed**: Mask severe operational losses.           | **True High Cost**: Overhead explodes (CBP margin drops from $17.9\%$ to $5.4\%$).                                                       |
+| **Executive Action**  | Indiscriminately pursuing custom bids.                      | Reprice custom jobs, impose setup surcharges, enforce minimum order quantities.                                                          |
 
 ---
 

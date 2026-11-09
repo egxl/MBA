@@ -42,13 +42,13 @@ Marketing is frequently misunderstood in corporate practice as commercial promot
 
 As emphasized by Ilma Aulia Zaim, Ph.D. in plenary lectures, marketing leaders operate across a four-stage executive governance loop: **Planning $\rightarrow$ Strategize $\rightarrow$ Execute $\rightarrow$ Monitoring**. Under conditions of **VUCA** (Volatility, Uncertainty, Complexity, and Ambiguity), intuitive guesswork fails; empirical [[concepts/marketing-research-methodologies|market research]] is the non-negotiable anchor.
 
-| Strategic Dimension            | Selling Orientation                                   | Marketing Orientation                                                             |
-| :----------------------------- | :---------------------------------------------------- | :-------------------------------------------------------------------------------- | -------------------------------- |
-| **Operational Starting Point** | Factory production lines and existing inventory       | Market demand, unmet consumer pain points, and jobs-to-be-done                    |
-| **Managerial Focus**           | Pushing products through sales channels via promotion | Architecting superior [[concepts/customer-perceived-value                         | Customer Perceived Value (CPV)]] |
-| **Core Discipline**            | Transactional selling tactics                         | Dual discipline: **Art** (creative empathy) + **Science** (data-driven research)  |
-| **Organizational Alignment**   | Sales department silo                                 | Cross-functional value delivery network (Marketing, Operations, HR, Finance)      |
-| **Target Outcome**             | Short-term sales volume                               | Sustainable customer satisfaction and high Customer Lifetime Value ($\text{CLV}$) |
+| Strategic Dimension            | Selling Orientation                                   | Marketing Orientation                                                                                                 |
+| :----------------------------- | :---------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------- |
+| **Operational Starting Point** | Factory production lines and existing inventory       | Market demand, unmet consumer pain points, and jobs-to-be-done                                                        |
+| **Managerial Focus**           | Pushing products through sales channels via promotion | Architecting superior [[concepts/customer-perceived-value                         \| Customer Perceived Value (CPV)]] |
+| **Core Discipline**            | Transactional selling tactics                         | Dual discipline: **Art** (creative empathy) + **Science** (data-driven research)                                      |
+| **Organizational Alignment**   | Sales department silo                                 | Cross-functional value delivery network (Marketing, Operations, HR, Finance)                                          |
+| **Target Outcome**             | Short-term sales volume                               | Sustainable customer satisfaction and high Customer Lifetime Value ($\text{CLV}$)                                     |
 
 ### The Two Foundational Executive Questions
 
@@ -358,15 +358,15 @@ flowchart LR
 
 The tactical toolkit used to produce the desired response in the target market:
 
-| Dimension             | Scope & Key Tactical Elements                                           | Strategic Execution                                                      |
-| :-------------------- | :---------------------------------------------------------------------- | :----------------------------------------------------------------------- | --------------------------------------------------------- |
-| **Product**           | Variety, quality, design, features, brand name, packaging.              | Align formula and packaging aesthetics to target customer solution.      |
-| **Price**             | List price, discounts, allowances, payment periods, credit terms.       | Determine unit margin architecture and affordable purchasing increments. |
-| **Place**             | Channels, coverage, assortments, locations, inventory, logistics.       | Ensure high availability across traditional warungs and modern trade.    |
-| **Promotion**         | Advertising, personal selling, sales promotion, PR, digital.            | Drive brand awareness, trial, social proof, and two-way engagement.      |
-| **People**            | Frontline service staff, training, culture, customer interaction (7Ps). | Professional empathy and diagnostic expertise at service touchpoints.    |
-| **Process**           | [[concepts/service-blueprinting                                         | Service blueprint]], flow of activities, wait times, automation (7Ps).   | Eliminate service bottlenecks and reduce customer effort. |
-| **Physical Evidence** | Store atmosphere, packaging tangibles, receipts, digital UI (7Ps).      | Tangible cues confirming brand competence and credibility.               |
+| Dimension             | Scope & Key Tactical Elements                                                                                                                     | Strategic Execution                                                      |
+| :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------- |
+| **Product**           | Variety, quality, design, features, brand name, packaging.                                                                                        | Align formula and packaging aesthetics to target customer solution.      |
+| **Price**             | List price, discounts, allowances, payment periods, credit terms.                                                                                 | Determine unit margin architecture and affordable purchasing increments. |
+| **Place**             | Channels, coverage, assortments, locations, inventory, logistics.                                                                                 | Ensure high availability across traditional warungs and modern trade.    |
+| **Promotion**         | Advertising, personal selling, sales promotion, PR, digital.                                                                                      | Drive brand awareness, trial, social proof, and two-way engagement.      |
+| **People**            | Frontline service staff, training, culture, customer interaction (7Ps).                                                                           | Professional empathy and diagnostic expertise at service touchpoints.    |
+| **Process**           | [[concepts/service-blueprinting                                         \| Service blueprint]], flow of activities, wait times, automation (7Ps). | Eliminate service bottlenecks and reduce customer effort.                |
+| **Physical Evidence** | Store atmosphere, packaging tangibles, receipts, digital UI (7Ps).                                                                                | Tangible cues confirming brand competence and credibility.               |
 
 ### 3. Re-Framing 4Ps to 4Cs: The Customer-Centric Mirror
 
@@ -463,12 +463,12 @@ The foundational marketing models analyzed in this lecture were tested through t
 
 ## 13. Required Readings, Cases & Problem Sets
 
-| Document / Asset                      |    Type    | Source Institution | Curricular Focus & Core Contribution                                                                                             | Study Satellite                                                                                        |
-| :------------------------------------ | :--------: | :----------------: | :------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| **Unilever in Brazil (1997–2007)**    | Case Study |       INSEAD       | Marketing to low-income consumers, Maria Conceição, Omo cannibalization risks, and specialized distributor economics.            | [[courses/mk3-marketing-management/week-01/case-unilever-brazil-low-income\|Open INSEAD Case Dossier]] |
-| **Unilever Indonesia (2026)**         | Case Study |      SBM ITB       | Archipelago mass-market defense, UNVR financial reset, Wings Group (_Daia_), and Bain [[concepts/elements-of-value               | Elements of Value]] application.                                                                       | [[courses/mk3-marketing-management/week-01/case-unilever-indonesia-2026\|Open SBM ITB Case Dossier]] |
-| **Week 01 Assignment Q&A Analysis**   | Assignment |   SBM ITB MM5001   | Complete 10-question pre-assignment diagnostic, F9 (Class F / Syndicate 9) & Maintainer reference models, and cold-call debrief. | [[courses/mk3-marketing-management/week-01/assignment-pre-assignment-unilever\|Open Assignment Brief]] |
-| **Principles of Marketing (Ch. 1–2)** |  Textbook  | Kotler & Armstrong | Foundational theory on customer value, marketing management orientations, BCG growth-share matrix, and the marketing mix.        | _Raw Textbook Reference_                                                                               |
+| Document / Asset                      | Type       | Source Institution | Curricular Focus & Core Contribution                                                                                                                                 | Study Satellite                                                                                        |
+| :------------------------------------ | :--------- | :----------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| **Unilever in Brazil (1997–2007)**    | Case Study | INSEAD             | Marketing to low-income consumers, Maria Conceição, Omo cannibalization risks, and specialized distributor economics.                                                | [[courses/mk3-marketing-management/week-01/case-unilever-brazil-low-income\|Open INSEAD Case Dossier]] |
+| **Unilever Indonesia (2026)**         | Case Study | SBM ITB            | Archipelago mass-market defense, UNVR financial reset, Wings Group (_Daia_), and Bain [[concepts/elements-of-value               \| Elements of Value]] application. | [[courses/mk3-marketing-management/week-01/case-unilever-indonesia-2026\|Open SBM ITB Case Dossier]]   |
+| **Week 01 Assignment Q&A Analysis**   | Assignment | SBM ITB MM5001     | Complete 10-question pre-assignment diagnostic, F9 (Class F / Syndicate 9) & Maintainer reference models, and cold-call debrief.                                     | [[courses/mk3-marketing-management/week-01/assignment-pre-assignment-unilever\|Open Assignment Brief]] |
+| **Principles of Marketing (Ch. 1–2)** | Textbook   | Kotler & Armstrong | Foundational theory on customer value, marketing management orientations, BCG growth-share matrix, and the marketing mix.                                            | _Raw Textbook Reference_                                                                               |
 
 ---
 

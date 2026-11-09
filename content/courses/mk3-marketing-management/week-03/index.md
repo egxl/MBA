@@ -111,13 +111,13 @@ flowchart TD
     end
 ```
 
-| Decision Dimension      | Type 1: Convenience / Low-Involvement | Type 2: Utilitarian / High-Functionality | Type 3: Identity-Expressive / Hedonic           |
-| :---------------------- | :------------------------------------ | :--------------------------------------- | :---------------------------------------------- | ----------------------------------------- | ---------------------------- | ---------------------------------------------------- |
-| **Typical Basket Size** | Rp 30,000 – Rp 75,000                 | > Rp 1,500,000                           | Variable (Rp 200,000 – Multi-Million)           |
-| **Decision Cycle**      | Seconds to Minutes (Impulse / Habit)  | Weeks to Months (Extensive Research)     | Days to Weeks (Emotional Deliberation)          |
-| **Information Search**  | Passive; driven by shelf visibility   | Active; technical reviews, benchmarks    | Social browsing; peer validation, aesthetic fit |
-| **Primary Value Tier**  | [[concepts/elements-of-value          | Functional: Reduces Effort, Quality]]    | [[concepts/customer-perceived-value             | Functional & Economic: Durability, Spec]] | [[concepts/elements-of-value | Emotional & Life-Changing: Badge Value, Aesthetics]] |
-| **Post-Purchase Risk**  | Negligible; easy brand switching      | High Cognitive Dissonance; buyer regret  | Social embarrassment; identity incongruence     |
+| Decision Dimension      | Type 1: Convenience / Low-Involvement                                          | Type 2: Utilitarian / High-Functionality                                                     | Type 3: Identity-Expressive / Hedonic                                                |
+| :---------------------- | :----------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------- |
+| **Typical Basket Size** | Rp 30,000 – Rp 75,000                                                          | > Rp 1,500,000                                                                               | Variable (Rp 200,000 – Multi-Million)                                                |
+| **Decision Cycle**      | Seconds to Minutes (Impulse / Habit)                                           | Weeks to Months (Extensive Research)                                                         | Days to Weeks (Emotional Deliberation)                                               |
+| **Information Search**  | Passive; driven by shelf visibility                                            | Active; technical reviews, benchmarks                                                        | Social browsing; peer validation, aesthetic fit                                      |
+| **Primary Value Tier**  | [[concepts/elements-of-value          \| Functional: Reduces Effort, Quality]] | [[concepts/customer-perceived-value             \| Functional & Economic: Durability, Spec]] | [[concepts/elements-of-value \| Emotional & Life-Changing: Badge Value, Aesthetics]] |
+| **Post-Purchase Risk**  | Negligible; easy brand switching                                               | High Cognitive Dissonance; buyer regret                                                      | Social embarrassment; identity incongruence                                          |
 
 ---
 

@@ -191,11 +191,11 @@ Transformative Indonesian leaders must actively model the **Adult ego state**, e
 
 Leading cross-functional teams requires managing difficult organizational trade-offs:
 
-| Strategic Trade-off                     | The Pressure Point                                                                                          | Operational Risk                                                                                           | Executive Resolution Mechanism                                                                                                       |
-| :-------------------------------------- | :---------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| \*\*[[concepts/psychological-safety     | Psychological Safety]] vs. Performance Accountability\*\*                                                   | High safety without accountability breeds complacency; high accountability without safety creates anxiety. | - Complacency (High Safety, Low Accountability)<br/>- Anxiety (Low Safety, High Accountability)                                      | Aim for the **Learning Zone**: pair high emotional safety to report errors with demanding standards of operational excellence. |
-| **Speed vs. Voice in Critical Sprints** | Urgent project delivery deadlines tempt leaders to default to command-and-control Critical Parent dictates. | Triggers crossed transactions and passive-aggressive subordinate resistance.                               | Execute rapid Adult-Adult check-ins; explain the strategic _context_ of urgency rather than issuing blunt commands.                  |
-| **Social Bonding vs. Working Time**     | Spending 25% more time on casual non-work chat risks distraction if uncontrolled.                           | Operational delay and lost working hours on critical path deliverables.                                    | Time-box social interactions: utilize meeting check-ins (first 5 minutes) and dedicated coffee breaks, keeping work sprints focused. |
+| Strategic Trade-off                                                                                  | The Pressure Point                                                                                          | Operational Risk                                                                                | Executive Resolution Mechanism                                                                                                       |
+| :--------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
+| \*\*[[concepts/psychological-safety     \| Psychological Safety]] vs. Performance Accountability\*\* | High safety without accountability breeds complacency; high accountability without safety creates anxiety.  | - Complacency (High Safety, Low Accountability)<br/>- Anxiety (Low Safety, High Accountability) | Aim for the **Learning Zone**: pair high emotional safety to report errors with demanding standards of operational excellence.       |
+| **Speed vs. Voice in Critical Sprints**                                                              | Urgent project delivery deadlines tempt leaders to default to command-and-control Critical Parent dictates. | Triggers crossed transactions and passive-aggressive subordinate resistance.                    | Execute rapid Adult-Adult check-ins; explain the strategic _context_ of urgency rather than issuing blunt commands.                  |
+| **Social Bonding vs. Working Time**                                                                  | Spending 25% more time on casual non-work chat risks distraction if uncontrolled.                           | Operational delay and lost working hours on critical path deliverables.                         | Time-box social interactions: utilize meeting check-ins (first 5 minutes) and dedicated coffee breaks, keeping work sprints focused. |
 
 ---
 
@@ -211,14 +211,14 @@ Leading cross-functional teams requires managing difficult organizational trade-
 
 ## 📂 Primary Source Media & Digital Archives
 
-| Material Title                                    |          Media Type          | Direct Repository Reference                                                     |
-| :------------------------------------------------ | :--------------------------: | :------------------------------------------------------------------------------ | ------------------------------------------- |
-| **Week 5 Team Dynamics (Student Version)**        | Presentation Slides (`.pdf`) | `archive/courses/mk1/week-05/Week 5 Team Dynamics (Student Version).pdf`        |
-| \*\*Ego State: [[concepts/transactional-analysis  | Transactional Analysis]]\*\* | Presentation Slides (`.pdf`)                                                    | `archive/courses/mk1/week-05/Ego State.pdf` |
-| **5 Things High-Performing Teams Do Differently** |     HBR Reading (`.pdf`)     | `archive/courses/mk1/week-05/5 Things High-Performing Teams Do Differently.pdf` |
-| **Pre-Assignment Week 5 Prompt**                  |  Assignment Prompt (`.pdf`)  | `archive/courses/mk1/week-05/Pre Assignment Week 5.pdf`                         |
-| **Syndicate 9 Pre-Assignment Submission**         |  Student Archive (`.docx`)   | `archive/courses/mk1/week-05/Syndicate 9 - Pre-Assignment Week 5.docx`          |
-| **Syndicate 9 Post-Assignment Submission**        |  Student Archive (`.docx`)   | `archive/courses/mk1/week-05/Syndicate 9 - Post-Assignment Week 5.docx`         |
+| Material Title                                                                    | Media Type                   | Direct Repository Reference                                                     |
+| :-------------------------------------------------------------------------------- | :--------------------------- | :------------------------------------------------------------------------------ |
+| **Week 5 Team Dynamics (Student Version)**                                        | Presentation Slides (`.pdf`) | `archive/courses/mk1/week-05/Week 5 Team Dynamics (Student Version).pdf`        |
+| \*\*Ego State: [[concepts/transactional-analysis  \| Transactional Analysis]]\*\* | Presentation Slides (`.pdf`) | `archive/courses/mk1/week-05/Ego State.pdf`                                     |
+| **5 Things High-Performing Teams Do Differently**                                 | HBR Reading (`.pdf`)         | `archive/courses/mk1/week-05/5 Things High-Performing Teams Do Differently.pdf` |
+| **Pre-Assignment Week 5 Prompt**                                                  | Assignment Prompt (`.pdf`)   | `archive/courses/mk1/week-05/Pre Assignment Week 5.pdf`                         |
+| **Syndicate 9 Pre-Assignment Submission**                                         | Student Archive (`.docx`)    | `archive/courses/mk1/week-05/Syndicate 9 - Pre-Assignment Week 5.docx`          |
+| **Syndicate 9 Post-Assignment Submission**                                        | Student Archive (`.docx`)    | `archive/courses/mk1/week-05/Syndicate 9 - Post-Assignment Week 5.docx`         |
 
 ---
 

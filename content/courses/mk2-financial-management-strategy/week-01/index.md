@@ -28,12 +28,12 @@ Corporate finance is fundamentally the study of how enterprise managers allocate
 
 In traditional neoclassical economics, the financial objective of the firm is defined narrowly as **Shareholder Wealth Maximization**—operationalized as maximizing the market value of the firm's common equity over the long run. In modern executive governance, particularly within state-owned enterprises (BUMN) and strategic emerging-market holdings, this mandate expands into **Stakeholder Value Creation**: balancing commercial profitability with public infrastructure mandates, developmental externalities, and regulatory compliance.
 
-| Dimension                   | Shareholder Wealth Maximization                                          | Stakeholder Value Governance (BUMN Model)                                                    |
-| :-------------------------- | :----------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| **Primary Beneficiary**     | Equity holders and capital providers                                     | Dual mandate: State shareholder (dividends/tax) + Public society (public service obligation) |
-| **Time Horizon**            | Long-term intrinsic equity value                                         | Intergenerational infrastructure resilience and fiscal contribution                          |
-| **Capital Allocation Test** | $\text{ROIC} > \mathbf{\text{[[concepts/weighted-average-cost-of-capital | WACC]]}}$                                                                                    | Commercial viability + Economic developmental multiplier |
-| **Failure Mode**            | Short-term quarterly earnings gaming                                     | Bureaucratic inertia or capital misallocation masked by policy mandates                      |
+| Dimension                   | Shareholder Wealth Maximization                                                       | Stakeholder Value Governance (BUMN Model)                                                    |
+| :-------------------------- | :------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------- |
+| **Primary Beneficiary**     | Equity holders and capital providers                                                  | Dual mandate: State shareholder (dividends/tax) + Public society (public service obligation) |
+| **Time Horizon**            | Long-term intrinsic equity value                                                      | Intergenerational infrastructure resilience and fiscal contribution                          |
+| **Capital Allocation Test** | $\text{ROIC} > \mathbf{\text{[[concepts/weighted-average-cost-of-capital \| WACC]]}}$ | Commercial viability + Economic developmental multiplier                                     |
+| **Failure Mode**            | Short-term quarterly earnings gaming                                                  | Bureaucratic inertia or capital misallocation masked by policy mandates                      |
 
 ---
 

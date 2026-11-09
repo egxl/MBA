@@ -62,13 +62,13 @@ flowchart TD
     People --- Structure
 ```
 
-| Star Model Dimension        | Core Design Questions                                                                                          | Executive Alignment Principle                                                        |
-| :-------------------------- | :------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------- | ------------------------------------------ |
-| **Strategy**                | What is our formula for competitive advantage? What must our organization excel at?                            | Determines the priorities for all subsequent architectural choices.                  |
-| **Structure**               | Where is formal authority located? What are the primary organizational units (functional, divisional, matrix)? | Should follow strategy, not executive ego or historical habit.                       |
-| **Processes & Information** | How does information move horizontally across silos? How are cross-functional decisions coordinated?           | High-performing firms substitute information transparency for bureaucratic checking. |
-| **Rewards**                 | What behaviors and outcomes are rewarded? How are individual goals aligned with corporate strategy?            | If rewards incentivize silo metrics, cross-functional collaboration will collapse.   |
-| **People Practices**        | What mindsets and competencies are required? How is talent recruited, developed, and redeployed?               | Links directly to [[concepts/ulrich-hr-model                                         | Dave Ulrich's Strategic Partner]] mandate. |
+| Star Model Dimension        | Core Design Questions                                                                                          | Executive Alignment Principle                                                                                                      |
+| :-------------------------- | :------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------- |
+| **Strategy**                | What is our formula for competitive advantage? What must our organization excel at?                            | Determines the priorities for all subsequent architectural choices.                                                                |
+| **Structure**               | Where is formal authority located? What are the primary organizational units (functional, divisional, matrix)? | Should follow strategy, not executive ego or historical habit.                                                                     |
+| **Processes & Information** | How does information move horizontally across silos? How are cross-functional decisions coordinated?           | High-performing firms substitute information transparency for bureaucratic checking.                                               |
+| **Rewards**                 | What behaviors and outcomes are rewarded? How are individual goals aligned with corporate strategy?            | If rewards incentivize silo metrics, cross-functional collaboration will collapse.                                                 |
+| **People Practices**        | What mindsets and competencies are required? How is talent recruited, developed, and redeployed?               | Links directly to [[concepts/ulrich-hr-model                                         \| Dave Ulrich's Strategic Partner]] mandate. |
 
 ---
 

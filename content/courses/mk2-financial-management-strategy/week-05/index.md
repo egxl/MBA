@@ -117,11 +117,11 @@ flowchart LR
 
 When companies replace traditional volume-based allocation with ABC, they almost universally uncover **Product Cross-Subsidization**:
 
-| Costing Methodology                   | High-Volume Standard Products                                                        | Low-Volume Custom / Specialty Products                                                         |
-| :------------------------------------ | :----------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| **Traditional Volume-Based Costing**  | **Over-costed**: Charged for machine hours they barely consume in setup/engineering. | **Under-costed**: Subsidized by high-volume lines despite driving complex setups and QA tests. |
-| \*\*[[concepts/activity-based-costing | Activity-Based Costing (ABC)]]\*\*                                                   | **True Low Cost**: Cost drops; true gross margin is substantially higher.                      | **True High Cost**: Overhead explodes; product often operates at a severe hidden loss. |
-| **Strategic Executive Action**        | Protect pricing; defend against low-cost competitors; aggressively scale volume.     | Implement minimum order sizes; re-price for complexity; streamline setups or exit line.        |
+| Costing Methodology                                                         | High-Volume Standard Products                                                        | Low-Volume Custom / Specialty Products                                                         |
+| :-------------------------------------------------------------------------- | :----------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
+| **Traditional Volume-Based Costing**                                        | **Over-costed**: Charged for machine hours they barely consume in setup/engineering. | **Under-costed**: Subsidized by high-volume lines despite driving complex setups and QA tests. |
+| \*\*[[concepts/activity-based-costing \| Activity-Based Costing (ABC)]]\*\* | **True Low Cost**: Cost drops; true gross margin is substantially higher.            | **True High Cost**: Overhead explodes; product often operates at a severe hidden loss.         |
+| **Strategic Executive Action**                                              | Protect pricing; defend against low-cost competitors; aggressively scale volume.     | Implement minimum order sizes; re-price for complexity; streamline setups or exit line.        |
 
 ---
 

@@ -45,12 +45,12 @@ Kepner and Tregoe observed that human beings possess an innate capacity for rati
 
 ## 🧭 The Four Rational Processes Explained
 
-| Process Routine                      | Underlying Psychological Drive                            | Critical Output Produced                                                                      | Primary Risk Mitigated                                                   |
-| :----------------------------------- | :-------------------------------------------------------- | :-------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| **Situation Appraisal (SA)**         | Need to prioritize when everything feels urgent.          | Clear matrix separating complex messes into discrete, actionable issues with assigned owners. | Overwhelm, paralysis by analysis, misallocation of managerial bandwidth. |
-| **Problem Analysis (PA)**            | Need to know why an established standard is broken.       | Verified true cause isolated through [[concepts/kepner-tregoe-problem-analysis                | IS / IS NOT boundary logic]].                                            | Costly trial-and-error repairs, recurring defects, premature blame. |
-| **Decision Analysis (DA)**           | Need to make the best balanced choice among alternatives. | Transparent scoring model evaluating options against MUST and WANT criteria.                  | Biased championing of pet projects, unvetted risk exposure.              |
-| **Potential Problem Analysis (PPA)** | Need to protect a future plan from failure.               | Comprehensive action plan with preventive safeguards and contingent trigger points.           | Crisis management firefights, unhedged operational catastrophes.         |
+| Process Routine                      | Underlying Psychological Drive                            | Critical Output Produced                                                                                                       | Primary Risk Mitigated                                                   |
+| :----------------------------------- | :-------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- |
+| **Situation Appraisal (SA)**         | Need to prioritize when everything feels urgent.          | Clear matrix separating complex messes into discrete, actionable issues with assigned owners.                                  | Overwhelm, paralysis by analysis, misallocation of managerial bandwidth. |
+| **Problem Analysis (PA)**            | Need to know why an established standard is broken.       | Verified true cause isolated through [[concepts/kepner-tregoe-problem-analysis                \| IS / IS NOT boundary logic]]. | Costly trial-and-error repairs, recurring defects, premature blame.      |
+| **Decision Analysis (DA)**           | Need to make the best balanced choice among alternatives. | Transparent scoring model evaluating options against MUST and WANT criteria.                                                   | Biased championing of pet projects, unvetted risk exposure.              |
+| **Potential Problem Analysis (PPA)** | Need to protect a future plan from failure.               | Comprehensive action plan with preventive safeguards and contingent trigger points.                                            | Crisis management firefights, unhedged operational catastrophes.         |
 
 ---
 
