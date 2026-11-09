@@ -150,19 +150,30 @@ tags:
 </div>
 
 <div class="socratica-subnav">
-  <a href="program/">Program architecture <span aria-hidden="true">→</span></a>
-  <a href="program/learning-journey">Learning journey <span aria-hidden="true">→</span></a>
-  <a href="program/academic-calendar">Academic calendar <span aria-hidden="true">→</span></a>
-  <a href="program/action-learning-project">ALP blueprint <span aria-hidden="true">→</span></a>
-  <a href="program/faculty-directory">Faculty directory <span aria-hidden="true">→</span></a>
-  <a href="easter-egg">Cohort heraldry &amp; identity <span aria-hidden="true">→</span></a>
+  <a href="program/">
+    <span class="subnav-header">Program architecture <span aria-hidden="true">→</span></span>
+    <span class="subnav-desc">Institutional overview, governance structure &amp; core design logic.</span>
+  </a>
+  <a href="program/learning-journey">
+    <span class="subnav-header">Learning journey <span aria-hidden="true">→</span></span>
+    <span class="subnav-desc">70–20–10 adult pedagogy, 5 pillars &amp; session distributions.</span>
+  </a>
+  <a href="program/academic-calendar">
+    <span class="subnav-header">Academic calendar <span aria-hidden="true">→</span></span>
+    <span class="subnav-desc">16-week timeline synchronizing lectures, cases, exams &amp; ALP gates.</span>
+  </a>
+  <a href="program/action-learning-project">
+    <span class="subnav-header">ALP blueprint <span aria-hidden="true">→</span></span>
+    <span class="subnav-desc">6 SMART-gated stages across 10 partner BUMNs &amp; milestone gates.</span>
+  </a>
+  <a href="program/faculty-directory">
+    <span class="subnav-header">Faculty directory <span aria-hidden="true">→</span></span>
+    <span class="subnav-desc">SBM ITB Lead Faculty, co-lecturers &amp; Course Assistant contacts.</span>
+  </a>
+  <a href="easter-egg">
+    <span class="subnav-header">Cohort heraldry &amp; identity <span aria-hidden="true">→</span></span>
+    <span class="subnav-desc">Official Soedirman Crest (Lambang Korps) &amp; design architecture.</span>
+  </a>
 </div>
 
-The P3MD MBA transformation operates on an integrated **70–20–10 adult learning model** designed for high-impact decision-making and cross-functional execution:
-
-- **[[program/index|Program Architecture Hub]]**: Institutional overview, governance structure, and core design logic.
-- **[[program/learning-journey|Learning Journey & 70-20-10 Pedagogy]]**: The 5 transformation pillars, session distribution (868 experiential, 196 social, 112 formal), and cohort-to-individual scaling.
-- **[[program/action-learning-project|Action Learning Project (ALP) Blueprint]]**: 6 SMART-gated stages across 10 partner BUMNs, Milestone gates (M1–M3), and the Social Project.
-- **[[program/academic-calendar|Academic & Synchronization Calendar]]**: Master 16-week timeline synchronizing lectures, case sessions, CEO guest lectures, exams, and ALP gates.
-- **[[program/faculty-directory|Faculty & Course Assistant Directory]]**: Comprehensive roster of SBM ITB Lead Faculty, co-lecturers, and Course Assistants with phone contacts.
-- **[[easter-egg|Cohort Heraldry & Design System]]**: The official Soedirman Crest (_Lambang Korps_) and the digital interface logotype architecture.
+The P3MD MBA transformation operates on an integrated **70–20–10 adult learning model** (868 experiential, 196 social, and 112 formal learning sessions) engineered by **SBM ITB** in strategic collaboration with **Kemhan RI** and **Danantara Indonesia**.

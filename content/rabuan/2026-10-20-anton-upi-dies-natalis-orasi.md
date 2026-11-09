@@ -36,22 +36,47 @@ Pada 20 Oktober 2026, bertepatan dengan peringatan 72 tahun berdirinya Universit
 Bagi kohor P3MD Batch I Soedirman, orasi ini merupakan penyingkapan filosofis paling komprehensif mengenai mengapa program ini dirancang dan bagaimana kader-kader terpilih ditempa. Marsma Anton menolak pendekatan pelatihan kepemimpinan konvensional yang berjarak dan sekadar berbasis ruang kelas formal. Melalui refleksi sebagai penerbang tempur F-16, Sukhoi 27/30, dan pilot uji perdana Dassault Rafale, beliau mengartikulasikan bahwa **karakter sejati adalah apa yang dilakukan oleh seorang murid di dalam kokpit ketika instruktur telah melangkah keluar dan berdiri di tepi landasan**.
 
 ```mermaid
-flowchart TD
-    subgraph CoreTesis["Tesis Utama Doktrin Marsma Anton"]
-        direction TB
-        T1["Masa depan Republik tidak hanya ditentukan oleh<br/>seberapa banyak pemimpin yang dilahirkan..."]
-        T2["...namun seberapa serius kita menyiapkan para pendidik<br/>yang membentuk karakter pemimpin tersebut."]
-        T1 --> T2
-    end
-
-    subgraph DualRunways["Dua Landasan Pacu Transformasi"]
-        direction LR
-        R1["<b>Landasan Kasat Mata</b><br/>(Target, Anggaran, Infrastruktur, Regulasi)<br/><i>Dapat diubah cepat lewat SK</i>"]
-        R2["<b>Landasan Sunyi</b><br/>(Budaya, Cara Berpikir, Kebiasaan, Relasi Batin)<br/><i>Hanya dapat diubah lewat KETELADANAN</i>"]
-    end
-
-    CoreTesis --> DualRunways
+mindmap
+  root((Doktrin Kepemimpinan<br/>Marsma Anton))
+    Tesis Pendidikan
+      Masa depan bangsa ditentukan oleh mutu pendidik
+      Pendidik mencetak pemimpin lintas sektor
+    Dua Landasan Pacu
+      Landasan Kasat Mata
+        Target dan Anggaran
+        Infrastruktur dan Regulasi
+        Dapat diubah cepat lewat SK
+      Landasan Sunyi
+        Budaya dan Cara Berpikir
+        Kebiasaan dan Relasi Batin
+        Hanya bisa diubah lewat Keteladanan
 ```
+
+---
+
+## 📺 Dokumentasi Siaran Langsung & Rekaman Video
+
+<div class="video-embed-wrapper" style="margin: 1.5rem 0;">
+  <iframe
+    class="external-embed youtube"
+    src="https://www.youtube.com/embed/58G7k8AM-rQ?start=4731"
+    title="Orasi Ilmiah Marsma TNI Dr. Anton Palaguna - Dies Natalis ke-72 UPI"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
+> [!TIP] Navigasi Stempel Waktu (Direct Timestamp Bookmarks)
+>
+> - **`01:18:51`** &bull; [Tayangan Profil & Riwayat Penerbang Tempur](https://www.youtube.com/watch?v=58G7k8AM-rQ&t=4731s)
+> - **`01:22:21`** &bull; [Pembukaan Orasi & Pantun Bumi Siliwangi](https://www.youtube.com/watch?v=58G7k8AM-rQ&t=4941s)
+> - **`01:30:20`** &bull; [Pemutaran Ulang Video Jet Sukhoi & Rafale 10G](https://www.youtube.com/watch?v=58G7k8AM-rQ&t=5420s)
+> - **`01:36:41`** &bull; [Filosofi Terbang Solo & Suara Guru dalam Kokpit](https://www.youtube.com/watch?v=58G7k8AM-rQ&t=5801s)
+> - **`01:54:32`** &bull; [Bedah Dapur P3MD & 9 Nilai Strategis](https://www.youtube.com/watch?v=58G7k8AM-rQ&t=6872s)
+> - **`02:00:37`** &bull; [Mesin Perubahan Perilaku (7 Langkah Praktis)](https://www.youtube.com/watch?v=58G7k8AM-rQ&t=7237s)
+> - **`02:02:41`** &bull; [4 Peran Pendidik (Kerangka QFI Australia)](https://www.youtube.com/watch?v=58G7k8AM-rQ&t=7361s)
+> - **`02:25:19`** &bull; [Tantangan 72 Instruktur Karakter UPI (Pro Bono)](https://www.youtube.com/watch?v=58G7k8AM-rQ&t=8719s)
+> - **`02:30:41`** &bull; [Tiga Pertanyaan Penjaga Hati & Epilog Sang Penemu](https://www.youtube.com/watch?v=58G7k8AM-rQ&t=9041s)
 
 ---
 
@@ -77,23 +102,18 @@ Ketika seorang murid terbang solo, kursi belakang kokpit kosong dan badannya ter
 Kepemimpinan di kokpit tempur maupun di pucuk pimpinan holding BUMN menuntut keahlian teknis prima. Namun keterampilan tinggi yang didominasi oleh ego, keengganan mematuhi regulasi, dan ilusi merasa tidak pernah salah (_arrogance of infallibility_) merupakan ancaman paling mematikan.
 
 ```mermaid
-flowchart TD
-    subgraph Triad["Triad Kepemimpinan Transformasional"]
-        direction TB
-        C1["<b>KOMPETENSI</b><br/>Menentukan apa yang sanggup dikerjakan"]
-        C2["<b>KARAKTER</b><br/>Menentukan apa yang dipilih untuk dikerjakan"]
-        C3["<b>KEPEDULIAN</b><br/>Menentukan kemampuan mana yang dipakai demi orang lain"]
-    end
-
-    subgraph Pathologies["Patologi Bila Terfragmentasi"]
-        P1["Kompetensi Tanpa Karakter: Berbahaya & Disalahgunakan"]
-        P2["Karakter Tanpa Kompetensi: Niat Baik Tanpa Solusi"]
-        P3["Tanpa Kepedulian: Prestasi Berhenti pada Diri Sendiri"]
-    end
-
-    C1 -.-> P1
-    C2 -.-> P2
-    C3 -.-> P3
+quadrantChart
+    title Matriks Tipologi Kepemimpinan Marsma Anton
+    x-axis "Karakter Rendah (Ego)" --> "Karakter Luhur (Best Heart)"
+    y-axis "Kompetensi Rendah" --> "Kompetensi Unggul (Mind)"
+    quadrant-1 "Pemimpin Paripurna"
+    quadrant-2 "Oknum Berbahaya"
+    quadrant-3 "Inkompeten Pasif"
+    quadrant-4 "Niat Baik Pasif"
+    "Kader P3MD Target": [0.82, 0.85]
+    "Oknum Pintar": [0.20, 0.82]
+    "Niat Baik Saja": [0.80, 0.22]
+    "Beban Organisasi": [0.22, 0.20]
 ```
 
 - **Kompetensi tanpa Karakter**: Menghasilkan kepintaran destruktif yang memanipulasi celah regulasi (_white-collar malfeasance_).
@@ -125,6 +145,31 @@ flowchart LR
 6. **Identitas, Mindfulness & Berkesadaran**: Memadukan kesadaran mikrokosmos dan makrokosmos, hukum resonansi dan frekuensi, fisika kuantum, dan anatomi doa spiritualitas agar pikiran dan perasaan selaras menciptakan realitas batin yang tenang.
 7. **Kepedulian & Empati**: Kemampuan melihat martabat di balik kesulitan orang lain, meletakkan kepentingan pribadi demi kemaslahatan publik.
 
+#### Transisi Psikologis & Rezim Perilaku Kader
+
+```mermaid
+stateDiagram-v2
+    direction LR
+    [*] --> Fase1
+    state "Fase 1: Penertiban Ego" as Fase1 {
+        direction LR
+        Overthinking --> Patuh : Keteladanan
+        Patuh --> Paham : Akuntabilitas
+    }
+    Fase1 --> Fase2 : Internalisasi
+    state "Fase 2: Ketangguhan" as Fase2 {
+        direction LR
+        Reflektif --> Tangguh : Small Wins
+        Tangguh --> Berdaulat : Tactical Pause
+    }
+    Fase2 --> Fase3 : Transendensi
+    state "Fase 3: Pengabdian" as Fase3 {
+        direction LR
+        Sadar --> Peduli : Empati Publik
+    }
+    Fase3 --> [*]
+```
+
 ---
 
 ### 4. Kerangka 4 Peran Pendidik (Qualified Flying Instructor / QFI Framework)
@@ -153,12 +198,21 @@ Marsma Anton mengkritisi ilusi pengembangan SDM di Indonesia yang kerap menyamak
 Dalam orasinya, Marsma Anton membuka secara rinci anatomi di balik layar pembinaan **P3MD Batch I Soedirman**:
 
 ```mermaid
-flowchart TD
-    P1["<b>Pendaftaran Terbuka Nasional</b><br/>10.000 Lulusan Top DN & LN (IQ Min. 120)"] -->|Seleksi Akademik & Psikologi| P2["<b>Penyaringan Tahap 1</b><br/>5.000 Kandidat"]
-    P2 -->|Mental Ideologi & Kesehatan Fisik| P3["<b>Penyaringan Tahap 2</b><br/>2.000 Kandidat"]
-    P3 -->|Kesamaptaan Jasmani & Wawancara| P4["<b>Penyaringan Tahap 3</b><br/>500 Kandidat"]
-    P4 -->|Penyaringan Akhir Masuk Asrama| P5["<b>Kader Terpilih Masuk Asrama</b><br/>400 Orang"]
-    P5 -->|Eliminasi Standar Ketat: -16| P6["<b>Kader Aktif Berkelanjutan</b><br/>384 Orang Bertahan"]
+block-beta
+    columns 12
+    space:5 T6[/"384 Kader Aktif"\]:2 space:5
+    space:4 T5[/"400 Masuk Asrama P3MD"\]:4 space:4
+    space:3 T4[/"500 Finalis Pantukhir"\]:6 space:3
+    space:2 T3[/"2.000 Lolos Tahap 2 (Psikotes & Akademik)"\]:8 space:2
+    space:1 T2[/"5.000 Lolos Tahap 1 (Seleksi Awal & IQ >= 120)"\]:10 space:1
+    T1[/"10.000 Pendaftar Nasional (PTN/PTS Top Dalam & Luar Negeri)"\]:12
+
+    style T6 fill:#1b4332,stroke:#081c15,color:#ffffff
+    style T5 fill:#2d6a4f,stroke:#1b4332,color:#ffffff
+    style T4 fill:#40916c,stroke:#2d6a4f,color:#ffffff
+    style T3 fill:#52b788,stroke:#40916c,color:#081c15
+    style T2 fill:#74c69d,stroke:#52b788,color:#081c15
+    style T1 fill:#95d5b2,stroke:#74c69d,color:#081c15
 ```
 
 - **Visi Utama Presiden RI**: Melahirkan pemimpin nasional dengan kriteria **Best Heart, Best Mind, Best Contribution**.
@@ -166,6 +220,24 @@ flowchart TD
   - **Tahap 1 (Core Character & Self-Mastery)**: Di Kodiklat TNI, menempa ketahanan mental, kepatuhan berkesadaran, dan penaklukan ego.
   - **Tahap 2 (Danantara Corporate Junior University)**: Selama 4 bulan, membekali kader dengan manajemen strategis, tata kelola korporasi holding, dan arsitektur investasi negara bersama [[entities/danantara|BP Danantara]].
   - **Tahap 3 (Leadership Apprentice Journey)**: Magang pengabdian masyarakat selama 4 bulan, terjun langsung ke akar rumput untuk menguji empati dan kontribusi nyata.
+
+```mermaid
+timeline
+    title Kurikulum Tripartit 11 Bulan P3MD Batch I Soedirman
+    section Tahap 1 — Core Character
+      Kodiklat TNI : Pembinaan Mental Ideologi dan Disiplin
+                   : Napak Tilas Rute Panglima Soedirman (3 Hari 3 Malam)
+                   : Ekspedisi KRI ke Puputan Margarana Bali
+    section Tahap 2 — Corporate Mastery
+      Danantara Junior Univ : Manajemen Strategis dan Tata Kelola Holding
+                            : Simulasi Restrukturisasi Korporasi BUMN
+                            : Business Immersion ke 10 Klaster BUMN
+    section Tahap 3 — Apprentice Journey
+      Pengabdian Lapangan : Immersion 4 Bulan ke Tengah Masyarakat
+                          : Eksekusi Proyek Nyata Akar Rumput
+                          : Pengujian Empati dan Public Stewardship
+```
+
 - **Sembilan Nilai Strategis (38 Sub-Nilai)**: Karakter & Integritas, Kepemimpinan, Komunikasi & Adaptabilitas, Resiliensi Fisik/Mental, Analytical Thinking, Manajemen & Eksekusi, Governance & Etika Publik, Nation Building, serta Kolaborasi Stakeholder.
 
 ---
@@ -196,11 +268,11 @@ Marsma Anton menitipkan tiga pertanyaan kontemplatif bagi seluruh insan berpendi
 
 ## 🔗 Cross-Functional Curriculum Bridges & Boardroom Application
 
-| Ranah Kurikulum MBA                                  | Titik Temu Doktrin Komandan Anton                              | Implikasi Eksekutif pada Proyek BUMN / ALP                                                                                                                                                                                      |
-| :--------------------------------------------------- | :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **MK 1: Organizational Behaviour & Managing People** | [[concepts/behavior-change-engine                              | Behavior Change Engine]], [[concepts/self-awareness                                                                                                                                                                             | Self-Awareness]], [[concepts/emotional-intelligence | Emotional Intelligence]]. | Transformasi budaya kerja BUMN tidak bisa dicapai lewat instruksi birokratis (landasan kasat mata), melainkan keteladanan harian BoD/BoC (landasan sunyi). |
-| **Corporate Governance & Danantara Restructuring**   | Triad Kompetensi, Karakter, Kepedulian; Akuntabilitas Terukur. | Skandal korupsi dan inefisiensi BUMN terjadi bukan karena direksi kurang pintar, melainkan defisit karakter dan ego yang tak terkendali.                                                                                        |
-| **Action Learning Project (ALP)**                    | Output vs Outcome vs Impact; 6 Rantai Landasan Pacu.           | Evaluasi proyek intervensi di 10 BUMN partner: apakah rekomendasi tim F9 hanya berhenti di dokumen laporan (_output_), mengubah kapabilitas (_outcome_), atau berdampak nyata pada efisiensi operasional dan publik (_impact_)? |
+| Ranah Kurikulum MBA                                  | Titik Temu Doktrin Komandan Anton                                                                                                                                      | Implikasi Eksekutif pada Proyek BUMN / ALP                                                                                                                                                                                      |
+| :--------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **MK 1: Organizational Behaviour & Managing People** | [[concepts/behavior-change-engine\|Behavior Change Engine]], [[concepts/self-awareness\|Self-Awareness]], [[concepts/emotional-intelligence\|Emotional Intelligence]]. | Transformasi budaya kerja BUMN tidak bisa dicapai lewat instruksi birokratis (landasan kasat mata), melainkan keteladanan harian BoD/BoC (landasan sunyi).                                                                      |
+| **Corporate Governance & Danantara Restructuring**   | Triad Kompetensi, Karakter, Kepedulian; Akuntabilitas Terukur.                                                                                                         | Skandal korupsi dan inefisiensi BUMN terjadi bukan karena direksi kurang pintar, melainkan defisit karakter dan ego yang tak terkendali.                                                                                        |
+| **Action Learning Project (ALP)**                    | Output vs Outcome vs Impact; 6 Rantai Landasan Pacu.                                                                                                                   | Evaluasi proyek intervensi di 10 BUMN partner: apakah rekomendasi tim F9 hanya berhenti di dokumen laporan (_output_), mengubah kapabilitas (_outcome_), atau berdampak nyata pada efisiensi operasional dan publik (_impact_)? |
 
 ---
 

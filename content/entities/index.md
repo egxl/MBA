@@ -91,6 +91,8 @@ The 10 state-owned enterprises hosting P3MD Action Learning Capstones:
 - **[[entities/mary-barra|Mary Barra]]**: Chair and Chief Executive Officer, General Motors Company.
 - **[[entities/anton-palaguna|Marsma TNI Dr. Anton 'Sioux' Palaguna, S.E., M.M., M.Han.]]**: Komandan Badan Pengelola Pendidikan Kebangsaan (BPPK Kemhan RI).
 - **[[entities/prabowo-subianto|Jenderal TNI (Purn.) H. Prabowo Subianto Djojohadikusumo]]**: Presiden Republik Indonesia ke-8.
+- **[[entities/dropbox|Dropbox]]**: Curriculum Profile.
+- **[[entities/pt-kereta-commuter-indonesia|PT Kereta Commuter Indonesia (KAI Commuter)]]**: Curriculum Profile.
 
 ---
 
