@@ -553,24 +553,44 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
                   return `"${group.replace(/\\n/g, "<br/>")}"`
                 })
 
-                // 3. Defensively quote unquoted decision nodes with special characters
-                val = val.replace(/\{([^{}"\n]+?[?:&/><=][^{}"\n]*?)\}/g, (_match, inner) => {
-                  const cleaned = inner.replace(/\\n/g, "<br/>").trim()
-                  return `{"${cleaned}"}`
-                })
+                // Detect diagram type (ignoring leading directives and comments)
+                const firstMeaningfulLine =
+                  val
+                    .split(/\r?\n/)
+                    .find(
+                      (l) =>
+                        !l.trim().startsWith("%%") &&
+                        !l.trim().startsWith("---") &&
+                        l.trim().length > 0,
+                    ) || ""
+                const isFlowchartOrGraph = /^\s*(flowchart|graph)\b/i.test(firstMeaningfulLine)
 
-                // 4. Sanitize markdown block triggers inside diagram labels to prevent "Unsupported markdown" errors in Mermaid
-                // Convert bullet points (- or *) to bullet character •, and leading + to fullwidth ＋
-                val = val.replace(/((?:<br\s*\/?>|\n|\[\s*"?|\{\s*"?|\(\s*"?)\s*)[-*]\s+/g, "$1• ")
-                val = val.replace(/((?:<br\s*\/?>|\n|\[\s*"?|\{\s*"?|\(\s*"?)\s*)\+\s+/g, "$1＋ ")
-                // Escape leading # (heading trigger) and > (blockquote trigger) after linebreaks or label start
-                val = val.replace(/((?:<br\s*\/?>|\n|\[\s*"?|\{\s*"?|\(\s*"?)\s*)#+\s+/g, "$1No. ")
-                val = val.replace(/((?:<br\s*\/?>|\n|\[\s*"?|\{\s*"?|\(\s*"?)\s*)>/g, "$1≥ ")
-                // Escape numbered list syntax (e.g. 1. -> 1\.)
-                val = val.replace(
-                  /((?:<br\s*\/?>|\n|\[\s*"?|\{\s*"?|\(\s*"?|subgraph\s+[a-zA-Z0-9_]+\s*\[\s*"?)(\s*))(\d+)\.\s+/g,
-                  "$1$3\\. ",
-                )
+                // 3. Defensively quote unquoted decision nodes with special characters (flowchart/graph only)
+                if (isFlowchartOrGraph) {
+                  val = val.replace(/\{([^{}"\n]+?[?:&/><=][^{}"\n]*?)\}/g, (_match, inner) => {
+                    const cleaned = inner.replace(/\\n/g, "<br/>").trim()
+                    return `{"${cleaned}"}`
+                  })
+
+                  // 4. Sanitize markdown block triggers inside diagram labels to prevent "Unsupported markdown" errors in Mermaid
+                  // Convert bullet points (- or *) to bullet character •, and leading + to fullwidth ＋
+                  val = val.replace(
+                    /((?:<br\s*\/?>|\n|\[\s*"?|\{\s*"?|\(\s*"?)\s*)[-*]\s+/g,
+                    "$1• ",
+                  )
+                  val = val.replace(/((?:<br\s*\/?>|\n|\[\s*"?|\{\s*"?|\(\s*"?)\s*)\+\s+/g, "$1＋ ")
+                  // Escape leading # (heading trigger) and > (blockquote trigger) after linebreaks or label start
+                  val = val.replace(
+                    /((?:<br\s*\/?>|\n|\[\s*"?|\{\s*"?|\(\s*"?)\s*)#+\s+/g,
+                    "$1No. ",
+                  )
+                  val = val.replace(/((?:<br\s*\/?>|\n|\[\s*"?|\{\s*"?|\(\s*"?)\s*)>/g, "$1≥ ")
+                  // Escape numbered list syntax (e.g. 1. -> 1\.)
+                  val = val.replace(
+                    /((?:<br\s*\/?>|\n|\[\s*"?|\{\s*"?|\(\s*"?|subgraph\s+[a-zA-Z0-9_]+\s*\[\s*"?)(\s*))(\d+)\.\s+/g,
+                    "$1$3\\. ",
+                  )
+                }
 
                 node.value = val
                 node.data = {

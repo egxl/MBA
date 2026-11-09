@@ -19,9 +19,24 @@ const copyFile = async (argv: Argv, fp: FilePath) => {
 
   // ensure dir exists
   const dir = path.dirname(dest) as FilePath
-  await fs.promises.mkdir(dir, { recursive: true })
-
-  await fs.promises.copyFile(src, dest)
+  let retries = 10
+  while (retries > 0) {
+    try {
+      await fs.promises.mkdir(dir, { recursive: true })
+      await fs.promises.copyFile(src, dest)
+      break
+    } catch (err: any) {
+      if (
+        (err?.code === "EPERM" || err?.code === "ENOENT" || err?.code === "EBUSY") &&
+        retries > 1
+      ) {
+        retries--
+        await new Promise((r) => setTimeout(r, 100))
+      } else {
+        throw err
+      }
+    }
+  }
   return dest
 }
 

@@ -39,3 +39,6 @@ target/
 __pycache__/
 **/__pycache__/
 *.pyc
+
+# Local editor/agent hooks
+.github/hooks/
