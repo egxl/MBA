@@ -93,6 +93,7 @@ The 10 state-owned enterprises hosting P3MD Action Learning Capstones:
 - **[[entities/prabowo-subianto|Jenderal TNI (Purn.) H. Prabowo Subianto Djojohadikusumo]]**: Presiden Republik Indonesia ke-8.
 - **[[entities/dropbox|Dropbox]]**: Curriculum Profile.
 - **[[entities/pt-kereta-commuter-indonesia|PT Kereta Commuter Indonesia (KAI Commuter)]]**: Curriculum Profile.
+- **[[entities/budhi-achmadi|Marsda TNI Dr. Budhi Achmadi, M.Sc.]]**: Asisten Strategi Panglima TNI (Staf Strategi Mabes TNI).
 
 ---
 

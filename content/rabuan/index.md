@@ -449,6 +449,48 @@ tags:
     </div>
   </div>
 
+  <!-- Special Foundation Plenary: Marsda TNI Dr. Budhi Achmadi -->
+  <div class="rabuan-card">
+    <div class="rabuan-card-top">
+      <span class="rabuan-inst-pill">Staf Strategi &middot; Mabes TNI</span>
+      <span class="rabuan-card-date">FRI &middot; 03 JUL 2026</span>
+    </div>
+    <div class="rabuan-card-main">
+      <div class="rabuan-portrait-frame">
+        <div class="rabuan-portrait" title="Marsda TNI Dr. Budhi Achmadi, M.Sc.">
+          <div class="rabuan-portrait-ph">
+            <svg class="rabuan-portrait-svg" viewBox="0 0 90 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="45" cy="38" r="18" fill="currentColor" fill-opacity="0.16"/>
+              <path d="M15 108C15 80 27 66 45 66C63 66 75 80 75 108" stroke="currentColor" stroke-width="4" stroke-linecap="round" fill="currentColor" fill-opacity="0.10"/>
+            </svg>
+            <span class="rabuan-portrait-initials">TNI</span>
+          </div>
+        </div>
+      </div>
+      <div class="rabuan-card-body">
+        <h3 class="rabuan-topic">
+          <a href="2026-07-03-budhi-achmadi-kepemimpinan-bumn" class="internal">Kepemimpinan BUMN Abad XXI: Doktrin Karakter, Administrasi Publik &amp; Tata Kelola Korporasi</a>
+        </h3>
+        <div class="rabuan-speaker">
+          <a href="../entities/budhi-achmadi" class="internal">Marsda TNI Dr. Budhi Achmadi, M.Sc.</a>
+        </div>
+        <div class="rabuan-role">Asisten Strategi Panglima TNI &amp; Mantan Kapusjianstralitbang TNI</div>
+        <div class="rabuan-themes">
+          <span class="rabuan-theme-tag">In-Person &middot; Kampus DCU</span>
+          <a href="../concepts/public-administration-paradigms" class="rabuan-theme-tag internal">NPM Steering</a>
+          <a href="../concepts/pso-commercial-duality" class="rabuan-theme-tag internal">Pasal 33 UUD 1945</a>
+          <span class="rabuan-theme-tag">Karakter &amp; Takdir</span>
+        </div>
+      </div>
+    </div>
+    <div class="rabuan-card-footer">
+      <a href="2026-07-03-budhi-achmadi-kepemimpinan-bumn" class="internal">
+        <span>Buka Sesi Kepemimpinan BUMN</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </div>
+
 </div>
 
 <div class="rabuan-section-header">
