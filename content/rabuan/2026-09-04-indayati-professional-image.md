@@ -21,7 +21,7 @@ On September 4, 2026, **Indayati Oetomo** (Executive Director of **John Robert P
 
 Ibu Indayati opened the masterclass with a foundational principle attributed to **John F. Kennedy**:
 
-$$\mathbf{\text{\ldquo All of us do not have equal talent, but all of us should have an equal opportunity to develop our talents.\rdquo}}$$
+$$\mathbf{\text{\ldquo All of us do not have equal talent, but all of us should have an equal opportunity to develop those talents.\rdquo}}$$
 
 This premise anchors professional presence not as an inborn privilege or superficial flair, but as an acquired, practiced discipline accessible to every professional willing to commit to continuous self-mastery. In large Indonesian state-owned enterprises (BUMN) and the emerging **Danantara** institutional architecture, leaders are entrusted with monumental national assets and public accountability. Technical brilliance in engineering, financial modeling, or supply chain logistics is a necessary prerequisite, but insufficient on its own. Without an articulate, composed, and trustworthy executive image, high-value strategic recommendations fail to win board consensus, inspire cross-functional teams, or secure public confidence.
 
@@ -54,9 +54,86 @@ A leader's image must never project superiority, arrogance, or detached hierarch
 
 ---
 
-## Theoretical Architecture & Core Frameworks
+## Brand Image and Personal Branding Architecture
 
-### 1. The Triangle of Success
+### 1. The Brand Image Axiom
+
+$$\mathbf{\text{\ldquo Our Brand Image is a major factor that controls our lives.\rdquo}}$$
+
+In executive leadership, reputation precedes physical presence. Long before an enterprise director steps into a ministry boardroom, parliamentary hearing, or international partner briefing, stakeholders form perceptual heuristics based on prior interactions, public track records, and digital correspondence. Far from being a trivial aesthetic concern, your brand image directly governs access to capital, the credibility of strategic counsel, and the level of autonomy granted by supervisory boards.
+
+### 2. The 4-Sphere Personal Branding Map
+
+An executive's brand image is not isolated inside the workplace. It is an interconnected system anchored by **Personal Life** at its core, surrounded and influenced by three vital arenas:
+
+```mermaid
+flowchart TD
+    subgraph Spheres ["4 Spheres of Personal Branding"]
+        SL["<b>Social Life</b><br/>Community Engagement • Peer Networks • Cultural Adaptability"]
+        PL["<b>Personal Life (Core)</b><br/>Self-Concept • Core Values • Physical & Mental Energy"]
+        FL["<b>Family Life</b><br/>Ethical Crucible • Emotional Anchor • Foundation of Empathy"]
+        PRO["<b>Professional Life</b><br/>Enterprise Governance • Board Delivery • Institutional Stewardship"]
+
+        PL <--> SL
+        PL <--> FL
+        PL <--> PRO
+        FL <--> SL
+        SL <--> PRO
+        PRO <--> FL
+    end
+```
+
+- **Personal Life (The Core Hub)**: The internal self-concept, physical vitality, emotional stability, and foundational philosophy. If the core hub is unstable, external signaling in all other spheres deteriorates.
+- **Family Life**: The primary crucible where moral values, unconditional respect, listening habits, and emotional resilience are cultivated.
+- **Social Life**: Community relations, civic responsibilities, and peer networks that condition social intelligence and cultural flexibility.
+- **Professional Life**: The formal arena of corporate governance, strategic delivery, and executive accountability.
+
+### 3. The Scope of Character Cascade
+
+The masterclass established that character is expansive in scope and contains layered behavioral manifestations:
+
+```mermaid
+flowchart LR
+    A["<b>Character Scope</b><br/>Fundamental Moral Identity"] --> B["<b>Multiple Personalities</b><br/>Contextual Executive Roles<br/>(Board Director, Mentor, Negotiator)"]
+    B --> C["<b>Various Habits</b><br/>Observable Micro-Behaviors<br/>(Punctuality, Vocal Cadence, 3S Protocol)"]
+```
+
+While foundational character remains immutable, enterprise leaders possess multiple situational personas adapted to diverse institutional demands—commanding resolve in crisis, empathetic inquiry in mentorship, and analytical rigor in audit committees. These roles translate directly into daily habits: micro-behaviors executed consistently until they define perceived leadership maturity.
+
+---
+
+## Personality Development Process & The Triangle of Success
+
+### 1. The 3-Stage Personality Development Process
+
+Framed by a **Positive Attitude**, sustainable personality development moves through three disciplined phases:
+
+```mermaid
+flowchart LR
+    Stage1["<b>1. Self Discovery</b><br/>Unvarnished Self-Inventory<br/>Blindspot Discovery<br/>Identity Clarity"] --> Stage2["<b>2. Self SWOT-Management</b><br/>Strengths Leverage<br/>Weakness Mitigation<br/>Opportunity/Threat Navigation"]
+    Stage2 --> Stage3["<b>3. Applicability</b><br/>Society • Community • Circumstances<br/>BUMN Boardroom Impact"]
+```
+
+1. **Self Discovery**: Stripping away defensive biases to conduct an honest diagnostic of one's natural temperament, emotional triggers, and cognitive tendencies.
+2. **Self SWOT-Management**: Systematically organizing personal strengths, weaknesses, developmental opportunities, and career threats into a dynamic management plan.
+3. **Applicability in Society, Community & Circumstances**: Translating internal self-awareness into adaptable, value-generating behavior suited to complex BUMN operating environments.
+
+### 2. The Mirror Diagnostic ("What To Do?")
+
+Looking into the executive mirror requires asking three operational questions:
+
+- **Know Your Self**: Deep self-awareness; identifying strengths to leverage and blindspots that invite conflict.
+- **Optimize Your Self**: Continuous learning, seeking candid executive feedback, and expanding cross-functional fluency.
+- **Control Your Self**: Emotional regulation, maintaining composure during high-stakes pressure, and mastering impulse restraint.
+
+### 3. The Maturity Dyad: Self-Control & Self-Confidence
+
+Executive maturity is anchored by two mutually reinforcing vectors:
+
+- **Self-Control**: The discipline to govern speech tempo, facial micro-expressions, posture, and emotional reactivity during crisis.
+- **Self-Confidence**: Grounded internal certainty built upon preparation, competence, and clarity of purpose. Without self-control, confidence degrades into arrogance; without self-confidence, self-control becomes paralyzing hesitation.
+
+### 4. The Triangle of Success
 
 Executive performance is governed by three co-equal vectors:
 
@@ -66,9 +143,9 @@ flowchart TD
         ATT["<b>Attitude</b><br/>Mindset • Humility • Resilience • Service"]
         KNOW["<b>Knowledge</b><br/>Domain Expertise • BUMN Context • Governance"]
         SKILL["<b>Skills</b><br/>Executive Delivery • Persuasion • Etiquette"]
-        ATT --- KNOW
-        KNOW --- SKILL
-        SKILL --- ATT
+        ATT <--> KNOW
+        KNOW <--> SKILL
+        SKILL <--> ATT
     end
 ```
 
@@ -78,38 +155,209 @@ flowchart TD
 
 ---
 
-### 2. The 3-Step Self-Mastery Engine & The Maturity Dyad
+## Executive Etiquette, First Impressions & Communication Dynamics
 
-Building a sustainable executive reputation begins with structured introspective discipline:
+### 1. The 5-Element First Impression Gate
+
+Within the first 7 to 30 seconds of an encounter, stakeholders make enduring subconscious assessments through five perceptual channels:
+
+| First Impression Element         | Executive Manifestation                                                                       | Failure Mode / Trap                                                                       |
+| :------------------------------- | :-------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------- |
+| **1. Appearance**                | Well-groomed, appropriate professional dress aligned with the solemnity of enterprise duties. | Disheveled attire, wrinkled clothing, casual indifference signaling lack of respect.      |
+| **2. Facial Expression (Smile)** | Genuine, warm facial engagement that conveys psychological safety and approachability.        | Cold grimace, scowl, or nervous fidgeting signaling hostility or anxiety.                 |
+| **3. Personal Contact**          | Firm, confident handshake, upright posture, and comfortable personal distance.                | Limp handshake or aggressive invasion of physical boundaries.                             |
+| **4. Words**                     | Clear, courteous opening greeting using positive, professional language without hesitation.   | Mumbling, slang, evasive filler words (_"anu"_, _"gimana ya"_), or arrogant declarations. |
+| **5. Voice**                     | Resonant, steady vocal pitch with controlled volume and deliberate cadence.                   | Shrill pitch, trembling vocal cord tension, or inaudible whispering.                      |
+
+### 2. What Defines Your Personality? (_Apa yang Mendefinisikan Kepribadian Kita_)
+
+The masterclass defined personality through three concrete observable competencies:
+
+- **WELL GROOMED (_Knowing how to dress properly_)**: Understanding dress codes (black tie, business formal, batik resmi, smart casual), immaculate personal hygiene, and polished details that eliminate visual noise.
+- **WELL BEHAVED (_Knowing how to communicate with empathy & choice of words_)**: Displaying emotional intelligence, active listening, courteous phrasing, and constructive disagreement.
+- **WELL KNOWLEDGE / KNOWLEDGEABLE (_Have broad minded_)**: Cultivating intellectual curiosity beyond one's narrow functional specialty, understanding macroeconomic context, global industry trends, and national statecraft.
+
+### 3. Manners, Customer Service & Executive Communication
+
+#### Good Manners Mean Good Business
+
+$$\mathbf{\text{\ldquo Kesuksesan menjalin hubungan dengan rekan kerja / client adalah kesuksesan karier Anda.\rdquo}}$$
+
+This corporate maxim establishes that relational competence is directly tied to upward mobility. To operationalize this relationship across day-to-day managerial encounters, the masterclass summarized the overarching behavioral rule into a single executive posture:
+
+$$\mathbf{\text{Prinsip Manners: \ldquo Always be a pleasant person.\rdquo}}$$
+
+In enterprise environments, technical skill solves mechanical bottlenecks, but interpersonal manners build institutional consensus. Being a pleasant person is not weakness; it is the strategic lubricator that dissolves friction between disparate divisions and external regulators.
+
+#### Etiket Menyambut Pelanggan: Etika Berjumpa 3S
 
 ```mermaid
-flowchart LR
-    Step1["<b>1. Know Yourself</b><br/>Personal SWOT Analysis<br/>Blindspot Discovery<br/>Emotional Triggers"] --> Step2["<b>2. Optimize Yourself</b><br/>Continuous Upskilling<br/>Growth Mindset<br/>Danantara Alignment"] --> Step3["<b>3. Control Yourself</b><br/>Emotional Intelligence<br/>Poise Under Pressure<br/>Impulse Restraint"]
-    Step3 -.->|"Iterative Feedback Loop"| Step1
+flowchart TD
+    subgraph ETIKA ["ETIKA BERJUMPA 3S"]
+        direction TB
+        SALAM["<b>SALAM</b><br/>Respectful Greeting"]
+        SENYUM["<b>SENYUM</b><br/>Approachable Warmth"]
+        SAPA["<b>SAPA</b><br/>Proactive Acknowledgment"]
+        HUB(("<b>Etika Berjumpa<br/>3S</b>"))
+
+        HUB --- SALAM
+        HUB --- SENYUM
+        HUB --- SAPA
+    end
 ```
 
-1. **Know Yourself**: Conducting an objective, unvarnished **Personal SWOT Analysis**. Identifying strengths to leverage, blindspots to mitigate, and emotional triggers that induce defensive behavior.
-2. **Optimize Yourself**: Actively seeking feedback, expanding intellectual horizons beyond one's native functional silo, and cultivating executive agility.
-3. **Control Yourself**: Practicing [[concepts/emotional-intelligence|emotional self-regulation]]. Maintaining composed vocal cadence, steady breathing, and measured speech even when challenged in high-stakes parliamentary hearings or contentious board meetings.
+- **Senyum (Smile)**: Genuine facial micro-expression of openness that disarms tension and signals approachable confidence.
+- **Sapa (Acknowledge)**: Proactively greeting colleagues, security personnel, frontline operators, and board members alike, dismantling toxic hierarchy.
+- **Salam (Respectful Greeting)**: Formal, culturally respectful greeting that establishes psychological safety.
 
-#### The 3 Spheres of Personal Life
+#### Elemen-Elemen Penting dalam Komunikasi & The 3V Architecture
 
-An executive's visible persona is the cumulative product of three interacting environments:
+In interpersonal delivery, human cognitive processing evaluates signals through five observable elements across the **3V Architecture** (Visual, Vocal, Verbal):
 
-- **Family Life**: The foundational crucible shaping core moral values, early behavioral habits, and empathy.
-- **Social Life**: Cultural norms, community engagements, and peer interactions that condition social adaptability.
-- **Professional Life**: The formal arena of institutional governance, strategic delivery, and executive accountability.
-
-#### The Maturity Dyad: Self-Control & Self-Confidence
-
-Executive maturity is anchored by two reinforcing pillars:
-
-- **Self-Control**: The rigorous discipline to govern physical impulses, dietary habits, speech tempo, and emotional reactivity during crisis.
-- **Self-Confidence**: Grounded internal certainty built upon preparation, competence, and clarity of purpose. Without self-control, confidence becomes arrogance; without self-confidence, self-control becomes paralyzing hesitation.
+1. **Ekspresi Wajah (Facial Expression)**: Approachable, engaged, and composed micro-expressions.
+2. **Artikulasi Jelas (Clear Voice)**: Controlled cadence ($120 - 150 \text{ words/minute}$) and deliberate pauses before answering tough questions.
+3. **Sikap Tubuh (Body Position)**: Upright, grounded stance with open shoulders conveying stability and alertness.
+4. **Pemilihan Kata (Choice of Words)**: Professional, concise vocabulary devoid of passive-aggressive or evasive phrasing.
+5. **Kontak Mata (Ways of Using the Eyes)**: Sustained 3–5 second focused engagement per person across boardroom participants.
 
 ---
 
-### 3. The 5C Leadership & Influence Architecture
+## Behavioral Economics of Reputation: The "Remember Me?" Philosophy
+
+### 1. The 6 Pillars of the "Remember Me?" Philosophy
+
+The masterclass articulated a customer service and stakeholder framework designed for long-term equity:
+
+1. **Treat each customer/colleague as if he/she is special**: Recognizing individual dignity across all organizational tiers.
+2. **Know who your customers are and how your work adds value**: Understanding downstream impact; every division produces an output relied upon by others.
+3. **Customer experience & moments of truth**: Every point of contact—from email response times to crisis handling—is a moment of truth that tests institutional reliability.
+4. **One bad experience leads to 67 bad impressions**: The viral compounding of negative experiences.
+5. **One good experience leads to 10 good impressions**: The steady, gradual accumulation of positive goodwill.
+6. **"Remember me and I will remember you" (Customer insight)**: Proactive empathy and recognition foster reciprocal loyalty.
+
+### 2. First-Principles Pedagogical Architecture of Reputational Asymmetry
+
+The $1:67$ versus $1:10$ perception ratio formalizes why reputation takes years to build but seconds to destroy:
+
+$$\mathbf{\text{Reputational Asymmetry Ratio} = \frac{\text{Corrective Impressions per Negative Event}}{\text{Goodwill Impressions per Positive Event}} = \frac{67}{10} = 6.7\times}$$
+
+#### 💡 Plain-English Intuition & Everyday Analogy
+
+Imagine a pristine white silk shirt. You can wear it immaculately to work for ten consecutive days, and colleagues will register a quiet impression of tidiness. But spill a single drop of black ink onto the collar, and that solitary blemish dominates every conversation; cleaning the stain requires dozens of intense wash cycles, and observers will continue scrutinizing the spot long after it has been scrubbed. In enterprise leadership, trust functions like silk: positive actions build goodwill incrementally, but an acute breach of integrity or explosive emotional outburst instantly anchors stakeholder memory.
+
+#### 🔑 Prerequisite Concepts & Jargon Decoder
+
+- **Moment of Truth**: Any organizational touchpoint where a stakeholder interacts with an enterprise representative and forms or alters an impression of competency and service quality.
+- **Reputational Asymmetry**: The cognitive bias whereby humans weigh negative experiences significantly heavier than positive ones (loss aversion applied to interpersonal trust).
+- **Corrective Impressions**: The subsequent consistent, defect-free interactions required to overwrite a stored negative memory.
+
+#### ⚙️ Mechanics & Structural Anatomy
+
+- **Numerator (67 Impressions)**: Driven by the evolutionary human threat-detection mechanism. A single instance of arrogance, deceit, or severe failure signals operational unpredictability, prompting stakeholders to share warnings across their networks (negative word-of-mouth spreads to up to 67 contacts).
+- **Denominator (10 Impressions)**: Positive encounters are expected as baseline performance, compounding goodwill at a standard arithmetic rate of approximately 10 impressions.
+- **10-Second Mental-Math Micro-Example**:
+  If a project director commits 1 acute breach of trust (costing $67$ corrective units) and delivers $3$ subsequent positive project milestones ($3 \times 10 = 30$ units), the executive remains in a net trust deficit of $-37$ units ($30 - 67 = -37$). Overcoming the deficit requires at least $4$ additional defect-free milestones ($4 \times 10 = 40$, bringing the net total to $+3$).
+
+### 3. The TRUSJ Yield & The Most Basic Human Need
+
+Disciplined interpersonal engagement unlocks five compounding institutional assets:
+
+$$\mathbf{\text{Trust} \longrightarrow \text{Respect} \longrightarrow \text{Understanding} \longrightarrow \text{Satisfaction} \longrightarrow \text{Joy (TRUSJ)}}$$
+
+When asked to identify the single most fundamental psychological human need in organizational life, the masterclass delivered an unambiguous verdict:
+
+$$\mathbf{\text{What is the Most Basic Human Need? \ldquo BEING RESPECTED\rdquo}}$$
+
+Leaders who satisfy this core need across internal teams and external counterparties unlock extraordinary discretionary effort, loyalty, and psychological safety.
+
+### 4. The Face-to-Face Communication Protocol
+
+In direct executive dialogue, Ibu Indayati mandated four operational rules:
+
+1. **Asertif (Empati dan Simpatik)**: State positions clearly with factual data while actively acknowledging the counterparty's feelings, operational constraints, and institutional pressures.
+2. **Dapat Dipercaya & Meyakinkan**: Speak with verifiable evidence; anchor assertions in audited figures, operational reality, and clear logic.
+3. **Jangan Bersikap Superior**: Eliminate condescending tones, patronizing glances, or weaponized seniority; treat frontline workers and board members with equal courtesy.
+4. **Jangan Emosional**: Separate personal ego from professional critique; remain composed, analytical, and steady when challenged.
+
+---
+
+## Executive Readiness, Digital Branding & Personal Skills Inventory
+
+### 1. The Executive Readiness Triad ("Are YOU Ready?")
+
+Enterprise leadership in the modern economy requires mastering three overlapping competencies:
+
+```mermaid
+flowchart TD
+    subgraph Readiness ["Are YOU Ready?"]
+        TECH["<b>Technological Skill</b><br/>Digital Fluency • Systems Mastery • Automation"]
+        BIZ["<b>Business Skill</b><br/>Capital Allocation • Strategy • Risk Governance"]
+        SOC["<b>Social Skill</b><br/>Interpersonal Diplomacy • Empathy • Stakeholder Presence"]
+
+        TECH <--> BIZ
+        BIZ <--> SOC
+        SOC <--> TECH
+    end
+```
+
+- **Technological Skill**: Mastery of modern enterprise digital platforms, data interpretation, AI tools, and process automation.
+- **Business Skill**: Strategic acumen, balance sheet awareness, market analysis, and risk-adjusted decision-making.
+- **Social Skill**: Emotional intelligence, negotiation finesse, high-impact presentation delivery, and empathetic leadership.
+
+### 2. Digital Personal Branding: The 30–40–30 Architecture
+
+In an omnichannel enterprise environment where hybrid meetings, digital memos, and executive WhatsApp governance channels precede face-to-face contact, personal branding is evaluated through three quantifiable lenses:
+
+$$\mathbf{\text{Total Digital Presence} = 0.30 \cdot (\text{How You Look}) + 0.40 \cdot (\text{How You Behave}) + 0.30 \cdot (\text{How You Think})}$$
+
+```mermaid
+pie title Digital Personal Branding Distribution
+    "How You Behave (Conduct & Tone)" : 40
+    "How You Look (Visual Interface)" : 30
+    "How You Think (Intellectual Rigor)" : 30
+```
+
+#### 💡 Plain-English Intuition & Everyday Analogy
+
+Think of an executive's digital footprint like an enterprise smartphone app. The visual user interface (Look) attracts initial downloads, but if the app freezes or exhibits buggy behavior (Behave), users delete it instantly. Even if the UI is slick and the behavior smooth, the app is useless unless its underlying database and algorithms provide real value (Think). The 30–40–30 formula ensures that digital executive presence balances aesthetic professionalism with responsive conduct and intellectual rigor.
+
+#### 🔑 Prerequisite Concepts & Jargon Decoder
+
+- **How You Look (30%)**: Professional digital headshots, camera framing, lighting, and neat personal grooming during video conferences.
+- **How You Behave (40%)**: Digital etiquette; promptness in acknowledging memos, tone in messaging, respect for meeting schedules, and emotional restraint in chat groups.
+- **How You Think (30%)**: The intellectual footprint; concise strategic writing, structured logic (BLUF), and adherence to good corporate governance.
+
+#### ⚙️ Mechanics & Structural Anatomy
+
+- **Behavior Multiplier (0.40)**: Why is behavior weighted highest? Because in digital communication, tone is easily misinterpreted; rude, delayed, or aggressive behavior quickly alienates remote stakeholders.
+- **Look & Think Weights (0.30 each)**: Look serves as the initial perceptual gateway, while Think provides the substantive value that sustains executive credibility.
+- **10-Second Mental-Math Micro-Example**:
+  An executive scores $9/10$ on Look and $9/10$ on Think, but only $4/10$ on Behave (e.g., erratic WhatsApp replies, abrasive emails):
+  $$\text{Presence} = (0.30 \times 9) + (0.40 \times 4) + (0.30 \times 9) = 2.7 + 1.6 + 2.7 = 7.0 / 10$$
+  Improving digital behavior to $8/10$ elevates the score to $8.6 / 10$, an immediate $23\%$ boost in perceived executive reliability.
+
+### 3. The 8 Core Personal Skills Inventory & Executive Self-Audit Rubric
+
+The masterclass concluded with eight core personal competencies required of high-performing leaders:
+
+|   #   | Personal Skill                   | Executive Definition & Behavioral Anchor                                                                   | Self-Audit Diagnostic Question                                                                 |
+| :---: | :------------------------------- | :--------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
+| **1** | **Self Motivation**              | Internal drive to excel without external prodding; sustaining initiative under ambiguity.                  | _Do I take initiative on strategic challenges before a directive is issued?_                   |
+| **2** | **Adaptability**                 | Agility in navigating organizational restructuring, market volatility, and changing leadership priorities. | _How quickly do I adjust my operating approach when corporate strategy pivots?_                |
+| **3** | **Product Knowledge**            | Comprehensive mastery of enterprise offerings, operational cost drivers, and value propositions.           | _Can I explain our enterprise's core revenue engines without referring to notes?_              |
+| **4** | **Listening Skills**             | Attentive, non-defensive listening that seeks to understand underlying concerns before answering.          | _Do I listen fully to team critiques before formulating my counter-argument?_                  |
+| **5** | **Interpersonal Skill**          | Diplomacy and emotional rapport that build cross-functional alliances across siloed divisions.             | _Can I resolve operational friction with peer division heads without escalating to directors?_ |
+| **6** | **Customer Knowledge**           | Deep empathy for internal and external user pain points, regulatory expectations, and market needs.        | _Do I know the specific operational friction experienced by our end-users?_                    |
+| **7** | **Problem Solving Capabilities** | Structured root-cause diagnosis using rigorous frameworks rather than symptomatic band-aids.               | _Do I address underlying system causes or merely patch visible symptoms?_                      |
+| **8** | **Presentation Skill**           | Delivering persuasive, concise presentations using BLUF, clear visuals, and composed body language.        | _Can I pitch a complex multi-billion capital request to the board in under 10 minutes?_        |
+
+The session closed with the signature John Robert Powers call to action:
+
+$$\mathbf{\text{\ldquo WE MAKE IT HAPPEN!\rdquo}}$$
+
+---
+
+## The 5C Leadership & Influence Architecture
 
 Influence without formal coercive power is built across five interdependent dimensions:
 
@@ -124,66 +372,6 @@ Influence without formal coercive power is built across five interdependent dime
 Perceived executive credibility ($C_{\text{exec}}$) operates as a multiplicative engine:
 
 $$\mathbf{C_{\text{exec}} = \frac{\text{Character} \times \text{Competence} \times \text{Communication} \times \text{Conviction} \times \text{Charisma}}{\text{Ego Drag} + \text{Defensive Friction}}}$$
-
----
-
-### 4. Executive Etiquette: The 3V Architecture, 3S Baseline & Non-Verbal Dynamics
-
-Professional image is communicated non-verbally long before a word is spoken.
-
-#### The 3V Communication Architecture (Visual, Vocal, Verbal)
-
-In interpersonal engagement, human cognitive processing evaluates signals through three channels:
-
-- **Visual (Look)**: Physical grooming, body posture, facial expression, and eye contact. Operates as the initial perceptual gatekeeper.
-- **Vocal (Sound)**: Pitch, pacing, tone modulation, and clarity of articulation. Establishes emotional safety and conviction.
-- **Verbal (Content)**: The actual intellectual message, vocabulary choice, and structured argument.
-
-#### The 5 Pillars of Interpersonal Delivery
-
-1. **Facial Expression**: Approachable, engaged, and composed micro-expressions.
-2. **Clear Vocal Articulation**: Controlled cadence ($120 - 150 \text{ words/minute}$) and deliberate pauses before answering tough questions.
-3. **Body Posture & Carriage**: Upright, grounded stance with open shoulders conveying stability and alertness.
-4. **Intentional Word Choice**: Professional, concise vocabulary devoid of passive-aggressive or evasive phrasing.
-5. **Sustained Eye Contact**: 3–5 second focused engagement per person across boardroom participants.
-
-#### The 3S Cultural Protocol
-
-- **Senyum (Smile)**: A genuine micro-expression of openness that disarms tension and signals approachable confidence.
-- **Sapa (Acknowledge)**: Proactively greeting colleagues, security personnel, frontline operators, and board members alike, dismantling toxic hierarchy.
-- **Salam (Respectful Greeting)**: Formal, culturally respectful greeting that establishes psychological safety.
-
----
-
-### 5. The "Remember Me" Asymmetry Principle (Behavioral Economics of Reputation)
-
-In client, partner, and stakeholder management, impressions compound asymmetrically:
-
-$$\mathbf{\text{Reputational Asymmetry} \implies 1 \text{ Negative Experience} \approx 67 \text{ Corrective Impressions}}$$
-
-- **The Asymmetry**: While it requires approximately **10 positive experiences** to establish a baseline of good customer/stakeholder perception, a single acute breach of respect, arrogance, or broken promise requires **up to 67 subsequent positive interactions** to repair.
-- **The TRUSJ Yield**: Disciplined interpersonal engagement reliably unlocks five compounding institutional assets:
-  $$\mathbf{\text{Trust} \longrightarrow \text{Respect} \longrightarrow \text{Understanding} \longrightarrow \text{Satisfaction} \longrightarrow \text{Joy (TRUSJ)}}$$
-- **The Core Psychological Truth**: The deepest fundamental human desire in organizations is **the need to be valued and respected** (_rasa dihargai_). Leaders who make stakeholders feel valued unlock immense discretionary effort.
-
----
-
-### 6. The Digital Personal Branding Architecture (30–40–30 Rule)
-
-In an omnichannel enterprise environment where hybrid meetings, digital memos, and WhatsApp governance channels dominate executive operations, personal branding is evaluated through three quantifiable lenses:
-
-$$\mathbf{\text{Total Digital Presence} = 0.30 \cdot (\text{How You Look}) + 0.40 \cdot (\text{How You Behave}) + 0.30 \cdot (\text{How You Think})}$$
-
-```mermaid
-pie title Digital Personal Branding Distribution
-    "How You Behave (Conduct & Tone)" : 40
-    "How You Look (Visual Interface)" : 30
-    "How You Think (Intellectual Rigor)" : 30
-```
-
-1. **30% How You Look**: Professional digital headshots, executive camera positioning during virtual conferences, appropriate background framing, and neat personal grooming.
-2. **40% How You Behave**: Tone in email and messaging, promptness in acknowledging communications, respect for meeting schedules, and emotional calmness in digital group chats.
-3. **30% How You Think**: Intellectual clarity reflected in concise, well-structured memos, constructive framing of organizational problems, and steadfast adherence to ethical standards.
 
 ---
 
@@ -292,15 +480,17 @@ Across the 390+ reflections, participants committed to concrete behavioral adjus
 
 ## Archival Staging & Primary Sources
 
-All primary submission artifacts from the cohort have been archived for institutional traceability:
+All primary submission artifacts from the cohort and the official masterclass materials have been archived for institutional traceability:
 
-| Archive Repository                                              |   File Count    | Primary Contents                                                   |
-| :-------------------------------------------------------------- | :-------------: | :----------------------------------------------------------------- |
-| `archive/rabuan/2026-09-04-indayati-professional-image/Grup 1/` | 98 Submissions  | Individual reflection essays across Elements 1, 2, and 3 (`.pdf`). |
-| `archive/rabuan/2026-09-04-indayati-professional-image/Grup 2/` | 100 Submissions | Individual reflection essays across Elements 1, 2, and 3 (`.pdf`). |
-| `archive/rabuan/2026-09-04-indayati-professional-image/Grup 3/` | 99 Submissions  | Individual reflection essays across Elements 1, 2, and 3 (`.pdf`). |
-| `archive/rabuan/2026-09-04-indayati-professional-image/Grup 4/` | 97 Submissions  | Individual reflection essays across Elements 1, 2, and 3 (`.pdf`). |
-| **Total Ingested Submissions**                                  |  **394 PDFs**   | Complete cohort reflections for P3MD Batch I Soedirman.            |
+| Archive Repository                                                                                                        |     File Count      | Primary Contents                                                                        |
+| :------------------------------------------------------------------------------------------------------------------------ | :-----------------: | :-------------------------------------------------------------------------------------- |
+| `archive/rabuan/2026-09-04-indayati-professional-image/MAKALAH BUILDING PROFESSIONAL IMAGE DANANTARA (2026).pdf`          | 1 Presentation Deck | Official 23-slide masterclass presentation by John Robert Powers Indonesia.             |
+| `archive/rabuan/2026-09-04-indayati-professional-image/expanded_MAKALAH BUILDING PROFESSIONAL IMAGE DANANTARA (2026).tex` |     1 Document      | Complete LaTeX & TikZ structural diagram transcription of the official presentation.    |
+| `archive/rabuan/2026-09-04-indayati-professional-image/Grup 1/`                                                           |   98 Submissions    | Individual reflection essays across Elements 1, 2, and 3 (`.pdf`).                      |
+| `archive/rabuan/2026-09-04-indayati-professional-image/Grup 2/`                                                           |   100 Submissions   | Individual reflection essays across Elements 1, 2, and 3 (`.pdf`).                      |
+| `archive/rabuan/2026-09-04-indayati-professional-image/Grup 3/`                                                           |   99 Submissions    | Individual reflection essays across Elements 1, 2, and 3 (`.pdf`).                      |
+| `archive/rabuan/2026-09-04-indayati-professional-image/Grup 4/`                                                           |   97 Submissions    | Individual reflection essays across Elements 1, 2, and 3 (`.pdf`).                      |
+| **Total Ingested Artifacts**                                                                                              |    **396 Files**    | Official slide presentation + full cohort reflection corpus for P3MD Batch I Soedirman. |
 
 ---
 

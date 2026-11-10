@@ -38,22 +38,31 @@ Indayati's executive development framework integrates classical humanistic perso
    - **Knowledge**: Industry domain mastery, macroeconomic context, and technical fluency.
    - **Skills**: Executive articulation, cross-functional persuasion, and negotiation.
 
-3. **The 3-Step Self-Mastery Engine**:
-   A continuous introspection cycle for emerging enterprise leaders:
+3. **The 3-Step Self-Mastery Engine & Personality Development**:
+   A continuous introspection cycle for emerging enterprise leaders moving through **Self Discovery**, **Self SWOT-Management**, and **Applicability in Society/Community**:
    - **Know Yourself**: Systematic self-SWOT analysis and blindspot identification.
    - **Optimize Yourself**: Targeted growth, continuous learning, and active feedback seeking.
    - **Control Yourself**: Emotional regulation, impulse control under stress, and executive poise.
 
-4. **The 5C Leadership & Influence Architecture**:
+4. **What Defines Your Personality (The 3 Pillars)**:
+   Observable executive identity synthesized into:
+   - **Well Groomed**: Mastery of dress codes, aesthetic poise, and immaculate personal hygiene.
+   - **Well Behaved**: Empathetic dialogue, courteous choice of words, and emotional composure (_Asertif, Dapat Dipercaya, Jangan Superior, Jangan Emosional_).
+   - **Well Knowledgeable**: Intellectual breadth across industry, macroeconomic, and global developments.
+
+5. **The Executive Readiness Triad ("Are YOU Ready?") & 8 Personal Skills**:
+   Mastering the convergence of **Technological Skill**, **Business Skill**, and **Social Skill**, operationalized across eight core personal capabilities (Self Motivation, Adaptability, Product Knowledge, Listening, Interpersonal Skill, Customer Knowledge, Problem Solving, and Presentation).
+
+6. **The 5C Leadership & Influence Architecture**:
    Influence is cultivated across five reinforcing vectors: **Character**, **Competence**, **Communication**, **Conviction**, and **Charisma**, anchored fundamentally by unwavering integrity.
 
-5. **The Digital Presence Metric (30–40–30 Ratio)**:
+7. **The Digital Presence Metric (30–40–30 Ratio)**:
    In the modern digital workspace, executive reputation decomposes into:
    - **30% How You Look**: Digital footprint, professional profile imagery, and video presence.
    - **40% How You Behave**: Tone in digital correspondence, responsiveness, and collaborative empathy.
    - **30% How You Think**: Intellectual clarity, strategic depth in shared memos, and values alignment.
 
-6. **The "Remember Me" Asymmetry Principle**:
+8. **The "Remember Me" Asymmetry Principle**:
    Drawing on customer experience behavioral economics, a single negative interpersonal interaction requires up to **67 subsequent positive impressions** to repair perceived reputation, whereas a standard positive encounter yields approximately **10 units of goodwill**.
 
 ---

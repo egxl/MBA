@@ -61,6 +61,12 @@ flowchart LR
 ### 🔑 Prerequisite Concepts & Jargon Decoder
 
 - **Triangle of Success**: The classical tripartite competency model comprising **Attitude** (mindset, humility, emotional resilience), **Knowledge** (domain expertise, industry facts), and **Skills** (verbal articulation, negotiation, digital literacy). Competence without attitude yields arrogance; attitude without competence yields well-meaning incompetence.
+- **Tripartite Personality Competencies**: The operational definition of professional presence anchored by three pillars:
+  1. **Well Groomed** (_Knowing how to dress properly_): Master of professional dress codes, executive presentation, and immaculate grooming.
+  2. **Well Behaved** (_Knowing how to communicate with empathy & choice of words_): Empathetic, respectful, assertive communication without emotional outbursts or condescension.
+  3. **Well Knowledgeable** (_Have broad minded_): Expansive intellectual curiosity spanning macroeconomics, technology, and cross-functional enterprise realities.
+- **3-Stage Personality Development Process**: A structured growth pathway moving from **Self Discovery** (unvarnished self-inventory) $\rightarrow$ **Self SWOT-Management** (strengths leverage and mitigation) $\rightarrow$ **Applicability in Society, Community & Circumstances**.
+- **Face-to-Face Communication Protocol (4 Rules)**: Direct interpersonal interaction rules: _Asertif (Empati dan Simpatik)_, _Dapat Dipercaya & Meyakinkan_, _Jangan Bersikap Superior_, and _Jangan Emosional_.
 - **5C Leadership Vectors**:
   1. **Character**: Ethical consistency, honesty, and alignment with institutional values (e.g. Danantara GCG principles).
   2. **Competence**: Demonstrated analytical rigor, functional mastery, and operational delivery.
