@@ -476,7 +476,7 @@ tags:
         </div>
         <div class="rabuan-role">Asisten Strategi Panglima TNI &amp; Mantan Kapusjianstralitbang TNI</div>
         <div class="rabuan-themes">
-          <span class="rabuan-theme-tag">In-Person &middot; Kampus DCU</span>
+          <span class="rabuan-theme-tag">Fase I &middot; Kodiklat TNI</span>
           <a href="../concepts/public-administration-paradigms" class="rabuan-theme-tag internal">NPM Steering</a>
           <a href="../concepts/pso-commercial-duality" class="rabuan-theme-tag internal">Pasal 33 UUD 1945</a>
           <span class="rabuan-theme-tag">Karakter &amp; Takdir</span>
@@ -486,6 +486,48 @@ tags:
     <div class="rabuan-card-footer">
       <a href="2026-07-03-budhi-achmadi-kepemimpinan-bumn" class="internal">
         <span>Buka Sesi Kepemimpinan BUMN</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Special Foundation Plenary: Marsdya TNI (Purn) Kusworo -->
+  <div class="rabuan-card">
+    <div class="rabuan-card-top">
+      <span class="rabuan-inst-pill">BASARNAS &middot; Kodiklat TNI</span>
+      <span class="rabuan-card-date">MON &middot; 22 JUN 2026</span>
+    </div>
+    <div class="rabuan-card-main">
+      <div class="rabuan-portrait-frame">
+        <div class="rabuan-portrait" title="Marsdya TNI (Purn) Kusworo, S.E., M.M.">
+          <div class="rabuan-portrait-ph">
+            <svg class="rabuan-portrait-svg" viewBox="0 0 90 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="45" cy="38" r="18" fill="currentColor" fill-opacity="0.16"/>
+              <path d="M15 108C15 80 27 66 45 66C63 66 75 80 75 108" stroke="currentColor" stroke-width="4" stroke-linecap="round" fill="currentColor" fill-opacity="0.10"/>
+            </svg>
+            <span class="rabuan-portrait-initials">SAR</span>
+          </div>
+        </div>
+      </div>
+      <div class="rabuan-card-body">
+        <h3 class="rabuan-topic">
+          <a href="2026-06-22-kusworo-crisis-leadership" class="internal">Crisis Leadership: Leading Under Pressure — Decide Fast, Act Right, Save Lives</a>
+        </h3>
+        <div class="rabuan-speaker">
+          <a href="../entities/kusworo" class="internal">Marsdya TNI (Purn) Kusworo, S.E., M.M.</a>
+        </div>
+        <div class="rabuan-role">Kepala Badan Nasional Pencarian dan Pertolongan (Kabasarnas 2023–2026)</div>
+        <div class="rabuan-themes">
+          <span class="rabuan-theme-tag">Fase I &middot; Kodiklat TNI</span>
+          <a href="../concepts/crisis-leadership-framework" class="rabuan-theme-tag internal">Decision Tree</a>
+          <span class="rabuan-theme-tag">Hexagon of Chaos</span>
+          <span class="rabuan-theme-tag">True North</span>
+        </div>
+      </div>
+    </div>
+    <div class="rabuan-card-footer">
+      <a href="2026-06-22-kusworo-crisis-leadership" class="internal">
+        <span>Buka Sesi Crisis Leadership</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
       </a>
     </div>
