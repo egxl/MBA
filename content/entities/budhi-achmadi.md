@@ -63,9 +63,9 @@ Marsda Budhi Achmadi's service spans tactical squadron command, international de
 
 ---
 
-## 🏛️ Strategic & Doctrinal Contributions to P3MD
+## 🏛️ Strategic & Doctrinal Contributions to P3MDI
 
-On July 3, 2026, Marsda Budhi Achmadi delivered the seminal foundation plenary masterclass **"Kepemimpinan BUMN Abad XXI"** to the cohort of the Presidential Future Leaders Program (P3MD Batch I Soedirman) at Kampus DCU Nawasena in Serpong.
+On July 3, 2026, during **Phase 1** of the newly designated **Program Pendidikan Pemimpin Masa Depan Indonesia (P3MDI)** (formerly P3MD, formerly PFLP), Marsda Budhi Achmadi delivered the seminal foundation plenary masterclass **"Kepemimpinan BUMN Abad XXI"** to the P3MDI Batch I Soedirman cohort at **Kodiklat TNI Serpong**.
 
 His core frameworks delivered to the cohort include:
 

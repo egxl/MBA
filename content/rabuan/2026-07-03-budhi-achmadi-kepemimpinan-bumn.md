@@ -11,8 +11,10 @@ type: "guest-lecture"
 tags:
   - rabuan
   - executive-series
+  - p3mdi
   - presidential-future-leaders-program
   - pflp
+  - p3md
   - kepemimpinan-bumn
   - administrasi-publik
   - public-administration
@@ -23,12 +25,18 @@ tags:
   - gcg-esg
 ---
 
-> [!NOTE] Sidang Pleno Fondasi Program Presiden untuk Pemimpin Masa Depan (P3MD)
-> **Sesi tatap muka doktrinal di Auditorium Utama Kampus DCU Nawasena, Serpong.**
+> [!NOTE] Sidang Pleno Doktrinal Fase I Program Pendidikan Pemimpin Masa Depan Indonesia (P3MDI)
+> **Sesi tatap muka doktrinal di Kesatrian Kodiklat TNI Serpong.**
 >
-> Pada Jumat, 3 Juli 2026, calon pemimpin holding BUMN kohor **P3MD Batch I Soedirman** menerima kuliah kepemimpinan strategis dari Asisten Strategi Panglima TNI, **[[entities/budhi-achmadi|Marsda TNI Dr. Budhi Achmadi, M.Sc.]]**, bertajuk **"Kepemimpinan BUMN Abad XXI"**.
+> Pada Jumat, 3 Juli 2026, calon pemimpin holding BUMN kohor **P3MDI Batch I Soedirman** (d/h **P3MD**, d/h **PFLP** / _Presidential Future Leaders Program_) menerima kuliah kepemimpinan strategis dari Asisten Strategi Panglima TNI, **[[entities/budhi-achmadi|Marsda TNI Dr. Budhi Achmadi, M.Sc.]]**, bertajuk **"Kepemimpinan BUMN Abad XXI"**.
 >
-> Diselenggarakan pada fase fondasi pra-semester—sebelum dimulainya perkuliahan formal semester satu SBM ITB—kuliah pleno ini menyatukan disiplin kepemimpinan perwira tempur angkatan udara, evolusi 140 tahun paradigma administrasi publik, dualitas konstitusional Pasal 33 UUD 1945, serta rantai kausalitas pembentukan karakter eksekutif: dari disiplin pikiran hingga takdir korporasi negara.
+> Program P3MDI dirancang dalam **tiga fase pembinaan terpadu**:
+>
+> 1. **Fase I — Fondasi Karakter, Kepemimpinan & Kedisiplinan Militer** di **Kodiklat TNI Serpong** (lokasi diselenggarakannya sesi pleno ini).
+> 2. **Fase II — Penguatan Akademis, Manajemen Bisnis & Tata Kelola Korporat** di **Kampus DCU Nawasena, Serpong** (perkuliahan kurikulum MBA SBM ITB, masterclass direksi BUMN, dan kepemimpinan Danantara).
+> 3. **Fase III — Penerjunan Strategis & Eksekusi Lapangan** (intervensi korporasi lewat _Action Learning Project_ / ALP dan pengawalan portofolio BUMN).
+>
+> Berlangsung pada Fase I sebelum perpindahan kohor ke Kampus DCU Nawasena untuk memulai perkuliahan formal semester satu, kuliah pleno ini menyatukan disiplin kepemimpinan perwira tempur angkatan udara, evolusi 140 tahun paradigma administrasi publik, dualitas konstitusional Pasal 33 UUD 1945, serta rantai kausalitas pembentukan karakter eksekutif: dari disiplin pikiran hingga takdir korporasi negara.
 
 ---
 
@@ -36,7 +44,7 @@ tags:
 
 Sebagai perwira tinggi penerbang tempur berlatar belakang komando operasional (mantan Komandan Skadron Udara 14 F-5 Tiger, Pangkoopsud II, dan Kapusjianstralitbang TNI), **[[entities/budhi-achmadi|Marsda TNI Dr. Budhi Achmadi, M.Sc.]]** membuka sesi pleno dengan meruntuhkan sekat artifisial antara integritas militer, keilmuan administrasi publik, dan profesionalisme bisnis korporasi.
 
-Beliau menegaskan bahwa kader P3MD bukan sekadar manajer korporasi biasa yang mengejar margin laba kuartalan semata, melainkan punggawa strategis negara yang diamanatkan mengelola cabang-cabang produksi vital bangsa. Dalam lanskap abad ke-21 yang diwarnai perang energi global (_The Global Energy War_), disrupsi rantai pasok maritim, dan perebutan sumber daya alam (SDA), kepemimpinan BUMN menuntut sintesis tiga pilar utama: ketajaman intelektual (_warrior-scholar_), pemahaman mendalam atas evolusi tata kelola negara (_New Public Management_), dan keteguhan karakter moral (_moral rectitude_).
+Beliau menegaskan bahwa kader P3MDI bukan sekadar manajer korporasi biasa yang mengejar margin laba kuartalan semata, melainkan punggawa strategis negara yang diamanatkan mengelola cabang-cabang produksi vital bangsa. Dalam lanskap abad ke-21 yang diwarnai perang energi global (_The Global Energy War_), disrupsi rantai pasok maritim, dan perebutan sumber daya alam (SDA), kepemimpinan BUMN menuntut sintesis tiga pilar utama: ketajaman intelektual (_warrior-scholar_), pemahaman mendalam atas evolusi tata kelola negara (_New Public Management_), dan keteguhan karakter moral (_moral rectitude_).
 
 ```mermaid
 flowchart LR
@@ -276,7 +284,7 @@ Infografik bertajuk _“4 Pilar Talent Management System”_ menegaskan bahwa su
 
 1. **Recruitment Management**: Akuisisi talenta nasional terbaik secara transparan, bebas dari titipan politik atau nepotisme internal.
 2. **Performance Management**: Penilaian berbasis hasil nyata (_key performance indicators_ / OKRs) yang dikalibrasi secara periodik.
-3. **Learning and Development**: Pembelajaran akseleratif terstruktur melalui rotasi lintas BUMN, penugasan proyek strategis (seperti ALP), dan program eksekutif P3MD.
+3. **Learning and Development**: Pembelajaran akseleratif terstruktur melalui 3 fase terpadu P3MDI (Fase I Karakter di Kodiklat TNI Serpong, Fase II Akademis di Kampus DCU Nawasena, dan Fase III Intervensi BUMN / ALP).
 4. **Compensation Management**: Desain remunerasi yang adil dan kompetitif, mengaitkan bonus eksekutif dengan keberhasilan jangka panjang (_long-term incentive plan_).
 
 ### Delapan Vektor Produktivitas Eksekutif
@@ -311,7 +319,7 @@ Marsda Budhi merinci lima tabiat kepemimpinan destruktif yang merusak masa depan
 
 ### Enam Prinsip Kepemimpinan BUMN Abad XXI
 
-Sebagai antitesis dari patologi kepemimpinan di atas, Marsda Budhi memformulasikan enam doktrin moral bagi perwira siswa P3MD:
+Sebagai antitesis dari patologi kepemimpinan di atas, Marsda Budhi memformulasikan enam doktrin moral bagi perwira siswa P3MDI:
 
 1. **Kepemimpinan Berarti Melayani Rakyat**: Hakikat kekuasaan adalah pelayanan publik (_servant leadership_); pemimpin ada untuk menyelesaikan kesulitan rakyat, bukan untuk dilayani oleh protokoler.
 2. **Mandat Bersumber dari Tuhan YME**: Kekuasaan adalah amanah ilahi yang fana dan kelak dipertanggungjawabkan di hadapan Tuhan untuk menegakkan kebenaran, keadilan, dan kejujuran.
@@ -339,7 +347,7 @@ flowchart TD
     RantaiKarakter ==>|"ADALAH"| Takdir["<b>TAKDIR BUMN ABAD XXI</b><br/>(Kedaulatan Ekonomi & Kemakmuran Rakyat)"]
 ```
 
-> _“Kalian berada di Kampus DCU Nawasena bukan karena kebetulan. Kalian disaring dari ribuan putra-putri terbaik bangsa untuk memegang kemudi korporasi negara di masa depan. Jika pikiranmu kerdil dan korup, runtuhlah pilar ekonomi negeri ini. Tetapi jika kalian tegak dengan karakter ksatria, integritas tanpa kompromi, dan profesionalisme kelas dunia, BUMN Indonesia akan tegak berdiri sebagai benteng kemakmuran dan kedaulatan bangsa di abad ke-21.”_  
+> _“Kalian berada di Kodiklat TNI Serpong bukan karena kebetulan. Kalian disaring dari ribuan putra-putri terbaik bangsa untuk memegang kemudi korporasi negara di masa depan. Jika pikiranmu kerdil dan korup, runtuhlah pilar ekonomi negeri ini. Tetapi jika kalian tegak dengan karakter ksatria, integritas tanpa kompromi, dan profesionalisme kelas dunia, BUMN Indonesia akan tegak berdiri sebagai benteng kemakmuran dan kedaulatan bangsa di abad ke-21.”_  
 > — **Marsda TNI Dr. Budhi Achmadi, M.Sc.**
 
 ---
@@ -351,7 +359,7 @@ flowchart TD
 | **Kepemimpinan BUMN Abad XXI (Slide Resmi Kuliah)**          |    Paparan Presentasi Asli (`.pdf`)    | `archive/rabuan/2026-07-03-budhi-achmadi-kepemimpinan-bumn/Jul-3-2026_Kepemimpinan BUMN Abad XXI.pptx.pdf`          |
 | **Expanded Presentation Transcript & Visual Syntax**         |     Transkripsi Akademis (`.tex`)      | `archive/rabuan/2026-07-03-budhi-achmadi-kepemimpinan-bumn/expanded_Jul-3-2026_Kepemimpinan BUMN Abad XXI.pptx.tex` |
 | **Compiled Lecture Visual Notes & Typographic Proof**        |    Dokumen Cetak Kompilasi (`.pdf`)    | `archive/rabuan/2026-07-03-budhi-achmadi-kepemimpinan-bumn/compiled_Jul-3-2026_Kepemimpinan BUMN Abad XXI.pdf`      |
-| **Dokumen Rujukan: Kepemimpinan Militer (Prabowo Subianto)** | Monograf Doktrin Kepemimpinan (`.pdf`) | _Arsip Kepustakaan Doktrin P3MD Kampus DCU Nawasena_                                                                |
+| **Dokumen Rujukan: Kepemimpinan Militer (Prabowo Subianto)** | Monograf Doktrin Kepemimpinan (`.pdf`) | _Arsip Kepustakaan Doktrin P3MDI Kodiklat TNI Serpong_                                                              |
 
 ---
 
