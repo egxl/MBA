@@ -63,6 +63,7 @@ Use `npm run docs` only when you need the local documentation server. Node.js 20
 
 - Run the relevant test/build command.
 - Review `git diff --stat` and `git diff --check`.
+- Use `npm run checkpoint:plan` (or the `/checkpoint` skill) when grouping changes into verified incremental commits and pushing.
 - Update `.agents/current-task.md` if work is incomplete or another agent must continue.
 - Leave a concise handoff using `.agents/handoff-template.md`.
 
