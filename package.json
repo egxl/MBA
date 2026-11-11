@@ -30,8 +30,7 @@
     "rabuan:portraits": "node ./scripts/optimize-rabuan-portraits.mjs",
     "mermaid:check": "node ./scripts/validate-mermaid.mjs",
     "tables:check": "node ./scripts/validate-markdown-tables.mjs",
-    "tables:fix": "node ./scripts/validate-markdown-tables.mjs --fix",
-    "checkpoint:plan": "node ./scripts/checkpoint-plan.mjs"
+    "tables:fix": "node ./scripts/validate-markdown-tables.mjs --fix"
   },
   "engines": {
     "npm": ">=10",
