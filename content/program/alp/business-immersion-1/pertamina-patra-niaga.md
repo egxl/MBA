@@ -113,6 +113,7 @@ In their personal commitments, participants formulated key research inquiries ca
 ## 🔗 Traceability & Directory
 
 - Return to **[[program/alp/business-immersion-1/index|Business Immersion 1 Master Hub]]**
+- Subsequent Cohort Immersion Dossier: **[[rabuan/2026-11-11-pertamina-patra-niaga-biref5|Rabuan BIREF5: PT Pertamina Patra Niaga (Downstream Logistics & Automation)]]**
 - Enterprise Profile: **[[entities/pt-pertamina|PT Pertamina (Persero)]]**
 - Foundational Concept: **[[concepts/pso-commercial-duality|Public Service Obligation (PSO) vs Commercial Viability Duality]]**
 - Plenary Reference: **[[rabuan/2026-09-30-meilano-systemic-risk|Rabuan 06: The Shifting Ground: Systemic Risk Governance & Institutional Resilience]]**

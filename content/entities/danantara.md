@@ -37,7 +37,7 @@ In the P3MD MBA curriculum, Danantara represents the institutional vanguard of m
    - Codified through **Law No. 1 of 2025** (and GR No. 10/2025) alongside **Law No. 16 of 2025** (and PR No. 105/2025), Indonesia separated commercial shareholding from state regulatory authority: **BPI Danantara** holds **99% Seri B equity shares** to drive commercial governance, M&A consolidation (`>1,000` down to `~250` entities), and dividend reinvestment, while **BP BUMN** retains the **1% Seri A Dwiwarna golden share** for statutory charter vetoes, **[[concepts/pso-commercial-duality|PSO oversight]]**, DPR RI liaison, and BPK audit alignment.
    - Spearheaded operationally by **[[entities/dony-oskaria|Dony Oskaria]]** (COO of BPI Danantara & Head of BP BUMN), this dual structure enforces Danantara's **Single Grade System** for cross-holding talent mobility alongside BP BUMN's **8 Executive Conduct Directives**.
 4. **Active Asset Management, Financial Discipline & Human Capital Architecture**:
-   - Through operating subsidiaries such as **PT Danantara Asset Management (DAM)**, spearheaded by executives like [[entities/sahala-situmorang|Sahala Tua Paulus Situmorang]] (MD Finance) and [[entities/agus-dwi-handaya|Agus Dwi Handaya]] (MD Human Capital), Danantara enforces rigorous balance-sheet discipline and talent architecture across the BUMN portfolio. By mandating [[concepts/capital-capability-synergy|Capital-Capability Synergy]], 4-stage risk quantification, [[concepts/peoplemath-framework|PeopleMath PPH Architecture]], and the formation of [[concepts/tough-and-agile-learner|Tough & Agile Learners]], Danantara ensures that state capital injections compound sustainably rather than dissipate.
+   - Through operating subsidiaries such as **PT Danantara Asset Management (DAM)**, spearheaded by executives like [[entities/sahala-situmorang|Sahala Tua Paulus Situmorang]] (MD Finance), [[entities/agus-dwi-handaya|Agus Dwi Handaya]] (MD Human Capital), and [[entities/febriany-eddy|Febriany Eddy]] (MD Business 3), Danantara enforces rigorous balance-sheet discipline, global operating standards, and talent architecture across the BUMN portfolio. By mandating [[concepts/capital-capability-synergy|Capital-Capability Synergy]], [[concepts/reverse-engineering-leadership|Reverse-Engineering Leadership]], 4-stage risk quantification, [[concepts/peoplemath-framework|PeopleMath PPH Architecture]], and the formation of [[concepts/tough-and-agile-learner|Tough & Agile Learners]], Danantara ensures that state capital injections compound sustainably rather than dissipate.
 
 ---
 
@@ -52,12 +52,15 @@ In the P3MD MBA curriculum, Danantara represents the institutional vanguard of m
   - [[rabuan/2026-09-02-oskaria-directorship-doctrine|Rabuan Kick-Off 2026-09-02: Directorship as a Standard, Sovereign Stewardship & Turnaround Doctrine]] (Dony Oskaria, COO BPI Danantara & Head of BP BUMN — _Reconstructed Dossier_)
   - [[rabuan/2026-09-02-adh-peoplemath|Rabuan 2026-09-02: PeopleMath — Produktivitas Berkualitas & Strategi Tough & Agile Learner]] (Agus Dwi Handaya, MD Human Capital DAM)
   - [[rabuan/2026-09-23-sahala-financial-discipline|Rabuan 2026-09-23: Memimpin dengan Financial Discipline]] (Sahala Tua Paulus Situmorang, MD Finance DAM)
+  - [[rabuan/2026-11-11-febriany-eddy-global-leadership|Rabuan 2026-11-11: Kepemimpinan Kelas Dunia untuk Membangun Negeri — Berstandar Global, Berjiwa Merah Putih]] (Febriany Eddy, MD Business 3 DAM)
 - **Key Executive Profiles**:
   - [[entities/dony-oskaria|Dony Oskaria]] (Chief Operating Officer, BPI Danantara & Head of BP BUMN)
   - [[entities/agus-dwi-handaya|Agus Dwi Handaya]] (Managing Director Human Capital, DAM)
   - [[entities/sahala-situmorang|Sahala Tua Paulus Situmorang, S.E.Ak., M.B.A.]] (Managing Director Finance, DAM)
+  - [[entities/febriany-eddy|Febriany Eddy, S.E., M.B.A., CPA]] (Managing Director Business 3, DAM)
 - **Related Concepts**:
   - [[concepts/peoplemath-framework|PeopleMath Framework & PPH Architecture]]
+  - [[concepts/reverse-engineering-leadership|Reverse-Engineering Leadership & Audacious Strategic Benchmarks]]
   - [[concepts/tough-and-agile-learner|Tough & Agile Learner (TAL)]]
   - [[concepts/capital-capability-synergy|Capital-Capability Synergy & Financial Discipline Engine]]
   - [[concepts/incremental-capital-output-ratio|Incremental Capital Output Ratio (ICOR) & Infrastructure Capital Productivity]]

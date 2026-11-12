@@ -12,6 +12,8 @@ aliases:
   - PT Pertamina
   - Pertamina Kilang Nusantara
   - PT Kilang Pertamina Internasional
+  - PT Pertamina Patra Niaga
+  - Pertamina Patra Niaga
 description: "Indonesian state-owned energy enterprise responsible for national petroleum exploration, refining, petrochemicals, and sustainable energy transition."
 ---
 
@@ -48,12 +50,23 @@ During the **[[program/alp/business-immersion-1/pertamina-patra-niaga|Business I
 - **Key Diagnostic Dilemma**: Balancing extreme industrial process safety and community buffer-zone risk mitigation with high-throughput tanker dispatch velocity, driver fatigue monitoring, and digitized fuel reconciliation to eliminate distribution losses (_losses threshold < 0.2%_).
 - **Synergy with [[concepts/pso-commercial-duality|PSO vs Commercial Duality]]**: Fulfilling the national 24/7 fuel security mandate (_BBM Satu Harga_ and subsidized Solar/Pertalite) under tight fiscal compensation formulas while competing in deregulated commercial retail sectors (Pertamax Series, avtur, industrial bunkering).
 
+### Cohort Diagnostic Census: Downstream Energy Resilience (BIREF5 — November 2026)
+
+Following the plenary address and business immersion briefing on November 11, 2026, the full P3MD cohort ($N=58$ submissions across Groups 1–4) conducted an exhaustive diagnostic on Pertamina Patra Niaga's distribution network:
+
+- **Terminal Automation System (TAS) Resilience**: Over $98.3\%$ of participants emphasized that loading meters and volume reconciliation must maintain automated, edge-computing offline fail-safe modes during WAN network or central server outages to avoid loading freezes.
+- **HSSE & Socio-Spatial Buffer Zoning**: Over $98.3\%$ evaluated safety buffer-zone governance, blast mitigation walls, and contractor driver (_Awak Mobil Tangki / AMT_) fatigue management adjacent to dense civilian neighborhoods.
+- **Fleet Scheduling & Filling Point Bottlenecks**: Over $94.8\%$ modeled gantry throughput constraints, advocating algorithmic tanker-compartment matching to eliminate retail SPBU stockout risks across Jabodetabek.
+- **Subholding Portfolio Synergy**: Evaluated integration between Pertamina Patra Niaga (retail/trading), Pertamina International Shipping (PIS, marine fleet), and Pertamina Energy Terminal (PET, storage infrastructure).
+- **Full Analytical Dossier**: Consult **[[rabuan/2026-11-11-pertamina-patra-niaga-biref5|Rabuan BIREF5: Business Immersion PT Pertamina Patra Niaga]]**.
+
 ---
 
 ## 🔗 Related Portals
 
+- Executive Plenary Immersion: [[rabuan/2026-11-11-pertamina-patra-niaga-biref5|Rabuan BIREF5: PT Pertamina Patra Niaga (Downstream Logistics & Automation)]]
 - Action Learning Project: [[program/alp/business-immersion-1/pertamina-patra-niaga|Business Immersion 1: Pertamina Patra Niaga (ITJ Plumpang)]]
 - Case Analysis: [[courses/mk5-decision-making-negotiation/week-07/case-pertamina-kilang-nusantara|Case Study: Pertamina Kilang Nusantara]]
 - Assignment Guide: [[courses/mk5-decision-making-negotiation/week-07/assignment-ahp-combustion-system|Syndicate 9 Worked AHP Model]]
-- Relevant Concepts: [[concepts/analytic-hierarchy-process|Analytic Hierarchy Process (AHP)]], [[concepts/pso-commercial-duality|PSO vs Commercial Duality]]
+- Relevant Concepts: [[concepts/analytic-hierarchy-process|Analytic Hierarchy Process (AHP)]], [[concepts/pso-commercial-duality|PSO vs Commercial Duality]], [[concepts/maritime-geostrategy-framework|Maritime Geostrategy Framework]]
 - Return to [[entities/index|Executive Entity Index]]
