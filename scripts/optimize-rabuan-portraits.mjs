@@ -131,6 +131,30 @@ export const PORTRAIT_CONFIGS = [
     speakerName: "Marsma TNI Dr. Anton Pallaguna (Back)",
     targetFile: "Anton-Pallaguna_Back_2026-10-20.webp",
   },
+
+  // Special Foundation Plenary: Marsda TNI Dr. Budhi Achmadi (2026-07-03)
+  {
+    rawFile: "budhi1.jpg",
+    speakerName: "Marsda TNI Dr. Budhi Achmadi (Front)",
+    targetFile: "Budhi-Achmadi_Front_2026-07-03.webp",
+  },
+  {
+    rawFile: "budhi2.jpg",
+    speakerName: "Marsda TNI Dr. Budhi Achmadi (Back)",
+    targetFile: "Budhi-Achmadi_Back_2026-07-03.webp",
+  },
+
+  // Special Foundation Plenary: Marsdya TNI (Purn) Kusworo (2026-06-22)
+  {
+    rawFile: "kusworo1.jpg",
+    speakerName: "Marsdya TNI (Purn) Kusworo (Front)",
+    targetFile: "Kusworo_Front_2026-06-22.webp",
+  },
+  {
+    rawFile: "kusworo 2.jpeg",
+    speakerName: "Marsdya TNI (Purn) Kusworo (Back)",
+    targetFile: "Kusworo_Back_2026-06-22.webp",
+  },
 ]
 
 export async function processPortraits(
