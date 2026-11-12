@@ -97,6 +97,7 @@ The 10 state-owned enterprises hosting P3MD Action Learning Capstones:
 - **[[entities/kusworo|Marsdya TNI (Purn) Kusworo, S.E., M.M.]]**: Kepala Badan Nasional Pencarian dan Pertolongan / BASARNAS (2023–2026).
 - **[[entities/dony-oskaria|Dony Oskaria]]**: Chief Operating Officer (COO), BPI Danantara.
 - **[[entities/nora-manaf|Datuk (Dr.) Nora Manaf]]**: Former Group Chief Human Capital Officer, Maybank (2008–2024).
+- **[[entities/agus-gumiwang-kartasasmita|Dr. Agus Gumiwang Kartasasmita, M.Si.]]**: Menteri Perindustrian Republik Indonesia (2019–sekarang).
 
 ---
 
