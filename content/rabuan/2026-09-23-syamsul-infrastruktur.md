@@ -27,6 +27,13 @@ Titled **"Nation in Motion: Infrastruktur sebagai Penggerak Pertumbuhan & Pemera
 
 Drawing upon Thomas Friedman's paradigm in _The World is Flat_, Syamsul emphasized that modern global competition is unforgiving: capital, industrial capacity, and talent flow instantly to regions with the lowest logistics friction and highest institutional predictability.
 
+> [!NOTE] Keynote Speaker Dossier: Dipl.-Ing. Syamsul Bachri Yusuf, M.Si. (Han)
+>
+> - **Current Designation**: Staf Khusus Menteri Pekerjaan Umum RI Bidang Teknologi & Kepatuhan Intern; Dewan Komisaris [[entities/pt-jasa-marga|PT Jasa Marga (Persero) Tbk]]
+> - **Academic Pedigree**: M.Si. in Defense Science (Energy Security) from Universitas Pertahanan (2016); Dipl.-Ing. in Mechanical Engineering from University of Applied Sciences Hannover, Germany (2006)
+> - **Core Competencies**: Kepatuhan Internal • Ketahanan Energi • Infrastruktur & Utilitas • Tata Kelola Perusahaan (BUMN/BUMD/KPBU)
+> - **Career Trajectory**: Stafsus Menteri PU (2025–sekarang) $\leftarrow$ Direktur Utama Perumda PAM JAYA (2021–2022) $\leftarrow$ Direktur Utama PT Jakarta OSES Energi / Jakpro Group (2019–2021) $\leftarrow$ Ketua SP PT Pertamina Geothermal Energy (2010–2012). See full profile: [[entities/syamsul-bachri-yusuf|Executive Entity Dossier]].
+
 ```mermaid
 flowchart LR
     A["<b>Macro Disruptions</b><br/>Climate Stress • Geopolitics<br/>Accelerating Urbanization"] --> B["<b>Strategic Infrastructure Filter</b><br/>([[concepts/incremental-capital-output-ratio|ICOR Discipline & Multi-Utility Design]])"]
@@ -206,13 +213,14 @@ Reflecting on the principle of _memahami yang tersirat_, cohort members from reg
 
 All primary student reflection artifacts from the session have been verified, safety-scanned, and archived in the repository for institutional lineage:
 
-| Archive Repository                                                     | Ingested Submissions | Archival Cohort Scope                                          |
-| :--------------------------------------------------------------------- | :------------------: | :------------------------------------------------------------- |
-| `archive/rabuan/2026-09-23-infrastruktur-financial-discipline/Grup 1/` |    77 Submissions    | Elements 1, 2, and 3 (`.pdf`)                                  |
-| `archive/rabuan/2026-09-23-infrastruktur-financial-discipline/Grup 2/` |    88 Submissions    | Elements 1, 2, and 3 (`.pdf`)                                  |
-| `archive/rabuan/2026-09-23-infrastruktur-financial-discipline/Grup 3/` |    90 Submissions    | Elements 1, 2, and 3 (`.pdf`)                                  |
-| `archive/rabuan/2026-09-23-infrastruktur-financial-discipline/Grup 4/` |   126 Submissions    | Elements 1, 2, and 3 (`.pdf`)                                  |
-| **Total Ingested Submissions**                                         |     **381 PDFs**     | Complete cohort reflection corpus for Rabuan 23 September 2026 |
+| Archive Repository                                                                 |  Ingested Submissions  | Archival Cohort Scope                                               |
+| :--------------------------------------------------------------------------------- | :--------------------: | :------------------------------------------------------------------ |
+| `archive/rabuan/2026-09-23-infrastruktur-financial-discipline/executive-profiles/` |  1 Executive Profile   | Primary speaker profile card & LaTeX documentation (`.pdf`, `.txt`) |
+| `archive/rabuan/2026-09-23-infrastruktur-financial-discipline/Grup 1/`             |     77 Submissions     | Elements 1, 2, and 3 (`.pdf`)                                       |
+| `archive/rabuan/2026-09-23-infrastruktur-financial-discipline/Grup 2/`             |     88 Submissions     | Elements 1, 2, and 3 (`.pdf`)                                       |
+| `archive/rabuan/2026-09-23-infrastruktur-financial-discipline/Grup 3/`             |     90 Submissions     | Elements 1, 2, and 3 (`.pdf`)                                       |
+| `archive/rabuan/2026-09-23-infrastruktur-financial-discipline/Grup 4/`             |    126 Submissions     | Elements 1, 2, and 3 (`.pdf`)                                       |
+| **Total Ingested Artifacts**                                                       | **381 PDFs + Dossier** | Complete cohort reflection corpus & authenticated executive dossier |
 
 ---
 

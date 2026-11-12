@@ -27,6 +27,42 @@ With extensive executive leadership experience across international corporate fi
 
 ---
 
+## 🎓 Academic Credentials & Core Competencies
+
+### Education & Academic Pedigree
+
+- **Master of Business Administration (MBA)**, Western Illinois University, USA — _Fulbright Master's Degree Program_ (2000)
+- **Bachelor's Degree in Economics (S.E.Ak.)**, Universitas Indonesia (1990)
+
+### Functional Competency Pillars
+
+- **Business Planning**: Corporate long-term strategy, operational budgeting, and resource modeling.
+- **Performance Improvement**: Total Quality Management (TQM), zero-defect workflows, and cash-margin optimization.
+- **SOE Transformation**: Sovereign asset management, balance-sheet restructuring, and ending reliance on state capital injections (PMN).
+
+---
+
+## 💼 Career Experience & Leadership Trajectory
+
+| Tenure Period    | Position / Title                 | Organization / Institution                                  | Strategic Focus                                                              |
+| :--------------- | :------------------------------- | :---------------------------------------------------------- | :--------------------------------------------------------------------------- |
+| **2026–Present** | Managing Director, Finance (CFO) | [[entities/danantara\|PT Danantara Asset Management (DAM)]] | Sovereign asset allocation, asset monetization, and fiscal discipline        |
+| **2019–2021**    | Lead, ASEAN Lead Advisory        | Ernst & Young (EY)                                          | Cross-border M&A advisory, sovereign transaction structuring                 |
+| **2000–2009**    | Director, Advisory Consulting    | PricewaterhouseCoopers (PwC) Indonesia                      | SOE operational restructuring, enterprise governance, and financial advisory |
+
+```mermaid
+timeline
+    title Career Trajectory & Executive Leadership
+    section 2000 - 2009
+      PwC Indonesia : Director, Advisory Consulting
+    section 2019 - 2021
+      Ernst & Young (EY) : Lead, ASEAN Lead Advisory
+    section 2026 - Present
+      Danantara Asset Management : Managing Director, Finance (CFO)
+```
+
+---
+
 ## 🧠 Core Philosophy & Contributions
 
 1. **"Think Big, Think Global" with Deep Enterprise Ownership**:

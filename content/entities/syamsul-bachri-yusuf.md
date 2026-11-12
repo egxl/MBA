@@ -28,6 +28,46 @@ With an educational background in engineering from Germany (_Diplom-Ingenieur_) 
 
 ---
 
+## 🎓 Academic Credentials & Core Competencies
+
+### Education & Academic Pedigree
+
+- **Magister Sains Ilmu Pertahanan (M.Si.) – Ketahanan Energi**, Universitas Pertahanan (Unhan), 2016
+- **Diploma Ingenieur (Dipl.-Ing.) – Teknik Mesin**, University of Applied Sciences Hannover (Fachhochschule Hannover), Jerman, 2006
+
+### Core Competency Pillars
+
+- **Kepatuhan Internal (Internal Compliance)**: Technology-driven compliance auditing, risk prevention, and ministerial statutory alignment.
+- **Ketahanan Energi (Energy Security)**: Geothermal exploration, sovereign resource defense, and renewable energy integration.
+- **Infrastruktur dan Utilitas (Infrastructure & Utilities)**: Municipal water management (PDAM), transport corridors, and multi-utility pipelines.
+- **Tata Kelola Perusahaan (Corporate Governance)**: State-owned enterprise oversight, regional enterprise (BUMD) management, and public-private partnerships (KPBU).
+
+---
+
+## 💼 Career Experience & Leadership Trajectory
+
+| Tenure Period     | Position / Title                                                            | Organization / Institution           | Strategic Mandate                                                                         |
+| :---------------- | :-------------------------------------------------------------------------- | :----------------------------------- | :---------------------------------------------------------------------------------------- |
+| **2025–sekarang** | Staf Khusus Menteri Bidang Teknologi dan Kepatuhan Intern                   | Kementerian Pekerjaan Umum RI        | Institutional compliance, civil engineering technology, and cross-sectoral policy support |
+| **2021–2022**     | Direktur Utama                                                              | Perumda PAM JAYA                     | Restructuring DKI Jakarta municipal clean water distribution and utility governance       |
+| **2019–2021**     | Jabatan Eksekutif (Jabatan terakhir: Direktur Utama PT Jakarta OSES Energi) | Jakpro Group                         | Regional energy development, oil and gas services, and infrastructure investment          |
+| **2010–2012**     | Ketua Serikat Pekerja                                                       | PT Pertamina Geothermal Energy (PGE) | Labor leadership, employee welfare, and sovereign geothermal asset defense                |
+
+```mermaid
+timeline
+    title Career Trajectory & Public-Sector Leadership
+    section 2010 - 2012
+      Pertamina Geothermal Energy : Ketua Serikat Pekerja
+    section 2019 - 2021
+      Jakpro Group : Direktur Utama, PT Jakarta OSES Energi
+    section 2021 - 2022
+      Perumda PAM JAYA : Direktur Utama
+    section 2025 - sekarang
+      Kementerian PU RI : Staf Khusus Menteri Bidang Teknologi & Kepatuhan Intern
+```
+
+---
+
 ## 🧠 Core Philosophy & Contributions
 
 1. **Strategic Foresight over Reactive Administration**:

@@ -25,6 +25,13 @@ Titled **"Memimpin dengan Financial Discipline"**, the session brought the strat
 
 Opening with his signature imperative, _"You have to think big, think global,"_ Sahala urged the cohort to overcome _"kesalahan pemula"_ (beginner operational traps) by adopting the disciplined posture of an enterprise owner: knowing when to accelerate (_"speed is the name of the game"_), but never hesitating to say, _"Hold on a second,"_ whenever a capital expenditure proposal lacks rigorous cash-return modeling.
 
+> [!NOTE] Keynote Speaker Dossier: Sahala Tua Paulus Situmorang, S.E.Ak., M.B.A.
+>
+> - **Current Designation**: Managing Director, Finance (CFO), [[entities/danantara|PT Danantara Asset Management (DAM)]]
+> - **Academic Pedigree**: MBA from Western Illinois University (Fulbright Scholar, 2000); B.Econ in Accounting from Universitas Indonesia (1990)
+> - **Core Competencies**: Business Planning • Performance Improvement (TQM) • SOE Transformation & Capital Allocation
+> - **Career Trajectory**: Managing Director at Danantara (2026–Present) $\leftarrow$ Lead, ASEAN Lead Advisory at EY (2019–2021) $\leftarrow$ Director, Advisory Consulting at PwC Indonesia (2000–2009). See full profile: [[entities/sahala-situmorang|Executive Entity Dossier]].
+
 ```mermaid
 flowchart LR
     A["<b>Operational Ambition</b><br/>Technical Vision • Capex Proposals<br/>Market Expansion Plans"] --> B["<b>Financial Discipline Engine</b><br/>([[concepts/capital-capability-synergy|Capital-Capability Synergy & 4-Stage Risk]])"]
@@ -199,13 +206,14 @@ Synthesized anonymously across the cohort, participants formulated concrete 30-d
 
 All primary student reflection artifacts from the session have been verified, safety-scanned, and archived in the repository for institutional lineage:
 
-| Archive Repository                                                     | Ingested Submissions | Archival Cohort Scope                                          |
-| :--------------------------------------------------------------------- | :------------------: | :------------------------------------------------------------- |
-| `archive/rabuan/2026-09-23-infrastruktur-financial-discipline/Grup 1/` |    77 Submissions    | Elements 1, 2, and 3 (`.pdf`)                                  |
-| `archive/rabuan/2026-09-23-infrastruktur-financial-discipline/Grup 2/` |    88 Submissions    | Elements 1, 2, and 3 (`.pdf`)                                  |
-| `archive/rabuan/2026-09-23-infrastruktur-financial-discipline/Grup 3/` |    90 Submissions    | Elements 1, 2, and 3 (`.pdf`)                                  |
-| `archive/rabuan/2026-09-23-infrastruktur-financial-discipline/Grup 4/` |   126 Submissions    | Elements 1, 2, and 3 (`.pdf`)                                  |
-| **Total Ingested Submissions**                                         |     **381 PDFs**     | Complete cohort reflection corpus for Rabuan 23 September 2026 |
+| Archive Repository                                                                 |  Ingested Submissions  | Archival Cohort Scope                                               |
+| :--------------------------------------------------------------------------------- | :--------------------: | :------------------------------------------------------------------ |
+| `archive/rabuan/2026-09-23-infrastruktur-financial-discipline/executive-profiles/` |  1 Executive Profile   | Primary speaker profile card & LaTeX documentation (`.pdf`, `.txt`) |
+| `archive/rabuan/2026-09-23-infrastruktur-financial-discipline/Grup 1/`             |     77 Submissions     | Elements 1, 2, and 3 (`.pdf`)                                       |
+| `archive/rabuan/2026-09-23-infrastruktur-financial-discipline/Grup 2/`             |     88 Submissions     | Elements 1, 2, and 3 (`.pdf`)                                       |
+| `archive/rabuan/2026-09-23-infrastruktur-financial-discipline/Grup 3/`             |     90 Submissions     | Elements 1, 2, and 3 (`.pdf`)                                       |
+| `archive/rabuan/2026-09-23-infrastruktur-financial-discipline/Grup 4/`             |    126 Submissions     | Elements 1, 2, and 3 (`.pdf`)                                       |
+| **Total Ingested Artifacts**                                                       | **381 PDFs + Dossier** | Complete cohort reflection corpus & authenticated executive dossier |
 
 ---
 
