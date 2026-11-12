@@ -34,6 +34,8 @@ tags:
 > Pada Rabu, 19 Agustus 2026, calon pemimpin holding BUMN kohor **P3MDI Batch I Soedirman** menerima kuliah kepemimpinan strategis dan pembekalan industrialisasi nasional dari Menteri Perindustrian Republik Indonesia, **[[entities/agus-gumiwang-kartasasmita|Dr. Agus Gumiwang Kartasasmita, M.Si.]]**, bertajuk **"BUMN dan Industrialisasi Nasional: Membangun Pemimpin Berkarakter, Tata Kelola Kuat, dan Daya Saing Menuju Indonesia Emas 2045"**.
 >
 > Diselenggarakan pada **Fase I — Fondasi Karakter, Kepemimpinan & Kedisiplinan Militer** di Kodiklat TNI Serpong, kuliah pleno ini menyajikan cetak biru transformasi industri nasional, pembongkaran mitos deindustrialisasi dini, penegakan kedaulatan pasar domestik melalui instrumen perlindungan non-tarif, serta revitalisasi peran BUMN sebagai lokomotif rantai pasok industri bernilai tambah tinggi menuju target Indonesia Emas 2045.
+>
+> **Bacaan Wajib Pra-Sesi (18 Agustus 2026)**: Landasan teoretis dan studi kasus tata kelola (_Agency Theory_, _Soft Budget Constraint_, Temasek, PETRONAS, Equinor, Bank Mandiri) tersedia pada makalah pendamping **[[rabuan/2026-08-18-agus-gumiwang-kepemimpinan-bumn-reading|Pre-Session Reading: Tantangan Kepemimpinan & Tata Kelola BUMN]]**.
 
 ---
 
@@ -608,8 +610,11 @@ timeline
   - [[entities/agus-gumiwang-kartasasmita|Dr. Agus Gumiwang Kartasasmita, M.Si. (Menteri Perindustrian RI)]]
   - [[entities/prabowo-subianto|Jenderal TNI (Purn.) H. Prabowo Subianto (Presiden Republik Indonesia)]]
   - [[entities/dony-oskaria|Dony Oskaria (COO BPI Danantara & Kepala BP BUMN)]]
-- **Konsep Makroekonomi Terkait**:
+- **Bacaan Wajib Pra-Sesi & Konsep Terkait**:
+  - [[rabuan/2026-08-18-agus-gumiwang-kepemimpinan-bumn-reading|Pre-Session Reading (2026-08-18): Tantangan Kepemimpinan & Tata Kelola BUMN]]
   - [[concepts/manufacturing-value-added|Manufacturing Value Added (MVA)]]
+  - [[concepts/soft-budget-constraint|Soft Budget Constraint & Capital Discipline]]
+  - [[concepts/agency-theory|Agency Theory & Multi-Tiered State Ownership Governance]]
   - [[concepts/incremental-capital-output-ratio|Incremental Capital Output Ratio (ICOR)]]
   - [[concepts/pso-commercial-duality|PSO vs Commercial Duality]]
 - **Sesi Pleno Fase I Terkait**:

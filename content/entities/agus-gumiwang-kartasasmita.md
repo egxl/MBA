@@ -88,7 +88,10 @@ Delivered during his foundation plenary to the **P3MD Batch I Soedirman** cohort
 ## 🎤 Contributions to P3MD MBA
 
 - **Executive Series & Plenary Dossiers**:
+  - [[rabuan/2026-08-18-agus-gumiwang-kepemimpinan-bumn-reading|Pre-Session Required Reading (2026-08-18): Tantangan Kepemimpinan & Tata Kelola BUMN]] (28-Page Monograph)
   - [[rabuan/2026-08-19-agus-gumiwang-industrialisasi-nasional|Foundation Plenary (2026-08-19): BUMN dan Industrialisasi Nasional — Membangun Pemimpin Berkarakter, Tata Kelola Kuat, dan Daya Saing Menuju Indonesia Emas 2045]] (Phase I, Kodiklat TNI Serpong)
 - **Conceptual & Institutional Frameworks**:
   - [[concepts/manufacturing-value-added|Manufacturing Value Added (MVA)]]
+  - [[concepts/soft-budget-constraint|Soft Budget Constraint & Capital Discipline]]
+  - [[concepts/agency-theory|Agency Theory & Multi-Tiered State Ownership Governance]]
   - [[concepts/pso-commercial-duality|PSO vs Commercial Value Creation]]
