@@ -105,6 +105,9 @@ The table below provides direct access to all active business frameworks and ana
 | **[[concepts/manufacturing-value-added\|Manufacturing Value Added (MVA) & Structural Industrial Transformation]]**                              | Rabuan & MK2 & MK4             | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
 | **[[concepts/agency-theory\|Agency Theory & Multi-Tiered State Ownership Governance]]**                                                         | Rabuan & MK1 & MK2 & MK4       | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
 | **[[concepts/soft-budget-constraint\|Soft Budget Constraint & Capital Discipline in State-Owned Enterprises]]**                                 | Rabuan & MK2 & MK4             | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
+| **[[concepts/the-integrity-triangle\|The Integrity Triangle: Character Diagnostic Framework (Act, Intent, Response)]]**                         | Cross-Curricular               | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
+| **[[concepts/maritime-geostrategy-framework\|Maritime Geostrategy Framework & Archipelagic Defense-Economic Statecraft]]**                      | Cross-Curricular               | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
+| **[[concepts/reverse-engineering-leadership\|Reverse-Engineering Leadership & Audacious Strategic Benchmarks]]**                                | Cross-Curricular               | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
 
 ---
 
