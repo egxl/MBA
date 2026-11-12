@@ -52,11 +52,14 @@ flowchart LR
 - **B2B Relationship Marketing ([[courses/mk3-marketing-management/week-04/index|MK3 Week 04]]):** Analyzing derived demand, multi-stakeholder procurement committees, and risk-adjusted contractor selection.
 - **Corporate Restructuring & Financial Health ([[courses/mk2-financial-management-strategy/index|MK2]]):** Evaluating debt maturity waterfalls, working capital cycles in turnkey projects, and government equity injections (PMN).
 - **SOE Governance & Power Dynamics ([[courses/mk1-organizational-behavior-managing-people/week-07/index|MK1 Week 07]]):** Balancing ministerial mandates, public procurement oversight (BPKP/LKPP), and commercial autonomy.
+- **Human Capital & Blue Ocean Transformation ([[rabuan/2026-08-31-hadjar-from-learner-to-transformer|Rabuan Plenary]]):** Led by [[entities/hadjar-seti-adji|Hadjar Seti Adji]] (Director of Human Capital & Transformation, WIKA), shifting BUMN Karya contracting from Red Ocean price wars toward BIM, Green Building, and SDG-aligned differentiation.
 
 ---
 
 ## 🔗 Traceability & Directory
 
+- [[entities/hadjar-seti-adji|Executive Profile: Hadjar Seti Adji (Director of HC & Transformation, WIKA)]]
+- [[rabuan/2026-08-31-hadjar-from-learner-to-transformer|Rabuan Plenary: From a Learner to a Transformer for Legacy]]
 - [[courses/mk3-marketing-management/week-04/index|MK3 Week 04: B2B Marketing & Organizational Buying]]
 - [[courses/mk3-marketing-management/week-04/case-wika-epc-champion|Case Dossier: WIKA EPC Champion Program]]
 - [[courses/mk3-marketing-management/week-04/assignment-wika-b2b-analysis|Assignment Debrief: WIKA Strategic Analysis]]

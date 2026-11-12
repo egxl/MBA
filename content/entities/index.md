@@ -98,6 +98,7 @@ The 10 state-owned enterprises hosting P3MD Action Learning Capstones:
 - **[[entities/dony-oskaria|Dony Oskaria]]**: Chief Operating Officer (COO), BPI Danantara.
 - **[[entities/nora-manaf|Datuk (Dr.) Nora Manaf]]**: Former Group Chief Human Capital Officer, Maybank (2008–2024).
 - **[[entities/agus-gumiwang-kartasasmita|Dr. Agus Gumiwang Kartasasmita, M.Si.]]**: Menteri Perindustrian Republik Indonesia (2019–sekarang).
+- **[[entities/hadjar-seti-adji|Hadjar Seti Adji]]**: Direktur Manajemen SDM dan Transformasi, PT Wijaya Karya (Persero) Tbk.
 
 ---
 

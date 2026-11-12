@@ -82,6 +82,7 @@ Where high-integrity, productive individuals ($PPH$) institutionalized in merito
 ## 🎤 Contributions to P3MD MBA
 
 - **Rabuan Keynote**: [[rabuan/2026-09-02-adh-peoplemath|Rabuan 01: PeopleMath — Produktivitas Berkualitas, Kebahagiaan Tanpa Batas & Strategi Tough & Agile Learner]]
+- **Companion Session (Same Day)**: [[rabuan/2026-08-31-hadjar-from-learner-to-transformer|From a Learner to a Transformer for Legacy]] ([[entities/hadjar-seti-adji|Hadjar Seti Adji]])
 - **Compounding Core Concepts**:
   - [[concepts/peoplemath-framework|PeopleMath Framework & PPH Architecture]]
   - [[concepts/tough-and-agile-learner|Tough & Agile Learner (TAL) & 3N Growth Engine]]
