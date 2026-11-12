@@ -101,6 +101,7 @@ The table below provides direct access to all active business frameworks and ana
 | **[[concepts/statistical-process-control\|Statistical Process Control (SPC) & Process Capability]]**                                            | Cross-Curricular               | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
 | **[[concepts/public-administration-paradigms\|Public Administration Paradigms & State Enterprise Governance]]**                                 | Program & MK1 & MK5 & Rabuan   | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
 | **[[concepts/crisis-leadership-framework\|Crisis Leadership Framework & Tactical Decision Architecture]]**                                      | Cross-Curricular               | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
+| **[[concepts/the-people-equation\|The People Equation (Future of Work)]]**                                                                      | MK1 & MK6 & Rabuan             | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
 
 ---
 
