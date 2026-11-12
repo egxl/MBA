@@ -41,19 +41,19 @@ tags:
 
 <div class="rabuan-ledger">
   <div class="rabuan-stat-cell">
-    <div class="rabuan-stat-num">8</div>
+    <div class="rabuan-stat-num">9</div>
     <div class="rabuan-stat-label">Masterclasses Delivered</div>
     <div class="rabuan-stat-meta">Synchronized plenary series</div>
   </div>
   <div class="rabuan-stat-cell">
-    <div class="rabuan-stat-num">8</div>
+    <div class="rabuan-stat-num">9</div>
     <div class="rabuan-stat-label">Plenary Keynote Speakers</div>
     <div class="rabuan-stat-meta">C-Suite, Cabinet &amp; Academic Chairs</div>
   </div>
   <div class="rabuan-stat-cell">
-    <div class="rabuan-stat-num">9</div>
+    <div class="rabuan-stat-num">10</div>
     <div class="rabuan-stat-label">Elite Institutions</div>
-    <div class="rabuan-stat-meta">BP BUMN, Danantara, Mandiri, IMD, Monash, ITB</div>
+    <div class="rabuan-stat-meta">BP BUMN, Danantara, Maybank, IMD, Monash, ITB</div>
   </div>
   <div class="rabuan-stat-cell">
     <div class="rabuan-stat-num">100%</div>
@@ -249,6 +249,48 @@ tags:
     <div class="rabuan-card-footer">
       <a href="2026-09-23-syamsul-infrastruktur" class="internal">
         <span>Buka Sesi Nation in Motion</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Session 2B: Datuk (Dr.) Nora Manaf -->
+  <div class="rabuan-card">
+    <div class="rabuan-card-top">
+      <span class="rabuan-inst-pill">Maybank &amp; Manaf Gardner</span>
+      <span class="rabuan-card-date">WED &middot; 16 SEP 2026</span>
+    </div>
+    <div class="rabuan-card-main">
+      <div class="rabuan-portrait-frame">
+        <div class="rabuan-portrait" title="Datuk (Dr.) Nora Manaf">
+          <div class="rabuan-portrait-ph">
+            <svg class="rabuan-portrait-svg" viewBox="0 0 90 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="45" cy="38" r="18" fill="currentColor" fill-opacity="0.16"/>
+              <path d="M15 108C15 80 27 66 45 66C63 66 75 80 75 108" stroke="currentColor" stroke-width="4" stroke-linecap="round" fill="currentColor" fill-opacity="0.10"/>
+            </svg>
+            <span class="rabuan-portrait-initials">NM</span>
+          </div>
+        </div>
+      </div>
+      <div class="rabuan-card-body">
+        <h3 class="rabuan-topic">
+          <a href="2026-09-16-nora-manaf-people-equation" class="internal">The Future of Work: The People Equation, Responsible Capitalism &amp; Leadership with Humanity</a>
+        </h3>
+        <div class="rabuan-speaker">
+          <a href="../entities/nora-manaf" class="internal">Datuk (Dr.) Nora Manaf</a>
+        </div>
+        <div class="rabuan-role">Former Group CHCO, Maybank (2008–2024) &amp; Chairman, Manaf Gardner Associates</div>
+        <div class="rabuan-themes">
+          <a href="../concepts/the-people-equation" class="rabuan-theme-tag internal">The People Equation</a>
+          <span class="rabuan-theme-tag">Responsible Capitalism</span>
+          <span class="rabuan-theme-tag">Maybank Transformation</span>
+          <span class="rabuan-theme-tag">Skills-Based Org</span>
+        </div>
+      </div>
+    </div>
+    <div class="rabuan-card-footer">
+      <a href="2026-09-16-nora-manaf-people-equation" class="internal">
+        <span>Buka Sesi The People Equation</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
       </a>
     </div>
