@@ -143,8 +143,38 @@ export async function runAggregation(targetDir) {
     }
 
     const isBuckinghamSession = /buckingham|2026-09-30/i.test(archiveDir)
+    const isPeopleMathSession = /people\s*math|2026-09-02-adh|2026-08-31/i.test(archiveDir)
 
-    if (isBuckinghamSession) {
+    if (isPeopleMathSession) {
+      Object.assign(entry, {
+        mentionsADH: /agus\s*dwi\s*handaya|\badh\b/i.test(text),
+        mentionsPPH: /\bpph\b|people\s*productivity.*happiness/i.test(text),
+        mentionsPDR: /\bpdr\b|people\s*development\s*role/i.test(text),
+        mentionsSEC: /\bsec\b|skill\s*(?:mapping|equation|excellence)/i.test(text),
+        mentionsTAL: /\btal\b|tough\s*(?:&|and|dan)?\s*agile\s*learner/i.test(text),
+        mentions3NIndividu:
+          /(?:nyerap.*ngulang.*ngerefleksi|3n\s*(?:individu|pembelajar|learning))/i.test(text),
+        mentions3NLeader: /(?:nagih.*nata.*nuntun|3n\s*(?:leader|pemimpin))/i.test(text),
+        mentionsMetaSkill: /meta\s*skill|\bms\b|connecting\s*the\s*dots|unlearn/i.test(text),
+        mentionsGivingFactors:
+          /giving\s*factor|receiving\s*factor|\bgr\b.*\brr\b|learning\s*energy/i.test(text),
+        mentionsSourceOfCharacter:
+          /(?:source\s*of\s*character|takut.*kebiasaan.*belief|fear.*habit.*belief)/i.test(text),
+        mentionsVbVp: /\bvb\b.*\bvp\b|kecepatan\s*belajar.*perubahan/i.test(text),
+        mentionsHumanHealth: /human\s*health|\bhh\b|kesehatan\s*(?:fisik|mental)/i.test(text),
+        mentionsHadjar: /hadjar|handjar/i.test(text),
+        mentionsWika: /\bwika\b|wijaya\s*karya/i.test(text),
+        mentionsTransformerLegacy: /transformer|legacy|warisan/i.test(text),
+        mentionsBlueOcean: /blue\s*ocean|red\s*ocean/i.test(text),
+        mentionsBIM: /\bbim\b|building\s*information\s*modeling|pt\s*pp|waskita/i.test(text),
+        mentionsCreateFuture:
+          /(?:menciptakan\s*masa\s*depan|create\s*(?:the\s*)?future|prediksi\s*masa\s*depan)/i.test(
+            text,
+          ),
+        mentionsDoTheBest: /do\s*the\s*best/i.test(text),
+        mentionsJujurAmanah: /(?:jujur.*amanah|berani\s*mencoba.*bertanggung\s*jawab)/i.test(text),
+      })
+    } else if (isBuckinghamSession) {
       Object.assign(entry, {
         mentionsBuckingham: /(?:buckingham|edward)/i.test(text),
         mentionsMinto: /(?:minto|pyramid\s*principle)/i.test(text),
@@ -229,42 +259,67 @@ export async function runAggregation(targetDir) {
   )
 
   const isBuckinghamSession = /buckingham|2026-09-30/i.test(archiveDir)
+  const isPeopleMathSession = /people\s*math|2026-09-02-adh|2026-08-31/i.test(archiveDir)
 
-  const frequencies = isBuckinghamSession
+  const frequencies = isPeopleMathSession
     ? {
-        buckingham: corpus.filter((c) => c.mentionsBuckingham).length,
-        mintoPyramid: corpus.filter((c) => c.mentionsMinto).length,
-        scqaFramework: corpus.filter((c) => c.mentionsSCQA).length,
-        meceRule: corpus.filter((c) => c.mentionsMECE).length,
-        blufAnswerFirst: corpus.filter((c) => c.mentionsBLUF).length,
-        ironTriangle: corpus.filter((c) => c.mentionsIronTriangle).length,
-        druckerCultureStrategy: corpus.filter((c) => c.mentionsDruckerQuote).length,
-        efficiencyVsEffectiveness: corpus.filter((c) => c.mentionsEfficiencyVsEffectiveness).length,
-        borobudurMetaphor: corpus.filter((c) => c.mentionsBorobudur).length,
-        irwanMeilano: corpus.filter((c) => c.mentionsMeilano).length,
-        riskFormula: corpus.filter((c) => c.mentionsRiskFormula).length,
-        whyNationsFail: corpus.filter((c) => c.mentionsWhyNationsFail).length,
-        twoMegatrends: corpus.filter((c) => c.mentionsTwoMegatrends).length,
-        turkeyIllusion: corpus.filter((c) => c.mentionsTurkeyIllusion).length,
-        vulnerabilityFastestLever: corpus.filter((c) => c.mentionsVulnerabilityLever).length,
-        trustIsCapacity: corpus.filter((c) => c.mentionsTrustCapacity).length,
-        fiveSimulationLessons: corpus.filter((c) => c.mentionsFiveSimulationLessons).length,
-        riskControlPrinciple: corpus.filter((c) => c.mentionsRiskControlPrinciple).length,
-        multiDimensionalInnovation: corpus.filter((c) => c.mentionsMultiDimensionalInnovation)
-          .length,
+        adhCited: corpus.filter((c) => c.mentionsADH).length,
+        pphEquation: corpus.filter((c) => c.mentionsPPH).length,
+        pdrEquation: corpus.filter((c) => c.mentionsPDR).length,
+        secSkillMapping: corpus.filter((c) => c.mentionsSEC).length,
+        toughAgileLearner: corpus.filter((c) => c.mentionsTAL).length,
+        threeNIndividu: corpus.filter((c) => c.mentions3NIndividu).length,
+        threeNLeader: corpus.filter((c) => c.mentions3NLeader).length,
+        metaSkill: corpus.filter((c) => c.mentionsMetaSkill).length,
+        givingVsReceiving: corpus.filter((c) => c.mentionsGivingFactors).length,
+        sourceOfCharacter: corpus.filter((c) => c.mentionsSourceOfCharacter).length,
+        vbVsVpVelocity: corpus.filter((c) => c.mentionsVbVp).length,
+        humanHealth: corpus.filter((c) => c.mentionsHumanHealth).length,
+        hadjarCited: corpus.filter((c) => c.mentionsHadjar).length,
+        wikaCited: corpus.filter((c) => c.mentionsWika).length,
+        transformerAndLegacy: corpus.filter((c) => c.mentionsTransformerLegacy).length,
+        blueVsRedOcean: corpus.filter((c) => c.mentionsBlueOcean).length,
+        bimAndDigitalConstruction: corpus.filter((c) => c.mentionsBIM).length,
+        createTheFuture: corpus.filter((c) => c.mentionsCreateFuture).length,
+        doTheBestMaxim: corpus.filter((c) => c.mentionsDoTheBest).length,
+        jujurAmanahTriad: corpus.filter((c) => c.mentionsJujurAmanah).length,
       }
-    : {
-        triangleOfSuccess: corpus.filter((c) => c.mentionsTriangle).length,
-        fiveC: corpus.filter((c) => c.mentions5C).length,
-        threeS: corpus.filter((c) => c.mentions3S).length,
-        threeV: corpus.filter((c) => c.mentions3V).length,
-        jfkQuote: corpus.filter((c) => c.mentionsJFK).length,
-        asymmetryRule: corpus.filter((c) => c.mentionsAsymmetry).length,
-        spheresOfLife: corpus.filter((c) => c.mentionsSpheresOfLife).length,
-        maturityDyad: corpus.filter((c) => c.mentionsMaturity).length,
-        serviceMindset: corpus.filter((c) => c.mentionsService).length,
-        listeningFirst: corpus.filter((c) => c.mentionsListening).length,
-      }
+    : isBuckinghamSession
+      ? {
+          buckingham: corpus.filter((c) => c.mentionsBuckingham).length,
+          mintoPyramid: corpus.filter((c) => c.mentionsMinto).length,
+          scqaFramework: corpus.filter((c) => c.mentionsSCQA).length,
+          meceRule: corpus.filter((c) => c.mentionsMECE).length,
+          blufAnswerFirst: corpus.filter((c) => c.mentionsBLUF).length,
+          ironTriangle: corpus.filter((c) => c.mentionsIronTriangle).length,
+          druckerCultureStrategy: corpus.filter((c) => c.mentionsDruckerQuote).length,
+          efficiencyVsEffectiveness: corpus.filter((c) => c.mentionsEfficiencyVsEffectiveness)
+            .length,
+          borobudurMetaphor: corpus.filter((c) => c.mentionsBorobudur).length,
+          irwanMeilano: corpus.filter((c) => c.mentionsMeilano).length,
+          riskFormula: corpus.filter((c) => c.mentionsRiskFormula).length,
+          whyNationsFail: corpus.filter((c) => c.mentionsWhyNationsFail).length,
+          twoMegatrends: corpus.filter((c) => c.mentionsTwoMegatrends).length,
+          turkeyIllusion: corpus.filter((c) => c.mentionsTurkeyIllusion).length,
+          vulnerabilityFastestLever: corpus.filter((c) => c.mentionsVulnerabilityLever).length,
+          trustIsCapacity: corpus.filter((c) => c.mentionsTrustCapacity).length,
+          fiveSimulationLessons: corpus.filter((c) => c.mentionsFiveSimulationLessons).length,
+          riskControlPrinciple: corpus.filter((c) => c.mentionsRiskControlPrinciple).length,
+          multiDimensionalInnovation: corpus.filter((c) => c.mentionsMultiDimensionalInnovation)
+            .length,
+        }
+      : {
+          triangleOfSuccess: corpus.filter((c) => c.mentionsTriangle).length,
+          fiveC: corpus.filter((c) => c.mentions5C).length,
+          threeS: corpus.filter((c) => c.mentions3S).length,
+          threeV: corpus.filter((c) => c.mentions3V).length,
+          jfkQuote: corpus.filter((c) => c.mentionsJFK).length,
+          asymmetryRule: corpus.filter((c) => c.mentionsAsymmetry).length,
+          spheresOfLife: corpus.filter((c) => c.mentionsSpheresOfLife).length,
+          maturityDyad: corpus.filter((c) => c.mentionsMaturity).length,
+          serviceMindset: corpus.filter((c) => c.mentionsService).length,
+          listeningFirst: corpus.filter((c) => c.mentionsListening).length,
+        }
 
   const summary = {
     totalFiles: corpus.length,
