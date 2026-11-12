@@ -103,6 +103,8 @@ The table below provides direct access to all active business frameworks and ana
 | **[[concepts/crisis-leadership-framework\|Crisis Leadership Framework & Tactical Decision Architecture]]**                                      | Cross-Curricular               | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
 | **[[concepts/the-people-equation\|The People Equation (Future of Work)]]**                                                                      | MK1 & MK6 & Rabuan             | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
 | **[[concepts/manufacturing-value-added\|Manufacturing Value Added (MVA) & Structural Industrial Transformation]]**                              | Rabuan & MK2 & MK4             | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
+| **[[concepts/agency-theory\|Agency Theory & Multi-Tiered State Ownership Governance]]**                                                         | Rabuan & MK1 & MK2 & MK4       | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
+| **[[concepts/soft-budget-constraint\|Soft Budget Constraint & Capital Discipline in State-Owned Enterprises]]**                                 | Rabuan & MK2 & MK4             | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
 
 ---
 
