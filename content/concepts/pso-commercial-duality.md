@@ -103,6 +103,15 @@ flowchart LR
 3. **Margin Harvesting in Commercial Segments**: Maximizing [[concepts/customer-perceived-value|customer-perceived value]] in competitive retail lines (commercial fertilizers, corporate treasury, specialized port terminals) to fund innovation and working capital buffers.
 4. **Transparent Contractual Governance**: Structuring PSO assignments as transparent service-level agreements (SLAs) with the state, defining exact volume parameters, delivery benchmarks, and interest compensation for fiscal payment delays.
 
+### Statutory Governance Separation: 1% Seri A Dwiwarna (BP BUMN) vs. 99% Seri B (BPI Danantara)
+
+Indonesia's 2025 state-enterprise legislative overhaul codified this dual-mandate boundary directly into corporate share structure:
+
+- **BP BUMN (Law No. 16 of 2025) — 1% Seri A Dwiwarna Golden Share**: Retains statutory veto authority over corporate charters, mergers, dissolutions, and public-service mandates—enforcing PSO delivery, parliamentary accountability (DPR RI), and state budget compensation contracts.
+- **[[entities/danantara|BPI Danantara]] (Law No. 1 of 2025) — 99% Seri B Commercial Equity**: Exercises commercial shareholder governance, M&A rationalization, capital reallocation, and dividend reinvestment—enforcing market $\text{ROIC}$ hurdle rates across commercial business lines without cross-subsidy distortion.
+
+As synthesized in **[[rabuan/2026-06-09-oskaria-bumn-transformation-danantara|Rabuan 2026-06-09: Dony Oskaria]]** _(reconstructed plenary dossier)_, this statutory split prevents commercial underperformance from hiding behind social mandates while ensuring public-service obligations remain explicitly contracted and transparently audited by **BPK**.
+
 ---
 
 ## 🔢 Micro-Numerical Toy Example: The Working Capital Squeeze

@@ -95,6 +95,7 @@ The 10 state-owned enterprises hosting P3MD Action Learning Capstones:
 - **[[entities/pt-kereta-commuter-indonesia|PT Kereta Commuter Indonesia (KAI Commuter)]]**: Curriculum Profile.
 - **[[entities/budhi-achmadi|Marsda TNI Dr. Budhi Achmadi, M.Sc.]]**: Asisten Strategi Panglima TNI (Staf Strategi Mabes TNI).
 - **[[entities/kusworo|Marsdya TNI (Purn) Kusworo, S.E., M.M.]]**: Kepala Badan Nasional Pencarian dan Pertolongan / BASARNAS (2023–2026).
+- **[[entities/dony-oskaria|Dony Oskaria]]**: Chief Operating Officer (COO), BPI Danantara.
 
 ---
 
