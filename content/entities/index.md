@@ -102,6 +102,7 @@ The 10 state-owned enterprises hosting P3MD Action Learning Capstones:
 - **[[entities/febriany-eddy|Febriany Eddy, S.E., M.B.A., CPA]]**: Managing Director Business 3, PT Danantara Asset Management.
 - **[[entities/muhammad-ali|Laksamana TNI Dr. Muhammad Ali, S.E., M.M., M.Tr.Opsla]]**: Kepala Staf TNI Angkatan Laut (KSAL).
 - **[[entities/sudaryono|Dr. Sudaryono, B.Eng., M.M., M.B.A.]]**: Wakil Menteri Pertanian Republik Indonesia (Wamentan RI).
+- **[[entities/zenxin-organic|Zenxin Organic (Zenxin Agri-Organic Food)]]**: Southeast Asian Organic Food Producer & Retailer.
 
 ---
 

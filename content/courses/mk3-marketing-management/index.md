@@ -31,8 +31,8 @@ tags:
       <span class="mk-ca-phone">&bull; 0812-1453-3663</span>
     </a>
     <div class="mk-exec-progress-pill">
-      <span>10 / 14 Weeks Live</span>
-      <span>&bull; 18 Satellite Guides</span>
+      <span>11 / 14 Weeks Live</span>
+      <span>&bull; 20 Satellite Guides</span>
     </div>
   </div>
 </div>
@@ -276,14 +276,18 @@ Strategic Marketing Dilemma &amp; Commercial Synthesis
 </div>
 
 <!-- Week 11 -->
-<div class="mk-week-row is-scheduled">
+<div class="mk-week-row">
 <div class="mk-week-badge-col">
 <span class="mk-week-num">W11</span>
-<span class="mk-week-status-pill status-scheduled">Scheduled</span>
+<span class="mk-week-status-pill status-ingested">Live</span>
 </div>
 <div class="mk-week-content-col">
 <div class="mk-week-title">
-Marketing Mix: Distribution Channels &amp; Digital Omnichannel Strategy
+<a href="courses/mk3-marketing-management/week-11/index">Marketing Mix: Place (Channel), Retailing, Wholesaling &amp; Digital Marketing</a>
+</div>
+<div class="mk-satellites">
+<a href="courses/mk3-marketing-management/week-11/case-zenxin-organic-digital-retail" class="mk-sat-pill sat-case"><span class="sat-icon">📄</span> Case: Zenxin Organic — Brick &amp; Mortar to Digital Retail</a>
+<a href="courses/mk3-marketing-management/week-11/assignment-pre-assignment-zenxin" class="mk-sat-pill sat-assign"><span class="sat-icon">✏️</span> Assignment: Zenxin Place &amp; Omnichannel Debrief</a>
 </div>
 </div>
 </div>

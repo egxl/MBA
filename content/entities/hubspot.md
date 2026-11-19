@@ -46,6 +46,11 @@ flowchart LR
   - **Marketing Mary**: Mid-market marketing director (26–100 employees), high Web 2.0 readiness, agency support, low monthly churn ($\sim 1.5\%$), and superior $\text{LTV} : \text{CAC}$ economics.
 - **Indonesian Market Context (2026–2029)**: The challenge of adapting Western B2B SaaS into the Indonesian SME (UMKM) landscape, where micro-firms lack digital capabilities, driving high onboarding churn unless serviced via local agency partners.
 
+### MK 3 (Marketing Management) Week 11: Zenxin Organic WooCommerce + HubSpot CRM Integration
+
+- **Curricular Sources**: `Zenxin Organic- From Brick and Mortar to Digital Retail.pdf` (`SMU-20-0047`) and [[courses/mk3-marketing-management/week-11/case-zenxin-organic-digital-retail|Zenxin Organic Case Dossier]].
+- **Omnichannel CRM Application**: [[entities/zenxin-organic|Zenxin Organic]] integrated its WordPress/WooCommerce storefront directly with HubSpot CRM and heatmap analytics to centralize customer records, segment buyers by interaction frequency and newsletter engagement, suppress redundant discount emails (`non-mailing list` rules), and track digital campaign conversion rates.
+
 ---
 
 ## 🏛️ Strategic Lenses Across Curriculum

@@ -108,6 +108,8 @@ The table below provides direct access to all active business frameworks and ana
 | **[[concepts/the-integrity-triangle\|The Integrity Triangle: Character Diagnostic Framework (Act, Intent, Response)]]**                         | Cross-Curricular               | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
 | **[[concepts/maritime-geostrategy-framework\|Maritime Geostrategy Framework & Archipelagic Defense-Economic Statecraft]]**                      | Cross-Curricular               | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
 | **[[concepts/reverse-engineering-leadership\|Reverse-Engineering Leadership & Audacious Strategic Benchmarks]]**                                | Cross-Curricular               | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
+| **[[concepts/digital-marketing-funnel\|Digital Marketing Funnel & Platform Ecosystem]]**                                                        | MK3 & MK6 & MK2                | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
+| **[[concepts/marketing-channel-architecture\|Marketing Channel Architecture & Omnichannel Distribution]]**                                      | MK3 & MK4 & MK2                | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
 
 ---
 

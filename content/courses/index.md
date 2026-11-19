@@ -106,8 +106,8 @@ Click any course card below to access its complete 14-week syllabus, weekly lect
       <div>
         <div class="course-card-header">
           <span class="course-code-badge mk3">MK 3</span>
-          <span class="course-meta-pill">10 / 14 Weeks Live</span>
-          <span class="course-meta-pill">18 Subpages</span>
+          <span class="course-meta-pill">11 / 14 Weeks Live</span>
+          <span class="course-meta-pill">20 Subpages</span>
           <span class="course-meta-pill">Core Course</span>
         </div>
         <div class="course-card-title">Marketing Management</div>
