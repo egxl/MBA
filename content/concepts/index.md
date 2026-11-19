@@ -110,6 +110,8 @@ The table below provides direct access to all active business frameworks and ana
 | **[[concepts/reverse-engineering-leadership\|Reverse-Engineering Leadership & Audacious Strategic Benchmarks]]**                                | Cross-Curricular               | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
 | **[[concepts/digital-marketing-funnel\|Digital Marketing Funnel & Platform Ecosystem]]**                                                        | MK3 & MK6 & MK2                | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
 | **[[concepts/marketing-channel-architecture\|Marketing Channel Architecture & Omnichannel Distribution]]**                                      | MK3 & MK4 & MK2                | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
+| **[[concepts/artificial-neural-network\|Artificial Neural Networks & Backpropagation]]**                                                        | MK6                            | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
+| **[[concepts/convolutional-neural-network\|Convolutional Neural Networks (CNN) & Transfer Learning]]**                                          | MK6                            | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
 
 ---
 

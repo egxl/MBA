@@ -31,8 +31,8 @@ tags:
       <span class="mk-ca-phone">&bull; 0818-0923-0368</span>
     </a>
     <div class="mk-exec-progress-pill is-partial">
-      <span>Weeks 08–10 Live (3/14)</span>
-      <span>&bull; 3 Satellite Guides</span>
+      <span>Weeks 08–11 Live (4/14)</span>
+      <span>&bull; 4 Satellite Guides</span>
     </div>
   </div>
 </div>
@@ -234,14 +234,17 @@ Comprehensive Applied Business Analytics Synthesis
 </div>
 
 <!-- Week 11 -->
-<div class="mk-week-row is-scheduled">
+<div class="mk-week-row">
 <div class="mk-week-badge-col">
 <span class="mk-week-num">W11</span>
-<span class="mk-week-status-pill status-scheduled">Scheduled</span>
+<span class="mk-week-status-pill status-ingested">Live</span>
 </div>
 <div class="mk-week-content-col">
 <div class="mk-week-title">
-Practical Big Data Technologies: Cloud Data Warehousing &amp; Data Pipelines
+<a href="courses/mk6-business-analytics/week-11/index">Deep Learning &amp; Neural Network Foundations</a>
+</div>
+<div class="mk-satellites">
+<a href="courses/mk6-business-analytics/week-11/assignment-deep-learning-concept-map" class="mk-sat-pill sat-assign"><span class="sat-icon">✏️</span> Assignment: Deep Learning Concept Map (Pre-Class Brief)</a>
 </div>
 </div>
 </div>
