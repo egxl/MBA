@@ -49,10 +49,11 @@ Where an organization over-indexing exclusively on exploitation ($\beta \to 0$) 
 
 ## 🏛️ Multi-Disciplinary Lenses Across the MBA Curriculum
 
-### 1. Organizational Behavior & Executive Trajectories (MK 1 & Rabuan)
+### 1. Organizational Behavior, Design & Executive Trajectories (MK 1 & Rabuan)
 
-- **Primary Source**: [[entities/ric-roi|Dr. Ric Roi]] (IMD C-Suite Leader AMBIDEX Model), James G. March (1991), O'Reilly & Tushman (2004).
+- **Primary Sources**: [[entities/ric-roi|Dr. Ric Roi]] (IMD C-Suite Leader AMBIDEX Model), [[entities/aurik-gustomo|Prof. Dr. Aurik Gustomo]] (SBM ITB Organizational Ambidexterity & [[concepts/organizational-health-index|OHI]] Archetypes), James G. March (1991), O'Reilly & Tushman (2004), Lerner & Zieris (2019).
 - **Core Mechanism**: Individual leaders must develop **cognitive ambidexterity**—the mental agility to switch between rigorous operational review (Level 2/3 front-line execution) and long-range strategic boundary expansion (Level 5 enterprise stewardship).
+- **Structural, Contextual & Design Alignment**: As synthesized by Prof. Aurik Gustomo (09 Sep 2026), _Exploitation_ demands vertical structure, centralization, narrow span of control, and the _Execution Edge_ archetype, whereas _Exploration_ requires flat/horizontal structure, decentralization, wide span of control, and _Market Focus_. Modern ambidextrous enterprises move beyond structural separation alone to combine **contextual ambidexterity** and **leadership dimensions**, anchored by [[concepts/organizational-health-index|Organizational Health Index (OHI)]] diagnostics.
 - **Cultural Shielding**: Structurally isolating exploratory innovation teams from corporate bureaucracy while maintaining senior executive cross-linkage to prevent the "corporate immune system" from starving new ventures.
 
 ### 2. Operations & Process Architecture (MK 4)
@@ -86,9 +87,12 @@ Where an organization over-indexing exclusively on exploitation ($\beta \to 0$) 
 
 ## 🔗 Contributing Sessions & References
 
-- **Rabuan Keynote**: [[rabuan/2026-10-14-ric-roi-impact-career|Rabuan 02: Making an Impact, Making a Career (Dr. Ric Roi)]]
-- **Featured Theorist**: [[entities/ric-roi|Dr. Ric Roi]]
+- **Rabuan Keynotes**:
+  - [[rabuan/2026-09-09-aurik-gustomo-ambidextrous|Rabuan: Driving Sustainable Business Growth through Organizational Ambidexterity (Prof. Dr. Aurik Gustomo)]]
+  - [[rabuan/2026-10-14-ric-roi-impact-career|Rabuan 07: Making an Impact, Making a Career (Dr. Ric Roi)]]
+- **Featured Theorists & Faculty**: [[entities/aurik-gustomo|Prof. Dr. Aurik Gustomo]] | [[entities/ric-roi|Dr. Ric Roi]]
 - **Related Mechanisms**:
+  - [[concepts/organizational-health-index|Organizational Health Index (OHI)]]
   - [[concepts/talent-density|Talent Density Power Law]]
   - [[concepts/purpose-to-impact|Purpose-to-Impact Planning]]
 - **Hub**: [[concepts/index|Knowledge Matrix]]

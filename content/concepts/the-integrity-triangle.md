@@ -104,5 +104,6 @@ Consider a BUMN subsidiary procurement committee where two junior managers viola
 ## 🔗 Integration in the P3MD & BUMN Curriculum
 
 - **[[rabuan/2026-11-12-operasi-integritas-soedirman|Operasi Integritas Soedirman]]**: Primary operational deployment of the Integrity Triangle during P3MD Tahap II adjudication ($D+10$ to $D+21$).
+- **[[rabuan/2026-06-12-amir-arief-moral-courage|Moral Courage & Moral Reasoning (Amir Arief / KPK)]]**: Fase I anti-corruption doctrine pairing individual moral courage with **[[concepts/fraud-pentagon-governance|Fraud Pentagon & Anti-Corruption Governance]]**.
 - **[[concepts/best-mind-best-heart|Best Mind and Best Heart]]**: Operationalizes the _Best Heart_ requirement—proving character reliability when unwatched.
 - **[[concepts/psychological-safety|Psychological Safety]]**: Explains why honest mistakes receive coaching while deliberate cover-ups face zero tolerance.

@@ -41,19 +41,19 @@ tags:
 
 <div class="rabuan-ledger">
   <div class="rabuan-stat-cell">
-    <div class="rabuan-stat-num">13</div>
+    <div class="rabuan-stat-num">14</div>
     <div class="rabuan-stat-label">Masterclasses Delivered</div>
     <div class="rabuan-stat-meta">Synchronized plenary series</div>
   </div>
   <div class="rabuan-stat-cell">
-    <div class="rabuan-stat-num">12</div>
+    <div class="rabuan-stat-num">13</div>
     <div class="rabuan-stat-label">Plenary Keynote Speakers</div>
     <div class="rabuan-stat-meta">C-Suite, Cabinet &amp; Flag Officers</div>
   </div>
   <div class="rabuan-stat-cell">
-    <div class="rabuan-stat-num">13</div>
+    <div class="rabuan-stat-num">14</div>
     <div class="rabuan-stat-label">Elite Institutions</div>
-    <div class="rabuan-stat-meta">BP BUMN, Danantara, TNI AL, Kementan, Pertamina, IMD</div>
+    <div class="rabuan-stat-meta">SBM ITB, BP BUMN, Danantara, KPK, TNI AL, Kementan, IMD</div>
   </div>
   <div class="rabuan-stat-cell">
     <div class="rabuan-stat-num">100%</div>
@@ -455,6 +455,47 @@ tags:
     <div class="rabuan-card-footer">
       <a href="2026-09-16-nora-manaf-people-equation" class="internal">
         <span>Buka Sesi The People Equation</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Session 09 Sep 2026 (Morning): Prof. Dr. Aurik Gustomo -->
+  <div class="rabuan-card">
+    <div class="rabuan-card-top">
+      <span class="rabuan-inst-pill">SBM ITB</span>
+      <span class="rabuan-card-date">WED &middot; 09 SEP 2026</span>
+    </div>
+    <div class="rabuan-card-main">
+      <div class="rabuan-portrait-frame">
+        <div class="rabuan-portrait" title="Prof. Dr. Aurik Gustomo">
+          <div class="rabuan-portrait-ph">
+            <svg class="rabuan-portrait-svg" viewBox="0 0 90 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="45" cy="38" r="18" fill="currentColor" fill-opacity="0.16"/>
+              <path d="M15 108C15 80 27 66 45 66C63 66 75 80 75 108" stroke="currentColor" stroke-width="4" stroke-linecap="round" fill="currentColor" fill-opacity="0.10"/>
+            </svg>
+            <span class="rabuan-portrait-initials">AG</span>
+          </div>
+        </div>
+      </div>
+      <div class="rabuan-card-body">
+        <h3 class="rabuan-topic">
+          <a href="2026-09-09-aurik-gustomo-ambidextrous" class="internal">Driving Sustainable Business Growth through Organizational Ambidexterity</a>
+        </h3>
+        <div class="rabuan-speaker">
+          <a href="../entities/aurik-gustomo" class="internal">Prof. Dr. Aurik Gustomo</a>
+        </div>
+        <div class="rabuan-role">Dean &amp; Professor of People Development, SBM ITB</div>
+        <div class="rabuan-themes">
+          <a href="../concepts/leadership-ambidexterity" class="rabuan-theme-tag internal">Ambidexterity</a>
+          <a href="../concepts/organizational-health-index" class="rabuan-theme-tag internal">OHI (33 Practices)</a>
+          <span class="rabuan-theme-tag">4 Org Archetypes</span>
+        </div>
+      </div>
+    </div>
+    <div class="rabuan-card-footer">
+      <a href="2026-09-09-aurik-gustomo-ambidextrous" class="internal">
+        <span>Buka Sesi Organizational Ambidexterity</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
       </a>
     </div>
@@ -888,6 +929,48 @@ tags:
     <div class="rabuan-card-footer">
       <a href="2026-06-22-kusworo-crisis-leadership" class="internal">
         <span>Buka Sesi Crisis Leadership</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Special Foundation Plenary: Amir Arief (KPK) -->
+  <div class="rabuan-card">
+    <div class="rabuan-card-top">
+      <span class="rabuan-inst-pill">KPK &middot; Mabes TNI-Kodiklat</span>
+      <span class="rabuan-card-date">FRI &middot; 12 JUN 2026</span>
+    </div>
+    <div class="rabuan-card-main">
+      <div class="rabuan-portrait-frame">
+        <div class="rabuan-portrait" title="Amir Arief, SST., SH., M.Si., Ak., CA, CFE.">
+          <div class="rabuan-portrait-ph">
+            <svg class="rabuan-portrait-svg" viewBox="0 0 90 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="45" cy="38" r="18" fill="currentColor" fill-opacity="0.16"/>
+              <path d="M15 108C15 80 27 66 45 66C63 66 75 80 75 108" stroke="currentColor" stroke-width="4" stroke-linecap="round" fill="currentColor" fill-opacity="0.10"/>
+            </svg>
+            <span class="rabuan-portrait-initials">AA</span>
+          </div>
+        </div>
+      </div>
+      <div class="rabuan-card-body">
+        <h3 class="rabuan-topic">
+          <a href="2026-06-12-amir-arief-moral-courage" class="internal">Moral Courage &amp; Moral Reasoning: Pencegahan Korupsi &amp; Integritas Kepemimpinan</a>
+        </h3>
+        <div class="rabuan-speaker">
+          <a href="../entities/amir-arief" class="internal">Amir Arief, SST., SH., M.Si., Ak., CA, CFE.</a>
+        </div>
+        <div class="rabuan-role">Direktur Sosialisasi dan Kampanye Antikorupsi, Komisi Pemberantasan Korupsi (KPK)</div>
+        <div class="rabuan-themes">
+          <span class="rabuan-theme-tag">Fase I &middot; Mabes TNI</span>
+          <a href="../concepts/fraud-pentagon-governance" class="rabuan-theme-tag internal">Fraud Pentagon</a>
+          <span class="rabuan-theme-tag">Gratifikasi &amp; LHKPN</span>
+          <span class="rabuan-theme-tag">Trisula KPK</span>
+        </div>
+      </div>
+    </div>
+    <div class="rabuan-card-footer">
+      <a href="2026-06-12-amir-arief-moral-courage" class="internal">
+        <span>Buka Sesi Moral Courage</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
       </a>
     </div>
