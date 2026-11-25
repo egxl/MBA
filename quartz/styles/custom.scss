@@ -1566,7 +1566,7 @@ body[data-slug="index"] {
   }
 }
 
-.socratica-stage {
+.portal-stage {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -1574,7 +1574,7 @@ body[data-slug="index"] {
   padding-bottom: 1.5rem;
 }
 
-.socratica-hero {
+.portal-hero {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
@@ -1583,7 +1583,7 @@ body[data-slug="index"] {
   margin: 0.25rem 0 1rem;
 }
 
-.socratica-hero-left {
+.portal-hero-left {
   flex: 1;
   min-width: 0;
   display: flex;
@@ -1591,8 +1591,8 @@ body[data-slug="index"] {
   justify-content: center;
 }
 
-.socratica-eyebrow,
-.socratica-kicker {
+.portal-eyebrow,
+.portal-kicker {
   margin: 0 0 0.45rem !important;
   font-family: var(--codeFont);
   font-size: 0.8rem;
@@ -1603,7 +1603,7 @@ body[data-slug="index"] {
   color: var(--portal-muted) !important;
 }
 
-.socratica-title {
+.portal-title {
   max-width: 980px;
   margin: 0 0 0.5rem !important;
   font-family: var(--headerFont);
@@ -1615,7 +1615,7 @@ body[data-slug="index"] {
   text-wrap: balance;
 }
 
-.socratica-intro {
+.portal-intro {
   max-width: 680px;
   margin: 0 !important;
   font-size: clamp(1rem, 1.35vw, 1.15rem);
@@ -1624,7 +1624,7 @@ body[data-slug="index"] {
   text-wrap: pretty;
 }
 
-.socratica-subnav {
+.portal-subnav {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.85rem;
@@ -1698,7 +1698,7 @@ body[data-slug="index"] {
   }
 }
 
-.socratica-section-heading {
+.portal-section-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1735,18 +1735,18 @@ body[data-slug="index"] {
   }
 }
 
-.socratica-section-heading-secondary {
+.portal-section-heading-secondary {
   margin-top: clamp(1.75rem, 3.5vh, 2.5rem);
 }
 
-.socratica-grid {
+.portal-grid {
   display: grid;
   gap: clamp(0.75rem, 1.1vw, 1rem);
   margin-bottom: 1.5rem;
   --card-uniform-height: 190px;
 }
 
-.socratica-grid-core {
+.portal-grid-core {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-auto-rows: var(--card-uniform-height, 190px);
   margin-bottom: 0;
@@ -1756,13 +1756,13 @@ body[data-slug="index"] {
   }
 }
 
-.socratica-grid-support {
+.portal-grid-support {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   max-width: 1000px;
   grid-auto-rows: var(--card-uniform-height, 190px);
 }
 
-.socratica-card {
+.portal-card {
   --card-ink: #1f2a24;
   --card-border: rgba(31, 42, 36, 0.12);
   --card-border-hover: rgba(31, 42, 36, 0.24);
@@ -1883,7 +1883,7 @@ body[data-slug="index"] {
 }
 
 :root[saved-theme="dark"] {
-  .socratica-card {
+  .portal-card {
     --card-ink: #f0ede5;
     --card-border: rgba(255, 255, 255, 0.09);
     --card-border-hover: rgba(255, 255, 255, 0.22);
@@ -1898,7 +1898,7 @@ body[data-slug="index"] {
 
 // Subtle Earthy Tonal fills (Scheme B).
 // Declared with high specificity so Quartz's wikilink styling cannot blank the background.
-body[data-slug="index"] a.socratica-card.internal {
+body[data-slug="index"] a.portal-card.internal {
   padding: clamp(1rem, 1.6vh, 1.35rem) clamp(0.95rem, 1.3vw, 1.35rem);
   border-radius: 12px;
   line-height: normal;
@@ -1929,7 +1929,7 @@ body[data-slug="index"] a.socratica-card.internal {
   }
 }
 
-:root[saved-theme="dark"] body[data-slug="index"] a.socratica-card.internal {
+:root[saved-theme="dark"] body[data-slug="index"] a.portal-card.internal {
   &.card-mk1 {
     background-color: #1d252e;
   }
@@ -1957,19 +1957,19 @@ body[data-slug="index"] a.socratica-card.internal {
 }
 
 @media (min-width: 1600px) {
-  .socratica-grid-core {
+  .portal-grid-core {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 1599px) and (min-width: 601px) {
-  .socratica-grid-core {
+  .portal-grid-core {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 800px) {
-  .socratica-hero {
+  .portal-hero {
     display: block;
     margin-bottom: 1.25rem;
   }
@@ -1984,20 +1984,20 @@ body[data-slug="index"] a.socratica-card.internal {
     padding: 1.25rem 1rem 3.5rem !important;
   }
 
-  .socratica-stage {
+  .portal-stage {
     display: block;
     padding-bottom: 0;
   }
 
-  .socratica-hero {
+  .portal-hero {
     margin-bottom: 1.25rem;
   }
 
-  .socratica-title {
+  .portal-title {
     font-size: clamp(2.2rem, 7.5vw, 2.85rem);
   }
 
-  .socratica-subnav {
+  .portal-subnav {
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
 
@@ -2007,26 +2007,26 @@ body[data-slug="index"] a.socratica-card.internal {
     }
   }
 
-  .socratica-section-heading {
+  .portal-section-heading {
     align-items: start;
     flex-direction: column;
     gap: 0.5rem;
     margin-bottom: 0.85rem;
   }
 
-  .socratica-section-heading-secondary {
+  .portal-section-heading-secondary {
     margin-top: 2.25rem;
   }
 
-  .socratica-grid-core,
-  .socratica-grid-support {
+  .portal-grid-core,
+  .portal-grid-support {
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
     max-width: none;
     gap: 0.75rem;
   }
 
-  .socratica-card {
+  .portal-card {
     height: auto;
     min-height: 120px;
     padding: 0.85rem 1rem 0.85rem 1.25rem;
@@ -2046,17 +2046,17 @@ body[data-slug="index"] a.socratica-card.internal {
     }
   }
 
-  body[data-slug="index"] a.socratica-card.internal {
+  body[data-slug="index"] a.portal-card.internal {
     padding: 0.85rem 1rem 0.85rem 1.25rem;
   }
 }
 
 @media (max-width: 390px) {
-  .socratica-subnav {
+  .portal-subnav {
     grid-template-columns: 1fr;
   }
 
-  .socratica-card {
+  .portal-card {
     grid-template-columns: minmax(0, 1fr) 68px;
     padding: 0.7rem 0.75rem 0.7rem 1rem;
 
@@ -2076,20 +2076,20 @@ body[data-slug="index"] a.socratica-card.internal {
     }
   }
 
-  body[data-slug="index"] a.socratica-card.internal {
+  body[data-slug="index"] a.portal-card.internal {
     padding: 0.7rem 0.75rem 0.7rem 1rem;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .socratica-card,
-  .socratica-card .card-character,
-  .socratica-subnav a {
+  .portal-card,
+  .portal-card .card-character,
+  .portal-subnav a {
     transition: none;
   }
 
-  .socratica-card:hover,
-  .socratica-card:hover .card-character {
+  .portal-card:hover,
+  .portal-card:hover .card-character {
     transform: none;
   }
 }

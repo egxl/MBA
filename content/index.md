@@ -9,13 +9,13 @@ tags:
   - curriculum
 ---
 
-<section class="socratica-stage">
+<section class="portal-stage">
 
-<div class="socratica-hero">
-  <div class="socratica-hero-left">
-    <p class="socratica-eyebrow">P3MD Batch I Soedirman</p>
-    <h1 class="socratica-title">What do you want to learn today?</h1>
-    <p class="socratica-intro">Select a core course to explore lecture notes, analytical frameworks, and case discussions, or browse program architecture below.</p>
+<div class="portal-hero">
+  <div class="portal-hero-left">
+    <p class="portal-eyebrow">P3MD Batch I Soedirman</p>
+    <h1 class="portal-title">What do you want to learn today?</h1>
+    <p class="portal-intro">Select a core course to explore lecture notes, analytical frameworks, and case discussions, or browse program architecture below.</p>
   </div>
   <!-- COHORT CREST CARD (Archived for future use - uncomment to display on hero right)
   <a href="easter-egg" class="cohort-crest-card-vertical" aria-label="Explore P3MD Batch I Soedirman Heraldry & Design Architecture">
@@ -31,15 +31,15 @@ tags:
   -->
 </div>
 
-<div class="socratica-section-heading">
+<div class="portal-section-heading">
   <h2>Core courses</h2>
   <a href="courses/">Browse the course hub <span aria-hidden="true">→</span></a>
 </div>
 
-<div class="socratica-grid socratica-grid-core">
+<div class="portal-grid portal-grid-core">
 
   <!-- CARD 1: MK 1 - Organizational Behaviour & Managing People -->
-  <a href="courses/mk1-organizational-behavior-managing-people" class="socratica-card card-mk1">
+  <a href="courses/mk1-organizational-behavior-managing-people" class="portal-card card-mk1">
     <div class="card-top">
       <span class="card-issue">MK 001</span>
       <div class="card-title">Organizational Behaviour &amp; Managing People</div>
@@ -50,7 +50,7 @@ tags:
   </a>
 
   <!-- CARD 2: MK 2 - Financial Management and Strategy -->
-  <a href="courses/mk2-financial-management-strategy" class="socratica-card card-mk2">
+  <a href="courses/mk2-financial-management-strategy" class="portal-card card-mk2">
     <div class="card-top">
       <span class="card-issue">MK 002</span>
       <div class="card-title">Financial Management and Strategy</div>
@@ -61,7 +61,7 @@ tags:
   </a>
 
   <!-- CARD 3: MK 3 - Marketing Management -->
-  <a href="courses/mk3-marketing-management" class="socratica-card card-mk3">
+  <a href="courses/mk3-marketing-management" class="portal-card card-mk3">
     <div class="card-top">
       <span class="card-issue">MK 003</span>
       <div class="card-title">Marketing Management</div>
@@ -72,7 +72,7 @@ tags:
   </a>
 
   <!-- CARD 4: MK 4 - Operations and Supply Chain Management -->
-  <a href="courses/mk4-operations-supply-chain-management" class="socratica-card card-mk4">
+  <a href="courses/mk4-operations-supply-chain-management" class="portal-card card-mk4">
     <div class="card-top">
       <span class="card-issue">MK 004</span>
       <div class="card-title">Operations and Supply Chain Management</div>
@@ -83,7 +83,7 @@ tags:
   </a>
 
   <!-- CARD 5: MK 5 - Problem Solving, Decision Making and Negotiation -->
-  <a href="courses/mk5-decision-making-negotiation" class="socratica-card card-mk5">
+  <a href="courses/mk5-decision-making-negotiation" class="portal-card card-mk5">
     <div class="card-top">
       <span class="card-issue">MK 005</span>
       <div class="card-title">Problem Solving, Decision Making and Negotiation</div>
@@ -94,7 +94,7 @@ tags:
   </a>
 
   <!-- CARD 6: MK 6 - Applied Business Analytics -->
-  <a href="courses/mk6-business-analytics" class="socratica-card card-mk6">
+  <a href="courses/mk6-business-analytics" class="portal-card card-mk6">
     <div class="card-top">
       <span class="card-issue">MK 006</span>
       <div class="card-title">Applied Business Analytics</div>
@@ -108,17 +108,17 @@ tags:
 
 </section>
 
-<div class="socratica-section-heading socratica-section-heading-secondary">
+<div class="portal-section-heading portal-section-heading-secondary">
   <div>
-    <p class="socratica-kicker">Beyond the core</p>
+    <p class="portal-kicker">Beyond the core</p>
     <h2>Additional learning</h2>
   </div>
 </div>
 
-<div class="socratica-grid socratica-grid-support">
+<div class="portal-grid portal-grid-support">
 
   <!-- CARD 7: Rabuan - Executive & Guest Lectures -->
-  <a href="rabuan/" class="socratica-card card-bonus">
+  <a href="rabuan/" class="portal-card card-bonus">
     <div class="card-top">
       <span class="card-issue">WEEKLY PLENARY</span>
       <div class="card-title">Rabuan: Executive &amp; Guest Lectures</div>
@@ -129,7 +129,7 @@ tags:
   </a>
 
   <!-- CARD 8: Action Learning Project (ALP) -->
-  <a href="program/action-learning-project" class="socratica-card card-alp">
+  <a href="program/action-learning-project" class="portal-card card-alp">
     <div class="card-top">
       <span class="card-issue">BUMN CAPSTONE</span>
       <div class="card-title">Action Learning (ALP)</div>
@@ -141,15 +141,15 @@ tags:
 
 </div>
 
-<div class="socratica-section-heading socratica-section-heading-secondary">
+<div class="portal-section-heading portal-section-heading-secondary">
   <div>
-    <p class="socratica-kicker">Program &amp; Governance</p>
+    <p class="portal-kicker">Program &amp; Governance</p>
     <h2>Program architecture</h2>
   </div>
   <a href="program/">Browse the program hub <span aria-hidden="true">→</span></a>
 </div>
 
-<div class="socratica-subnav">
+<div class="portal-subnav">
   <a href="program/">
     <span class="subnav-header">Program architecture <span aria-hidden="true">→</span></span>
     <span class="subnav-desc">Institutional overview, governance structure &amp; core design logic.</span>

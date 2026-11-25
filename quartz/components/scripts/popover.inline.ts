@@ -13,7 +13,7 @@ async function mouseEnterHandler(
   if (
     link.dataset.noPopover === "true" ||
     link.closest(
-      ".socratica-card, .socratica-subnav-item, .socratica-subnav, .socratica-grid, .course-card, .course-cards-list, .rabuan-card, .mk-portals-strip, [data-no-popover='true']",
+      ".portal-card, .portal-subnav-item, .portal-subnav, .portal-grid, .course-card, .course-cards-list, .rabuan-card, .mk-portals-strip, [data-no-popover='true']",
     )
   ) {
     return

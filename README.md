@@ -121,7 +121,7 @@ MBA/
 │   ├── assets/                 # Embedded media files and poster graphics
 │   ├── courses/                # Syllabi, lecture notes, case studies (MK 001 - MK 006)
 │   ├── program/                # Academic calendar, ALP blueprint, faculty directory
-│   └── index.md                # Portal home featuring Socratica-style course cards
+│   └── index.md                # Portal home featuring modular executive course cards
 ├── quartz/                     # Quartz engine, custom components, and layout logic
 │   ├── components/             # TSX components (HomeButton, Explorer, Graph, PageTitle)
 │   ├── plugins/                # Content transformers and static emitters

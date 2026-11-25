@@ -11,7 +11,6 @@ Want to see what Quartz can do? Here are some cool community gardens:
 - [Eilleen's Everything Notebook](https://quartz.eilleeenz.com/)
 - [Morrowind Modding Wiki](https://morrowind-modding.github.io/)
 - [Stanford CME 302 Numerical Linear Algebra](https://ericdarve.github.io/NLA/)
-- [Socratica Toolbox](https://toolbox.socratica.info/)
 - [A Pattern Language - Christopher Alexander (Architecture)](https://patternlanguage.cc/)
 - [Sideny's 3D Artist's Handbook](https://sidney-eliot.github.io/3d-artists-handbook/)
 - [Brandon Boswell's Garden](https://brandonkboswell.com)
