@@ -2,13 +2,16 @@ import sourceMapSupport from "source-map-support"
 sourceMapSupport.install(options)
 import path from "path"
 import { PerfTimer } from "./util/perf"
+import { existsSync } from "fs"
 import { rm } from "fs/promises"
 import { GlobbyFilterFunction, isGitIgnored } from "globby"
 import { styleText } from "util"
 import { parseMarkdown } from "./processors/parse"
 import { filterContent } from "./processors/filter"
 import { emitContent } from "./processors/emit"
+import { mergeLocaleOverlay } from "./processors/localeOverlay"
 import cfg from "../quartz.config"
+import { QuartzConfig } from "./cfg"
 import { FilePath, joinSegments, slugifyFilePath } from "./util/path"
 import chokidar from "chokidar"
 import { ProcessedContent } from "./plugins/vfile"
@@ -40,6 +43,67 @@ type BuildData = {
   contentMap: ContentMap
   changesSinceLastBuild: Record<FilePath, ChangeEvent["type"]>
   lastBuildMs: number
+}
+
+async function emitIndonesianLocale(ctx: BuildCtx, enFilteredContent: ProcessedContent[]) {
+  const { argv, cfg } = ctx
+  const posixContentDir = toPosixPath(argv.directory)
+  if (path.posix.basename(posixContentDir) !== "content") {
+    return
+  }
+
+  const parentDir = path.posix.dirname(posixContentDir)
+  const idContentDir = parentDir === "." ? "content-id" : path.posix.join(parentDir, "content-id")
+  if (!existsSync(idContentDir)) {
+    return
+  }
+
+  const idRelativeFiles = (
+    await glob("**/*.md", idContentDir, cfg.configuration.ignorePatterns)
+  ).sort()
+  const idCfg: QuartzConfig = {
+    ...cfg,
+    configuration: {
+      ...cfg.configuration,
+      locale: "id-ID",
+    },
+    plugins: {
+      ...cfg.plugins,
+      emitters: cfg.plugins.emitters.filter((emitter) => emitter.name !== "CustomOgImages"),
+    },
+  }
+
+  const idCtx: BuildCtx = {
+    buildId: ctx.buildId,
+    argv: {
+      ...argv,
+      output: joinSegments(argv.output, "id"),
+    },
+    cfg: idCfg,
+    allSlugs: ctx.allSlugs,
+    allFiles: ctx.allFiles,
+    incremental: false,
+    localeOverride: "id-ID",
+    contentDirectoryOverride: idContentDir,
+  }
+
+  const idFilePaths = idRelativeFiles.map((fp) => joinSegments(idContentDir, fp) as FilePath)
+  const parsedIdFiles = idFilePaths.length > 0 ? await parseMarkdown(idCtx, idFilePaths) : []
+  const filteredIdFiles = filterContent(idCtx, parsedIdFiles)
+  const mergedIdContent = mergeLocaleOverlay(
+    enFilteredContent,
+    filteredIdFiles,
+    cfg.configuration.locale,
+    "id-ID",
+  )
+
+  await emitContent(idCtx, mergedIdContent)
+  console.log(
+    styleText(
+      "green",
+      `Done emitting Indonesian locale (${filteredIdFiles.length}/${enFilteredContent.length} translated)`,
+    ),
+  )
 }
 
 async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
@@ -83,8 +147,13 @@ async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
 
   const parsedFiles = await parseMarkdown(ctx, filePaths)
   const filteredContent = filterContent(ctx, parsedFiles)
+  for (const [, file] of filteredContent) {
+    file.data.translationStatus = "source"
+    file.data.contentLocale = cfg.configuration.locale
+  }
 
   await emitContent(ctx, filteredContent)
+  await emitIndonesianLocale(ctx, filteredContent)
   console.log(
     styleText("green", `Done processing ${markdownPaths.length} files in ${perf.timeSince()}`),
   )
@@ -92,7 +161,7 @@ async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
 
   if (argv.watch) {
     ctx.incremental = true
-    return startWatching(ctx, mut, parsedFiles, clientRefresh)
+    return startWatching(ctx, mut, filteredContent, clientRefresh)
   }
 }
 
@@ -149,6 +218,41 @@ async function startWatching(
     ignoreInitial: true,
   })
 
+  const posixContentDir = toPosixPath(argv.directory)
+  const parentDir = path.posix.dirname(posixContentDir)
+  const idContentDir = parentDir === "." ? "content-id" : path.posix.join(parentDir, "content-id")
+  const idWatcher =
+    path.posix.basename(posixContentDir) === "content" && existsSync(idContentDir)
+      ? chokidar.watch(".", {
+          awaitWriteFinish: { stabilityThreshold: 250 },
+          persistent: true,
+          cwd: idContentDir,
+          ignoreInitial: true,
+        })
+      : null
+
+  if (idWatcher) {
+    const triggerIdRebuild = async () => {
+      const release = await mut.acquire()
+      try {
+        const processedFiles = filterContent(
+          ctx,
+          Array.from(contentMap.values())
+            .filter((file) => file.type === "markdown")
+            .map((file) => file.content),
+        )
+        await emitIndonesianLocale(ctx, processedFiles)
+        clientRefresh()
+      } finally {
+        release()
+      }
+    }
+    idWatcher
+      .on("add", () => void triggerIdRebuild())
+      .on("change", () => void triggerIdRebuild())
+      .on("unlink", () => void triggerIdRebuild())
+  }
+
   const changes: ChangeEvent[] = []
   watcher
     .on("add", (fp) => {
@@ -172,6 +276,9 @@ async function startWatching(
 
   return async () => {
     await watcher.close()
+    if (idWatcher) {
+      await idWatcher.close()
+    }
   }
 }
 
@@ -261,6 +368,10 @@ async function rebuild(changes: ChangeEvent[], clientRefresh: () => void, buildD
       .filter((file) => file.type === "markdown")
       .map((file) => file.content),
   )
+  for (const [, file] of processedFiles) {
+    file.data.translationStatus = "source"
+    file.data.contentLocale = cfg.configuration.locale
+  }
 
   let emittedFiles = 0
   for (const emitter of cfg.plugins.emitters) {
@@ -290,6 +401,7 @@ async function rebuild(changes: ChangeEvent[], clientRefresh: () => void, buildD
     }
   }
 
+  await emitIndonesianLocale(ctx, processedFiles)
   console.log(`Emitted ${emittedFiles} files to \`${argv.output}\` in ${perf.timeSince("rebuild")}`)
   console.log(styleText("green", `Done rebuilding in ${perf.timeSince()}`))
   changes.splice(0, numChangesInBuild)

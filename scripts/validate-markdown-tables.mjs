@@ -192,8 +192,9 @@ export function fixMarkdownTablesInFile(filePath) {
 /**
  * Scans and validates all markdown tables across content directory.
  */
-export function validateAllMarkdownTables(contentDir = "content") {
-  const files = getMarkdownFiles(contentDir)
+export function validateAllMarkdownTables(contentDir = ["content", "content-id"]) {
+  const dirs = Array.isArray(contentDir) ? contentDir : [contentDir]
+  const files = dirs.flatMap((dir) => getMarkdownFiles(dir))
   const allErrors = []
   let totalChecked = 0
 
@@ -210,7 +211,7 @@ export function validateAllMarkdownTables(contentDir = "content") {
 // CLI runner
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const shouldFix = process.argv.includes("--fix")
-  const files = getMarkdownFiles("content")
+  const files = ["content", "content-id"].flatMap((dir) => getMarkdownFiles(dir))
 
   if (shouldFix) {
     let fixedCount = 0
@@ -222,7 +223,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     console.log(`[TABLE FIX] Automatically repaired table syntax in ${fixedCount} file(s).`)
   }
 
-  const { totalChecked, allErrors } = validateAllMarkdownTables("content")
+  const { totalChecked, allErrors } = validateAllMarkdownTables(["content", "content-id"])
   if (allErrors.length > 0) {
     console.error(
       `\n❌ Markdown table validation failed with ${allErrors.length} error(s) across ${totalChecked} file(s):\n`,

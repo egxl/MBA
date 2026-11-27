@@ -1,24 +1,36 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import { portalI18n } from "../i18n/portal"
 // @ts-ignore
 import splitViewScript from "./scripts/splitview.inline"
 import splitViewStyle from "./styles/splitview.scss"
 
-const SplitView: QuartzComponent = (_props: QuartzComponentProps) => {
+const SplitView: QuartzComponent = ({ cfg }: QuartzComponentProps) => {
+  const p = portalI18n(cfg.locale)
   return (
     <>
       <div
         id="split-pane-divider"
         class="split-pane-divider"
         aria-hidden="true"
-        title="Drag to resize, double-click to reset (50%)"
+        title={p.splitView.dividerTitle}
       >
         <div class="split-pane-divider-handle" />
       </div>
-      <aside id="split-pane" class="split-pane" aria-label="Detail view" aria-hidden="true">
+      <aside
+        id="split-pane"
+        class="split-pane"
+        aria-label={p.splitView.detailViewAria}
+        aria-hidden="true"
+        data-loading-prefix={p.splitView.loadingPrefix}
+        data-error-title={p.splitView.loadErrorTitle}
+        data-error-body={p.splitView.loadErrorBody}
+        data-open-direct={p.splitView.openPageDirectly}
+        data-badges={JSON.stringify(p.splitView.badges)}
+      >
         <div class="split-pane-header">
           <div class="split-pane-header-left">
             <span class="split-pane-badge" id="split-pane-badge">
-              Concept
+              {p.splitView.defaultBadge}
             </span>
             <span class="split-pane-title" id="split-pane-title"></span>
           </div>
@@ -27,8 +39,8 @@ const SplitView: QuartzComponent = (_props: QuartzComponentProps) => {
               type="button"
               class="split-pane-btn"
               id="split-pane-back"
-              title="Previous in history"
-              aria-label="Previous in history"
+              title={p.splitView.backTitle}
+              aria-label={p.splitView.backTitle}
               disabled
             >
               <svg
@@ -49,8 +61,8 @@ const SplitView: QuartzComponent = (_props: QuartzComponentProps) => {
               type="button"
               class="split-pane-btn"
               id="split-pane-forward"
-              title="Next in history"
-              aria-label="Next in history"
+              title={p.splitView.forwardTitle}
+              aria-label={p.splitView.forwardTitle}
               disabled
             >
               <svg
@@ -71,8 +83,8 @@ const SplitView: QuartzComponent = (_props: QuartzComponentProps) => {
               type="button"
               class="split-pane-btn"
               id="split-pane-swap"
-              title="Swap sides"
-              aria-label="Swap sides"
+              title={p.splitView.swapTitle}
+              aria-label={p.splitView.swapTitle}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -96,8 +108,8 @@ const SplitView: QuartzComponent = (_props: QuartzComponentProps) => {
               type="button"
               class="split-pane-btn"
               id="split-pane-open-full"
-              title="Open full page"
-              aria-label="Open full page"
+              title={p.splitView.openFullTitle}
+              aria-label={p.splitView.openFullTitle}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -119,8 +131,8 @@ const SplitView: QuartzComponent = (_props: QuartzComponentProps) => {
               type="button"
               class="split-pane-btn split-pane-close"
               id="split-pane-close"
-              title="Close split view (Esc)"
-              aria-label="Close split view (Esc)"
+              title={p.splitView.closeTitle}
+              aria-label={p.splitView.closeTitle}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

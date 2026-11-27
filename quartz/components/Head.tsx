@@ -1,5 +1,6 @@
 import { i18n } from "../i18n"
 import { FullSlug, getFileExtension, joinSegments, pathToRoot } from "../util/path"
+import { buildAlternateAbsoluteUrl, buildPairedLocaleHref, getLocaleCode } from "../util/locale"
 import { CSSResourceToStyleElement, JSResourceToScriptElement } from "../util/resources"
 import { googleFontHref, googleFontSubsetHref } from "../util/theme"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
@@ -35,6 +36,13 @@ export default (() => {
       (e) => e.name === CustomOgImagesEmitterName,
     )
     const ogImageDefaultPath = `https://${cfg.baseUrl}/static/og-image.png`
+    const localeCode = getLocaleCode(cfg.locale)
+    const enAlternateUrl = buildAlternateAbsoluteUrl(cfg.baseUrl, fileData.slug!, "en")
+    const idAlternateUrl = buildAlternateAbsoluteUrl(cfg.baseUrl, fileData.slug!, "id")
+    const rootIdRedirectHref =
+      fileData.slug === "index" && localeCode === "en"
+        ? buildPairedLocaleHref("index" as FullSlug, "en")
+        : null
 
     return (
       <head>
@@ -103,6 +111,9 @@ export default (() => {
         <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
+        {enAlternateUrl && <link rel="alternate" hrefLang="en" href={enAlternateUrl} />}
+        {idAlternateUrl && <link rel="alternate" hrefLang="id" href={idAlternateUrl} />}
+        {rootIdRedirectHref && <meta name="p3md-id-redirect" content={rootIdRedirectHref} />}
 
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
         {js

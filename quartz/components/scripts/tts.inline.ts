@@ -111,13 +111,17 @@ function updateUI() {
 
   // Update track title
   if (trackTitle) {
-    trackTitle.textContent = session.activeTrackTitle || "No track selected"
+    trackTitle.textContent =
+      session.activeTrackTitle || shelf?.dataset.noTrack || "No track selected"
   }
 
   // Update play/pause button icon & label
   if (playBtn) {
-    playBtn.setAttribute("aria-label", isPlaying ? "Pause audio" : "Play audio")
-    playBtn.setAttribute("title", isPlaying ? "Pause audio" : "Play audio")
+    const playLabel = shelf?.dataset.playLabel || "Play audio"
+    const pauseLabel = shelf?.dataset.pauseLabel || "Pause audio"
+    const label = isPlaying ? pauseLabel : playLabel
+    playBtn.setAttribute("aria-label", label)
+    playBtn.setAttribute("title", label)
     const playIcon = playBtn.querySelector(".icon-play") as HTMLElement | null
     const pauseIcon = playBtn.querySelector(".icon-pause") as HTMLElement | null
     if (playIcon) playIcon.style.display = isPlaying ? "none" : "block"
@@ -132,9 +136,14 @@ function updateUI() {
   // Update voice gender button label
   if (voiceBtn) {
     const isFemale = session.voiceGender === "female"
-    voiceBtn.textContent = isFemale ? "♀ Female" : "♂ Male"
-    voiceBtn.setAttribute("title", `Voice: ${isFemale ? "Female" : "Male"}. Click to toggle.`)
-    voiceBtn.setAttribute("aria-label", `Voice: ${isFemale ? "Female" : "Male"}. Click to toggle.`)
+    voiceBtn.textContent = isFemale
+      ? shelf?.dataset.femaleLabel || "♀ Female"
+      : shelf?.dataset.maleLabel || "♂ Male"
+    const title = isFemale
+      ? shelf?.dataset.femaleTitle || "Voice: Female. Click to toggle."
+      : shelf?.dataset.maleTitle || "Voice: Male. Click to toggle."
+    voiceBtn.setAttribute("title", title)
+    voiceBtn.setAttribute("aria-label", title)
   }
 
   // Calculate elapsed seconds based on completed words
@@ -184,7 +193,12 @@ function speakCurrentChunk() {
   updateUI()
 
   const provider = getProvider(session.engine)
-  const docLang = document.documentElement.lang || document.body.dataset.lang || "en"
+  const articleEl = document.querySelector<HTMLElement>("article.popover-hint, article")
+  const docLang =
+    articleEl?.getAttribute("lang") ||
+    document.documentElement.lang ||
+    document.body.dataset.lang ||
+    "en"
   const lang = resolveSpeechLanguage(docLang)
 
   provider.speak(

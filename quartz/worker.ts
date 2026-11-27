@@ -17,9 +17,12 @@ export async function parseMarkdown(
   partialCtx: WorkerSerializableBuildCtx,
   fps: FilePath[],
 ): Promise<MarkdownContent[]> {
+  const effectiveCfg = partialCtx.localeOverride
+    ? { ...cfg, configuration: { ...cfg.configuration, locale: partialCtx.localeOverride } }
+    : cfg
   const ctx: BuildCtx = {
     ...partialCtx,
-    cfg,
+    cfg: effectiveCfg,
   }
   return await createFileParser(ctx, fps)(createMdProcessor(ctx))
 }
@@ -29,9 +32,12 @@ export function processHtml(
   partialCtx: WorkerSerializableBuildCtx,
   mds: MarkdownContent[],
 ): Promise<ProcessedContent[]> {
+  const effectiveCfg = partialCtx.localeOverride
+    ? { ...cfg, configuration: { ...cfg.configuration, locale: partialCtx.localeOverride } }
+    : cfg
   const ctx: BuildCtx = {
     ...partialCtx,
-    cfg,
+    cfg: effectiveCfg,
   }
   return createMarkdownParser(ctx, mds)(createHtmlProcessor(ctx))
 }

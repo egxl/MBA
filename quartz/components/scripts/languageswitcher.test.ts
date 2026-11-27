@@ -1,66 +1,45 @@
 import test, { describe } from "node:test"
 import assert from "node:assert"
+import {
+  applyLanguagePreference,
+  buildTargetHrefWithHash,
+  LANG_STORAGE_KEY,
+  resolveRootRedirectTarget,
+} from "./languageswitcher.helpers"
 
-interface MockWrapper {
-  classList: Set<string>
-  button: {
-    attributes: Map<string, string>
-  }
-  popover: {
-    attributes: Map<string, string>
-  }
-}
-
-function createMockWrapper(): MockWrapper {
-  const buttonAttrs = new Map<string, string>()
-  buttonAttrs.set("aria-expanded", "false")
-  buttonAttrs.set("aria-haspopup", "true")
-  buttonAttrs.set("aria-label", "Language Switcher (EN / ID) — Work in Progress")
-  buttonAttrs.set("title", "Language Switcher (EN / ID) — WIP")
-
-  const popoverAttrs = new Map<string, string>()
-  popoverAttrs.set("aria-hidden", "true")
-  popoverAttrs.set("role", "tooltip")
-
-  return {
-    classList: new Set<string>(),
-    button: { attributes: buttonAttrs },
-    popover: { attributes: popoverAttrs },
-  }
-}
-
-function openLanguageSwitcher(wrapper: MockWrapper) {
-  wrapper.classList.add("is-open")
-  wrapper.button.attributes.set("aria-expanded", "true")
-  wrapper.popover.attributes.set("aria-hidden", "false")
-}
-
-function closeLanguageSwitcher(wrapper: MockWrapper) {
-  wrapper.classList.delete("is-open")
-  wrapper.button.attributes.set("aria-expanded", "false")
-  wrapper.popover.attributes.set("aria-hidden", "true")
-}
-
-describe("language switcher state logic", () => {
-  test("initializes with collapsed popover and correct accessibility attributes", () => {
-    const mock = createMockWrapper()
-    assert.strictEqual(mock.classList.has("is-open"), false)
-    assert.strictEqual(mock.button.attributes.get("aria-expanded"), "false")
-    assert.strictEqual(mock.popover.attributes.get("aria-hidden"), "true")
-    assert.strictEqual(mock.button.attributes.get("aria-haspopup"), "true")
+describe("language switcher helpers", () => {
+  test("buildTargetHrefWithHash preserves URL hash without duplicating", () => {
+    assert.strictEqual(buildTargetHrefWithHash("./id/", "#core-pillars"), "./id/#core-pillars")
+    assert.strictEqual(buildTargetHrefWithHash("./id/", ""), "./id/")
+    assert.strictEqual(
+      buildTargetHrefWithHash("../../courses/#existing", "#new"),
+      "../../courses/#existing",
+    )
   })
 
-  test("toggles open state and updates ARIA attributes", () => {
-    const mock = createMockWrapper()
+  test("resolveRootRedirectTarget redirects only when meta content exists and savedLang is id", () => {
+    assert.strictEqual(
+      resolveRootRedirectTarget("./id/", "id", "?q=test", "#sec"),
+      "./id/?q=test#sec",
+    )
+    assert.strictEqual(resolveRootRedirectTarget("./id/", "en", "", ""), null)
+    assert.strictEqual(resolveRootRedirectTarget("./id/", null, "", ""), null)
+    assert.strictEqual(resolveRootRedirectTarget(null, "id", "", "#sec"), null)
+  })
 
-    openLanguageSwitcher(mock)
-    assert.strictEqual(mock.classList.has("is-open"), true)
-    assert.strictEqual(mock.button.attributes.get("aria-expanded"), "true")
-    assert.strictEqual(mock.popover.attributes.get("aria-hidden"), "false")
+  test("applyLanguagePreference stores valid target languages", () => {
+    const store = new Map<string, string>()
+    const mockStorage = {
+      setItem: (k: string, v: string) => store.set(k, v),
+    }
 
-    closeLanguageSwitcher(mock)
-    assert.strictEqual(mock.classList.has("is-open"), false)
-    assert.strictEqual(mock.button.attributes.get("aria-expanded"), "false")
-    assert.strictEqual(mock.popover.attributes.get("aria-hidden"), "true")
+    applyLanguagePreference(mockStorage, "id")
+    assert.strictEqual(store.get(LANG_STORAGE_KEY), "id")
+
+    applyLanguagePreference(mockStorage, "en")
+    assert.strictEqual(store.get(LANG_STORAGE_KEY), "en")
+
+    applyLanguagePreference(mockStorage, "fr")
+    assert.strictEqual(store.get(LANG_STORAGE_KEY), "en")
   })
 })

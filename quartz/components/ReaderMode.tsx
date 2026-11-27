@@ -3,11 +3,17 @@ import readerModeScript from "./scripts/readermode.inline"
 import styles from "./styles/readermode.scss"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { i18n } from "../i18n"
+import { portalI18n } from "../i18n/portal"
 import { classNames } from "../util/lang"
 
 const ReaderMode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
+  const p = portalI18n(cfg.locale)
   return (
-    <button class={classNames(displayClass, "readermode")}>
+    <button
+      class={classNames(displayClass, "readermode")}
+      data-on-label={p.controls.readerModeOn}
+      data-off-label={p.controls.readerModeOff}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"

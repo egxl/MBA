@@ -1,5 +1,7 @@
 import { FullSlug, resolveRelative } from "../util/path"
 import { QuartzPluginData } from "../plugins/vfile"
+import { ValidLocale } from "../i18n"
+import { portalI18n } from "../i18n/portal"
 
 export interface CourseOption {
   code: string
@@ -75,7 +77,12 @@ export function getCourseOptions(allFiles: QuartzPluginData[]): CourseOption[] {
   return Array.from(map.values()).sort((a, b) => a.number - b.number)
 }
 
-export function getWeekOptions(allFiles: QuartzPluginData[], courseSegment: string): WeekOption[] {
+export function getWeekOptions(
+  allFiles: QuartzPluginData[],
+  courseSegment: string,
+  locale?: ValidLocale,
+): WeekOption[] {
+  const p = portalI18n(locale)
   const map = new Map<number, WeekOption>()
   const escapedSegment = courseSegment.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
   const regex = new RegExp(
@@ -90,13 +97,13 @@ export function getWeekOptions(allFiles: QuartzPluginData[], courseSegment: stri
 
     if (match[2] && match[2].toLowerCase() === "mid") {
       const rawTitle = file.frontmatter?.title as string | undefined
-      let label = "Mid-Term Exam Dossier"
+      let label = p.courseSwitcher.midTermDefault
       if (rawTitle) {
         const cleaned = rawTitle
           .replace(/^(?:MK\s*\d+\s*)?Mid-Term(?:\s+Examination)?\s*[:–-]\s*/i, "")
           .trim()
         if (cleaned.length > 0) {
-          label = `Mid-Term: ${cleaned}`
+          label = `${p.courseSwitcher.midTermPrefix}: ${cleaned}`
         }
       }
 
@@ -112,12 +119,12 @@ export function getWeekOptions(allFiles: QuartzPluginData[], courseSegment: stri
     const weekNum = typeof file.frontmatter?.week === "number" ? file.frontmatter.week : parsedNum
     const pad = String(weekNum).padStart(2, "0")
 
-    let label = `Week ${pad}`
+    let label = `${p.courseSwitcher.weekPrefix} ${pad}`
     const rawTitle = file.frontmatter?.title as string | undefined
     if (rawTitle) {
       const cleaned = rawTitle.replace(/^Week\s*\d+\s*[:–-]\s*/i, "").trim()
       if (cleaned.length > 0) {
-        label = `Week ${pad}: ${cleaned}`
+        label = `${p.courseSwitcher.weekPrefix} ${pad}: ${cleaned}`
       }
     }
 
@@ -134,12 +141,13 @@ export function getWeekOptions(allFiles: QuartzPluginData[], courseSegment: stri
 export function getCurriculumMap(
   allFiles: QuartzPluginData[],
   currentSlug: FullSlug,
+  locale?: ValidLocale,
 ): CurriculumMap {
   const courses = getCourseOptions(allFiles)
   const map: CurriculumMap = {}
 
   for (const course of courses) {
-    const weeks = getWeekOptions(allFiles, course.segment)
+    const weeks = getWeekOptions(allFiles, course.segment, locale)
     map[course.segment.toLowerCase()] = {
       code: course.code,
       number: course.number,

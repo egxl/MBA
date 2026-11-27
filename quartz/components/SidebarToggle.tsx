@@ -1,15 +1,19 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
+import { portalI18n } from "../i18n/portal"
 
-const SidebarToggle: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
+const SidebarToggle: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
+  const p = portalI18n(cfg.locale)
   return (
     <button
       type="button"
       id="sidebar-left-toggle"
       class={classNames(displayClass, "sidebar-toggle-btn", "circle-button")}
-      aria-label="Collapse sidebar (Ctrl+\)"
+      aria-label={p.controls.collapseSidebar}
       aria-expanded="true"
-      title="Collapse sidebar (Ctrl+\)"
+      title={p.controls.collapseSidebar}
+      data-collapse-label={p.controls.collapseSidebar}
+      data-expand-label={p.controls.expandSidebar}
     >
       <svg
         class="sidebar-toggle-icon icon-collapse"

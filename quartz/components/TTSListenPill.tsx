@@ -1,9 +1,10 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
+import { portalI18n } from "../i18n/portal"
 import readingTime from "reading-time"
 import styles from "./styles/tts.scss"
 
-const TTSListenPill: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
+const TTSListenPill: QuartzComponent = ({ fileData, displayClass, cfg }: QuartzComponentProps) => {
   const text = fileData.text
   if (!text) return null
 
@@ -11,16 +12,17 @@ const TTSListenPill: QuartzComponent = ({ fileData, displayClass }: QuartzCompon
   const { words } = readingTime(text)
   if (words < 10) return null
 
+  const p = portalI18n(cfg.locale)
   const minutes = Math.ceil(words / 150)
-  const durationLabel = `${minutes} min audio`
+  const durationLabel = p.tts.minAudio(minutes)
 
   return (
     <div class={classNames(displayClass, "tts-track-selector-wrapper")}>
       <button
         type="button"
         class="tts-track-selector"
-        aria-label={`Listen to article (${durationLabel})`}
-        title="Listen to this article with Text-to-Speech"
+        aria-label={p.tts.listenArticleAria(durationLabel)}
+        title={p.tts.listenArticleTitle}
       >
         <svg
           class="tts-pill-icon"
@@ -32,7 +34,7 @@ const TTSListenPill: QuartzComponent = ({ fileData, displayClass }: QuartzCompon
           <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
           <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
         </svg>
-        <span class="tts-pill-label">Listen to article</span>
+        <span class="tts-pill-label">{p.tts.listenArticle}</span>
         <span class="tts-pill-duration">{`\u00B7 ${durationLabel}`}</span>
       </button>
     </div>

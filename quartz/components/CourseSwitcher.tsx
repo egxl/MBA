@@ -1,5 +1,6 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
+import { portalI18n } from "../i18n/portal"
 import {
   isCoursePage,
   extractCourseSegment,
@@ -36,6 +37,7 @@ export default (() => {
     fileData,
     allFiles,
     displayClass,
+    cfg,
   }: QuartzComponentProps) => {
     const currentSlug = fileData.slug ?? ""
     if (!isCoursePage(currentSlug)) {
@@ -47,9 +49,10 @@ export default (() => {
       return null
     }
 
+    const p = portalI18n(cfg.locale)
     const currentWeekNum = extractWeekNum(currentSlug)
     const courseOptions = getCourseOptions(allFiles)
-    const curriculumMap = getCurriculumMap(allFiles, fileData.slug!)
+    const curriculumMap = getCurriculumMap(allFiles, fileData.slug!, cfg.locale)
     const activeCourse = curriculumMap[currentCourseSegment.toLowerCase()]
     const activeWeeks = activeCourse?.weeks ?? []
     const hasWeeks = activeWeeks.length > 0
@@ -57,17 +60,17 @@ export default (() => {
     return (
       <nav
         class={classNames(displayClass, "course-switcher")}
-        aria-label="Course and week navigator"
+        aria-label={p.courseSwitcher.navAria}
       >
         <div class="course-switcher-item">
           <label for="course-switcher-mk" class="course-switcher-label">
-            Course
+            {p.courseSwitcher.courseLabel}
           </label>
           <div class="course-switcher-select-wrap">
             <select
               id="course-switcher-mk"
               class="course-switcher-select mk-select"
-              aria-label="Select course"
+              aria-label={p.courseSwitcher.selectCourseAria}
             >
               {courseOptions.map((course) => {
                 const isSelected =
@@ -91,16 +94,16 @@ export default (() => {
 
         <div class="course-switcher-item">
           <label for="course-switcher-week" class="course-switcher-label">
-            Week
+            {p.courseSwitcher.weekLabel}
           </label>
           <div class="course-switcher-select-wrap">
             <select
               id="course-switcher-week"
               class="course-switcher-select week-select"
-              aria-label="Select week"
+              aria-label={p.courseSwitcher.selectWeekAria}
             >
               <option value={activeCourse?.overviewHref ?? ""} selected={currentWeekNum === null}>
-                {hasWeeks ? "Course Overview" : "Course Overview (No weeks yet)"}
+                {hasWeeks ? p.courseSwitcher.overview : p.courseSwitcher.overviewNoWeeks}
               </option>
               {activeWeeks.map((week) => {
                 const isSelected = currentWeekNum === week.weekNum

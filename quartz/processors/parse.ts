@@ -8,6 +8,7 @@ import { MarkdownContent, ProcessedContent } from "../plugins/vfile"
 import { PerfTimer } from "../util/perf"
 import { read } from "to-vfile"
 import { FilePath, QUARTZ, slugifyFilePath } from "../util/path"
+import { toPosixPath } from "../util/glob"
 import path from "path"
 import workerpool, { Promise as WorkerPromise } from "workerpool"
 import { QuartzLogger } from "../util/log"
@@ -100,8 +101,10 @@ export function createFileParser(ctx: BuildCtx, fps: FilePath[]) {
         }
 
         // base data properties that plugins may use
-        file.data.filePath = file.path as FilePath
-        file.data.relativePath = path.posix.relative(argv.directory, file.path) as FilePath
+        const baseDir = toPosixPath(ctx.contentDirectoryOverride ?? argv.directory)
+        const posixFilePath = toPosixPath(file.path)
+        file.data.filePath = posixFilePath as FilePath
+        file.data.relativePath = path.posix.relative(baseDir, posixFilePath) as FilePath
         file.data.slug = slugifyFilePath(file.data.relativePath)
 
         const ast = processor.parse(file)
@@ -182,6 +185,8 @@ export async function parseMarkdown(ctx: BuildCtx, fps: FilePath[]): Promise<Pro
       allSlugs: ctx.allSlugs,
       allFiles: ctx.allFiles,
       incremental: ctx.incremental,
+      localeOverride: ctx.localeOverride,
+      contentDirectoryOverride: ctx.contentDirectoryOverride,
     }
 
     const textToMarkdownPromises: WorkerPromise<MarkdownContent[]>[] = []

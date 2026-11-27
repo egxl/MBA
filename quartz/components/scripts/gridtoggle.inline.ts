@@ -12,9 +12,12 @@ function updateGridButtons(grid: "on" | "off") {
   const isOff = grid === "off"
   const buttons = document.querySelectorAll<HTMLButtonElement>(".grid-toggle")
   buttons.forEach((btn) => {
+    const label = isOff
+      ? btn.dataset.enableLabel || "Enable background grid"
+      : btn.dataset.disableLabel || "Disable background grid"
     btn.setAttribute("aria-pressed", isOff ? "false" : "true")
-    btn.setAttribute("aria-label", isOff ? "Enable background grid" : "Disable background grid")
-    btn.setAttribute("title", isOff ? "Enable background grid" : "Disable background grid")
+    btn.setAttribute("aria-label", label)
+    btn.setAttribute("title", label)
   })
 }
 

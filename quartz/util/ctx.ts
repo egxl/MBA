@@ -1,4 +1,5 @@
 import { QuartzConfig } from "../cfg"
+import { ValidLocale } from "../i18n"
 import { QuartzPluginData } from "../plugins/vfile"
 import { FileTrieNode } from "./fileTrie"
 import { FilePath, FullSlug } from "./path"
@@ -29,6 +30,8 @@ export interface BuildCtx {
   allFiles: FilePath[]
   trie?: FileTrieNode<BuildTimeTrieData>
   incremental: boolean
+  localeOverride?: ValidLocale
+  contentDirectoryOverride?: string
 }
 
 export function trieFromAllFiles(allFiles: QuartzPluginData[]): FileTrieNode<BuildTimeTrieData> {

@@ -104,7 +104,7 @@ async function mouseEnterHandler(
       // Remove interactive or navigation components not suitable for hover previews
       html
         .querySelectorAll(
-          ".course-switcher, .tts-track-selector-wrapper, .breadcrumb-container, .mk-curriculum, .mk-governance-grid, .mk-portals-strip, .toc, .table-of-contents",
+          ".course-switcher, .translation-notice, .tts-track-selector-wrapper, .breadcrumb-container, .mk-curriculum, .mk-governance-grid, .mk-portals-strip, .toc, .table-of-contents",
         )
         .forEach((el) => el.remove())
 

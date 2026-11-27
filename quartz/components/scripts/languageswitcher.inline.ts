@@ -1,68 +1,56 @@
-let dismissTimeout: ReturnType<typeof setTimeout> | null = null
+import {
+  applyLanguagePreference,
+  buildTargetHrefWithHash,
+  LANG_STORAGE_KEY,
+  resolveRootRedirectTarget,
+} from "./languageswitcher.helpers"
+
+// Run root-only saved preference redirect before first paint
+try {
+  const idRedirectMeta = document.querySelector<HTMLMetaElement>('meta[name="p3md-id-redirect"]')
+  const savedLang =
+    typeof localStorage !== "undefined" ? localStorage.getItem(LANG_STORAGE_KEY) : null
+  const redirectTarget = resolveRootRedirectTarget(
+    idRedirectMeta?.getAttribute("content") ?? null,
+    savedLang,
+    window.location.search,
+    window.location.hash,
+  )
+  if (redirectTarget) {
+    window.location.replace(redirectTarget)
+  }
+} catch {
+  // Ignore redirect/storage errors in restricted contexts
+}
 
 function setupLanguageSwitcher() {
-  const wrappers = document.querySelectorAll<HTMLElement>(".language-switcher-wrapper")
+  const switchLinks = document.querySelectorAll<HTMLAnchorElement>(
+    ".language-switcher, .translation-notice-switch",
+  )
 
-  wrappers.forEach((wrapper) => {
-    const button = wrapper.querySelector<HTMLButtonElement>(".language-switcher")
-    const popover = wrapper.querySelector<HTMLElement>(".lang-popover")
-    if (!button || !popover) return
+  switchLinks.forEach((link) => {
+    const onSwitchClick = (e: MouseEvent) => {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) {
+        return
+      }
+      const targetLang = link.dataset.targetLang
+      applyLanguagePreference(typeof localStorage !== "undefined" ? localStorage : null, targetLang)
 
-    const open = () => {
-      wrapper.classList.add("is-open")
-      button.setAttribute("aria-expanded", "true")
-      popover.setAttribute("aria-hidden", "false")
-      wrapper.classList.add("pulse")
-      setTimeout(() => wrapper.classList.remove("pulse"), 350)
-
-      if (dismissTimeout) clearTimeout(dismissTimeout)
-      dismissTimeout = setTimeout(() => {
-        close()
-      }, 3200)
-    }
-
-    const close = () => {
-      wrapper.classList.remove("is-open")
-      button.setAttribute("aria-expanded", "false")
-      popover.setAttribute("aria-hidden", "true")
-      if (dismissTimeout) {
-        clearTimeout(dismissTimeout)
-        dismissTimeout = null
+      const rawHref = link.getAttribute("href")
+      if (!rawHref) return
+      const nextUrl = buildTargetHrefWithHash(rawHref, window.location.hash)
+      if (nextUrl !== rawHref) {
+        e.preventDefault()
+        window.location.assign(nextUrl)
       }
     }
 
-    const toggle = (e: MouseEvent) => {
-      e.stopPropagation()
-      if (wrapper.classList.contains("is-open")) {
-        close()
-      } else {
-        open()
-      }
+    link.addEventListener("click", onSwitchClick)
+    if (typeof window.addCleanup === "function") {
+      window.addCleanup(() => {
+        link.removeEventListener("click", onSwitchClick)
+      })
     }
-
-    const onOutsideClick = (e: MouseEvent) => {
-      if (!wrapper.contains(e.target as Node)) {
-        close()
-      }
-    }
-
-    const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && wrapper.classList.contains("is-open")) {
-        close()
-        button.focus()
-      }
-    }
-
-    button.addEventListener("click", toggle)
-    document.addEventListener("click", onOutsideClick)
-    document.addEventListener("keydown", onKeyDown)
-
-    window.addCleanup(() => {
-      button.removeEventListener("click", toggle)
-      document.removeEventListener("click", onOutsideClick)
-      document.removeEventListener("keydown", onKeyDown)
-      if (dismissTimeout) clearTimeout(dismissTimeout)
-    })
   })
 }
 

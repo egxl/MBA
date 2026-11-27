@@ -1,6 +1,7 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import style from "./styles/footer.scss"
 import { FullSlug, joinSegments, pathToRoot } from "../util/path"
+import { portalI18n } from "../i18n/portal"
 
 interface Options {
   links?: Record<string, string>
@@ -10,18 +11,17 @@ interface Options {
 }
 
 export default ((opts?: Options) => {
-  const Footer: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
+  const Footer: QuartzComponent = ({ fileData, displayClass, cfg }: QuartzComponentProps) => {
+    const p = portalI18n(cfg.locale)
     const links = opts?.links ?? {}
     const entries = Object.entries(links)
 
     const baseDir = pathToRoot((fileData?.slug ?? "") as FullSlug)
     const easterEggHref = joinSegments(baseDir, "easter-egg")
 
-    const creditTitle = opts?.title ?? "Made with love & caffeine."
+    const creditTitle = opts?.title ?? p.footer.creditTitle
     const creditAuthor = opts?.author ?? "2026 student 322"
-    const disclaimerText =
-      opts?.disclaimer ??
-      "Independent cohort knowledge base. Official course slides and faculty materials are the proprietary intellectual property of SBM ITB and are intentionally not hosted on this platform; content consists of student frameworks and synthesized notes."
+    const disclaimerText = opts?.disclaimer ?? p.footer.disclaimer
 
     return (
       <footer class={`site-footer ${displayClass ?? ""}`}>
@@ -30,11 +30,7 @@ export default ((opts?: Options) => {
             <div class="footer-credit-title">{creditTitle}</div>
             <div class="footer-credit-author">
               &copy;{" "}
-              <a
-                href={easterEggHref}
-                class="footer-author-link"
-                title="The P3MD Insignia: Design Story & Symbolism"
-              >
+              <a href={easterEggHref} class="footer-author-link" title={p.footer.authorTitle}>
                 {creditAuthor}
               </a>
             </div>

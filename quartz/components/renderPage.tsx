@@ -10,6 +10,7 @@ import { visit } from "unist-util-visit"
 import { Root, Element, ElementContent } from "hast"
 import { GlobalConfiguration } from "../cfg"
 import { i18n } from "../i18n"
+import { getLocaleCode } from "../util/locale"
 import { styleText } from "util"
 
 interface RenderComponents {
@@ -264,13 +265,15 @@ export function renderPage(
       <></>
     )
 
-  const lang = componentData.fileData.frontmatter?.lang ?? cfg.locale?.split("-")[0] ?? "en"
+  const localeCode = getLocaleCode(cfg.locale)
+  const lang = localeCode === "id" ? "id" : (componentData.fileData.frontmatter?.lang ?? "en")
   const direction = i18n(cfg.locale).direction ?? "ltr"
+  const translationStatus = componentData.fileData.translationStatus ?? "source"
 
   const doc = (
     <html lang={lang} dir={direction}>
       <Head {...componentData} />
-      <body data-slug={slug}>
+      <body data-slug={slug} data-locale={localeCode} data-translation-status={translationStatus}>
         <div id="quartz-root" class="page">
           <Header {...componentData}>
             {header.map((HeaderComponent) => (
