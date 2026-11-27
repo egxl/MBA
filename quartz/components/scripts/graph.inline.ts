@@ -17,6 +17,12 @@ import {
 import { Text, Graphics, Application, Container, Circle } from "pixi.js"
 import { Group as TweenGroup, Tween as Tweened } from "@tweenjs/tween.js"
 import { registerEscapeHandler, removeAllChildren } from "./util"
+import {
+  cullOverlappingLabels,
+  getLabelScale,
+  truncateLabel,
+  type LabelCandidate,
+} from "./graph.labels"
 import { FullSlug, SimpleSlug, getFullSlug, resolveRelative, simplifySlug } from "../../util/path"
 import { D3Config } from "../Graph"
 
@@ -48,9 +54,17 @@ type LinkRenderData = GraphicsInfo & {
   simulationData: LinkData
 }
 
+type NodeCategory = "course-root" | "lecture-hub" | "sub-note" | "tag" | "standard"
+
 type NodeRenderData = GraphicsInfo & {
   simulationData: NodeData
   label: Text
+  category: NodeCategory
+  degree: number
+  fullText: string
+  shortText: string
+  baseWidth: number
+  baseHeight: number
 }
 
 const localStorageKey = "graph-visited"
@@ -161,9 +175,7 @@ function getPrimaryCourseTag(d: NodeData): string | null {
   return null
 }
 
-function getNodeCategory(
-  d: NodeData,
-): "course-root" | "lecture-hub" | "sub-note" | "tag" | "standard" {
+function getNodeCategory(d: NodeData): NodeCategory {
   if (d.id.startsWith("tags/")) return "tag"
 
   const idLower = d.id.toLowerCase()
@@ -312,6 +324,12 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       })),
   }
 
+  const degreeMap = new Map<SimpleSlug, number>()
+  for (const l of graphData.links) {
+    degreeMap.set(l.source.id, (degreeMap.get(l.source.id) ?? 0) + 1)
+    degreeMap.set(l.target.id, (degreeMap.get(l.target.id) ?? 0) + 1)
+  }
+
   const width = graph.offsetWidth
   const height = Math.max(graph.offsetHeight, 250)
 
@@ -320,7 +338,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     .force("charge", forceManyBody().strength(-100 * repelForce))
     .force("center", forceCenter().strength(centerForce))
     .force("link", forceLink(graphData.links).distance(linkDistance))
-    .force("collide", forceCollide<NodeData>((n) => nodeRadius(n)).iterations(3))
+    .force("collide", forceCollide<NodeData>((n) => nodeRadius(n) * 1.8 + 4).iterations(3))
 
   const radius = (Math.min(width, height) / 2) * 0.8
   if (enableRadial) simulation.force("radial", forceRadial(radius).strength(0.2))
@@ -364,9 +382,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
 
   // Differentiate weekly lecture hub notes from sub-notes using node radius
   function nodeRadius(d: NodeData) {
-    const numLinks = graphData.links.filter(
-      (l) => l.source.id === d.id || l.target.id === d.id,
-    ).length
+    const numLinks = degreeMap.get(d.id) ?? 0
 
     const category = getNodeCategory(d)
     switch (category) {
@@ -384,6 +400,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     }
   }
 
+  let currentTransform = zoomIdentity
   let hoveredNodeId: string | null = null
   let hoveredNeighbours: Set<string> = new Set()
   const linkRenderData: LinkRenderData[] = []
@@ -447,45 +464,105 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     })
   }
 
-  function renderLabels() {
-    tweens.get("label")?.stop()
-    const tweenGroup = new TweenGroup()
+  const CATEGORY_PRIORITY: Record<NodeCategory, number> = {
+    "course-root": 400,
+    "lecture-hub": 300,
+    standard: 200,
+    "sub-note": 150,
+    tag: 50,
+  }
 
-    const defaultScale = 1 / scale
+  function updateLabels(immediate = false) {
+    tweens.get("label")?.stop()
+
+    const k = currentTransform.k
+    const defaultScale = getLabelScale(scale, k)
     const activeScale = defaultScale * 1.1
+    const scaleOpacity = Math.min(Math.max((k * opacityScale - 1) / 1.5, 0), 1)
+    const candidates: LabelCandidate[] = []
+
     for (const n of nodeRenderData) {
       const nodeId = n.simulationData.id
+      const isHovered = hoveredNodeId === nodeId
+      const isActive = hoveredNodeId !== null && n.active
 
-      if (hoveredNodeId === nodeId) {
+      n.label.text = isHovered ? n.fullText : n.shortText
+      n.label.zIndex = isHovered ? 2 : isActive ? 1 : 0
+
+      if (hoveredNodeId !== null && focusOnHover && !isActive && !isHovered) {
+        continue
+      }
+      if (!isHovered && !isActive && n.category === "tag" && nodeId !== slug && k < 1.5) {
+        continue
+      }
+      if (!isHovered && !isActive && scaleOpacity <= 0) {
+        continue
+      }
+
+      const x = n.simulationData.x
+      const y = n.simulationData.y
+      if (x === undefined || y === undefined) continue
+
+      const labelScale = isHovered ? activeScale : defaultScale
+      const screenScale = labelScale * k
+      const labelWidth = isHovered ? n.label.getLocalBounds().width : n.baseWidth
+      const priority = isHovered
+        ? 10_000
+        : (isActive ? 5_000 : 0) +
+          (nodeId === slug ? 1_000 : 0) +
+          CATEGORY_PRIORITY[n.category] +
+          n.degree
+
+      candidates.push({
+        id: nodeId,
+        x: (x + width / 2) * k + currentTransform.x,
+        y: (y + height / 2) * k + currentTransform.y,
+        width: labelWidth * screenScale,
+        height: n.baseHeight * screenScale,
+        priority,
+        pinned: isHovered,
+      })
+    }
+
+    const visibleIds = cullOverlappingLabels(candidates, { width, height })
+    const tweenGroup = immediate ? null : new TweenGroup()
+
+    for (const n of nodeRenderData) {
+      const nodeId = n.simulationData.id
+      const isHovered = hoveredNodeId === nodeId
+      const isActive = hoveredNodeId !== null && n.active
+      const targetScale = isHovered ? activeScale : defaultScale
+      const targetAlpha = !visibleIds.has(nodeId) ? 0 : isHovered || isActive ? 1 : scaleOpacity
+
+      if (tweenGroup) {
         tweenGroup.add(
           new Tweened<Text>(n.label).to(
             {
-              alpha: 1,
-              scale: { x: activeScale, y: activeScale },
+              alpha: targetAlpha,
+              scale: { x: targetScale, y: targetScale },
             },
             100,
           ),
         )
       } else {
-        tweenGroup.add(
-          new Tweened<Text>(n.label).to(
-            {
-              alpha: n.label.alpha,
-              scale: { x: defaultScale, y: defaultScale },
-            },
-            100,
-          ),
-        )
+        n.label.alpha = targetAlpha
+        n.label.scale.set(targetScale, targetScale)
       }
     }
 
-    tweenGroup.getAll().forEach((tw) => tw.start())
-    tweens.set("label", {
-      update: tweenGroup.update.bind(tweenGroup),
-      stop() {
-        tweenGroup.getAll().forEach((tw) => tw.stop())
-      },
-    })
+    if (tweenGroup) {
+      tweenGroup.getAll().forEach((tw) => tw.start())
+      tweens.set("label", {
+        update: tweenGroup.update.bind(tweenGroup),
+        stop() {
+          tweenGroup.getAll().forEach((tw) => tw.stop())
+        },
+      })
+    }
+  }
+
+  function renderLabels() {
+    updateLabels(false)
   }
 
   function renderNodes() {
@@ -538,36 +615,44 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   const stage = app.stage
   stage.interactive = false
 
-  const labelsContainer = new Container<Text>({ zIndex: 3, isRenderGroup: true })
+  const labelsContainer = new Container<Text>({
+    zIndex: 3,
+    isRenderGroup: true,
+    sortableChildren: true,
+  })
   const nodesContainer = new Container<Graphics>({ zIndex: 2, isRenderGroup: true })
   const linkContainer = new Container<Graphics>({ zIndex: 1, isRenderGroup: true })
   stage.addChild(nodesContainer, labelsContainer, linkContainer)
 
   for (const n of graphData.nodes) {
     const nodeId = n.id
+    const category = getNodeCategory(n)
+    const degree = degreeMap.get(nodeId) ?? 0
+    const fullText = n.text
+    const shortText = truncateLabel(fullText)
 
     const label = new Text({
       interactive: false,
       eventMode: "none",
-      text: n.text,
+      text: shortText,
       alpha: 0,
       anchor: { x: 0.5, y: 1.2 },
       style: {
         fontSize: fontSize * 15,
-        fill: "#ffffff",
+        fill: computedStyleMap["--dark"] || "#2D2B28",
         fontFamily: computedStyleMap["--headerFont"],
         fontWeight: "600",
         stroke: {
-          color: "#000000",
-          width: 3.5,
+          color: computedStyleMap["--light"] || "#FAF8F5",
+          width: 3,
           join: "round",
         },
       },
       resolution: window.devicePixelRatio * 4,
     })
-    label.scale.set(1 / scale)
+    label.scale.set(getLabelScale(scale, currentTransform.k))
+    const bounds = label.getLocalBounds()
 
-    let oldLabelOpacity = 0
     const isTagNode = nodeId.startsWith("tags/")
     const isCurrent = nodeId === slug
     const nodeCol = color(n)
@@ -584,14 +669,12 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       .fill({ color: isTagNode ? computedStyleMap["--light"] : nodeCol })
       .on("pointerover", (e) => {
         updateHoverInfo(e.target.label)
-        oldLabelOpacity = label.alpha
         if (!dragging) {
           renderPixiFromD3()
         }
       })
       .on("pointerleave", () => {
         updateHoverInfo(null)
-        label.alpha = oldLabelOpacity
         if (!dragging) {
           renderPixiFromD3()
         }
@@ -613,6 +696,12 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       color: nodeCol,
       alpha: 1,
       active: false,
+      category,
+      degree,
+      fullText,
+      shortText,
+      baseWidth: bounds.width,
+      baseHeight: bounds.height,
     }
 
     nodeRenderData.push(nodeRenderDatum)
@@ -633,7 +722,6 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     linkRenderData.push(linkRenderDatum)
   }
 
-  let currentTransform = zoomIdentity
   if (enableDrag) {
     select<HTMLCanvasElement, NodeData | undefined>(app.canvas).call(
       drag<HTMLCanvasElement, NodeData | undefined>()
@@ -687,32 +775,34 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
           [0, 0],
           [width, height],
         ])
-        .scaleExtent([0.25, 4])
+        .scaleExtent([0.2, 8])
         .on("zoom", ({ transform }) => {
           currentTransform = transform
           stage.scale.set(transform.k, transform.k)
           stage.position.set(transform.x, transform.y)
-
-          // zoom adjusts opacity of labels too
-          const scale = transform.k * opacityScale
-          let scaleOpacity = Math.max((scale - 1) / 3.75, 0)
-          const activeNodes = nodeRenderData.filter((n) => n.active).flatMap((n) => n.label)
-
-          for (const label of labelsContainer.children) {
-            if (!activeNodes.includes(label)) {
-              label.alpha = scaleOpacity
-            }
-          }
+          updateLabels(true)
         }),
     )
   }
+
+  let lastLabelTickTime = 0
+  simulation
+    .on("tick", () => {
+      if (currentTransform.k > 1 && performance.now() - lastLabelTickTime > 80) {
+        lastLabelTickTime = performance.now()
+        updateLabels(true)
+      }
+    })
+    .on("end", () => {
+      updateLabels(true)
+    })
 
   let stopAnimation = false
   function animate(time: number) {
     if (stopAnimation) return
     for (const n of nodeRenderData) {
       const { x, y } = n.simulationData
-      if (!x || !y) continue
+      if (x === undefined || y === undefined) continue
       n.gfx.position.set(x + width / 2, y + height / 2)
       if (n.label) {
         n.label.position.set(x + width / 2, y + height / 2)
@@ -736,6 +826,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   requestAnimationFrame(animate)
   return () => {
     stopAnimation = true
+    simulation.stop()
     app.destroy()
   }
 }
