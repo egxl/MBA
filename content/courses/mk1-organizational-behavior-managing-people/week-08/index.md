@@ -20,7 +20,7 @@ tags:
 >
 > - **Course:** MK1 Organizational Behaviour & Managing People — Week 08
 > - **Teaching Team:** Dr. Ir. Madju Yuni Ros Bangun, Muhammad Yorga Permana, Ph.D., Widhyawan Prawiraatmadja, Ph.D., Yudo Anggoro, Ph.D.
-> - **Primary Curricular Spine:** `archive/courses/mk1/week-08/Week 8-Student Version-People & Strategy-Human Capital as Competitive Advantage Rev.01.pdf`
+> - **Primary Curricular Spine:** [`Week 8-Student Version-People & Strategy-Human Capital as Competitive Advantage Rev.01.pdf`](https://drive.google.com/file/d/1sy3pC4LPzm71-ZBtsxCQ4p0kZtCf8GTw/view?usp=classroom_web&authuser=1)
 > - **Direct Satellites & Problem Sets:**
 >   - [[courses/mk1-organizational-behavior-managing-people/week-08/case-general-motors-mary-barra-ev|Case Study: General Motors — Mary Barra's Leadership in the Electric Vehicle Era (Ivey W31010)]]
 >   - [[courses/mk1-organizational-behavior-managing-people/week-08/reading-dave-ulrich-new-mandate-hr|Academic Reading: A New Mandate for Human Resources (Dave Ulrich, 1998)]]

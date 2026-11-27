@@ -21,7 +21,7 @@ tags:
 > - **Academic Host:** SBM ITB — _Direktorat Pendidikan Profesional Berkelanjutan_
 > - **Lead Lecturer:** Dr. Eng. Manahan Siallagan
 > - **Teaching Team:** Dr. Shimaditya Nuraeni, M. Apriandito Arya Saputra, MBA, Bagus Rullym, MM, Tyas Larassati
-> - **Primary Curricular Spine:** `archive/courses/mk6/week-09/W9_Operations_Analytics.pdf` (SBM ITB Master Deck)
+> - **Primary Curricular Spine:** [`W9_Operations_Analytics.pdf`](https://drive.google.com/file/d/1zGHNL3zLHgVqxsYOXI4XZ_CBh6-sBJxn/view?usp=classroom_web&authuser=1) (SBM ITB Master Deck)
 > - **Direct Satellites & Problem Sets:**
 >   - [[courses/mk6-business-analytics/week-09/assignment-flour-supplier-simulation|Cohort Pre-Class Brief: Flour Supplier Simulation & Stochastic Operations Analytics]]
 

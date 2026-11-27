@@ -22,8 +22,8 @@ tags:
 > - **Academic Host:** SBM ITB — _Direktorat Pendidikan Profesional Berkelanjutan_
 > - **Lead Faculty:** Dr. Eng. Manahan Siallagan
 > - **Teaching Team:** Dr. Shimaditya Nuraeni, M. Apriandito Arya Saputra, MBA, Bagus Rullym, MM, Tyas Larassati
-> - **Primary Curricular Spine:** `archive/courses/mk6/week-10/W10_Big_Data_Analytics_tanpa_kunci.pdf`
-> - **Accompanying Assignment:** `archive/courses/mk6/week-10/10-assignment.pdf` & `archive/courses/mk6/week-10/posts.xlsx`
+> - **Primary Curricular Spine:** [`W10_Big_Data_Analytics_tanpa_kunci.pdf`](https://drive.google.com/file/d/1ddWhy0CoXBH8ywm8koht-jmNg2bhih4u/view?usp=classroom_web&authuser=1)
+> - **Accompanying Assignment:** [`10-assignment.pdf`](https://drive.google.com/file/d/1J9z7yJlrJlmnfAg1ob_E1dPsx95ux6-5/view?usp=classroom_web&authuser=1) & [`posts.xlsx`](https://drive.google.com/file/d/16MkwKGeLnYeZg7x6sU0dTZpbPwzG-frq/view?usp=classroom_web&authuser=1)
 > - **Foundational Literature:**
 >   - Bing Liu (2020), _Sentiment Analysis: Mining Opinions, Sentiments, and Emotions_, Cambridge University Press.
 >   - Christopher D. Manning, Prabhakar Raghavan, & Hinrich Schütze (2008), _Introduction to Information Retrieval_, Cambridge University Press.

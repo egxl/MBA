@@ -474,13 +474,13 @@ The foundational marketing models analyzed in this lecture were tested through t
 
 ## 14. Primary Source Media & Digital Archives
 
-| Material Title                           |                Media Type                | Direct Repository Reference                                             |
-| :--------------------------------------- | :--------------------------------------: | :---------------------------------------------------------------------- |
-| **Foundations: Creating Customer Value** |       Lecture Slide Deck (`.pdf`)        | `raw/courses/mk3/week-01/[P3MD] Week 1-MK3.pdf`                         |
-| **Week 1 Pre-Assignment Prompt**         |        Assignment Prompt (`.pdf`)        | `raw/courses/mk3/week-01/[P3MD] Week 1-MK3 -Pre Assignment.pdf`         |
-| **F9 (Class F / Syndicate 9) Analysis**  | Reference Deliverable (`.pdf` / `.docx`) | `raw/courses/mk3/week-01/Final_Group 9 - Pre-Assignment Week 1_MK3.pdf` |
-| **Portal Maintainer Research Synthesis** |         Research Notes (`.pdf`)          | `raw/courses/mk3/week-01/Havergal_Week1-MK3_Pre-Assignment.pdf`         |
-| **Catatan Kuliah MM5001 Week 1**         |          Class Notes (`.docx`)           | `raw/courses/mk3/week-01/Catatan Week 1 Marketing Management.docx`      |
+| Material Title                           |                Media Type                | Direct Repository Reference                                                                                                                    |
+| :--------------------------------------- | :--------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Foundations: Creating Customer Value** |       Lecture Slide Deck (`.pdf`)        | [`[P3MD] Week 1-MK3.pdf`](https://drive.google.com/file/d/1NassHOr27MQiKIcSIyt4CVfk4jLpTTys/view?usp=classroom_web&authuser=1)                 |
+| **Week 1 Pre-Assignment Prompt**         |        Assignment Prompt (`.pdf`)        | [`[P3MD] Week 1-MK3 -Pre Assignment.pdf`](https://drive.google.com/file/d/1KkkXKg034huf5fU9MDSBRfDRj7sQMrQT/view?usp=classroom_web&authuser=1) |
+| **F9 (Class F / Syndicate 9) Analysis**  | Reference Deliverable (`.pdf` / `.docx`) | `raw/courses/mk3/week-01/Final_Group 9 - Pre-Assignment Week 1_MK3.pdf`                                                                        |
+| **Portal Maintainer Research Synthesis** |         Research Notes (`.pdf`)          | `raw/courses/mk3/week-01/Havergal_Week1-MK3_Pre-Assignment.pdf`                                                                                |
+| **Catatan Kuliah MM5001 Week 1**         |          Class Notes (`.docx`)           | `raw/courses/mk3/week-01/Catatan Week 1 Marketing Management.docx`                                                                             |
 
 ---
 

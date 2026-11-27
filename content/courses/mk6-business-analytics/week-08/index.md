@@ -21,7 +21,7 @@ tags:
 > - **Academic Host:** SBM ITB — _Direktorat Pendidikan Profesional Berkelanjutan_
 > - **Lead Lecturer:** Dr. Eng. Manahan Siallagan
 > - **Teaching Team:** Dr. Shimaditya Nuraeni, M. Apriandito Arya Saputra, MBA, Bagus Rullym, MM, Tyas Larassati
-> - **Primary Curricular Spine:** `archive/courses/mk6/week-08/W8_People_Analytics.pptx` (SBM ITB Master Deck)
+> - **Primary Curricular Spine:** [`W8_People_Analytics.pptx`](https://drive.google.com/file/d/1BXJlFU4VOLIJ8FZBe8EztKuTVl90hjze/view?usp=classroom_web&authuser=1) (SBM ITB Master Deck)
 > - **Direct Satellites & Problem Sets:**
 >   - [[courses/mk6-business-analytics/week-08/assignment-people-analytics-ona|Post-Class Debrief: Hand-Calculated Organizational Network Analysis (ONA) & 360-Degree Feedback]]
 

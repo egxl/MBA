@@ -117,12 +117,12 @@ When systems exhibit batch arrivals, physical buffer limits, and feedback loops,
 
 ## 📂 Primary Source Media & Digital Archives
 
-| Material Title                              |   Media Type    | Staging / Archive Location                                                           |
-| :------------------------------------------ | :-------------: | :----------------------------------------------------------------------------------- |
-| **Waiting Line and Simulation Slide Deck**  | Slides (`.pdf`) | `archive/courses/mk4/week-07/[STS] Meeting 7 - Waiting Line and Simulation.pptx.pdf` |
-| **Manggarai Junction Case Study (SBM ITB)** |  Case (`.pdf`)  | `archive/courses/mk4/week-07/Case_KAI_Commuter_Manggarai_EN.docx.pdf`                |
-| **Week 7 Supplementary Reading Materials**  | Notes (`.pdf`)  | `archive/courses/mk4/week-07/BAHAN BACAAN MK 4 WEEK 7.pdf`                           |
-| **Syndicate 9 Pre-Assignment Submission**   | Report (`.pdf`) | `archive/courses/mk4/week-07/Syndicate 9_Pre-Assignment Week 7_MK 4.pdf`             |
+| Material Title                              |   Media Type    | Staging / Archive Location                                                                                                                                      |
+| :------------------------------------------ | :-------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Waiting Line and Simulation Slide Deck**  | Slides (`.pdf`) | [`[STS] Meeting 7 - Waiting Line and Simulation.pptx.pdf`](https://drive.google.com/file/d/1EBtx-fSBL2zSV4NkP9OGc5nl0ZwJEaq4/view?usp=classroom_web&authuser=1) |
+| **Manggarai Junction Case Study (SBM ITB)** |  Case (`.pdf`)  | [`Case_KAI_Commuter_Manggarai_EN.docx.pdf`](https://drive.google.com/file/d/1tE0wTUfert_jxENtqgBrUcklYcJScQKn/view?usp=classroom_web&authuser=1)                |
+| **Week 7 Supplementary Reading Materials**  | Notes (`.pdf`)  | `archive/courses/mk4/week-07/BAHAN BACAAN MK 4 WEEK 7.pdf`                                                                                                      |
+| **Syndicate 9 Pre-Assignment Submission**   | Report (`.pdf`) | `archive/courses/mk4/week-07/Syndicate 9_Pre-Assignment Week 7_MK 4.pdf`                                                                                        |
 
 ---
 

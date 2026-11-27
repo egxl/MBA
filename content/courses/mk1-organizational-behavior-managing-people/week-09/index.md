@@ -19,7 +19,7 @@ tags:
 >
 > - **Course:** MK1 Organizational Behaviour & Managing People — Week 09
 > - **Teaching Team:** Dr. Ir. Madju Yuni Ros Bangun, Muhammad Yorga Permana, Ph.D., Widhyawan Prawiraatmadja, Ph.D., Yudo Anggoro, Ph.D.
-> - **Primary Curricular Spine:** `archive/courses/mk1/week-09/Week 9 (Student Version)-Organization Design & Strategic Workforce Planning.pdf`
+> - **Primary Curricular Spine:** [`Week 9 (Student Version)-Organization Design & Strategic Workforce Planning.pdf`](https://drive.google.com/file/d/1PT2P5dq-kqXNJuMUGCxQuLRhRiq2gEp9/view?usp=classroom_web&authuser=1)
 > - **Direct Satellites & Problem Sets:**
 >   - [[courses/mk1-organizational-behavior-managing-people/week-09/reading-neilson-secrets-strategy-execution|Academic Reading: The Secrets to Successful Strategy Execution (Neilson, Martin & Powers, 2008)]]
 >   - [[courses/mk1-organizational-behavior-managing-people/week-09/assignment-pre-assignment-brief|Cohort Pre-Class Brief: Organization Design & Workforce Planning]]

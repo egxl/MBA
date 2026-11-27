@@ -18,7 +18,7 @@ date: 2026-10-21
 > [!NOTE] Assignment Context & Attribution
 >
 > - **Course:** MM5001 Marketing Management — Week 05
-> - **Source Prompts:** `archive/courses/mk3/week-05/Pillsbury_pre-assignment instruction.pdf` & `Group 9 – Pre-Assignment.docx`
+> - **Source Prompts:** [`Pillsbury_pre-assignment instruction.pdf`](https://drive.google.com/file/d/1H49YPY0NfXxN52D6IS0dMpJx7N0CdfPv/view?usp=classroom_web&authuser=1) & `Group 9 – Pre-Assignment.docx`
 > - **Reference Attribution:** Analytical synthesis contributed by **F9 (Class F / Syndicate 9)**
 > - **Parent Lecture:** [[courses/mk3-marketing-management/week-05/index|Week 05 Master Lecture Hub: Marketing Research & Diagnostic Methodologies]]
 > - **Target Case:** [[courses/mk3-marketing-management/week-05/case-pillsbury-cookie-challenge|General Mills Canada — The Pillsbury Cookie Challenge]]

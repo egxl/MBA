@@ -122,12 +122,12 @@ Unless a marketing team isolates confounding variables through controlled A/B sp
 
 ## 📂 Primary Source Media & Digital Archives
 
-| Material Title                            |      Media Type       | Archival Path                                                          |
-| :---------------------------------------- | :-------------------: | :--------------------------------------------------------------------- |
-| **[P3MD] Week 5-MK3 Presentation**        | Presentation (`.pdf`) | `archive/courses/mk3/week-05/[P3MD] Week 5-MK3.pdf`                    |
-| **Pillsbury Cookie Challenge Case**       |  Case Study (`.pdf`)  | `archive/courses/mk3/week-05/Pillsbury Cookie Challenge.pdf`           |
-| **Pillsbury Assignment Instructions**     |    Guide (`.pdf`)     | `archive/courses/mk3/week-05/Pillsbury_pre-assignment instruction.pdf` |
-| **Syndicate 9 Pre-Assignment Submission** | Submission (`.docx`)  | `archive/courses/mk3/week-05/Group 9 – Pre-Assignment.docx`            |
+| Material Title                            |      Media Type       | Archival Path                                                                                                                                     |
+| :---------------------------------------- | :-------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **[P3MD] Week 5-MK3 Presentation**        | Presentation (`.pdf`) | [`[P3MD] Week 5-MK3.pdf`](https://drive.google.com/file/d/17bsAuJ6FkiPP8VQzFRWA4DcyMEXUqzz0/view?usp=classroom_web&authuser=1)                    |
+| **Pillsbury Cookie Challenge Case**       |  Case Study (`.pdf`)  | [`Pillsbury Cookie Challenge.pdf`](https://drive.google.com/file/d/1Ry-kuDpIe27nkzcZUsiRD7POGRhNE_ek/view?usp=classroom_web&authuser=1)           |
+| **Pillsbury Assignment Instructions**     |    Guide (`.pdf`)     | [`Pillsbury_pre-assignment instruction.pdf`](https://drive.google.com/file/d/1H49YPY0NfXxN52D6IS0dMpJx7N0CdfPv/view?usp=classroom_web&authuser=1) |
+| **Syndicate 9 Pre-Assignment Submission** | Submission (`.docx`)  | `archive/courses/mk3/week-05/Group 9 – Pre-Assignment.docx`                                                                                       |
 
 ---
 

@@ -18,7 +18,7 @@ date: 2026-10-18
 > [!NOTE] Assignment Context & Attribution
 >
 > - **Course:** MM5001 Marketing Management — Week 02
-> - **Source Prompt:** `archive/courses/mk3/week-02/[P3MD] Week 2-MK3 -Pre Assignment.pdf`
+> - **Source Prompt:** [`[P3MD] Week 2-MK3 -Pre Assignment.pdf`](https://drive.google.com/file/d/1osRTesmIrO97hMLntDRuPOU5nqrCH1qh/view?usp=classroom_web&authuser=1)
 > - **Reference Attribution:** Analytical synthesis contributed by **F9 (Class F / Syndicate 9)**
 > - **Parent Lecture:** [[courses/mk3-marketing-management/week-02/index|Week 02 Master Lecture Hub: Analyzing the Marketing Environment]]
 > - **Core Frameworks:** [[concepts/five-c-analysis|5C Environmental Analysis Framework]], [[concepts/customer-perceived-value|Customer Perceived Value (CPV)]]

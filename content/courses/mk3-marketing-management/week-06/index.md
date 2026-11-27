@@ -142,14 +142,14 @@ When expanding B2B SaaS into Indonesia (2026–2029), global software firms enco
 
 ## 📂 Primary Source Media & Digital Archives
 
-| Material Title                             |      Media Type       | Archival Path                                                                              |
-| :----------------------------------------- | :-------------------: | :----------------------------------------------------------------------------------------- |
-| **[P3MD] Week 6-MK3-Student Presentation** | Presentation (`.pdf`) | `archive/courses/mk3/week-06/[P3MD] Week 6-MK3-Student.pdf`                                |
-| **HubSpot Inbound Marketing Case**         |  Case Study (`.pdf`)  | `archive/courses/mk3/week-06/HubSpot inbound marketing and web 2.0 .pdf`                   |
-| **HubSpot Indonesia Expansion Supplement** |  Supplement (`.pdf`)  | `archive/courses/mk3/week-06/HubSpot in Indonesia — Case Supplement (Student Edition).pdf` |
-| **The B2B Elements of Value**              | HBR Reading (`.pdf`)  | `archive/courses/mk3/week-06/The B2B Elements of Value.pdf`                                |
-| **Syndicate 9 Pre-Assignment Submission**  | Submission (`.docx`)  | `archive/courses/mk3/week-06/MK3_Week6_PreAssignment_Syndicate_9_REVISED.docx`             |
-| **B2B Strategy & SME Trap Podcast**        |    Audio (`.m4a`)     | `archive/courses/mk3/week-06/Strategi_B2B_HubSpot_dan_Jebakan_UMKM.m4a`                    |
+| Material Title                             |      Media Type       | Archival Path                                                                                                                                                         |
+| :----------------------------------------- | :-------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[P3MD] Week 6-MK3-Student Presentation** | Presentation (`.pdf`) | [`[P3MD] Week 6-MK3-Student.pdf`](https://drive.google.com/file/d/1xFmjyuAgla5WOgmvN97RitU9_IVpIPbE/view?usp=classroom_web&authuser=1)                                |
+| **HubSpot Inbound Marketing Case**         |  Case Study (`.pdf`)  | [`HubSpot inbound marketing and web 2.0 .pdf`](https://drive.google.com/file/d/1NHFMNTYLYf7pAd_wjd1SeWxhEUmY21Yd/view?usp=classroom_web&authuser=1)                   |
+| **HubSpot Indonesia Expansion Supplement** |  Supplement (`.pdf`)  | [`HubSpot in Indonesia — Case Supplement (Student Edition).pdf`](https://drive.google.com/file/d/1oSgHBqkgh2fW2zcMibTsi4OBlBoT_gWq/view?usp=classroom_web&authuser=1) |
+| **The B2B Elements of Value**              | HBR Reading (`.pdf`)  | [`The B2B Elements of Value.pdf`](https://drive.google.com/file/d/1jpFF8hNRklHpd6b-M4IUmLMHjmOaNtGi/view?usp=classroom_web&authuser=1)                                |
+| **Syndicate 9 Pre-Assignment Submission**  | Submission (`.docx`)  | `archive/courses/mk3/week-06/MK3_Week6_PreAssignment_Syndicate_9_REVISED.docx`                                                                                        |
+| **B2B Strategy & SME Trap Podcast**        |    Audio (`.m4a`)     | `archive/courses/mk3/week-06/Strategi_B2B_HubSpot_dan_Jebakan_UMKM.m4a`                                                                                               |
 
 ---
 

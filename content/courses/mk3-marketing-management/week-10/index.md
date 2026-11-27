@@ -20,7 +20,7 @@ tags:
 >
 > - **Course:** MK3 Marketing Management (MM5001) — Week 10
 > - **Teaching Team:** Dr. Asnan Furinto, ST., M.M., Dr. Nila Armelia Windasari, S.A., M.B.A.
-> - **Primary Curricular Spine:** `archive/courses/mk3/week-10/[P3MD] Week 10-MK3.pdf`
+> - **Primary Curricular Spine:** [`[P3MD] Week 10-MK3.pdf`](https://drive.google.com/file/d/1a3HnANVa7krTa3i5fBvEXenFpEidyje-/view?usp=classroom_web&authuser=1)
 > - **Harvard Teaching Case:** [[courses/mk3-marketing-management/week-10/case-dropbox-pricing|Freemium Pricing at Dropbox (HBS 9-514-053)]]
 > - **Foundational Lattice Concept:** [[concepts/freemium-pricing-model|Freemium Pricing Model & SaaS Economics]]
 > - **Primary Enterprise Entity:** [[entities/dropbox|Enterprise Profile: Dropbox, Inc.]]

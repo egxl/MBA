@@ -19,7 +19,7 @@ tags:
 >
 > - **Course:** MK1 Organizational Behaviour & Managing People — Week 06
 > - **Teaching Team:** Dr. Ir. Madju Yuni Ros Bangun, Muhammad Yorga Permana, Ph.D., Widhyawan Prawiraatmadja, Ph.D., Yudo Anggoro, Ph.D.
-> - **Primary Curricular Spine:** `archive/courses/mk1/week-06/Week 6 Organizational Dynamics in the Indonesian Context.pdf` (37 slides)
+> - **Primary Curricular Spine:** [`Week 6 Organizational Dynamics in the Indonesian Context.pdf`](https://drive.google.com/file/d/1ExevjNFJs8tNPOV03FtVTbQDrWxjWg6w/view?usp=classroom_web&authuser=1) (37 slides)
 > - **Direct Satellites & Problem Sets:**
 >   - [[courses/mk1-organizational-behavior-managing-people/week-06/case-lcop-bumn-private|Case Study: LCOP Structural Equation Model (BUMN vs. Private Plantations)]]
 >   - [[courses/mk1-organizational-behavior-managing-people/week-06/reading-capitalizing-on-capabilities|Academic Reading: Capitalizing on Capabilities (Ulrich & Smallwood, 2004)]]
@@ -197,13 +197,13 @@ Building organizational capabilities in state-owned enterprises triggers severe 
 
 ## 📂 Primary Source Media & Digital Archives
 
-| Material Title                                          |      Media Type       | Source Repository & Reference Path                                                         |
-| :------------------------------------------------------ | :-------------------: | :----------------------------------------------------------------------------------------- |
-| **Week 6 Master Lecture Deck: Organizational Dynamics** | Presentation (`.pdf`) | `archive/courses/mk1/week-06/Week 6 Organizational Dynamics in the Indonesian Context.pdf` |
-| **LCOP BUMN vs Private Research Deck**                  | Presentation (`.pdf`) | `archive/courses/mk1/week-06/LCOP BUMN PRIVATE.pdf`                                        |
-| **Ulrich & Smallwood (2004) HBR Reprint**               |   Reading (`.pdf`)    | `archive/courses/mk1/week-06/Capitalizing on Capabilities.pdf`                             |
-| **Syndicate 9 Pre-Assignment Submission**               |  Document (`.docx`)   | `archive/courses/mk1/week-06/Syndicate 9 - Pre-Assignment Week 6.docx`                     |
-| **Syndicate 9 Post-Assignment Reflective Submission**   |  Document (`.docx`)   | `archive/courses/mk1/week-06/Syndicate 9 - Post-Assignment Week 6.docx`                    |
+| Material Title                                          |      Media Type       | Source Repository & Reference Path                                                                                                                                    |
+| :------------------------------------------------------ | :-------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Week 6 Master Lecture Deck: Organizational Dynamics** | Presentation (`.pdf`) | [`Week 6 Organizational Dynamics in the Indonesian Context.pdf`](https://drive.google.com/file/d/1ExevjNFJs8tNPOV03FtVTbQDrWxjWg6w/view?usp=classroom_web&authuser=1) |
+| **LCOP BUMN vs Private Research Deck**                  | Presentation (`.pdf`) | [`LCOP BUMN PRIVATE.pdf`](https://drive.google.com/file/d/1HTx5NPJ_Ohio6n6YIGYg68JP2p465Owe/view?usp=classroom_web&authuser=1)                                        |
+| **Ulrich & Smallwood (2004) HBR Reprint**               |   Reading (`.pdf`)    | [`Capitalizing on Capabilities.pdf`](https://drive.google.com/file/d/1Ss3oKv_2N0WWl3eSL7St0zInBeJCETar/view?usp=classroom_web&authuser=1)                             |
+| **Syndicate 9 Pre-Assignment Submission**               |  Document (`.docx`)   | `archive/courses/mk1/week-06/Syndicate 9 - Pre-Assignment Week 6.docx`                                                                                                |
+| **Syndicate 9 Post-Assignment Reflective Submission**   |  Document (`.docx`)   | `archive/courses/mk1/week-06/Syndicate 9 - Post-Assignment Week 6.docx`                                                                                               |
 
 ---
 

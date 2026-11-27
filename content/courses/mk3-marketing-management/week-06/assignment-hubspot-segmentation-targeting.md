@@ -19,7 +19,7 @@ date: 2026-10-22
 > [!NOTE] Assignment Context & Attribution
 >
 > - **Course:** MM5001 Marketing Management — Week 06
-> - **Source Prompts:** `archive/courses/mk3/week-06/HubSpot_PreClass_Assignment.pdf` & `MK3_Week6_PreAssignment_Syndicate_9_REVISED.docx`
+> - **Source Prompts:** [`HubSpot_PreClass_Assignment.pdf`](https://drive.google.com/file/d/1SuRfDPJMAp5o2ZAuune1zWQcpWuMB18s/view?usp=classroom_web&authuser=1) & `MK3_Week6_PreAssignment_Syndicate_9_REVISED.docx`
 > - **Reference Attribution:** Analytical synthesis contributed by **F9 (Class F / Syndicate 9)**
 > - **Parent Lecture:** [[courses/mk3-marketing-management/week-06/index|Week 06 Master Lecture Hub: Market Segmentation & Target Market Selection]]
 > - **Target Case:** [[courses/mk3-marketing-management/week-06/case-hubspot-inbound-indonesia|HubSpot Inbound Marketing (US 2009) & Indonesia Expansion]]

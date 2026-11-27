@@ -18,7 +18,7 @@ date: 2026-10-24
 > [!NOTE] Assignment Context & Attribution
 >
 > - **Course:** MK1 Organizational Behaviour & Managing People — Week 06
-> - **Source Prompt:** `archive/courses/mk1/week-06/Pre Assignment Week 6.pdf`
+> - **Source Prompt:** [`Pre Assignment Week 6.pdf`](https://drive.google.com/file/d/1hzOFEa3hL0Jd9R5JBP8BCRi_oZh2v8IC/view?usp=classroom_web&authuser=1)
 > - **Reference Attribution:** Analytical synthesis contributed by **F9 (Class F / Syndicate 9)** & **the Portal Maintainer**
 > - **Parent Lecture:** [[courses/mk1-organizational-behavior-managing-people/week-06/index|Week 06 Master Lecture Hub]]
 > - **Target Case:** [[courses/mk1-organizational-behavior-managing-people/week-06/case-lcop-bumn-private|Case Study: LCOP Structural Equation Model]]

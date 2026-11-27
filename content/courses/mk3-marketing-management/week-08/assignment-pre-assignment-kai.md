@@ -21,7 +21,7 @@ date: 2026-10-25
 > - **Course:** MM5001 Marketing Management — Week 08: Services Marketing & STP Strategy
 > - **Faculty:** [[entities/ira-fachira|Ira Fachira, Ph.D.]] (Lead Lecturer, SBM ITB)
 > - **Target Case:** [[courses/mk3-marketing-management/week-08/case-pt-kai-service-transformation|PT Kereta Api Indonesia — Service Transformation: Making Intangibles Tangible]]
-> - **Source Prompt:** `archive/courses/mk3/week-08/KAI_Service_Pre class instruction.pdf`
+> - **Source Prompt:** [`KAI_Service_Pre class instruction.pdf`](https://drive.google.com/file/d/1iWv_FMmhqm2OuRlp4Gui99Xxp-_GrRIC/view?usp=classroom_web&authuser=1)
 > - **Reference Attribution:** Analytical synthesis contributed by **F9 (Class F / Syndicate 9)**
 > - **Parent Lecture:** [[courses/mk3-marketing-management/week-08/index|Week 08 Master Lecture: Services Marketing]]
 

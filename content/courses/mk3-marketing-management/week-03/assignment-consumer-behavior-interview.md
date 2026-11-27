@@ -17,7 +17,7 @@ date: 2026-10-19
 > [!NOTE] Assignment Context & Attribution
 >
 > - **Course:** MM5001 Marketing Management — Week 03
-> - **Source Prompt:** `archive/courses/mk3/week-03/CDS_PreClass_Assignment_ConsumerBehaviorInterview.pdf`
+> - **Source Prompt:** [`CDS_PreClass_Assignment_ConsumerBehaviorInterview.pdf`](https://drive.google.com/file/d/1urG_SkN8W0ma6yy9y2APC-OrJKz0kgrI/view?usp=classroom_web&authuser=1)
 > - **Reference Attribution:** Analytical synthesis contributed by **F9 (Class F / Syndicate 9)** & **the Portal Maintainer**
 > - **Parent Lecture:** [[courses/mk3-marketing-management/week-03/index|Week 03 Master Lecture Hub: Consumer Behavior & Customer Decision Stripe]]
 > - **Target Case:** [[courses/mk3-marketing-management/week-03/case-customer-decision-stripe-interview|Customer Decision Stripe Case Dossier]]

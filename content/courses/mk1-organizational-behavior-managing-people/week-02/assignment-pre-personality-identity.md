@@ -20,7 +20,7 @@ date: 2026-10-24
 > [!NOTE] Assignment Context & Attribution
 >
 > - **Course:** MK1 Organizational Behaviour & Managing People — Week 02
-> - **Source Prompt:** `archive/courses/mk1/week-02/Pre Assignment Week 2.pdf` & `Syndicate 9 - Pre Assignment Week 2.docx`
+> - **Source Prompt:** [`Pre Assignment Week 2.pdf`](https://drive.google.com/file/d/1tqgIGGYMq7bgbojPTxuiAToGvEJ-ScuI/view?usp=classroom_web&authuser=1) & `Syndicate 9 - Pre Assignment Week 2.docx`
 > - **Reference Attribution:** Analytical synthesis contributed by **F9 (Class F / Syndicate 9)** & **the Portal Maintainer**
 > - **Parent Lecture:** [[courses/mk1-organizational-behavior-managing-people/week-02/index|Week 02 Master Lecture Hub]]
 > - **Associated Reading Satellite:** [[courses/mk1-organizational-behavior-managing-people/week-02/reading-the-great-divide|Reading: Great Teams Are About Personalities, Not Just Skills]]

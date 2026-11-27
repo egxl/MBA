@@ -20,7 +20,7 @@ tags:
 >
 > - **Course:** MK5 Problem Solving, Decision Making and Negotiation — Week 09
 > - **Lead Faculty:** Prof. Dr. Utomo Sarjono Putro, Dr. Valid Hasyimi (School of Business and Management, Institut Teknologi Bandung)
-> - **Primary Curricular Spine:** `archive/courses/mk5/week-09/[For Students] Negotiation Dilemma Creating and Claiming Value P3MD.pptx.pdf` (Prof. Utomo Sarjono Putro)
+> - **Primary Curricular Spine:** [`[For Students] Negotiation Dilemma Creating and Claiming Value P3MD.pptx.pdf`](https://drive.google.com/file/d/1nthQB1vmQ-iQnxi6ckBQQDEbJH2l7q7Q/view?usp=classroom_web&authuser=1) (Prof. Utomo Sarjono Putro)
 > - **Foundational Literature:**
 >   - David A. Lax & James K. Sebenius (1986), _The Manager as Negotiator: Bargaining for Cooperation and Competitive Gain_
 >   - Leigh Thompson (2012), _The Mind and Heart of the Negotiator (5th Edition)_

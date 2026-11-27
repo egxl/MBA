@@ -142,12 +142,12 @@ In [[courses/mk4-operations-supply-chain-management/week-04/case-whoosh-kcic|Who
 
 ## 📂 Primary Source Media & Digital Archives
 
-| Material Title                                        |    Media Type     | Staging / Archive Location                                               |
-| :---------------------------------------------------- | :---------------: | :----------------------------------------------------------------------- |
-| **Project Management Slide Deck**                     |  Slides (`.pdf`)  | `archive/courses/mk4/week-04/[FINAL] Project Management.pptx (1).pdf`    |
-| **Whoosh KCIC Case Study (SBM ITB)**                  |   Case (`.pdf`)   | `archive/courses/mk4/week-04/[STS] Case_Whoosh_KCIC_SBM_ITB_EN.pdf`      |
-| **Whoosh Project Mindmap Visual Posters**             | Diagrams (`.png`) | `archive/courses/mk4/week-04/Mindmap Case Whoosh.png`                    |
-| **Syndicate 9 Pre-Assignment (English & Indonesian)** | Reports (`.pdf`)  | `archive/courses/mk4/week-04/Syndicate 9_Pre-Assignment Week 4_MK 4.pdf` |
+| Material Title                                        |    Media Type     | Staging / Archive Location                                                                                                                       |
+| :---------------------------------------------------- | :---------------: | :----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Project Management Slide Deck**                     |  Slides (`.pdf`)  | [`[FINAL] Project Management.pptx (1).pdf`](https://drive.google.com/file/d/1eYQtICkwy-nRrQfvTYfmUEaqRkqDoWbb/view?usp=classroom_web&authuser=1) |
+| **Whoosh KCIC Case Study (SBM ITB)**                  |   Case (`.pdf`)   | [`[STS] Case_Whoosh_KCIC_SBM_ITB_EN.pdf`](https://drive.google.com/file/d/1WWWCra5gbcGh4gTuxisTNquNfuoAlSH6/view?usp=classroom_web&authuser=1)   |
+| **Whoosh Project Mindmap Visual Posters**             | Diagrams (`.png`) | `archive/courses/mk4/week-04/Mindmap Case Whoosh.png`                                                                                            |
+| **Syndicate 9 Pre-Assignment (English & Indonesian)** | Reports (`.pdf`)  | `archive/courses/mk4/week-04/Syndicate 9_Pre-Assignment Week 4_MK 4.pdf`                                                                         |
 
 ---
 

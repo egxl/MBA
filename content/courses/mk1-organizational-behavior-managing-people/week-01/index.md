@@ -268,18 +268,18 @@ To preserve complete academic depth, each foundational reading and syndicate ass
 
 Access the official course assets and high-resolution masterclass materials:
 
-| Material Title                                          |      Media Type       | Direct Cloud Repository                                                                                                    |
-| :------------------------------------------------------ | :-------------------: | :------------------------------------------------------------------------------------------------------------------------- |
-| **Week 1 In-Class Masterclass: Strategizing Your Life** | Presentation (`.pdf`) | `raw/courses/mk1/week-01/Week 1 Strategizing Your Life.pdf` (Danantara / Kementerian BUMN / SBM ITB)                       |
-| **Week 1 Explainer Video: Strategizing Your Life**      |    Video (`.mp4`)     | [Stream / Download Video](https://drive.google.com/file/d/1geGKvItJJ_WeYx9bE1N3ReyvMDM7v5MS/view?usp=sharing)              |
-| **Week 1 Masterclass Slide Deck**                       |    Slides (`.pdf`)    | [Download Official Slides](https://drive.google.com/file/d/1XR6mQi-kQyL2UzLLAHk0J0IlYVR6O06B/view?usp=sharing)             |
-| **Being Happy at Work Matters** (Annie McKee)           |      HBR Article      | [View HBR Reading](https://drive.google.com/file/d/1ogMdK091xE1pzUtN6pXilIhE_R20eFjr/view?usp=classroom_web&authuser=0)    |
-| **From Purpose to Impact** (Craig & Snook)              |      HBR Article      | [View HBR Reading](https://drive.google.com/file/d/1T-soCmXGzg7lhGkF-upGrPrlssDx57L4/view?usp=classroom_web&authuser=0)    |
-| **Ikigai Leadership Transformation** (Alex Liu)         |      WEF Article      | [View WEF Reading](https://drive.google.com/file/d/1rGY1hsvSgbCPD67BLnHVft1VLc4b8JaB/view?usp=classroom_web&authuser=0)    |
-| **What Are Your Personal Values?** (Jennifer Nash)      |      HBR Article      | [View HBR Reading](https://drive.google.com/file/d/1ey4PoDrc8w1xYJJvKaWj_L_aE5CL_EzT/view?usp=classroom_web&authuser=0)    |
-| **Pre-Assignment Discussion Guide**                     |     SBM ITB Brief     | [View Pre-Assignment](https://drive.google.com/file/d/1U-LD2ZjtbiF6RmafHQepRJcuxhQNJwyW/view?usp=classroom_web&authuser=0) |
-| **The Wheel of Life Diagnostic Diagram**                |   Diagram (`.jpeg`)   | [View Wheel of Life](https://drive.google.com/file/d/1clZVeWuOxm7aMrlW7x2tU73CgnfEofjK/view?usp=classroom_web&authuser=0)  |
-| **Life Journey Map Framework**                          |   Diagram (`.jpeg`)   | [View Journey Map](https://drive.google.com/file/d/1-06QzQ9zvta8cV8iMtdV_FY6sXme3yX5/view?usp=classroom_web&authuser=0)    |
+| Material Title                                          |      Media Type       | Direct Cloud Repository                                                                                                                                                             |
+| :------------------------------------------------------ | :-------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Week 1 In-Class Masterclass: Strategizing Your Life** | Presentation (`.pdf`) | [`Week 1 Strategizing Your Life.pdf`](https://drive.google.com/file/d/1XR6mQi-kQyL2UzLLAHk0J0IlYVR6O06B/view?usp=classroom_web&authuser=1) (Danantara / Kementerian BUMN / SBM ITB) |
+| **Week 1 Explainer Video: Strategizing Your Life**      |    Video (`.mp4`)     | [Stream / Download Video](https://drive.google.com/file/d/1geGKvItJJ_WeYx9bE1N3ReyvMDM7v5MS/view?usp=sharing)                                                                       |
+| **Week 1 Masterclass Slide Deck**                       |    Slides (`.pdf`)    | [Download Official Slides](https://drive.google.com/file/d/1XR6mQi-kQyL2UzLLAHk0J0IlYVR6O06B/view?usp=sharing)                                                                      |
+| **Being Happy at Work Matters** (Annie McKee)           |      HBR Article      | [View HBR Reading](https://drive.google.com/file/d/1ogMdK091xE1pzUtN6pXilIhE_R20eFjr/view?usp=classroom_web&authuser=0)                                                             |
+| **From Purpose to Impact** (Craig & Snook)              |      HBR Article      | [View HBR Reading](https://drive.google.com/file/d/1T-soCmXGzg7lhGkF-upGrPrlssDx57L4/view?usp=classroom_web&authuser=0)                                                             |
+| **Ikigai Leadership Transformation** (Alex Liu)         |      WEF Article      | [View WEF Reading](https://drive.google.com/file/d/1rGY1hsvSgbCPD67BLnHVft1VLc4b8JaB/view?usp=classroom_web&authuser=0)                                                             |
+| **What Are Your Personal Values?** (Jennifer Nash)      |      HBR Article      | [View HBR Reading](https://drive.google.com/file/d/1ey4PoDrc8w1xYJJvKaWj_L_aE5CL_EzT/view?usp=classroom_web&authuser=0)                                                             |
+| **Pre-Assignment Discussion Guide**                     |     SBM ITB Brief     | [View Pre-Assignment](https://drive.google.com/file/d/1U-LD2ZjtbiF6RmafHQepRJcuxhQNJwyW/view?usp=classroom_web&authuser=0)                                                          |
+| **The Wheel of Life Diagnostic Diagram**                |   Diagram (`.jpeg`)   | [View Wheel of Life](https://drive.google.com/file/d/1clZVeWuOxm7aMrlW7x2tU73CgnfEofjK/view?usp=classroom_web&authuser=0)                                                           |
+| **Life Journey Map Framework**                          |   Diagram (`.jpeg`)   | [View Journey Map](https://drive.google.com/file/d/1-06QzQ9zvta8cV8iMtdV_FY6sXme3yX5/view?usp=classroom_web&authuser=0)                                                             |
 
 ---
 

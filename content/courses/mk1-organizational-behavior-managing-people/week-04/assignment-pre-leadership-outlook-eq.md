@@ -18,7 +18,7 @@ date: 2026-10-24
 > [!NOTE] Assignment Context & Attribution
 >
 > - **Course:** MK1 Organizational Behaviour & Managing People — Week 04
-> - **Source Prompt:** `archive/courses/mk1/week-04/Pre Assignment Week 4.pdf`
+> - **Source Prompt:** [`Pre Assignment Week 4.pdf`](https://drive.google.com/file/d/1DRcXTqgg6RMjxAudz1yrv8w_gHFiFfdG/view?usp=classroom_web&authuser=1)
 > - **Reference Attribution:** Analytical synthesis contributed by **F9 (Class F / Syndicate 9) & the Portal Maintainer** _(all personal student names and identifiers strictly anonymized)_
 > - **Parent Lecture:** [[courses/mk1-organizational-behavior-managing-people/week-04/index|Week 04 Master Lecture Hub: Leadership & Culture Transformation]]
 > - **Direct Reading Satellites:**
@@ -35,13 +35,13 @@ date: 2026-10-24
 ### Core Diagnostic Questions & Source Map
 
 1. **Leadership Outlook 2026 (Question 1):** _Based on the report's findings, describe the central leadership gap identified in Indonesia's business landscape. Which competency areas remain strong, which are lagging, and why does this imbalance matter for organisational transformation?_
-   - _Where to look:_ `archive/courses/mk1/week-04/Leadership Outlook 2026.pdf` (Pages 1–4, Gambar 1, Gambar 5, Gambar 6).
+   - _Where to look:_ [`Leadership Outlook 2026.pdf`](https://drive.google.com/file/d/1qrkqzzVsupgkSDP0WUR1mnO1PGXO7szT/view?usp=classroom_web&authuser=1) (Pages 1–4, Gambar 1, Gambar 5, Gambar 6).
 2. **Leadership Outlook 2026 (Question 2):** _The report shows that the gap between Operational and Strategic competency groups narrowed between 2022 and 2024. Based on the evidence in the report, is this narrowing mainly because Strategic competencies (Digital and HR) genuinely improved, or because Operational competencies declined? Explain your answer using specific evidence from the report._
-   - _Where to look:_ `archive/courses/mk1/week-04/Leadership Outlook 2026.pdf` (Pages 2–3, Gambar 2, Gambar 4).
+   - _Where to look:_ [`Leadership Outlook 2026.pdf`](https://drive.google.com/file/d/1qrkqzzVsupgkSDP0WUR1mnO1PGXO7szT/view?usp=classroom_web&authuser=1) (Pages 2–3, Gambar 2, Gambar 4).
 3. **What Makes a Leader? (Question 3):** _According to Goleman, what distinguishes [[concepts/emotional-intelligence|emotional intelligence]] from IQ and technical skill as ingredients of effective leadership? Describe the five components of [[concepts/emotional-intelligence|emotional intelligence]] and explain why he calls it the “sine qua non” of leadership._
-   - _Where to look:_ `archive/courses/mk1/week-04/What Makes a Leader.pdf` (Pages 1–6).
+   - _Where to look:_ [`What Makes a Leader.pdf`](https://drive.google.com/file/d/1ztIYI6AYXunQhJQPH0vXkmYiUmNfqv_h/view?usp=classroom_web&authuser=1) (Pages 1–6).
 4. **What Makes a Leader? (Question 4):** _Goleman claims that at senior levels, nearly 90% of the difference between star and average performers is attributable to [[concepts/emotional-intelligence|emotional intelligence]] rather than cognitive ability. Drawing on the evidence he presents, including McClelland's 1996 study, do you find this claim well-supported? What limitations, if any, do you see in how it is argued?_
-   - _Where to look:_ `archive/courses/mk1/week-04/What Makes a Leader.pdf` (Pages 2–4).
+   - _Where to look:_ [`What Makes a Leader.pdf`](https://drive.google.com/file/d/1ztIYI6AYXunQhJQPH0vXkmYiUmNfqv_h/view?usp=classroom_web&authuser=1) (Pages 2–4).
 
 ---
 

@@ -38,6 +38,11 @@ tags:
   </div>
 </div>
 
+> [!TIP] Official Class Portals
+>
+> - **Google Classroom**: [Open MK 5 Classwork & Stream](https://classroom.google.com/u/1/c/ODc3MjY4MDk5OTQ1)
+> - **Class Drive Repository**: [Browse MK 5 Drive Folder](https://drive.google.com/drive/folders/1k4Ji5vtx6iVlqKP1PWWDXMDdsFkquLwKSPnaC03dgTF90xb-m1WaTT0i49aklpTQjIm1W2pC?authuser=1)
+
 ## 🗺️ 14-Week Curriculum & Satellite Matrix
 
 <!-- prettier-ignore -->

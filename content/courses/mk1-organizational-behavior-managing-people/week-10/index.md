@@ -21,7 +21,7 @@ tags:
 >
 > - **Course:** MK1 Organizational Behaviour & Managing People — Week 10
 > - **Teaching Team:** Dr. Ir. Madju Yuni Ros Bangun, Muhammad Yorga Permana, Ph.D., Widhyawan Prawiraatmadja, Ph.D., Yudo Anggoro, Ph.D.
-> - **Primary Curricular Spine:** `archive/courses/mk1/week-10/Week 10- Strategic Talent Acquisition Employer Branding (Student Version).pdf`
+> - **Primary Curricular Spine:** [`Week 10- Strategic Talent Acquisition Employer Branding (Student Version).pdf`](https://drive.google.com/file/d/13xa2CHqVO9ng_4w-THzuAsFlAbIe3LIU/view?usp=classroom_web&authuser=1)
 > - **Academic Reading Dossier:** [[courses/mk1-organizational-behavior-managing-people/week-10/reading-mortensen-rethink-evp|Mortensen & Edmondson (2023): Rethink Your Employee Value Proposition]]
 > - **Cohort Assignment Brief:** [[courses/mk1-organizational-behavior-managing-people/week-10/assignment-pre-assignment-brief|Cohort Pre-Class Brief: Strategic Talent Acquisition & EVP]]
 > - **Core Lattice Concept:** [[concepts/employee-value-proposition|Employee Value Proposition (EVP) Framework]]

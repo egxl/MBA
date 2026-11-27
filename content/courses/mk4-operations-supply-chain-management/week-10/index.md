@@ -21,7 +21,7 @@ tags:
 >
 > - **Course:** MK4 Operations & Supply Chain Management — Week 10
 > - **Teaching Team:** Dr. Ir. Gatot Yudoko, M.A.Sc., Akbar Adhiutama, S.T., M.A.B., Ph.D., Dr. Mursyid Hasan Basri, S.T., M.T.
-> - **Primary Curricular Spine:** `archive/courses/mk4/week-10/[STS] W10 - Statistical Quality Control.pdf`
+> - **Primary Curricular Spine:** [`[STS] W10 - Statistical Quality Control.pdf`](https://drive.google.com/file/d/1_MNiq-R9VFmNMhqxmrQyQQdDyZpXKY2F/view?usp=classroom_web&authuser=1)
 > - **Teaching Case Dossier:** [[courses/mk4-operations-supply-chain-management/week-10/case-kai-commuter-sqc|Case Study: KAI Commuter — On-Time Performance on Indonesia's Busiest Line (SBM-ITB 26-03)]]
 > - **Core Lattice Concept:** [[concepts/statistical-process-control|Statistical Process Control (SPC) & Capability]]
 > - **Primary Case Entity:** [[entities/pt-kereta-commuter-indonesia|PT Kereta Commuter Indonesia]]

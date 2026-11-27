@@ -147,13 +147,13 @@ flowchart LR
 
 ## 📂 Primary Source Media & Digital Archives
 
-| Material Title                                                                 |     Media Type      | Staging / Archive Location                                                 |
-| :----------------------------------------------------------------------------- | :-----------------: | :------------------------------------------------------------------------- |
-| **Introduction to OSCM Lecture Slide Deck**                                    |   Slides (`.pdf`)   | `archive/courses/mk4/week-01/Introduction to OSCM.pptx.pdf`                |
-| **Pupuk Indonesia Case Study (SBM ITB)**                                       |    Case (`.pdf`)    | `archive/courses/mk4/week-01/Case_Pupuk_Indonesia_2026_SBM_ITB_EN (1).pdf` |
-| **Catatan Kuliah Week 1 (Dr. Yuanita Handayati)**                              |   Notes (`.docx`)   | `archive/courses/mk4/week-01/.extracted/Catatan Week 1 OSCM.docx.txt`      |
-| **Operations and Supply Chain Management Textbook (Jacobs & Chase, 15th Ed.)** | Reference (`.pdf`)  | `archive/courses/mk4/week-01/f.-robert-jacobs-richard-b.-chase-...pdf`     |
-| **McDonald's Video Game Instruction Manual**                                   | Game Guide (`.pdf`) | `archive/courses/mk4/week-01/How to play McDonald_s Game.pdf`              |
+| Material Title                                                                 |     Media Type      | Staging / Archive Location                                                                                                                            |
+| :----------------------------------------------------------------------------- | :-----------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Introduction to OSCM Lecture Slide Deck**                                    |   Slides (`.pdf`)   | `archive/courses/mk4/week-01/Introduction to OSCM.pptx.pdf`                                                                                           |
+| **Pupuk Indonesia Case Study (SBM ITB)**                                       |    Case (`.pdf`)    | [`Case_Pupuk_Indonesia_2026_SBM_ITB_EN (1).pdf`](https://drive.google.com/file/d/1HVmbx_Fn2kxsRBPk1L8IW9I88w-lDDrT/view?usp=classroom_web&authuser=1) |
+| **Catatan Kuliah Week 1 (Dr. Yuanita Handayati)**                              |   Notes (`.docx`)   | `archive/courses/mk4/week-01/.extracted/Catatan Week 1 OSCM.docx.txt`                                                                                 |
+| **Operations and Supply Chain Management Textbook (Jacobs & Chase, 15th Ed.)** | Reference (`.pdf`)  | `archive/courses/mk4/week-01/f.-robert-jacobs-richard-b.-chase-...pdf`                                                                                |
+| **McDonald's Video Game Instruction Manual**                                   | Game Guide (`.pdf`) | [`How to play McDonald_s Game.pdf`](https://drive.google.com/file/d/1vVBytjlMTcrFSk5ZIn8fDMP6jyl_xP_V/view?usp=classroom_web&authuser=1)              |
 
 ---
 

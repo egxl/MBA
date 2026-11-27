@@ -21,8 +21,8 @@ tags:
 >
 > - **Course:** MK5 Decision Making & Negotiation — Week 10
 > - **Faculty:** Prof. Dr. Utomo Sarjono Putro, Dr. Valid Hasyimi (School of Business and Management, Institut Teknologi Bandung)
-> - **Primary Curricular Spine:** `archive/courses/mk5/week-10/Rational Negotiation and Stakeholder Analysis P3MD.pptx.pdf`
-> - **Accompanying Case Handout:** `archive/courses/mk5/week-10/Stakeholder Analysis Handout.docx.pdf`
+> - **Primary Curricular Spine:** [`Rational Negotiation and Stakeholder Analysis P3MD.pptx.pdf`](https://drive.google.com/file/d/1Hrm5YjMqJGMKxzmRiIVsy6TsmLh7p9St/view?usp=classroom_web&authuser=1)
+> - **Accompanying Case Handout:** [`Stakeholder Analysis Handout.docx.pdf`](https://drive.google.com/file/d/1AhESlvhKCWKJAXDuW_xO8pxhMoCIzTPB/view?usp=classroom_web&authuser=1)
 > - **Foundational Literature:**
 >   - Max H. Bazerman & Margaret A. Neale (1992), _Negotiating Rationally_, Free Press.
 >   - Aubrey L. Mendelow (1991), _Environmental Scanning: The Impact of the Stakeholder Concept_.

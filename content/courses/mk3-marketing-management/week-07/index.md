@@ -134,11 +134,11 @@ flowchart LR
 
 ## 📂 Primary Source Media & Digital Archives
 
-| Material Title                     |      Media Type       | Archival Path                                                                                                      |
-| :--------------------------------- | :-------------------: | :----------------------------------------------------------------------------------------------------------------- |
-| **[P3MD] Week 7-MK3 Presentation** | Presentation (`.pdf`) | `archive/courses/mk3/week-07/[P3MD] Week 7-MK3_Student.pdf`                                                        |
-| **L'Oréal in Indonesia Case**      |  Case Study (`.pdf`)  | `archive/courses/mk3/week-07/L_Oréal in Indonesia Managing a Global Product Portfolio in a Local-Brand Market.pdf` |
-| **Pre-Class Instructions**         |    Guide (`.pdf`)     | `archive/courses/mk3/week-07/L_Oreal Indonesia_Pre class instruction.pdf`                                          |
+| Material Title                     |      Media Type       | Archival Path                                                                                                                                                                                 |
+| :--------------------------------- | :-------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[P3MD] Week 7-MK3 Presentation** | Presentation (`.pdf`) | [`[P3MD] Week 7-MK3_Student.pdf`](https://drive.google.com/file/d/1RbYTBAiJaLJfvqEw2GIVFKMH5wzQGL1M/view?usp=classroom_web&authuser=1)                                                        |
+| **L'Oréal in Indonesia Case**      |  Case Study (`.pdf`)  | [`L_Oréal in Indonesia Managing a Global Product Portfolio in a Local-Brand Market.pdf`](https://drive.google.com/file/d/1SqFZcZSmusYROHNxW2zQySZ5Q_AV_JE_/view?usp=classroom_web&authuser=1) |
+| **Pre-Class Instructions**         |    Guide (`.pdf`)     | [`L_Oreal Indonesia_Pre class instruction.pdf`](https://drive.google.com/file/d/12Qgays-EGdZTyS4fYXtZJt12wmj4NMWv/view?usp=classroom_web&authuser=1)                                          |
 
 ---
 

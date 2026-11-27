@@ -20,7 +20,7 @@ tags:
 >
 > - **Course:** MK4 Operations and Supply Chain Management — Week 09
 > - **Teaching Team:** Noorhan Firdaus Pambudi, Ph.D. (Lead Lecturer), Dr. Yuanita Handayati
-> - **Primary Curricular Spine:** `archive/courses/mk4/week-09/[STS] W9 - Lean Six Sigma.pdf` (SBM ITB Master Slide Deck)
+> - **Primary Curricular Spine:** [`[STS] W9 - Lean Six Sigma.pdf`](https://drive.google.com/file/d/1NnOjeAHQny_we35ndQh3eJ8f1taf7WSF/view?usp=classroom_web&authuser=1) (SBM ITB Master Slide Deck)
 > - **Direct Satellites & Case Studies:**
 >   - [[courses/mk4-operations-supply-chain-management/week-09/case-pelindo-lean-six-sigma|Case Study: Pelindo — The Score, the Berth, and the Gate That Is Not Ours (SBM-OSCM-2026-03)]]
 >   - Corporate Entity: [[entities/pt-pelabuhan-indonesia|PT Pelabuhan Indonesia (Persero)]]

@@ -22,8 +22,8 @@ tags:
 > - **Academic Host:** SBM ITB — _Direktorat Pendidikan Profesional Berkelanjutan_
 > - **Lead Faculty:** Dr. Eng. Manahan Siallagan
 > - **Teaching Team:** Dr. Shimaditya Nuraeni, M. Apriandito Arya Saputra, MBA, Bagus Rullym, MM, Tyas Larassati
-> - **Primary Curricular Spine:** `archive/courses/mk6/week-11/W11_Deep_Learning_untuk Serdik.pdf` (57 slides)
-> - **Accompanying Assignment:** `archive/courses/mk6/week-11/11-assignment.pdf` — [[courses/mk6-business-analytics/week-11/assignment-deep-learning-concept-map|Cohort Pre-Class Brief: Deep Learning Concept Map]]
+> - **Primary Curricular Spine:** [`W11_Deep_Learning_untuk Serdik.pdf`](https://drive.google.com/file/d/1ZjhYGBan2G39qNBINdprJD0bm9oxoBQ1/view?usp=classroom_web&authuser=1) (57 slides)
+> - **Accompanying Assignment:** [`11-assignment.pdf`](https://drive.google.com/file/d/1V7haI0694nhKcRMh6TAhs2Oaa4VUK450/view?usp=classroom_web&authuser=1) — [[courses/mk6-business-analytics/week-11/assignment-deep-learning-concept-map|Cohort Pre-Class Brief: Deep Learning Concept Map]]
 > - **Foundational Literature:**
 >   - Ian Goodfellow, Yoshua Bengio, & Aaron Courville (2016), _Deep Learning_, MIT Press.
 >   - Yann LeCun, Yoshua Bengio, & Geoffrey Hinton (2015), "Deep Learning," _Nature_, 521, 436–444.

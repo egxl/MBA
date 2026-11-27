@@ -211,14 +211,14 @@ Leading cross-functional teams requires managing difficult organizational trade-
 
 ## 📂 Primary Source Media & Digital Archives
 
-| Material Title                                                                    | Media Type                   | Direct Repository Reference                                                     |
-| :-------------------------------------------------------------------------------- | :--------------------------- | :------------------------------------------------------------------------------ |
-| **Week 5 Team Dynamics (Student Version)**                                        | Presentation Slides (`.pdf`) | `archive/courses/mk1/week-05/Week 5 Team Dynamics (Student Version).pdf`        |
-| \*\*Ego State: [[concepts/transactional-analysis  \| Transactional Analysis]]\*\* | Presentation Slides (`.pdf`) | `archive/courses/mk1/week-05/Ego State.pdf`                                     |
-| **5 Things High-Performing Teams Do Differently**                                 | HBR Reading (`.pdf`)         | `archive/courses/mk1/week-05/5 Things High-Performing Teams Do Differently.pdf` |
-| **Pre-Assignment Week 5 Prompt**                                                  | Assignment Prompt (`.pdf`)   | `archive/courses/mk1/week-05/Pre Assignment Week 5.pdf`                         |
-| **Syndicate 9 Pre-Assignment Submission**                                         | Student Archive (`.docx`)    | `archive/courses/mk1/week-05/Syndicate 9 - Pre-Assignment Week 5.docx`          |
-| **Syndicate 9 Post-Assignment Submission**                                        | Student Archive (`.docx`)    | `archive/courses/mk1/week-05/Syndicate 9 - Post-Assignment Week 5.docx`         |
+| Material Title                                                                    | Media Type                   | Direct Repository Reference                                                                                                                                |
+| :-------------------------------------------------------------------------------- | :--------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Week 5 Team Dynamics (Student Version)**                                        | Presentation Slides (`.pdf`) | [`Week 5 Team Dynamics (Student Version).pdf`](https://drive.google.com/file/d/1m_JY1SA3-99-Q3UCX7YRt5mZLrrTLDgL/view?usp=classroom_web&authuser=1)        |
+| \*\*Ego State: [[concepts/transactional-analysis  \| Transactional Analysis]]\*\* | Presentation Slides (`.pdf`) | [`Ego State.pdf`](https://drive.google.com/file/d/1QMdU-cLaDrsJPOMBIJmNMU3rHzTA4tH5/view?usp=classroom_web&authuser=1)                                     |
+| **5 Things High-Performing Teams Do Differently**                                 | HBR Reading (`.pdf`)         | [`5 Things High-Performing Teams Do Differently.pdf`](https://drive.google.com/file/d/1uvIrcnUy-9y_65eeGiR6-JmccoKtW6bH/view?usp=classroom_web&authuser=1) |
+| **Pre-Assignment Week 5 Prompt**                                                  | Assignment Prompt (`.pdf`)   | [`Pre Assignment Week 5.pdf`](https://drive.google.com/file/d/1yMlY4QmUZYEO3qZTR0sF571j9g_dd6o6/view?usp=classroom_web&authuser=1)                         |
+| **Syndicate 9 Pre-Assignment Submission**                                         | Student Archive (`.docx`)    | `archive/courses/mk1/week-05/Syndicate 9 - Pre-Assignment Week 5.docx`                                                                                     |
+| **Syndicate 9 Post-Assignment Submission**                                        | Student Archive (`.docx`)    | `archive/courses/mk1/week-05/Syndicate 9 - Post-Assignment Week 5.docx`                                                                                    |
 
 ---
 

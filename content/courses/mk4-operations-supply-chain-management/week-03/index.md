@@ -148,13 +148,13 @@ In the case [[courses/mk4-operations-supply-chain-management/week-03/case-kai-ac
 
 ## 📂 Primary Source Media & Digital Archives
 
-| Material Title                                 |    Media Type    | Staging / Archive Location                                                      |
-| :--------------------------------------------- | :--------------: | :------------------------------------------------------------------------------ |
-| **Design of Products and Services Slide Deck** | Slides (`.pdf`)  | `archive/courses/mk4/week-03/[FINAL] Design of Products and Services.pptx.pdf`  |
-| **Access by KAI Teaching Case (SBM ITB)**      |  Case (`.pdf`)   | `archive/courses/mk4/week-03/Case_Access_by_KAI_SBM_ITB_EN.docx.pdf`            |
-| **Apple Design Thinking Case (HBS)**           | Reading (`.pdf`) | `archive/courses/mk4/week-03/[STS] BC - General - Design Thinking in Apple.pdf` |
-| **Shell Opportunity Case (HBS)**               | Reading (`.pdf`) | `archive/courses/mk4/week-03/[STS] BC2 - Shell_ a company of opportunity.pdf`   |
-| **Dr. Liane Okdinawati Lecture Slide Photos**  | Photos (`.jpeg`) | `archive/courses/mk4/week-03/PPT Bu Liane/`                                     |
+| Material Title                                 |    Media Type    | Staging / Archive Location                                                                                                                                 |
+| :--------------------------------------------- | :--------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Design of Products and Services Slide Deck** | Slides (`.pdf`)  | [`[FINAL] Design of Products and Services.pptx.pdf`](https://drive.google.com/file/d/1oIcqt9Y64n7KHsGNDPCf-919g3QsHdyv/view?usp=classroom_web&authuser=1)  |
+| **Access by KAI Teaching Case (SBM ITB)**      |  Case (`.pdf`)   | [`Case_Access_by_KAI_SBM_ITB_EN.docx.pdf`](https://drive.google.com/file/d/18Mg5hlQIgw0F9n7VKGnUoi2BegNdwBIh/view?usp=classroom_web&authuser=1)            |
+| **Apple Design Thinking Case (HBS)**           | Reading (`.pdf`) | [`[STS] BC - General - Design Thinking in Apple.pdf`](https://drive.google.com/file/d/1Sq8bKJt8iwiByENxEFV4R9-TEyX-sjgw/view?usp=classroom_web&authuser=1) |
+| **Shell Opportunity Case (HBS)**               | Reading (`.pdf`) | [`[STS] BC2 - Shell_ a company of opportunity.pdf`](https://drive.google.com/file/d/1hzDFRPkr-v9C1t6kBK_zyXKlmHjEB1RZ/view?usp=classroom_web&authuser=1)   |
+| **Dr. Liane Okdinawati Lecture Slide Photos**  | Photos (`.jpeg`) | `archive/courses/mk4/week-03/PPT Bu Liane/`                                                                                                                |
 
 ---
 

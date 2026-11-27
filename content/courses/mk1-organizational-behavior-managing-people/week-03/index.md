@@ -243,14 +243,14 @@ flowchart LR
 
 ## 📂 Primary Source Media & Digital Archives
 
-| Material Title                                |       Media Type        | Direct Repository Reference                                                           |
-| :-------------------------------------------- | :---------------------: | :------------------------------------------------------------------------------------ |
-| **Week 3 Masterclass: Motivation at Work**    |  Presentation (`.pdf`)  | `raw/courses/mk1/week-03/Week 3 - Motivation (Student Version) Rev 01.pdf` (5 Slides) |
-| **Case Study: Rudi dan Kana for Student**     |  SBM ITB Case (`.pdf`)  | `raw/courses/mk1/week-03/Rudi dan Kana for Student.pdf` (IBCC Case 114-02-07-16)      |
-| **Employee Motivation: A Powerful New Model** |  HBR Article (`.pdf`)   | `raw/courses/mk1/week-03/Employee Motivation-A Powerful New Model.pdf`                |
-| **Week 3 Pre-Assignment Brief**               | SBM ITB Brief (`.pdf`)  | `raw/courses/mk1/week-03/Pre Assignment Week 3.pdf`                                   |
-| **Syndicate 9 Pre-Assignment Submission**     | Word Document (`.docx`) | `raw/courses/mk1/week-03/Syndicate 9 - Pre Assignment Week 3.docx`                    |
-| **Syndicate 9 Post-Assignment Submission**    | Word Document (`.docx`) | `raw/courses/mk1/week-03/Syndicate 9 - Post Assignment Week 3.docx`                   |
+| Material Title                                |       Media Type        | Direct Repository Reference                                                                                                                                          |
+| :-------------------------------------------- | :---------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Week 3 Masterclass: Motivation at Work**    |  Presentation (`.pdf`)  | [`Week 3 - Motivation (Student Version) Rev 01.pdf`](https://drive.google.com/file/d/1D35EIMX4GK2RvyrFpWafspZnZuRa_2Tb/view?usp=classroom_web&authuser=1) (5 Slides) |
+| **Case Study: Rudi dan Kana for Student**     |  SBM ITB Case (`.pdf`)  | [`Rudi dan Kana for Student.pdf`](https://drive.google.com/file/d/1k5okSH-pslciLEJolDds9LPl4qAnVXy4/view?usp=classroom_web&authuser=1) (IBCC Case 114-02-07-16)      |
+| **Employee Motivation: A Powerful New Model** |  HBR Article (`.pdf`)   | [`Employee Motivation-A Powerful New Model.pdf`](https://drive.google.com/file/d/1uqTfBeFET70hb8tFApymaZcvXHIQ_fCV/view?usp=classroom_web&authuser=1)                |
+| **Week 3 Pre-Assignment Brief**               | SBM ITB Brief (`.pdf`)  | [`Pre Assignment Week 3.pdf`](https://drive.google.com/file/d/1o53yLUbfHyUYlijr5aX1eJqa98Fgo_a-/view?usp=classroom_web&authuser=1)                                   |
+| **Syndicate 9 Pre-Assignment Submission**     | Word Document (`.docx`) | `raw/courses/mk1/week-03/Syndicate 9 - Pre Assignment Week 3.docx`                                                                                                   |
+| **Syndicate 9 Post-Assignment Submission**    | Word Document (`.docx`) | `raw/courses/mk1/week-03/Syndicate 9 - Post Assignment Week 3.docx`                                                                                                  |
 
 ---
 

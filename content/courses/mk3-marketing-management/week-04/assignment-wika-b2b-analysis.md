@@ -19,7 +19,7 @@ date: 2026-10-20
 > [!NOTE] Assignment Context & Attribution
 >
 > - **Course:** MM5001 Marketing Management — Week 04
-> - **Source Prompts:** `archive/courses/mk3/week-04/WIKA_Pre-Assignment Instruction.pdf` & `Group 9 – Post-Assignment.pdf`
+> - **Source Prompts:** [`WIKA_Pre-Assignment Instruction.pdf`](https://drive.google.com/file/d/1Lb5wK4fZdq01P8NpvPdmlkgiSFiJGnCK/view?usp=classroom_web&authuser=1) & `Group 9 – Post-Assignment.pdf`
 > - **Reference Attribution:** Analytical synthesis contributed by **F9 (Class F / Syndicate 9)**
 > - **Parent Lecture:** [[courses/mk3-marketing-management/week-04/index|Week 04 Master Lecture Hub: B2B Marketing & Organizational Buying]]
 > - **Target Case:** [[courses/mk3-marketing-management/week-04/case-wika-epc-champion|WIKA and the Building EPC Champion Program (2026)]]

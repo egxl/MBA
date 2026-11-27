@@ -127,13 +127,13 @@ In B2B industrial sales, **financial staying power is a core product feature**. 
 
 ## 📂 Primary Source Media & Digital Archives
 
-| Material Title                            |      Media Type       | Archival Path                                                                |
-| :---------------------------------------- | :-------------------: | :--------------------------------------------------------------------------- |
-| **[P3MD] Week 4-MK3 Presentation**        | Presentation (`.pdf`) | `archive/courses/mk3/week-04/[P3MD] Week 4-MK3.pdf`                          |
-| **WIKA EPC Champion Program Case**        |  Case Study (`.pdf`)  | `archive/courses/mk3/week-04/WIKA_and_the_Building_EPC_Champion_Program.pdf` |
-| **Pre-Assignment Instructions**           |    Guide (`.pdf`)     | `archive/courses/mk3/week-04/WIKA_Pre-Assignment Instruction.pdf`            |
-| **Syndicate 9 Pre-Assignment Submission** |  Submission (`.pdf`)  | `archive/courses/mk3/week-04/Group 9 – Pre-Assignment.pdf`                   |
-| **Syndicate 9 Post-Assignment Debrief**   |   Debrief (`.pdf`)    | `archive/courses/mk3/week-04/Group 9 – Post-Assignment.pdf`                  |
+| Material Title                            |      Media Type       | Archival Path                                                                                                                                           |
+| :---------------------------------------- | :-------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **[P3MD] Week 4-MK3 Presentation**        | Presentation (`.pdf`) | [`[P3MD] Week 4-MK3.pdf`](https://drive.google.com/file/d/16gIPzQkpzDogQi72XOplVJN5OyCWc4JA/view?usp=classroom_web&authuser=1)                          |
+| **WIKA EPC Champion Program Case**        |  Case Study (`.pdf`)  | [`WIKA_and_the_Building_EPC_Champion_Program.pdf`](https://drive.google.com/file/d/1a2jDlszVUdcuC2aJJs99bzjlq3XX3W79/view?usp=classroom_web&authuser=1) |
+| **Pre-Assignment Instructions**           |    Guide (`.pdf`)     | [`WIKA_Pre-Assignment Instruction.pdf`](https://drive.google.com/file/d/1Lb5wK4fZdq01P8NpvPdmlkgiSFiJGnCK/view?usp=classroom_web&authuser=1)            |
+| **Syndicate 9 Pre-Assignment Submission** |  Submission (`.pdf`)  | `archive/courses/mk3/week-04/Group 9 – Pre-Assignment.pdf`                                                                                              |
+| **Syndicate 9 Post-Assignment Debrief**   |   Debrief (`.pdf`)    | `archive/courses/mk3/week-04/Group 9 – Post-Assignment.pdf`                                                                                             |
 
 ---
 

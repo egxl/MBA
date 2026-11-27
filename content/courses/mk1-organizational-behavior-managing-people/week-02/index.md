@@ -226,14 +226,14 @@ flowchart LR
 
 ## 📂 Primary Source Media & Digital Archives
 
-| Material Title                                                                   |       Media Type        | Direct Repository Reference                                                                                 |
-| :------------------------------------------------------------------------------- | :---------------------: | :---------------------------------------------------------------------------------------------------------- |
-| **Week 2 Masterclass: Identity, Personality, Behavior & Individual Differences** |  Presentation (`.pdf`)  | `raw/courses/mk1/week-02/Week 2 - Identity, Personality,Behavior  & Individual Differences.pdf` (25 Slides) |
-| **Great Teams Are About Personalities, Not Just Skills**                         |  HBR Article (`.pdf`)   | `raw/courses/mk1/week-02/Great Teams Are About Personalities, Not Just Skills.pdf`                          |
-| **A Brief History of Personality Tests**                                         |  HBR Article (`.pdf`)   | `raw/courses/mk1/week-02/A Brief History of Personality Tests.pdf`                                          |
-| **Week 2 Pre-Assignment Brief**                                                  | SBM ITB Brief (`.pdf`)  | `raw/courses/mk1/week-02/Pre Assignment Week 2.pdf`                                                         |
-| **Syndicate 9 Pre-Assignment Submission**                                        | Word Document (`.docx`) | `raw/courses/mk1/week-02/Syndicate 9 - Pre Assignment Week 2.docx`                                          |
-| **Syndicate 9 Post-Assignment Submission**                                       | Word Document (`.docx`) | `raw/courses/mk1/week-02/Syndicate 9 - Post Assignment Week 2.docx`                                         |
+| Material Title                                                                   |       Media Type        | Direct Repository Reference                                                                                                                                                                |
+| :------------------------------------------------------------------------------- | :---------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Week 2 Masterclass: Identity, Personality, Behavior & Individual Differences** |  Presentation (`.pdf`)  | [`Week 2 - Identity, Personality,Behavior  & Individual Differences.pdf`](https://drive.google.com/file/d/1Uon5V7-ydtp5_3TS4E8s1pw0gdnGL7Vr/view?usp=classroom_web&authuser=1) (25 Slides) |
+| **Great Teams Are About Personalities, Not Just Skills**                         |  HBR Article (`.pdf`)   | [`Great Teams Are About Personalities, Not Just Skills.pdf`](https://drive.google.com/file/d/19Yv2MSOCbahJpHt09bCJ3nw1oMNFt5iU/view?usp=classroom_web&authuser=1)                          |
+| **A Brief History of Personality Tests**                                         |  HBR Article (`.pdf`)   | [`A Brief History of Personality Tests.pdf`](https://drive.google.com/file/d/186W9CWejLxQobc_zPVITVQTeiiRjHIW8/view?usp=classroom_web&authuser=1)                                          |
+| **Week 2 Pre-Assignment Brief**                                                  | SBM ITB Brief (`.pdf`)  | [`Pre Assignment Week 2.pdf`](https://drive.google.com/file/d/1tqgIGGYMq7bgbojPTxuiAToGvEJ-ScuI/view?usp=classroom_web&authuser=1)                                                         |
+| **Syndicate 9 Pre-Assignment Submission**                                        | Word Document (`.docx`) | `raw/courses/mk1/week-02/Syndicate 9 - Pre Assignment Week 2.docx`                                                                                                                         |
+| **Syndicate 9 Post-Assignment Submission**                                       | Word Document (`.docx`) | `raw/courses/mk1/week-02/Syndicate 9 - Post Assignment Week 2.docx`                                                                                                                        |
 
 ---
 

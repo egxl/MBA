@@ -131,13 +131,13 @@ In the case study [[courses/mk4-operations-supply-chain-management/week-02/case-
 
 ## 📂 Primary Source Media & Digital Archives
 
-| Material Title                                 |    Media Type    | Staging / Archive Location                                                                             |
-| :--------------------------------------------- | :--------------: | :----------------------------------------------------------------------------------------------------- |
-| **Strategy Lecture Slide Deck**                | Slides (`.pdf`)  | `archive/courses/mk4/week-02/[FINAL] Strategy.pdf`                                                     |
-| **Rails at a Crossroads Case Study (SBM ITB)** |  Case (`.pdf`)   | `archive/courses/mk4/week-02/CASE_KAI_Operational_Excellence_SBM_ITB_EN.pdf`                           |
-| **Enel Innovability Case Study (INSEAD)**      | Reading (`.pdf`) | `archive/courses/mk4/week-02/BC2 - Enel_s Innovability_ global open innivation and sustainability.pdf` |
-| **Blue Ocean Strategy Reading**                | Reading (`.pdf`) | `archive/courses/mk4/week-02/BC - Operational Strategy - Blue Ocean Strategy.pdf`                      |
-| **Pre-Assignment Prompt & Notes**              |  Task (`.docx`)  | `archive/courses/mk4/week-02/.extracted/MK 4 - Week 2 - Pre Assignment.docx.txt`                       |
+| Material Title                                 |    Media Type    | Staging / Archive Location                                                                                                                                                        |
+| :--------------------------------------------- | :--------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Strategy Lecture Slide Deck**                | Slides (`.pdf`)  | [`[FINAL] Strategy.pdf`](https://drive.google.com/file/d/1zzcBadsssOso5Z0eS_zUpJJ1Qm-4JLNT/view?usp=classroom_web&authuser=1)                                                     |
+| **Rails at a Crossroads Case Study (SBM ITB)** |  Case (`.pdf`)   | [`CASE_KAI_Operational_Excellence_SBM_ITB_EN.pdf`](https://drive.google.com/file/d/1cOaApQwWA1SGquvY_wdezlRj5qpjSlNP/view?usp=classroom_web&authuser=1)                           |
+| **Enel Innovability Case Study (INSEAD)**      | Reading (`.pdf`) | [`BC2 - Enel_s Innovability_ global open innivation and sustainability.pdf`](https://drive.google.com/file/d/1UpgcHsH3cHVCyjxPA-tZGrJIPN72CBwh/view?usp=classroom_web&authuser=1) |
+| **Blue Ocean Strategy Reading**                | Reading (`.pdf`) | [`BC - Operational Strategy - Blue Ocean Strategy.pdf`](https://drive.google.com/file/d/14T7r9sC6gB_J8qpPr3rZrRL9K9mtnvi8/view?usp=classroom_web&authuser=1)                      |
+| **Pre-Assignment Prompt & Notes**              |  Task (`.docx`)  | `archive/courses/mk4/week-02/.extracted/MK 4 - Week 2 - Pre Assignment.docx.txt`                                                                                                  |
 
 ---
 

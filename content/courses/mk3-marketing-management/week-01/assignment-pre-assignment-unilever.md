@@ -19,7 +19,7 @@ date: 2026-10-16
 >
 > - **Course:** MK3 Marketing Management — Week 01: Creating Customer Value & Engagement
 > - **Faculty:** Ilma Aulia Zaim, Ph.D. & Ira Fachira, Ph.D. (SBM ITB)
-> - **Source Prompt:** `raw/courses/mk3/week-01/[P3MD] Week 1-MK3 -Pre Assignment.pdf`
+> - **Source Prompt:** [`[P3MD] Week 1-MK3 -Pre Assignment.pdf`](https://drive.google.com/file/d/1KkkXKg034huf5fU9MDSBRfDRj7sQMrQT/view?usp=classroom_web&authuser=1)
 > - **Reference Attribution:** Analytical synthesis contributed by **F9 (Class F / Syndicate 9)** & ** the Portal Maintainer**
 > - **Parent Lecture:** [[courses/mk3-marketing-management/week-01/index|Week 01 Master Lecture: Creating Customer Value]]
 > - **Target Cases:** [[courses/mk3-marketing-management/week-01/case-unilever-brazil-low-income|Unilever in Brazil (1997–2007)]] · [[courses/mk3-marketing-management/week-01/case-unilever-indonesia-2026|Unilever Indonesia (2026)]]

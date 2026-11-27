@@ -21,7 +21,7 @@ date: 2026-11-16
 >
 > - **Course:** MM5001 Marketing Management — Week 11
 > - **Lead Faculty:** [[entities/ira-fachira|Ira Fachira, Ph.D.]] (School of Business and Management, Institut Teknologi Bandung)
-> - **Primary Curricular Spine:** `archive/courses/mk3/week-11/[P3MD] Week 11-MK3-student.pdf` (57 slides)
+> - **Primary Curricular Spine:** [`[P3MD] Week 11-MK3-student.pdf`](https://drive.google.com/file/d/1--7Vs42wIKLjDFMOGTna7I3TGODrJDit/view?usp=classroom_web&authuser=1) (57 slides)
 > - **Direct Satellites & Problem Sets:**
 >   - Case Study Dossier: [[courses/mk3-marketing-management/week-11/case-zenxin-organic-digital-retail|Zenxin Organic: From Brick and Mortar to Digital Retail (SMU-20-0047)]]
 >   - Post-Class Assignment Debrief: [[courses/mk3-marketing-management/week-11/assignment-pre-assignment-zenxin|Week 11 Assignment Debrief: Zenxin Place & Omnichannel Strategy (F9 Synthesis)]]
@@ -215,12 +215,14 @@ In Indonesia's archipelagic market, **Place** strategy confronts three structura
 
 ## 📂 Primary Source Media & Digital Archives
 
-| Material Title                                                |     Media Type     | Archive Location                                                                          |
-| :------------------------------------------------------------ | :----------------: | :---------------------------------------------------------------------------------------- |
-| **Week 11 Lecture Slides (`[P3MD] Week 11-MK3-student.pdf`)** |  Slides (`.pdf`)   | `archive/courses/mk3/week-11/[P3MD] Week 11-MK3-student.pdf`                              |
-| **Zenxin Organic SMU Case (`SMU-20-0047`)**                   |   Case (`.pdf`)    | `archive/courses/mk3/week-11/Zenxin Organic- From Brick and Mortar to Digital Retail.pdf` |
-| **Zenxin Pre-Class Assignment Prompt**                        |  Prompt (`.pdf`)   | `archive/courses/mk3/week-11/Zenxin_Pre-Class Assignment.pdf`                             |
-| **F9 Syndicate 9 Pre-Assignment Submission**                  | Document (`.docx`) | `archive/courses/mk3/week-11/Syndicate 9 - Pre-Assignment Week 11.docx`                   |
+| Material Title                                                |     Media Type      | Archive Location                                                                                                                                                     |
+| :------------------------------------------------------------ | :-----------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Week 11 Lecture Slides (`[P3MD] Week 11-MK3-student.pdf`)** |   Slides (`.pdf`)   | [`[P3MD] Week 11-MK3-student.pdf`](https://drive.google.com/file/d/1--7Vs42wIKLjDFMOGTna7I3TGODrJDit/view?usp=classroom_web&authuser=1)                              |
+| **Zenxin Organic SMU Case (`SMU-20-0047`)**                   |    Case (`.pdf`)    | [`Zenxin Organic- From Brick and Mortar to Digital Retail.pdf`](https://drive.google.com/file/d/1p7bjEjh9e8mMZtv_r9sGuseaxWNF9Mm6/view?usp=classroom_web&authuser=1) |
+| **Zenxin Pre-Class Assignment Prompt**                        |   Prompt (`.pdf`)   | [`Zenxin_Pre-Class Assignment.pdf`](https://drive.google.com/file/d/1qqQK8ya3LxYXEggIyid29ERAt78GgvUm/view?usp=classroom_web&authuser=1)                             |
+| **F9 Syndicate 9 Pre-Assignment Draft**                       | Document (`.docx`)  | `archive/courses/mk3/week-11/Syndicate 9 - Pre-Assignment Week 11.docx`                                                                                              |
+| **F9 Syndicate 9 Pre-Assignment Submission**                  | Submission (`.pdf`) | `archive/courses/mk3/week-11/Group 9 – Pre-Assignment.pdf`                                                                                                           |
+| **F9 Syndicate 9 Post-Assignment Submission**                 | Submission (`.pdf`) | `archive/courses/mk3/week-11/Group 9 – Post-Assignment.pdf`                                                                                                          |
 
 ---
 

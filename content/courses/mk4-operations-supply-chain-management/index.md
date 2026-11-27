@@ -36,6 +36,11 @@ tags:
   </div>
 </div>
 
+> [!TIP] Official Class Portals
+>
+> - **Google Classroom**: [Open MK 4 Classwork & Stream](https://classroom.google.com/u/1/c/ODc3MjY3NTQzODgz)
+> - **Class Drive Repository**: [Browse MK 4 Drive Folder](https://drive.google.com/drive/folders/1T4AKAlPanqKH40mK8sFRd6sSyVomO5cb2YqBET1gTQLvRk_zDBGjSpKwGJTaCye7IehXFWjQ?authuser=1)
+
 ## 🗺️ 14-Week Curriculum & Satellite Matrix
 
 <!-- prettier-ignore -->

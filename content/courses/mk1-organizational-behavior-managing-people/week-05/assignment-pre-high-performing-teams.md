@@ -18,7 +18,7 @@ date: 2026-10-24
 > [!NOTE] Assignment Context & Attribution
 >
 > - **Course:** MK1 Organizational Behaviour & Managing People — Week 05
-> - **Source Prompt:** `archive/courses/mk1/week-05/Pre Assignment Week 5.pdf`
+> - **Source Prompt:** [`Pre Assignment Week 5.pdf`](https://drive.google.com/file/d/1yMlY4QmUZYEO3qZTR0sF571j9g_dd6o6/view?usp=classroom_web&authuser=1)
 > - **Reference Attribution:** Analytical synthesis contributed by **F9 (Class F / Syndicate 9) & the Portal Maintainer** _(all personal student names and identifiers strictly anonymized)_
 > - **Parent Lecture:** [[courses/mk1-organizational-behavior-managing-people/week-05/index|Week 05 Masterclass Hub: High-Performing Teams, Group Dynamics & [[concepts/transactional-analysis|Transactional Analysis]]]]
 > - **Direct Reading Satellite:**
@@ -34,11 +34,11 @@ date: 2026-10-24
 ### Core Diagnostic Questions & Source Map
 
 1. **Question 1 (Empirical Ranking):** _Rank the five things that high-performing teams do differently from the most to the least convincing evidence. Explain your rationale for the top and bottom rankings, and any internal debates within your syndicate._
-   - _Where to look:_ `archive/courses/mk1/week-05/5 Things High-Performing Teams Do Differently.pdf` (Pages 2–6).
+   - _Where to look:_ [`5 Things High-Performing Teams Do Differently.pdf`](https://drive.google.com/file/d/1uvIrcnUy-9y_65eeGiR6-JmccoKtW6bH/view?usp=classroom_web&authuser=1) (Pages 2–6).
 2. **Question 2 (Non-Work Conversations & Commercial ROI):** _The article reveals that members of high-performing teams are 25% more likely to spend office time discussing non-work topics. How does this build teamwork? Critically evaluate whether this finding proves that casual socializing drives higher commercial performance._
-   - _Where to look:_ `archive/courses/mk1/week-05/5 Things High-Performing Teams Do Differently.pdf` (Page 4).
+   - _Where to look:_ [`5 Things High-Performing Teams Do Differently.pdf`](https://drive.google.com/file/d/1uvIrcnUy-9y_65eeGiR6-JmccoKtW6bH/view?usp=classroom_web&authuser=1) (Page 4).
 3. **Question 3 (The Barbed Courtesy Scenario):** _A team member responds to a sudden overnight deadline change with sarcasm: 'Oh great, another night sleeping at the desk!' Is this a healthy sign of authenticity or a warning sign of dysfunction? How should the project lead respond?_
-   - _Where to look:_ `archive/courses/mk1/week-05/5 Things High-Performing Teams Do Differently.pdf` (Pages 5–6).
+   - _Where to look:_ [`5 Things High-Performing Teams Do Differently.pdf`](https://drive.google.com/file/d/1uvIrcnUy-9y_65eeGiR6-JmccoKtW6bH/view?usp=classroom_web&authuser=1) (Pages 5–6).
 
 ---
 

@@ -19,7 +19,7 @@ date: 2026-10-23
 > [!NOTE] Assignment Context & Attribution
 >
 > - **Course:** MM5001 Marketing Management — Week 07
-> - **Source Prompt:** `archive/courses/mk3/week-07/L_Oreal Indonesia_Pre class instruction.pdf`
+> - **Source Prompt:** [`L_Oreal Indonesia_Pre class instruction.pdf`](https://drive.google.com/file/d/12Qgays-EGdZTyS4fYXtZJt12wmj4NMWv/view?usp=classroom_web&authuser=1)
 > - **Reference Attribution:** Analytical synthesis contributed by **F9 (Class F / Syndicate 9)**
 > - **Parent Lecture:** [[courses/mk3-marketing-management/week-07/index|Week 07 Master Lecture Hub: Product Strategy & Brand Portfolios]]
 > - **Target Case:** [[courses/mk3-marketing-management/week-07/case-loreal-indonesia-portfolio|L'Oréal in Indonesia Case Dossier]]

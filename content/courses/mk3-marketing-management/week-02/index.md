@@ -138,11 +138,11 @@ When navigating aggressive rival price wars in mass consumer markets:
 
 ## 📂 Primary Source Media & Digital Archives
 
-| Material Title                            |        Media Type         | Archival Path                                                                        |
-| :---------------------------------------- | :-----------------------: | :----------------------------------------------------------------------------------- |
-| **[P3MD] Week 2-MK3 Presentation**        |   Presentation (`.pdf`)   | `archive/courses/mk3/week-02/[P3MD] Week 2-MK3.pdf`                                  |
-| **Week 2 Pre-Assignment Brief**           | Assignment Guide (`.pdf`) | `archive/courses/mk3/week-02/[P3MD] Week 2-MK3 -Pre Assignment.pdf`                  |
-| **Syndicate 9 Pre-Assignment Submission** |  Word Document (`.docx`)  | `archive/courses/mk3/week-02/FINAL BOSS Week 2-Pre Assignment MK 3 _ Marketing.docx` |
+| Material Title                            |        Media Type         | Archival Path                                                                                                                                  |
+| :---------------------------------------- | :-----------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[P3MD] Week 2-MK3 Presentation**        |   Presentation (`.pdf`)   | [`[P3MD] Week 2-MK3.pdf`](https://drive.google.com/file/d/1fUj8DQuT43UcxkhCm8p-EmB5deOKXQqJ/view?usp=classroom_web&authuser=1)                 |
+| **Week 2 Pre-Assignment Brief**           | Assignment Guide (`.pdf`) | [`[P3MD] Week 2-MK3 -Pre Assignment.pdf`](https://drive.google.com/file/d/1osRTesmIrO97hMLntDRuPOU5nqrCH1qh/view?usp=classroom_web&authuser=1) |
+| **Syndicate 9 Pre-Assignment Submission** |  Word Document (`.docx`)  | `archive/courses/mk3/week-02/FINAL BOSS Week 2-Pre Assignment MK 3 _ Marketing.docx`                                                           |
 
 ---
 

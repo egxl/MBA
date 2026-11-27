@@ -18,7 +18,7 @@ date: 2026-10-24
 > [!NOTE] Assignment Context & Attribution
 >
 > - **Course:** MK1 Organizational Behaviour & Managing People — Week 03
-> - **Source Prompt:** `archive/courses/mk1/week-03/Pre Assignment Week 3.pdf` & `Syndicate 9 - Pre Assignment Week 3.docx`
+> - **Source Prompt:** [`Pre Assignment Week 3.pdf`](https://drive.google.com/file/d/1o53yLUbfHyUYlijr5aX1eJqa98Fgo_a-/view?usp=classroom_web&authuser=1) & `Syndicate 9 - Pre Assignment Week 3.docx`
 > - **Reference Attribution:** Analytical synthesis contributed by **F9 (Class F / Syndicate 9)** & **the Portal Maintainer**
 > - **Parent Lecture:** [[courses/mk1-organizational-behavior-managing-people/week-03/index|Week 03 Master Lecture Hub]]
 > - **Associated Reading Satellite:** [[courses/mk1-organizational-behavior-managing-people/week-03/reading-employee-motivation-powerful-new-model|Reading: Employee Motivation — A Powerful New Model]]

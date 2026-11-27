@@ -143,12 +143,12 @@ To audit consumer behavior without falling into the [[concepts/marketing-researc
 
 ## 📂 Primary Source Media & Digital Archives
 
-| Material Title                     |      Media Type       | Archival Path                                                                       |
-| :--------------------------------- | :-------------------: | :---------------------------------------------------------------------------------- |
-| **[P3MD] Week 3-MK3 Presentation** | Presentation (`.pdf`) | `archive/courses/mk3/week-03/[P3MD] Week 3-MK3.pdf`                                 |
-| **CDS Profiles A through F**       | Case Briefs (`.pdf`)  | `archive/courses/mk3/week-03/CDS A.pdf` ... `CDS F.pdf`                             |
-| **CDS Interview Assignment Guide** |    Guide (`.pdf`)     | `archive/courses/mk3/week-03/CDS_PreClass_Assignment_ConsumerBehaviorInterview.pdf` |
-| **Class F CDS Allocations**        | Spreadsheet (`.xlsx`) | `archive/courses/mk3/week-03/Pembagian CDS - Kelas F.xlsx`                          |
+| Material Title                     |      Media Type       | Archival Path                                                                                                                                                  |
+| :--------------------------------- | :-------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[P3MD] Week 3-MK3 Presentation** | Presentation (`.pdf`) | [`[P3MD] Week 3-MK3.pdf`](https://drive.google.com/file/d/1CH40hv5aN2Y-K6s8fKKBw2MA9aFFzMoL/view?usp=classroom_web&authuser=1)                                 |
+| **CDS Profiles A through F**       | Case Briefs (`.pdf`)  | [`CDS A.pdf`](https://drive.google.com/file/d/1h5i1E8BdyI7gnD-kMKOMQv_mmT6JeY1B/view?usp=classroom_web&authuser=1) ... `CDS F.pdf`                             |
+| **CDS Interview Assignment Guide** |    Guide (`.pdf`)     | [`CDS_PreClass_Assignment_ConsumerBehaviorInterview.pdf`](https://drive.google.com/file/d/1urG_SkN8W0ma6yy9y2APC-OrJKz0kgrI/view?usp=classroom_web&authuser=1) |
+| **Class F CDS Allocations**        | Spreadsheet (`.xlsx`) | [`Pembagian CDS - Kelas F.xlsx`](https://drive.google.com/file/d/109cX8xMlLBHhKLR3UwF_edN8dxJV6suR/view?usp=classroom_web&authuser=1)                          |
 
 ---
 

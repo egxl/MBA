@@ -122,12 +122,12 @@ In [[courses/mk4-operations-supply-chain-management/week-05/case-pelindo-tpks-ca
 
 ## 📂 Primary Source Media & Digital Archives
 
-| Material Title                                  |    Media Type    | Staging / Archive Location                                                         |
-| :---------------------------------------------- | :--------------: | :--------------------------------------------------------------------------------- |
-| **Strategic Capacity Planning Slide Deck**      | Slides (`.pdf`)  | `archive/courses/mk4/week-05/[STS] Strategic Capacity Planning.pptx.pdf`           |
-| **Pelindo TPKS Teaching Case (SBM ITB)**        |  Case (`.pdf`)   | `archive/courses/mk4/week-05/Case_Pelindo_TPKS_Capacity_Planning_EN.docx.pdf`      |
-| **Port Capacity Case Study Infographic Poster** | Diagram (`.png`) | `archive/courses/mk4/week-05/Pelindo Port Capacity Case Study Infographic.png`     |
-| **Pre-Assignment Template & Notes**             |  Task (`.docx`)  | `archive/courses/mk4/week-05/.extracted/Salinan Salinan Template Syn 9...docx.txt` |
+| Material Title                                  |    Media Type    | Staging / Archive Location                                                                                                                               |
+| :---------------------------------------------- | :--------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Strategic Capacity Planning Slide Deck**      | Slides (`.pdf`)  | [`[STS] Strategic Capacity Planning.pptx.pdf`](https://drive.google.com/file/d/1Y2-3eDrHDxIX18MvQkXKQJYWZKdAmz4Q/view?usp=classroom_web&authuser=1)      |
+| **Pelindo TPKS Teaching Case (SBM ITB)**        |  Case (`.pdf`)   | [`Case_Pelindo_TPKS_Capacity_Planning_EN.docx.pdf`](https://drive.google.com/file/d/1G_IGyNA1D9sbQTt8oS4clsjffsf0v6fs/view?usp=classroom_web&authuser=1) |
+| **Port Capacity Case Study Infographic Poster** | Diagram (`.png`) | `archive/courses/mk4/week-05/Pelindo Port Capacity Case Study Infographic.png`                                                                           |
+| **Pre-Assignment Template & Notes**             |  Task (`.docx`)  | `archive/courses/mk4/week-05/.extracted/Salinan Salinan Template Syn 9...docx.txt`                                                                       |
 
 ---
 

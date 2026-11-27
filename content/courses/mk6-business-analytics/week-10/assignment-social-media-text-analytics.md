@@ -46,7 +46,7 @@ In this assignment, a brand monitoring team has collected **1,000 social media p
 
 ## 2. Dataset Schema & Structure (`posts.xlsx`)
 
-The dataset is located in `archive/courses/mk6/week-10/posts.xlsx` and contains 1,000 rows formatted with six standardized columns:
+The dataset is located in [`posts.xlsx`](https://drive.google.com/file/d/16MkwKGeLnYeZg7x6sU0dTZpbPwzG-frq/view?usp=classroom_web&authuser=1) and contains 1,000 rows formatted with six standardized columns:
 
 | Column Name |     Data Type     | Populated By | Description / Field Rules                                                     |
 | :---------- | :---------------: | :----------: | :---------------------------------------------------------------------------- |

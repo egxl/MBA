@@ -18,7 +18,7 @@ date: 2026-10-24
 > [!NOTE] Assignment Context & Attribution
 >
 > - **Course:** MK1 Organizational Behaviour & Managing People — Week 01
-> - **Source Prompt:** `archive/courses/mk1/week-01/Pre Assignment Week 1 Rev 2.pdf`
+> - **Source Prompt:** [`Pre Assignment Week 1 Rev 2.pdf`](https://drive.google.com/file/d/1U-LD2ZjtbiF6RmafHQepRJcuxhQNJwyW/view?usp=classroom_web&authuser=1)
 > - **Reference Attribution:** Analytical synthesis contributed by **F9 (Class F / Syndicate 9)** & **the Portal Maintainer**
 > - **Parent Lecture:** [[courses/mk1-organizational-behavior-managing-people/week-01/index|Week 01 Master Lecture Hub]]
 
