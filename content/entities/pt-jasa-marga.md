@@ -53,17 +53,26 @@ During **[[program/alp/business-immersion-1/jasa-marga|Business Immersion 1]]**,
 - **Observed Bottlenecks**: Severe bottlenecking at major arterial interchange bottlenecks (e.g. Cikunir, Tomang, Jagorawi merge points), peak holiday season gridlock, and unintegrated rest area parking capacity management.
 - **Synergy with [[concepts/pso-commercial-duality|PSO vs Commercial Duality]]**: Complying with statutory Minimum Service Standards (_Standar Pelayanan Minimal / SPM_ for road roughness, pothole response $< 2 \times 24$ hours, and safety patrol frequency) while servicing heavy concession debt obligations and balancing scheduled toll tariff inflation adjustments.
 
+### Business Immersion BIREF7 (November 2026): Infra-Culture, Earnings Conversion & Asset Recycling
+
+During **[[rabuan/2026-11-25-jasa-marga-biref7|Business Immersion BIREF7]]** (November 25, 2026) at JMTC Bekasi, the cohort examined Jasa Marga's strategic transition from **Infra-Structure** to **Infra-Culture** (_JSMR MOVE_) across **36 concessions** (~1,736 km; 1,294 km operational = 42% national share; 3.5M daily transactions) organized around a **Thin-Owner** group architecture (**14 BUJT** + **JTT** served by **JMTO**, **JMTM**, and **JMRB**):
+
+- **Earnings Conversion & Two-Speed Portfolio**: Despite FY2025 revenue of **Rp19.81T** (+5.8%) and **67.0% EBITDA margin** (Rp13.27T), parent net profit declined **19.3%** to **Rp3.66T** (~38% EBIT conversion) under **Rp3.60T** interest on **Rp76.9T** debt (**Rp31.7T** AUC) and **~Rp0.8T/yr** combined losses on low-occupancy outer-island corridors ($V/C \ 0.04\text{–}0.05$) versus saturated Greater Jakarta segments ($V/C \ 0.80\text{–}0.94$).
+- **[[concepts/infrastructure-asset-recycling|Asset Recycling]] & Digital Adoption**: Mitigates leverage via partial mature divestments (**35% of JTT for Rp15.75T**) and brownfield discipline while tackling **Travoy**'s retention funnel (**1.36M downloads $\to$ 126,602 MAU $\to$ 12,463 DAU**, <1% RFID **Travoy Go** share) and **ODOL** pavement damage (**Rp1.5T/yr** overlay; **7 WIM** sensors integrated toward **Zero ODOL 2027**).
+
 ---
 
 ## 🎤 Contributions to P3MD MBA
 
 - **Action Learning Project & Immersion**:
   - [[program/alp/business-immersion-1/jasa-marga|Business Immersion 1: PT Jasa Marga (Tollroad Operations & ITS)]] (Host BUMN for Syndicates 1, 2, 3, 4)
+  - [[rabuan/2026-11-25-jasa-marga-biref7|Business Immersion BIREF7: PT Jasa Marga — Infra-Culture, Asset Recycling & Manajemen Perjalanan Terintegrasi]] (25 Nov 2026 Field & Executive Diagnostics)
 - **Rabuan Executive Masterclasses**:
   - [[rabuan/2026-09-23-syamsul-infrastruktur|Rabuan 2026-09-23: Nation in Motion — Infrastruktur Penggerak Pertumbuhan]] (Dipl.-Ing. Syamsul Bachri Yusuf)
 - **Key Leadership Entities**:
   - [[entities/syamsul-bachri-yusuf|Dipl.-Ing. Syamsul Bachri Yusuf, M.Si. (Han)]] (Dewan Komisaris)
 - **Related Foundational Concepts**:
+  - [[concepts/infrastructure-asset-recycling|Infrastructure Asset Recycling & Two-Speed Concession Portfolio Management]]
   - [[concepts/pso-commercial-duality|Public Service Obligation (PSO) vs Commercial Viability Duality]]
   - [[concepts/incremental-capital-output-ratio|Incremental Capital Output Ratio (ICOR) & Infrastructure Capital Productivity]]
   - [[concepts/capital-capability-synergy|Capital-Capability Synergy & Financial Discipline Engine]]

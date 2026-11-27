@@ -41,19 +41,19 @@ tags:
 
 <div class="rabuan-ledger">
   <div class="rabuan-stat-cell">
-    <div class="rabuan-stat-num">14</div>
+    <div class="rabuan-stat-num">18</div>
     <div class="rabuan-stat-label">Masterclasses Delivered</div>
     <div class="rabuan-stat-meta">Synchronized plenary series</div>
   </div>
   <div class="rabuan-stat-cell">
-    <div class="rabuan-stat-num">13</div>
+    <div class="rabuan-stat-num">16</div>
     <div class="rabuan-stat-label">Plenary Keynote Speakers</div>
     <div class="rabuan-stat-meta">C-Suite, Cabinet &amp; Flag Officers</div>
   </div>
   <div class="rabuan-stat-cell">
-    <div class="rabuan-stat-num">14</div>
+    <div class="rabuan-stat-num">16</div>
     <div class="rabuan-stat-label">Elite Institutions</div>
-    <div class="rabuan-stat-meta">SBM ITB, BP BUMN, Danantara, KPK, TNI AL, Kementan, IMD</div>
+    <div class="rabuan-stat-meta">SBM ITB, ITB, Danantara, Kemenbud, Kemenko Polkam, TNI, IMD</div>
   </div>
   <div class="rabuan-stat-cell">
     <div class="rabuan-stat-num">100%</div>
@@ -69,6 +69,170 @@ tags:
 </div>
 
 <div class="rabuan-grid">
+
+  <!-- Session 11: Prof. (Hon.) Dr. Fadli Zon -->
+  <div class="rabuan-card">
+    <div class="rabuan-card-top">
+      <span class="rabuan-inst-pill">Kementerian Kebudayaan RI</span>
+      <span class="rabuan-card-date">WED &middot; 25 NOV 2026</span>
+    </div>
+    <div class="rabuan-card-main">
+      <div class="rabuan-portrait-frame">
+        <div class="rabuan-portrait" title="Prof. (Hon.) Dr. Fadli Zon">
+          <div class="rabuan-portrait-ph">
+            <svg class="rabuan-portrait-svg" viewBox="0 0 90 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="45" cy="38" r="18" fill="currentColor" fill-opacity="0.16"/>
+              <path d="M15 108C15 80 27 66 45 66C63 66 75 80 75 108" stroke="currentColor" stroke-width="4" stroke-linecap="round" fill="currentColor" fill-opacity="0.10"/>
+            </svg>
+            <span class="rabuan-portrait-initials">FZ</span>
+          </div>
+        </div>
+      </div>
+      <div class="rabuan-card-body">
+        <h3 class="rabuan-topic">
+          <a href="2026-11-25-fadli-zon-sejarah-kearifan-bangsa" class="internal">Menjadi Pemimpin Teladan di Tengah Masyarakat: Belajar dari Sejarah &amp; Kearifan Bangsa</a>
+        </h3>
+        <div class="rabuan-speaker">
+          <a href="../entities/fadli-zon" class="internal">Prof. (Hon.) Dr. Fadli Zon, S.S., M.Sc.</a>
+        </div>
+        <div class="rabuan-role">Menteri Kebudayaan Republik Indonesia</div>
+        <div class="rabuan-themes">
+          <span class="rabuan-theme-tag">Cultural Megadiversity</span>
+          <span class="rabuan-theme-tag">Out of Nusantara</span>
+          <a href="../concepts/values-congruence" class="rabuan-theme-tag internal">Character &amp; Repatriation</a>
+        </div>
+      </div>
+    </div>
+    <div class="rabuan-card-footer">
+      <a href="2026-11-25-fadli-zon-sejarah-kearifan-bangsa" class="internal">
+        <span>Buka Sesi Kebudayaan &amp; Sejarah</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Session 12: Prof. Dr. Ir. Tatacipta Dirgantara -->
+  <div class="rabuan-card">
+    <div class="rabuan-card-top">
+      <span class="rabuan-inst-pill">Institut Teknologi Bandung</span>
+      <span class="rabuan-card-date">WED &middot; 25 NOV 2026</span>
+    </div>
+    <div class="rabuan-card-main">
+      <div class="rabuan-portrait-frame">
+        <div class="rabuan-portrait" title="Prof. Dr. Ir. Tatacipta Dirgantara">
+          <div class="rabuan-portrait-ph">
+            <svg class="rabuan-portrait-svg" viewBox="0 0 90 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="45" cy="38" r="18" fill="currentColor" fill-opacity="0.16"/>
+              <path d="M15 108C15 80 27 66 45 66C63 66 75 80 75 108" stroke="currentColor" stroke-width="4" stroke-linecap="round" fill="currentColor" fill-opacity="0.10"/>
+            </svg>
+            <span class="rabuan-portrait-initials">TD</span>
+          </div>
+        </div>
+      </div>
+      <div class="rabuan-card-body">
+        <h3 class="rabuan-topic">
+          <a href="2026-11-25-tatacipta-dirgantara-iptek-industri-strategis" class="internal">Menuju Indonesia yang Mandiri: Kapasitas SDM, Penguasaan IPTEK &amp; Industri Strategis 2045</a>
+        </h3>
+        <div class="rabuan-speaker">
+          <a href="../entities/tatacipta-dirgantara" class="internal">Prof. Dr. Ir. Tatacipta Dirgantara, M.T., IPU, ASEAN Eng.</a>
+        </div>
+        <div class="rabuan-role">Rektor Institut Teknologi Bandung (ITB) 2025–2030</div>
+        <div class="rabuan-themes">
+          <a href="../concepts/technology-sovereignty-and-valley-of-death" class="rabuan-theme-tag internal">Technology Sovereignty</a>
+          <span class="rabuan-theme-tag">Valley of Death (TKT 4–6)</span>
+          <span class="rabuan-theme-tag">Habibie Model</span>
+        </div>
+      </div>
+    </div>
+    <div class="rabuan-card-footer">
+      <a href="2026-11-25-tatacipta-dirgantara-iptek-industri-strategis" class="internal">
+        <span>Buka Sesi IPTEK &amp; Kemandirian</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Session 13: Jenderal TNI (Purn.) Djamari Chaniago -->
+  <div class="rabuan-card">
+    <div class="rabuan-card-top">
+      <span class="rabuan-inst-pill">Kemenko Polkam RI</span>
+      <span class="rabuan-card-date">WED &middot; 25 NOV 2026</span>
+    </div>
+    <div class="rabuan-card-main">
+      <div class="rabuan-portrait-frame">
+        <div class="rabuan-portrait" title="Jenderal TNI (Purn.) Djamari Chaniago">
+          <div class="rabuan-portrait-ph">
+            <svg class="rabuan-portrait-svg" viewBox="0 0 90 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="45" cy="38" r="18" fill="currentColor" fill-opacity="0.16"/>
+              <path d="M15 108C15 80 27 66 45 66C63 66 75 80 75 108" stroke="currentColor" stroke-width="4" stroke-linecap="round" fill="currentColor" fill-opacity="0.10"/>
+            </svg>
+            <span class="rabuan-portrait-initials">DC</span>
+          </div>
+        </div>
+      </div>
+      <div class="rabuan-card-body">
+        <h3 class="rabuan-topic">
+          <a href="2026-11-25-djamari-chaniago-pengabdian-disiplin-negara" class="internal">Pengabdian Tanpa Batas: Kepemimpinan, Disiplin &amp; Kesiapan Menjawab Panggilan Negara</a>
+        </h3>
+        <div class="rabuan-speaker">
+          <a href="../entities/djamari-chaniago" class="internal">Jenderal TNI (Kehormatan) (Purn.) Djamari Chaniago</a>
+        </div>
+        <div class="rabuan-role">Menteri Koordinator Bidang Politik dan Keamanan RI (2025–2026)</div>
+        <div class="rabuan-themes">
+          <span class="rabuan-theme-tag">Disiplin Itu Napas</span>
+          <a href="../concepts/the-integrity-triangle" class="rabuan-theme-tag internal">Meritokrasi Prestasi</a>
+          <span class="rabuan-theme-tag">Reformasi Bertahap</span>
+        </div>
+      </div>
+    </div>
+    <div class="rabuan-card-footer">
+      <a href="2026-11-25-djamari-chaniago-pengabdian-disiplin-negara" class="internal">
+        <span>Buka Sesi Pengabdian &amp; Disiplin</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- BIREF 7: PT Jasa Marga (Persero) Tbk -->
+  <div class="rabuan-card">
+    <div class="rabuan-card-top">
+      <span class="rabuan-inst-pill">PT Jasa Marga (Persero) Tbk</span>
+      <span class="rabuan-card-date">WED &middot; 25 NOV 2026</span>
+    </div>
+    <div class="rabuan-card-main">
+      <div class="rabuan-portrait-frame">
+        <div class="rabuan-portrait" title="PT Jasa Marga (Persero) Tbk">
+          <div class="rabuan-portrait-ph">
+            <svg class="rabuan-portrait-svg" viewBox="0 0 90 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="45" cy="38" r="18" fill="currentColor" fill-opacity="0.16"/>
+              <path d="M15 108C15 80 27 66 45 66C63 66 75 80 75 108" stroke="currentColor" stroke-width="4" stroke-linecap="round" fill="currentColor" fill-opacity="0.10"/>
+            </svg>
+            <span class="rabuan-portrait-initials">JSMR</span>
+          </div>
+        </div>
+      </div>
+      <div class="rabuan-card-body">
+        <h3 class="rabuan-topic">
+          <a href="2026-11-25-jasa-marga-biref7" class="internal">Business Immersion BIREF7: Infra-Culture, Asset Recycling &amp; Manajemen Perjalanan Terintegrasi</a>
+        </h3>
+        <div class="rabuan-speaker">
+          <a href="../entities/pt-jasa-marga" class="internal">PT Jasa Marga (Persero) Tbk (JMTC Bekasi)</a>
+        </div>
+        <div class="rabuan-role">National Toll Road Operator &amp; Concession Holding (Danantara Portfolio)</div>
+        <div class="rabuan-themes">
+          <a href="../concepts/infrastructure-asset-recycling" class="rabuan-theme-tag internal">Asset Recycling</a>
+          <span class="rabuan-theme-tag">Infra-Culture &amp; Travoy</span>
+          <span class="rabuan-theme-tag">Zero ODOL &amp; JMTC</span>
+        </div>
+      </div>
+    </div>
+    <div class="rabuan-card-footer">
+      <a href="2026-11-25-jasa-marga-biref7" class="internal">
+        <span>Buka Dossier BIREF7 Jasa Marga</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </div>
 
   <!-- Session 8: Laksamana TNI Dr. Muhammad Ali -->
   <div class="rabuan-card">
