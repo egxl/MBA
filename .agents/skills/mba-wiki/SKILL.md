@@ -171,3 +171,10 @@ When a week was initially published in **Pre-Class (Spoiler-Free) Mode** and the
 2. Author `content/rabuan/YYYY-MM-DD-speaker-topic.md` using the guest-lecture schema.
 3. Author speaker profile in `content/entities/<slug>.md` and register in `content/rabuan/index.md`.
 4. Run `npm run wiki:sync` and `npm run check`.
+
+### Workflow 4: Translate Pages into `content-id/` (`i18n:scaffold` / `i18n:status`)
+
+1. Inspect coverage and stale `source_hash` warnings with `npm run i18n:status`.
+2. Scaffold a mirror file preserving the exact relative path under `content-id/` with `npm run i18n:scaffold -- <relative-path.md>` (records the 12-char SHA-256 `source_hash` of the English source).
+3. Translate into formal Executive Indonesian (*Bahasa Indonesia baku eksekutif*), preserving established MBA acronyms (`WACC`, `BATNA`, `ZOPA`, `OHI`, `ALP`), KaTeX equations, wikilinks, and Mermaid syntax.
+4. Verify with `npm run check` (runs `i18n:check`, title, Mermaid, and table checks across `content-id/`) and `npx quartz build`.

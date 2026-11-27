@@ -11,8 +11,11 @@ function updateReaderButtons(mode: "on" | "off") {
   const isOn = mode === "on"
   const buttons = document.querySelectorAll<HTMLButtonElement>(".readermode")
   buttons.forEach((btn) => {
+    const title = isOn
+      ? btn.dataset.onLabel || "Reader mode: ON"
+      : btn.dataset.offLabel || "Reader mode: OFF"
     btn.setAttribute("aria-pressed", isOn ? "true" : "false")
-    btn.setAttribute("title", isOn ? "Reader mode: ON" : "Reader mode: OFF")
+    btn.setAttribute("title", title)
   })
 }
 

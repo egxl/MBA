@@ -384,8 +384,9 @@ export function getMarkdownFiles(dir) {
 /**
  * Main validator entry point.
  */
-export function validateAllMermaid(contentDir = "content") {
-  const files = getMarkdownFiles(contentDir)
+export function validateAllMermaid(contentDir = ["content", "content-id"]) {
+  const dirs = Array.isArray(contentDir) ? contentDir : [contentDir]
+  const files = dirs.flatMap((dir) => getMarkdownFiles(dir))
   const allErrors = []
   let totalBlocks = 0
 

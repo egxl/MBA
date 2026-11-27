@@ -13,7 +13,7 @@ function setupNavDropdown() {
     // Synchronize active label and link styling on route changes
     const updateActiveRoute = () => {
       const pathname = window.location.pathname
-      let matchedLabel = "Explore"
+      let matchedLabel = wrapper.dataset.defaultLabel || "Explore"
       let isMatched = false
 
       links.forEach((link) => {

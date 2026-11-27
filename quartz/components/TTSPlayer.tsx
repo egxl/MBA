@@ -1,17 +1,19 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
+import { portalI18n } from "../i18n/portal"
 // @ts-ignore
 import ttsScript from "./scripts/tts.inline"
 import styles from "./styles/tts.scss"
 
-const TTSPlayer: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
+const TTSPlayer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
+  const p = portalI18n(cfg.locale)
   return (
     <>
       <button
         type="button"
         class={classNames(displayClass, "tts-navbar-btn")}
-        aria-label="Toggle Text-to-Speech Player"
-        title="Listen to page (Text-to-Speech)"
+        aria-label={p.tts.togglePlayerAria}
+        title={p.tts.listenPageTitle}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -30,21 +32,37 @@ const TTSPlayer: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
       </button>
 
       <div class="tts-shelf-wrapper" aria-live="polite">
-        <div id="tts-player-shelf" class="tts-player-shelf" aria-hidden="true">
+        <div
+          id="tts-player-shelf"
+          class="tts-player-shelf"
+          aria-hidden="true"
+          data-no-track={p.tts.noTrackSelected}
+          data-play-label={p.tts.playAudio}
+          data-pause-label={p.tts.pauseAudio}
+          data-female-label={p.tts.femaleLabel}
+          data-male-label={p.tts.maleLabel}
+          data-female-title={p.tts.femaleTitle}
+          data-male-title={p.tts.maleTitle}
+        >
           <div class="tts-shelf-row-top">
             <div class="tts-transport">
               <button
                 type="button"
                 id="tts-prev-btn"
-                aria-label="Previous paragraph"
-                title="Previous paragraph"
+                aria-label={p.tts.prevParagraph}
+                title={p.tts.prevParagraph}
               >
                 <svg viewBox="0 0 24 24">
                   <polygon points="19 20 9 12 19 4 19 20" />
                   <line x1="5" y1="19" x2="5" y2="5" />
                 </svg>
               </button>
-              <button type="button" id="tts-play-btn" aria-label="Play audio" title="Play audio">
+              <button
+                type="button"
+                id="tts-play-btn"
+                aria-label={p.tts.playAudio}
+                title={p.tts.playAudio}
+              >
                 <svg class="icon-play" viewBox="0 0 24 24">
                   <polygon points="5 3 19 12 5 21 5 3" />
                 </svg>
@@ -56,8 +74,8 @@ const TTSPlayer: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
               <button
                 type="button"
                 id="tts-next-btn"
-                aria-label="Next paragraph"
-                title="Next paragraph"
+                aria-label={p.tts.nextParagraph}
+                title={p.tts.nextParagraph}
               >
                 <svg viewBox="0 0 24 24">
                   <polygon points="5 4 15 12 5 20 5 4" />
@@ -67,8 +85,8 @@ const TTSPlayer: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
             </div>
 
             <div class="tts-track-info">
-              <span class="tts-now-playing-label">Now Playing</span>
-              <span id="tts-track-title">Select an article to listen</span>
+              <span class="tts-now-playing-label">{p.tts.nowPlaying}</span>
+              <span id="tts-track-title">{p.tts.selectArticle}</span>
             </div>
 
             <div class="tts-shelf-actions">
@@ -76,15 +94,15 @@ const TTSPlayer: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
                 type="button"
                 id="tts-voice-btn"
                 class="tts-badge-btn"
-                title="Voice: Female. Click to toggle between Female and Male."
+                title={p.tts.femaleTitle}
               >
-                ♀ Female
+                {p.tts.femaleLabel}
               </button>
               <button
                 type="button"
                 id="tts-speed-btn"
                 class="tts-badge-btn"
-                title="Playback speed. Click to change."
+                title={p.tts.speedTitle}
               >
                 1.0x
               </button>
@@ -92,8 +110,8 @@ const TTSPlayer: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
                 type="button"
                 id="tts-minimize-btn"
                 class="tts-action-icon-btn"
-                aria-label="Minimize player"
-                title="Minimize player (keep listening in background)"
+                aria-label={p.tts.minimizeAria}
+                title={p.tts.minimizeTitle}
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -112,8 +130,8 @@ const TTSPlayer: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
                 type="button"
                 id="tts-close-stop-btn"
                 class="tts-action-icon-btn tts-close-stop-btn"
-                aria-label="Stop playback and close player"
-                title="Stop playback and close player"
+                aria-label={p.tts.closeStopTitle}
+                title={p.tts.closeStopTitle}
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -142,7 +160,7 @@ const TTSPlayer: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
                 max="100"
                 step="0.5"
                 value="0"
-                aria-label="Audio scrubber"
+                aria-label={p.tts.scrubberAria}
               />
             </div>
             <span id="tts-time-total">00:00</span>

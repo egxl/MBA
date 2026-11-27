@@ -1,16 +1,20 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
+import { portalI18n } from "../i18n/portal"
 // @ts-ignore
 import gridToggleScript from "./scripts/gridtoggle.inline"
 import styles from "./styles/gridtoggle.scss"
 
-const GridToggle: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
+const GridToggle: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
+  const p = portalI18n(cfg.locale)
   return (
     <button
       type="button"
       class={classNames(displayClass, "grid-toggle")}
-      aria-label="Toggle background grid"
-      title="Toggle background grid"
+      aria-label={p.controls.toggleGrid}
+      title={p.controls.toggleGrid}
+      data-enable-label={p.controls.enableGrid}
+      data-disable-label={p.controls.disableGrid}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

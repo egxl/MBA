@@ -6,7 +6,7 @@ This file is the first stop for any AI agent working in this repository. Read it
 
 - **Product:** P3MD MBA cohort knowledge base and academic portal.
 - **Runtime:** Quartz 4 static site generator, TypeScript/TSX, Markdown content, SCSS.
-- **Content:** `content/` is the published knowledge base. `content/index.md` is the portal home.
+- **Content:** `content/` is the canonical English (`en-US`) knowledge base (`content/index.md` is portal home). `content-id/` holds optional Bahasa Indonesia (`id-ID`) mirror overrides emitted to `/id/`; untranslated `/id/` routes automatically fall back to English body content with full Indonesian UI chrome.
 - **Program model:** `content/program/` contains governance, calendar, faculty, learning journey, and ALP pages.
 - **Courses:** `content/courses/` contains curriculum pages and course material.
 - **Theme/UI:** `quartz.config.ts`, `quartz.layout.ts`, `quartz/components/`, `quartz/styles/`.
@@ -20,6 +20,7 @@ npm install
 npm run agent:context
 npm run check
 npm test
+npm run i18n:status
 npx quartz build
 ```
 
@@ -68,17 +69,18 @@ Use `npm run docs` only when you need the local documentation server. Node.js 20
 
 ## Repository map
 
-| Area                 | Purpose                                                  |
-| -------------------- | -------------------------------------------------------- |
-| `content/`           | Published Markdown, assets, and course/program knowledge |
-| `quartz.config.ts`   | Site identity, theme, plugins, URL, content rules        |
-| `quartz.layout.ts`   | Page layout and component placement                      |
-| `quartz/components/` | TSX components and browser scripts                       |
-| `quartz/styles/`     | Global and custom SCSS                                   |
-| `quartz/plugins/`    | Content transforms and emitters                          |
-| `quartz/*.test.ts`   | Unit tests colocated with implementation                 |
-| `.github/workflows/` | CI, previews, and deployment                             |
-| `.agents/`           | Agent context, task state, decisions, and handoffs       |
+| Area                 | Purpose                                              |
+| -------------------- | ---------------------------------------------------- |
+| `content/`           | Published English knowledge, assets, and courses     |
+| `content-id/`        | Optional Bahasa Indonesia (`id-ID`) mirror overrides |
+| `quartz.config.ts`   | Site identity, theme, plugins, URL, content rules    |
+| `quartz.layout.ts`   | Page layout and component placement                  |
+| `quartz/components/` | TSX components and browser scripts                   |
+| `quartz/styles/`     | Global and custom SCSS                               |
+| `quartz/plugins/`    | Content transforms and emitters                      |
+| `quartz/*.test.ts`   | Unit tests colocated with implementation             |
+| `.github/workflows/` | CI, previews, and deployment                         |
+| `.agents/`           | Agent context, task state, decisions, and handoffs   |
 
 ## Definition of done
 

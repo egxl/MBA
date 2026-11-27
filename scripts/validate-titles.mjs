@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { existsSync } from "node:fs"
 import { readdir, readFile } from "node:fs/promises"
 import { fileURLToPath, pathToFileURL } from "node:url"
 import matter from "gray-matter"
@@ -69,7 +70,11 @@ export async function validateTitles(repoRoot) {
       ? repoRoot
       : pathToFileURL(repoRoot.endsWith("/") ? repoRoot : `${repoRoot}/`)
   const contentDir = new URL("content/", rootUrl)
+  const idContentDir = new URL("content-id/", rootUrl)
   const mdFiles = await findMarkdownFiles(contentDir)
+  if (existsSync(fileURLToPath(idContentDir))) {
+    mdFiles.push(...(await findMarkdownFiles(idContentDir)))
+  }
   const errors = []
 
   for (const fileUrl of mdFiles) {

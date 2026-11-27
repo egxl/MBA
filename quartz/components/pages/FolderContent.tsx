@@ -104,7 +104,9 @@ export default ((opts?: Partial<FolderContentOptions>) => {
 
     return (
       <div class="popover-hint">
-        <article class={classes}>{content}</article>
+        <article class={classes} lang={fileData.contentLocale ?? undefined}>
+          {content}
+        </article>
         <div class="page-listing">
           {options.showFolderCount && (
             <p>

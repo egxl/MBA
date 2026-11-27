@@ -3,6 +3,7 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 import script from "./scripts/graph.inline"
 import style from "./styles/graph.scss"
 import { i18n } from "../i18n"
+import { portalI18n } from "../i18n/portal"
 import { classNames } from "../util/lang"
 
 export interface D3Config {
@@ -74,7 +75,10 @@ export default ((opts?: Partial<GraphOptions>) => {
         <h3 title={explanation}>{i18n(cfg.locale).components.graph.title}</h3>
         <div class="graph-outer">
           <div class="graph-container" data-cfg={JSON.stringify(localGraph)}></div>
-          <button class="global-graph-icon" aria-label="Global Graph">
+          <button
+            class="global-graph-icon"
+            aria-label={portalI18n(cfg.locale).controls.globalGraphAria}
+          >
             <svg
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"

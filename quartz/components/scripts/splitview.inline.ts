@@ -24,15 +24,12 @@ function setSidebarState(state: string) {
   const toggleBtns = document.querySelectorAll<HTMLButtonElement>(".sidebar-toggle-btn")
   const isCollapsed = state === "collapsed"
   toggleBtns.forEach((btn) => {
+    const label = isCollapsed
+      ? btn.dataset.expandLabel || "Expand sidebar (Ctrl+\\)"
+      : btn.dataset.collapseLabel || "Collapse sidebar (Ctrl+\\)"
     btn.setAttribute("aria-expanded", isCollapsed ? "false" : "true")
-    btn.setAttribute(
-      "aria-label",
-      isCollapsed ? "Expand sidebar (Ctrl+\\)" : "Collapse sidebar (Ctrl+\\)",
-    )
-    btn.setAttribute(
-      "title",
-      isCollapsed ? "Expand sidebar (Ctrl+\\)" : "Collapse sidebar (Ctrl+\\)",
-    )
+    btn.setAttribute("aria-label", label)
+    btn.setAttribute("title", label)
   })
   window.dispatchEvent(new Event("resize"))
   document.dispatchEvent(new CustomEvent("sidebartoggle", { detail: { state } }))
@@ -109,12 +106,23 @@ function wireInteractiveElements(container: HTMLElement) {
 }
 
 async function loadConcept(url: URL, pushHistory = true) {
+  const paneEl = document.getElementById("split-pane")
   const titleEl = document.getElementById("split-pane-title")
   const badgeEl = document.getElementById("split-pane-badge")
   const bodyEl = document.getElementById("split-pane-body")
   if (!bodyEl) return
 
-  const typeLabel = getSplitBadgeLabel(url)
+  const rawTypeLabel = getSplitBadgeLabel(url)
+  let badgeMap: Record<string, string> = {}
+  if (paneEl?.dataset.badges) {
+    try {
+      badgeMap = JSON.parse(paneEl.dataset.badges)
+    } catch {
+      badgeMap = {}
+    }
+  }
+  const typeLabel = badgeMap[rawTypeLabel] ?? rawTypeLabel
+  const loadingPrefix = paneEl?.dataset.loadingPrefix || "Loading"
 
   if (badgeEl) {
     badgeEl.textContent = typeLabel
@@ -127,11 +135,11 @@ async function loadConcept(url: URL, pushHistory = true) {
   }
 
   // Show loading indicator
-  if (titleEl) titleEl.textContent = `Loading ${typeLabel.toLowerCase()}...`
+  if (titleEl) titleEl.textContent = `${loadingPrefix} ${typeLabel.toLowerCase()}...`
   bodyEl.innerHTML = `
     <div class="split-pane-loading">
       <div class="split-pane-spinner"></div>
-      <span>Loading ${typeLabel.toLowerCase()}...</span>
+      <span>${loadingPrefix} ${typeLabel.toLowerCase()}...</span>
     </div>
   `
 
@@ -174,7 +182,9 @@ async function loadConcept(url: URL, pushHistory = true) {
 
     // Remove navigation / audio elements not suitable inside secondary split pane
     doc
-      .querySelectorAll(".course-switcher, .tts-track-selector-wrapper, .breadcrumb-container")
+      .querySelectorAll(
+        ".course-switcher, .translation-notice, .tts-track-selector-wrapper, .breadcrumb-container",
+      )
       .forEach((el) => el.remove())
 
     // Extract article content and header
@@ -200,7 +210,7 @@ async function loadConcept(url: URL, pushHistory = true) {
       if (center) {
         bodyEl.appendChild(center.cloneNode(true))
       } else {
-        bodyEl.innerHTML = `<p>Content could not be displayed.</p>`
+        bodyEl.innerHTML = `<p>${paneEl?.dataset.errorBody || "Content could not be displayed."}</p>`
       }
     } else {
       extractedNodes.forEach((node) => bodyEl.appendChild(node))
@@ -238,11 +248,14 @@ async function loadConcept(url: URL, pushHistory = true) {
     }
   } catch (err) {
     console.error("Split view fetch error:", err)
-    if (titleEl) titleEl.textContent = "Error"
+    const errTitle = paneEl?.dataset.errorTitle || "Error"
+    const errBody = paneEl?.dataset.errorBody || "Could not load article."
+    const openDirect = paneEl?.dataset.openDirect || "Open page directly"
+    if (titleEl) titleEl.textContent = errTitle
     bodyEl.innerHTML = `
       <div style="padding: 2rem 1rem; color: var(--darkgray);">
-        <p>Could not load article.</p>
-        <p><a href="${url.toString()}" class="internal">Open page directly</a></p>
+        <p>${errBody}</p>
+        <p><a href="${url.toString()}" class="internal">${openDirect}</a></p>
       </div>
     `
   }

@@ -46,11 +46,16 @@ export * from "./transformers"
 export * from "./filters"
 export * from "./emitters"
 
+import { ValidLocale } from "../i18n"
+import { TranslationStatus } from "../util/locale"
+
 declare module "vfile" {
   // inserted in processors.ts
   interface DataMap {
     slug: FullSlug
     filePath: FilePath
     relativePath: FilePath
+    translationStatus?: TranslationStatus
+    contentLocale?: ValidLocale
   }
 }

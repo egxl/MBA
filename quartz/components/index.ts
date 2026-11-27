@@ -33,12 +33,14 @@ import SplitView from "./SplitView"
 import CourseSwitcher from "./CourseSwitcher"
 import TTSPlayer from "./TTSPlayer"
 import TTSListenPill from "./TTSListenPill"
+import TranslationNotice from "./TranslationNotice"
 
 export {
   CourseSwitcher,
   SplitView,
   TTSPlayer,
   TTSListenPill,
+  TranslationNotice,
   ArticleTitle,
   Content,
   TagContent,

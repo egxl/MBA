@@ -174,6 +174,23 @@ describe("CourseSwitcher helpers", () => {
       const weeks = getWeekOptions(mockFiles, "mk2-financial-management-strategy")
       assert.deepEqual(weeks, [])
     })
+
+    test("formats Indonesian week and midterm labels when locale is id-ID", () => {
+      const mockFiles: QuartzPluginData[] = [
+        {
+          slug: "courses/mk2-financial-management-strategy/week-01/index" as FullSlug,
+          frontmatter: { title: "Week 01: Foundations", week: 1 },
+        },
+        {
+          slug: "courses/mk2-financial-management-strategy/mid/index" as FullSlug,
+          frontmatter: { title: "MK02 Mid-Term: Synthesis" },
+        },
+      ]
+
+      const weeks = getWeekOptions(mockFiles, "mk2-financial-management-strategy", "id-ID")
+      assert.equal(weeks[0].label, "Minggu 01: Foundations")
+      assert.equal(weeks[1].label, "UTS: Synthesis")
+    })
   })
 
   describe("getCurriculumMap", () => {

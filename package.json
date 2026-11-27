@@ -14,7 +14,7 @@
   "scripts": {
     "quartz": "node ./quartz/bootstrap-cli.mjs",
     "docs": "npx quartz build --serve -d docs",
-    "check": "tsc --noEmit && npx prettier . --check && npm run companions:check && npm run titles:check && npm run wiki:check && npm run mermaid:check && npm run tables:check",
+    "check": "tsc --noEmit && npx prettier . --check && npm run companions:check && npm run titles:check && npm run wiki:check && npm run mermaid:check && npm run tables:check && npm run i18n:check",
     "format": "npx prettier . --write",
     "test": "tsx --test",
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
@@ -30,7 +30,10 @@
     "rabuan:portraits": "node ./scripts/optimize-rabuan-portraits.mjs",
     "mermaid:check": "node ./scripts/validate-mermaid.mjs",
     "tables:check": "node ./scripts/validate-markdown-tables.mjs",
-    "tables:fix": "node ./scripts/validate-markdown-tables.mjs --fix"
+    "tables:fix": "node ./scripts/validate-markdown-tables.mjs --fix",
+    "i18n:check": "node ./scripts/i18n-tools.mjs check",
+    "i18n:status": "node ./scripts/i18n-tools.mjs status",
+    "i18n:scaffold": "node ./scripts/i18n-tools.mjs scaffold"
   },
   "engines": {
     "npm": ">=10",

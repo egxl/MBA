@@ -1,16 +1,18 @@
 import { pathToRoot } from "../util/path"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
+import { portalI18n } from "../i18n/portal"
 
-const HomeButton: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
+const HomeButton: QuartzComponent = ({ fileData, displayClass, cfg }: QuartzComponentProps) => {
+  const p = portalI18n(cfg.locale)
   const baseDir = pathToRoot(fileData.slug!)
   const isHome = fileData.slug === "index"
   return (
     <a
       href={baseDir}
       class={classNames(displayClass, "home-button", isHome ? "is-active" : "")}
-      aria-label="Academic Portal Home"
-      title="Academic Portal Home"
+      aria-label={p.nav.homeAria}
+      title={p.nav.homeTitle}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
