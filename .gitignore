@@ -42,3 +42,6 @@ __pycache__/
 
 # Local editor/agent hooks
 .github/hooks/
+
+# Local Graphify knowledge graph cache and outputs
+graphify-out/
