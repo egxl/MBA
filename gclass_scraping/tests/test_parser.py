@@ -202,6 +202,41 @@ class TestClassroomParser(unittest.TestCase):
         finally:
             shutil.rmtree(temp_dir, ignore_errors=True)
 
+    def test_merge_json_preserves_distinct_post_urls(self):
+        import json
+        import tempfile
+        from src.convert_json import merge_json_files
+
+        temp_dir = Path(tempfile.mkdtemp())
+        try:
+            p1 = temp_dir / "a.json"
+            p1.write_text(
+                json.dumps(
+                    [
+                        {
+                            "course_name": "Classroom\nMK3",
+                            "topic": "General",
+                            "item_title": "View material",
+                            "item_url": "https://classroom.google.com/u/0/c/C1/m/M1/details",
+                            "attachments": [],
+                        },
+                        {
+                            "course_name": "Classroom\nMK3",
+                            "topic": "General",
+                            "item_title": "View material",
+                            "item_url": "https://classroom.google.com/u/0/c/C1/m/M2/details",
+                            "attachments": [],
+                        },
+                    ]
+                ),
+                encoding="utf-8",
+            )
+            merged = merge_json_files([p1])
+            self.assertEqual(len(merged), 2)
+            self.assertEqual(merged[0]["course_name"], "MK3")
+        finally:
+            shutil.rmtree(temp_dir, ignore_errors=True)
+
 
 if __name__ == "__main__":
     unittest.main()

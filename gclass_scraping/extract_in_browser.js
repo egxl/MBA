@@ -86,20 +86,19 @@
   }
 
   const items = []
-  const itemAnchors = document.querySelectorAll(
-    'a[href*="/m/"], a[href*="/a/"], div[role="listitem"], div[role="article"]',
-  )
+  const itemAnchors = document.querySelectorAll('a[href*="/m/"], a[href*="/a/"]')
+  const genericTitles =
+    /^(?:view material|view instructions|view assignment|lihat materi|lihat tugas|lihat petunjuk)$/i
 
   const seenUrls = new Set()
 
-  itemAnchors.forEach((el) => {
-    let anchor = el.tagName === "A" ? el : el.querySelector('a[href*="/m/"], a[href*="/a/"]')
-    const href = anchor ? anchor.href : ""
-    if (href && seenUrls.has(href)) return
-    if (href) seenUrls.add(href)
+  itemAnchors.forEach((anchor) => {
+    const href = anchor.href || ""
+    if (!href || seenUrls.has(href) || anchor.closest("nav, header")) return
+    seenUrls.add(href)
 
-    let parent = el
-    for (let i = 0; i < 5; i++) {
+    let parent = anchor
+    for (let i = 0; i < 6; i++) {
       if (parent.parentElement && parent.parentElement.tagName !== "BODY") {
         parent = parent.parentElement
         if (
@@ -113,11 +112,16 @@
 
     const fullText = parent.innerText || ""
     const timestamps = extractTimestamps(fullText)
-    const itemTitle = (
-      (anchor && (anchor.getAttribute("aria-label") || anchor.innerText)) ||
-      parent.querySelector("h2, h3, div[role='heading']")?.innerText ||
+    const rawAnchorTitle = (anchor.getAttribute("aria-label") || anchor.innerText || "").trim()
+    const cardHeading = (
+      parent.querySelector("[role='heading'], h2, h3")?.innerText ||
+      fullText.split("\n").find((l) => l.trim() && !genericTitles.test(l.trim())) ||
       ""
     ).trim()
+    const itemTitle =
+      rawAnchorTitle && !genericTitles.test(rawAnchorTitle)
+        ? rawAnchorTitle
+        : cardHeading || rawAnchorTitle
 
     if (!itemTitle && !href) return
 
@@ -201,10 +205,14 @@
     if (raw) accumulated = JSON.parse(raw)
   } catch (e) {}
 
-  // Deduplicate and merge
+  // Deduplicate and merge by post URL first so generic titles never overwrite each other
   const existingMap = new Map()
-  accumulated.forEach((it) => existingMap.set(it.course_name + "::" + it.item_title, it))
-  items.forEach((it) => existingMap.set(it.course_name + "::" + it.item_title, it))
+  const keyFor = (it) =>
+    it.item_url && (/\/(?:m|a)\//.test(it.item_url) || !it.item_title)
+      ? it.item_url
+      : it.course_name + "::" + it.topic + "::" + it.item_title
+  accumulated.forEach((it) => existingMap.set(keyFor(it), it))
+  items.forEach((it) => existingMap.set(keyFor(it), it))
   const mergedItems = Array.from(existingMap.values())
 
   try {

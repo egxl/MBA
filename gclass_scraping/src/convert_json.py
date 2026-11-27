@@ -35,7 +35,7 @@ def clean_item(item: dict[str, Any]) -> dict[str, Any]:
 
 def merge_json_files(file_paths: list[Path]) -> list[dict[str, Any]]:
     """Loads and deduplicates items across multiple JSON export files."""
-    seen_map: dict[tuple[str, str, str], dict[str, Any]] = {}
+    seen_map: dict[str | tuple[str, str, str], dict[str, Any]] = {}
 
     for fp in file_paths:
         if not fp.exists():
@@ -47,11 +47,12 @@ def merge_json_files(file_paths: list[Path]) -> list[dict[str, Any]]:
                 continue
             for raw_it in data:
                 it = clean_item(raw_it)
-                # Deduplication key: (course, title, topic)
-                key = (
-                    it.get("course_name", ""),
-                    it.get("item_title", ""),
-                    it.get("topic", ""),
+                item_url = it.get("item_url", "")
+                # Prefer post URL (/m/ or /a/) so posts sharing generic titles don't collide.
+                key: str | tuple[str, str, str] = (
+                    item_url
+                    if ("/m/" in item_url or "/a/" in item_url)
+                    else (it.get("course_name", ""), it.get("item_title", ""), it.get("topic", ""))
                 )
                 if key not in seen_map:
                     seen_map[key] = it
