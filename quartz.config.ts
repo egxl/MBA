@@ -88,8 +88,8 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      // Comment out CustomOgImages to speed up build time
-      Plugin.CustomOgImages(),
+      // shortcut: disabled for ~105s build speedup; re-enable once real baseUrl is configured for deploy
+      // Plugin.CustomOgImages(),
     ],
   },
 }

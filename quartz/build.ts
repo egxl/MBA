@@ -293,6 +293,9 @@ async function rebuild(changes: ChangeEvent[], clientRefresh: () => void, buildD
   console.log(`Emitted ${emittedFiles} files to \`${argv.output}\` in ${perf.timeSince("rebuild")}`)
   console.log(styleText("green", `Done rebuilding in ${perf.timeSince()}`))
   changes.splice(0, numChangesInBuild)
+  for (const fp in changesSinceLastBuild) {
+    delete changesSinceLastBuild[fp as FilePath]
+  }
   clientRefresh()
   release()
 }
