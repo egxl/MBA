@@ -105,6 +105,9 @@ The 10 state-owned enterprises hosting P3MD Action Learning Capstones:
 - **[[entities/zenxin-organic|Zenxin Organic (Zenxin Agri-Organic Food)]]**: Southeast Asian Organic Food Producer & Retailer.
 - **[[entities/amir-arief|Amir Arief, SST., SH., M.Si., Ak., CA, CFE.]]**: Direktur Sosialisasi dan Kampanye Antikorupsi, Komisi Pemberantasan Korupsi (KPK).
 - **[[entities/aurik-gustomo|Prof. Dr. Aurik Gustomo]]**: Dean & Professor of People Development, School of Business and Management (SBM ITB).
+- **[[entities/djamari-chaniago|Jenderal TNI (Kehormatan) (Purn.) Djamari Chaniago]]**: Menteri Koordinator Bidang Politik dan Keamanan Republik Indonesia (2025–2026).
+- **[[entities/fadli-zon|Prof. (Hon.) Dr. Fadli Zon, S.S., M.Sc.]]**: Menteri Kebudayaan Republik Indonesia.
+- **[[entities/tatacipta-dirgantara|Prof. Dr. Ir. Tatacipta Dirgantara, M.T., IPU, ASEAN Eng.]]**: Rektor Institut Teknologi Bandung (ITB) 2025–2030.
 
 ---
 

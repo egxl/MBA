@@ -114,6 +114,8 @@ The table below provides direct access to all active business frameworks and ana
 | **[[concepts/organizational-health-index\|Organizational Health Index (OHI)]]**                                                                 | MK1 & MK4 & Rabuan             | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
 | **[[concepts/artificial-neural-network\|Artificial Neural Networks & Backpropagation]]**                                                        | MK6                            | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
 | **[[concepts/convolutional-neural-network\|Convolutional Neural Networks (CNN) & Transfer Learning]]**                                          | MK6                            | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
+| **[[concepts/infrastructure-asset-recycling\|Infrastructure Asset Recycling & Two-Speed Concession Portfolio Management]]**                     | Rabuan & MK2 & MK3 & MK4       | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
+| **[[concepts/technology-sovereignty-and-valley-of-death\|Technology Sovereignty, Innovation Valley of Death & Industrial Offset Strategy]]**    | Rabuan & MK2 & MK4 & MK5       | Core analytical framework and strategic mechanism                                                    | `✅ Live` |
 
 ---
 

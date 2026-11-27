@@ -114,5 +114,6 @@ In their personal commitments, participants formulated key research inquiries ca
 
 - Return to **[[program/alp/business-immersion-1/index|Business Immersion 1 Master Hub]]**
 - Enterprise Profile: **[[entities/pt-jasa-marga|PT Jasa Marga (Persero) Tbk]]**
+- Follow-Up Immersion Dossier: **[[rabuan/2026-11-25-jasa-marga-biref7|Business Immersion BIREF7: PT Jasa Marga — Infra-Culture & Asset Recycling (25 Nov 2026)]]**
 - Related Masterclass: **[[rabuan/2026-09-23-syamsul-infrastruktur|Rabuan: Nation in Motion — Infrastruktur Penggerak Pertumbuhan]]**
 - Foundational Concept: **[[concepts/pso-commercial-duality|Public Service Obligation (PSO) vs Commercial Viability Duality]]**
